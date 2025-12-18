@@ -1,0 +1,21 @@
+{%- if section.settings.products.size > 0 -%}
+<div class="flex overflow-x-auto gap-1 cursor-grab">
+    {%- for product in section.settings.products -%}
+        {%- render 'product-card', product: product -%}
+    {%- endfor -%}
+</div>
+{%- endif -%}
+
+
+{% schema %}
+{
+  "name": "Look List",
+  "settings": [
+    {
+        "type": "product_list",
+        "id": "products",
+        "label": "t:global.product_list.products",
+    }
+  ]
+}
+{% endschema %}
