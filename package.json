@@ -1,7 +1,20 @@
 {
+
+  "scripts": {
+
+    "dev": "shopify theme dev --store coldral.myshopify.com",
+
+    "dev:css": "tailwindcss -i ./assets/input.css -o ./assets/output.css --watch"
+
+  },
+
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
-    "postcss": "^8.5.6",
+
+    "@tailwindcss/cli": "^4.1.18",
+
     "tailwindcss": "^4.1.18"
+
   }
+
 }
+

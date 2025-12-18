@@ -117,10 +117,7 @@ CSS
 
   /* Grille produits : 2 colonnes mobile */
   #shopify-section-{{ section.id }} .product-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 0;
-    row-gap: 0;
+
     width: 100%;
     margin: 0 auto;
   }
@@ -140,9 +137,7 @@ CSS
 
   @media screen and (min-width: 768px) {
     /* 3 colonnes desktop */
-    #shopify-section-{{ section.id }} .product-list {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+  
 
     #shopify-section-{{ section.id }} .product-card__overlay-title {
       font-size: 1rem; /* ≈ 16px */
@@ -279,7 +274,7 @@ LIQUID
               <div class="collection__main">
                 {%- render 'active-facets', results: collection -%}
 
-                <product-list id="product-list-{{ section.id }}" class="product-list" collection-mobile-layout="{{ products_mobile_grid_mode }}" collection-desktop-layout="{{ products_desktop_grid_mode }}">
+                <product-list id="product-list-{{ section.id }}" class="product-lists grid grid-cols-2 gap-x-1 gap-y-6 md:grid-cols-3 lg:grid-cols-4" collection-mobile-layout="{{ products_mobile_grid_mode }}" collection-desktop-layout="{{ products_desktop_grid_mode }}">
                   {%- for product in collection.products -%}
                     {%- render 'product-card', product: product, reveal: settings.stagger_products_apparition, position: forloop.index, hide_product_information: section.settings.hide_product_information, stacked: true -%}
                   {%- endfor -%}

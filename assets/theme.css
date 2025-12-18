@@ -2175,7 +2175,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
   scroll-snap-align: start;
   grid-template-columns: minmax(0, 1fr);
   align-content: start;
-  gap: 1.25rem;
+  gap: 4px;
   display: grid;
   position: relative;
 }
