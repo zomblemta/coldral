@@ -1,20 +1,33 @@
+<style>
+  .look-list-container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+  }
+  .look-list__item {
+    width: calc(100% / 4);
+  }
+</style>
 {%- if section.settings.products.size > 0 -%}
-<div class="flex overflow-x-auto gap-1 cursor-grab">
+  <scroll-carousel allow-drag class="look-list-container flex overflow-x-auto gap-1 cursor-grab">
     {%- for product in section.settings.products -%}
+      <div class="look-list__item shrink-0">
         {%- render 'product-card', product: product -%}
+      </div>
     {%- endfor -%}
-</div>
+  </scroll-carousel>
 {%- endif -%}
-
 
 {% schema %}
 {
-  "name": "Look List",
+  "name": "t:sections.look_list.name",
   "settings": [
     {
-        "type": "product_list",
-        "id": "products",
-        "label": "t:global.product_list.products",
+      "type": "product_list",
+      "id": "products",
+      "label": "t:sections.look_list.products"
     }
   ],
   "presets": [

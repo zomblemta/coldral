@@ -56,7 +56,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 <product-card
-  class="product-card product-card--overlay {% if is_sold_out %}product-card--sold-out{% endif %}"
+  class="product-card product-card--overlay {% if is_sold_out %}product-card--sold-out{% endif %} {{ class }}"
   {% if reveal %}reveal-on-scroll="true"{% endif %}
   handle="{{ product.handle | escape }}"
 >

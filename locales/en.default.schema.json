@@ -1683,6 +1683,10 @@
           "name": "Video"
         }
       }
+    },
+    "look_list": {
+      "name": "Look List",
+      "products": "Products"
     }
   }
 }
