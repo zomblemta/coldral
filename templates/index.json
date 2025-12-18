@@ -57,9 +57,25 @@
         "background": "#000000",
         "controls_color": "#ffffff"
       }
+    },
+    "look_list_H6gexx": {
+      "type": "look-list",
+      "name": "Look List",
+      "settings": {
+        "products": [
+          "the-boxy-shirt-black",
+          "the-boxy-shirt-grey",
+          "the-boxy-shirt-vintage-white",
+          "the-classic-shirt-black",
+          "the-classic-shirt-grey",
+          "the-classic-shirt-white",
+          "the-curved-trousers-black"
+        ]
+      }
     }
   },
   "order": [
-    "slideshow"
+    "slideshow",
+    "look_list_H6gexx"
   ]
 }
