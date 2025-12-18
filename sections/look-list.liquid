@@ -9,6 +9,12 @@
   .look-list__item {
     width: calc(100% / 4);
   }
+
+@media (max-width: 768px) {
+  .look-list__item {
+    width: calc((100% + 100px) / 2);
+  }
+}
 </style>
 {%- if section.settings.products.size > 0 -%}
   <scroll-carousel allow-drag class="look-list-container flex overflow-x-auto gap-1 cursor-grab">

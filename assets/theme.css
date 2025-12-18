@@ -826,10 +826,12 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 :where(.modal, .drawer, .popover, .header-search)::part(overlay) {
-  background: rgb(var(--page-overlay));
+  background: #00000001;
   min-height: 100vh;
   position: fixed;
   inset: 0;
+  backdrop-filter: blur(20px);
+  
 }
 
 :where(.modal, .drawer, .popover, .header-search)::part(close-button) {
@@ -2216,7 +2218,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
   background: rgb(var(--circle-button-background));
   color: rgb(var(--circle-button-text-color));
   z-index: 1;
-  padding: .625rem;
+  padding: .4rem;
   position: absolute;
   inset-block-end: .5rem;
   inset-inline-end: .5rem;
@@ -2414,6 +2416,12 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 .quick-buy-modal__content {
   grid-template-columns: minmax(0, 1fr);
   display: grid;
+}
+
+
+
+backdropBlur animation {
+  backdrop-filter: blur(20px);
 }
 
 .quick-buy-modal__close-button {
