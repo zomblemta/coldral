@@ -1,0 +1,824 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
+----------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- liquid
+  # --- 1. CONFIGURATION (respect Prestige) ---
+  if hide_product_information
+    assign show_badges = false
+    assign show_rating = false
+    assign show_vendor = false
+    assign show_title = false
+    assign show_prices = false
+    assign show_swatches = false
+    assign show_quick_buy = show_quick_buy | default: settings.show_quick_buy, allow_false: true
+    assign show_secondary_image = show_secondary_image | default: settings.show_secondary_image, allow_false: true
+  else
+    assign show_badges = show_badges | default: true, allow_false: true
+    assign show_rating = show_rating | default: settings.show_product_rating, allow_false: true
+    assign show_vendor = show_vendor | default: settings.show_vendor, allow_false: true
+    assign show_quick_buy = show_quick_buy | default: settings.show_quick_buy, allow_false: true
+    assign show_title = true
+    assign show_prices = true
+    assign show_secondary_image = show_secondary_image | default: settings.show_secondary_image, allow_false: true
+    assign show_swatches = show_swatches | default: true, allow_false: true
+  endif
+
+  # --- 2. LOGIQUE STOCK ROBUSTE (respect "non suivi" + policy) ---
+  assign is_sold_out = true
+
+  for v in product.variants
+    # Non suivi de stock => disponible
+    if v.inventory_management == blank or v.inventory_management == nil
+      assign is_sold_out = false
+      break
+    endif
+
+    # Continue à vendre même en rupture => disponible
+    if v.inventory_policy == 'continue'
+      assign is_sold_out = false
+      break
+    endif
+
+    # Stock physique
+    if v.inventory_quantity > 0
+      assign is_sold_out = false
+      break
+    endif
+  endfor
+
+  # Variante par défaut pour prix / quick buy
+  assign variant = product.selected_or_first_available_variant
+-%}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+<product-card
+  class="product-card product-card--overlay {% if is_sold_out %}product-card--sold-out{% endif %}"
+  {% if reveal %}reveal-on-scroll="true"{% endif %}
+  handle="{{ product.handle | escape }}"
+>
+
+  {%- comment -%} -------------------------------------------------------------
+  MEDIA / SLIDER
+  -------------------------------------------------------------- {%- endcomment -%}
+  {%- if product.media.size > 0 -%}
+    <div class="product-card__figure">
+      {%- comment -%} Badge SOLD OUT ou badges classiques {%- endcomment -%}
+      {%- if is_sold_out -%}
+        <span class="badge-sold-out-overlay">SOLD OUT</span>
+      {%- else -%}
+        {%- if show_badges -%}
+          {%- render 'product-badges', product: product, vertical: true, context: 'card' -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      <div class="product-slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            {%- for image in product.images -%}
+              <div class="swiper-slide">
+                <a href="{{ product.url }}" draggable="false" data-instant>
+                  {{ image
+                    | image_url: width: 800
+                    | image_tag:
+                      loading: 'lazy',
+                      widths: '200,300,400,500,600,700,800,1000,1200',
+                      alt: product.title,
+                      class: 'product-card__image'
+                  }}
+                </a>
+              </div>
+            {%- endfor -%}
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      {%- comment -%} -----------------------------------------------------------
+      OVERLAY INFO (metafield light_description)
+      ------------------------------------------------------------ {%- endcomment -%}
+      {%- if product.metafields.custom.light_description != blank -%}
+        <div class="product-card__overlay-info">
+          <div class="product-card__overlay-description smallcaps text-subdued" style="margin-top: 4px;">
+            {{ product.metafields.custom.light_description.value }}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} -----------------------------------------------------------
+      QUICK BUY (AFFICHAGE uniquement, fonctionnel = code 1, caché si sold out)
+      ------------------------------------------------------------ {%- endcomment -%}
+      {%- if show_quick_buy and is_sold_out == false -%}
+        <div class="quick-buy-container">
+          {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
+            <product-form>
+              {%- form 'product', product -%}
+                <input type="hidden" name="id" value="{{ variant.id }}">
+                <button type="submit" class="product-card__quick-add-button">
+                  <span class="sr-only">{{ 'product.general.add_to_cart_button' | t }}</span>
+                  {%- render 'icon' with 'plus' -%}
+                </button>
+              {%- endform -%}
+            </product-form>
+          {%- else -%}
+            {%- assign quick_buy_id = 'quick-buy-' | append: product.id -%}
+            <button type="button" class="product-card__quick-add-button" aria-controls="{{ quick_buy_id }}">
+              <span class="sr-only">{{ 'product.general.choose_options' | t }}</span>
+              {%- render 'icon' with 'plus' -%}
+            </button>
+            <quick-buy-modal
+              handle="{{ product.handle }}?variant={{ variant.id }}"
+              id="{{ quick_buy_id }}"
+              class="quick-buy-modal modal"
+            ></quick-buy-modal>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  INFO PRODUIT - TITRE / PRIX / SWATCHES / RATING
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  <div class="product-card__info empty:hidden">
+    {%- if show_vendor and product.vendor != blank -%}
+      <p class="product-card__vendor smallcaps text-subdued">
+        {{ product.vendor }}
+      </p>
+    {%- endif -%}
+
+    {%- if show_title or show_prices -%}
+      <div class="product-card__meta-top">
+        {%- if show_title -%}
+          <h3 class="product-card__title">
+            <a href="{{ product.url }}" class="product-card__title-link" data-instant>
+              {{- product.title -}}
+            </a>
+          </h3>
+        {%- endif -%}
+
+        {%- if show_prices -%}
+          <div class="product-card__price-wrapper">
+            {%- if is_sold_out -%}
+              <span class="product-card__price product-card__price--regular">
+                {{ variant.price | money }}
+              </span>
+            {%- else -%}
+              {%- assign price = variant.price -%}
+              {%- assign compare_at_price = variant.compare_at_price -%}
+
+              {%- if compare_at_price > price -%}
+                <span class="product-card__price product-card__price--sale">
+                  {{ price | money }}
+                </span>
+                <span class="product-card__price product-card__price--compare">
+                  {{ compare_at_price | money }}
+                </span>
+              {%- else -%}
+                <span class="product-card__price product-card__price--regular">
+                  {{ price | money }}
+                </span>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- comment -%}
+    -------------------------------------------------------------------------------
+    COLOR DOTS via metafields (version simplifiée du code 1, seulement affichage)
+    -------------------------------------------------------------------------------
+    {%- endcomment -%}
+
+    {%- if show_swatches -%}
+      {%- liquid
+        assign mf_colors = product.metafields.custom.colors_available.value | default: product.metafields.custom.colors_available
+        assign current_color = mf_colors | first | default: mf_colors
+
+        assign mh_val = product.metafields.custom.colors_swatch_handle.value | default: product.metafields.custom.colors_swatch_handle
+        if mh_val == blank
+          assign handles_source = '' | split: ','
+        else
+          assign handles_source = mh_val
+        endif
+      -%}
+
+      {%- if current_color != blank or handles_source.size > 0 -%}
+        <div class="color-switch color-switch--card">
+          <div class="color-switch__items">
+            {%- if current_color != blank -%}
+              <a
+                href="{{ product.url }}"
+                class="color-switch__dot is-active"
+                style="--swatch-color: {{ current_color }};"
+                title="{{ product.title | escape }}"
+              ></a>
+            {%- endif -%}
+
+            {%- for raw in handles_source -%}
+              {%- assign handle = raw | strip | split: '/' | last -%}
+              {%- if handle == blank -%}{% continue %}{%- endif -%}
+              {%- assign p = all_products[handle] -%}
+              {%- if p != empty -%}
+                {%- assign p_color = p.metafields.custom.colors_available.value | first | default: p.metafields.custom.colors_available -%}
+                <a
+                  href="{{ p.url }}"
+                  class="color-switch__dot"
+                  style="--swatch-color: {{ p_color | default: '#ddd' }};"
+                  title="{{ p.title | escape }}"
+                ></a>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if show_rating -%}
+      {%- render 'product-rating',
+        product: product,
+        show_empty: settings.show_product_rating_if_empty,
+        display_mode: settings.product_rating_mode
+      -%}
+    {%- endif -%}
+  </div>
+</product-card>
+
+<style>
+/* =========================================================
+   1. FOND & SEAM FIX : on unifie le fond et on masque la ligne
+   ========================================================= */
+
+.product-card--overlay {
+  background-color: #E9EBEC; /* même fond partout pour la card */
+}
+
+/* Tous les containers de l'image partagent le même fond
+   et n'ont PAS de bordure basse */
+.product-card--overlay .product-card__figure,
+.product-card--overlay .product-slider,
+.product-card--overlay .swiper,
+.product-card--overlay .swiper-wrapper,
+.product-card--overlay .swiper-slide,
+.product-card--overlay .swiper-slide a {
+  background-color: #E9EBEC;
+  border-bottom: none !important;
+}
+
+/* Si jamais une bordure ou un anti-alias reste, on la recouvre
+   avec un pseudo-élément collé en bas de la figure */
+.product-card--overlay .product-card__figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card--overlay .product-card__figure::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;       /* 1px sous l'image pour recouvrir toute “ligne” résiduelle */
+  height: 2px;
+  background-color: #E9EBEC;
+  z-index: 1;
+}
+
+/* Le bloc d’info a le même fond, sans bordure, et ne crée pas de “gap” */
+.product-card--overlay .product-card__info {
+  background-color: #E9EBEC;
+  padding: 0.75rem 1rem 0.9rem;
+  border-top: none;
+  margin-top: 0;
+}
+
+/* =========================================================
+   2. IMAGE
+   ========================================================= */
+
+.product-card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border: none;
+}
+
+/* =========================================================
+   3. BADGE SOLD OUT
+   ========================================================= */
+
+.badge-sold-out-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.product-card--sold-out .product-card__image {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+.product-card--sold-out .product-card__title-link {
+  color: #888;
+}
+
+/* =========================================================
+   4. OVERLAY DESCRIPTION (bande en bas de l'image)
+   ========================================================= */
+
+.product-card__overlay-info {
+  background-color: #E9EBEC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  color: #000;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.product-card__overlay-description {
+  margin: 0;
+}
+
+/* =========================================================
+   5. TEXTE SOUS L’IMAGE
+   ========================================================= */
+
+.product-card__vendor {
+  margin: 0 0 0.25rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Ligne 1 : TITRE + (couleurs) à gauche – PRIX à droite */
+.product-card__meta-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+/* Titre bloc gauche */
+.product-card__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.product-card__title-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-card__title-link:hover {
+  text-decoration: underline;
+}
+
+/* Prix bloc droite */
+.product-card__price-wrapper {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  margin-left: auto;   /* pousse le prix complètement à droite */
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+.product-card__price {
+  display: inline-block;
+}
+
+.product-card__price--compare {
+  text-decoration: line-through;
+  opacity: 0.6;
+  margin-left: 0.25rem;
+}
+
+/* =========================================================
+   6. COLOR DOTS (metafields)
+   ========================================================= */
+
+.color-switch.color-switch--card {
+  margin: 0.35rem 0 0.1rem;
+  text-align: left;
+}
+
+.color-switch--card .color-switch__items {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.color-switch--card .color-switch__dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--swatch-color);
+  border: 1px solid rgba(0, 0, 0, 0.28);
+  display: block;
+  transition: transform .15s ease, border .15s ease;
+}
+
+.color-switch--card .color-switch__dot:hover {
+  transform: scale(1.1);
+}
+
+.color-switch--card .color-switch__dot.is-active {
+  border: 1px solid #000;
+  transform: scale(1.2);
+}
+
+/* =========================================================
+   7. QUICK ADD
+   ========================================================= */
+
+.product-card--overlay .product-card__quick-add-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 3;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.product-card--overlay .product-card__quick-add-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-card--overlay .product-card__quick-add-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* =========================================================
+   8. SLIDER / SWIPER
+   ========================================================= */
+
+.product-slider {
+  position: relative;
+}
+
+.product-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000;
+  transform: scale(0.5);
+  transform-origin: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  gap: 4px;
+  padding: 5px;
+  background: transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination .bullet {
+  flex: 1;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-pagination .bullet .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+/* Flèches + pagination au hover desktop */
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper:hover .swiper-pagination {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Badges au-dessus de tout */
+.product-card--overlay .product-badges {
+  z-index: 4;
+}
+
+/* =========================================================
+   9. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 699px) {
+  .product-card--overlay .product-card__info {
+    padding: 0.6rem 0.75rem 0.8rem;
+  }
+
+  .product-card__meta-top {
+    font-size: 0.8125rem;
+  }
+
+  .color-switch.color-switch--card {
+    margin-top: 0.3rem;
+  }
+
+  .color-switch--card .color-switch__dot {
+    width: 16px;
+    height: 16px;
+  }
+
+  .product-card--overlay .product-card__quick-add-button {
+    bottom: 4px;
+    right: 4px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .product-card--overlay .product-card__quick-add-button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Overlay description devient bloc au-dessus sur mobile */
+  .product-card--overlay .product-card__overlay-info {
+    position: static;
+    background: transparent;
+    padding: 0 0.75rem 0.25rem 0.75rem;
+    pointer-events: auto;
+  }
+
+  .product-card__figure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-pagination {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .swiper.show-arrows .swiper-button-prev,
+  .swiper.show-arrows .swiper-button-next,
+  .swiper.show-arrows .swiper-pagination {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* =========================================
+   1. Fix ratio image = pas de ligne grise
+   ========================================= */
+
+.product-card--overlay .product-card__figure {
+  position: relative;
+  aspect-ratio: 3/4; /* Ajuster selon ton design */
+}
+
+.product-card--overlay .product-card__figure .swiper,
+.product-card--overlay .product-card__figure .swiper-wrapper,
+.product-card--overlay .product-card__figure .swiper-slide,
+.product-card--overlay .product-card__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* =========================================
+   2. Alignements propres Prestige-compatible
+   ========================================= */
+
+.product-card--overlay .product-card__info {
+  display: block; /* remplace le grid */
+  text-align: left;
+}
+
+.product-card--overlay .product-card__meta-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card--overlay .product-card__price-wrapper {
+  margin-left: auto;
+  text-align: right;
+}
+
+.product-card--overlay .color-switch__items {
+  justify-content: flex-start;
+}
+
+
+/* =========================================
+   3. Style général (inchangé)
+   ========================================= */
+
+.badge-sold-out-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 5;
+}
+
+.product-card--sold-out .product-card__image {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.product-card__overlay-info {
+  background-color: #E9EBEC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  color: #000;
+  z-index: 2;
+}
+
+.product-card__info {
+  background-color: #E9EBEC;
+  padding: 0.75rem 1rem 0.9rem;
+}
+
+.color-switch--card .color-switch__dot:hover {
+  transform: scale(1.1);
+}
+
+.color-switch--card .color-switch__dot.is-active {
+  border: 1px solid #000;
+  transform: scale(1.2);
+}
+
+.product-card__meta-top {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+}
+
+.product-card__price-wrapper {
+  margin-left: auto; /* pousse le prix à droite */
+  text-align: right;
+}
+.color-switch--card {
+  justify-self: start; /* aligne l’item à gauche dans la grid */
+}
+
+
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const initProductCardSwipers = (root = document) => {
+    root.querySelectorAll(".product-slider .swiper:not(.swiper-initialized)").forEach(function (swiperEl) {
+      const slides = swiperEl.querySelectorAll(".swiper-slide");
+      const slidesCount = slides.length;
+      const paginationEl = swiperEl.querySelector(".swiper-pagination");
+
+      if (!paginationEl) return;
+
+      paginationEl.innerHTML = "";
+
+      // Si une seule image : pas de slider / pas de bullets
+      if (slidesCount <= 1) {
+        swiperEl.classList.add("swiper-no-swiping");
+        paginationEl.style.display = "none";
+        const prev = swiperEl.querySelector(".swiper-button-prev");
+        const next = swiperEl.querySelector(".swiper-button-next");
+        if (prev) prev.style.display = "none";
+        if (next) next.style.display = "none";
+        return;
+      }
+
+      // Bullets custom (barres avec fill)
+      for (let i = 0; i < slidesCount; i++) {
+        const bullet = document.createElement("div");
+        bullet.classList.add("bullet");
+        bullet.innerHTML = '<div class="fill"></div>';
+        paginationEl.appendChild(bullet);
+      }
+
+      const swiper = new Swiper(swiperEl, {
+        loop: true,
+        navigation: {
+          nextEl: swiperEl.querySelector(".swiper-button-next"),
+          prevEl: swiperEl.querySelector(".swiper-button-prev"),
+        },
+        on: {
+          init: function () {
+            const fills = paginationEl.querySelectorAll(".fill");
+            fills.forEach((fill, index) => {
+              fill.style.width = index === swiper.realIndex ? "100%" : "0%";
+            });
+          },
+          slideChange: function () {
+            const fills = paginationEl.querySelectorAll(".fill");
+            fills.forEach((fill, index) => {
+              fill.style.width = index === swiper.realIndex ? "100%" : "0%";
+            });
+          },
+        },
+      });
+
+      // Mobile : au swipe, on montre les flèches/pagination quelques secondes
+      if ("ontouchstart" in window) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        swiperEl.addEventListener("touchstart", function (e) {
+          touchStartX = e.changedTouches[0].screenX;
+        });
+
+        swiperEl.addEventListener("touchend", function (e) {
+          touchEndX = e.changedTouches[0].screenX;
+          if (Math.abs(touchEndX - touchStartX) > 30) {
+            swiperEl.classList.add("show-arrows");
+            setTimeout(() => {
+              swiperEl.classList.remove("show-arrows");
+            }, 3000);
+          }
+        });
+      }
+    });
+  };
+
+  initProductCardSwipers();
+
+  document.addEventListener("shopify:section:load", function (event) {
+    initProductCardSwipers(event.target);
+  });
+});
+</script>

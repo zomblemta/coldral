@@ -1,0 +1,181 @@
+{%- if section.blocks.size > 0 -%}
+  {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
+
+  <div class="section-spacing color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
+    <div class="container {% if section.settings.text_alignment == 'center' %}container--xl{% endif %}">
+      <div class="section-stack">
+        {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
+
+        <!-- TABS custom -->
+        <div class="custom-tabs">
+          <x-tabs class="content-tabs {% if section.settings.text_alignment == 'center' %}content-tabs--center{% endif %}">
+            <template shadowrootmode="open">
+              <slot role="tablist" part="tab-list" name="title"></slot>
+              <slot part="tab-panel-list" name="content"></slot>
+            </template>
+
+            {%- for block in section.blocks -%}
+              {%- liquid
+                assign title = block.settings.page.title | default: block.settings.title
+                if block.type == 'tab'
+                  assign content = block.settings.page.content | default: block.settings.content
+                elsif block.type == 'liquid'
+                  assign content = block.settings.liquid
+                endif
+              -%}
+
+              {%- if title != blank and content != blank -%}
+                <button type="button" role="tab" class="tab-btn" slot="title" {{ block.shopify_attributes }}>{{ title }}</button>
+                <div role="tabpanel" slot="content" {% cycle '', 'hidden', 'hidden', 'hidden', 'hidden' %}>
+                  <div class="prose">{{ content }}</div>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </x-tabs>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+<style>
+/* ================= CUSTOM TABS ================= */
+
+/* Tab list container (Shadow DOM via ::part) */
+.custom-tabs x-tabs::part(tab-list) {
+  display: flex !important;
+  gap: 2rem !important;
+  align-items: center !important;
+  border-bottom: 1px solid rgba(0,0,0,.25) !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  scrollbar-width: none;
+  padding-bottom: .25rem !important;
+}
+.custom-tabs x-tabs::part(tab-list)::-webkit-scrollbar { display: none; }
+
+/* Reset + style of tab buttons */
+.custom-tabs [role="tab"] {
+  all: unset;
+  display: inline-block !important;
+  cursor: pointer !important;
+  position: relative !important;
+  padding: .25rem 0 .5rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: .12em !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  opacity: .6 !important;
+  color: #000 !important;
+}
+.custom-tabs [role="tab"][aria-selected="true"] {
+  opacity: 1 !important;
+}
+.custom-tabs [role="tab"]::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0; right: 0; bottom: -1px;
+  height: 2px;
+  background: #000 !important;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.custom-tabs [role="tab"][aria-selected="true"]::after {
+  opacity: 1 !important;
+}
+
+/* Tab panels spacing */
+.custom-tabs x-tabs::part(tab-panel-list) {
+  margin-top: 1rem !important;
+}
+
+/* Empêche le thème de forcer hidden/accordéon */
+.custom-tabs .hidden { display: block !important; }
+.custom-tabs .accordion-group { display: none !important; }
+
+@media (max-width: 749px) {
+  .custom-tabs x-tabs::part(tab-list) { gap: 1.25rem !important; }
+  .custom-tabs [role="tab"] { white-space: nowrap !important; }
+}
+
+</style>
+
+
+
+{% schema %}
+{
+  "name": "t:sections.tabs.name",
+  "class": "shopify-section--tabs",
+  "max_blocks": 5,
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:global.colors.scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "separate_section_with_border",
+      "label": "t:global.section.separate_section_with_border",
+      "default": true
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "t:global.text.subheading",
+      "default": "Subheading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "t:global.text.heading",
+      "default": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "t:global.text.alignment",
+      "options": [
+        { "value": "start", "label": "t:global.position.left" },
+        { "value": "center", "label": "t:global.position.center" }
+      ],
+      "default": "center"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "t:sections.tabs.blocks.tab.name",
+      "settings": [
+        { "type": "inline_richtext", "id": "title", "label": "t:global.text.title", "default": "Tab" },
+        { "type": "richtext", "id": "content", "label": "t:global.text.content", "default": "<p>Use this text...</p>" },
+        { "type": "page", "id": "page", "label": "t:sections.tabs.blocks.tab.page" },
+        { "type": "checkbox", "id": "open_on_mobile", "label": "t:sections.tabs.blocks.tab.open_on_mobile", "default": false }
+      ]
+    },
+    {
+      "type": "liquid",
+      "name": "t:sections.tabs.blocks.liquid.name",
+      "settings": [
+        { "type": "inline_richtext", "id": "title", "label": "t:global.text.title", "default": "Tab" },
+        { "type": "liquid", "id": "liquid", "label": "t:global.code.liquid", "default": "<p>Use Liquid code...</p>" },
+        { "type": "checkbox", "id": "open_on_mobile", "label": "t:sections.tabs.blocks.tab.open_on_mobile", "default": false }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.tabs.presets.tab.name",
+      "blocks": [
+        { "type": "tab", "settings": { "title": "Tab 1", "content": "<p>Content 1</p>" } },
+        { "type": "tab", "settings": { "title": "Tab 2", "content": "<p>Content 2</p>" } },
+        { "type": "tab", "settings": { "title": "Tab 3", "content": "<p>Content 3</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "{{ settings.heading_font.family }}";
+  src: url("{{ settings.heading_font | font_url }}") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "{{ settings.text_font.family }}";
+  src: url("{{ settings.text_font | font_url }}") format("woff2");
+  font-display: swap;
+}

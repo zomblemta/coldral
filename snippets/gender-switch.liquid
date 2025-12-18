@@ -1,0 +1,57 @@
+{%- comment -%}
+Switch "Femmes / Hommes" pour la PDP.
+- Détection via tags: men/homme ou women/femme (casse indifférente en testant variantes).
+- Métachamp produit (Référence produit): custom.produit_genre_oppose
+- Onglet actif souligné; l’autre renvoie vers le produit du métachamp.
+- Masqué si aucun genre détecté ou pas de produit opposé.
+{%- endcomment -%}
+
+{%- assign is_men = false -%}
+{%- assign is_women = false -%}
+
+{%- assign tags = product.tags -%}
+{%- if tags contains 'men' or tags contains 'Men' or tags contains 'homme' or tags contains 'Homme' -%}
+  {%- assign is_men = true -%}
+{%- elsif tags contains 'women' or tags contains 'Women' or tags contains 'femme' or tags contains 'Femme' -%}
+  {%- assign is_women = true -%}
+{%- endif -%}
+
+{%- assign other_product = product.metafields.custom.produit_genre_oppose.value -%}
+
+{%- assign has_gender = false -%}
+{%- if is_men or is_women -%}
+  {%- assign has_gender = true -%}
+{%- endif -%}
+
+{%- if has_gender and other_product -%}
+  {%- if is_men -%}
+    {%- assign men_url = product.url -%}
+    {%- assign women_url = other_product.url -%}
+  {%- elsif is_women -%}
+    {%- assign men_url = other_product.url -%}
+    {%- assign women_url = product.url -%}
+  {%- endif -%}
+   <p> <b> Gender: </b> </p> 
+  <div class="gender-switch" role="tablist" aria-label="Genre du produit">
+    <a role="tab"
+       aria-selected="{% if is_men %}true{% else %}false{% endif %}"
+       class="gender-switch__tab {% if is_men %}is-active{% endif %}"
+       href="{{ men_url | escape }}">
+      Man
+    </a>
+
+    <a role="tab"
+       aria-selected="{% if is_women %}true{% else %}false{% endif %}"
+       class="gender-switch__tab {% if is_women %}is-active{% endif %}"
+       href="{{ women_url | escape }}">
+      Woman
+    </a>
+  </div>
+
+  <style>
+    .gender-switch{display:flex;gap:24px;align-items:flex-end;margin:8px 0 20px}
+    .gender-switch__tab{position:relative;padding-bottom:6px;text-decoration:none;color:currentColor;opacity:.6}
+    .gender-switch__tab.is-active{font-weight:600;opacity:1}
+    .gender-switch__tab.is-active::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:currentColor}
+  </style>
+{%- endif -%}

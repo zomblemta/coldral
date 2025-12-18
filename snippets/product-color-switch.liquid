@@ -1,0 +1,128 @@
+{%- comment -%}
+Color swatch multi-produits – version PRODUCTION (/products/)
+- custom.colors_available : liste de couleurs (ou valeur unique)
+- custom.colors_swatch_handle : liste OU chaîne (handles séparés par , ; | ou un seul handle)
+- URLs produits : /products/handle
+{%- endcomment -%}
+
+{%- assign product_path_prefix = 'products' -%} 
+
+{%- comment -%} --- Couleur du produit courant --- {%- endcomment -%}
+{%- assign mf_colors_raw = product.metafields.custom.colors_available -%}
+{%- assign mf_colors_val = mf_colors_raw.value | default: mf_colors_raw -%}
+{%- assign current_color = '' -%}
+{%- if mf_colors_val != blank -%}
+  {%- if mf_colors_val.first != nil -%}
+    {%- assign current_color = mf_colors_val | first -%}
+  {%- else -%}
+    {%- assign current_color = mf_colors_val -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} --- Normalisation des handles (liste OU chaîne) --- {%- endcomment -%}
+{%- assign mh_raw = product.metafields.custom.colors_swatch_handle -%}
+{%- assign mh_val = mh_raw.value | default: mh_raw -%}
+
+{%- if mh_val == blank -%}
+  {%- assign handles_source = '' | split: ',' -%}
+{%- elsif mh_val.first != nil -%}
+  {%- assign handles_source = mh_val -%}
+{%- else -%}
+  {%- assign s = mh_val | append: '' | strip -%}
+  {%- assign s = s
+    | replace: ';', ','
+    | replace: '|', ','
+    | replace: ' ,', ','
+    | replace: ', ', ','
+    | replace: '\r', ','
+    | replace: '\n', ',' -%}
+  {%- assign handles_source = s | split: ',' -%}
+{%- endif -%}
+
+{%- comment -%} --- Détermination des flags d’affichage --- {%- endcomment -%}
+{%- assign has_color = false -%}
+{%- if current_color != blank -%}
+  {%- assign has_color = true -%}
+{%- endif -%}
+
+{%- assign has_linked = false -%}
+{%- for h in handles_source -%}
+  {%- assign h_trim = h | strip -%}
+  {%- if h_trim != '' -%}
+    {%- assign has_linked = true -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign show_block = false -%}
+{%- if has_color or has_linked -%}
+  {%- assign show_block = true -%}
+{%- endif -%}
+
+{%- if show_block -%}
+     <p> <b> Color: </b> </p> 
+  <div class="color-switch">
+    <div class="color-switch__items">
+
+      {%- comment -%} Produit courant {%- endcomment -%}
+      {%- if has_color -%}
+        <a href="{{ product.url }}"
+           class="color-switch__dot is-active"
+           title="{{ product.title | escape }}"
+           style="--swatch-color: {{ current_color | escape }};">
+        </a>
+      {%- endif -%}
+
+      {%- comment -%} Produits liés via handles {%- endcomment -%}
+      {%- if has_linked -%}
+        {%- for raw in handles_source -%}
+          {%- assign raw_clean = raw | strip -%}
+          {%- if raw_clean == '' -%}{% continue %}{%- endif -%}
+
+          {%- assign segs = raw_clean | split: '/' -%}
+          {%- assign handle = segs | last | strip -%}
+          {%- if handle == '' or handle == 'product' or handle == 'products' -%}{% continue %}{%- endif -%}
+
+          {%- assign p = all_products[handle] -%}
+          {%- assign p_color = '' -%}
+          {%- if p != nil -%}
+            {%- assign p_color_raw = p.metafields.custom.colors_available -%}
+            {%- assign p_color_val = p_color_raw.value | default: p_color_raw -%}
+            {%- if p_color_val != blank -%}
+              {%- if p_color_val.first != nil -%}
+                {%- assign p_color = p_color_val | first -%}
+              {%- else -%}
+                {%- assign p_color = p_color_val -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endif -%}
+
+          <a href="{{ routes.root_url }}{{ product_path_prefix }}/{{ handle }}"
+             class="color-switch__dot"
+             title="{{ p.title | default: handle | escape }}"
+             style="--swatch-color: {{ p_color | default: '#ddd' | escape }};">
+          </a>
+        {%- endfor -%}
+      {%- endif -%}
+
+    </div>
+  </div>
+
+  <style>
+    .color-switch { margin: .75rem 0 1.5rem; }
+    .color-switch__items { 
+      display: flex; 
+      gap: 12px; 
+      align-items: center; 
+      flex-wrap: wrap; 
+    }
+    .color-switch__dot {
+      width: 27px; height: 27px; border-radius: 50%;
+      background: var(--swatch-color);
+      border: 1px solid rgba(0,0,0,.28);
+      display: block;
+      transition: transform .15s ease, border .15s ease;
+    }
+    .color-switch__dot:hover { transform: scale(1.15); }
+    .color-switch__dot.is-active { border: 1px solid #000; transform: scale(1.25); }
+  </style>
+{%- endif -%}
