@@ -1,0 +1,75 @@
+<div class="full-img" style="margin-bottom: {{ section.settings.margin_bottom }}px;">
+  <div class="full-img__image w-full h-screen">
+    <img
+      src="{{ section.settings.image | image_url: width: 1920 }}"
+      alt="{{ section.settings.image.alt }}"
+      width="100%"
+      height="100%"
+    >
+    <div class="full-img__image-overlay absolute bottom-0 left-0 w-full h-full flex flex-col items-center justify-end gap-5  md:gap-6 pb-12 md:pb-16">
+      <h1 style="color: {{ section.settings.text_color }};" class="full-img__title text-2xl md:text-4xl font-bold">
+        {{ section.settings.title }}
+      </h1>
+      <a
+        href="{{ section.settings.button_url }}"
+        style="color: {{ section.settings.text_color }};"
+        class="full-img__description no-underline text-sm md:text-base  hover:underline "
+      >
+        {{- section.settings.button_text -}}
+      </a>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Full Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image Alt",
+      "default": "Image"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+        "type": "range",
+        "id": "margin_bottom",
+        "label": "Margin Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Full Image"
+    }
+  ]
+}
+{% endschema %}

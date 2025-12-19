@@ -12,7 +12,7 @@ may have important consequence on the section itself.
   <slideshow-carousel id="{{ carousel_id }}" class="slideshow" allow-swipe {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %} cell-selector=".slideshow__slide" {% if section.settings.autoplay %}autoplay="{{ section.settings.cycle_speed }}"{% endif %} {% if section.settings.autoplay and section.settings.autoplay_pause_on_video %}autoplay-pause-on-video{% endif %} role="region" style="{% render 'surface', background: section.settings.background %}">
     {%- for block in section.blocks -%}
       {%- capture slide -%}
-        <div class="content-over-media content-over-media--{{ section.settings.media_size }} cursor-pointer  hover:scale-101 transition-all duration-300" style="--content-over-media-content-max-width: {{ block.settings.content_max_width }}px; --content-over-media-gradient-overlay: {{ block.settings.gradient_overlay }}">
+        <div class="content-over-media content-over-media--{{ section.settings.media_size }} overflow-hidden" style="--content-over-media-content-max-width: {{ block.settings.content_max_width }}px; --content-over-media-gradient-overlay: {{ block.settings.gradient_overlay }}">
           {%- comment -%}---------------- MEDIA ----------------{%- endcomment -%}
           {%- if block.type == 'image' -%}
             {%- if block.settings.image != blank -%}
@@ -36,7 +36,7 @@ may have important consequence on the section itself.
                   >
                 {%- endif -%}
 
-                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, fetchpriority: fetch_priority, sizes: '100vw', widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, fetchpriority: fetch_priority, sizes: '100vw', widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200',class:'cursor-pointer  hover:scale-101 transition-all duration-300 ' -}}
               </picture>
             {%- else -%}
               {%- capture placeholder_image -%}{% cycle 'placeholder': 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
