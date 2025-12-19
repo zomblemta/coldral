@@ -1,19 +1,14 @@
-<div class="full-img" style="margin-bottom: {{ section.settings.margin_bottom }}px;">
-  <div class="full-img__image w-full h-screen">
-    <img
-      src="{{ section.settings.image | image_url: width: 1920 }}"
-      alt="{{ section.settings.image.alt }}"
-      width="100%"
-      height="100%"
-    >
-    <div class="full-img__image-overlay absolute bottom-0 left-0 w-full h-full flex flex-col items-center justify-end gap-5  md:gap-6 pb-12 md:pb-16">
-      <h1 style="color: {{ section.settings.text_color }};" class="full-img__title text-2xl md:text-4xl font-bold">
+<div class="full-img" style="padding-top: {{ section.settings.padding_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px;">
+  <div class="full-img__image w-full h-screen relative">
+    {% render 'alp-responsive-image' with section.settings.image as image, class: 'w-full h-full object-cover' %}
+    <div class="full-img__image-overlay z-1 absolute bottom-0 left-0 w-full h-full flex flex-col items-center justify-end gap-5  md:gap-6 pb-12 md:pb-16">
+      <h1 style="color: {{ section.settings.text_color }};" class="full-img__title text-2xl md:text-4xl font-bold tracking-wide">
         {{ section.settings.title }}
       </h1>
       <a
         href="{{ section.settings.button_url }}"
         style="color: {{ section.settings.text_color }};"
-        class="full-img__description no-underline text-sm md:text-base  hover:underline "
+        class="full-img__description text-sm md:text-base tracking-wide  after:content-[''] after:block after:w-full after:mt-2 after:h-[2px] after:bg-current  hover:after:scale-x-100 transition-all duration-300 after:scale-x-0"
       >
         {{- section.settings.button_text -}}
       </a>
@@ -56,14 +51,24 @@
       "label": "Button URL"
     },
     {
-        "type": "range",
-        "id": "margin_bottom",
-        "label": "Margin Bottom",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "default": 20
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
     }
   ],
   "presets": [
