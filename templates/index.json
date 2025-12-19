@@ -72,10 +72,24 @@
           "the-curved-trousers-black"
         ]
       }
+    },
+    "full_img_7UMrjA": {
+      "type": "full-img",
+      "name": "Full Image",
+      "settings": {
+        "image": "shopify://shop_images/20250919_COLDRAL_LOOKBOOK3549_-_copie.jpg",
+        "image_alt": "test",
+        "text_color": "#ffffff",
+        "title": "TOPS",
+        "button_text": "VIEW PRODUCT",
+        "button_url": "shopify://collections/tops-for-men",
+        "margin_bottom": 20
+      }
     }
   },
   "order": [
     "slideshow",
-    "look_list_H6gexx"
+    "look_list_H6gexx",
+    "full_img_7UMrjA"
   ]
 }
