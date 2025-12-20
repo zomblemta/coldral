@@ -95,8 +95,8 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
           </div>
 
           <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          {% comment %} <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> {% endcomment %}
         </div>
       </div>
 
@@ -774,6 +774,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const swiper = new Swiper(swiperEl, {
         loop: true,
+        // 启用触摸和鼠标拖拽滑动
+        simulateTouch: true,
+        touchRatio: 1,
+        touchAngle: 45,
+        grabCursor: true,
+        allowTouchMove: true,
+        // 滑动阻力
+        resistance: true,
+        resistanceRatio: 0.85,
+        // 滑动速度
+        speed: 300,
+        // 保留导航按钮（可选，主要用于辅助）
         navigation: {
           nextEl: swiperEl.querySelector(".swiper-button-next"),
           prevEl: swiperEl.querySelector(".swiper-button-prev"),

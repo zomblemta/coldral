@@ -22,6 +22,7 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --tracking-normal: 0em;
     --tracking-wide: 0.025em;
@@ -519,11 +520,27 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
+  }
   .object-contain {
     object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
+  }
+  .px-\[12px\] {
+    padding-inline: 12px;
+  }
+  .px-\[46px\] {
+    padding-inline: 46px;
+  }
+  .py-\[10px\] {
+    padding-block: 10px;
+  }
+  .py-\[20px\] {
+    padding-block: 20px;
   }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
@@ -570,6 +587,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .tracking-normal {
     --tw-tracking: var(--tracking-normal);
@@ -867,6 +888,16 @@
   .md\:gap-6 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:px-\[46px\] {
+    @media (width >= 48rem) {
+      padding-inline: 46px;
+    }
+  }
+  .md\:py-\[20px\] {
+    @media (width >= 48rem) {
+      padding-block: 20px;
     }
   }
   .md\:pb-16 {
