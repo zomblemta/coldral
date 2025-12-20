@@ -83,13 +83,29 @@
         "title": "TOPS",
         "button_text": "VIEW PRODUCT",
         "button_url": "shopify://collections/tops-for-men",
-        "margin_bottom": 20
+        "margin_bottom": 20,
+        "padding_top": 20
+      }
+    },
+    "look_list_w4DjRg": {
+      "type": "look-list",
+      "name": "Look List",
+      "settings": {
+        "products": [
+          "the-dome-puffer-grey-w",
+          "the-dome-puffer-black-w",
+          "the-draped-pullover-vintage-white",
+          "the-heavy-hoodie-black",
+          "the-foldover-trench-black-w",
+          "the-draped-pullover-grey-w"
+        ]
       }
     }
   },
   "order": [
     "slideshow",
     "look_list_H6gexx",
-    "full_img_7UMrjA"
+    "full_img_7UMrjA",
+    "look_list_w4DjRg"
   ]
 }
