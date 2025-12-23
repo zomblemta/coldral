@@ -826,12 +826,12 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 :where(.modal, .drawer, .popover, .header-search)::part(overlay) {
-  background: #00000001;
+  background: rgba(0, 0, 0, 0.3);
   min-height: 100vh;
   position: fixed;
   inset: 0;
-  backdrop-filter: blur(20px);
-  
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 :where(.modal, .drawer, .popover, .header-search)::part(close-button) {
@@ -5288,6 +5288,9 @@ product-rerender {
 .header-sidebar::part(content) {
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: rgb(var(--background) / 0.85) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
 
 .header-sidebar::part(panel-list) {
@@ -5295,10 +5298,14 @@ product-rerender {
 }
 
 .header-sidebar__scroller {
-  padding-block-end: var(--drawer-body-padding-block);
+  padding-block-end: 10px;
   padding-inline-start: var(--drawer-body-padding-inline);
   padding-inline-end: var(--drawer-body-padding-inline);
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .header-sidebar__linklist-button {
@@ -5356,8 +5363,8 @@ product-rerender {
 }
 
 .header-sidebar__main-panel {
-  background-color: rgb(var(--background));
-  background-image: var(--background-gradient);
+  background-color: transparent;
+  background-image: none;
   grid-template-rows: minmax(0, 1fr);
   grid-template-columns: minmax(0, 1fr);
   grid-auto-columns: max-content;
@@ -5373,7 +5380,7 @@ product-rerender {
   content: "";
   background: linear-gradient(transparent, rgb(var(--background)));
   width: 100%;
-  height: 2.5rem;
+  height: 3.5rem;
   position: absolute;
   inset-block-end: 100%;
   inset-inline-start: 0;
@@ -5394,8 +5401,8 @@ product-rerender {
 .header-sidebar__collapsible-panel {
   height: 100%;
   width: var(--drawer-max-width);
-  background-color: rgb(var(--background));
-  background-image: var(--background-gradient);
+  background-color: transparent;
+  background-image: none;
   display: none;
   position: absolute;
   inset-block-start: 0;
