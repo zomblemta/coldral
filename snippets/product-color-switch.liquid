@@ -59,20 +59,21 @@ Color swatch multi-produits – version PRODUCTION (/products/)
 {%- endif -%}
 
 {%- if show_block -%}
-     <p> <b> Color: </b> </p> 
+     <p> <b> Color: </b>{%- if current_color != blank -%} <span class="color-name-display">{{ current_color }}</span>{%- endif -%}</p> 
   <div class="color-switch">
     <div class="color-switch__items">
 
-      {%- comment -%} Produit courant {%- endcomment -%}
+      {%- comment -%} Current product {%- endcomment -%}
       {%- if has_color -%}
         <a href="{{ product.url }}"
            class="color-switch__dot is-active"
            title="{{ product.title | escape }}"
+           {%- if current_color != blank -%}data-color-name="{{ current_color | escape }}"{%- endif -%}
            style="--swatch-color: {{ current_color | escape }};">
         </a>
       {%- endif -%}
 
-      {%- comment -%} Produits liés via handles {%- endcomment -%}
+      {%- comment -%} Linked products via handles {%- endcomment -%}
       {%- if has_linked -%}
         {%- for raw in handles_source -%}
           {%- assign raw_clean = raw | strip -%}
@@ -99,6 +100,7 @@ Color swatch multi-produits – version PRODUCTION (/products/)
           <a href="{{ routes.root_url }}{{ product_path_prefix }}/{{ handle }}"
              class="color-switch__dot"
              title="{{ p.title | default: handle | escape }}"
+             {%- if p_color != blank -%}data-color-name="{{ p_color | escape }}"{%- endif -%}
              style="--swatch-color: {{ p_color | default: '#ddd' | escape }};">
           </a>
         {%- endfor -%}
@@ -116,13 +118,97 @@ Color swatch multi-produits – version PRODUCTION (/products/)
       flex-wrap: wrap; 
     }
     .color-switch__dot {
-      width: 27px; height: 27px; border-radius: 50%;
+      width: 100px;
+      height: 27px;
       background: var(--swatch-color);
       border: 1px solid rgba(0,0,0,.28);
       display: block;
       transition: transform .15s ease, border .15s ease;
+      position: relative;
     }
-    .color-switch__dot:hover { transform: scale(1.15); }
-    .color-switch__dot.is-active { border: 1px solid #000; transform: scale(1.25); }
+    .color-switch__dot:hover::after,
+    .color-switch__dot.is-active::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 110px; /* Slightly wider than dot (100px + 10px) */
+      height: 2px;
+      background: #000;
+    }
+    .color-switch__dot:hover { 
+      
+     }
+    .color-switch__dot.is-active {  }
+    .color-name-display {
+      font-weight: normal;
+      margin-left: 0.5rem;
+    }
   </style>
+  
+  <script>
+    (function() {
+      const colorSwitch = document.querySelector('.color-switch');
+      if (!colorSwitch) return;
+      
+      const colorNameDisplay = document.querySelector('.color-name-display');
+      if (!colorNameDisplay) return;
+      
+      const dots = colorSwitch.querySelectorAll('.color-switch__dot');
+      
+      // Update color name on hover
+      dots.forEach(function(dot) {
+        dot.addEventListener('mouseenter', function() {
+          const colorName = this.getAttribute('data-color-name');
+          if (colorName && colorName.trim() !== '') {
+            colorNameDisplay.textContent = colorName;
+            colorNameDisplay.style.display = 'inline';
+          } else {
+            colorNameDisplay.style.display = 'none';
+          }
+        });
+        
+        // Restore active color name when mouse leaves
+        dot.addEventListener('mouseleave', function() {
+          const activeDot = colorSwitch.querySelector('.color-switch__dot.is-active');
+          if (activeDot) {
+            const activeColorName = activeDot.getAttribute('data-color-name');
+            if (activeColorName && activeColorName.trim() !== '') {
+              colorNameDisplay.textContent = activeColorName;
+              colorNameDisplay.style.display = 'inline';
+            } else {
+              colorNameDisplay.style.display = 'none';
+            }
+          }
+        });
+        
+        // Update color name on click
+        dot.addEventListener('click', function(e) {
+          const colorName = this.getAttribute('data-color-name');
+          if (colorName && colorName.trim() !== '') {
+            colorNameDisplay.textContent = colorName;
+            colorNameDisplay.style.display = 'inline';
+          } else {
+            colorNameDisplay.style.display = 'none';
+          }
+        });
+      });
+      
+      // Initialize: Set current active color name
+      const activeDot = colorSwitch.querySelector('.color-switch__dot.is-active');
+      if (activeDot) {
+        const activeColorName = activeDot.getAttribute('data-color-name');
+        if (activeColorName && activeColorName.trim() !== '') {
+          colorNameDisplay.textContent = activeColorName;
+          colorNameDisplay.style.display = 'inline';
+        } else {
+          colorNameDisplay.style.display = 'none';
+        }
+      } else {
+        // If no active dot, hide the display
+        colorNameDisplay.style.display = 'none';
+      }
+    })();
+  </script>
 {%- endif -%}

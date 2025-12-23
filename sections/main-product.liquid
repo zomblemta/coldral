@@ -56,8 +56,16 @@ font-family : Courier !important;
   /* ------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
+  .container {
+    --distance-to-bleed: 0; 
+    margin-inline-start: 0; 
+    margin-inline-end: 0; 
+  }
 .product-info {
-    margin-top: -20px;
+  margin-top: -20px;
+  --distance-to-bleed: max(var(--container-gutter), 50% - var(--container-max-width) / 2); 
+  margin-inline-start: max(var(--container-gutter), 50% - var(--container-max-width) / 2); 
+  margin-inline-end: max(var(--container-gutter), 50% - var(--container-max-width) / 2); 
 }
 
 .product-title {

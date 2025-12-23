@@ -727,4 +727,9 @@ Supported variables
     <svg role="presentation" width="{{ width | default: 18 }}" viewBox="0 0 18 18" fill="none">
       <path fill="currentColor" d="M0 0h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0z"/>
     </svg>
+
+  {%- when 'icon-close-black' -%}
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none" class="{{ class }}">
+    <path d="M5.99995 31.0605L18 19.0605L30 31.0605L31.0605 30L19.0605 18L31.0605 6.00004L30 4.93954L18 16.9395L5.99995 4.93954L4.93945 6.00004L16.9395 18L4.93945 30L5.99995 31.0605Z" fill="black"/>
+  </svg>
 {%- endcase -%}
