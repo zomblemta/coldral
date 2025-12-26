@@ -25,11 +25,78 @@ being eligible for free shipping.
   endfor
 
   assign calculated_total_price = calculated_total_price | minus: total_cart_discount
+
+  # Convert threshold based on current currency rate
+  # cart.currency.rate is the exchange rate from shop's base currency to current currency
+  assign currency_rate = cart.currency.rate | default: 1
+  assign base_threshold = settings.cart_free_shipping_threshold | times: 1.0
+  assign converted_threshold = base_threshold | times: currency_rate
+
+  # Calculate progress percentage (threshold is in base currency units, calculated_total_price is in cents)
+  assign threshold_in_cents = converted_threshold | times: 100
+  assign progress_percentage = calculated_total_price | times: 100.0 | divided_by: threshold_in_cents
+  if progress_percentage > 100
+    assign progress_percentage = 100
+  endif
+-%}
+
+{%- liquid
+  assign is_threshold_reached = false
+  if calculated_total_price >= threshold_in_cents
+    assign is_threshold_reached = true
+  endif
 -%}
 
 {%- if cart.requires_shipping -%}
-  <free-shipping-bar class="free-shipping-bar" threshold="{{ settings.cart_free_shipping_threshold }}" total-price="{{ calculated_total_price }}" reached-message="{{ 'cart.free_shipping_bar.limit_reached_html' | t | escape }}" unreached-message="{{ 'cart.free_shipping_bar.limit_unreached_html' | t | escape }}">
-    {%- comment -%}The span below is the placeholder where the content will be inserted in JS{%- endcomment -%}
-    <span class="text-subdued">&nbsp;</span>
+  <free-shipping-bar class="free-shipping-bar" threshold="{{ converted_threshold }}" total-price="{{ calculated_total_price }}" currency-rate="{{ currency_rate }}" reached-message="{{ 'cart.free_shipping_bar.limit_reached_html' | t | escape }}" unreached-message="{{ 'cart.free_shipping_bar.limit_unreached_html' | t | escape }}">
+    <div class="free-shipping-bar__content">
+      {%- comment -%}The span below is the placeholder where the content will be inserted in JS{%- endcomment -%}
+      <span class="free-shipping-bar__text">&nbsp;</span>
+      <div class="free-shipping-bar__progress-wrapper {% if is_threshold_reached %}free-shipping-bar__progress-wrapper--hidden{% endif %}">
+        <div class="free-shipping-bar__progress-track">
+          <div class="free-shipping-bar__progress-fill" style="width: {{ progress_percentage }}%;"></div>
+        </div>
+      </div>
+    </div>
   </free-shipping-bar>
+
+  <script>
+    (function() {
+      const bar = document.querySelector('free-shipping-bar');
+      if (!bar) return;
+      
+      const updateProgress = () => {
+        // Threshold is already converted to current currency
+        const threshold = parseFloat(bar.getAttribute('threshold').replace(/[^0-9.]/g, '')) * 100;
+        const totalPrice = parseFloat(bar.getAttribute('total-price'));
+        const progressFill = bar.querySelector('.free-shipping-bar__progress-fill');
+        const progressWrapper = bar.querySelector('.free-shipping-bar__progress-wrapper');
+        
+        if (progressFill) {
+          const percentage = Math.min((totalPrice / threshold) * 100, 100);
+          progressFill.style.width = percentage + '%';
+        }
+        
+        // Hide progress bar when threshold is reached
+        if (progressWrapper) {
+          if (totalPrice >= threshold) {
+            progressWrapper.classList.add('free-shipping-bar__progress-wrapper--hidden');
+          } else {
+            progressWrapper.classList.remove('free-shipping-bar__progress-wrapper--hidden');
+          }
+        }
+      };
+      
+      // Observe attribute changes
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.attributeName === 'total-price') {
+            updateProgress();
+          }
+        });
+      });
+      
+      observer.observe(bar, { attributes: true });
+    })();
+  </script>
 {%- endif -%}

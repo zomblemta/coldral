@@ -147,7 +147,7 @@
   /* Optionnel : enlever les icônes sur les cartes produits seulement,
      pour ne pas casser les icônes des filtres / pagination / etc. */
   #shopify-section-{{ section.id }} .product-card svg {
-    display: none;
+    /* display: none; */
   }
 </style>
 
@@ -179,7 +179,7 @@
           {%- comment -%}
             Suppression de la classe "full-bleed" pour que la barre reste dans le cadre
           {%- endcomment -%}
-          <h1 class="text-sm md:text-base px-[12px]  md:px-[46px] py-[10px] md:py-[20px] tracking-wide font-medium">
+          <h1 class="text-sm md:text-base px-[12px]  md:px-[46px] py-[10px] md:py-[20px] tracking-wide font-medium uppercase">
             {{ collection.title }}
           </h1>
           <height-observer variable="collection-toolbar" class="collection-toolbar">
@@ -372,7 +372,6 @@
                   {%- for product in collection.products -%}
                     {%- render 'product-card',
                       product: product,
-                      reveal: settings.stagger_products_apparition,
                       position: forloop.index,
                       hide_product_information: section.settings.hide_product_information,
                       stacked: true

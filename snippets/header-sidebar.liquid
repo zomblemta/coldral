@@ -1,34 +1,65 @@
 {%- comment -%}
-----------------------------------------------------------------------------------------------------------------------
-HEADER SIDEBAR COMPONENT
-----------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------------
+  HEADER SIDEBAR COMPONENT
+  ----------------------------------------------------------------------------------------------------------------------
 
-This snippet the navigation sidebar for the header. It is used for both the mobile menu and for the desktop menu when
-the merchant configures the drawer mode.
+  This snippet the navigation sidebar for the header. It is used for both the mobile menu and for the desktop menu when
+  the merchant configures the drawer mode.
 
-********************************************
-Supported variables
-********************************************
+  ********************************************
+  Supported variables
+  ********************************************
 
-* menu: the menu to render
-* color_scheme: the color scheme to use for the sidebar
-* show_dividers: whether dividers are shown for the collapsible
-* open_second_level_menus: if true, second level dropdown are open by default
+  * menu: the menu to render
+  * color_scheme: the color scheme to use for the sidebar
+  * show_dividers: whether dividers are shown for the collapsible
+  * open_second_level_menus: if true, second level dropdown are open by default
 {%- endcomment -%}
 
 {%- comment -%}
-IMPLEMENTATION NOTE: while being a drawer, the sidebar has a completely different structure for the content. We are
-therefore using a different structure for the Shadow DOM template
+  IMPLEMENTATION NOTE: while being a drawer, the sidebar has a completely different structure for the content. We are
+  therefore using a different structure for the Shadow DOM template
 {%- endcomment -%}
+{%- capture logo_content -%}
+  {%- if section.settings.logo -%}
+    {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
+    {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
+
+    <span class="sr-only">{{ shop.name }}</span>
+    {%- assign alt_text = section.settings.logo.alt | default: shop.name -%}
+    
+
+    {%- if section.settings.transparent_logo -%}
+      {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent' -}}
+    {%- endif -%}
+  {%- else -%}
+    <span class="header__logo-text h5">{{ shop.name }}</span>
+  {%- endif -%}
+{%- endcapture -%}
+
 <template id="header-sidebar-template">
   <div part="base">
     <div part="overlay"></div>
 
     <div part="content">
       <header part="header">
+        <div>
+          <a href="{{ routes.root_url }}">
+            {{-
+              section.settings.transparent_logo
+              | image_url: width: 80
+              | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent w-[80px] h-[20px]'
+            -}}
+          
+          </a>
+        </div>
         <dialog-close-button class="contents">
-          <button type="button" part="close-button tap-area" aria-label="{{ 'general.accessibility.close' | t | escape }}">
-            {%- render 'icon' with 'close', width: 16 -%}
+          <button
+            type="button"
+            part="close-button tap-area"
+            aria-label="{{ 'general.accessibility.close' | t | escape }}"
+          >
+            {%- render 'icon' with 'close-white', width: 16 -%}
           </button>
         </dialog-close-button>
       </header>
@@ -44,7 +75,12 @@ therefore using a different structure for the Shadow DOM template
   </div>
 </template>
 
-<header-sidebar id="sidebar-menu" class="header-sidebar drawer drawer--sm color-scheme color-scheme--{{ color_scheme.id }}" template="header-sidebar-template" open-from="left">
+<header-sidebar
+  id="sidebar-menu"
+  class="header-sidebar drawer drawer--sm color-scheme color-scheme--{{ color_scheme.id }}"
+  template="header-sidebar-template"
+  open-from="left"
+>
   {%- comment -%}We are using a Shadow DOM where each panel has a slot, so we can directly render each level individually{%- endcomment -%}
 
   {%- comment -%}Panel 1 is the first level{%- endcomment -%}
@@ -52,21 +88,29 @@ therefore using a different structure for the Shadow DOM template
     <div class="header-sidebar__scroller">
       <ul class="header-sidebar__linklist {% if show_dividers %}divide-y{% endif %} unstyled-list" role="list">
         {%- for link in menu.links -%}
-          <li>
+          <li class="uppercase">
             {%- if link.links.size > 0 -%}
-              <button type="button" class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}" aria-controls="header-panel-{{ forloop.index }}" aria-expanded="false">
+              <button
+                type="button"
+                class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}"
+                aria-controls="header-panel-{{ forloop.index }}"
+                aria-expanded="false"
+              >
                 {{- link.title -}}
                 {%- render 'icon' with 'chevron-right', width: 12, direction_aware: true -%}
               </button>
             {%- else -%}
-              <a href="{{ link.url }}" class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}">
+              <a
+                href="{{ link.url }}"
+                class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}"
+              >
                 {{- link.title -}}
               </a>
             {%- endif -%}
           </li>
         {%- endfor -%}
       </ul>
-        {% render 'menu-social-media' %}
+      {% render 'menu-social-media' %}
     </div>
 
     {%- liquid
@@ -82,9 +126,12 @@ therefore using a different structure for the Shadow DOM template
     {%- if shop.customer_accounts_enabled or show_country_selector or show_locale_selector -%}
       <div class="header-sidebar__footer">
         {%- if shop.customer_accounts_enabled -%}
-          <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="text-with-icon smallcaps sm:hidden">
+          <a
+            href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
+            class="text-with-icon smallcaps sm:hidden"
+          >
             {%- render 'icon' with 'account', width: 20 -%}
-            
+
             {%- if customer -%}
               {{- 'header.general.account' | t -}}
             {%- else -%}
@@ -96,7 +143,13 @@ therefore using a different structure for the Shadow DOM template
         {%- if show_country_selector or show_locale_selector -%}
           <div class="localization-selectors">
             {%- if show_country_selector -%}
-              {%- render 'localization-selector', type: 'country', placement: 'top-start', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, id_prefix: 'header-sidebar' -%}
+              {%- render 'localization-selector',
+                type: 'country',
+                placement: 'top-start',
+                show_country_name: section.settings.show_country_name,
+                show_country_flag: section.settings.show_country_flag,
+                id_prefix: 'header-sidebar'
+              -%}
             {%- endif -%}
 
             {%- if show_country_selector and show_locale_selector -%}
@@ -104,7 +157,11 @@ therefore using a different structure for the Shadow DOM template
             {%- endif -%}
 
             {%- if show_locale_selector -%}
-              {%- render 'localization-selector', type: 'locale', placement: 'top-start', id_prefix: 'header-sidebar' -%}
+              {%- render 'localization-selector',
+                type: 'locale',
+                placement: 'top-start',
+                id_prefix: 'header-sidebar'
+              -%}
             {%- endif -%}
           </div>
         {%- endif -%}
@@ -119,7 +176,11 @@ therefore using a different structure for the Shadow DOM template
         {%- for link in menu.links -%}
           {%- if link.links.size > 0 -%}
             <div id="header-panel-{{ forloop.index }}" class="header-sidebar__sub-panel" hidden>
-              <button type="button" class="header-sidebar__back-button link-faded {% if show_dividers %}is-divided{% endif %} text-with-icon {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %} md:hidden" data-action="close-panel">
+              <button
+                type="button"
+                class="header-sidebar__back-button link-faded {% if show_dividers %}is-divided{% endif %} text-with-icon {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %} md:hidden"
+                data-action="close-panel"
+              >
                 {%- render 'icon' with 'chevron-left', width: 12, direction_aware: true -%}
                 {{- link.title -}}
               </button>
@@ -129,7 +190,12 @@ therefore using a different structure for the Shadow DOM template
                   <li>
                     {%- if sub_link.links.size > 0 -%}
                       <accordion-disclosure>
-                        <details class="accordion__disclosure group" {% if open_second_level_menus %}open{% endif %}>
+                        <details
+                          class="accordion__disclosure group"
+                          {% if open_second_level_menus %}
+                            open
+                          {% endif %}
+                        >
                           <summary class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}">
                             {{- sub_link.title -}}
                             <span class="animated-plus group-expanded:rotate" aria-hidden="true"></span>
@@ -143,7 +209,10 @@ therefore using a different structure for the Shadow DOM template
                         </details>
                       </accordion-disclosure>
                     {%- else -%}
-                      <a href="{{ sub_link.url }}" class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}">
+                      <a
+                        href="{{ sub_link.url }}"
+                        class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}"
+                      >
                         {{- sub_link.title -}}
                       </a>
                     {%- endif -%}
@@ -162,7 +231,6 @@ therefore using a different structure for the Shadow DOM template
                     assign mega_menu_block = block
                     break
                   endif
-
                 endfor
               -%}
 

@@ -330,7 +330,6 @@ font-family : Courier !important;
           </div>
         </div>
       </div>
-
       <buy-buttons class="buy-buttons" template="{{ product.template_suffix | escape }}" form="{{ product_form_id }}">
         {%- liquid
           assign button_disabled = false
@@ -352,7 +351,7 @@ font-family : Courier !important;
             endif
           endif
         -%}
-
+   
         {%- render 'button', content: button_content, style: button_style, type: 'submit', form: product_form_id, disabled: button_disabled -%}
       </buy-buttons>
     </product-sticky-bar>
@@ -366,6 +365,7 @@ is however only possible by rendering the whole product page, and extracting the
 quick buy information in a template, that will be extracted in JS, which ensures it is not visible in the main product page
 {%- endcomment -%}
 {%- render 'product-quick-buy', product: product -%}
+{%- render 'complementary-products', product: product -%}
 
 <script>
   // We save the product ID in local storage to be eventually used for recently viewed section

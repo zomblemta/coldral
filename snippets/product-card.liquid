@@ -95,8 +95,9 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
           </div>
 
           <div class="swiper-pagination"></div>
-          {% comment %} <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> {% endcomment %}
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> 
         </div>
       </div>
 
@@ -407,7 +408,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   flex: 0 0 auto;
   white-space: nowrap;
   margin-left: auto;   /* pousse le prix complètement à droite */
-  font-size: 0.75rem;
+  font-size: 14px;
   text-align: right;
   color: rgba(0 0 0 / 0.81)
 }
@@ -528,9 +529,10 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   gap: 4px;
   padding: 5px;
   background: transparent;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: opacity 0.3s ease;
+  z-index: 3;
 }
 
 .swiper-pagination .bullet {
@@ -539,6 +541,11 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   background: rgba(0, 0, 0, 0.15);
   overflow: hidden;
   position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination .bullet.is-active {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .swiper-pagination .bullet .fill {
@@ -547,7 +554,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   left: 0;
   height: 100%;
   width: 0%;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
   transition: width 0.3s ease;
 }
 
@@ -598,8 +605,8 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   }
 
   .product-card--overlay .product-card__quick-add-button svg {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
   }
 
   /* Overlay description devient bloc au-dessus sur mobile */
@@ -616,15 +623,19 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   }
 
   .swiper-button-prev,
-  .swiper-button-next,
-  .swiper-pagination {
+  .swiper-button-next {
     opacity: 0;
     visibility: hidden;
   }
 
   .swiper.show-arrows .swiper-button-prev,
-  .swiper.show-arrows .swiper-button-next,
-  .swiper.show-arrows .swiper-pagination {
+  .swiper.show-arrows .swiper-button-next {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* 移动端也显示分页器 */
+  .swiper-pagination {
     opacity: 1;
     visibility: visible;
   }
@@ -772,36 +783,52 @@ document.addEventListener("DOMContentLoaded", function () {
         paginationEl.appendChild(bullet);
       }
 
+      const updatePagination = (swiperInstance) => {
+        const fills = paginationEl.querySelectorAll(".fill");
+        const bullets = paginationEl.querySelectorAll(".bullet");
+        const currentIndex = swiperInstance.realIndex !== undefined 
+          ? swiperInstance.realIndex 
+          : (swiperInstance.activeIndex % slidesCount);
+        
+        fills.forEach((fill, index) => {
+          const isActive = index === currentIndex;
+          fill.style.width = isActive ? "100%" : "0%";
+          
+          if (bullets[index]) {
+            if (isActive) {
+              bullets[index].classList.add("is-active");
+            } else {
+              bullets[index].classList.remove("is-active");
+            }
+          }
+        });
+      };
+
       const swiper = new Swiper(swiperEl, {
         loop: true,
-        // 启用触摸和鼠标拖拽滑动
         simulateTouch: true,
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
         allowTouchMove: true,
-        // 滑动阻力
         resistance: true,
         resistanceRatio: 0.85,
-        // 滑动速度
         speed: 300,
-        // 保留导航按钮（可选，主要用于辅助）
         navigation: {
           nextEl: swiperEl.querySelector(".swiper-button-next"),
           prevEl: swiperEl.querySelector(".swiper-button-prev"),
         },
+        pagination: {
+          el: paginationEl,
+          clickable: false,
+          type: 'custom',
+        },
         on: {
           init: function () {
-            const fills = paginationEl.querySelectorAll(".fill");
-            fills.forEach((fill, index) => {
-              fill.style.width = index === swiper.realIndex ? "100%" : "0%";
-            });
+            updatePagination(this);
           },
           slideChange: function () {
-            const fills = paginationEl.querySelectorAll(".fill");
-            fills.forEach((fill, index) => {
-              fill.style.width = index === swiper.realIndex ? "100%" : "0%";
-            });
+            updatePagination(this);
           },
         },
       });

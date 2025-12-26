@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
@@ -224,8 +225,14 @@
   .sticky {
     position: sticky;
   }
+  .-top-1 {
+    top: calc(var(--spacing) * -1);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .-right-2 {
+    right: calc(var(--spacing) * -2);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -269,6 +276,12 @@
   .my-auto {
     margin-block: auto;
   }
+  .mt-\[15px\] {
+    margin-top: 15px;
+  }
+  .mb-\[15px\] {
+    margin-bottom: 15px;
+  }
   .block {
     display: block;
   }
@@ -299,11 +312,11 @@
   .aspect-video {
     aspect-ratio: var(--aspect-video);
   }
+  .h-\[20px\] {
+    height: 20px;
+  }
   .h-\[24px\] {
     height: 24px;
-  }
-  .h-\[90px\] {
-    height: 90px;
   }
   .h-full {
     height: 100%;
@@ -320,11 +333,17 @@
   .w-\[24px\] {
     width: 24px;
   }
+  .w-\[80px\] {
+    width: 80px;
+  }
   .w-full {
     width: 100%;
   }
   .max-w-\[80\%\] {
     max-width: 80%;
+  }
+  .min-w-4 {
+    min-width: calc(var(--spacing) * 4);
   }
   .min-w-\[40\%\] {
     min-width: 40%;
@@ -554,6 +573,9 @@
   .bg-\[\#00000050\] {
     background-color: #00000050;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -563,11 +585,20 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
   .px-\[12px\] {
     padding-inline: 12px;
+  }
+  .px-\[14px\] {
+    padding-inline: 14px;
   }
   .py-\[10px\] {
     padding-block: 10px;
@@ -591,6 +622,10 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-\[15px\]\/\[18px\] {
+    font-size: 15px;
+    line-height: 18px;
+  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -610,6 +645,9 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[8px\] {
+    font-size: 8px;
   }
   .text-\[10px\] {
     font-size: 10px;
@@ -644,6 +682,12 @@
   .break-all {
     word-break: break-all;
   }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
   .capitalize {
     text-transform: capitalize;
   }
@@ -658,6 +702,9 @@
   }
   .line-through {
     text-decoration-line: line-through;
+  }
+  .no-underline {
+    text-decoration-line: none;
   }
   .underline {
     text-decoration-line: underline;
@@ -855,6 +902,16 @@
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
+  .md\:mt-\[30px\] {
+    @media (width >= 48rem) {
+      margin-top: 30px;
+    }
+  }
+  .md\:mb-\[30px\] {
+    @media (width >= 48rem) {
+      margin-bottom: 30px;
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -905,6 +962,11 @@
       padding-inline: 46px;
     }
   }
+  .md\:px-\[50px\] {
+    @media (width >= 48rem) {
+      padding-inline: 50px;
+    }
+  }
   .md\:py-\[20px\] {
     @media (width >= 48rem) {
       padding-block: 20px;
@@ -919,6 +981,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .md\:text-\[24px\]\/\[29px\] {
+    @media (width >= 48rem) {
+      font-size: 24px;
+      line-height: 29px;
     }
   }
   .md\:text-base {

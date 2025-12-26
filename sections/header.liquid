@@ -1,118 +1,121 @@
 <style>
-  :root {
-    --header-is-sticky: {% if section.settings.enable_sticky %}1{% else %}0{% endif %};
-  }
-
-  #shopify-section-{{ section.id }} {
-    --header-grid: "primary-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
-    --header-padding-block: 1rem;
-    --header-transparent-header-text-color: {{ section.settings.transparent_header_text_color.rgb }};
-    --header-separation-border-color: {% if section.settings.show_separation_border %}{{ section.settings.color_scheme.settings.text_color.rgb }} / 0.15{% else %}0 0 0 / 0{% endif %};
-
-    position: relative;
-    z-index: 4;
-  }
-
-  @media screen and (min-width: 700px) {
-    #shopify-section-{{ section.id }} {
-      --header-padding-block: {% if section.settings.reduce_padding %}1.2rem{% else %}1.6rem{% endif %};
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    #shopify-section-{{ section.id }} {
-      {%- case section.settings.layout -%}
-        {%- when 'logo_left_navigation_inline' -%}
-          --header-grid: "logo primary-nav secondary-nav" / auto minmax(0, 1fr) auto;
-
-        {%- when 'logo_left_navigation_center' -%}
-          --header-grid: "logo primary-nav secondary-nav" / minmax(max-content, 1fr) auto minmax(max-content, 1fr);
-
-        {%- when 'logo_center_navigation_below' -%}
-          --header-grid: ". logo secondary-nav" "primary-nav primary-nav primary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
-      {%- endcase -%}
-    }
-  }
-
-  {%- if section.settings.enable_sticky -%}
-    #shopify-section-{{ section.id }} {
-      position: sticky;
-      top: 0;
+    :root {
+      --header-is-sticky: {% if section.settings.enable_sticky %}1{% else %}0{% endif %};
     }
 
-    .shopify-section--announcement-bar ~ #shopify-section-{{ section.id }} {
-      top: calc(var(--announcement-bar-is-sticky, 0) * var(--announcement-bar-height, 0px));
-    }
-  {%- endif -%}
-
-  {%- if section.settings.logo != blank -%}
     #shopify-section-{{ section.id }} {
-      --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
+      --header-grid: "primary-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
+      --header-padding-block: 1rem;
+      --header-transparent-header-text-color: {{ section.settings.transparent_header_text_color.rgb }};
+      --header-separation-border-color: {% if section.settings.show_separation_border %}{{ section.settings.color_scheme.settings.text_color.rgb }} / 0.15{% else %}0 0 0 / 0{% endif %};
+
+      position: relative;
+      z-index: 4;
     }
 
     @media screen and (min-width: 700px) {
       #shopify-section-{{ section.id }} {
-        --header-logo-width: {{ section.settings.logo_max_width }}px;
+        --header-padding-block: {% if section.settings.reduce_padding %}1.2rem{% else %}1.6rem{% endif %};
       }
     }
-  {%- endif -%}
 
-  {% if request.page_type == 'product' %}
+    @media screen and (min-width: 1000px) {
+      #shopify-section-{{ section.id }} {
+        {%- case section.settings.layout -%}
+          {%- when 'logo_left_navigation_inline' -%}
+            --header-grid: "logo primary-nav secondary-nav" / auto minmax(0, 1fr) auto;
 
-  /* Header transparent sur TOUTES les tailles */
-  #shopify-section-{{ section.id }} .header,
-  #shopify-section-{{ section.id }} .header.color-scheme,
-  #shopify-section-{{ section.id }} x-header.header {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border-color: transparent !important;
-  }
+          {%- when 'logo_left_navigation_center' -%}
+            --header-grid: "logo primary-nav secondary-nav" / minmax(max-content, 1fr) auto minmax(max-content, 1fr);
 
-  /* Certaines versions de Dawn utilisent un backdrop */
-  #shopify-section-{{ section.id }} .header::before,
-  #shopify-section-{{ section.id }} x-header::before {
-    background: transparent !important;
-  }
+          {%- when 'logo_center_navigation_below' -%}
+            --header-grid: ". logo secondary-nav" "primary-nav primary-nav primary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
+        {%- endcase -%}
+      }
+    }
 
-  /* Sur desktop, le thème ré-applique souvent un fond en sticky */
-  @media screen and (min-width: 768px) {
-    #shopify-section-{{ section.id }} .header.is-sticky,
-    #shopify-section-{{ section.id }} x-header.header.is-sticky {
+    {%- if section.settings.enable_sticky -%}
+      #shopify-section-{{ section.id }} {
+        position: sticky;
+        top: 0;
+      }
+
+      .shopify-section--announcement-bar ~ #shopify-section-{{ section.id }} {
+        top: calc(var(--announcement-bar-is-sticky, 0) * var(--announcement-bar-height, 0px));
+      }
+    {%- endif -%}
+
+    {%- if section.settings.logo != blank -%}
+      #shopify-section-{{ section.id }} {
+        --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
+      }
+
+      @media screen and (min-width: 700px) {
+        #shopify-section-{{ section.id }} {
+          --header-logo-width: {{ section.settings.logo_max_width }}px;
+        }
+      }
+    {%- endif -%}
+
+    {% if request.page_type == 'product' %}
+
+    /* Header transparent sur TOUTES les tailles */
+    #shopify-section-{{ section.id }} .header,
+    #shopify-section-{{ section.id }} .header.color-scheme,
+    #shopify-section-{{ section.id }} x-header.header {
       background-color: transparent !important;
+      box-shadow: none !important;
+      border-color: transparent !important;
     }
 
-    /* si besoin de décaler vers le haut */
-    #shopify-section-{{ section.id }},
-    #shopify-section-{{ section.id }} .header-wrapper {
-      margin-bottom: -10rem !important;
+    /* Certaines versions de Dawn utilisent un backdrop */
+    #shopify-section-{{ section.id }} .header::before,
+    #shopify-section-{{ section.id }} x-header::before {
+      background: transparent !important;
     }
+
+    /* Sur desktop, le thème ré-applique souvent un fond en sticky */
+    @media screen and (min-width: 768px) {
+      #shopify-section-{{ section.id }} .header.is-sticky,
+      #shopify-section-{{ section.id }} x-header.header.is-sticky {
+        background-color: transparent !important;
+      }
+
+      /* si besoin de décaler vers le haut */
+      #shopify-section-{{ section.id }},
+      #shopify-section-{{ section.id }} .header-wrapper {
+        margin-bottom: -10rem !important;
+      }
+    }
+
+  {% endif %}
+
+
+  /* Désactive la sticky bar sur les pages collection */
+  height-observer.collection-toolbar,
+  .collection-toolbar {
+    position: static !important;
+    top: auto !important;
+    z-index: auto !important; /* optionnel : évite de passer devant le contenu */
   }
 
-{% endif %}
-
-
-/* Désactive la sticky bar sur les pages collection */
-height-observer.collection-toolbar,
-.collection-toolbar {
-  position: static !important;
-  top: auto !important;
-  z-index: auto !important; /* optionnel : évite de passer devant le contenu */
-}
-
-/* (optionnel) certains thèmes utilisent une variable pour activer la sticky */
-:root {
-  --collection-toolbar-is-sticky: 0 !important;
-}
-
-
+  /* (optionnel) certains thèmes utilisent une variable pour activer la sticky */
+  :root {
+    --collection-toolbar-is-sticky: 0 !important;
+  }
 </style>
 
 <height-observer variable="header">
-  <x-header {% if section.settings.hide_on_scroll and section.settings.enable_sticky %}hide-on-scroll{% endif %} class="header color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
+  <x-header
+    {% if section.settings.hide_on_scroll and section.settings.enable_sticky %}
+      hide-on-scroll
+    {% endif %}
+    class="header "
+  >
     {%- comment -%}
-    --------------------------------------------------------------------------------------------------------------------
-    LOGO AREA
-    --------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------
+      LOGO AREA
+      --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
 
     {%- capture logo_content -%}
@@ -132,8 +135,6 @@ height-observer.collection-toolbar,
   {%- endif -%}
 {%- endcapture -%}
 
-
-
     {%- if request.page_type == 'index' -%}
       <h1 class="header__logo">
         <a href="{{ routes.root_url }}">{{ logo_content }}</a>
@@ -143,17 +144,26 @@ height-observer.collection-toolbar,
     {% endif %}
 
     {%- comment -%}
-    --------------------------------------------------------------------------------------------------------------------
-    PRIMARY NAVIGATION AREA
-    --------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------
+      PRIMARY NAVIGATION AREA
+      --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
 
     {%- assign menu = section.settings.menu -%}
     {%- assign sidebar_menu = section.settings.sidebar_menu -%}
 
     {%- if menu.links.size > 0 or sidebar_menu.links.size > 0 -%}
-      <nav class="header__primary-nav {% if section.settings.layout == 'logo_center_navigation_below' or section.settings.layout == 'logo_left_navigation_center' %}header__primary-nav--center{% endif %}" aria-label="{{ 'header.general.primary_navigation' | t | escape }}">
-        <button type="button" aria-controls="sidebar-menu" {% unless section.settings.layout == 'drawer' %}class="md:hidden"{% endunless %}>
+      <nav
+        class="header__primary-nav {% if section.settings.layout == 'logo_center_navigation_below' or section.settings.layout == 'logo_left_navigation_center' %}header__primary-nav--center{% endif %}"
+        aria-label="{{ 'header.general.primary_navigation' | t | escape }}"
+      >
+        <button
+          type="button"
+          aria-controls="sidebar-menu"
+          {% unless section.settings.layout == 'drawer' %}
+            class="md:hidden"
+          {% endunless %}
+        >
           <span class="sr-only">{{ 'header.general.menu' | t }}</span>
           {%- render 'icon' with 'hamburger', class: 'header__nav-icon' -%}
         </button>
@@ -172,13 +182,20 @@ height-observer.collection-toolbar,
                     assign mega_menu_block = block
                     break
                   endif
-
                 endfor
               %}
 
               <li class="header__primary-nav-item" data-title="{{ link.title | escape }}">
                 {%- if link.levels == 0 and mega_menu_block == '' -%}
-                  <a href="{{ link.url }}" class="block {% if section.settings.menu_text_font == 'heading' %}h6{% endif %}" {% if link.current %}aria-current="page"{% endif %}>{{ link.title }}</a>
+                  <a
+                    href="{{ link.url }}"
+                    class="block {% if section.settings.menu_text_font == 'heading' %}h6{% endif %}"
+                    {% if link.current %}
+                      aria-current="page"
+                    {% endif %}
+                  >
+                    {{- link.title -}}
+                  </a>
                 {%- else -%}
                   {%- capture disclosure_content -%}
                     <details class="header__menu-disclosure">
@@ -222,7 +239,11 @@ height-observer.collection-toolbar,
                   {%- endcapture -%}
 
                   {% if mega_menu_block != '' %}
-                    <mega-menu-disclosure follow-summary-link trigger="{{ section.settings.menu_open_trigger }}" class="contents">
+                    <mega-menu-disclosure
+                      follow-summary-link
+                      trigger="{{ section.settings.menu_open_trigger }}"
+                      class="contents"
+                    >
                       {{- disclosure_content -}}
                     </mega-menu-disclosure>
                   {%- else -%}
@@ -239,9 +260,9 @@ height-observer.collection-toolbar,
     {%- endif -%}
 
     {%- comment -%}
-    --------------------------------------------------------------------------------------------------------------------
-    SECONDARY NAVIGATION AREA
-    --------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------
+      SECONDARY NAVIGATION AREA
+      --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
 
     <nav class="header__secondary-nav" aria-label="{{ 'header.general.secondary_navigation' | t | escape }}">
@@ -259,7 +280,13 @@ height-observer.collection-toolbar,
         {%- if show_country_selector or show_locale_selector -%}
           <li class="localization-selectors md-max:hidden">
             {%- if show_country_selector -%}
-              {%- render 'localization-selector', type: 'country', placement: 'bottom-end', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, id_prefix: 'header-nav' -%}
+              {%- render 'localization-selector',
+                type: 'country',
+                placement: 'bottom-end',
+                show_country_name: section.settings.show_country_name,
+                show_country_flag: section.settings.show_country_flag,
+                id_prefix: 'header-nav'
+              -%}
             {%- endif -%}
 
             {%- if show_locale_selector -%}
@@ -280,14 +307,23 @@ height-observer.collection-toolbar,
         {%- if shop.customer_accounts_enabled -%}
           <li class="header__account-link sm-max:hidden">
             <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
-              <span class="sr-only">{% if customer %}{{ 'header.general.account' | t }}{% else %}{{ 'header.general.login' | t }}{% endif %}</span>
+              <span class="sr-only">
+                {%- if customer -%}
+                  {{- 'header.general.account' | t -}}
+                {%- else -%}
+                  {{- 'header.general.login' | t -}}
+                {%- endif -%}
+              </span>
 
               {%- if section.settings.show_icons -%}
                 {%- render 'icon' with 'account', class: 'header__nav-icon' -%}
               {%- else -%}
                 <span class="md:hidden">{%- render 'icon' with 'account', class: 'header__nav-icon' -%}</span>
 
-                <span class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden" aria-hidden="true">
+                <span
+                  class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden"
+                  aria-hidden="true"
+                >
                   {%- if customer -%}
                     {{- 'header.general.account' | t -}}
                   {%- else -%}
@@ -308,24 +344,41 @@ height-observer.collection-toolbar,
                 {%- render 'icon' with 'search', class: 'header__nav-icon' -%}
               {%- else -%}
                 <span class="md:hidden">{%- render 'icon' with 'search', class: 'header__nav-icon' -%}</span>
-                <span class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden" aria-hidden="true">{{ 'header.general.search' | t }}</span>
+                <span
+                  class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden"
+                  aria-hidden="true"
+                >
+                  {{- 'header.general.search' | t -}}
+                </span>
               {%- endif -%}
             </a>
           </li>
         {%- endif -%}
 
         <li class="relative header__cart-link">
-          <a href="{{ routes.cart_url }}" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %} data-no-instant>
+          <a
+            href="{{ routes.cart_url }}"
+            {% if settings.cart_type != 'page' and request.page_type != 'cart' %}
+              aria-controls="cart-drawer"
+            {% endif %}
+            data-no-instant
+          >
             <span class="sr-only">{{ 'header.general.cart' | t }}</span>
 
             {%- if section.settings.show_icons -%}
               {%- render 'icon' with 'cart', class: 'header__nav-icon' -%}
             {%- else -%}
               <span class="md:hidden">{%- render 'icon' with 'cart', class: 'header__nav-icon' -%}</span>
-              <span class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden">{{ 'header.general.cart' | t }} (<cart-count>{{ cart.item_count }}</cart-count>)</span>
+              <span class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden">
+                {{- 'header.general.cart' | t }} (<cart-count>{{ cart.item_count }}</cart-count>)</span
+              >
             {%- endif -%}
-
-            <cart-dot class="header__cart-dot {% unless cart.empty? %}is-visible{% endunless %} {% unless section.settings.show_icons %}md:hidden{% endunless %}"></cart-dot>
+            <cart-count class="absolute -top-1 -right-2 text-[8px] bg-black text-white rounded-full flex items-center justify-center px-1 min-w-4 aspect-square">
+              {{- cart.item_count -}}
+            </cart-count>
+            {% comment %} <cart-dot class="header__cart-dot  {% unless cart.empty? %}is-visible{% endunless %} {% unless section.settings.show_icons %}md:hidden{% endunless %}"
+              ></cart-dot
+            > {% endcomment %}
           </a>
         </li>
       </ul>
@@ -338,15 +391,22 @@ height-observer.collection-toolbar,
     {%- assign sidebar_menu = section.settings.sidebar_menu | default: section.settings.menu -%}
 
     {%- if sidebar_menu.links.size > 0 -%}
-      {%- render 'header-sidebar', menu: sidebar_menu, color_scheme: section.settings.sidebar_color_scheme, show_dividers: section.settings.sidebar_show_dividers, open_second_level_menus: section.settings.sidebar_open_second_level_menus -%}
+      {%- render 'header-sidebar',
+        menu: sidebar_menu,
+        color_scheme: section.settings.sidebar_color_scheme,
+        show_dividers: section.settings.sidebar_show_dividers,
+        open_second_level_menus: section.settings.sidebar_open_second_level_menus
+      -%}
     {%- endif -%}
   </x-header>
 </height-observer>
 
 <script>
-  document.documentElement.style.setProperty('--header-height', `${document.getElementById('shopify-section-{{ section.id }}').clientHeight.toFixed(2)}px`);
+  document.documentElement.style.setProperty(
+    '--header-height',
+    `${document.getElementById('shopify-section-{{ section.id }}').clientHeight.toFixed(2)}px`
+  );
 </script>
-
 
 {% schema %}
 {

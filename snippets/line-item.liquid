@@ -81,8 +81,9 @@ Supported variables
         <line-item-quantity class="h-stack gap-4 {% if request.page_type == 'cart' %}sm:hidden{% endif %}">
           {%- render 'quantity-selector', line_item: line_item, size: 'sm' -%}
           
-          <a href="{{ line_item.url_to_remove }}" class="link text-xs" aria-label="{{ 'cart.order.remove_with_title' | t: title: line_item.title | escape }}">
-            {{- 'cart.order.remove' | t -}}
+          <a href="{{ line_item.url_to_remove }}" class=" no-underline text-xs" aria-label="{{ 'cart.order.remove_with_title' | t: title: line_item.title | escape }}">
+            {% comment %} {{- 'cart.order.remove' | t -}} {% endcomment %}
+            {% render 'icon' with 'remove', width: 16 %}
           </a>
         </line-item-quantity>
       {%- else -%}

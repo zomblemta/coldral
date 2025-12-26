@@ -1,0 +1,26 @@
+{%- if product.metafields.custom.style_with_products.value.size > 0 -%}
+<div class="w-full ">
+  <h3 class="mb-[15px] md:mb-[30px] mt-[15px] md:mt-[30px] text-[15px]/[18px] md:text-[24px]/[29px] p-0">
+    {{ section.settings.title }}
+  </h3>
+
+  <div class="flex flex-wrap justify-center">
+    {% for product in product.metafields.custom.style_with_products.value %}
+      {%- render 'product-card', product: product, stacked: true, position: forloop.index -%}
+    {% endfor %}
+  </div>
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Style with",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ]
+}
+{% endschema %}
