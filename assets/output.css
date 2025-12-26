@@ -26,6 +26,7 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-normal: 400;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-normal: 0em;
     --tracking-wide: 0.025em;
@@ -399,6 +400,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -600,6 +604,9 @@
   .px-\[14px\] {
     padding-inline: 14px;
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-\[10px\] {
     padding-block: 10px;
   }
@@ -663,6 +670,10 @@
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .tracking-\[1\.2px\] {
     --tw-tracking: 1.2px;

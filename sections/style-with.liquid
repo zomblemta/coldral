@@ -1,15 +1,39 @@
-{%- if product.metafields.custom.style_with_products.value.size > 0 -%}
-<div class="w-full ">
-  <h3 class="mb-[15px] md:mb-[30px] mt-[15px] md:mt-[30px] text-[15px]/[18px] md:text-[24px]/[29px] p-0">
-    {{ section.settings.title }}
-  </h3>
+<style>
+  .style-with__title {
+    margin-bottom: 15px;
+  }
+  @media (min-width: 768px) {
+    .style-with__title {
+      margin-bottom: 30px;
+    }
+  }
+  .style-with-container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+  }
 
-  <div class="flex flex-wrap justify-center">
-    {% for product in product.metafields.custom.style_with_products.value %}
-      {%- render 'product-card', product: product, stacked: true, position: forloop.index -%}
-    {% endfor %}
+  .style-with__item {
+    width: calc(100% / 4);
+  }
+</style>
+
+{%- if product.metafields.custom.style_with_products.value.size > 0 -%}
+  <div class="w-full flex flex-col items-center py-10">
+    <h3 class="style-with__title uppercase font-semibold mb-[15px] md:mb-[30px] mt-[15px] md:mt-[30px] text-[15px]/[18px] md:text-[24px]/[29px] p-0">
+      {{ section.settings.title }}
+    </h3>
+
+    <div class="style-with-container flex flex-nowrap justify-center gap-4">
+      {% for product in product.metafields.custom.style_with_products.value %}
+        <div class="style-with__item shrink-0">
+          {%- render 'product-card', product: product, stacked: true, position: forloop.index -%}
+        </div>
+      {% endfor %}
+    </div>
   </div>
-</div>
 {%- endif -%}
 
 {% schema %}
