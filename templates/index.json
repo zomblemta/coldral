@@ -100,12 +100,27 @@
           "the-draped-pullover-grey-w"
         ]
       }
+    },
+    "full_img_PpmAK7": {
+      "type": "full-img",
+      "name": "Full Image",
+      "settings": {
+        "image": "shopify://shop_images/20250919_COLDRAL_LOOKBOOK2985.jpg",
+        "image_alt": "Image",
+        "text_color": "",
+        "title": "",
+        "button_text": "",
+        "button_url": "",
+        "margin_bottom": 20,
+        "padding_top": 20
+      }
     }
   },
   "order": [
     "slideshow",
     "look_list_H6gexx",
     "full_img_7UMrjA",
-    "look_list_w4DjRg"
+    "look_list_w4DjRg",
+    "full_img_PpmAK7"
   ]
 }
