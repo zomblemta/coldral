@@ -4180,7 +4180,6 @@ product-rerender {
 
 .cart-drawer__complementary-products {
   padding-inline: var(--drawer-body-padding-inline);
-  border-block-start-width: 1px;
   padding-block: 1.25rem;
   margin-inline: calc(-1 * var(--drawer-body-padding-inline)) !important;
   row-gap: 1.25rem !important;

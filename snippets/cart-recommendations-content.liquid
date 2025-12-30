@@ -1,0 +1,60 @@
+{%- comment -%}
+  This snippet renders the "You may also like" recommendations content
+  It's used inside product-recommendations component in cart drawer
+{%- endcomment -%}
+
+{%- if recommendations.performed and recommendations.products_count > 0 -%}
+  {%- liquid
+    assign filtered_recommendations_count = 0
+    assign filtered_products = blank | split: ','
+    
+    for product in recommendations.products
+      assign products_in_cart = cart.items | where: 'product_id', product.id
+      if products_in_cart.size == 0 and product.available
+        assign filtered_recommendations_count = filtered_recommendations_count | plus: 1
+      endif
+    endfor
+  -%}
+
+  {%- if filtered_recommendations_count > 0 -%}
+    {%- assign carousel_id_also_like = 'you-may-also-like-carousel-' | append: section.id -%}
+    {%- assign title = section.settings.you_may_also_like_title | default: 'You may also like' -%}
+
+    {%- if title != blank or filtered_recommendations_count > 1 -%}
+      <div class="complementary-products__header complementary-products__header--align-start">
+        {%- if title != blank -%}
+          <p class="h6 mb-4">{{ title }}</p>
+        {%- endif -%}
+
+        {%- if filtered_recommendations_count > 1 -%}
+          <carousel-navigation aria-controls="{{ carousel_id_also_like }}" class="page-dots page-dots--narrow">
+            {%- for i in (1..filtered_recommendations_count) -%}
+              <button class="relative" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                <span class="sr-only">{{ 'general.accessibility.go_to_item' | t: index: forloop.index }}</span>
+              </button>
+            {%- endfor -%}
+          </carousel-navigation>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- liquid
+      capture you_may_also_like_products
+        for product in recommendations.products
+          assign products_in_cart = cart.items | where: 'product_id', product.id
+
+          if products_in_cart.size == 0 and product.available
+            render 'product-card-horizontal', product: product, show_quick_buy: true
+          endif
+        endfor
+      endcapture
+    -%}
+
+    {%- if you_may_also_like_products != blank -%}
+      <scroll-carousel id="{{ carousel_id_also_like }}" class="complementary-products__product-list complementary-products__product-list--carousel scroll-area bleed snap-x">
+        {{- you_may_also_like_products -}}
+      </scroll-carousel>
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+

@@ -72,59 +72,12 @@
       </div>
     {%- endif -%}
 
-    {%- liquid
-      assign you_may_also_like_count = 0
-
-      for product in section.settings.you_may_also_like_products
-        assign items_for_product = cart | line_items_for: product
-
-        if items_for_product.size == 0 and product.available
-          assign you_may_also_like_count = you_may_also_like_count | plus: 1
-        endif
-      endfor
-    -%}
-
-    {%- if you_may_also_like_count > 0 -%}
-      <div class="cart-drawer__you-may-also-like you-may-also-like">
-        {%- assign carousel_id_also_like = 'you-may-also-like-carousel-' | append: section.id -%}
-
-        {%- if section.settings.you_may_also_like_title != blank or section.settings.you_may_also_like_stack_products == false and you_may_also_like_count > 1 -%}
-          <div class="you-may-also-like__header you-may-also-like__header--align-start">
-            <p class="h6">{{ section.settings.you_may_also_like_title }}</p>
-
-            {%- if section.settings.you_may_also_like_stack_products == false and you_may_also_like_count > 1 -%}
-              <carousel-navigation aria-controls="{{ carousel_id_also_like }}" class="page-dots page-dots--narrow">
-                {%- for i in (1..you_may_also_like_count) -%}
-                  <button class="relative" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
-                    <span class="sr-only">{{ 'general.accessibility.go_to_item' | t: index: forloop.index }}</span>
-                  </button>
-                {%- endfor -%}
-              </carousel-navigation>
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-
-        {%- liquid
-          capture you_may_also_like_products
-            for product in section.settings.you_may_also_like_products
-              assign products_in_cart = cart.items | where: 'product_id', product.id
-
-              if products_in_cart.size == 0 and product.available
-                render 'product-card-horizontal', product: product, show_quick_buy: true
-              endif
-            endfor
-          endcapture
-        -%}
-
-        {%- if section.settings.you_may_also_like_stack_products -%}
-          <div class="you-may-also-like__product-list">
-            {{- you_may_also_like_products -}}
-          </div>
-        {%- else -%}
-          <scroll-carousel id="{{ carousel_id_also_like }}" class="you-may-also-like__product-list you-may-also-like__product-list--carousel scroll-area bleed snap-x">
-            {{- you_may_also_like_products -}}
-          </scroll-carousel>
-        {%- endif -%}
+    {%- if cart.items.size > 0 -%}
+      {%- assign first_cart_product = cart.items.first.product -%}
+      <div class="cart-drawer__you-may-also-like cart-drawer__complementary-products complementary-products">
+        <product-recommendations class="block" hidden product="{{ first_cart_product.id }}" limit="{{ section.settings.you_may_also_like_count }}" intent="related">
+          {%- render 'cart-recommendations-content', recommendations: recommendations, section: section -%}
+        </product-recommendations>
       </div>
     {%- endif -%}
 
@@ -268,25 +221,20 @@
       "content": "t:sections.cart_drawer.you_may_also_like_category"
     },
     {
-      "type": "product_list",
-      "id": "you_may_also_like_products",
-      "label": "t:sections.cart_drawer.you_may_also_like_products",
-      "info": "t:sections.cart_drawer.you_may_also_like_products_info",
-      "limit": 5
+      "type": "range",
+      "id": "you_may_also_like_count",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "label": "t:sections.cart_drawer.you_may_also_like_count",
+      "default": 5,
+      "info": "t:sections.cart_drawer.you_may_also_like_count_info"
     },
     {
       "type": "inline_richtext",
       "id": "you_may_also_like_title",
       "label": "t:sections.cart_drawer.you_may_also_like_heading",
-      "default": "You may also like",
-      "visible_if": "{{ section.settings.you_may_also_like_products != blank }}"
-    },
-    {
-      "type": "checkbox",
-      "id": "you_may_also_like_stack_products",
-      "label": "t:sections.cart_drawer.you_may_also_like_stack_products",
-      "default": false,
-      "visible_if": "{{ section.settings.you_may_also_like_products != blank }}"
+      "default": "You may also like"
     }
   ]
 }
