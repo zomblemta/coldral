@@ -218,6 +218,19 @@
 
         <p class="heading text-subdued text-xxs">© {{ 'now' | date: '%Y' }} - {{ shop.name }} {{ powered_by_link }}</p>
 
+        <div>
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'policy_links' -%}
+              <ul class="unstyled-list">
+                {%- for link in block.settings.menu.links -%}
+                  <li><a href="{{ link.url }}" class="link-faded">{{ link.title }}</a></li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+
         {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
           <ul class="payment-methods unstyled-list">
             {%- for type in shop.enabled_payment_types -%}
@@ -411,6 +424,17 @@
           "type": "color",
           "id": "button_text_color",
           "label": "t:global.colors.button_text"
+        }
+      ]
+    },
+    {
+      "type": "policy_links",
+      "name": "t:sections.footer.blocks.policy_links.name",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "t:sections.footer.blocks.policy_links.menu"
         }
       ]
     }

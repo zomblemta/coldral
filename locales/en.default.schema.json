@@ -752,6 +752,10 @@
         "newsletter": {
           "name": "Newsletter",
           "newsletter_info": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+        },
+        "policy_links": {
+          "name": "Policy links",
+          "menu": "Menu"
         }
       }
     },

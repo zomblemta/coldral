@@ -752,6 +752,10 @@
         "newsletter": {
           "name": "Newsletter",
           "newsletter_info": "Les clients qui enregistrent leur adresse email sont ajoutés à la [liste de clients](/admin/customers?query=&accepts_marketing=1) \"accepts marketing\"."
+        },
+        "policy_links": {
+          "name": "Liens de politique",
+          "menu": "Menu"
         }
       }
     },
