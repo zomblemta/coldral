@@ -1,0 +1,216 @@
+/* ================================================
+   GLOBAL UNIFIED SLIGHT BORDER-RADIUS
+   ================================================ */
+.color-swatch {
+  border-radius: 3px !important;
+}
+
+.block-swatch {
+  border-radius: 3px !important;
+}
+
+.button {
+  border-radius: 4px !important;
+}
+
+.shopify-payment-button__button,
+.shopify-payment-button__button--unbranded {
+  border-radius: 4px !important;
+}
+
+shopify-accelerated-checkout,
+shopify-accelerated-checkout-cart {
+  --shopify-accelerated-checkout-button-border-radius: 4px !important;
+}
+
+/* Quantity selector */
+.quantity-selector {
+  border-radius: 4px !important;
+}
+
+/* ================================================
+   QUICK BUY MODAL CUSTOMIZATION
+   ================================================ */
+
+/* Hide gallery and unnecessary elements */
+.quick-buy-modal__gallery-wrapper {
+  display: none !important;
+}
+
+.quick-buy-modal__view-more {
+  display: none !important;
+}
+
+.quick-buy-modal__close-button {
+  display: none !important;
+}
+
+/* Hide title, vendor, price, rating in modal */
+.quick-buy-modal__info-wrapper .product-info__block-item:is([data-block-type="vendor"], [data-block-type="title"], [data-block-type="price"], [data-block-type="rating"], [data-block-type="separator"], [data-block-type="description"]),
+.quick-buy-modal__info-wrapper .product-info__block-group[data-group-type="text-with-rating"] {
+  display: none !important;
+}
+
+/* Base modal styles */
+.quick-buy-modal {
+  --modal-body-max-width: 400px;
+}
+
+.quick-buy-modal::part(overlay) {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+
+.quick-buy-modal::part(content) {
+  background: rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: none !important;
+  color: #fff;
+  overflow: hidden !important;
+}
+
+.quick-buy-modal::part(body) {
+  background: transparent !important;
+}
+
+.quick-buy-modal__content {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.quick-buy-modal__info-wrapper {
+  border: none !important;
+  margin: 0 !important;
+  padding: 1.5rem !important;
+}
+
+
+/* Style variant picker options - all white text */
+.quick-buy-modal .block-swatch,
+.quick-buy-modal .block-swatch span,
+.quick-buy-modal .block-swatch * {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  background: transparent !important;
+  color: #fff !important;
+}
+
+
+
+/* Color swatch styles - all white border */
+.quick-buy-modal .color-swatch {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.quick-buy-modal :checked + .color-swatch,
+.quick-buy-modal .color-swatch.is-selected {
+  border-color: #fff !important;
+}
+
+/* Ensure all text in variant picker is white */
+.quick-buy-modal .variant-picker,
+.quick-buy-modal .variant-picker *,
+.quick-buy-modal .variant-picker__option-values,
+.quick-buy-modal .variant-picker__option-values *,
+.quick-buy-modal .variant-picker__option label,
+.quick-buy-modal .variant-picker__option span {
+  color: #fff !important;
+}
+
+/* Override any currentColor references */
+.quick-buy-modal .variant-picker__option-values label {
+  --text-color: 255, 255, 255 !important;
+  color: #fff !important;
+}
+
+/* Select dropdown styles */
+.quick-buy-modal .select,
+.quick-buy-modal select {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: #fff !important;
+}
+
+.quick-buy-modal .select option {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* Variant picker labels */
+.quick-buy-modal .variant-picker legend,
+.quick-buy-modal .variant-picker__option-info,
+.quick-buy-modal .form__label,
+.quick-buy-modal fieldset legend {
+  color: #fff !important;
+}
+
+/* Add to cart button style */
+.quick-buy-modal .button {
+  background: #fff !important;
+  color: #000 !important;
+  border: none !important;
+}
+
+/* Header style */
+.quick-buy-modal::part(header) {
+  color: #fff !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  background: transparent !important;
+}
+
+.quick-buy-modal .h5,
+.quick-buy-modal [slot="header"] {
+  color: #fff !important;
+}
+
+/* ================================================
+   MOBILE STYLES - popup from bottom
+   ================================================ */
+@media screen and (max-width: 699px) {
+  .quick-buy-modal::part(content) {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    max-height: 70vh !important;
+    border-radius: 4px 4px 0 0 !important;
+    transform: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .quick-buy-modal::part(header) {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 1rem !important;
+  }
+  
+  .quick-buy-modal__info-wrapper {
+    padding: 0 1.5rem 2rem 1.5rem !important;
+  }
+}
+
+/* ================================================
+   DESKTOP STYLES - centered
+   ================================================ */
+@media screen and (min-width: 700px) {
+  .quick-buy-modal::part(content) {
+    border-radius: 8px !important;
+    max-width: 400px !important;
+  }
+  
+  .quick-buy-modal::part(header) {
+    display: block !important;
+    text-align: center !important;
+    padding: 1.5rem 1.5rem 0.5rem !important;
+  }
+}
+
+
+
+.quick-buy-modal .variant-picker__option-values label::after,
+.quick-buy-modal .variant-picker__option-values a::after {
+  background: #fff !important;
+}

@@ -8052,3 +8052,8 @@ ul {
 .line-item-info .no-underline {
   text-decoration: none!important;
 }
+
+.email-input {
+  border:none;
+  outline:#000 solid 1px;
+}

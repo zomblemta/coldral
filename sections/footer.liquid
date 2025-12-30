@@ -3,6 +3,54 @@
     --footer-content-justify-items: {% if section.settings.blocks.size <= 2 %}start{% else %}space-between{% endif %};
   }
 
+  /* Newsletter promo text */
+  .newsletter-promo-text {
+    font-size: 12px;
+    color: inherit;
+    margin-bottom: 0px;
+    opacity: 0.8;
+  }
+
+  /* Email input underline style */
+  .input.email-input--underline {
+    border-width: 0 !important;
+    border-style: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid currentColor !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  .input.email-input--underline:focus,
+  .input.email-input--underline:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid currentColor !important;
+  }
+
+  .form-control:has(.email-input--underline) {
+    border: none !important;
+  }
+  
+  .form-control:has(.email-input--underline)::before {
+    display: none !important;
+  }
+
+  /* Newsletter subscribe button */
+  .footer__block--newsletter .button {
+    font-weight: 600 !important;
+    border-radius: 4px !important;
+  }
+
 /* --- Organisation verticale + centrage du footer --- */
 
 .footer__inner {
@@ -156,8 +204,10 @@
 
                         <input type="hidden" name="contact[tags]" value="newsletter">
 
+                        <p class="newsletter-promo-text">Sign up to our mailing list for exclusive access.</p>
+                        
                         {%- assign input_label = 'general.newsletter.email' | t -%}
-                        {%- render 'input', name: 'contact[email]', label: input_label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send' -%}
+                        {%- render 'input', name: 'contact[email]', label: input_label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', class: "email-input email-input--underline" -%}
 
                         <div class="align-self-start">
                           {%- assign button_label = 'general.newsletter.subscribe' | t -%}
@@ -221,9 +271,9 @@
         <div>
           {%- for block in section.blocks -%}
             {%- if block.type == 'policy_links' -%}
-              <ul class="unstyled-list">
+              <ul class="unstyled-list flex gap-4">
                 {%- for link in block.settings.menu.links -%}
-                  <li><a href="{{ link.url }}" class="link-faded">{{ link.title }}</a></li>
+                  <li><a href="{{ link.url }}" class="link-faded text-xs">{{ link.title }}</a></li>
                 {%- endfor -%}
               </ul>
             {%- endif -%}

@@ -51,6 +51,10 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
 
   # Variante par défaut pour prix / quick buy
   assign variant = product.selected_or_first_available_variant
+  
+  # Disable slider option
+  assign disable_slider = disable_slider | default: false
+  assign disable_slider_mobile = disable_slider_mobile | default: false
 -%}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -76,7 +80,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
       {%- endif -%}
 
       <div class="product-slider">
-        <div class="swiper">
+        <div class="swiper {% if disable_slider %}swiper-no-swiping{% endif %}" {% if disable_slider %}data-disable-slider="true"{% endif %} {% if disable_slider_mobile %}data-disable-slider-mobile="true"{% endif %}>
           <div class="swiper-wrapper">
             {%- for image in product.images -%}
               <div class="swiper-slide">
@@ -94,10 +98,11 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
             {%- endfor -%}
           </div>
 
-          <div class="swiper-pagination"></div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> 
+          {%- unless disable_slider -%}
+            <div class="swiper-pagination {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
+            <div class="swiper-button-prev {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
+            <div class="swiper-button-next {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
+          {%- endunless -%}
         </div>
       </div>
 
@@ -513,7 +518,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
 .swiper-button-prev,
 .swiper-button-next {
   color: #000;
-  transform: scale(0.5);
+  transform: scale(0.35);
   transform-origin: center;
   opacity: 0;
   visibility: hidden;
@@ -639,6 +644,11 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
     opacity: 1;
     visibility: visible;
   }
+  
+  /* Hide elements on mobile */
+  .hide-on-mobile {
+    display: none !important;
+  }
 }
 
 /* =========================================
@@ -754,8 +764,16 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  const isMobile = () => window.innerWidth < 768;
+  
   const initProductCardSwipers = (root = document) => {
     root.querySelectorAll(".product-slider .swiper:not(.swiper-initialized)").forEach(function (swiperEl) {
+      // Skip if slider is disabled
+      if (swiperEl.dataset.disableSlider === "true") return;
+      
+      // Skip on mobile if mobile-only disable is set
+      if (swiperEl.dataset.disableSliderMobile === "true" && isMobile()) return;
+      
       const slides = swiperEl.querySelectorAll(".swiper-slide");
       const slidesCount = slides.length;
       const paginationEl = swiperEl.querySelector(".swiper-pagination");

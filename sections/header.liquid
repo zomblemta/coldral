@@ -90,6 +90,14 @@
 
   {% endif %}
 
+  /* Header background on menu hover/open (all pages) */
+  #shopify-section-{{ section.id }} .header:has(.header__menu-disclosure[open]),
+  #shopify-section-{{ section.id }} .header:has(.header__menu-disclosure:hover),
+  #shopify-section-{{ section.id }} .header:has(.header__primary-nav-item:hover) {
+    background-color: rgb(var(--background)) !important;
+    transition: background-color 0.2s ease;
+  }
+
 
   /* Désactive la sticky bar sur les pages collection */
   height-observer.collection-toolbar,

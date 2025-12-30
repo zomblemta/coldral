@@ -332,7 +332,7 @@ document.addEventListener('click', function (e) {
           {%- when 'variant_picker' -%}
             {%- if product != blank -%}
               {%- render 'gender-switch', product: product -%}
-              {%- render 'product-color-switch', product: product -%}
+              {% comment %} {%- render 'product-color-switch', product: product -%} {% endcomment %}
               {%- render 'variant-picker',
                   product: product,
                   form_id: product_form_id,
@@ -792,11 +792,11 @@ document.addEventListener('click', function (e) {
   .variant-picker__option-values a.block-swatch {
     background: transparent !important;
     border-color: transparent !important;
-    color: #000 !important;
+    color: #000 ;
   }
   .variant-picker__option-values label.block-swatch span,
   .variant-picker__option-values a.block-swatch span {
-    color: #000 !important;
+    color: #000 ;
   }
 
   /* États (hover/focus/selected) pour les tailles */

@@ -179,8 +179,12 @@
           {%- comment -%}
             Suppression de la classe "full-bleed" pour que la barre reste dans le cadre
           {%- endcomment -%}
-          <h1 class="text-sm md:text-base px-[12px]  md:px-[46px] py-[10px] md:py-[20px] tracking-wide font-medium uppercase">
-            {{ collection.title }}
+          <h1 class="text-sm md:text-base px-[12px]  md:px-[46px] py-[10px] md:py-[20px] tracking-wide font-semibold uppercase">
+            {%- if collection.title == 'Products' -%}
+              All for Men & Women
+            {%- else -%}
+              {{ collection.title }}
+            {%- endif -%}
           </h1>
           <height-observer variable="collection-toolbar" class="collection-toolbar">
             <div class="collection-toolbar__button-list">

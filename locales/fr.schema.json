@@ -592,7 +592,12 @@
       "cross_sell_products": "Produits",
       "cross_sell_products_info": "Les produits déjà dans le panier ou en rupture sont cachés.",
       "cross_sell_heading": "Titre",
-      "cross_sell_stack_products": "Empiler les produits"
+      "cross_sell_stack_products": "Empiler les produits",
+      "you_may_also_like_category": "Vous pourriez aussi aimer",
+      "you_may_also_like_products": "Produits",
+      "you_may_also_like_products_info": "Les produits déjà dans le panier ou en rupture sont cachés.",
+      "you_may_also_like_heading": "Titre",
+      "you_may_also_like_stack_products": "Empiler les produits"
     },
     "collection_banner": {
       "name": "Bannière de la collection",

@@ -20,7 +20,7 @@
   <scroll-carousel allow-drag class="look-list-container flex overflow-x-auto gap-1 cursor-grab">
     {%- for product in section.settings.products -%}
       <div class="look-list__item shrink-0">
-        {%- render 'product-card', product: product, stacked: true, position: forloop.index, -%}
+        {%- render 'product-card', product: product, disable_slider_mobile: true -%}
       </div>
     {%- endfor -%}
   </scroll-carousel>

@@ -1,3 +1,49 @@
+<style>
+  /* Menu scroller layout */
+  .header-sidebar__scroller {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+  }
+  
+  /* Menu items spacing and font size */
+  .header-sidebar__linklist {
+    display: flex;
+    flex-direction: column;
+    gap: 24px !important;
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .header-sidebar__linklist li {
+    padding: 0 !important;
+  }
+  
+  .header-sidebar__linklist-button {
+    font-size: 15px !important;
+    letter-spacing: 0.12em;
+    padding: 0 !important;
+  }
+  
+  /* Social media icons - positioned and white */
+  .header-sidebar__scroller > div:last-child {
+    margin-top: 50px;
+  }
+  
+  .header-sidebar__scroller > div:last-child a,
+  .header-sidebar__scroller > div:last-child svg {
+    color: #fff !important;
+    fill: #fff !important;
+  }
+  
+  .header-sidebar__scroller > div:last-child svg path,
+  .header-sidebar__scroller > div:last-child svg circle,
+  .header-sidebar__scroller > div:last-child svg rect {
+    fill: #fff !important;
+    stroke: #fff !important;
+  }
+</style>
+
 {%- comment -%}
   ----------------------------------------------------------------------------------------------------------------------
   HEADER SIDEBAR COMPONENT
@@ -42,26 +88,28 @@
     <div part="overlay"></div>
 
     <div part="content">
-      <header part="header">
-        <div>
+      <header part="header" style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="flex: 1;"></div>
+        <div style="flex: 1; display: flex; justify-content: center;">
           <a href="{{ routes.root_url }}">
             {{-
               section.settings.transparent_logo
               | image_url: width: 80
               | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent w-[80px] h-[20px]'
             -}}
-          
           </a>
         </div>
-        <dialog-close-button class="contents">
-          <button
-            type="button"
-            part="close-button tap-area"
-            aria-label="{{ 'general.accessibility.close' | t | escape }}"
-          >
-            {%- render 'icon' with 'close-white', width: 16 -%}
-          </button>
-        </dialog-close-button>
+        <div style="flex: 1; display: flex; justify-content: flex-end;">
+          <dialog-close-button class="contents">
+            <button
+              type="button"
+              part="close-button tap-area"
+              aria-label="{{ 'general.accessibility.close' | t | escape }}"
+            >
+              {%- render 'icon' with 'close-white', width: 16 -%}
+            </button>
+          </dialog-close-button>
+        </div>
       </header>
 
       <div part="panel-list">

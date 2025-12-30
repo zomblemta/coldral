@@ -10,7 +10,7 @@
 <div class="popup-size-guide w-full h-full bg-[#00000050] fixed top-0 left-0 z-[1000] flex flex-col justify-center items-center">
   <div class="popup-size-guide__content bg-white p-4 max-w-[80%] min-w-[40%]">
     <div class="popup-size-guide__content__title  flex justify-between items-center w-full">
-      <h2 class="text-2xl font-bold">Size Guide</h2>
+      <h2 class="text-2xl font-bold text-black">Size Guide</h2>
       <span class="popup-size-guide__content__title__close w-[24px] h-[24px] cursor-pointer shrink-0" data-size-guide-close>
         {%- render 'icon', icon: 'icon-close-black' ,class: 'w-[24px] h-[24px] shrink-0' -%}
       </span>
@@ -22,15 +22,32 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const sizeGuideTrigger = document.querySelector('[data-size-guide-trigger]');
-    const popupSizeGuide = document.querySelector('.popup-size-guide');
-    sizeGuideTrigger.addEventListener('click', function () {
-      popupSizeGuide.classList.add('active');
+  (function() {
+    // Use event delegation to handle dynamically added elements
+    document.addEventListener('click', function(e) {
+      // Handle size guide trigger clicks (works for dynamically added elements)
+      if (e.target.closest('[data-size-guide-trigger]')) {
+        const popupSizeGuide = document.querySelector('.popup-size-guide');
+        if (popupSizeGuide) {
+          popupSizeGuide.classList.add('active');
+        }
+      }
+      
+      // Handle size guide close clicks
+      if (e.target.closest('[data-size-guide-close]')) {
+        const popupSizeGuide = document.querySelector('.popup-size-guide');
+        if (popupSizeGuide) {
+          popupSizeGuide.classList.remove('active');
+        }
+      }
     });
-    const sizeGuideClose = document.querySelector('[data-size-guide-close]');
-    sizeGuideClose.addEventListener('click', function () {
-      popupSizeGuide.classList.remove('active');
+    
+    // Also handle clicks on the backdrop to close
+    document.addEventListener('click', function(e) {
+      const popupSizeGuide = document.querySelector('.popup-size-guide');
+      if (popupSizeGuide && e.target === popupSizeGuide) {
+        popupSizeGuide.classList.remove('active');
+      }
     });
-  });
+  })();
 </script>
