@@ -16,13 +16,13 @@ Supported variables
 <div class="horizontal-product-card">
   {%- if product.featured_media -%}
     <a href="{{ product.url }}" class="horizontal-product-card__figure" data-instant>
-      {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '100px', widths: '100,150,200,250,300', class: 'horizontal-product-card__image' -}}
+      {{- product.featured_media | image_url: width: 2000 | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 150px, 200px', widths: '150,200,300,400,500,600', class: 'horizontal-product-card__image' -}}
     </a>
   {%- endif -%}
 
   <div class="horizontal-product-card__info">
     <div class="v-stack gap-1 justify-items-start">
-      <a href="{{ product.url }}" class="product-title {% if settings.product_card_text_font == 'heading' %}h6{% endif %}" data-instant>{{ product.title }}</a>
+      {% comment %} <a href="{{ product.url }}" class="product-title {% if settings.product_card_text_font == 'heading' %}h6{% endif %}" data-instant>{{ product.title }}</a> {% endcomment %}
       {%- render 'price-list', product: product, context: 'card' -%}
     </div>
 
@@ -48,7 +48,7 @@ Supported variables
           LOADING
         </quick-buy-modal>
 
-        <button aria-controls="{{ modal_id }}" class="@narrow:horizontal-product-card__button link">{{ 'product.general.add_to_cart_button' | t }}</button>
+        <button aria-controls="{{ modal_id }}" class="@narrow:horizontal-product-card__button link" style="background: none;">{% render 'icon' with 'plus', width: 16 %}</button>
         <button aria-controls="{{ modal_id }}" class="@large:horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.add_to_cart_button' | t }}</button>
       {%- endif -%}
     {%- endif -%}

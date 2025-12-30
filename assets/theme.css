@@ -1804,7 +1804,6 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 .line-item__media {
   width: var(--line-item-media-width);
   flex-shrink: 0;
-  aspect-ratio: 1/1;
   object-fit: cover;
 }
 
@@ -2306,16 +2305,17 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 
 .horizontal-product-card__figure {
   flex-shrink: 0;
-  width: 6.25rem;
+  width: 100%;
 }
 
 .horizontal-product-card__info {
-  flex-grow: 1;
-  grid-template-columns: minmax(0, 1fr);
-  grid-auto-columns: auto;
-  justify-items: start;
-  gap: .625rem;
-  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 0 10px 4px 10px;
+  justify-content: space-between;
 }
 
 .\@large\:horizontal-product-card__button {
@@ -6284,7 +6284,7 @@ product-rerender {
 }
 
 .complementary-products__product-list--carousel {
-  grid: auto / auto-flow 100%;
+  grid: auto / auto-flow 40%;
 }
 
 @media screen and (max-width: 699px) {
@@ -6292,6 +6292,27 @@ product-rerender {
     max-width: 11.25rem;
     margin-inline: auto;
   }
+}
+
+.complementary-products__progress-wrapper {
+  width: 100%;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.complementary-products__progress-track {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(var(--text-color) / 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.complementary-products__progress-fill {
+  height: 100%;
+  background-color: currentColor;
+  border-radius: 3px;
+  transition: width 0.3s ease-out;
 }
 
 @media screen and (min-width: 700px) {
@@ -8055,4 +8076,8 @@ ul {
 .email-input {
   border:none;
   outline:#000 solid 1px;
+}
+
+.complementary-products_title {
+  margin-bottom: 1rem;
 }
