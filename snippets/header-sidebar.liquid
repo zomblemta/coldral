@@ -3,7 +3,6 @@
   .header-sidebar__scroller {
     display: flex;
     flex-direction: column;
-    min-height: 50vh;
   }
   
   /* Menu items spacing and font size */
@@ -27,7 +26,7 @@
   
   /* Social media icons - positioned and white */
   .header-sidebar__scroller > div:last-child {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   
   .header-sidebar__scroller > div:last-child a,
@@ -158,10 +157,8 @@
           </li>
         {%- endfor -%}
       </ul>
-      {% render 'menu-social-media' %}
-    </div>
 
-    {%- liquid
+      {%- liquid
       if section.settings.show_country_selector and localization.available_countries.size > 1
         assign show_country_selector = true
       endif
@@ -173,6 +170,8 @@
 
     {%- if shop.customer_accounts_enabled or show_country_selector or show_locale_selector -%}
       <div class="header-sidebar__footer">
+      {% render 'menu-social-media' %}
+
         {%- if shop.customer_accounts_enabled -%}
           <a
             href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
@@ -215,6 +214,9 @@
         {%- endif -%}
       </div>
     {%- endif -%}
+    </div>
+
+   
   </div>
 
   {%- comment -%}Panel 2 holds all the second levels{%- endcomment -%}

@@ -8064,8 +8064,7 @@ ul {
 /* Menu burger / drawer pleine hauteur sur mobile & tablette */
 @media screen and (max-width: 1024px) {
   .header-sidebar__main-panel {
-    height: 100vh;      /* hauteur = hauteur de la fenêtre */
-    max-height: 100vh;
+    height: calc(100vh - 58px);
   }
 }
 
