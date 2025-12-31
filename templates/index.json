@@ -81,7 +81,7 @@
         "image_alt": "test",
         "text_color": "#ffffff",
         "title": "TOPS",
-        "button_text": "VIEW PRODUCT",
+        "button_text": "VIEW PRODUCTS",
         "button_url": "shopify://collections/tops-for-men",
         "margin_bottom": 20,
         "padding_top": 20
@@ -109,8 +109,8 @@
         "image_alt": "Image",
         "text_color": "#ffffff",
         "title": "BOTTOMS",
-        "button_text": "",
-        "button_url": "",
+        "button_text": "VIEW PRODUCTS",
+        "button_url": "shopify://collections/bottoms-for-men",
         "margin_bottom": 20,
         "padding_top": 20
       }
