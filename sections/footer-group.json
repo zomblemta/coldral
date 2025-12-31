@@ -88,7 +88,7 @@
         "newsletter_fPwtMY": {
           "type": "newsletter",
           "settings": {
-            "title": "Newsletter",
+            "title": "<strong>Newsletter</strong>",
             "content": "",
             "button_background": "",
             "button_text_color": ""
