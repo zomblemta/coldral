@@ -89,7 +89,7 @@
           "type": "newsletter",
           "settings": {
             "title": "<strong>Newsletter</strong>",
-            "content": "",
+            "content": "<h6>SIGN UP TO OUR MAILING LIST FOR EXCLUSIVE ACCESS</h6>",
             "button_background": "",
             "button_text_color": ""
           }
