@@ -936,10 +936,16 @@
         "image_2_alt": "Texte alternatif deuxième image",
         "show_overlay_on_image_2": "Afficher le texte superposé sur la deuxième image",
         "first_image_text_header": "Contenu texte première image",
+        "first_image_style_header": "Paramètres de style première image",
         "second_image_text_header": "Contenu texte deuxième image",
+        "second_image_style_header": "Paramètres de style deuxième image",
         "layout_header": "Paramètres de mise en page",
         "margin_bottom": "Marge inférieure",
-        "padding_top": "Remplissage supérieur"
+        "padding_top": "Remplissage supérieur",
+        "image_link": "Lien de l'image",
+        "image_link_info": "Rendre toute l'image cliquable. Fonctionne uniquement lorsque le texte superposé est désactivé.",
+        "title_size_mobile": "Taille du titre (Mobile)",
+        "title_size_desktop": "Taille du titre (Bureau)"
       }
     },
     "images_with_text_scroll": {

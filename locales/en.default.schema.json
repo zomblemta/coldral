@@ -936,10 +936,16 @@
         "image_2_alt": "Second Image Alt Text",
         "show_overlay_on_image_2": "Show text overlay on second image",
         "first_image_text_header": "First Image Text Content",
+        "first_image_style_header": "First Image Style Settings",
         "second_image_text_header": "Second Image Text Content",
+        "second_image_style_header": "Second Image Style Settings",
         "layout_header": "Layout Settings",
         "margin_bottom": "Margin Bottom",
-        "padding_top": "Padding Top"
+        "padding_top": "Padding Top",
+        "image_link": "Image Link",
+        "image_link_info": "Make the entire image clickable. Only works when text overlay is disabled.",
+        "title_size_mobile": "Title Size (Mobile)",
+        "title_size_desktop": "Title Size (Desktop)"
       }
     },
     "images_with_text_scroll": {
