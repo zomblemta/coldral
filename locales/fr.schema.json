@@ -922,6 +922,26 @@
         }
       }
     },
+    "full_img": {
+      "name": "Image pleine largeur",
+      "settings": {
+        "first_image_header": "Première image",
+        "image_1_desktop": "Première image - Bureau",
+        "image_1_mobile": "Première image - Mobile",
+        "image_1_alt": "Texte alternatif première image",
+        "show_overlay_on_image_1": "Afficher le texte superposé sur la première image",
+        "second_image_header": "Deuxième image",
+        "image_2_desktop": "Deuxième image - Bureau",
+        "image_2_mobile": "Deuxième image - Mobile",
+        "image_2_alt": "Texte alternatif deuxième image",
+        "show_overlay_on_image_2": "Afficher le texte superposé sur la deuxième image",
+        "first_image_text_header": "Contenu texte première image",
+        "second_image_text_header": "Contenu texte deuxième image",
+        "layout_header": "Paramètres de mise en page",
+        "margin_bottom": "Marge inférieure",
+        "padding_top": "Remplissage supérieur"
+      }
+    },
     "images_with_text_scroll": {
       "name": "Images avec texte qui scrolle",
       "instructions": "Configurez le contenu en ajoutant des blocs. La section s'adapte automatiquement pour remplir exactement la hauteur de l'écran.",

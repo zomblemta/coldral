@@ -922,6 +922,26 @@
         }
       }
     },
+    "full_img": {
+      "name": "Full Image",
+      "settings": {
+        "first_image_header": "First Image",
+        "image_1_desktop": "First Image - Desktop",
+        "image_1_mobile": "First Image - Mobile",
+        "image_1_alt": "First Image Alt Text",
+        "show_overlay_on_image_1": "Show text overlay on first image",
+        "second_image_header": "Second Image",
+        "image_2_desktop": "Second Image - Desktop",
+        "image_2_mobile": "Second Image - Mobile",
+        "image_2_alt": "Second Image Alt Text",
+        "show_overlay_on_image_2": "Show text overlay on second image",
+        "first_image_text_header": "First Image Text Content",
+        "second_image_text_header": "Second Image Text Content",
+        "layout_header": "Layout Settings",
+        "margin_bottom": "Margin Bottom",
+        "padding_top": "Padding Top"
+      }
+    },
     "images_with_text_scroll": {
       "name": "Images with text scroll",
       "instructions": "Configure content by adding blocks. The section adapts automatically to fill exactly the screen height.",
