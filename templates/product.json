@@ -113,6 +113,7 @@
         },
         "complementary_products_Ld3Xwf": {
           "type": "complementary_products",
+          "disabled": true,
           "settings": {
             "title": "<strong>STYLED WITH :</strong>",
             "products_count": 4,
