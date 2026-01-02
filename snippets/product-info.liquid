@@ -331,7 +331,7 @@ document.addEventListener('click', function (e) {
 
           {%- when 'variant_picker' -%}
             {%- if product != blank -%}
-              {%- render 'gender-switch', product: product -%}
+              {% comment %} {%- render 'gender-switch', product: product -%} {% endcomment %}
               {% comment %} {%- render 'product-color-switch', product: product -%} {% endcomment %}
               {%- render 'variant-picker',
                   product: product,

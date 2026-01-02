@@ -68,6 +68,22 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   {%- comment -%} -------------------------------------------------------------
   MEDIA / SLIDER
   -------------------------------------------------------------- {%- endcomment -%}
+  {%- liquid
+    # 如果提供了颜色变体，收集相同颜色的变体图片
+    assign use_color_variant_images = false
+    
+    if color_variant != null and color_value != blank
+      # 检查是否有相同颜色的变体图片
+      for variant in product.variants
+        if color_value == variant.option1 or color_value == variant.option2 or color_value == variant.option3
+          if variant.image != blank
+            assign use_color_variant_images = true
+            break
+          endif
+        endif
+      endfor
+    endif
+  -%}
   {%- if product.media.size > 0 -%}
     <div class="product-card__figure">
       {%- comment -%} Badge SOLD OUT ou badges classiques {%- endcomment -%}
@@ -82,20 +98,62 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
       <div class="product-slider">
         <div class="swiper {% if disable_slider %}swiper-no-swiping{% endif %}" {% if disable_slider %}data-disable-slider="true"{% endif %} {% if disable_slider_mobile %}data-disable-slider-mobile="true"{% endif %}>
           <div class="swiper-wrapper">
-            {%- for image in product.images -%}
-              <div class="swiper-slide">
-                <a href="{{ product.url }}" draggable="false" data-instant>
-                  {{ image
-                    | image_url: width: 800
-                    | image_tag:
-                      loading: 'lazy',
-                      widths: '200,300,400,500,600,700,800,1000,1200',
-                      alt: product.title,
-                      class: 'product-card__image'
-                  }}
-                </a>
-              </div>
-            {%- endfor -%}
+            {%- if use_color_variant_images -%}
+              {%- comment -%} 显示相同颜色的变体图片 {%- endcomment -%}
+              {%- assign has_variant_images = false -%}
+              {%- for variant in product.variants -%}
+                {%- if color_value == variant.option1 or color_value == variant.option2 or color_value == variant.option3 -%}
+                  {%- if variant.image != blank -%}
+                    {%- assign has_variant_images = true -%}
+                    <div class="swiper-slide">
+                      <a href="{{ product.url }}?variant={{ variant.id }}" draggable="false" data-instant>
+                        {{ variant.image
+                          | image_url: width: 800
+                          | image_tag:
+                            loading: 'lazy',
+                            widths: '200,300,400,500,600,700,800,1000,1200',
+                            alt: product.title,
+                            class: 'product-card__image'
+                        }}
+                      </a>
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- comment -%} 如果没有找到变体图片，使用第一张产品图片 {%- endcomment -%}
+              {%- unless has_variant_images -%}
+                {%- if product.images.size > 0 -%}
+                  <div class="swiper-slide">
+                    <a href="{{ product.url }}{% if color_variant != null %}?variant={{ color_variant.id }}{% endif %}" draggable="false" data-instant>
+                      {{ product.images[0]
+                        | image_url: width: 800
+                        | image_tag:
+                          loading: 'lazy',
+                          widths: '200,300,400,500,600,700,800,1000,1200',
+                          alt: product.title,
+                          class: 'product-card__image'
+                      }}
+                    </a>
+                  </div>
+                {%- endif -%}
+              {%- endunless -%}
+            {%- else -%}
+              {%- comment -%} 没有颜色变体，显示所有产品图片 {%- endcomment -%}
+              {%- for image in product.images -%}
+                <div class="swiper-slide">
+                  <a href="{{ product.url }}" draggable="false" data-instant>
+                    {{ image
+                      | image_url: width: 800
+                      | image_tag:
+                        loading: 'lazy',
+                        widths: '200,300,400,500,600,700,800,1000,1200',
+                        alt: product.title,
+                        class: 'product-card__image'
+                    }}
+                  </a>
+                </div>
+              {%- endfor -%}
+            {%- endif -%}
           </div>
 
           {%- unless disable_slider -%}
@@ -166,7 +224,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
       <div class="product-card__meta-top">
         {%- if show_title -%}
           <h3 class="product-card__title">
-            <a href="{{ product.url }}" class="product-card__title-link" data-instant>
+            <a href="{{ product.url }}{% if color_variant != null %}?variant={{ color_variant.id }}{% endif %}" class="product-card__title-link" data-instant>
               {{- product.title -}}
             </a>
           </h3>
@@ -222,10 +280,17 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
       {%- if current_color != blank or handles_source.size > 0 -%}
         <div class="color-switch color-switch--card">
           <div class="color-switch__items">
-            {%- if current_color != blank -%}
+            {%- comment -%} 如果有颜色值，显示颜色名称；否则显示产品标题 {%- endcomment -%}
+            {%- if color_value != blank -%}
+              <a
+                href="{{ product.url }}{% if color_variant != null %}?variant={{ color_variant.id }}{% endif %}"
+                class="product-card__color-title text-pretty text-[10px] tracking-normal is-active"
+                title="{{ color_value | escape }}"
+              >{{ color_value }}</a>
+            {%- elsif current_color != blank -%}
               <a
                 href="{{ product.url }}"
-                class="product-card__color-title text-pretty text-[10px] tracking-normal  is-active"
+                class="product-card__color-title text-pretty text-[10px] tracking-normal is-active"
                 title="{{ product.title | escape }}"
               >{{ product.title }}</a>
             {%- endif -%}
@@ -235,11 +300,23 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
               {%- if handle == blank -%}{% continue %}{%- endif -%}
               {%- assign p = all_products[handle] -%}
               {%- if p != empty -%}
+                {%- comment -%} 尝试从关联产品中获取颜色值 {%- endcomment -%}
+                {%- liquid
+                  assign related_color_value = null
+                  assign related_color_labels = 'color,farve,farbe,couleur,cor,colour' | split: ','
+                  for option in p.options_with_values
+                    assign option_name_downcase = option.name | downcase
+                    if related_color_labels contains option_name_downcase
+                      assign related_color_value = option.values[0]
+                      break
+                    endif
+                  endfor
+                -%}
                 <a
                   href="{{ p.url }}"
                   class="product-card__color-title text-pretty text-[10px] tracking-normal"
-                  title="{{ p.title | escape }}"
-                >{{ p.title }}</a>
+                  title="{% if related_color_value != blank %}{{ related_color_value | escape }}{% else %}{{ p.title | escape }}{% endif %}"
+                >{% if related_color_value != blank %}{{ related_color_value }}{% else %}{{ p.title }}{% endif %}</a>
               {%- endif -%}
             {%- endfor -%}
           </div>
@@ -426,6 +503,16 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   text-decoration: line-through;
   opacity: 0.6;
   margin-left: 0.25rem;
+}
+
+/* 颜色名称显示在标题下方 */
+.product-card__color-name {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: rgba(0 0 0 / 0.81);
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
 }
 
 /* =========================================================

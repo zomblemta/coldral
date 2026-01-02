@@ -81,7 +81,7 @@ shopify-accelerated-checkout-cart {
 .quick-buy-modal__info-wrapper {
   border: none !important;
   margin: 0 !important;
-  padding: 1.5rem !important;
+  padding: 0 1.5rem 3rem 1.5rem !important;
 }
 
 

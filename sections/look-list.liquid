@@ -10,14 +10,24 @@
     width: calc(100% / 4);
   }
 
+
+
 @media (max-width: 768px) {
+  .look-list-container {
+    margin-top: 20px;
+  }
   .look-list__item {
     width: calc((100% + 100px) / 2);
   }
 }
 </style>
+<div class="mt-4">
 {%- if section.settings.products.size > 0 -%}
+  {%- if section.settings.title != blank -%}
+    <h3 class="look-list__title uppercase ml-4 font-semibold mb-[15px] md:mb-[30px] mt-[15px] md:mt-[30px] text-[15px]/[18px] md:text-[24px]/[29px] p-0">{{ section.settings.title }}</h3>
+  {%- endif -%}
   <scroll-carousel allow-drag class="look-list-container flex overflow-x-auto gap-1 cursor-grab">
+
     {%- for product in section.settings.products -%}
       <div class="look-list__item shrink-0">
         {%- render 'product-card', product: product, disable_slider_mobile: true -%}
@@ -25,11 +35,17 @@
     {%- endfor -%}
   </scroll-carousel>
 {%- endif -%}
+</div>
 
 {% schema %}
 {
   "name": "t:sections.look_list.name",
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
     {
       "type": "product_list",
       "id": "products",

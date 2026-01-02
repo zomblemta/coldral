@@ -1,0 +1,101 @@
+
+.alp-product-small-look-item {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .alp-product-small-look-item-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .alp-product-small-look-item-button .quick-add-trigger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .alp-product-small-look-item-button .quick-add-trigger:hover {
+    transform: scale(1.1);
+  }
+  
+  .alp-product-small-look-item-button .quick-add-trigger:active {
+    transform: scale(0.95);
+  }
+  .alp-product-small-look-item-button-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .alp-product-small-look-item-image {
+    aspect-ratio: 3/4;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .alp-product-small-look-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .alp-product-small-look-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .alp-product-small-look-item-content-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    line-height: normal; /* 75% */
+  }
+  .alp-product-small-look-item-content-price-container {
+    display: flex;
+    align-items: end;
+    gap: 8px;
+  }
+  .alp-product-small-look-item-content-price {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .alp-product-small-look-item-content-compare-at-price {
+    color: #858585;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: line-through;
+  }
+  .alp-product-small-look-item-content-save-percent {
+    color: #858585;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  .alp-product-small-look-item-content-tag {
+    color: #858585;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  

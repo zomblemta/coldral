@@ -2488,7 +2488,7 @@ backdropBlur animation {
 @media screen and (min-width: 700px) {
   .quick-buy-modal {
     --modal-body-padding-inline: 3.125rem;
-    --modal-body-padding-block: 3.125rem;
+    --modal-body-padding-block: 0rem;
   }
 
   .quick-buy-modal::part(header) {

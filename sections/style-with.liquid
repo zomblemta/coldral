@@ -18,22 +18,275 @@
   .style-with__item {
     width: calc(100% / 4);
   }
-</style>
 
-{%- if product.metafields.custom.style_with_products.value.size > 0 -%}
-  <div class="w-full flex flex-col items-center py-10">
+  .style-with-container[data-color-index] {
+    display: flex;
+  }
+
+  .style-with-container[data-color-index]:not([data-active="true"]) {
+    display: none;
+  }
+</style>
+{%- comment -%}获取当前产品选中的颜色选项索引{%- endcomment -%}
+{%- assign current_selected_color_index = null -%}
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+{%- assign color_labels = 'color,farve,farbe,couleur,cor,colour' | split: ',' -%}
+
+{%- comment -%}从当前选中的变体中提取颜色选项索引{%- endcomment -%}
+{%- if selected_variant != null -%}
+  {%- for option in product.options_with_values -%}
+    {%- assign option_name_downcase = option.name | downcase -%}
+    {%- if color_labels contains option_name_downcase -%}
+      {%- for value in option.values -%}
+        {%- if value == selected_variant.option1
+          or value == selected_variant.option2
+          or value == selected_variant.option3
+        -%}
+          {%- assign current_selected_color_index = forloop.index -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- comment -%}获取产品颜色选项信息用于 JavaScript{%- endcomment -%}
+{%- assign product_color_option = null -%}
+{%- for option in product.options_with_values -%}
+  {%- assign option_name_downcase = option.name | downcase -%}
+  {%- if color_labels contains option_name_downcase -%}
+    {%- assign product_color_option = option -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}根据当前选中的颜色索引（1-5）选择对应的产品列表{%- endcomment -%}
+{%- if current_selected_color_index == null or current_selected_color_index < 1 or current_selected_color_index > 5 -%}
+  {%- assign current_selected_color_index = 1 -%}
+{%- endif -%}
+
+{%- comment -%}检查是否有任何颜色的产品列表{%- endcomment -%}
+{%- assign has_any_products = false -%}
+{%- if product.metafields.custom.style_with_products_color_1.value.size > 0
+  or product.metafields.custom.style_with_products_color_2.value.size > 0
+  or product.metafields.custom.style_with_products_color_3.value.size > 0
+  or product.metafields.custom.style_with_products_color_4.value.size > 0
+  or product.metafields.custom.style_with_products_color_5.value.size > 0
+-%}
+  {%- assign has_any_products = true -%}
+{%- endif -%}
+
+{%- if has_any_products -%}
+  <div class="style-with-section w-full flex flex-col items-center py-10" data-section-id="{{ section.id }}">
     <h3 class="style-with__title uppercase font-semibold mb-[15px] md:mb-[30px] mt-[15px] md:mt-[30px] text-[15px]/[18px] md:text-[24px]/[29px] p-0">
       {{ section.settings.title }}
     </h3>
 
-    <div class="style-with-container flex flex-nowrap justify-center gap-4">
-      {% for product in product.metafields.custom.style_with_products.value %}
-        <div class="style-with__item shrink-0">
-          {%- render 'product-card', product: product, stacked: true, position: forloop.index -%}
-        </div>
-      {% endfor %}
+    <div class="style-with-containers-wrapper">
+      {%- comment -%}渲染所有5个颜色的产品列表，默认只显示当前选中的颜色{%- endcomment -%}
+      {%- for color_index in (1..5) -%}
+        {%- assign color_variants_array = null -%}
+        {%- if color_index == 1 -%}
+          {%- assign color_variants_array = product.metafields.custom.style_with_products_color_1.value -%}
+        {%- elsif color_index == 2 -%}
+          {%- assign color_variants_array = product.metafields.custom.style_with_products_color_2.value -%}
+        {%- elsif color_index == 3 -%}
+          {%- assign color_variants_array = product.metafields.custom.style_with_products_color_3.value -%}
+        {%- elsif color_index == 4 -%}
+          {%- assign color_variants_array = product.metafields.custom.style_with_products_color_4.value -%}
+        {%- elsif color_index == 5 -%}
+          {%- assign color_variants_array = product.metafields.custom.style_with_products_color_5.value -%}
+        {%- endif -%}
+
+        {%- if color_variants_array != null and color_variants_array.size > 0 -%}
+          <div class="style-with-container flex flex-nowrap justify-center gap-2 w-full" 
+               data-color-index="{{ color_index }}" 
+               {% if color_index == current_selected_color_index %}data-active="true"{% endif %}>
+            {% for variant_item in color_variants_array %}
+              <div class="style-with__item shrink-0">
+                {%- assign product_item = variant_item.product -%}
+                {%- comment -%}从variant提取颜色选项索引{%- endcomment -%}
+                {%- assign color_option_index = null -%}
+
+                {%- comment -%}找到对应的variant，提取颜色选项{%- endcomment -%}
+                {%- for option in product_item.options_with_values -%}
+                  {%- assign option_name_downcase = option.name | downcase -%}
+                  {%- if color_labels contains option_name_downcase -%}
+                    {%- for value in option.values -%}
+                      {%- if value == variant_item.option1
+                        or value == variant_item.option2
+                        or value == variant_item.option3
+                      -%}
+                        {%- assign color_option_index = forloop.index -%}
+                        {%- break -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+
+                {%- render 'alp-product-small-look-item', product: product_item, color_option_index: color_option_index, unique_id: variant_item.id | default: forloop.index -%}
+              </div>
+            {% endfor %}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
     </div>
   </div>
+
+  <script>
+    (function() {
+      // 等待 DOM 加载完成
+      function initStyleWith() {
+        const styleWithSection = document.querySelector('.style-with-section[data-section-id="{{ section.id }}"]');
+        if (!styleWithSection) {
+          // 如果元素还没加载，稍后重试
+          setTimeout(initStyleWith, 100);
+          return;
+        }
+
+        const productColorOption = {% if product_color_option %}{{ product_color_option.values | json }}{% else %}null{% endif %};
+
+        function getColorIndexFromVariant(variant) {
+          if (!variant || !productColorOption) return null;
+          
+          // 尝试从 variant 的 option1, option2, option3 中找到颜色值
+          const variantColorValue = variant.option1 || variant.option2 || variant.option3;
+          if (!variantColorValue) return null;
+
+          // 在颜色选项列表中查找匹配的索引
+          for (let i = 0; i < productColorOption.length; i++) {
+            if (productColorOption[i] === variantColorValue) {
+              return i + 1; // 返回1-5的索引
+            }
+          }
+          return null;
+        }
+
+        function showColorProducts(colorIndex) {
+          if (!colorIndex || colorIndex < 1 || colorIndex > 5) {
+            return;
+          }
+
+          // 隐藏所有容器
+          const containers = styleWithSection.querySelectorAll('.style-with-container[data-color-index]');
+          containers.forEach(container => {
+            container.removeAttribute('data-active');
+          });
+
+          // 显示对应颜色的容器
+          const targetContainer = styleWithSection.querySelector(`.style-with-container[data-color-index="${colorIndex}"]`);
+          if (targetContainer) {
+            targetContainer.setAttribute('data-active', 'true');
+          }
+        }
+
+        // 从当前选中的变体获取颜色索引
+        function getCurrentColorIndex() {
+          // 方法1: 从 variant:change 事件获取
+          // 方法2: 从当前选中的变体脚本标签获取
+          const variantScript = document.querySelector('script[data-variant]');
+          if (variantScript) {
+            try {
+              const variant = JSON.parse(variantScript.textContent);
+              return getColorIndexFromVariant(variant);
+            } catch (e) {
+              // 解析失败，忽略
+            }
+          }
+          
+          // 方法3: 从 URL 参数获取变体 ID，然后查找对应的颜色
+          const urlParams = new URLSearchParams(window.location.search);
+          const variantId = urlParams.get('variant');
+          if (variantId) {
+            // 需要从产品数据中查找变体信息
+            // 这里我们主要依赖事件
+          }
+          
+          return null;
+        }
+
+        // 监听变体变化事件 - 在 document 上监听，因为事件会冒泡
+        function handleVariantChange(event) {
+          const variant = event.detail?.variant;
+          if (variant) {
+            const colorIndex = getColorIndexFromVariant(variant);
+            if (colorIndex) {
+              showColorProducts(colorIndex);
+              return;
+            }
+          }
+          
+          // 如果事件中没有变体或无法获取颜色索引，尝试从当前状态获取
+          setTimeout(() => {
+            const colorIndex = getCurrentColorIndex();
+            if (colorIndex) {
+              showColorProducts(colorIndex);
+            }
+          }, 50);
+        }
+
+        // 在 document 上监听事件（事件会冒泡）
+        document.addEventListener('variant:change', handleVariantChange);
+
+        // 也尝试在 form 上监听（作为备用）
+        const productForm = document.querySelector('form[action*="/cart/add"]');
+        if (productForm) {
+          productForm.addEventListener('variant:change', handleVariantChange);
+          
+          // 备用方案：监听变体选择器的 input 变化
+          const variantInputs = productForm.querySelectorAll('input[data-option-position]');
+          variantInputs.forEach(input => {
+            input.addEventListener('change', function() {
+              // 延迟一下，等待 variant:change 事件触发
+              setTimeout(() => {
+                const colorIndex = getCurrentColorIndex();
+                if (colorIndex) {
+                  showColorProducts(colorIndex);
+                }
+              }, 100);
+            });
+          });
+        }
+
+        // 监听 URL 变化（当变体选择器更新 URL 时）
+        let lastUrl = window.location.href;
+        const checkUrlChange = () => {
+          const currentUrl = window.location.href;
+          if (currentUrl !== lastUrl) {
+            lastUrl = currentUrl;
+            const colorIndex = getCurrentColorIndex();
+            if (colorIndex) {
+              showColorProducts(colorIndex);
+            }
+          }
+        };
+        
+        // 使用 MutationObserver 监听 URL 变化
+        const observer = new MutationObserver(checkUrlChange);
+        observer.observe(document.body, { childList: true, subtree: true });
+        
+        // 也监听 popstate 事件（浏览器前进/后退）
+        window.addEventListener('popstate', () => {
+          const colorIndex = getCurrentColorIndex();
+          if (colorIndex) {
+            showColorProducts(colorIndex);
+          }
+        });
+
+        // 初始化：显示当前选中的颜色
+        showColorProducts({{ current_selected_color_index }});
+      }
+
+      // 如果 DOM 已经加载完成，立即执行；否则等待
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initStyleWith);
+      } else {
+        initStyleWith();
+      }
+    })();
+  </script>
 {%- endif -%}
 
 {% schema %}

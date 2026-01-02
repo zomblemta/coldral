@@ -65,7 +65,7 @@ Supported variables
       <fieldset class="variant-picker__option v-stack gap-2">
         <div class="variant-picker__option-info h-stack justify-between gap-2">
           <div class="h-stack gap-1">
-            <legend>{{ option.name }}:</legend>
+            <legend class="font-semibold tracking-wide">{{ option.name }}:</legend>
 
             {%- if resolved_option_selector_style == 'swatch' or resolved_option_selector_style == 'variant_image' -%}
               <span>{{ option.selected_value }}</span>

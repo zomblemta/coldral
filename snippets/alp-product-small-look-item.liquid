@@ -1,0 +1,117 @@
+{%- comment -%}构建产品颜色数据{%- endcomment -%}
+{%- assign color_swatches = '' -%}
+{%- assign color_labels = 'color,farve,farbe,couleur,cor,colour' | split: ',' -%}
+{%- assign color_option_index = null -%}
+{%- assign color_option_value = null -%}
+{%- for option in product.options_with_values -%}
+  {%- assign option_name_downcase = option.name | downcase -%}
+  {%- if color_labels contains option_name_downcase -%}
+    {%- capture color_swatches -%}[
+      {%- for value in option.values -%}
+        {%- assign value_handle = value | handleize -%}
+        {%- assign color_metaobject = shop.metaobjects['shopify--color-pattern'][value_handle] -%}
+        {
+          "name": {{ value | json }},
+          "color": {% if color_metaobject.color.value %}{{ color_metaobject.color.value | json }}{% else %}""{% endif %},
+          "image": ""
+        }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ]{%- endcapture -%}
+    {%- comment -%}如果color_options存在且是数字，获取对应的颜色值{%- endcomment -%}
+    {%- if color_options != blank -%}
+      {%- assign color_options_num = color_options | plus: 0 -%}
+      {%- if color_options_num > 0 and color_options_num <= option.values.size -%}
+        {%- assign color_option_index = color_options_num | minus: 1 -%}
+        {%- assign color_option_value = option.values[color_option_index] -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}根据color_options获取对应的变体图片{%- endcomment -%}
+{%- assign selected_image = product.images[0] -%}
+{%- if color_option_value != null -%}
+  {%- for variant in product.variants -%}
+    {%- if color_option_value == variant.option1
+      or color_option_value == variant.option2
+      or color_option_value == variant.option3
+    -%}
+      {%- if variant.image != blank -%}
+        {%- assign selected_image = variant.image -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<div class="alp-product-small-look-item">
+  <div class="alp-product-small-look-item-image">
+    {% render 'alp-responsive-image', image: selected_image %}
+  </div>
+  <div class="flex justify-between items-start w-full">
+  <div class="alp-product-small-look-item-content">
+    <h3 class="alp-product-small-look-item-content-title">
+      <a href="{{ product.url }}">
+        {{ product.title }}
+      </a>
+    </h3>
+    <div class="alp-product-small-look-item-content-price-container">
+      <span class="alp-product-small-look-item-content-price">{{ product.price | money }}</span>
+      {% if product.compare_at_price > product.price %}
+        <span class="alp-product-small-look-item-content-compare-at-price">{{ product.compare_at_price | money }}</span>
+      {% endif %}
+    </div>
+  </div>
+  {%- comment -%}Quick-add 按钮功能{%- endcomment -%}
+  {%- if product.available -%}
+    <div class="alp-product-small-look-item-button">
+      {%- liquid
+        assign default_variant = product.selected_or_first_available_variant
+        assign is_single_variant = false
+        if product.variants.size == 1 and product.selling_plan_groups.size == 0
+          assign is_single_variant = true
+        endif
+      -%}
+      
+      {%- if is_single_variant -%}
+        {%- comment -%}单个变体：直接添加到购物车{%- endcomment -%}
+        <product-form>
+          {%- form 'product', product -%}
+            <input type="hidden" name="id" value="{{ default_variant.id }}">
+            <button type="submit" class="quick-add-trigger" aria-label="{{ 'product.general.add_to_cart_button' | t }}">
+              {% render 'icon' with 'plus', width: 12 -%}
+            </button>
+          {%- endform -%}
+        </product-form>
+      {%- else -%}
+        {%- comment -%}多个变体：打开 quick-buy 模态框{%- endcomment -%}
+        {%- liquid
+          # 生成唯一的 ID，使用 product.id 和 unique_id（如果提供）
+          if unique_id != blank
+            assign quick_buy_id = 'quick-buy-alp-' | append: product.id | append: '-' | append: unique_id
+          else
+            # 如果没有提供 unique_id，使用随机数确保唯一性
+            assign random_suffix = product.id | append: 'x' | append: forloop.index | default: 'default'
+            assign quick_buy_id = 'quick-buy-alp-' | append: product.id | append: '-' | append: random_suffix
+          endif
+        -%}
+        <button 
+          type="button" 
+          class="quick-add-trigger" 
+          aria-controls="{{ quick_buy_id }}"
+          aria-label="{{ 'product.general.choose_options' | t }}"
+          data-quick-buy-id="{{ quick_buy_id }}"
+        >
+          {% render 'icon' with 'plus', width: 12 -%}
+        </button>
+        <quick-buy-modal
+          handle="{{ product.handle }}{% if default_variant %}?variant={{ default_variant.id }}{% endif %}"
+          id="{{ quick_buy_id }}"
+          class="quick-buy-modal modal"
+        ></quick-buy-modal>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+  </div>
+
+</div>
