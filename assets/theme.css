@@ -7617,6 +7617,32 @@ product-rerender {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .md\:justify-start {
+    justify-content: start;
+  }
+
+  .md\:justify-center {
+    justify-content: safe center;
+  }
+
+  .md\:justify-end {
+    justify-content: end;
+  }
+
+  .md\:items-start {
+    align-items: start;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:items-end {
+    align-items: end;
+  }
+}
+
 .vertical-align-top {
   vertical-align: top;
 }
