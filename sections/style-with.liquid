@@ -88,7 +88,7 @@
       {{ section.settings.title }}
     </h3>
 
-    <div class="style-with-containers-wrapper">
+    <div class="style-with-containers-wrapper w-full">
       {%- comment -%}渲染所有5个颜色的产品列表，默认只显示当前选中的颜色{%- endcomment -%}
       {%- for color_index in (1..5) -%}
         {%- assign color_variants_array = null -%}
@@ -105,7 +105,7 @@
         {%- endif -%}
 
         {%- if color_variants_array != null and color_variants_array.size > 0 -%}
-          <div class="style-with-container flex flex-nowrap justify-center gap-2 w-full" 
+          <div class="style-with-container flex flex-nowrap md:justify-center gap-2 w-full" 
                data-color-index="{{ color_index }}" 
                {% if color_index == current_selected_color_index %}data-active="true"{% endif %}>
             {% for variant_item in color_variants_array %}
@@ -131,7 +131,7 @@
                   {%- endif -%}
                 {%- endfor -%}
 
-                {%- render 'alp-product-small-look-item', product: product_item, color_option_index: color_option_index, unique_id: variant_item.id | default: forloop.index -%}
+                {%- render 'alp-product-small-look-item', product: product_item, variant_item: variant_item, color_option_index: color_option_index, unique_id: variant_item.id | default: forloop.index -%}
               </div>
             {% endfor %}
           </div>

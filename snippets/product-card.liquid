@@ -191,10 +191,16 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
               {%- endform -%}
             </product-form>
           {%- else -%}
-            {%- assign quick_buy_id = 'quick-buy-' | append: product.id -%}
+            {%- liquid
+              if color_variant != null and color_variant.id != blank
+                assign quick_buy_id = 'quick-buy-' | append: product.id | append: '-' | append: color_variant.id
+              else
+                assign quick_buy_id = 'quick-buy-' | append: product.id | append: '-' | append: variant.id
+              endif
+            -%}
             <button type="button" class="product-card__quick-add-button" aria-controls="{{ quick_buy_id }}">
               <span class="sr-only">{{ 'product.general.choose_options' | t }}</span>
-              {%- render 'icon' with 'plus' -%}
+              {%- render 'icon' with 'plus', -%}
             </button>
             <quick-buy-modal
               handle="{{ product.handle }}?variant={{ variant.id }}"

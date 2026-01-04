@@ -62,16 +62,18 @@ shopify-accelerated-checkout-cart {
 }
 
 .quick-buy-modal::part(content) {
-  background: rgba(0, 0, 0, 0.85) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   border: none !important;
-  color: #fff;
+  color: rgb(var(--text-color));
   overflow: hidden !important;
 }
 
 .quick-buy-modal::part(body) {
   background: transparent !important;
+  padding-block-start: 0 !important;
+  padding-block-end: 0 !important;
 }
 
 .quick-buy-modal__content {

@@ -394,14 +394,12 @@
                     -%}
                     
                     {%- if has_color_option and color_option_values != null and color_option_values.size > 0 -%}
-                      {%- comment -%} 如果有颜色选项，为每个颜色变体创建一个产品卡片 {%- endcomment -%}
                       {%- for color_value in color_option_values -%}
                         {%- liquid
                           assign product_position = product_position | plus: 1
                           assign color_variant = null
                           assign found_variant_with_image = false
                           
-                          # 找到对应颜色的变体（优先选择有图片的变体）
                           for variant in product.variants
                             if color_value == variant.option1 or color_value == variant.option2 or color_value == variant.option3
                               if color_variant == null

@@ -11,20 +11,39 @@
   <div class="popup-size-guide__content bg-white p-4 max-w-[80%] min-w-[40%]">
     <div class="popup-size-guide__content__title  flex justify-between items-center w-full">
       <h2 class="text-2xl font-bold text-black">Size Guide</h2>
-      <span class="popup-size-guide__content__title__close w-[24px] h-[24px] cursor-pointer shrink-0" data-size-guide-close>
-        {%- render 'icon', icon: 'icon-close-black' ,class: 'w-[24px] h-[24px] shrink-0' -%}
+      <span
+        class="popup-size-guide__content__title__close w-[24px] h-[24px] cursor-pointer shrink-0"
+        data-size-guide-close
+      >
+        {%- render 'icon', icon: 'icon-close-black', class: 'w-[24px] h-[24px] shrink-0' -%}
       </span>
     </div>
-    <div class="popup-size-guide__content__content">
-      {{ pages[settings.product_info_size_guide_page_content].content }}
+    <div class="popup-size-guide__content__content overflow-y-auto max-h-[80vh]">
+      {%- liquid
+        assign size_guide_metafield = product.metafields.custom.size_guide
+        assign size_guide_page = null
+        
+        if size_guide_metafield != blank
+ 
+          assign test_handle = size_guide_metafield.handle
+          if test_handle != blank
+            assign size_guide_page = size_guide_metafield
+          else
+            assign size_guide_page = pages[size_guide_metafield]
+          endif
+        endif
+      -%}
+      {%- if size_guide_page != blank -%}
+        {{ size_guide_page.content }}
+      {%- endif -%}
     </div>
   </div>
 </div>
 
 <script>
-  (function() {
+  (function () {
     // Use event delegation to handle dynamically added elements
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
       // Handle size guide trigger clicks (works for dynamically added elements)
       if (e.target.closest('[data-size-guide-trigger]')) {
         const popupSizeGuide = document.querySelector('.popup-size-guide');
@@ -32,7 +51,7 @@
           popupSizeGuide.classList.add('active');
         }
       }
-      
+
       // Handle size guide close clicks
       if (e.target.closest('[data-size-guide-close]')) {
         const popupSizeGuide = document.querySelector('.popup-size-guide');
@@ -41,9 +60,9 @@
         }
       }
     });
-    
+
     // Also handle clicks on the backdrop to close
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
       const popupSizeGuide = document.querySelector('.popup-size-guide');
       if (popupSizeGuide && e.target === popupSizeGuide) {
         popupSizeGuide.classList.remove('active');

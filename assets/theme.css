@@ -2477,7 +2477,7 @@ backdropBlur animation {
   }
 
   .quick-buy-modal__info-wrapper .product-info__block-item[data-block-type="variant-picker"] {
-    --product-info-gap: 1.25rem;
+    --product-info-gap: .25rem;
   }
 
   .quick-buy-modal__info-wrapper .product-info__block-item[data-block-type="buy-buttons"] {
