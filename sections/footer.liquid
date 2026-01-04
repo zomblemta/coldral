@@ -267,12 +267,12 @@
 
         <p class="heading text-subdued text-xxs">© {{ 'now' | date: '%Y' }} - {{ shop.name }} {{ powered_by_link }}</p>
 
-        <div>
+        <div class="px-4">
           {%- for block in section.blocks -%}
             {%- if block.type == 'policy_links' -%}
-              <ul class="unstyled-list flex gap-4">
+              <ul class="unstyled-list flex gap-4 flex-wrap ">
                 {%- for link in block.settings.menu.links -%}
-                  <li><a href="{{ link.url }}" class="link-faded text-xs">{{ link.title }}</a></li>
+                  <li><a href="{{ link.url }}" class="link-faded  text-nowrap text-xs">{{ link.title }}</a></li>
                 {%- endfor -%}
               </ul>
             {%- endif -%}

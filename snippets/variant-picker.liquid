@@ -88,7 +88,7 @@ Supported variables
             </x-modal>
           {%- endif -%}
 
-          {%- if size_label_list contains option_downcase and context != 'quick_buy' and product.metafields.custom.size_guide != blank -%}
+          {%- if size_label_list contains option_downcase -%}
             <div class="flex cursor-pointer items-center gap-x-[10px]" data-size-guide-trigger>
               <p class="text-sm font-normal tracking-[1.2px] underline m-0">Size Guide</p>
             </div>
