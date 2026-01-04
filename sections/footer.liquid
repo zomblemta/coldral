@@ -1,120 +1,118 @@
 <style>
-    #shopify-section-{{ section.id }} {
-      --footer-content-justify-items: {% if section.settings.blocks.size <= 2 %}start{% else %}space-between{% endif %};
-    }
-
-    /* Newsletter promo text */
-    .newsletter-promo-text {
-      font-size: 12px;
-      color: inherit;
-      margin-bottom: 0px;
-      opacity: 0.8;
-    }
-
-    /* Email input underline style */
-    .input.email-input--underline {
-      border-width: 0 !important;
-      border-style: none !important;
-      border-top: none !important;
-      border-left: none !important;
-      border-right: none !important;
-      border-bottom: 1px solid currentColor !important;
-      border-radius: 0 !important;
-      background: transparent !important;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-      box-shadow: none !important;
-      outline: none !important;
-    }
-
-    .input.email-input--underline:focus,
-    .input.email-input--underline:focus-visible {
-      box-shadow: none !important;
-      outline: none !important;
-      border-top: none !important;
-      border-left: none !important;
-      border-right: none !important;
-      border-bottom: 1px solid currentColor !important;
-    }
-
-    .form-control:has(.email-input--underline) {
-      border: none !important;
-    }
-
-    .form-control:has(.email-input--underline)::before {
-      display: none !important;
-    }
-
-    /* Newsletter subscribe button */
-    .footer__block--newsletter .button {
-      font-weight: 600 !important;
-      border-radius: 4px !important;
-    }
-
-  /* --- Organisation verticale + centrage du footer --- */
-
-  .footer__inner {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 50px;
+  #shopify-section-{{ section.id }} {
+    --footer-content-justify-items: {% if section.settings.blocks.size <= 2 %}start{% else %}space-between{% endif %};
   }
 
-  /* Blocs du footer les uns sous les autres */
-  .footer__block-list {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 40px;
+  /* Newsletter promo text */
+  .newsletter-promo-text {
+    font-size: 12px;
+    color: inherit;
+    margin-bottom: 0px;
+    opacity: 0.8;
   }
 
-  /* Chaque bloc centré */
-  .footer__block {
-    text-align: center !important;
-    align-items: center !important;
+  /* Email input underline style */
+  .input.email-input--underline {
+    border-width: 0 !important;
+    border-style: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid currentColor !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
   }
 
-  /* Listes de liens centrées */
-  .footer__block ul {
-    align-items: center !important;
-    text-align: center !important;
+  .input.email-input--underline:focus,
+  .input.email-input--underline:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid currentColor !important;
   }
 
-  /* Aside du footer (paiements, copy, selectors…) */
-  .footer__aside {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 20px;
-    width: 100%;
+  .form-control:has(.email-input--underline) {
+    border: none !important;
+  }
+  
+  .form-control:has(.email-input--underline)::before {
+    display: none !important;
   }
 
-  /* Méthodes de paiement centrées */
-  .payment-methods {
-    display: flex !important;
-    flex-wrap: wrap;
-    justify-content: center !important;
-    gap: 12px;
+  /* Newsletter subscribe button */
+  .footer__block--newsletter .button {
+    font-weight: 600 !important;
+    border-radius: 4px !important;
   }
 
-  }
+/* --- Organisation verticale + centrage du footer --- */
+
+.footer__inner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 50px;
+}
+
+/* Blocs du footer les uns sous les autres */
+.footer__block-list {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 40px;
+}
+
+/* Chaque bloc centré */
+.footer__block {
+  text-align: center !important;
+  align-items: center !important;
+}
+
+/* Listes de liens centrées */
+.footer__block ul {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* Aside du footer (paiements, copy, selectors…) */
+.footer__aside {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Méthodes de paiement centrées */
+.payment-methods {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  gap: 12px;
+}
+
+}
+
 </style>
 
-{%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient
-  | default: section.settings.color_scheme.settings.background
-  | md5
--%}
+{%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
 
 <div class="footer color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
   <div class="">
     <div class="footer__inner">
       {%- comment -%}
-        ------------------------------------------------------------------------------------------------------------------
-        FOOTER BLOCKS (MAIN CONTENT)
-        ------------------------------------------------------------------------------------------------------------------
+      ------------------------------------------------------------------------------------------------------------------
+      FOOTER BLOCKS (MAIN CONTENT)
+      ------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
       {%- if section.blocks.size > 0 -%}
@@ -222,10 +220,7 @@
             {%- endcapture -%}
 
             {%- if block_content != blank -%}
-              <div
-                class="footer__block footer__block--{{ block.type | remove_first: '@' }}"
-                {{ block.shopify_attributes }}
-              >
+              <div class="footer__block footer__block--{{ block.type | remove_first: '@' }}" {{ block.shopify_attributes }}>
                 {{- block_content -}}
               </div>
             {%- endif -%}
@@ -234,9 +229,9 @@
       {%- endif -%}
 
       {%- comment -%}
-        ------------------------------------------------------------------------------------------------------------------
-        FOOTER SOCIAL MEDIA
-        ------------------------------------------------------------------------------------------------------------------
+      ------------------------------------------------------------------------------------------------------------------
+      FOOTER SOCIAL MEDIA
+      ------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
       {%- if section.settings.show_social_media -%}
@@ -244,9 +239,9 @@
       {%- endif -%}
 
       {%- comment -%}
-        ------------------------------------------------------------------------------------------------------------------
-        FOOTER ASIDE (COPYRIGHT + LOCALIZATION SELECTORS + PAYMENT METHODS)
-        ------------------------------------------------------------------------------------------------------------------
+      ------------------------------------------------------------------------------------------------------------------
+      FOOTER ASIDE (COPYRIGHT + LOCALIZATION SELECTORS + PAYMENT METHODS)
+      ------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
       <div class="footer__aside">
@@ -261,12 +256,7 @@
         {%- if show_country_selector or show_locale_selector -%}
           <div class="localization-selectors">
             {%- if show_country_selector -%}
-              {%- render 'localization-selector',
-                type: 'country',
-                placement: 'top-start',
-                show_country_name: section.settings.show_country_name,
-                show_country_flag: section.settings.show_country_flag
-              -%}
+              {%- render 'localization-selector', type: 'country', placement: 'top-start', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag -%}
             {%- endif -%}
 
             {%- if show_locale_selector -%}
@@ -275,32 +265,21 @@
           </div>
         {%- endif -%}
 
-        <p class="heading text-subdued text-xxs">
-          © {{ 'now' | date: '%Y' }} - {{ shop.name }}
-          {{ powered_by_link }}
-        </p>
+        <p class="heading text-subdued text-xxs">© {{ 'now' | date: '%Y' }} - {{ shop.name }} {{ powered_by_link }}</p>
 
         <div class="px-4">
           {%- for block in section.blocks -%}
             {%- if block.type == 'policy_links' -%}
               <ul class="unstyled-list flex gap-4 flex-wrap ">
                 {%- for link in block.settings.menu.links -%}
-                  <li>
-                    <a href="{{ link.url }}" class="link-faded  text-nowrap text-xs">{{ link.title }}</a>
-                  </li>
+                  <li><a href="{{ link.url }}" class="link-faded  text-nowrap text-xs">{{ link.title }}</a></li>
                 {%- endfor -%}
-                <li>
-                  <a
-                    href="javascript:void(0);"
-                    onclick="document.querySelector('[data-consent-banner-preferences]')?.click()"
-                  >
-                    Cookie Preferences
-                  </a>
-                </li>
+                <button type="button" class="link-faded text-nowrap text-xs" onclick="window.Shopify.customerPrivacy?.showPreferences?.()">cookie preferences</button>
               </ul>
             {%- endif -%}
           {%- endfor -%}
         </div>
+
 
         {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
           <ul class="payment-methods unstyled-list">
