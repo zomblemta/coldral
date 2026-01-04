@@ -290,7 +290,7 @@
                   </li>
                 {%- endfor -%}
                 <button type="button" id="cookie-consent-btn" class="link-faded text-nowrap text-xs">
-                  cookie preferences
+                  Cookie preferences
                 </button>
               </ul>
             {%- endif -%}
@@ -298,12 +298,7 @@
         </div>
         <script>
           document.getElementById('cookie-consent-btn').addEventListener('click', function () {
-            // 打开 Shopify 的隐私横幅
-            if (window.Shopify && window.Shopify.customerPrivacy) {
-              window.Shopify.customerPrivacy
-                .showPreferences
-                ();
-            }
+            privacyBanner.showPreferences()
           });
         </script>
 
