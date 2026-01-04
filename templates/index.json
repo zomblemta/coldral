@@ -76,8 +76,8 @@
       "type": "full-img",
       "name": "Full Image",
       "settings": {
-        "image_1_desktop": "shopify://shop_images/20250921_COLDRAL3801.jpg",
-        "image_1_mobile": "shopify://shop_images/20250921_COLDRAL3801.jpg",
+        "image_1_desktop": "shopify://shop_images/20250921_COLDRAL3801_copie.webp",
+        "image_1_mobile": "shopify://shop_images/20250921_COLDRAL3801_copie.webp",
         "image_1_alt": "Image 1",
         "show_overlay_on_image_1": true,
         "image_2_desktop": "shopify://shop_images/20250921_COLDRAL3840.jpg",
