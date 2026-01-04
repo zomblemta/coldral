@@ -3,7 +3,7 @@
     {%- render 'free-shipping-bar' -%}
   {%- endif -%}
   
-<p class="uppercase text-xl font-medium" slot="header">{{ 'cart.general.title' | t }}</p>
+<p class="uppercase text-xl font-semibold " slot="header">{{ 'cart.general.title' | t }}</p>
 
   {%- if cart.empty? -%}
     <p class="h5 text-center">{{ 'cart.general.empty' | t }}</p>

@@ -4145,7 +4145,8 @@ product-rerender {
 
 .free-shipping-bar__text {
   color: var(--color-text);
-  font-weight: 500;
+  font-weight: 600;
+  font-family: var(--font-heading);
 }
 
 .free-shipping-bar__progress-wrapper {
@@ -8105,4 +8106,13 @@ ul {
 
 .complementary-products_title {
   margin-bottom: 1rem;
+}
+
+.line-item-title {
+  font-family: var(--font-heading);
+  font-weight: 600;   
+  font-size: 12px;
+  line-height: 1.7;
+  font-style: normal;
+  text-transform: uppercase;
 }

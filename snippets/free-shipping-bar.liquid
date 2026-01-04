@@ -48,10 +48,10 @@ being eligible for free shipping.
 -%}
 
 {%- if cart.requires_shipping -%}
-  <free-shipping-bar class="free-shipping-bar" threshold="{{ converted_threshold }}" total-price="{{ calculated_total_price }}" currency-rate="{{ currency_rate }}" reached-message="{{ 'cart.free_shipping_bar.limit_reached_html' | t | escape }}" unreached-message="{{ 'cart.free_shipping_bar.limit_unreached_html' | t | escape }}">
+  <free-shipping-bar class="free-shipping-bar " threshold="{{ converted_threshold }}" total-price="{{ calculated_total_price }}" currency-rate="{{ currency_rate }}" reached-message="{{ 'cart.free_shipping_bar.limit_reached_html' | t | escape }}" unreached-message="{{ 'cart.free_shipping_bar.limit_unreached_html' | t | escape }}">
     <div class="free-shipping-bar__content">
       {%- comment -%}The span below is the placeholder where the content will be inserted in JS{%- endcomment -%}
-      <span class="free-shipping-bar__text">&nbsp;</span>
+      <span class="free-shipping-bar__text font-medium">&nbsp;</span>
       <div class="free-shipping-bar__progress-wrapper {% if is_threshold_reached %}free-shipping-bar__progress-wrapper--hidden{% endif %}">
         <div class="free-shipping-bar__progress-track">
           <div class="free-shipping-bar__progress-fill" style="width: {{ progress_percentage }}%;"></div>

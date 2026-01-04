@@ -377,7 +377,7 @@
     },
     "free_shipping_bar": {
       "limit_unreached_html": "Only {{ remaining_amount }} away from free shipping",
-      "limit_reached_html": "Your order qualifies for Free Shipping"
+      "limit_reached_html": "Free shipping applied"
     },
     "shipping_estimator": {
       "estimate_shipping": "Estimate shipping",
