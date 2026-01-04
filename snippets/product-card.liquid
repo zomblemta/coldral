@@ -99,15 +99,39 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
         <div class="swiper {% if disable_slider %}swiper-no-swiping{% endif %}" {% if disable_slider %}data-disable-slider="true"{% endif %} {% if disable_slider_mobile %}data-disable-slider-mobile="true"{% endif %}>
           <div class="swiper-wrapper">
             {%- if use_color_variant_images -%}
-              {%- comment -%} 显示相同颜色的变体图片 {%- endcomment -%}
+              {%- comment -%} 显示变体图片和后两张图片 {%- endcomment -%}
               {%- assign has_variant_images = false -%}
+              {%- assign variant_image = null -%}
+              {%- assign variant_image_index = -1 -%}
+              {%- assign target_variant_id = null -%}
+              {%- comment -%} 找到第一个匹配颜色的变体图片 {%- endcomment -%}
               {%- for variant in product.variants -%}
                 {%- if color_value == variant.option1 or color_value == variant.option2 or color_value == variant.option3 -%}
-                  {%- if variant.image != blank -%}
-                    {%- assign has_variant_images = true -%}
+                  {%- if variant.image != blank and variant_image == null -%}
+                    {%- assign variant_image = variant.image -%}
+                    {%- assign target_variant_id = variant.id -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- comment -%} 找到变体图片在产品图片中的索引 {%- endcomment -%}
+              {%- if variant_image != null -%}
+                {%- for image in product.images -%}
+                  {%- if image.id == variant_image.id -%}
+                    {%- assign variant_image_index = forloop.index0 -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+              {%- comment -%} 显示变体图片和后两张 {%- endcomment -%}
+              {%- if variant_image_index >= 0 -%}
+                {%- assign has_variant_images = true -%}
+                {%- for i in (0..2) -%}
+                  {%- assign img_index = variant_image_index | plus: i -%}
+                  {%- if img_index < product.images.size -%}
                     <div class="swiper-slide">
-                      <a href="{{ product.url }}?variant={{ variant.id }}" draggable="false" data-instant>
-                        {{ variant.image
+                      <a href="{{ product.url }}?variant={{ target_variant_id }}" draggable="false" data-instant>
+                        {{ product.images[img_index]
                           | image_url: width: 800
                           | image_tag:
                             loading: 'lazy',
@@ -118,8 +142,8 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
                       </a>
                     </div>
                   {%- endif -%}
-                {%- endif -%}
-              {%- endfor -%}
+                {%- endfor -%}
+              {%- endif -%}
               {%- comment -%} 如果没有找到变体图片，使用第一张产品图片 {%- endcomment -%}
               {%- unless has_variant_images -%}
                 {%- if product.images.size > 0 -%}
@@ -281,18 +305,47 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
         else
           assign handles_source = mh_val
         endif
+        
+        # 从产品选项中提取所有颜色值
+        assign product_color_labels = 'color,farve,farbe,couleur,cor,colour' | split: ','
+        assign product_color_values = null
+        for option in product.options_with_values
+          assign option_name_downcase = option.name | downcase
+          if product_color_labels contains option_name_downcase
+            assign product_color_values = option.values
+            break
+          endif
+        endfor
       -%}
 
-      {%- if current_color != blank or handles_source.size > 0 -%}
+      {%- if color_value != blank or product_color_values != null or current_color != blank or handles_source.size > 0 -%}
         <div class="color-switch color-switch--card">
           <div class="color-switch__items">
-            {%- comment -%} 如果有颜色值，显示颜色名称；否则显示产品标题 {%- endcomment -%}
+            {%- comment -%} 如果传入了 color_value（集合页），只显示当前颜色 {%- endcomment -%}
             {%- if color_value != blank -%}
               <a
                 href="{{ product.url }}{% if color_variant != null %}?variant={{ color_variant.id }}{% endif %}"
                 class="product-card__color-title text-pretty text-[10px] tracking-normal is-active"
                 title="{{ color_value | escape }}"
               >{{ color_value }}</a>
+            {%- elsif product_color_values != null -%}
+              {%- comment -%} 没有传入 color_value，显示所有颜色（look-list等） {%- endcomment -%}
+              {%- for color_name in product_color_values -%}
+                {%- liquid
+                  assign color_variant_for_link = null
+                  for variant in product.variants
+                    if color_name == variant.option1 or color_name == variant.option2 or color_name == variant.option3
+                      assign color_variant_for_link = variant
+                      break
+                    endif
+                  endfor
+                -%}
+                <a
+                  href="{{ product.url }}{% if color_variant_for_link != null %}?variant={{ color_variant_for_link.id }}{% endif %}"
+                  class="product-card__color-title text-pretty text-[10px] tracking-normal{% if forloop.first %} is-active{% endif %}"
+                  title="{{ color_name | escape }}"
+                >{{ color_name }}</a>
+              {%- endfor -%}
             {%- elsif current_color != blank -%}
               <a
                 href="{{ product.url }}"
@@ -526,7 +579,6 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
    ========================================================= */
 
 .color-switch.color-switch--card {
-  margin: 0.35rem 0 0.1rem;
   text-align: left;
 }
 
@@ -686,9 +738,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
     font-size: 0.8125rem;
   }
 
-  .color-switch.color-switch--card {
-    margin-top: 0.3rem;
-  }
+
 
   .color-switch--card .color-switch__dot {
     width: 16px;

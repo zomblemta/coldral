@@ -30,7 +30,7 @@
 
     {%- for product in section.settings.products -%}
       <div class="look-list__item shrink-0">
-        {%- render 'product-card', product: product, disable_slider_mobile: true -%}
+        {%- render 'product-card', product: product, show_swatches: true -%}
       </div>
     {%- endfor -%}
   </scroll-carousel>

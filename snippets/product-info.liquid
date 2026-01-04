@@ -696,7 +696,9 @@ document.addEventListener('click', function (e) {
   {%- endunless -%}
 </safe-sticky>
 
-{% render 'poppu-size-guide',product: product %}
+{%- if context != 'quick_buy' and product.metafields.custom.size_guide != blank -%}
+  {% render 'poppu-size-guide', product: product %}
+{%- endif -%}
 
 <style>
   /* ----- MOBILE UNIQUEMENT : bullets du slider sur l'image ----- */
