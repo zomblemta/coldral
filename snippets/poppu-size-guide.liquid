@@ -34,7 +34,7 @@
             assign file_url = metafield_value | image_url: width: 1200
             assign is_image = true
           elsif metafield_value.preview_image.src != blank
-            assign file_url = metafield_value.preview_image | image_url: width: 1200
+            assign file_url = metafield_value.preview_image | image_url: width: 6000
             assign is_image = true
           comment
             Check for GenericFile (file reference metafield)
