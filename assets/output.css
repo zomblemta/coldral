@@ -340,6 +340,12 @@
   .h-\[24px\] {
     height: 24px;
   }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -593,6 +599,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
   }
   .border-x {
     border-inline-style: var(--tw-border-style);

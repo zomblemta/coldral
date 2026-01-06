@@ -20,21 +20,51 @@
     </div>
     <div class="popup-size-guide__content__content overflow-y-auto max-h-[80vh]">
       {%- liquid
-        assign size_guide_metafield = product.metafields.custom.size_guide
-        assign size_guide_page = null
+        assign size_guide_metafield = product.metafields.custom.size_guide_pdf
+        assign file_url = nil
+        assign is_image = false
         
         if size_guide_metafield != blank
- 
-          assign test_handle = size_guide_metafield.handle
-          if test_handle != blank
-            assign size_guide_page = size_guide_metafield
-          else
-            assign size_guide_page = pages[size_guide_metafield]
+          assign metafield_value = size_guide_metafield.value | default: size_guide_metafield
+          
+          comment
+            Check for MediaImage (image reference metafield)
+          endcomment
+          if metafield_value.src != blank
+            assign file_url = metafield_value | image_url: width: 1200
+            assign is_image = true
+          elsif metafield_value.preview_image.src != blank
+            assign file_url = metafield_value.preview_image | image_url: width: 1200
+            assign is_image = true
+          comment
+            Check for GenericFile (file reference metafield)
+          endcomment
+          elsif metafield_value.url != blank
+            assign file_url = metafield_value.url
+            assign media_type = metafield_value.media_type | default: ''
+            if media_type == 'image'
+              assign is_image = true
+            endif
           endif
         endif
       -%}
-      {%- if size_guide_page != blank -%}
-        {{ size_guide_page.content }}
+      {%- if file_url != blank -%}
+        {%- if is_image or file_url contains '.jpg' or file_url contains '.jpeg' or file_url contains '.png' or file_url contains '.webp' or file_url contains '.gif' or file_url contains '.svg' -%}
+          <img 
+            src="{{ file_url }}" 
+            alt="Size Guide"
+            class="w-full h-auto"
+            width="800"
+            height="600"
+            loading="lazy"
+          >
+        {%- else -%}
+          <iframe 
+            src="{{ file_url }}" 
+            class="w-full h-[70vh] border-0"
+            title="Size Guide"
+          ></iframe>
+        {%- endif -%}
       {%- endif -%}
     </div>
   </div>

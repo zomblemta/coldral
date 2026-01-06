@@ -239,7 +239,6 @@ document.addEventListener('click', function (e) {
             {%- else -%}
               {%- assign product_title = 'general.on_boarding.product_title' | t -%}
             {%- endif -%}
-
             {%- if request.page_type == 'product' and context == 'main_product' -%}
               <h1 class="product-title {{ block.settings.heading_tag }}">
                 {{- product_title -}}
