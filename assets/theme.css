@@ -967,7 +967,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .drawer::part(content) {
-  width: 100%;
+  width: 85%;
   height: 100%;
   background-color: rgb(var(--background));
   background-image: var(--background-gradient);
