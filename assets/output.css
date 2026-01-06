@@ -655,6 +655,9 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
   .pl-\[20px\] {
     padding-left: 20px;
   }

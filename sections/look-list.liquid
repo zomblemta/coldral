@@ -1,32 +1,35 @@
 <style>
+  .look-list-wrapper {
+    overflow: hidden;
+    max-width: 100%;
+  }
   .look-list-container {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-color: transparent transparent;
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
   }
   .look-list__item {
     width: calc(100% / 4);
   }
-
-
 
 @media (max-width: 768px) {
   .look-list-container {
     margin-top: 20px;
   }
   .look-list__item {
-    width: calc((100% + 100px) / 2);
+    width: calc((100vw - 40px) / 2);
   }
 }
 </style>
-<div class="mt-4">
+<div class="mt-4 look-list-wrapper">
 {%- if section.settings.products.size > 0 -%}
   {%- if section.settings.title != blank -%}
     <h3 class="look-list__title uppercase ml-4 font-semibold mb-[15px] md:mb-[30px] mt-[15px] md:mt-[30px] text-[15px]/[18px] md:text-[24px]/[29px] p-0">{{ section.settings.title }}</h3>
   {%- endif -%}
-  <scroll-carousel allow-drag class="look-list-container flex overflow-x-auto gap-1 cursor-grab">
+  <scroll-carousel allow-drag class="look-list-container flex overflow-x-auto gap-1 cursor-grab pl-4">
 
     {%- for product in section.settings.products -%}
       <div class="look-list__item shrink-0">
