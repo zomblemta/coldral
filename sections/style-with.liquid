@@ -1,4 +1,9 @@
 <style>
+  .style-with-section {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
   .style-with__title {
     margin-bottom: 15px;
   }
@@ -11,24 +16,36 @@
   .style-with-containers-wrapper {
     overflow: hidden;
     max-width: 100%;
+    width: 100%;
   }
   
   .style-with-container {
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-color: transparent transparent;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .style-with-container {
+      padding-left: 20;
+      padding-right: 0;
+    }
   }
 
   .style-with__item {
     width: calc(100% / 4);
+    scroll-snap-align: start;
   }
 
   @media (max-width: 768px) {
     .style-with__item {
-      width: calc((100vw - 40px) / 2);
+      width: 45%;
+      min-width: 160px;
     }
   }
   .style-with-container[data-color-index] {
@@ -95,7 +112,7 @@
       {{ section.settings.title }}
     </h3>
 
-    <div class="style-with-containers-wrapper w-full  pl-[20px] md:pl-0">
+    <div class="style-with-containers-wrapper">
       {%- comment -%}渲染所有5个颜色的产品列表，默认只显示当前选中的颜色{%- endcomment -%}
       {%- for color_index in (1..5) -%}
         {%- assign color_variants_array = null -%}
