@@ -55,6 +55,9 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   # Disable slider option
   assign disable_slider = disable_slider | default: false
   assign disable_slider_mobile = disable_slider_mobile | default: false
+  
+  # Show first color only option
+  assign show_first_color_only = show_first_color_only | default: false
 -%}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -329,7 +332,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
                 title="{{ color_value | escape }}"
               >{{ color_value }}</a>
             {%- elsif product_color_values != null -%}
-              {%- comment -%} 没有传入 color_value，显示所有颜色（look-list等） {%- endcomment -%}
+              {%- comment -%} 没有传入 color_value，显示颜色（look-list等） {%- endcomment -%}
               {%- for color_name in product_color_values -%}
                 {%- liquid
                   assign color_variant_for_link = null
@@ -345,6 +348,9 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
                   class="product-card__color-title text-pretty text-[10px] tracking-normal{% if forloop.first %} is-active{% endif %}"
                   title="{{ color_name | escape }}"
                 >{{ color_name }}</a>
+                {%- if show_first_color_only -%}
+                  {%- break -%}
+                {%- endif -%}
               {%- endfor -%}
             {%- elsif current_color != blank -%}
               <a
@@ -354,30 +360,32 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
               >{{ product.title }}</a>
             {%- endif -%}
 
-            {%- for raw in handles_source -%}
-              {%- assign handle = raw | strip | split: '/' | last -%}
-              {%- if handle == blank -%}{% continue %}{%- endif -%}
-              {%- assign p = all_products[handle] -%}
-              {%- if p != empty -%}
-                {%- comment -%} 尝试从关联产品中获取颜色值 {%- endcomment -%}
-                {%- liquid
-                  assign related_color_value = null
-                  assign related_color_labels = 'color,farve,farbe,couleur,cor,colour' | split: ','
-                  for option in p.options_with_values
-                    assign option_name_downcase = option.name | downcase
-                    if related_color_labels contains option_name_downcase
-                      assign related_color_value = option.values[0]
-                      break
-                    endif
-                  endfor
-                -%}
-                <a
-                  href="{{ p.url }}"
-                  class="product-card__color-title text-pretty text-[10px] tracking-normal"
-                  title="{% if related_color_value != blank %}{{ related_color_value | escape }}{% else %}{{ p.title | escape }}{% endif %}"
-                >{% if related_color_value != blank %}{{ related_color_value }}{% else %}{{ p.title }}{% endif %}</a>
-              {%- endif -%}
-            {%- endfor -%}
+            {%- unless show_first_color_only -%}
+              {%- for raw in handles_source -%}
+                {%- assign handle = raw | strip | split: '/' | last -%}
+                {%- if handle == blank -%}{% continue %}{%- endif -%}
+                {%- assign p = all_products[handle] -%}
+                {%- if p != empty -%}
+                  {%- comment -%} 尝试从关联产品中获取颜色值 {%- endcomment -%}
+                  {%- liquid
+                    assign related_color_value = null
+                    assign related_color_labels = 'color,farve,farbe,couleur,cor,colour' | split: ','
+                    for option in p.options_with_values
+                      assign option_name_downcase = option.name | downcase
+                      if related_color_labels contains option_name_downcase
+                        assign related_color_value = option.values[0]
+                        break
+                      endif
+                    endfor
+                  -%}
+                  <a
+                    href="{{ p.url }}"
+                    class="product-card__color-title text-pretty text-[10px] tracking-normal"
+                    title="{% if related_color_value != blank %}{{ related_color_value | escape }}{% else %}{{ p.title | escape }}{% endif %}"
+                  >{% if related_color_value != blank %}{{ related_color_value }}{% else %}{{ p.title }}{% endif %}</a>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endunless -%}
           </div>
         </div>
       {%- endif -%}
