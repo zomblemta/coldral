@@ -6,6 +6,22 @@
 {%- comment -%}选择图片的逻辑：优先使用variant_item对应的变体图片{%- endcomment -%}
 {%- assign selected_image = product.images[0] -%}
 
+{%- comment -%}直接从 variant_item 提取颜色值{%- endcomment -%}
+{%- if variant_item != null -%}
+  {%- for option in product.options_with_values -%}
+    {%- assign option_name_downcase = option.name | downcase -%}
+    {%- if color_labels contains option_name_downcase -%}
+      {%- for value in option.values -%}
+        {%- if value == variant_item.option1 or value == variant_item.option2 or value == variant_item.option3 -%}
+          {%- assign color_option_value = value -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
 {%- if variant_item != null -%}
   {%- comment -%}如果提供了variant_item，尝试找到对应的产品变体并使用其图片{%- endcomment -%}
   {%- assign found_variant = null -%}
@@ -39,7 +55,24 @@
   
   {%- if found_variant != null and found_variant.image != blank -%}
     {%- assign selected_image = found_variant.image -%}
-  {%- elsif color_option_index != null -%}
+    {%- comment -%}从找到的变体中提取颜色值{%- endcomment -%}
+    {%- for option in product.options_with_values -%}
+      {%- assign option_name_downcase = option.name | downcase -%}
+      {%- if color_labels contains option_name_downcase -%}
+        {%- if found_variant.option1 != blank -%}
+          {%- for value in option.values -%}
+            {%- if value == found_variant.option1 or value == found_variant.option2 or value == found_variant.option3 -%}
+              {%- assign color_option_value = value -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  
+  {%- if color_option_value == null and color_option_index != null -%}
     {%- comment -%}如果没找到匹配的变体，根据color_option_index获取对应的颜色值{%- endcomment -%}
     {%- for option in product.options_with_values -%}
       {%- assign option_name_downcase = option.name | downcase -%}
@@ -215,16 +248,19 @@
     {%- endif -%}
   </div>
     <div class="alp-product-small-look-item-content ">
-      <h3 class="alp-product-small-look-item-content-title">
         <a href="{{ product.url }}" class="alp-product-small-look-item-title-link">
           {{ product.title }}
         </a>
-      </h3>
       <div class="alp-product-small-look-item-content-price-container">
         <span class="alp-product-small-look-item-content-price">{{ product.price | money }}</span>
         {% if product.compare_at_price > product.price %}
           <span class="alp-product-small-look-item-content-compare-at-price">{{ product.compare_at_price | money }}</span>
         {% endif %}
       </div>
+      {%- if color_option_value != blank -%}
+        <div class="alp-product-small-look-item-content-color">
+          {{ color_option_value }}
+        </div>
+      {%- endif -%}
   </div>
 </div>

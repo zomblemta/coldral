@@ -1,7 +1,7 @@
 
 .alp-product-small-look-item {
     display: flex;
-    gap: 12px;
+    gap: 4px;
     justify-content: space-between;
     flex-direction: column;
   }
@@ -58,9 +58,23 @@
   }
   .alp-product-small-look-item-content {
     display: flex;
-    gap: 4px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .alp-product-small-look-item-content-color {
+    width: 100%;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .alp-product-small-look-item-content-color {
+      font-size: 10px;
+    }
   }
   .alp-product-small-look-item-content-title {
     flex: 1 1 auto;
@@ -75,17 +89,28 @@
   }
   
   .alp-product-small-look-item-title-link {
-    display: block;
-    text-decoration: none;
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: left;
     color: inherit;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  
-  .alp-product-small-look-item-title-link:hover {
-    text-decoration: underline;
+
+
+  @media screen and (max-width: 768px) {
+    .alp-product-small-look-item-title-link  {
+      font-weight: 700;
+      font-size: 10px;
+    }
   }
+  
+
   .alp-product-small-look-item-content-price-container {
     gap: 0.25rem;
     white-space: nowrap;
@@ -95,7 +120,11 @@
   
   .alp-product-small-look-item-content-price {
     display: inline-block;
+    white-space: nowrap;
+    color: rgba(0 0 0 / 0.81);
   }
+
+
   
   .alp-product-small-look-item-content-compare-at-price {
     display: inline-block;
@@ -103,21 +132,9 @@
     opacity: 0.6;
     margin-left: 0.25rem;
   }
-  .alp-product-small-look-item-content-save-percent {
-    color: #858585;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    .alp-product-small-look-item-content-price-container {
+      font-size: 10px;
+    }
   }
-  
-  .alp-product-small-look-item-content-tag {
-    color: #858585;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  
