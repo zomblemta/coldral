@@ -56,9 +56,9 @@
         "disabled": false,
         "settings": {}
       },
-      "9670189827046205946": {
-        "type": "shopify://apps/hextom-translate-and-currency/blocks/app-block/b927a799-be04-4b97-9efb-5c8f0290a68e",
-        "disabled": true,
+      "776302416715791028": {
+        "type": "shopify://apps/bucks/blocks/app-embed/4f0a9b06-9da4-4a49-b378-2de9d23a3af3",
+        "disabled": false,
         "settings": {}
       }
     },
