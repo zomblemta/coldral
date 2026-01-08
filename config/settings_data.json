@@ -50,6 +50,16 @@
         "type": "shopify://apps/trackify-x/blocks/app-embed/f3561b5a-1d26-4c4b-9d29-6bae914fb95d",
         "disabled": false,
         "settings": {}
+      },
+      "1804893150726543839": {
+        "type": "shopify://apps/nova-multi-currency-converter/blocks/app-embed/a5be3c35-cbd0-46a1-ac3a-1ace57a9c1ce",
+        "disabled": false,
+        "settings": {}
+      },
+      "2912608901741945173": {
+        "type": "shopify://apps/trueprofit-profit-analytics/blocks/truepixel/711d36f9-ea83-4623-a720-e574b794560b",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
