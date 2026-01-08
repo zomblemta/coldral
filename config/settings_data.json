@@ -51,13 +51,13 @@
         "disabled": false,
         "settings": {}
       },
-      "1804893150726543839": {
-        "type": "shopify://apps/nova-multi-currency-converter/blocks/app-embed/a5be3c35-cbd0-46a1-ac3a-1ace57a9c1ce",
+      "2912608901741945173": {
+        "type": "shopify://apps/trueprofit-profit-analytics/blocks/truepixel/711d36f9-ea83-4623-a720-e574b794560b",
         "disabled": false,
         "settings": {}
       },
-      "2912608901741945173": {
-        "type": "shopify://apps/trueprofit-profit-analytics/blocks/truepixel/711d36f9-ea83-4623-a720-e574b794560b",
+      "9670189827046205946": {
+        "type": "shopify://apps/hextom-translate-and-currency/blocks/app-block/b927a799-be04-4b97-9efb-5c8f0290a68e",
         "disabled": false,
         "settings": {}
       }
