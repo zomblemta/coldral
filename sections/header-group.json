@@ -56,7 +56,7 @@
         "sidebar_open_second_level_menus": true,
         "layout": "logo_center_navigation_inline",
         "show_icons": true,
-        "show_country_selector": true,
+        "show_country_selector": false,
         "show_country_name": false,
         "show_country_flag": true,
         "show_locale_selector": false,
