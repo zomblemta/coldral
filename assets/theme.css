@@ -5351,7 +5351,7 @@ product-rerender {
   padding-block-end: 10px;
   padding-inline-start: var(--drawer-body-padding-inline);
   padding-inline-end: var(--drawer-body-padding-inline);
-  overflow-y: auto;
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

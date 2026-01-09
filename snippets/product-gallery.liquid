@@ -365,4 +365,115 @@ product-gallery.product-gallery,
 }
 
 
+/* 无限轮播过渡动画 */
+.product-gallery__carousel.loop-transition {
+  opacity: 0;
+  transition: opacity 0.15s ease-out;
+}
+.product-gallery__carousel.loop-transition-in {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
 </style>
+
+<script>
+  // 无限轮播功能 - Infinite Carousel Loop
+  (function() {
+    document.addEventListener('DOMContentLoaded', function() {
+      const productGalleryCarousel = document.getElementById('{{ product_gallery_carousel_id }}');
+      if (!productGalleryCarousel) return;
+
+      // 获取箭头按钮
+      const prevButtons = document.querySelectorAll('carousel-prev-button[aria-controls="{{ product_gallery_carousel_id }}"]');
+      const nextButtons = document.querySelectorAll('carousel-next-button[aria-controls="{{ product_gallery_carousel_id }}"]');
+
+      // 阻止按钮被禁用
+      const preventDisable = (button) => {
+        if (button && button.firstElementChild) {
+          const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+              if (mutation.attributeName === 'disabled') {
+                button.firstElementChild.disabled = false;
+              }
+            });
+          });
+          observer.observe(button.firstElementChild, { attributes: true });
+          button.firstElementChild.disabled = false;
+        }
+      };
+
+      prevButtons.forEach(preventDisable);
+      nextButtons.forEach(preventDisable);
+
+      // 带淡入淡出效果的跳转函数
+      let isLooping = false;
+      const loopToIndex = (carousel, targetIndex) => {
+        if (isLooping) return;
+        isLooping = true;
+        
+        // 淡出
+        carousel.classList.add('loop-transition');
+        carousel.classList.remove('loop-transition-in');
+        
+        setTimeout(() => {
+          // 瞬间跳转
+          carousel.select(targetIndex, { instant: true });
+          
+          // 淡入
+          setTimeout(() => {
+            carousel.classList.remove('loop-transition');
+            carousel.classList.add('loop-transition-in');
+            
+            setTimeout(() => {
+              carousel.classList.remove('loop-transition-in');
+              isLooping = false;
+            }, 150);
+          }, 20);
+        }, 150);
+      };
+
+      // 重写 next 和 previous 方法以实现无限轮播
+      const originalNext = productGalleryCarousel.next.bind(productGalleryCarousel);
+      const originalPrevious = productGalleryCarousel.previous.bind(productGalleryCarousel);
+
+      productGalleryCarousel.next = function({ instant = false } = {}) {
+        if (isLooping) return;
+        
+        const visibleCells = this.cells.filter(cell => !cell.hasAttribute('hidden'));
+        const currentIndex = this.selectedIndex;
+        const maxIndex = visibleCells.length - 1;
+        
+        // 获取当前 cell 在可见 cells 中的位置
+        const currentVisibleIndex = visibleCells.indexOf(this.cells[currentIndex]);
+        
+        if (currentVisibleIndex >= maxIndex || currentIndex >= this.cells.length - 1) {
+          // 已经是最后一张，跳转到第一张（带淡入淡出效果）
+          const firstVisibleCell = visibleCells[0];
+          const firstIndex = this.cells.indexOf(firstVisibleCell);
+          loopToIndex(this, firstIndex);
+        } else {
+          originalNext({ instant });
+        }
+      };
+
+      productGalleryCarousel.previous = function({ instant = false } = {}) {
+        if (isLooping) return;
+        
+        const visibleCells = this.cells.filter(cell => !cell.hasAttribute('hidden'));
+        const currentIndex = this.selectedIndex;
+        
+        // 获取当前 cell 在可见 cells 中的位置
+        const currentVisibleIndex = visibleCells.indexOf(this.cells[currentIndex]);
+        
+        if (currentVisibleIndex <= 0 || currentIndex <= 0) {
+          // 已经是第一张，跳转到最后一张（带淡入淡出效果）
+          const lastVisibleCell = visibleCells[visibleCells.length - 1];
+          const lastIndex = this.cells.indexOf(lastVisibleCell);
+          loopToIndex(this, lastIndex);
+        } else {
+          originalPrevious({ instant });
+        }
+      };
+    });
+  })();
+</script>
