@@ -1678,7 +1678,14 @@ var DialogElement = class extends HTMLElement {
     } });
     if (__privateGet(this, _isLocked)) {
       __privateSet(this, _isLocked, false);
-      document.documentElement.classList.toggle("lock", --lockLayerCount > 0);
+      const shouldRemoveLock = --lockLayerCount <= 0;
+      document.documentElement.classList.toggle("lock", !shouldRemoveLock);
+      if (shouldRemoveLock) {
+        const scrollY = parseInt(document.body.dataset.scrollLockPosition || "0", 10);
+        document.body.style.removeProperty("--scroll-lock-top");
+        delete document.body.dataset.scrollLockPosition;
+        window.scrollTo(0, scrollY);
+      }
     }
   }
   /**
@@ -1824,6 +1831,9 @@ var DialogElement = class extends HTMLElement {
           if (this.shouldLock) {
             lockLayerCount += 1;
             __privateSet(this, _isLocked, true);
+            const scrollY = window.scrollY;
+            document.body.style.setProperty("--scroll-lock-top", `-${scrollY}px`);
+            document.body.dataset.scrollLockPosition = scrollY;
             document.documentElement.classList.add("lock");
           }
         } else if (oldValue !== null && newValue === null) {
@@ -1842,7 +1852,14 @@ var DialogElement = class extends HTMLElement {
           });
           if (this.shouldLock) {
             __privateSet(this, _isLocked, false);
-            document.documentElement.classList.toggle("lock", --lockLayerCount > 0);
+            const shouldRemoveLock = --lockLayerCount <= 0;
+            document.documentElement.classList.toggle("lock", !shouldRemoveLock);
+            if (shouldRemoveLock) {
+              const scrollY = parseInt(document.body.dataset.scrollLockPosition || "0", 10);
+              document.body.style.removeProperty("--scroll-lock-top");
+              delete document.body.dataset.scrollLockPosition;
+              window.scrollTo(0, scrollY);
+            }
           }
         }
         this.dispatchEvent(new CustomEvent("toggle", { bubbles: true }));
