@@ -7186,11 +7186,6 @@ product-rerender {
 
 .lock {
   overflow: hidden;
-  overscroll-behavior: none;
-}
-
-.lock body {
-  overflow: hidden;
   position: fixed;
   top: var(--scroll-lock-top, 0);
   left: 0;

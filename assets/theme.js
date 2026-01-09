@@ -1681,9 +1681,9 @@ var DialogElement = class extends HTMLElement {
       const shouldRemoveLock = --lockLayerCount <= 0;
       document.documentElement.classList.toggle("lock", !shouldRemoveLock);
       if (shouldRemoveLock) {
-        const scrollY = parseInt(document.body.dataset.scrollLockPosition || "0", 10);
-        document.body.style.removeProperty("--scroll-lock-top");
-        delete document.body.dataset.scrollLockPosition;
+        const scrollY = parseInt(document.documentElement.dataset.scrollLockPosition || "0", 10);
+        document.documentElement.style.removeProperty("--scroll-lock-top");
+        delete document.documentElement.dataset.scrollLockPosition;
         window.scrollTo(0, scrollY);
       }
     }
@@ -1832,8 +1832,8 @@ var DialogElement = class extends HTMLElement {
             lockLayerCount += 1;
             __privateSet(this, _isLocked, true);
             const scrollY = window.scrollY;
-            document.body.style.setProperty("--scroll-lock-top", `-${scrollY}px`);
-            document.body.dataset.scrollLockPosition = scrollY;
+            document.documentElement.style.setProperty("--scroll-lock-top", `-${scrollY}px`);
+            document.documentElement.dataset.scrollLockPosition = scrollY;
             document.documentElement.classList.add("lock");
           }
         } else if (oldValue !== null && newValue === null) {
@@ -1855,9 +1855,9 @@ var DialogElement = class extends HTMLElement {
             const shouldRemoveLock = --lockLayerCount <= 0;
             document.documentElement.classList.toggle("lock", !shouldRemoveLock);
             if (shouldRemoveLock) {
-              const scrollY = parseInt(document.body.dataset.scrollLockPosition || "0", 10);
-              document.body.style.removeProperty("--scroll-lock-top");
-              delete document.body.dataset.scrollLockPosition;
+              const scrollY = parseInt(document.documentElement.dataset.scrollLockPosition || "0", 10);
+              document.documentElement.style.removeProperty("--scroll-lock-top");
+              delete document.documentElement.dataset.scrollLockPosition;
               window.scrollTo(0, scrollY);
             }
           }
