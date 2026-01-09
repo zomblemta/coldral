@@ -5355,7 +5355,7 @@ product-rerender {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: calc(100vh - 57px);
 }
 
 .header-sidebar__scroller li {
