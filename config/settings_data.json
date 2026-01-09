@@ -33,6 +33,7 @@
     "social_pinterest": "https://www.pinterest.com/coldralstudio",
     "social_instagram": "https://www.instagram.com/cold_ral/",
     "social_tiktok": "https://www.tiktok.com/@cold.ral?_r=1&_t=ZN-91y0qxVChsc",
+    "favicon": "shopify://shop_images/1.png",
     "product_info_size_guide_page_content": "size-guide-long-jackets",
     "content_for_index": [],
     "blocks": {
@@ -43,11 +44,6 @@
       },
       "12439146293631897289": {
         "type": "shopify://apps/blockify-fraud-filter/blocks/app_embed/2e3e0ba5-0e70-447a-9ec5-3bf76b5ef12e",
-        "disabled": false,
-        "settings": {}
-      },
-      "6319715395561037789": {
-        "type": "shopify://apps/trackify-x/blocks/app-embed/f3561b5a-1d26-4c4b-9d29-6bae914fb95d",
         "disabled": false,
         "settings": {}
       },
