@@ -5355,7 +5355,13 @@ product-rerender {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 80px);
+  height: calc(100dvh - 80px);
+}
+
+@supports not (height: 100dvh) {
+  .header-sidebar__scroller {
+    height: calc(100vh - 80px);
+  }
 }
 
 .header-sidebar__scroller li {
@@ -8101,7 +8107,15 @@ ul {
 /* Menu burger / drawer pleine hauteur sur mobile & tablette */
 @media screen and (max-width: 1024px) {
   .header-sidebar__main-panel {
-    height: calc(100vh - 58px);
+    height: calc(100dvh - 80px);
+  }
+}
+
+@supports not (height: 100dvh) {
+  @media screen and (max-width: 1024px) {
+    .header-sidebar__main-panel {
+      height: calc(100vh - 80px);
+    }
   }
 }
 
