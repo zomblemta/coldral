@@ -174,6 +174,50 @@
         "margin_bottom": 20,
         "padding_top": 20
       }
+    },
+    "full_img_3WtaeK": {
+      "type": "full-img",
+      "name": "t:sections.full_img.name",
+      "settings": {
+        "image_1_desktop": "shopify://shop_images/20250921_COLDRAL5850_cd970960-fa13-4d34-b2f8-ea1b0870fbba.webp",
+        "image_1_mobile": "shopify://shop_images/20250921_COLDRAL5850_cd970960-fa13-4d34-b2f8-ea1b0870fbba.webp",
+        "image_1_alt": "Image 1",
+        "show_overlay_on_image_1": true,
+        "image_2_desktop": "shopify://shop_images/20250921_COLDRAL5815.webp",
+        "image_2_mobile": "shopify://shop_images/20250921_COLDRAL5815.webp",
+        "image_2_alt": "Image 2",
+        "show_overlay_on_image_2": true,
+        "subheading_1": "",
+        "title": "AW26",
+        "description_1": "",
+        "button_text": "VIEW PRODUCTS",
+        "button_url": "",
+        "image_link_1": "",
+        "text_color": "#ffffff",
+        "text_alignment_1": "center",
+        "mobile_text_position_1": "justify-end items-center",
+        "desktop_text_position_1": "md:justify-end md:items-center",
+        "title_size_mobile_1": "2xl",
+        "title_size_desktop_1": "4xl",
+        "overlay_color_1": "#000000",
+        "overlay_opacity_1": 30,
+        "subheading_2": "",
+        "title_2": "View Collection",
+        "description_2": "",
+        "button_text_2": "",
+        "button_url_2": "",
+        "image_link_2": "",
+        "text_color_2": "#ffffff",
+        "text_alignment_2": "center",
+        "mobile_text_position_2": "justify-end items-center",
+        "desktop_text_position_2": "md:justify-end md:items-center",
+        "title_size_mobile_2": "2xl",
+        "title_size_desktop_2": "4xl",
+        "overlay_color_2": "#000000",
+        "overlay_opacity_2": 30,
+        "margin_bottom": 20,
+        "padding_top": 20
+      }
     }
   },
   "order": [
@@ -181,6 +225,7 @@
     "look_list_H6gexx",
     "full_img_7UMrjA",
     "look_list_w4DjRg",
-    "full_img_PpmAK7"
+    "full_img_PpmAK7",
+    "full_img_3WtaeK"
   ]
 }
