@@ -3304,15 +3304,32 @@ var QuickBuyModal = class extends Modal {
     }
     this.addEventListener("dialog:after-hide", __privateMethod(this, _QuickBuyModal_instances, onAfterHide_fn).bind(this));
   }
+  connectedCallback() {
+    super.connectedCallback();
+    this.controls.forEach((trigger) => {
+      trigger.addEventListener("pointerenter", this.prefetch.bind(this), { once: true });
+      trigger.addEventListener("touchstart", this.prefetch.bind(this), { once: true });
+    });
+  }
+  prefetch() {
+    const handle = this.getAttribute("handle");
+    const url = `${window.Shopify.routes.root}products/${handle}`;
+    cachedFetch(url);
+  }
   async show() {
+    const handle = this.getAttribute("handle");
+    const url = `${window.Shopify.routes.root}products/${handle}`;
     document.documentElement.dispatchEvent(new CustomEvent("theme:loading:start", { bubbles: true }));
-    const responseContent = await (await cachedFetch(`${window.Shopify.routes.root}products/${this.getAttribute("handle")}`)).text();
+    const responseContent = await (await cachedFetch(url)).text();
     document.documentElement.dispatchEvent(new CustomEvent("theme:loading:end", { bubbles: true }));
     const tempDoc = new DOMParser().parseFromString(responseContent, "text/html");
-    const quickBuyContent = tempDoc.getElementById("quick-buy-content").content;
-    Array.from(quickBuyContent.querySelectorAll("noscript")).forEach((noScript) => noScript.remove());
-    this.replaceChildren(quickBuyContent);
-    Shopify?.PaymentButton?.init();
+    const quickBuyTemplate = tempDoc.getElementById("quick-buy-content");
+    if (quickBuyTemplate) {
+      const quickBuyContent = quickBuyTemplate.content;
+      Array.from(quickBuyContent.querySelectorAll("noscript")).forEach((noScript) => noScript.remove());
+      this.replaceChildren(quickBuyContent);
+      Shopify?.PaymentButton?.init();
+    }
     return super.show();
   }
 };
@@ -4287,7 +4304,15 @@ onBundleSection_fn = function(event) {
   event.detail.sections.push(__privateGet(this, _sectionId));
 };
 onCartChange_fn = async function(event) {
-  __privateMethod(this, _CartDrawer_instances, replaceContent_fn).call(this, event.detail.cart["sections"][__privateGet(this, _sectionId)]);
+  const sectionId = __privateGet(this, _sectionId);
+  const bundledHtml = event.detail.cart["sections"] ? event.detail.cart["sections"][sectionId] : null;
+
+  if (bundledHtml) {
+    __privateMethod(this, _CartDrawer_instances, replaceContent_fn).call(this, bundledHtml, event.detail.cart);
+  } else {
+    __privateMethod(this, _CartDrawer_instances, refreshCart_fn).call(this);
+  }
+
   if ((window.themeVariables.settings.cartType === "drawer" || event.detail["onSuccessDo"] === "force_open_drawer") && event.detail.baseEvent === "variant:add") {
     this.show();
   }
@@ -4310,18 +4335,36 @@ onPageShow_fn = async function(event) {
 refreshCart_fn = async function() {
   __privateMethod(this, _CartDrawer_instances, replaceContent_fn).call(this, await (await fetch(`${Shopify.routes.root}?section_id=${__privateGet(this, _sectionId)}`)).text());
 };
-replaceContent_fn = async function(html) {
-  const domElement = new DOMParser().parseFromString(html, "text/html"), newCartDrawerElement = domElement.getElementById(`shopify-section-${__privateGet(this, _sectionId)}`).querySelector("cart-drawer"), newCartDrawer = document.createRange().createContextualFragment(newCartDrawerElement.innerHTML), itemCount = (await fetchCart)["item_count"];
-  if (itemCount === 0) {
+replaceContent_fn = async function(html, cart) {
+  if (!html) {
+    return;
+  }
+
+  const domElement = new DOMParser().parseFromString(html, "text/html");
+  const newCartDrawerElement = domElement.querySelector("cart-drawer") || domElement.getElementById(`shopify-section-${__privateGet(this, _sectionId)}`)?.querySelector("cart-drawer");
+
+  if (!newCartDrawerElement) {
+    return;
+  }
+
+  const newCartDrawer = document.createRange().createContextualFragment(newCartDrawerElement.innerHTML);
+  const cartContent = cart || await fetchCart;
+  const itemCount = cartContent["item_count"];
+
+  const items = this.querySelector(".cart-drawer__items");
+
+  // 如果购物车从空变有 (items 为空但 itemCount > 0)，或者购物车变为空 (itemCount === 0)
+  // 我们需要进行全量替换以更新结构（显示/隐藏空状态文案）
+  if (itemCount === 0 || !items) {
     const controls = timeline7([
       [this.getShadowPartByName("body"), { opacity: [1, 0] }, { duration: 0.15, easing: "ease-in" }],
       [this.getShadowPartByName("footer"), { opacity: [1, 0], transform: ["translateY(0)", "translateY(30px)"] }, { duration: 0.15, at: "<", easing: "ease-in" }]
     ]);
+
     await controls.finished;
     this.replaceChildren(...newCartDrawer.children);
     animate14(this.getShadowPartByName("body"), { opacity: [0, 1], transform: ["translateY(30px)", "translateY(0)"] }, { duration: 0.25, easing: [0.25, 0.46, 0.45, 0.94] });
   } else {
-    const items = this.querySelector(".cart-drawer__items");
     const footer = this.querySelector(".cart-drawer__footer");
     const shippingBar = this.querySelector("free-shipping-bar");
     const newItems = newCartDrawerElement.querySelector(".cart-drawer__items");
