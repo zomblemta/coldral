@@ -59,44 +59,4 @@ being eligible for free shipping.
       </div>
     </div>
   </free-shipping-bar>
-
-  <script>
-    (function() {
-      const bar = document.querySelector('free-shipping-bar');
-      if (!bar) return;
-      
-      const updateProgress = () => {
-        // Threshold is already converted to current currency
-        const threshold = parseFloat(bar.getAttribute('threshold').replace(/[^0-9.]/g, '')) * 100;
-        const totalPrice = parseFloat(bar.getAttribute('total-price'));
-        const progressFill = bar.querySelector('.free-shipping-bar__progress-fill');
-        const progressWrapper = bar.querySelector('.free-shipping-bar__progress-wrapper');
-        
-        if (progressFill) {
-          const percentage = Math.min((totalPrice / threshold) * 100, 100);
-          progressFill.style.width = percentage + '%';
-        }
-        
-        // Hide progress bar when threshold is reached
-        if (progressWrapper) {
-          if (totalPrice >= threshold) {
-            progressWrapper.classList.add('free-shipping-bar__progress-wrapper--hidden');
-          } else {
-            progressWrapper.classList.remove('free-shipping-bar__progress-wrapper--hidden');
-          }
-        }
-      };
-      
-      // Observe attribute changes
-      const observer = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-          if (mutation.attributeName === 'total-price') {
-            updateProgress();
-          }
-        });
-      });
-      
-      observer.observe(bar, { attributes: true });
-    })();
-  </script>
 {%- endif -%}

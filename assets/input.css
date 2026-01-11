@@ -1,1 +1,27 @@
-@import "tailwindcss";
+/* 只导入 Tailwind utilities，禁用 base/preflight（theme.css 已包含 reset 样式）*/
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+/* 禁用不需要的主题变量，避免与主题冲突并减小文件体积 */
+@theme {
+  /* 禁用字体大小变量（主题有自己的定义）*/
+  --text-xs: initial;
+  --text-xs--line-height: initial;
+  --text-sm: initial;
+  --text-sm--line-height: initial;
+  --text-base: initial;
+  --text-base--line-height: initial;
+  --text-lg: initial;
+  --text-lg--line-height: initial;
+  --text-xl: initial;
+  --text-xl--line-height: initial;
+  --text-2xl: initial;
+  --text-2xl--line-height: initial;
+
+  /* 禁用不使用的主题变量 */
+  --font-sans: initial;
+  --font-mono: initial;
+  --default-font-family: initial;
+  --default-mono-font-family: initial;
+  --aspect-video: initial;
+}

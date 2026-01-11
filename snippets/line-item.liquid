@@ -13,7 +13,7 @@ Supported variables
 * show_quantity_selector: if set to true, the quantity selector is displayed (useful for instance of mini-cart)
 {%- endcomment -%}
 
-<line-item class="line-item">
+<line-item class="line-item" data-line-item-key="{{ line_item.key }}">
   {%- if line_item.image != blank -%}
     {{- line_item.image | image_url: width: line_item.image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 70px, 120px', widths: '70,120,140,210,240,360', class: 'line-item__media' -}}
   {%- endif -%}
@@ -79,7 +79,7 @@ Supported variables
 
       {%- if show_quantity_selector -%}
         <line-item-quantity class="h-stack gap-4 {% if request.page_type == 'cart' %}sm:hidden{% endif %}">
-          {%- render 'quantity-selector', line_item: line_item, size: 'sm' -%}
+          {%- render 'quantity-selector', line_item: line_item, size: 'sm', show_spinner: true -%}
           
           <a href="{{ line_item.url_to_remove }}" class=" no-underline text-xs" aria-label="{{ 'cart.order.remove_with_title' | t: title: line_item.title | escape }}">
             {% comment %} {{- 'cart.order.remove' | t -}} {% endcomment %}

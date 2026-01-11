@@ -1380,7 +1380,7 @@ var FreeShippingBar = class extends HTMLElement {
     this.setAttribute("threshold", __privateGet(this, _threshold));
   }
   static get observedAttributes() {
-    return ["threshold", "total-price"];
+    return ["threshold", "total-price", "reached-message", "unreached-message"];
   }
   connectedCallback() {
     document.addEventListener("cart:change", __privateGet(this, _onCartChangedListener));
@@ -1394,7 +1394,10 @@ var FreeShippingBar = class extends HTMLElement {
   set totalPrice(value) {
     this.setAttribute("total-price", value);
   }
-  attributeChangedCallback() {
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "threshold") {
+      __privateSet(this, _threshold, parseFloat(newValue.replace(/[^0-9.]/g, "")) * 100);
+    }
     __privateMethod(this, _FreeShippingBar_instances, updateMessage_fn).call(this);
   }
 };
@@ -1403,12 +1406,24 @@ _currencyFormatter = new WeakMap();
 _threshold = new WeakMap();
 _FreeShippingBar_instances = new WeakSet();
 updateMessage_fn = function() {
-  const messageElement = this.querySelector("span");
+  const messageElement = this.querySelector(".free-shipping-bar__text");
+  if (!messageElement) {
+    return;
+  }
   if (this.totalPrice >= __privateGet(this, _threshold)) {
     messageElement.innerHTML = this.getAttribute("reached-message");
   } else {
     const replacement = `${__privateGet(this, _currencyFormatter).format((__privateGet(this, _threshold) - this.totalPrice) / 100).replace(/\$/g, "$$$$")}`;
     messageElement.innerHTML = this.getAttribute("unreached-message").replace(new RegExp("({{.*}})", "g"), replacement);
+  }
+  const progressFill = this.querySelector(".free-shipping-bar__progress-fill");
+  const progressWrapper = this.querySelector(".free-shipping-bar__progress-wrapper");
+  if (progressFill) {
+    const percentage = Math.min(this.totalPrice / __privateGet(this, _threshold) * 100, 100);
+    progressFill.style.width = `${percentage}%`;
+  }
+  if (progressWrapper) {
+    progressWrapper.classList.toggle("free-shipping-bar__progress-wrapper--hidden", this.totalPrice >= __privateGet(this, _threshold));
   }
 };
 onCartChanged_fn = function(event) {
@@ -1442,8 +1457,22 @@ onChangeLinkClicked_fn = function(event, target) {
   __privateMethod(this, _LineItemQuantity_instances, changeLineItemQuantity_fn).call(this, url.searchParams.get("id"), parseInt(url.searchParams.get("quantity")));
 };
 changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
-  document.documentElement.dispatchEvent(new CustomEvent("theme:loading:start", { bubbles: true }));
   const lineItem = this.closest("line-item");
+  const quantityInput = this.querySelector("quantity-input");
+
+  if (quantityInput) {
+    quantityInput.setAttribute("aria-busy", "true");
+  }
+
+  if (lineItem) {
+    lineItem.style.opacity = "0.5";
+    lineItem.style.pointerEvents = "none";
+
+    if (targetQuantity === 0) {
+      animate(lineItem, { opacity: 0, height: 0, marginBottom: 0, overflow: "hidden" }, { duration: 0.3 });
+    }
+  }
+
   lineItem?.dispatchEvent(new CustomEvent("line-item:will-change", { bubbles: true, detail: { targetQuantity } }));
   let sectionsToBundle = [];
   document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
@@ -1458,8 +1487,20 @@ changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
       sections: sectionsToBundle.join(",")
     })
   });
-  document.documentElement.dispatchEvent(new CustomEvent("theme:loading:end", { bubbles: true }));
+
   if (!response.ok) {
+    if (quantityInput) {
+      quantityInput.removeAttribute("aria-busy");
+    }
+
+    if (lineItem) {
+      lineItem.style.opacity = "";
+      lineItem.style.pointerEvents = "";
+      lineItem.style.height = "";
+      lineItem.style.marginBottom = "";
+      lineItem.style.overflow = "";
+    }
+
     const responseContent = await response.json();
     this.parentElement.querySelector('[role="alert"]')?.remove();
     const errorSvg = `<svg width="13" height="13" fill="none" viewBox="0 0 13 13">
@@ -1469,6 +1510,13 @@ changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
     this.insertAdjacentHTML("afterend", `<p class="h-stack gap-2 justify-center text-xs" role="alert">${errorSvg} ${responseContent["description"]}</p>`);
     this.querySelector("quantity-selector")?.restoreDefaultValue();
   } else {
+    if (quantityInput) {
+      quantityInput.removeAttribute("aria-busy");
+    }
+    if (lineItem) {
+      lineItem.style.opacity = "";
+      lineItem.style.pointerEvents = "";
+    }
     const cartContent = await response.json();
     if (window.themeVariables.settings.pageType === "cart") {
       window.location.reload();
@@ -4263,7 +4311,7 @@ refreshCart_fn = async function() {
   __privateMethod(this, _CartDrawer_instances, replaceContent_fn).call(this, await (await fetch(`${Shopify.routes.root}?section_id=${__privateGet(this, _sectionId)}`)).text());
 };
 replaceContent_fn = async function(html) {
-  const domElement = new DOMParser().parseFromString(html, "text/html"), newCartDrawer = document.createRange().createContextualFragment(domElement.getElementById(`shopify-section-${__privateGet(this, _sectionId)}`).querySelector("cart-drawer").innerHTML), itemCount = (await fetchCart)["item_count"];
+  const domElement = new DOMParser().parseFromString(html, "text/html"), newCartDrawerElement = domElement.getElementById(`shopify-section-${__privateGet(this, _sectionId)}`).querySelector("cart-drawer"), newCartDrawer = document.createRange().createContextualFragment(newCartDrawerElement.innerHTML), itemCount = (await fetchCart)["item_count"];
   if (itemCount === 0) {
     const controls = timeline7([
       [this.getShadowPartByName("body"), { opacity: [1, 0] }, { duration: 0.15, easing: "ease-in" }],
@@ -4273,7 +4321,122 @@ replaceContent_fn = async function(html) {
     this.replaceChildren(...newCartDrawer.children);
     animate14(this.getShadowPartByName("body"), { opacity: [0, 1], transform: ["translateY(30px)", "translateY(0)"] }, { duration: 0.25, easing: [0.25, 0.46, 0.45, 0.94] });
   } else {
-    this.replaceChildren(...newCartDrawer.children);
+    const items = this.querySelector(".cart-drawer__items");
+    const footer = this.querySelector(".cart-drawer__footer");
+    const shippingBar = this.querySelector("free-shipping-bar");
+    const newItems = newCartDrawerElement.querySelector(".cart-drawer__items");
+    const newFooter = newCartDrawerElement.querySelector(".cart-drawer__footer");
+    const newShippingBar = newCartDrawerElement.querySelector("free-shipping-bar");
+    if (items && newItems) {
+      const existingItems = Array.from(items.querySelectorAll("line-item[data-line-item-key]"));
+      const newItemsList = Array.from(newItems.querySelectorAll("line-item[data-line-item-key]"));
+      const newItemKeys = newItemsList.map(item => item.getAttribute("data-line-item-key"));
+
+      // 1. 移除已不存在的商品
+      existingItems.forEach(item => {
+        if (!newItemKeys.includes(item.getAttribute("data-line-item-key"))) {
+          item.remove();
+        }
+      });
+
+      // 2. 更新或添加商品
+      newItemsList.forEach((newItem, index) => {
+        const key = newItem.getAttribute("data-line-item-key");
+        const existingItem = items.querySelector(`line-item[data-line-item-key="${key}"]`);
+
+        if (existingItem) {
+          // 如果商品已存在，只更新信息部分（价格、折扣、数量等），保留图片节点以防闪烁
+          const existingInfo = existingItem.querySelector(".line-item-info");
+          const newInfo = newItem.querySelector(".line-item-info");
+          
+          if (existingInfo && newInfo) {
+            // 检查当前是否有输入框正在被操作
+            const activeElement = document.activeElement;
+            const isFocusInside = existingInfo.contains(activeElement);
+            
+            if (!isFocusInside) {
+              existingInfo.innerHTML = newInfo.innerHTML;
+            } else {
+              // 如果用户正在操作，我们需要更精细地更新，以免干扰用户输入
+              
+              // 1. 更新价格列表
+              const existingPrice = existingItem.querySelector("price-list");
+              const newPrice = newItem.querySelector("price-list");
+              if (existingPrice && newPrice) {
+                existingPrice.innerHTML = newPrice.innerHTML;
+              }
+
+              // 2. 更新数量选择器的按钮 URL 和输入框的值（但如果不聚焦在输入框上）
+              const existingQuantitySelector = existingItem.querySelector("quantity-selector");
+              const newQuantitySelector = newItem.querySelector("quantity-selector");
+              
+              if (existingQuantitySelector && newQuantitySelector) {
+                // 更新增减按钮的 href
+                const existingButtons = existingQuantitySelector.querySelectorAll("a.quantity-selector__button");
+                const newButtons = newQuantitySelector.querySelectorAll("a.quantity-selector__button");
+                existingButtons.forEach((btn, i) => {
+                  if (newButtons[i]) btn.href = newButtons[i].href;
+                });
+
+                // 更新输入框的值 (只有当用户没在输入时才强行同步，或者始终同步以确保数值正确)
+                const existingInput = existingQuantitySelector.querySelector("input");
+                const newInput = newQuantitySelector.querySelector("input");
+                if (existingInput && newInput && activeElement !== existingInput) {
+                  existingInput.value = newInput.value;
+                }
+              }
+
+              // 3. 更新折扣信息
+              const existingDiscounts = existingItem.querySelector(".unstyled-list[role='list']");
+              const newDiscounts = newItem.querySelector(".unstyled-list[role='list']");
+              if (newDiscounts) {
+                if (existingDiscounts) {
+                  existingDiscounts.innerHTML = newDiscounts.innerHTML;
+                } else {
+                  // 如果之前没有折扣现在有了，插入到正确位置
+                  newPrice.insertAdjacentElement("afterend", newDiscounts);
+                }
+              } else if (existingDiscounts) {
+                existingDiscounts.remove();
+              }
+            }
+          }
+          
+          // 恢复可能在动画中被修改的状态
+          existingItem.style.opacity = "";
+          existingItem.style.pointerEvents = "";
+        } else {
+          // 如果是新商品，确保它是当前文档的节点并插入到正确位置
+          const importedItem = document.importNode(newItem, true);
+          const referenceNode = items.children[index];
+          if (referenceNode) {
+            items.insertBefore(importedItem, referenceNode);
+          } else {
+            items.appendChild(importedItem);
+          }
+        }
+      });
+    }
+    if (footer && newFooter) {
+      const activeElement = document.activeElement;
+      if (activeElement && footer.contains(activeElement) && activeElement.tagName === "TEXTAREA") {
+        const oldPrice = footer.querySelector(".cart-drawer__button-price"), newPrice = newFooter.querySelector(".cart-drawer__button-price");
+        if (oldPrice && newPrice) {
+          oldPrice.innerHTML = newPrice.innerHTML;
+        }
+      } else {
+        footer.replaceChildren(...document.createRange().createContextualFragment(newFooter.innerHTML).children);
+      }
+    }
+    if (shippingBar && newShippingBar) {
+      // 只要更新属性，FreeShippingBar 就会通过 attributeChangedCallback 自动更新文案和进度条宽度（带动画）
+      shippingBar.setAttribute("reached-message", newShippingBar.getAttribute("reached-message"));
+      shippingBar.setAttribute("unreached-message", newShippingBar.getAttribute("unreached-message"));
+      shippingBar.setAttribute("total-price", newShippingBar.getAttribute("total-price"));
+      shippingBar.setAttribute("threshold", newShippingBar.getAttribute("threshold"));
+    } else if (newShippingBar) {
+      this.prepend(document.createRange().createContextualFragment(newShippingBar.outerHTML));
+    }
   }
   this.classList.toggle("drawer--center-body", itemCount === 0);
   this.dispatchEvent(new CustomEvent("cart-drawer:refreshed", { bubbles: true }));
