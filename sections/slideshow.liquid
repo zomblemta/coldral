@@ -106,7 +106,7 @@ may have important consequence on the section itself.
                 {%- assign button_desktop_position = block.settings.desktop_text_position | split: 'text-' | last -%}
 
                 {%- if block.settings.button_1_style == 'link' or block.settings.button_2_style == 'link' or block.settings.button_1_text == blank or block.settings.button_2_text == blank -%}
-                  {%- capture button_wrapper_class -%}button-group justify-{{ button_mobile_position }} sm:justify-{{ button_desktop_position }}{%- endcapture -%}
+                  {%- capture button_wrapper_class -%}button-group  justify-{{ button_mobile_position }} sm:justify-{{ button_desktop_position }} text-sm md:text-base tracking-wide  transition-all duration-300 after:scale-x-0 inline-block {%- endcapture -%}
                 {%- else -%}
                   {%- capture button_wrapper_class -%}button-group button-group--same-width justify-{{ button_mobile_position }} sm:justify-{{ button_desktop_position }}{%- endcapture -%}
                 {%- endif -%}

@@ -517,6 +517,9 @@
   .text-\[10px\] {
     font-size: 10px;
   }
+  .text-\[13px\] {
+    font-size: 13px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
