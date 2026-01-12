@@ -43,9 +43,7 @@
       "block_order": [
         "slide-1"
       ],
-      "custom_css": [
-        "a {font-size: 18px; font-weight: bold; font-family: Fira Code;}"
-      ],
+      "custom_css": [],
       "settings": {
         "allow_transparent_header": true,
         "show_next_section_button": false,
