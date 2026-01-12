@@ -92,7 +92,7 @@
         "image_link_1": "",
         "text_color": "#ffffff",
         "text_alignment_1": "center",
-        "mobile_text_position_1": "justify-center items-end",
+        "mobile_text_position_1": "justify-end items-center",
         "desktop_text_position_1": "md:justify-end md:items-center",
         "title_size_mobile_1": "2xl",
         "title_size_desktop_1": "4xl",
