@@ -462,6 +462,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .object-top {
+    object-position: top;
+  }
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
