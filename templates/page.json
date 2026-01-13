@@ -69,7 +69,7 @@
       "type": "image-text-block",
       "name": "t:sections.image_text_block.presets.default.name",
       "settings": {
-        "image": "shopify://shop_images/about1.jpg",
+        "image": "shopify://shop_images/about8.jpg",
         "title": "",
         "description": "<h3>The Origin</h3>\n<br>\nCold ral was founded on a clear and uncompromising idea: designing essential pieces meant to last, independent of trends. The brand draws its foundations from the structured silhouettes of the 1950s and 1960s, reinterpreted through softer and wider volumes inspired by Japanese and Korean design culture. A dialogue between rigor and fluidity.\n<br>\n<br>\n<br>\n<h3>The Philosophy</h3>\n<br>\nWe believe that classics deserve to be rebuilt with precision. Modernised, but never distorted. Every garment is developed with a strict attention to proportion, balance and material integrity. Nothing is decorative. Nothing is excessive. Each decision serves function, longevity and coherence.",
         "image_position": "left",
