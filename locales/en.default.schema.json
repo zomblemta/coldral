@@ -892,6 +892,31 @@
         }
       }
     },
+    "image_text_block": {
+      "name": "Image text block",
+      "settings": {
+        "image": "Image",
+        "title": "Title",
+        "title_default": "Title",
+        "description": "Description",
+        "description_default": "Enter description here",
+        "image_position": "Image position on desktop",
+        "image_position_options": {
+          "left": "Left",
+          "right": "Right"
+        },
+        "full_width": "Full width",
+        "color_scheme": "Color scheme",
+        "spacing_header": "Spacing settings",
+        "padding_top": "Top padding",
+        "padding_bottom": "Bottom padding"
+      },
+      "presets": {
+        "default": {
+          "name": "Image text block"
+        }
+      }
+    },
     "image_with_text_overlay": {
       "name": "Image with text overlay",
       "image_size_recommendation": "2500 x 900px .jpg recommended",

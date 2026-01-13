@@ -892,6 +892,31 @@
         }
       }
     },
+    "image_text_block": {
+      "name": "Bloc image-texte",
+      "settings": {
+        "image": "Image",
+        "title": "Titre",
+        "title_default": "Titre",
+        "description": "Description",
+        "description_default": "Entrez la description ici",
+        "image_position": "Position de l'image sur le bureau",
+        "image_position_options": {
+          "left": "Gauche",
+          "right": "Droite"
+        },
+        "full_width": "Pleine largeur",
+        "color_scheme": "Schéma de couleurs",
+        "spacing_header": "Paramètres d'espacement",
+        "padding_top": "Rembourrage supérieur",
+        "padding_bottom": "Rembourrage inférieur"
+      },
+      "presets": {
+        "default": {
+          "name": "Bloc image-texte"
+        }
+      }
+    },
     "image_with_text_overlay": {
       "name": "Image avec texte superposé",
       "image_size_recommendation": "2500 x 900px .jpg recommandé",
