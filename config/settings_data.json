@@ -66,6 +66,16 @@
         "type": "shopify://apps/parkour-facebook-pixel/blocks/threasury_pixel/f23b2ffe-4c53-446e-ad3a-7976ffbee5c2",
         "disabled": false,
         "settings": {}
+      },
+      "4550790387604203027": {
+        "type": "shopify://apps/parcelwill-returns/blocks/app.embed/129d97fb-4680-4d86-bac4-b13c4bacb6f4",
+        "disabled": false,
+        "settings": {}
+      },
+      "17198465164502963513": {
+        "type": "shopify://apps/parcelwill-parcel-panel/blocks/app.embed/fc785c3f-90e0-4c98-a20c-7cde9ba5e4b5",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
