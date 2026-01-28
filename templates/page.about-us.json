@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "slideshow_VTyr47": {
+      "type": "slideshow",
+      "blocks": {
+        "image_E8DDkV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/about2.jpg",
+            "mobile_image": "shopify://shop_images/about2.jpg",
+            "subheading": "",
+            "title": "about us",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "image_E8DDkV"
+      ],
+      "name": "t:sections.slideshow.presets.slideshow.name",
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "image_text_block_geWMty": {
+      "type": "image-text-block",
+      "name": "t:sections.image_text_block.presets.default.name",
+      "settings": {
+        "image": "shopify://shop_images/about8.jpg",
+        "title": "",
+        "description": "<h3>The Origin</h3>\n<br>\nCold ral was founded on a clear and uncompromising idea: designing essential pieces meant to last, independent of trends. The brand draws its foundations from the structured silhouettes of the 1950s and 1960s, reinterpreted through softer and wider volumes inspired by Japanese and Korean design culture. A dialogue between rigor and fluidity.\n<br>\n<br>\n<br>\n<h3>The Philosophy</h3>\n<br>\nWe believe that classics deserve to be rebuilt with precision. Modernised, but never distorted. Every garment is developed with a strict attention to proportion, balance and material integrity. Nothing is decorative. Nothing is excessive. Each decision serves function, longevity and coherence.",
+        "image_position": "left",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_text_block_QCQJHR": {
+      "type": "image-text-block",
+      "name": "t:sections.image_text_block.presets.default.name",
+      "settings": {
+        "image": "shopify://shop_images/about4.jpg",
+        "title": "",
+        "description": "<h3>The Creators</h3>\n<br>\nCold ral is led by two brothers with different backgrounds and a shared refusal of the unnecessary. This dual perspective shapes a restrained approach to design. We create fewer pieces, but each one is designed with intent. The collections are unisex, monochrome and free of visible logos, allowing the garment to exist without imposed identity.\n<br>\n<br>\n<br>\n<h3>Design and Development</h3>\n<br>\nEvery cut, every proportion and every detail is the result of a methodical process carried out between Paris and our partner workshops. The goal is not to follow seasonal impulses, but to refine silhouettes that adapt naturally to everyday movement and modern life.",
+        "image_position": "right",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_text_block_ffwMyT": {
+      "type": "image-text-block",
+      "name": "t:sections.image_text_block.presets.default.name",
+      "settings": {
+        "image": "shopify://shop_images/about6.jpg",
+        "title": "",
+        "description": "<h3>Materials and Production</h3>\n<br>\nWe work alongside textile specialists who share our commitment to quality, traceability and durability. Most of our fabrics are certified and selected for their structure, comfort and ability to endure over time. Materials are chosen with the same discipline as the designs themselves.\n<br>\n<br>\n<br>\n\n\n<h3>Our Ethos</h3>\n<br>\n\nOur mission is simple. To build a reduced, coherent and durable wardrobe. Not to dress a single season, but to accompany a way of living. Cold ral evolves quietly, valuing structure, simplicity and consistency. A return to essential forms, reinterpreted for today.",
+        "image_position": "left",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_VTyr47",
+    "image_text_block_geWMty",
+    "image_text_block_QCQJHR",
+    "image_text_block_ffwMyT"
+  ]
+}

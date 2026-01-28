@@ -69,20 +69,20 @@
             "menu": "policy"
           }
         },
-        "image_DGEjKg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LOGO_NOIR_2.svg",
-            "image_width": 300,
-            "link": ""
-          }
-        },
         "links": {
           "type": "links",
           "settings": {
             "menu": "footer",
             "show_menu_title": false,
             "menu_title": ""
+          }
+        },
+        "image_DGEjKg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_NOIR_2.svg",
+            "image_width": 300,
+            "link": ""
           }
         },
         "newsletter_fPwtMY": {
@@ -97,8 +97,8 @@
       },
       "block_order": [
         "policy_links_JFJqB4",
-        "image_DGEjKg",
         "links",
+        "image_DGEjKg",
         "newsletter_fPwtMY"
       ],
       "settings": {
