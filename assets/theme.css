@@ -4625,8 +4625,7 @@ product-rerender {
 }
 
 .footer__inner {
-  row-gap: min(var(--section-vertical-spacing), 3rem);
-  display: grid;
+  
 }
 
 .footer__block-list {
@@ -7126,7 +7125,6 @@ product-rerender {
 }
 
 .text-on-sale {
-  color: rgb(var(--on-sale-text));
 }
 
 .bg-error, .bg-success, .bg-warning {

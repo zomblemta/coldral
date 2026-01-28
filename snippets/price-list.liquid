@@ -82,14 +82,14 @@ Supported variables
       {%- endif -%}
     </sale-price>
 
-    {%- if line_item.original_price > line_item.final_price -%}
+    {%- if line_item.original_price > line_item.final_price or line_item.variant.compare_at_price > line_item.final_price -%}
       <compare-at-price class="{{ compare_at_price_classes }}">
         <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
 
         {%- if settings.currency_code_enabled -%}
-          {{- line_item.original_price | money -}}
+          {{- line_item.variant.compare_at_price | default: line_item.original_price | money -}}
         {%- else -%}
-          {{- line_item.original_price | money -}}
+          {{- line_item.variant.compare_at_price | default: line_item.original_price | money -}}
         {%- endif -%}
       </compare-at-price>
     {%- endif -%}
