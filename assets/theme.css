@@ -7886,7 +7886,7 @@ ul {
   color: #8B0000;
 }
 
-.osm-message {
+klarna-placement::part(osm-container) {
   background: #eaebec!important;
   border: #eaebec!important;
 }
