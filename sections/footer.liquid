@@ -174,8 +174,8 @@
           {%- for block in section.blocks -%}
             {%- capture block_content -%}
               {%- case block.type -%}
-                {%- when '@app' -%}
-                  {%- render block -%}
+                {% comment %} {%- when '@app' -%}
+                  {%- render block -%} {% endcomment %}
 
                 {%- when 'image' -%}
                   {%- if block.settings.image != blank -%}
@@ -302,6 +302,11 @@
       {%- endcomment -%}
 
       <div class="footer__aside">
+        {%- for block in section.blocks -%}
+        {%- if block.type == '@app' -%}
+            {%- render block -%}
+          {% endif %}
+        {%- endfor -%}
         {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
           {%- assign show_country_selector = true -%}
         {%- endif -%}

@@ -7885,3 +7885,8 @@ ul {
 .sale-text {
   color: #8B0000;
 }
+
+.osm-container {
+  background: #eaebec;
+  border: #eaebec;
+}
