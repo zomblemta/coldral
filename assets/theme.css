@@ -7887,6 +7887,6 @@ ul {
 }
 
 .osm-message {
-  background: #eaebec;
-  border: #eaebec;
+  background: #eaebec!important;
+  border: #eaebec!important;
 }
