@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "page": "Seite {{ page }}",
@@ -98,7 +107,7 @@
       "view_in_space": "In deinem Bereich ansehen",
       "taxes_included": "inkl. MwSt.",
       "taxes_excluded": "zzgl. MwSt.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Versandkosten<\/a> werden an der Kasse berechnet",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Versandkosten</a> werden an der Kasse berechnet",
       "size_chart": "Größentabelle",
       "available_colors_count": {
         "one": "{{ count }} Farbe verfügbar",
@@ -495,6 +504,16 @@
         "other": "{{ count }} Artikel"
       },
       "product_subtotal": "Zwischensumme der Produkte"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "shipping": {
+        "unbranded_description_with_fulfillment_days": {
+          "one": "Versandt nächsten Werktag",
+          "other": "Verschickt in %{count} Geschäftstage"
+        }
+      }
     }
   }
 }
