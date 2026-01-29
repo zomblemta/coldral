@@ -512,6 +512,9 @@
         "unbranded_description_with_fulfillment_days": {
           "one": "Versandt nächsten Werktag",
           "other": "Verschickt in %{count} Geschäftstage"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "Versandt in %{count} Woche"
         }
       }
     }
