@@ -93,13 +93,18 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "hextom_translate_and_currency_selector_desktop_DnCx9f": {
+          "type": "shopify://apps/hextom-translate-and-currency/blocks/selector-desktop/b927a799-be04-4b97-9efb-5c8f0290a68e",
+          "settings": {}
         }
       },
       "block_order": [
         "policy_links_JFJqB4",
         "links",
         "image_DGEjKg",
-        "newsletter_fPwtMY"
+        "newsletter_fPwtMY",
+        "hextom_translate_and_currency_selector_desktop_DnCx9f"
       ],
       "settings": {
         "color_scheme": "scheme-1",

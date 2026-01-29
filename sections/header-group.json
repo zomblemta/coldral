@@ -14,6 +14,10 @@
     "header": {
       "type": "header",
       "blocks": {
+        "hextom_translate_and_currency_selector_mobile_84tpVJ": {
+          "type": "shopify://apps/hextom-translate-and-currency/blocks/selector-mobile/b927a799-be04-4b97-9efb-5c8f0290a68e",
+          "settings": {}
+        },
         "mega_menu_edr7GP": {
           "type": "mega_menu",
           "settings": {
@@ -30,6 +34,7 @@
         }
       },
       "block_order": [
+        "hextom_translate_and_currency_selector_mobile_84tpVJ",
         "mega_menu_edr7GP"
       ],
       "custom_css": [
@@ -46,7 +51,6 @@
         "logo_max_width": 130,
         "logo_mobile_max_width": 80,
         "menu": "main-menu",
-        "sidebar_menu": "menu-mobile",
         "menu_open_trigger": "hover",
         "menu_text_font": "heading",
         "enable_search": true,
