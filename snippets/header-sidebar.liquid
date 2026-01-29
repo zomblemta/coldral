@@ -139,7 +139,7 @@
             {%- if link.links.size > 0 -%}
               <button
                 type="button"
-                class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}"
+                class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}{% if link.url contains 'sale' %} sale-text{% endif %}"
                 aria-controls="header-panel-{{ forloop.index }}"
                 aria-expanded="false"
               >
@@ -149,7 +149,7 @@
             {%- else -%}
               <a
                 href="{{ link.url }}"
-                class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}"
+                class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}{% if link.url contains 'sale' %} sale-text{% endif %}"
               >
                 {{- link.title -}}
               </a>
@@ -251,14 +251,14 @@
                             open
                           {% endif %}
                         >
-                          <summary class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}">
+                          <summary class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}{% if sub_link.url contains 'sale' %} sale-text{% endif %}">
                             {{- sub_link.title -}}
                             <span class="animated-plus group-expanded:rotate" aria-hidden="true"></span>
                           </summary>
 
                           <div class="header-sidebar__nested-linklist">
                             {%- for sub_sub_link in sub_link.links -%}
-                              <a href="{{ sub_sub_link.url }}" class="link-faded-reverse">{{ sub_sub_link.title }}</a>
+                              <a href="{{ sub_sub_link.url }}" class="link-faded-reverse{% if sub_sub_link.url contains 'sale' %} sale-text{% endif %}">{{ sub_sub_link.title }}</a>
                             {%- endfor -%}
                           </div>
                         </details>
@@ -266,7 +266,7 @@
                     {%- else -%}
                       <a
                         href="{{ sub_link.url }}"
-                        class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}"
+                        class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}{% if sub_link.url contains 'sale' %} sale-text{% endif %}"
                       >
                         {{- sub_link.title -}}
                       </a>

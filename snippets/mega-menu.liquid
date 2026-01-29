@@ -20,13 +20,13 @@ Supported variables
     <ul class="mega-menu__linklist unstyled-list">
       {%- for sub_link in link.links -%}
         <li class="v-stack justify-items-start gap-5">
-          <a href="{{ sub_link.url }}" class="h6">{{ sub_link.title }}</a>
+          <a href="{{ sub_link.url }}" class="h6{% if sub_link.url contains 'sale' %} sale-text{% endif %}">{{ sub_link.title }}</a>
 
           {%- if sub_link.links.size > 0 -%}
             <ul class="v-stack gap-2.5 unstyled-list">
               {%- for sub_sub_link in sub_link.links -%}
                 <li>
-                  <a href="{{ sub_sub_link.url }}" class="link-faded">{{ sub_sub_link.title }}</a>
+                  <a href="{{ sub_sub_link.url }}" class="link-faded{% if sub_sub_link.url contains 'sale' %} sale-text{% endif %}">{{ sub_sub_link.title }}</a>
                 </li>
               {%- endfor -%}
             </ul>

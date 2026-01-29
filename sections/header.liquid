@@ -197,7 +197,7 @@
                 {%- if link.levels == 0 and mega_menu_block == '' -%}
                   <a
                     href="{{ link.url }}"
-                    class="block {% if section.settings.menu_text_font == 'heading' %}h6{% endif %}"
+                    class="block {% if section.settings.menu_text_font == 'heading' %}h6{% endif %}{% if link.url contains 'sale' %} sale-text{% endif %}"
                     {% if link.current %}
                       aria-current="page"
                     {% endif %}
@@ -207,7 +207,7 @@
                 {%- else -%}
                   {%- capture disclosure_content -%}
                     <details class="header__menu-disclosure">
-                      <summary data-follow-link="{{ link.url }}" {% if section.settings.menu_text_font == 'heading' %}class="h6"{% endif %}>
+                      <summary data-follow-link="{{ link.url }}" {% if section.settings.menu_text_font == 'heading' %}class="h6{% if link.url contains 'sale' %} sale-text{% endif %}"{% elsif link.url contains 'sale' %}class="sale-text"{% endif %}>
                         {{- link.title -}}
                       </summary>
 
@@ -218,11 +218,11 @@
                           {%- for sub_link in link.links -%}
                             <li>
                               {%- if sub_link.levels == 0 -%}
-                                <a href="{{ sub_link.url }}" class="link-faded-reverse" {% if sub_link.current %}aria-current="page"{% endif %}>{{ sub_link.title }}</a>
+                                <a href="{{ sub_link.url }}" class="link-faded-reverse{% if sub_link.url contains 'sale' %} sale-text{% endif %}" {% if sub_link.current %}aria-current="page"{% endif %}>{{ sub_link.title }}</a>
                               {%- else -%}
                                 <dropdown-menu-disclosure follow-summary-link trigger="{{ section.settings.menu_open_trigger }}" class="contents">
                                   <details class="header__menu-disclosure">
-                                    <summary data-follow-link="{{ sub_link.url }}" class="link-faded-reverse">
+                                    <summary data-follow-link="{{ sub_link.url }}" class="link-faded-reverse{% if sub_link.url contains 'sale' %} sale-text{% endif %}">
                                       <div class="h-stack gap-4 justify-between">
                                         {{- sub_link.title -}}
                                         {%- render 'icon' with 'arrow-right', width: 8, direction_aware: true -%}
@@ -232,7 +232,7 @@
                                     <ul class="header__dropdown-menu unstyled-list" role="list">
                                       {%- for sub_sub_link in sub_link.links -%}
                                         <li>
-                                          <a href="{{ sub_sub_link.url }}" class="link-faded-reverse" {% if sub_sub_link.current %}aria-current="page"{% endif %}>{{ sub_sub_link.title }}</a>
+                                          <a href="{{ sub_sub_link.url }}" class="link-faded-reverse{% if sub_sub_link.url contains 'sale' %} sale-text{% endif %}" {% if sub_sub_link.current %}aria-current="page"{% endif %}>{{ sub_sub_link.title }}</a>
                                         </li>
                                       {%- endfor -%}
                                     </ul>
