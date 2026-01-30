@@ -3005,7 +3005,8 @@
     },
     "orders": {
       "order_list": {
-        "empty_state_title": "Pas encore de commandes"
+        "delivered": "Delivered {{date}}",
+        "estimated_shortform": "Est. {{date}}"
       }
     }
   }
