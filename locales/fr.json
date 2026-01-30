@@ -2182,7 +2182,10 @@
       "payment_gateway": {
         "credit_card_label": "Carte de crédit",
         "bank_deposit_label": "Dépôt Bancaire",
-        "bank_account_label": "Compte bancaire"
+        "bank_account_label": "Compte bancaire",
+        "cash_on_delivery_label": "Paiement à la livraison (COD)",
+        "money_order_label": "Mandat Postal",
+        "debit_card_label": "Carte de débit"
       }
     }
   }
