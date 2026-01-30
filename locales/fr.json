@@ -1210,7 +1210,10 @@
         "deferred_payment_info": {
           "title": "Le paiement de %{amount_due} est dû le %{due_at}",
           "description_html": "Pour toute question concernant votre commande, %{contact_us}.",
-          "paid_today": "Total Payé Aujourd'hui"
+          "paid_today": "Total Payé Aujourd'hui",
+          "paid_today_next": "Payé aujourd'hui",
+          "due_on_fulfillment_title": "Le paiement de %{amount_due} est dû lors de l'exécution.",
+          "due_on_receipt_title": "Le paiement de %{amount_due} est dû à réception."
         }
       }
     }
