@@ -3356,8 +3356,7 @@
       "purchase_order_number": {
         "add_accessibility_label": "Ajouter le numéro de bon de commande",
         "add_modal_title": "Ajouter le numéro de bon de commande",
-        "cancel": "Annuler",
-        "discard": "Annuler"
+        "cancel": "Annuler"
       }
     }
   }
