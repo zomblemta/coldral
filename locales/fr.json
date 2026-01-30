@@ -3403,8 +3403,13 @@
       "or": "OR",
       "google_pay": {
         "errors": {
-          "generic": "Un problème est survenu avec Google Pay. Réessayez ou utilisez un autre moyen de paiement."
+          "generic": "Un problème est survenu avec Google Pay. Réessayez ou utilisez un autre moyen de paiement.",
+          "missing_billing_address": "Google Pay nécessite une adresse de facturation. Veuillez en ajouter une à votre compte."
         }
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "Ajouter La Méthode De Paiement PayPal",
+        "loading_accessibility_message": "Chargement de PayPal"
       }
     }
   }
