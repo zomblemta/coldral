@@ -1352,6 +1352,13 @@
           },
           "prepaid_order_one_cycle": {
             "other": "%{shipping_price} pour %{count} livraisons supplémentaires (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{shipping_price} pour %{count} livraison",
+            "other": "%{shipping_price} pour %{count} livraisons (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "`%{shipping_price} pour %{count} livraison de plus, suivi de %{recurring_order_shipping_price}`"
           }
         }
       }
