@@ -1667,7 +1667,10 @@
         "bancontact_label": "Bancontact",
         "giropay_label": "Giropay",
         "multibanco_label": "Multibanco",
-        "eps_label": "eps-Virement"
+        "eps_label": "eps-Virement",
+        "ideal_label": "iDEAL",
+        "bank_picker_label": "Banque",
+        "afterpay_label": "Afterpay"
       }
     }
   }
