@@ -930,6 +930,12 @@
         "item_label": {
           "one": "{{count}} article",
           "other": "{{count}} articles"
+        },
+        "empty_cart_label": "Votre panier est vide",
+        "quantity_update": {
+          "page_title": "Mise à jour de la quantité",
+          "title": "Mise à jour de la quantité",
+          "description": "Les quantités disponibles pour ces articles ont changé et ont été mises à jour dans votre panier."
         }
       }
     }
