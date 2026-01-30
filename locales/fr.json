@@ -1674,7 +1674,10 @@
         "cashapppay_label": "Cash App Pay",
         "przelewy24_label": "Przelewy24",
         "blik_label": "Blik",
-        "mobilepay_label": "MobilePay"
+        "mobilepay_label": "MobilePay",
+        "swish_label": "Swish",
+        "vipps_label": "Vipps",
+        "grabpay_label": "GrabPay"
       }
     }
   }
