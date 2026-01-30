@@ -2413,7 +2413,10 @@
         "contact_us": "Contactez-nous",
         "contact_us_lowercase": "contactez-nous",
         "contact_us_html": "Besoin d'aide ? %{contact_us}",
-        "updated_time": "Mis à jour il y a %{time_ago}"
+        "updated_time": "Mis à jour il y a %{time_ago}",
+        "failure": "Non livré",
+        "failed_title": "Votre commande n’a pas pu être livrée",
+        "failed_contact_merchant": "Contactez %{company} pour organiser la livraison."
       }
     }
   }
