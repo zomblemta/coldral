@@ -1111,7 +1111,11 @@
           "one": "Sous-total · %{count} article",
           "other": "Sous-total · %{count} articles"
         },
-        "pickup_label": "Retrait en magasin"
+        "pickup_label": "Retrait en magasin",
+        "no_pickup_location": "Aucun point de retrait disponible.",
+        "pickup_unavailable_banner_title": {
+          "one": "Aucun magasin ne propose votre article"
+        }
       }
     }
   }
