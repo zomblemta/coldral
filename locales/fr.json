@@ -606,7 +606,10 @@
           },
           "tax": {
             "new_tax_must_be_accepted": "Les taxes associées à votre commande ont changé. Vérifiez et réessayez.",
-            "unresolvable_tax_terms": "Les conditions proposées sont impossibles à résoudre compte tenu du contexte actuel de la négociation."
+            "unresolvable_tax_terms": "Les conditions proposées sont impossibles à résoudre compte tenu du contexte actuel de la négociation.",
+            "delivery_price_is_abstract": "Le prix de livraison associé est abstrait.",
+            "tax_inclusivity_mismatch": "Renégociez en indiquant une valeur concrète pour totalTaxAndDutyAmount ou totalAmountIncludedInTarget.",
+            "tax_exemption_not_supported": "Les exonérations fiscales ne sont pas prises en charge pour la session de négociation en cours."
           }
         }
       }
