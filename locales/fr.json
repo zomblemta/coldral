@@ -1208,7 +1208,9 @@
         "percent_off_shipping": "%{percent}% de réduction sur la livraison",
         "amount_off_shipping": "%{amount} de réduction sur les frais de livraison",
         "deferred_payment_info": {
-          "title": "Le paiement de %{amount_due} est dû le %{due_at}"
+          "title": "Le paiement de %{amount_due} est dû le %{due_at}",
+          "description_html": "Pour toute question concernant votre commande, %{contact_us}.",
+          "paid_today": "Total Payé Aujourd'hui"
         }
       }
     }
