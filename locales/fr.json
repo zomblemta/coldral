@@ -1035,7 +1035,10 @@
         }
       },
       "order_summary": {
-        "title": "Récapitulatif de la commande"
+        "title": "Récapitulatif de la commande",
+        "group_title_label": "Partie de \"%{group_title}\"",
+        "for_add_on": "Pour : %{group_title}",
+        "from_shop_heading": "De %{shop_name}"
       }
     }
   }
