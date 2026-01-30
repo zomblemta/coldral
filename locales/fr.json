@@ -2559,6 +2559,15 @@
       },
       "mor_policies": {
         "terms_and_conditions": "Conditions Générales du Commerçant Enregistré"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Montant à payer pour la commande %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "Ajouté",
+            "other": "Ajouté %{count}"
+          }
+        }
       }
     }
   }
