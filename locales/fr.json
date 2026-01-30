@@ -1693,13 +1693,11 @@
         "purchase_options_agreement_label_wallets": "poursuivant votre paiement, vous acceptez les frais futurs indiqués sur cette page ainsi que la politique d'annulation.",
         "apple_pay_payment_error": "Votre paiement n'a pas pu être effectué. Réessayez ou utilisez un autre moyen de paiement.",
         "taxes_not_included": "Taxes non incluses",
-        "no_taxes_banner_content": "`Les taxes ne seront pas facturées pour cette commande. Une fois le paiement encaissé, il ne sera plus possible d'ajouter des taxes.`",
-        "paypal": {
-          "connect": "Cliquez pour connecter votre compte PayPal"
+        "google": {
+          "connect": "Cliquez pour vous connecter à votre compte Google Pay",
+          "error_authorizing": "Erreur lors de l'autorisation du paiement"
         },
-        "apple": {
-          "connect": "Cliquez pour connecter votre compte Apple Pay"
-        }
+        "account_connected": "Compte connecté."
       }
     }
   }
