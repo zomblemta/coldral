@@ -3208,8 +3208,11 @@
       "duties_and_taxes_included": "Le total inclut les droits et taxes. Aucun frais supplémentaire à la livraison.",
       "duties": "Droits de douane",
       "ok_duties_tooltip": "Cette commande est expédiée depuis un autre pays, donc des droits de douane ont été ajoutés au total de votre commande.",
-      "logged_in_account_no_permission_to_order": "Vous êtes connecté en tant que {{email}}. Ce compte n'a pas l'autorisation de gérer cette commande.",
-      "cash_rounding": "Arrondi en espèces"
+      "total": "Total",
+      "unit_price": "{{price}}/chacun",
+      "pagination": {
+        "load_more": "Afficher plus"
+      }
     }
   }
 }
