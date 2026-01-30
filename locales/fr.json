@@ -1149,7 +1149,10 @@
         "total_paid_label": "Montant Payé",
         "total_price_label": "Prix total",
         "total_outstanding_label": "Montant à payer",
-        "deposit_label": "Dépôt"
+        "deposit_label": "Dépôt",
+        "total_due_today_label": "Montant Dû Aujourd'hui",
+        "total_due_later_label": "Total À Payer Plus Tard",
+        "partial_total_label": "Total"
       }
     }
   }
