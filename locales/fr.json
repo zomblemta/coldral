@@ -1849,8 +1849,10 @@
           "accessibility_label": "Choisissez Une Option De Paiement"
         },
         "bank_account_type": {
-          "checking": "Vérification"
-        }
+          "checking": "Vérification",
+          "savings": "Économies"
+        },
+        "new_bank_account_disclaimer": "complétant votre commande, vous autorisez %{shop_name} à débiter le compte ci-dessous via ACH pour le montant indiqué et au moment indiqué."
       }
     }
   }
