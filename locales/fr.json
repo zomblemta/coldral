@@ -1958,7 +1958,10 @@
         "credit_card_number_blank": "Entrez Un Numéro De Carte",
         "credit_card_verification_value_blank": "Saisissez le CVV ou le code de sécurité de votre carte",
         "delivery_line_detail_changed": "Certaines informations de livraison ont peut-être changé. Vérifiez votre mode d'expédition et réessayez.",
-        "delivery_zone_not_found": "La zone spécifiée n'a pas été trouvée dans le pays spécifié."
+        "delivery_zone_not_found": "La zone spécifiée n'a pas été trouvée dans le pays spécifié.",
+        "reduction_code_code_not_found": "Entrez un code de réduction ou une carte-cadeau valide",
+        "reduction_code_discount_not_found": "Saisissez un code de réduction valide",
+        "reduction_code_gift_card_code_invalid": "Entrez une carte-cadeau valide"
       }
     }
   }
