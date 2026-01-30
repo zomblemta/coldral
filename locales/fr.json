@@ -2609,6 +2609,14 @@
         "recurring_total_intervals": {
           "day": {
             "other": "%{count} jours"
+          },
+          "week": {
+            "one": "semaine",
+            "other": "%{count} semaines"
+          },
+          "month": {
+            "one": "mois",
+            "other": "%{count} mois"
           }
         }
       }
