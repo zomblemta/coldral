@@ -2243,7 +2243,10 @@
         },
         "gift_card_confirmation_by_text": "Si vous ne l'avez pas reçu, renvoyez le texte ou contactez-nous.",
         "gift_card_confirmation_by_email": "Si vous ne l'avez pas reçu, renvoyez l'e-mail ou contactez-nous.",
-        "gift_card_title": "Cartes-cadeaux"
+        "gift_card_title": "Cartes-cadeaux",
+        "resend_gift_cards": "Renvoyer Les Cartes-Cadeaux",
+        "thank_you_title": "Votre commande est confirmée",
+        "thank_you_title_payment": "Votre paiement est confirmé"
       }
     }
   }
