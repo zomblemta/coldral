@@ -3659,7 +3659,8 @@
         "replace_with": "Remplacer par",
         "add_new_payment_method": "Ajouter",
         "save_button": "Enregistrer",
-        "close_button": "Fermer"
+        "close_button": "Fermer",
+        "invalid_subscription_contract": "Impossible de trouver l'abonnement"
       }
     }
   }
