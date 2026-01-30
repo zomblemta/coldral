@@ -1038,7 +1038,12 @@
         "title": "Récapitulatif de la commande",
         "group_title_label": "Partie de \"%{group_title}\"",
         "for_add_on": "Pour : %{group_title}",
-        "from_shop_heading": "De %{shop_name}"
+        "from_shop_heading": "De %{shop_name}",
+        "from_other_stores_heading": "D'autres Magasins",
+        "from_multiple_stores_heading": "De Plusieurs Magasins",
+        "number_items": {
+          "one": "%{count} article"
+        }
       }
     }
   }
