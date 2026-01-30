@@ -1437,7 +1437,10 @@
         "add_delivery_instructions": "Ajouter des instructions de livraison",
         "edit": "Modifier",
         "delete": "Supprimer",
-        "back": "Retour"
+        "back": "Retour",
+        "address_more": "Plus d'actions pour cette adresse",
+        "address_edit": "Modifier l'adresse",
+        "address_delete": "Supprimer l'adresse"
       }
     }
   }
