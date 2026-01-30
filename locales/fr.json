@@ -2108,7 +2108,10 @@
         "unavailable_selected_address_for_region": "La livraison n'est pas disponible pour {{region}}. Sélectionnez une autre adresse pour continuer"
       },
       "alternative_payment_method_banner": {
-        "or": "OR"
+        "or": "OR",
+        "or_pay_another_way": "Ou payez autrement",
+        "or_check_out_another_way": "Ou essayez une autre façon",
+        "or_pay_with_credit_card": "Ou payez par carte de crédit"
       }
     }
   }
