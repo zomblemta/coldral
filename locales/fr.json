@@ -2658,7 +2658,8 @@
       },
       "pickup_point": {
         "no_business_hours": "Aucun Horaire D'Ouverture Disponible",
-        "open_twenty_four_hours": "Ouvert 24 h/24 et 7 j/7"
+        "open_twenty_four_hours": "Ouvert 24 h/24 et 7 j/7",
+        "address_label": "Adresse"
       }
     }
   }
