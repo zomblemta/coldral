@@ -1051,8 +1051,11 @@
         },
         "more_items_modal": {
           "search_item": "Rechercher",
-          "clear_search": "Effacer la recherche"
-        }
+          "clear_search": "Effacer la recherche",
+          "empty_results": "Aucun résultat trouvé pour \"%{searchText}\". Vérifiez l'orthographe ou utilisez un autre mot ou une autre expression.",
+          "number_items_shown": "%{shownNumber} sur %{totalNumber} articles"
+        },
+        "order_name_label": "Commande %{name}"
       }
     }
   }
