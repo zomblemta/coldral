@@ -2497,6 +2497,10 @@
         "gift_card_confirmation_by_text_typ": {
           "one": "Vous recevrez un SMS contenant votre carte cadeau dans quelques minutes.",
           "other": "Vous recevrez un message contenant vos cartes-cadeaux dans quelques minutes."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Vous recevrez un e-mail contenant votre carte-cadeau dans quelques minutes.",
+          "other": "Vous recevrez un e-mail contenant vos cartes-cadeaux dans quelques minutes."
         }
       }
     }
