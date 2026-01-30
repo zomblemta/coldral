@@ -1134,7 +1134,10 @@
         "shipping_pending_value": "—",
         "shipping_pending_message": "Pas Encore Disponible",
         "taxes_label": "Taxes",
-        "estimated_taxes_label": "Taxes Estimées"
+        "estimated_taxes_label": "Taxes Estimées",
+        "estimated_taxes_label_short": "Estimé",
+        "information_estimated_taxes_label": "Taxes (estimées)",
+        "estimated_taxes_finalization_tooltip_content": "Le montant final des taxes et le total vous seront confirmés par e-mail ou par SMS après que vous aurez passé votre commande."
       }
     }
   }
