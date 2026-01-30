@@ -2395,7 +2395,10 @@
         "out_for_delivery": "Cours De Livraison",
         "out_for_delivery_title": "Votre commande est en cours de livraison",
         "out_for_delivery_description_html": "Votre commande est en cours de livraison et devrait arriver aujourd'hui. Si elle n'est pas livrée dans les 2 prochains jours, %{contact_us}.",
-        "out_for_delivery_local_title": "Votre commande est en cours de livraison"
+        "out_for_delivery_local_title": "Votre commande est en cours de livraison",
+        "out_for_delivery_local_description_html": "Votre commande arrivera bientôt.",
+        "attempted_delivery": "Tentative de livraison",
+        "attempted_delivery_title": "Une tentative de livraison de votre commande a été effectuée"
       }
     }
   }
