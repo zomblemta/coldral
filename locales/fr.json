@@ -1256,8 +1256,13 @@
         },
         "component_quantity_title": "%{quantity} × %{product_title}",
         "discount_discovery": {
-          "add_code": "Ajouter une remise"
-        }
+          "add_code": "Ajouter une remise",
+          "merchandise_quantity_label": {
+            "one": "%{count} article",
+            "other": "%{count} articles"
+          }
+        },
+        "alternative_payment_currency_total": "Facturé comme %{amount_due}"
       }
     }
   }
