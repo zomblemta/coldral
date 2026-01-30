@@ -1310,7 +1310,12 @@
         "unbranded_default_description": "Prêt à être expédié",
         "unbranded_description_same_day": "Expédié le même jour ouvrable",
         "unbranded_description_with_fulfillment_days": {
-          "one": "Expédié le jour ouvrable suivant"
+          "one": "Expédié le jour ouvrable suivant",
+          "other": "Expédié sous %{count} jours ouvrables"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "Expédition dans %{count} semaine",
+          "other": "Expédié dans %{count} semaines"
         }
       }
     }
