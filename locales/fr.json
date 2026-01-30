@@ -1283,7 +1283,10 @@
         "subscription_local_delivery": "Livraison Locale par Abonnement",
         "subscription_pickup": "Retrait D'Abonnement",
         "waiting_on_rate_notice": "Obtention des tarifs d'expédition disponibles…",
-        "waiting_on_pickup_location_notice": "Recherche des points de retrait disponibles…"
+        "waiting_on_pickup_location_notice": "Recherche des points de retrait disponibles…",
+        "no_rates_for_cart_or_destination_notice": "Il n'y a aucune méthode d'expédition disponible pour votre panier ou votre adresse",
+        "no_pickup_location_notice": "Au moins un de vos produits n'est pas disponible pour le retrait",
+        "no_rates_for_country_notice": "Aucun tarif d'expédition trouvé pour cette adresse."
       }
     }
   }
