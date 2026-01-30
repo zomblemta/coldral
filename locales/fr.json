@@ -1871,7 +1871,10 @@
         "same_as_shipping": "Identique à l'adresse de livraison",
         "add_address": "Utiliser une autre adresse",
         "edit": "Modifier",
-        "delete": "Supprimer"
+        "delete": "Supprimer",
+        "address_more": "Plus d'actions pour cette adresse",
+        "address_edit": "Modifier l'adresse",
+        "address_delete": "Supprimer l'adresse"
       }
     }
   }
