@@ -1286,7 +1286,10 @@
         "waiting_on_pickup_location_notice": "Recherche des points de retrait disponibles…",
         "no_rates_for_cart_or_destination_notice": "Il n'y a aucune méthode d'expédition disponible pour votre panier ou votre adresse",
         "no_pickup_location_notice": "Au moins un de vos produits n'est pas disponible pour le retrait",
-        "no_rates_for_country_notice": "Aucun tarif d'expédition trouvé pour cette adresse."
+        "no_rates_for_country_notice": "Aucun tarif d'expédition trouvé pour cette adresse.",
+        "no_rates_contact_notice": "Contactez-nous pour plus d'informations",
+        "free_rate_label": "Gratuit",
+        "cheapest_rate_label": "Le moins cher"
       }
     }
   }
