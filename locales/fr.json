@@ -1990,7 +1990,10 @@
         "email_blank": "Saisissez une adresse e-mail",
         "phone_blank": "Entrez Un Numéro De Téléphone",
         "address_country_invalid": "Sélectionnez un pays ou une région dans la liste",
-        "address_zip_invalid": "Entrez un code postal valide"
+        "address_zip_invalid": "Entrez un code postal valide",
+        "gift_card_invalid": "La carte-cadeau \"••••%{last_four_characters}\" n'est plus valide",
+        "vaulting_agreement_blank": "Votre méthode de paiement doit être enregistrée, car le paiement du solde de cette commande sera dû plus tard.",
+        "sms_marketing_phone_invalid": "Entrez un numéro de téléphone valide"
       }
     }
   }
