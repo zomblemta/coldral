@@ -1978,7 +1978,10 @@
         "payment_gateway_needs_paid_plan_error": "Cette méthode de paiement n’est pas disponible dans la boutique pour le moment",
         "payment_gateway_not_in_test_mode": "n'est pas configurée pour tester les commandes. Cette boutique ne peut pas accepter de vraies commandes ni de paiements réels.",
         "payment_gateway_incompatible_with_multi_currency": "Pour finaliser ce paiement dans votre devise locale, vous devez payer par carte de crédit.",
-        "payment_gateway_unsupported_for_subscriptions": "Cette méthode de paiement n'est pas disponible pour les commandes d'abonnement."
+        "payment_gateway_unsupported_for_subscriptions": "Cette méthode de paiement n'est pas disponible pour les commandes d'abonnement.",
+        "payment_gateway_unsupported_for_deferred_purchase_options": "Ce mode de paiement n'est pas disponible pour les options d'achat différé.",
+        "payment_gateway_unsupported_for_country": "Cette méthode de paiement n'est pas disponible pour votre pays de livraison.",
+        "payment_gateway_unsupported_for_development_store_html": "Pour passer une commande de test, vous devrez utiliser une passerelle de paiement de test. En savoir plus sur <a href=\"%{docs_link}\">les tests des commandes dans les boutiques en développement</a>."
       }
     }
   }
