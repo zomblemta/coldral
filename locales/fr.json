@@ -3138,9 +3138,9 @@
       "loading": "Chargement Des Détails De La Commande",
       "loading_finished_accessibility_message": "Les détails de la commande ont été chargés",
       "location": "Emplacement",
-      "payment_confirmation": {
-        "payment_received": "Merci ! Votre paiement de {{amount}} a été reçu.",
-        "full_payment_received": "Merci ! Votre paiement de {{amount}} a été reçu, et cette commande est maintenant entièrement payée."
+      "payment": {
+        "status_in_review": "Paiement Dû Après Examen",
+        "status_unpaid": "Paiement dû le {{date}}"
       }
     }
   }
