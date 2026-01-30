@@ -1165,7 +1165,12 @@
         "cost_table_title": "Résumé des coûts",
         "cost_table_item_column_header": "Article",
         "cost_table_value_column_header": "Valeur",
-        "price_label": "Prix"
+        "price_label": "Prix",
+        "price_per_item": {
+          "accessibility_label": "%{price} par article",
+          "label": "%{price}/pièce"
+        },
+        "quantity_label": "Quantité"
       }
     }
   }
