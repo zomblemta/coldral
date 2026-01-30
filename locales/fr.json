@@ -3494,6 +3494,11 @@
         "delete_and_replace_button_accessibility_label": "Supprimez {{currentPaymentMethodName}} et remplacez-le par {{newPaymentMethodName}}.",
         "deleted_successfully": "Moyen de paiement supprimé avec succès.",
         "loading_available_payment_methods_accessibility_label": "Chargement des méthodes de paiement disponibles"
+      },
+      "add_payment_method": {
+        "title": "Ajouter un moyen de paiement",
+        "button_title": "Ajouter",
+        "payment_method_added_confirmation": "Méthode de paiement ajoutée"
       }
     }
   }
