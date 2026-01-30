@@ -1006,8 +1006,11 @@
         "banner_title": {
           "some_products_one": "Ce produit n'est pas disponible pour la livraison vers %{location_name}.",
           "some_products_other": "Ces produits ne sont pas disponibles pour livraison à %{location_name}.",
-          "all_products_one": "Le produit dans votre panier n'est pas disponible pour la livraison à %{location_name}."
-        }
+          "all_products_one": "Le produit dans votre panier n'est pas disponible pour la livraison à %{location_name}.",
+          "all_products_other": "Les produits de votre panier ne sont pas disponibles pour la livraison à %{location_name}."
+        },
+        "missing_country_fallback": "votre pays",
+        "indeterminate_location_fallback": "votre emplacement"
       }
     }
   }
