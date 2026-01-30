@@ -3620,7 +3620,9 @@
       "title": "Paramètres",
       "loading_accessibility_message": "Chargement de la page des paramètres",
       "log_out_everywhere": {
-        "title": "Se déconnecter partout"
+        "title": "Se déconnecter partout",
+        "description": "Si vous avez perdu un appareil ou craignez pour la sécurité, déconnectez-vous de tous vos appareils pour garantir la sécurité de votre compte.",
+        "button": "Se Déconnecter Partout"
       }
     }
   }
