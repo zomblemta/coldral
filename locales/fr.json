@@ -814,7 +814,10 @@
         "company_attention_label": "Entreprise/À l'attention",
         "optional_company_attention_label": "Société/À l'attention (optionnel)",
         "optional_company_label": "Entreprise (facultatif)",
-        "address1_label": "Adresse"
+        "address1_label": "Adresse",
+        "address2_label": "Appartement, suite, etc.",
+        "optional_address2_label": "Appartement, suite, etc. (facultatif)",
+        "city_label": "Ville"
       }
     }
   }
