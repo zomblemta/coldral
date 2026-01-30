@@ -3065,7 +3065,13 @@
         "filter": {
           "clear_section": "Effacer la section",
           "clear_all": "Tout effacer",
-          "apply": "Appliquer"
+          "apply": "Appliquer",
+          "date": {
+            "start_date": "Date de début",
+            "end_date": "Date de fin",
+            "title": "Date de commande",
+            "today": "Aujourd'hui"
+          }
         }
       }
     }
