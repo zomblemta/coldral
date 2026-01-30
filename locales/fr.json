@@ -3271,7 +3271,9 @@
         "tax_exemptions_modal_button_accessibility_label": "Voir Toutes Les Exonérations Fiscales"
       },
       "location_selection": {
-        "selection_confirmation_button": "Choisir l'emplacement"
+        "selection_confirmation_button": "Choisir l'emplacement",
+        "selection_continue_button": "Continuer",
+        "title": "Pour quel emplacement achetez-vous ?"
       }
     }
   }
