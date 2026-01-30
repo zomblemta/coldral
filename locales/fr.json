@@ -2137,7 +2137,10 @@
         "continue_to_payment_gateway_button_label": "Continuer vers le Paiement",
         "complete_your_purchase_title_error": "Corrigez vos informations de paiement",
         "continue_to_payment_gateway_notice_error": "Les informations de paiement n'ont pas pu être vérifiées.",
-        "continue_to_payment_gateway_button_label_error": "Mettre à jour les informations de paiement"
+        "continue_to_payment_gateway_button_label_error": "Mettre à jour les informations de paiement",
+        "page_title": "Traitement de la commande",
+        "title": "Commande en cours",
+        "your_order_has_been_received_title": "Merci pour votre commande"
       }
     }
   }
