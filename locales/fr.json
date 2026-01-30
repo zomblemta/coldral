@@ -803,7 +803,10 @@
         "email_placeholder": "E-mail",
         "email_or_phone_label": "Adresse E-mail Ou Numéro De Téléphone Mobile",
         "email_or_phone_placeholder": "Adresse e-mail ou numéro de téléphone mobile",
-        "stored_addresses_label": "Adresses enregistrées"
+        "stored_addresses_label": "Adresses enregistrées",
+        "available_addresses_label": "Adresses Disponibles",
+        "new_address_label": "Utiliser une nouvelle adresse",
+        "first_name_label": "Prénom"
       }
     }
   }
