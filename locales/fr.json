@@ -2481,7 +2481,10 @@
           "text_html": "%{contact_us} pour ajouter votre adresse",
           "contact_us": "Contactez-nous"
         },
-        "first_payment_complete": "Premier Paiement Effectué"
+        "first_payment_complete": "Premier Paiement Effectué",
+        "in_store_purchase": "Achat en magasin",
+        "company_location_section_title": "Entreprise et Emplacement",
+        "thank_you_ready_for_picked_up": "Votre commande a été récupérée à %{address}."
       }
     }
   }
