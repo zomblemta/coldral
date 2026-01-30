@@ -2639,7 +2639,15 @@
       },
       "customer_payment_methods": {
         "page_title": "Modes de paiement",
-        "title": "Méthodes de paiement"
+        "title": "Méthodes de paiement",
+        "delete_customer_mandate": {
+          "success_message": "Votre moyen de paiement a été supprimé avec succès"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Trop De Tentatives"
+        }
       }
     }
   }
