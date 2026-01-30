@@ -3070,19 +3070,13 @@
             "start_date": "Date de début",
             "end_date": "Date de fin",
             "title": "Date de commande",
-            "today": "Aujourd'hui",
-            "last_7_days": "Les 7 derniers jours",
-            "last_30_days": "Derniers 30 Jours",
-            "last_90_days": "Derniers 90 jours",
-            "last_365_days": "Les 12 Derniers Mois",
-            "custom": "Personnalisé"
+            "today": "Aujourd'hui"
           }
-        },
-        "show_order_actions_accessibility_label": "Afficher les actions de la commande {{name}}",
-        "view_order": "Voir la commande"
+        }
       },
       "order_status": {
-        "attempted_to_deliver_label": "Tentative de livraison"
+        "ready_for_pickup_label": "Prêt À Être Récupéré",
+        "ready_for_pickup_description": "Ces articles sont prêts à être retirés. Veuillez apporter la confirmation de votre commande lors du retrait."
       }
     }
   }
