@@ -3311,7 +3311,12 @@
           "pending": {
             "banner_overdue": {
               "other": "Votre paiement a {{count}} jours de retard"
-            }
+            },
+            "banner_due": {
+              "one": "Votre paiement est dû dans {{count}} jour",
+              "other": "Votre paiement est dû dans {{count}} jours"
+            },
+            "banner_due_today": "Votre paiement est dû aujourd'hui"
           }
         }
       }
