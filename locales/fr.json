@@ -1949,7 +1949,9 @@
         "credit_card_name_blank": "Saisissez votre nom exactement comme il est écrit sur votre carte",
         "credit_card_name_invalid": "Saisissez votre nom exactement tel qu'il est inscrit sur votre carte",
         "credit_card_number_invalid": "Entrez un numéro de carte valide",
-        "credit_card_expiry_invalid": "Saisissez une date d'expiration valide"
+        "credit_card_expiry_invalid": "Saisissez une date d'expiration valide",
+        "credit_card_month_invalid": "Entrez un mois d'expiration valide",
+        "credit_card_year_invalid": "Entrez une année d'expiration valide"
       }
     }
   }
