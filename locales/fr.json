@@ -1744,7 +1744,10 @@
               "verification_value": "Saisissez un CVV ou un code de sécurité valide"
             }
           }
-        }
+        },
+        "simulated_checkout": "Aperçu Bientôt Disponible",
+        "simulated_express_checkout": "Les portefeuilles ne sont pas disponibles dans l'aperçu de l'éditeur en raison de votre région ou de votre navigateur",
+        "vaulting_agreement_label": "Enregistrer mes informations de paiement chez %{company} pour un paiement plus rapide."
       }
     }
   }
