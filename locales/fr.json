@@ -33,7 +33,7 @@
       "shop": "Shop"
     },
     "reviews": {
-      "title": "Avis clients"
+      "title": "Avis"
     },
     "label": {
       "color": "Couleur",
@@ -44,7 +44,7 @@
       "follow_on": "Nous suivre sur {{ social_media }}",
       "share": "Partager",
       "share_on": "Partager sur {{ social_media }}",
-      "share_email": "Partager par email"
+      "share_email": "Partager par e-mail"
     },
     "rating": {
       "info": "{{ rating_value }} sur {{ rating_max }} étoiles"
