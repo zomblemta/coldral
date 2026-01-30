@@ -21,22 +21,22 @@
       "close": "Fermer",
       "next": "Suivant",
       "previous": "Précédent",
-      "play_video": "Lire la vidéo",
+      "play_video": "Lancer la video",
       "navigate_to_next_section": "Aller à la section suivante",
-      "mute_video": "Couper Le Son De La Vidéo",
+      "mute_video": "Couper le son de la vidéo",
       "unmute_video": "Activer le son de la vidéo",
-      "rss_feed": "flux RSS"
+      "rss_feed": "Flux RSS"
     },
     "breadcrumb": {
-      "label": "Fil d'Ariane",
+      "label": "Fil d'ariane",
       "home": "Accueil",
-      "shop": "Boutique"
+      "shop": "Shop"
     },
     "reviews": {
       "title": "Avis clients"
     },
     "label": {
-      "color": "Couleur,Couleur",
+      "color": "Couleur",
       "white": "Blanc",
       "size": "Taille"
     },
