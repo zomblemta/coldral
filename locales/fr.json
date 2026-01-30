@@ -1955,7 +1955,10 @@
         "credit_card_start_invalid": "``Entrez Une Date De Début De Validité De La Carte``",
         "credit_card_start_month_invalid": "Saisissez un mois de début de carte valide",
         "credit_card_start_year_invalid": "Entrez Une Année De Début De Validité De La Carte",
-        "credit_card_number_blank": "Entrez Un Numéro De Carte"
+        "credit_card_number_blank": "Entrez Un Numéro De Carte",
+        "credit_card_verification_value_blank": "Saisissez le CVV ou le code de sécurité de votre carte",
+        "delivery_line_detail_changed": "Certaines informations de livraison ont peut-être changé. Vérifiez votre mode d'expédition et réessayez.",
+        "delivery_zone_not_found": "La zone spécifiée n'a pas été trouvée dans le pays spécifié."
       }
     }
   }
