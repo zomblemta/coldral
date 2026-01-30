@@ -3084,12 +3084,11 @@
       "order_status": {
         "confirmed_title": "Votre commande est confirmée",
         "confirmed_description_pickup": "Vous recevrez un e-mail lorsque votre commande sera prête à être retirée.",
-        "gift_resend_success": {
-          "other": "Cartes-cadeaux Renvoyées"
-        },
-        "gift_resend_failure": {
-          "one": "Nous avons rencontré un problème lors du renvoi de votre carte-cadeau. Réessayez ou contactez-nous.",
-          "other": "Un problème est survenu lors de la réexpédition de vos cartes-cadeaux. Réessayez ou contactez-nous."
+        "complete_label": "Terminé",
+        "delivered_label": "Livré",
+        "delivered_description_gift_card": {
+          "one": "La carte-cadeau a été envoyée par e-mail.",
+          "other": "Les cartes-cadeaux ont été envoyées par e-mail."
         }
       }
     }
