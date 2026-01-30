@@ -2904,6 +2904,13 @@
           "increment_item": "Ajouté %{delta}",
           "decrement_item": "Supprimé %{delta} sur %{total}"
         }
+      },
+      "order": {
+        "not_available": "Cette commande n'est pas disponible",
+        "financial_status": {
+          "authorized": "Autorisé",
+          "pending": "attente"
+        }
       }
     }
   }
