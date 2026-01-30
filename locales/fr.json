@@ -1398,7 +1398,14 @@
           "shipping_price_included": "Inclus",
           "recurring_order_shipping_price": "suivi de %{recurring_order_shipping_price}",
           "first_order_shipping_price_included": "Première commande incluse, suivie de %{recurring_order_shipping_price}",
-          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} par livraison), suivi de %{recurring_order_shipping_price}"
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} par livraison), suivi de %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Première commande gratuite",
+            "other": "Premières %{count} commandes gratuites"
+          },
+          "free_for_first_n_order": {
+            "one": "Pour la première commande"
+          }
         }
       }
     }
