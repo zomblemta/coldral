@@ -503,7 +503,7 @@
       "view_cart": "Voir le panier",
       "remove_all": "Tout supprimer",
       "item_count": {
-        "zero": "{{ count }} produits",
+        "zero": "{{ count }} articles",
         "one": "{{ count }} produit",
         "other": "{{ count }} produits"
       },
