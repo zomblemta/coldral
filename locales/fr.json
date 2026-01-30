@@ -3334,7 +3334,10 @@
           },
           "canceled": {
             "title": "Paiement annulé"
-          }
+          },
+          "due_date": "Due {{date}}",
+          "total_balance": "Solde total",
+          "pay_now": "Payer maintenant"
         }
       }
     }
