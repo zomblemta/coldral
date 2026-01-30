@@ -66,11 +66,11 @@
       "decline": "Refuser"
     },
     "form": {
-      "max_characters": "{{ max_chars }} caractères au maximum"
+      "max_characters": "{{ max_chars }} caractères max"
     },
     "on_boarding": {
       "blog_post_category": "Catégorie",
-      "blog_post_title": "Article",
+      "blog_post_title": "Article De Blog",
       "blog_post_excerpt": "Ecrivez quelque chose à propos de votre article de blog.",
       "product_vendor": "Marque",
       "product_title": "Produit",
