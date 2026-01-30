@@ -1677,7 +1677,10 @@
         "mobilepay_label": "MobilePay",
         "swish_label": "Swish",
         "vipps_label": "Vipps",
-        "grabpay_label": "GrabPay"
+        "grabpay_label": "GrabPay",
+        "kcp_creditcard_label": "KCP Carte de Crédit",
+        "usdc_label": "USDC",
+        "usdc_cashback_title": "1% de cashback"
       }
     }
   }
