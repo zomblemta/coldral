@@ -2950,9 +2950,9 @@
       }
     },
     "page_titles": {
-      "reset_account": "Réinitialiser Le Compte",
-      "addresses": "Adresses",
-      "order": "Commande %{name}"
+      "search_results": {
+        "one": "Recherche : %{count} résultat trouvé pour \"%{terms}\""
+      }
     }
   }
 }
