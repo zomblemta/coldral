@@ -637,7 +637,11 @@
             "payment_instrument_not_found": "Méthode de paiement introuvable",
             "unauthorized_capture_method": "La configuration de la méthode de capture du paiement n'est pas autorisée.",
             "saved_payment_methods_not_allowed": "Les moyens de paiement enregistrés ne sont pas autorisés.",
-            "saved_payment_methods_not_enabled": "Les méthodes de paiement enregistrées ne sont pas activées pour cette boutique."
+            "saved_payment_methods_not_enabled": "Les méthodes de paiement enregistrées ne sont pas activées pour cette boutique.",
+            "saved_payment_methods_cvv_verification_disabled": "La méthode de paiement sélectionnée nécessite une vérification CVV qui n'est pas activée pour cette boutique. Veuillez sélectionner une autre méthode de paiement.",
+            "store_credit_not_enabled": "Le crédit en boutique n'est pas activé pour cette boutique.",
+            "store_credit_account_not_found": "Compte de crédit en magasin introuvable.",
+            "store_credit_account_mismatch": "Le compte de crédit en magasin ne correspond pas à l'identité de l'acheteur."
           }
         }
       }
