@@ -3035,6 +3035,13 @@
           "list_view": {
             "due_without_date": "Dû"
           }
+        },
+        "sort_currently_sorted_by_accessibility_label": "Trié actuellement par : {{option}}",
+        "sort_title": "Trier",
+        "sort": {
+          "date": {
+            "newest": "Du Plus Récent Au Plus Ancien"
+          }
         }
       }
     }
