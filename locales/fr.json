@@ -3527,7 +3527,10 @@
       "americanexpress": "American Express",
       "discover": "Découvrir",
       "dinersclub": "Diners Club",
-      "jcb": "JCB"
+      "jcb": "JCB",
+      "elo": "Elo",
+      "visaelectron": "Visa Electron",
+      "maestro": "Maestro"
     }
   }
 }
