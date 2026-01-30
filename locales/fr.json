@@ -860,7 +860,9 @@
         "company_contact_info": "{{companyName}} · {{contact}}",
         "different_shipping_address_label": "Livrer à une autre adresse",
         "different_shipping_address_text": "Utilisez une adresse à usage unique pour cette commande",
-        "change_company_location_link_label": "Changer l'emplacement de l'entreprise"
+        "change_company_location_link_label": "Changer l'emplacement de l'entreprise",
+        "change_location_link_label": "Modifier l'emplacement",
+        "ship_to_company": "Expédier à {{companyName}}"
       }
     }
   }
