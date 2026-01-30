@@ -1624,8 +1624,11 @@
         "free_order_notice_html": "Votre commande est <strong>gratuite</strong>. Aucun paiement n'est requis.",
         "express_checkout_free_order": "Vous ne serez pas facturé pour une commande gratuite",
         "order_covered_by_gift_cards_notice": {
-          "one": "Votre commande est couverte par votre carte cadeau."
-        }
+          "one": "Votre commande est couverte par votre carte cadeau.",
+          "other": "Votre commande est prise en charge par vos cartes-cadeaux."
+        },
+        "offsite_gateway_redirect_hint": "Vous serez redirigé vers %{gateway_label} pour finaliser votre achat.",
+        "offsite_gateway_review_page_redirect_hint": "Après avoir vérifié votre commande, vous serez redirigé vers %{gateway_label} pour finaliser votre achat."
       }
     }
   }
