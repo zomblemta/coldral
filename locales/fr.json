@@ -2953,6 +2953,10 @@
       "open_tracking": {
         "no_longer_track": {
           "privacy_policy": "Après l'envoi de cet e-mail, nous avons mis à jour notre politique de confidentialité et nous ne suivons plus les ouvertures."
+        },
+        "track": {
+          "status_html": "<b>Le suivi d'ouverture des e-mails est signalé.</b>",
+          "visibility": "Nous verrons seulement si vous avez ouvert l'e-mail, dans le cadre du taux d'ouverture total des e-mails."
         }
       }
     }
