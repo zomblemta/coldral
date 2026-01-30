@@ -2768,10 +2768,13 @@
             "billing_address": "Entrez une adresse de facturation valide",
             "shipping_option": "Choisissez une option de livraison valide",
             "email": "Entrez une adresse e-mail valide",
-            "zone": "Entrez un état / province valide"
+            "zone": "Entrez un état / province valide",
+            "phone": "Entrez un numéro de téléphone valide",
+            "billing_phone": "Entrez un numéro de téléphone de facturation valide"
           },
           "missing": {
-            "billing_address1": "Saisissez une adresse de facturation"
+            "billing_first_name": "Entrez le prénom de l'adresse de facturation",
+            "city": "Entrez une ville"
           }
         }
       }
