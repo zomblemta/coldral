@@ -2302,7 +2302,10 @@
         "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
         "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
         "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Vous recevrez sous peu un e-mail de confirmation contenant votre numéro de commande.",
-        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande."
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Vous recevrez un e-mail de confirmation contenant votre numéro de commande sous peu.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande."
       }
     }
   }
