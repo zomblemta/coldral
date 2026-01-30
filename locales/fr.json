@@ -3345,6 +3345,12 @@
           "expand_events_label": "Afficher les détails",
           "expand_events_accessibility_label": "Afficher les détails du brouillon de commande",
           "hide_events_label": "Masquer les détails"
+        },
+        "title": "Order {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Ce moyen de paiement ne sera plus disponible pour les achats futurs à cet emplacement."
         }
       }
     }
