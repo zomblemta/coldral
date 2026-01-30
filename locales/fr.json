@@ -3073,10 +3073,6 @@
             "today": "Aujourd'hui"
           }
         }
-      },
-      "order_status": {
-        "ready_for_pickup_label": "Prêt À Être Récupéré",
-        "ready_for_pickup_description": "Ces articles sont prêts à être retirés. Veuillez apporter la confirmation de votre commande lors du retrait."
       }
     }
   }
