@@ -1517,7 +1517,10 @@
           "tax_credential_my": "N° D'Identification Fiscale/Numéro D'Enregistrement",
           "shipping_credential_my": "N° d'identification fiscale/Numéro d'enregistrement",
           "shipping_credential_mx": "RFC",
-          "tax_credential_mx": "RFC"
+          "tax_credential_mx": "RFC",
+          "tax_credential_type_mx": "Régime Fiscal",
+          "tax_credential_use_mx": "Utilisation du CFDI",
+          "tax_credential_py": "CI/RUC/TVA"
         }
       }
     }
