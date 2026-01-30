@@ -2783,7 +2783,8 @@
             "name_contains_emojis": "Supprimez les émojis de votre nom",
             "postal_code_contains_emoji": "Supprimez les emojis de votre code postal",
             "first_name_too_long": "Le prénom contient trop de lettres"
-          }
+          },
+          "select_different_shipping_address_to_resolve_errors": "Votre adresse de livraison est invalide. Sélectionnez une adresse différente ou utilisez-en une nouvelle."
         }
       }
     }
