@@ -3668,7 +3668,10 @@
     "sign_in": {
       "step_one": {
         "page_title": "Connexion - %{shop_name}",
-        "heading": "Se connecter"
+        "heading": "Se connecter",
+        "subheading": "Entrez votre adresse e-mail et nous vous enverrons un code de vérification",
+        "subheading_with_sign_in_options": "Connectez-vous ou créez un compte",
+        "input_field_label": "E-mail"
       }
     }
   }
