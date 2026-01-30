@@ -1501,7 +1501,9 @@
           "tax_credential_it": "Code Fiscal (facultatif)",
           "tax_email_it": "PEC (facultatif)",
           "tax_credential_cl": "RUT",
-          "shipping_credential_cl": "RUT"
+          "shipping_credential_cl": "RUT",
+          "tax_credential_co": "N° d'identification/TVA",
+          "tax_credential_type_co": "Type de pièce d'identité"
         }
       }
     }
