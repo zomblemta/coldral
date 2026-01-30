@@ -2419,7 +2419,10 @@
         "failed_contact_merchant": "Contactez %{company} pour organiser la livraison.",
         "failed_contact_merchant_no_company": "Contactez-nous pour organiser la livraison.",
         "non_shippable_title": "Votre Commande Est Terminée",
-        "let_us_know": "Faites-nous savoir"
+        "let_us_know": "Faites-nous savoir",
+        "login_title": "Connectez-vous Pour Voir Tous Les Détails De La Commande",
+        "login_description": "Vous pouvez trouver votre numéro de commande sur le reçu que vous avez reçu par e-mail.",
+        "login_description_phone": "Vous pouvez trouver votre numéro de commande sur le reçu que vous avez reçu par SMS."
       }
     }
   }
