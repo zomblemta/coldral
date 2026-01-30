@@ -1664,7 +1664,10 @@
         "klarna_label": "Klarna",
         "klarna_pay_later_label": "Payer plus tard avec Klarna",
         "klarna_pay_now_label": "Payer maintenant avec Klarna",
-        "bancontact_label": "Bancontact"
+        "bancontact_label": "Bancontact",
+        "giropay_label": "Giropay",
+        "multibanco_label": "Multibanco",
+        "eps_label": "eps-Virement"
       }
     }
   }
