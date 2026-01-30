@@ -2845,16 +2845,9 @@
       "county": "Comté",
       "emirate": "Émirat"
     },
-    "collections": {
-      "sorting": {
-        "manual": "Vedette",
-        "best_selling": "Meilleures ventes",
-        "az": "Par ordre alphabétique, A-Z",
-        "za": "Par ordre alphabétique, Z-A",
-        "price_ascending": "Prix, du plus bas au plus élevé",
-        "price_descending": "Prix, Du Plus Élevé Au Plus Bas",
-        "date_ascending": "Date, du plus ancien au plus récent"
-      }
+    "errors": {
+      "blank": "ne peut pas être vide",
+      "blocked_address": "Cet emplacement n'est pas pris en charge"
     }
   }
 }
