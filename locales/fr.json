@@ -1020,6 +1020,17 @@
         },
         "empty_cart_action": "vider le panier et retourner au magasin",
         "unavailable_line_item": "%{product_name} / %{variant_label}"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Aucune livraison disponible pour %{count} article",
+            "other": "Aucune livraison disponible pour %{count} articles"
+          },
+          "message": {
+            "one": "Cet article sera retiré de votre panier car il n'existe aucune méthode de livraison disponible pour votre adresse."
+          }
+        }
       }
     }
   }
