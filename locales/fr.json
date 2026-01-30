@@ -2550,7 +2550,9 @@
         "shipping_policy": "Livraison",
         "subscription_policy": "Annulations",
         "purchase_options_policy": "Politique des options d'achat",
-        "purchase_options_cancellation_policy": "Annulations"
+        "purchase_options_cancellation_policy": "Annulations",
+        "cookie_preferences": "Cookies",
+        "terms_and_policies": "Conditions et politiques"
       }
     }
   }
