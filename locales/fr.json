@@ -920,7 +920,11 @@
         "status_column_header": "Statut",
         "removed_from_cart_notice": "Retiré du Panier",
         "sold_out_label": "Épuisé",
-        "reduced_label": "Réduit"
+        "reduced_label": "Réduit",
+        "reduced_with_quantity_label": "Il n'en reste que %{quantity_available}",
+        "continue_shopping_button_label": "Continuer",
+        "go_back_to_cart_button_label": "Retour à mon panier",
+        "remove": "Supprimer"
       }
     }
   }
