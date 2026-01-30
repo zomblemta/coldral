@@ -2030,7 +2030,10 @@
         "method_not_available": "Le mode de paiement demandé n'est pas disponible. Choisissez un autre mode de paiement et réessayez.",
         "available_methods_updated": "Les méthodes de paiement disponibles ont été mises à jour.",
         "generic_error": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre mode de paiement.",
-        "rejected_transaction": "Votre paiement a été refusé. Réessayez ou utilisez un autre mode de paiement."
+        "rejected_transaction": "Votre paiement a été refusé. Réessayez ou utilisez un autre mode de paiement.",
+        "credit_card_processing": "Votre paiement ne peut pas être traité pour des raisons techniques. Réessayez dans quelques minutes ou utilisez un autre moyen de paiement.",
+        "checkout_amount_changed": "Votre paiement n'a pas pu être traité car le montant dû au moment du paiement a changé. Vérifiez votre commande et réessayez.",
+        "deferred_payment_not_allowed": "Les paiements différés ne sont pas autorisés. Vérifiez votre commande et réessayez."
       }
     }
   }
