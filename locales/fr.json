@@ -1099,7 +1099,9 @@
         "gift_card_has_been_applied": "La carte-cadeau a été appliquée",
         "gift_card_has_been_removed": "La carte-cadeau a été supprimée",
         "gift_card_subscriptions_notice": "Les cartes-cadeaux ne s'appliqueront qu'à votre premier paiement",
-        "discount_already_applied": "Une remise a été appliquée à cette commande. Vous ne pouvez pas ajouter une autre remise."
+        "discount_already_applied": "Une remise a été appliquée à cette commande. Vous ne pouvez pas ajouter une autre remise.",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> : ce code de réduction n'est pas valide pour les articles de votre panier",
+        "discount_requires_customer_notice": "Saisissez vos informations de livraison pour appliquer le code de réduction <strong style=\"text-transform:uppercase\">%{code}</strong>"
       }
     }
   }
