@@ -2726,8 +2726,8 @@
           "description": "Sélectionnez un emplacement ou %{ship_to_address_link}"
         }
       },
-      "captcha": {
-        "title": "Complétez le CAPTCHA pour continuer"
+      "clipboard": {
+        "failed_to_copy": "Échec de la copie"
       }
     }
   }
