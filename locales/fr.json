@@ -3434,7 +3434,10 @@
         }
       },
       "payment_details": {
-        "billing_title": "Adresse de facturation"
+        "billing_title": "Adresse de facturation",
+        "card_info_title": "Informations de la carte",
+        "credit_card_details": "{{creditCardBrand}} •••• {{lastDigits}}",
+        "bank_account_details": "{{bankBrand}} •••• {{lastDigits}}"
       }
     }
   }
