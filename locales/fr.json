@@ -1938,7 +1938,10 @@
         "address_zip_blocked_address": "Cette localisation n'est pas prise en charge",
         "address_zip_too_long": "Le code ZIP / postal est trop long (maximum 255 caractères)",
         "address_zip_not_supported": "Cet emplacement n'est pas pris en charge",
-        "address_zip_invalid_for_country": "Entrez un ZIP / code postal valide pour %{country}"
+        "address_zip_invalid_for_country": "Entrez un ZIP / code postal valide pour %{country}",
+        "address_zip_invalid_for_province": "Entrez un code postal/ZIP valide pour %{province}",
+        "address_zip_invalid_for_country_and_province": "Entrez un ZIP / code postal valide pour %{province}, %{country}",
+        "address_zip_contains_emojis": "ZIP / code postal ne peut pas contenir d'émojis"
       }
     }
   }
