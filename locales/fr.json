@@ -1125,7 +1125,10 @@
           "ship_to_address": "Expédier à l'adresse",
           "ship_to_address_instead_html": "%{link} à la place"
         },
-        "tip_label": "Astuce"
+        "tip_label": "Astuce",
+        "unconfirmed_label": "Non confirmé",
+        "calculating_shipping": "Calcul en cours…",
+        "calculating": "Calcul en cours…"
       }
     }
   }
