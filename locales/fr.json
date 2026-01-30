@@ -2927,7 +2927,8 @@
         "all_items_in_cart": "Tous les %{count} %{name} sont dans votre panier.",
         "empty_update": "impossible de mettre à jour un panier vide",
         "missing_parameters": "aucun identifiant ou paramètre de ligne valide",
-        "generic_error": "Erreur du panier"
+        "generic_error": "Erreur du panier",
+        "too_many_line_items_error": "Votre panier ne peut pas contenir plus de %{max} articles."
       }
     }
   }
