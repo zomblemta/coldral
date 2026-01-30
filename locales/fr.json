@@ -891,7 +891,10 @@
       "customer_account": {
         "not_user_label": "Ce n'est pas %{first_name} ?",
         "have_an_account_label": "Vous avez un compte ?",
-        "sign_in_link_label": "Se Connecter"
+        "sign_in_link_label": "Se Connecter",
+        "sign_out_link_label": "Se déconnecter",
+        "save_my_information_label": "Enregistrez ces informations pour la prochaine fois",
+        "invalid_address": "L'adresse sélectionnée est invalide. %{update_address_link} ou sélectionnez une autre adresse."
       }
     }
   }
