@@ -2173,7 +2173,11 @@
         "close": "Clore le défi"
       },
       "failed_payment": {
-        "page_title": "Le paiement n’a pas pu être traité"
+        "page_title": "Le paiement n’a pas pu être traité",
+        "title": "Paiement N’a Pas Pu Être Traité",
+        "payment_not_processed_title": "Votre paiement n’a pas pu être traité",
+        "payment_not_processed_text": "Aucun prélèvement n'a été effectué. Retournez à votre panier pour finaliser votre achat.",
+        "return_to_cart_button_label": "Retour au panier"
       }
     }
   }
