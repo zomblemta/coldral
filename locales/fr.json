@@ -2949,16 +2949,10 @@
         "add_products": "Restreindre la sélection aux produits correspondant à l'étiquette %{tag}"
       }
     },
-    "search": {
-      "sorting": {
-        "price_ascending": "Prix, du moins cher au plus cher",
-        "price_descending": "Prix, du plus élevé au plus bas"
-      }
-    },
     "page_titles": {
-      "blog_or_article_with_error": "Erreur - %{title}",
-      "products": "Produits",
-      "account": "Compte"
+      "reset_account": "Réinitialiser Le Compte",
+      "addresses": "Adresses",
+      "order": "Commande %{name}"
     }
   }
 }
