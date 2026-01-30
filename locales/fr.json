@@ -2521,7 +2521,9 @@
         "change_button": "Modifier"
       },
       "review": {
-        "title": "Avis"
+        "title": "Avis",
+        "review_title": "Complétez Votre Commande",
+        "review_and_confirm_title": "Vérifier et confirmer"
       }
     }
   }
