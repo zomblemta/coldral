@@ -1878,8 +1878,13 @@
         "address_confirm": "Êtes-vous sûr de vouloir supprimer cette adresse de votre compte ?",
         "address_form": {
           "add_address": "Ajouter une adresse",
-          "save": "Enregistrer"
+          "save": "Enregistrer",
+          "cancel": "Annuler"
         }
+      },
+      "company_location": {
+        "location_title": "Emplacement de l'entreprise",
+        "location_rollup_accessibility_label": "Options d'emplacement de l'entreprise"
       }
     }
   }
