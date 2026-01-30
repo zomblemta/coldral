@@ -2215,7 +2215,10 @@
         "title": "Merci pour votre achat !",
         "confirmation_email_sent_text": "Un e-mail de confirmation a été envoyé à %{email}",
         "return_to_store_link_label": "Continuer Vos Achats",
-        "print_link_label": "Imprimer le reçu"
+        "print_link_label": "Imprimer le reçu",
+        "payment_information_title": "Informations de paiement",
+        "shipping_information_title": "Informations de livraison",
+        "page_title": "Merci, %{display_name} !"
       }
     }
   }
