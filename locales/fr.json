@@ -1711,8 +1711,11 @@
           "label": "Crédit en magasin",
           "apply_label": "Appliquer l'avoir",
           "add_label": "Ajouter Un Crédit En Magasin",
-          "manage_label": "Gérer Le Crédit En Magasin"
-        }
+          "manage_label": "Gérer Le Crédit En Magasin",
+          "buying_gift_card": "Vous ne pouvez pas utiliser le crédit en magasin pour acheter une carte-cadeau",
+          "no_fixed_selling_plans": "Vous ne pouvez pas utiliser le crédit en magasin avec les options d'achat différé"
+        },
+        "clear": "Effacer"
       }
     }
   }
