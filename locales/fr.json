@@ -3490,7 +3490,10 @@
           "with_subscriptions": "La suppression de ce mode de paiement affectera les paiements préautorisés. Ajoutez un autre mode de paiement pour continuer à recevoir les prochaines commandes."
         },
         "error_when_deleting": "Nous sommes désolés, mais une erreur est survenue et nous n'avons pas pu supprimer ce moyen de paiement. Veuillez réessayer plus tard ou actualiser la page.",
-        "delete_and_replace_button": "Supprimer et remplacer"
+        "delete_and_replace_button": "Supprimer et remplacer",
+        "delete_and_replace_button_accessibility_label": "Supprimez {{currentPaymentMethodName}} et remplacez-le par {{newPaymentMethodName}}.",
+        "deleted_successfully": "Moyen de paiement supprimé avec succès.",
+        "loading_available_payment_methods_accessibility_label": "Chargement des méthodes de paiement disponibles"
       }
     }
   }
