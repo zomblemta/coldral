@@ -2792,9 +2792,6 @@
       },
       "offsite_payment_failed": {
         "title": "Le paiement hors site a échoué"
-      },
-      "units": {
-        "centiliter": "cl"
       }
     }
   }
