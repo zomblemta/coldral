@@ -1042,7 +1042,12 @@
         "from_other_stores_heading": "D'autres Magasins",
         "from_multiple_stores_heading": "De Plusieurs Magasins",
         "number_items": {
-          "one": "%{count} article"
+          "one": "%{count} article",
+          "other": "%{count} articles"
+        },
+        "view_all_items": {
+          "one": "Voir %{count} article",
+          "other": "Voir tous les %{count} articles"
         }
       }
     }
