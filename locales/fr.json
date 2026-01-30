@@ -644,7 +644,13 @@
             "store_credit_account_mismatch": "Le compte de crédit en magasin ne correspond pas à l'identité de l'acheteur.",
             "store_credit_mismatched_currency": "La devise du compte de crédit en magasin ne correspond pas à la devise du paiement.",
             "store_credit_insufficient_funds": "Le solde du compte de crédit en magasin est insuffisant.",
-            "store_credit_buying_gift_card": "Vous ne pouvez pas utiliser le crédit en magasin pour acheter une carte-cadeau."
+            "store_credit_buying_gift_card": "Vous ne pouvez pas utiliser le crédit en magasin pour acheter une carte-cadeau.",
+            "gift_cards_not_allowed_for_b2b": "Les cartes-cadeaux ne sont pas autorisées dans les boutiques B2B.",
+            "method_required": "Un moyen de paiement doit être proposé.",
+            "paypal_express_address_invalid": "PayPal a renvoyé une adresse invalide."
+          },
+          "tip": {
+            "not_accepted_by_shop": "La boutique n'accepte pas les pourboires."
           }
         }
       }
