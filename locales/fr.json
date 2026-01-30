@@ -3272,7 +3272,9 @@
       },
       "location_selection": {
         "list_accessibility_label": "Liste des emplacements",
-        "list_item_accessibility_label": "{{name}}: {{address}}"
+        "list_item_accessibility_label": "{{name}}: {{address}}",
+        "list_item_without_address_accessibility_label": "{{name}}: Pas d'adresse",
+        "list_loading_accessibility_message": "Chargement De La Liste Des Emplacements"
       }
     }
   }
