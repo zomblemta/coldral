@@ -3578,7 +3578,11 @@
       "autocompleteOptionsAvailable": {
         "one": "{{count}} article disponible"
       },
-      "removeItem": "Remove {{label}}"
+      "removeItem": "Remove {{label}}",
+      "removeTag": "Supprimer le tag",
+      "month": {
+        "other": "mois"
+      }
     }
   }
 }
