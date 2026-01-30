@@ -745,8 +745,13 @@
             "july": "Juillet",
             "august": "Août",
             "september": "Septembre",
-            "october": "octobre"
+            "october": "octobre",
+            "november": "Novembre",
+            "december": "Décembre"
           }
+        },
+        "datepicker": {
+          "show_previous_month": "Afficher le mois précédent, {{month}} {{year}}"
         }
       }
     }
