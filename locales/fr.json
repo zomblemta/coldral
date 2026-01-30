@@ -2748,7 +2748,11 @@
       "wallets": {
         "return_to_store": "Retour au Magasin",
         "return_to_checkout": "Retour au paiement",
-        "redirect_hint": "Il vous sera demandé de vous connecter avec {{walletName}}."
+        "redirect_hint": "Il vous sera demandé de vous connecter avec {{walletName}}.",
+        "logged_in": "Connecté à {{email}}",
+        "shipping_line_label": "Livraison",
+        "connect_shipping_methods": "{{method1}} et {{method2}}",
+        "payment_in_progress_title": "Paiement en cours"
       }
     }
   }
