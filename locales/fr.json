@@ -573,7 +573,11 @@
             "buyer_identity_presentment_currency_does_not_match": "Un problème est survenu lors du traitement de votre commande. Réessayez dans quelques minutes."
           },
           "delivery": {
-            "only_one_delivery_line_allowed": "Le panier ne doit comporter qu'une seule ligne de livraison."
+            "only_one_delivery_line_allowed": "Le panier ne doit comporter qu'une seule ligne de livraison.",
+            "wrong_number_of_delivery_lines": "Une ligne de livraison doit être spécifiée pour chaque groupe de marchandises.",
+            "external_delivery_promise_error": "Erreur de récupération de la promesse de livraison externe.",
+            "options_instructions_invalid": "Les instructions spécifiées ne correspondent pas au modèle attendu.",
+            "destination_address_required": "Une adresse de livraison est requise pour continuer."
           }
         }
       }
