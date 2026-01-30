@@ -858,7 +858,9 @@
         "civic_number_warning": "Ajoutez un numéro de maison si vous en avez un",
         "optional_last_name_label": "Nom de famille (facultatif)",
         "company_contact_info": "{{companyName}} · {{contact}}",
-        "different_shipping_address_label": "Livrer à une autre adresse"
+        "different_shipping_address_label": "Livrer à une autre adresse",
+        "different_shipping_address_text": "Utilisez une adresse à usage unique pour cette commande",
+        "change_company_location_link_label": "Changer l'emplacement de l'entreprise"
       }
     }
   }
