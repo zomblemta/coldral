@@ -2669,7 +2669,12 @@
           "previous_accessibility_label": "Page précédente"
         },
         "geolocation": {
-          "shared_location_button": "Utiliser Ma Localisation"
+          "shared_location_button": "Utiliser Ma Localisation",
+          "errors": {
+            "unsuported_by_browser": "La récupération de la géolocalisation n'est pas prise en charge par votre navigateur. Réessayez ou utilisez un autre navigateur.",
+            "permission_not_allowed": "Autoriser le partage de votre position.",
+            "permission_denied": "Impossible d'obtenir votre position. Réessayez."
+          }
         }
       }
     }
