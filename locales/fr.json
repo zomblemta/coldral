@@ -3140,7 +3140,12 @@
       "location": "Emplacement",
       "payment": {
         "status_in_review": "Paiement Dû Après Examen",
-        "status_unpaid": "Paiement dû le {{date}}"
+        "status_unpaid": "Paiement dû le {{date}}",
+        "payment_type": {
+          "bank_deposit": "Dépôt bancaire",
+          "manual": "Manuel"
+        },
+        "card_payment_details": "se terminant par {{lastDigits}} - {{formattedTransactionAmount}}"
       }
     }
   }
