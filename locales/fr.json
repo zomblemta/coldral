@@ -1433,7 +1433,11 @@
         "third_party_address_error": "Une erreur est survenue lors du chargement de la sélection d'adresses. Saisissez votre adresse manuellement ci-dessous.",
         "third_party_payment_timeout": "Impossible de charger les méthodes de paiement. Réessayez ou utilisez un autre mode de paiement.",
         "third_party_payment_error": "Une erreur s'est produite lors du chargement de la sélection de paiement. Utilisez un autre moyen de paiement.",
-        "add_address": "Utiliser Une Adresse Différente"
+        "add_address": "Utiliser Une Adresse Différente",
+        "add_delivery_instructions": "Ajouter des instructions de livraison",
+        "edit": "Modifier",
+        "delete": "Supprimer",
+        "back": "Retour"
       }
     }
   }
