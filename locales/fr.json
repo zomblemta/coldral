@@ -699,7 +699,9 @@
         "full_price": "Prix plein :",
         "title": "Paiement - {{shopName}}",
         "full_title": "{{pageTitle}} - {{shopName}} - Paiement",
-        "loading": "Chargement…"
+        "loading": "Chargement…",
+        "loading_title": "Passer à la caisse - {{shopName}}",
+        "display_name": "{{firstName}} {{lastName}}"
       }
     }
   }
