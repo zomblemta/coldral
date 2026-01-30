@@ -1536,7 +1536,10 @@
       "payment": {
         "network_card_payment_options": "Choisissez un réseau de cartes",
         "network_card_persistence_description": "Le réseau sélectionné sera enregistré avec votre moyen de paiement pour de futures transactions.",
-        "amazon_payments_label": "Amazon Pay"
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "Vous serez invité à vous connecter avec Amazon.",
+        "amazon_payments_logout": "Se déconnecter d'Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Le mode de paiement sélectionné n'a pas pu être utilisé. Choisissez un autre mode ou contactez votre banque ou l'émetteur de votre carte."
       }
     }
   }
