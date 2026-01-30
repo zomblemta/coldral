@@ -1344,7 +1344,11 @@
             "other": "%{count} livraisons supplémentaires à %{shipping_price} chacune"
           },
           "max_cycles_base_shipping_delivery_not_included": {
-            "one": "%{count} livraison pour %{shipping_price}"
+            "one": "%{count} livraison pour %{shipping_price}",
+            "other": "%{count} livraisons supplémentaires à %{shipping_price} chacune"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Livraison gratuite pour le premier %{cycle}, puis %{recurring_order_shipping_price}"
           }
         }
       }
