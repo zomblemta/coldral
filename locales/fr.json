@@ -2736,7 +2736,7 @@
         }
       },
       "b2b_errors": {
-        "lost_b2b_purchasing_permissions": "Vous n'avez plus la permission de passer des commandes B2B. %{logout_url} pour passer une commande personnelle à la place."
+        "lost_permissions_title": "Pas d'autorisations de localisation"
       }
     }
   }
