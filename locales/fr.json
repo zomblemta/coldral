@@ -2760,7 +2760,12 @@
             "postal_code": "Cette localisation n'est pas prise en charge"
           },
           "outdated": {
-            "shipping_method": "Les options de livraison ont été modifiées pour votre commande. Vérifiez votre sélection."
+            "shipping_method": "Les options de livraison ont été modifiées pour votre commande. Vérifiez votre sélection.",
+            "payment_terms": "Les conditions de paiement ont changé. Vérifiez votre commande"
+          },
+          "invalid": {
+            "shipping_address": "Saisissez une adresse de livraison valide",
+            "billing_address": "Entrez une adresse de facturation valide"
           }
         }
       }
