@@ -2817,7 +2817,9 @@
               "cy": "Entrez un numéro de TVA chypriote valide",
               "cz": "Entrez Un Numéro De TVA Tchèque Valide",
               "dk": "Entrez un numéro de TVA danois valide",
-              "ee": "Entrez un numéro de TVA estonien valide"
+              "ee": "Entrez un numéro de TVA estonien valide",
+              "fi": "Entrez Un Numéro De TVA Finlandais Valide",
+              "fr": "Entrez Un Numéro De TVA Français Valide"
             }
           }
         }
