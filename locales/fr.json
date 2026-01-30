@@ -3507,7 +3507,12 @@
         "updating_contracts": {
           "one": "Mise à jour de {{count}} contrats d'abonnement...",
           "other": "Mise à jour de {{count}} contrats d’abonnement..."
-        }
+        },
+        "contracts_updated": {
+          "one": "Mise à jour de {{count}} contrat d'abonnement effectuée avec succès",
+          "other": "Mise à jour réussie de {{count}} contrats d'abonnement"
+        },
+        "contracts_update_failed": "Échec de la mise à jour de certains contrats d'abonnement"
       }
     }
   }
