@@ -908,7 +908,12 @@
       "remote_merchandise_only": {
         "title": "Finalisez votre achat",
         "remote_only_notice": "Ces articles sont vendus et expédiés par d'autres magasins. Passez à la caisse auprès de chaque magasin pour finaliser votre achat.",
-        "return_to_store_label": "Retour à la boutique"
+        "return_to_store_label": "Retour à la boutique",
+        "single_shop_transition": "Nous vous redirigeons vers %{advertiser} pour finaliser votre achat."
+      },
+      "stock": {
+        "page_title": "Problèmes de stock",
+        "title": "rupture de stock"
       }
     }
   }
