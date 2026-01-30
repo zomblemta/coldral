@@ -2220,7 +2220,10 @@
         "shipping_information_title": "Informations de livraison",
         "page_title": "Merci, %{display_name} !",
         "page_title_no_name": "Merci !",
-        "purchase_order_number_title": "Numéro de bon de commande #%{purchase_order_number}"
+        "purchase_order_number_title": "Numéro de bon de commande #%{purchase_order_number}",
+        "cancelled_page_title": "Commande annulée",
+        "failed_pending_payment_page_title": "Il y a un problème avec votre paiement",
+        "customer_information_title": "Détails de la commande"
       }
     }
   }
