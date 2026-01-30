@@ -236,8 +236,8 @@
       "name": "Nom",
       "email": "Courriel",
       "message": "Message",
-      "submit": "Envoyer",
-      "success_message": "Votre message a été envoyé"
+      "submit": "Envoyer le message",
+      "success_message": "Votre message a été envoyé."
     }
   },
   "customer": {
