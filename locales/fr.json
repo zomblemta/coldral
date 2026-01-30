@@ -850,7 +850,10 @@
         "optional_postal_code_label": "Code Postal (Optionnel)",
         "postal_code_placeholder": "Code postal",
         "postcode_label": "Code postal",
-        "optional_postcode_label": "Code postal (facultatif)"
+        "optional_postcode_label": "Code postal (facultatif)",
+        "postcode_placeholder": "Code Postal",
+        "pincode_label": "Code PIN",
+        "optional_pincode_label": "Code PIN (optionnel)"
       }
     }
   }
