@@ -2819,7 +2819,9 @@
               "dk": "Entrez un numéro de TVA danois valide",
               "ee": "Entrez un numéro de TVA estonien valide",
               "fi": "Entrez Un Numéro De TVA Finlandais Valide",
-              "fr": "Entrez Un Numéro De TVA Français Valide"
+              "fr": "Entrez Un Numéro De TVA Français Valide",
+              "de": "Entrez un numéro de TVA allemand valide",
+              "gr": "Entrez Un Numéro De TVA Grec Valide"
             }
           }
         }
