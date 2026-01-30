@@ -1276,8 +1276,11 @@
         },
         "shipping_method_subscription_group_title": "Abonnement",
         "shipping_method_recurring_shipments_group_title": {
-          "one": "Expédition récurrente"
-        }
+          "one": "Expédition récurrente",
+          "other": "Livraisons Récurrentes"
+        },
+        "subscription_shipping": "Livraison par abonnement",
+        "subscription_local_delivery": "Livraison Locale par Abonnement"
       }
     }
   }
