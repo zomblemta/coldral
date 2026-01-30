@@ -2058,7 +2058,10 @@
         "invalid_number": "Entrez un numéro de carte valide",
         "invalid_expiry_date": "Entrez une date d'expiration valide",
         "invalid_cvc": "Entrez un code de sécurité valide",
-        "expired_card": "Votre carte a expiré. Utilisez un autre moyen de paiement."
+        "expired_card": "Votre carte a expiré. Utilisez un autre moyen de paiement.",
+        "payment_method_not_applicable": "Cette méthode de paiement n'est pas applicable. Utilisez une autre méthode de paiement.",
+        "card_declined": "Votre carte a été refusée. Réessayez ou utilisez un autre moyen de paiement.",
+        "processing_error": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre moyen de paiement."
       }
     }
   }
