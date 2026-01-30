@@ -1983,7 +1983,10 @@
         "payment_gateway_unsupported_for_country": "Cette méthode de paiement n'est pas disponible pour votre pays de livraison.",
         "payment_gateway_unsupported_for_development_store_html": "Pour passer une commande de test, vous devrez utiliser une passerelle de paiement de test. En savoir plus sur <a href=\"%{docs_link}\">les tests des commandes dans les boutiques en développement</a>.",
         "payment_gateway_unsupported_for_order_above_maximum_orders_html": "Vous avez atteint la limite de commandes pour les boutiques de développement avec ce prestataire de paiement. Pour passer une autre commande, vous devrez utiliser une passerelle de paiement de test. En savoir plus sur <a href=\"%{docs_link}\">les tests de commandes dans les boutiques de développement</a>.",
-        "purchase_options_agreement_blank": "Pour poursuivre votre achat, acceptez les conditions d'achat différé ou récurrent."
+        "purchase_options_agreement_blank": "Pour poursuivre votre achat, acceptez les conditions d'achat différé ou récurrent.",
+        "physical_gift_card_invalid_quantity": "Les lignes d'articles pour cartes-cadeaux physiques doivent avoir une quantité correspondant au nombre de codes de carte-cadeau.",
+        "physical_gift_card_duplicate_code": "La ligne d'article de carte-cadeau physique contient un code en double.",
+        "physical_gift_card_invalid_code": "Le code de la carte-cadeau physique est invalide."
       }
     }
   }
