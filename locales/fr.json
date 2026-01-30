@@ -725,7 +725,13 @@
           "weekdays": {
             "monday": "Lundi",
             "thursday": "Jeudi",
-            "friday": "Vendredi"
+            "friday": "Vendredi",
+            "saturday": "Samedi",
+            "sunday": "Dimanche"
+          },
+          "weekdays_abbreviation": {
+            "monday": "Mo",
+            "tuesday": "Tu"
           }
         }
       }
