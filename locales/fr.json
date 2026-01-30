@@ -2875,6 +2875,10 @@
         "links": {
           "explore_other_stores": "Explorer D'autres Boutiques",
           "start_free_trial": "Commencer un essai gratuit"
+        },
+        "owner_ctas": {
+          "header": "Êtes-vous le propriétaire de la boutique ?",
+          "fix_domain": "Terminez la configuration de votre nouvelle adresse web, rendez-vous sur %{domain_settings_link}. Cliquez sur « Connecter le domaine » et saisissez : %{domain}.<br>Si vous rencontrez des difficultés pour accéder à votre boutique, essayez la page %{forgot_your_store_link}."
         }
       }
     }
