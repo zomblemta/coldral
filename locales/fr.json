@@ -674,6 +674,9 @@
           },
           "optional_duties": {
             "optional_duties_not_permitted": "Refuser les droits de douane n'est pas autorisé pour ce paiement."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "L'attribution au commerce de détail n'est pas autorisée pour ce paiement."
           }
         }
       }
