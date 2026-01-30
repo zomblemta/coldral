@@ -3528,9 +3528,10 @@
       "discover": "Découvrir",
       "dinersclub": "Diners Club",
       "jcb": "JCB",
-      "elo": "Elo",
-      "visaelectron": "Visa Electron",
-      "maestro": "Maestro"
+      "forbrugsforeningen": "Association des consommateurs",
+      "dankort": "Dankort",
+      "hipercard": "Hipercard",
+      "unionpay": "UnionPay"
     }
   }
 }
