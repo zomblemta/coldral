@@ -2981,7 +2981,7 @@
   "customer_accounts": {
     "date": {
       "humanize": {
-        "yesterday": "Hier à {{time}}"
+        "lessThanOneWeekAway": "{{weekday}} à {{time}}"
       }
     }
   }
