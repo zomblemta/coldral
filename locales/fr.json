@@ -3103,7 +3103,9 @@
           },
           "details_modal": {
             "claimed_shop_cash_description": "Parce que cette commande est arrivée en retard, vous avez réclamé {{amount}} Shop Cash.",
-            "eligible_to_claim_shop_cash_description": "Parce que votre commande est arrivée en retard, vous pouvez réclamer {{amount}} de Shop Cash."
+            "eligible_to_claim_shop_cash_description": "Parce que votre commande est arrivée en retard, vous pouvez réclamer {{amount}} de Shop Cash.",
+            "learn_more_button_label": "savoir plus",
+            "claim_shop_cash_button_label": "Réclamer Le Crédit Du Magasin"
           }
         }
       }
