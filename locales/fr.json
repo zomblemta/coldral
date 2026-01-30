@@ -3656,7 +3656,10 @@
       "subscription_replace_payment_method": {
         "card_number": "Numéro de carte",
         "title": "Remplacer Le Mode De Paiement",
-        "replace_with": "Remplacer par"
+        "replace_with": "Remplacer par",
+        "add_new_payment_method": "Ajouter",
+        "save_button": "Enregistrer",
+        "close_button": "Fermer"
       }
     }
   }
