@@ -1322,9 +1322,14 @@
         "shipping_line_delivery_phone_label": "Numéro De Téléphone Mobile",
         "shipping_line_delivery_phone": "Vous pourriez être contacté(e) pour des mises à jour concernant votre livraison.",
         "optional_shipping_line_delivery_instructions_label": "Instructions de Livraison (Facultatif)",
+        "shipping_line_delivery_instructions": "Saisissez les informations nécessaires, comme les codes d'accès ou les instructions de livraison.",
+        "other_method": {
+          "zero": "Aucune autre méthode disponible",
+          "one": "%{count} autre méthode disponible à"
+        },
         "subscription_delivery_description": {
-          "free_shipping_cycles": {
-            "other": "Livraison gratuite pour %{count} livraisons supplémentaires"
+          "free_shipping_cycles_delivery_not_included": {
+            "other": "Livraison gratuite pour %{count} livraisons"
           }
         }
       }
