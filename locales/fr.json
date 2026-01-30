@@ -2989,9 +2989,8 @@
     "navigation_and_structure": {
       "action_menu_accessibility_label": "Plus d'actions",
       "close_menu_accessibility_label": "Fermer la navigation principale",
-      "delete_confirmation": {
-        "delete": "Supprimer"
-      }
+      "dismiss_toast": "Ignorer",
+      "document_title": "{{sectionName}} - {{shopName}} - Compte"
     }
   }
 }
