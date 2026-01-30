@@ -2814,7 +2814,10 @@
             },
             "invalid_number": {
               "hr": "Entrez un numéro de TVA croate valide",
-              "cy": "Entrez un numéro de TVA chypriote valide"
+              "cy": "Entrez un numéro de TVA chypriote valide",
+              "cz": "Entrez Un Numéro De TVA Tchèque Valide",
+              "dk": "Entrez un numéro de TVA danois valide",
+              "ee": "Entrez un numéro de TVA estonien valide"
             }
           }
         }
