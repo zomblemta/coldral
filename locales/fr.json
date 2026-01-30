@@ -896,7 +896,13 @@
         "save_my_information_label": "Enregistrez ces informations pour la prochaine fois",
         "invalid_address": "L'adresse sélectionnée est invalide. %{update_address_link} ou sélectionnez une autre adresse.",
         "rollup_label": "Compte",
-        "rollup_accessibility_label": "Options du compte"
+        "rollup_accessibility_label": "Options du compte",
+        "invalid_shipping_method_summary": "Sélectionnez une adresse de livraison valide pour afficher les modes de livraison disponibles",
+        "saved_address_option_description": {
+          "one": "Vous avez {{count}} adresse enregistrée.",
+          "other": "Vous avez {{count}} adresses enregistrées."
+        },
+        "saved_address_option_link": "Utiliser une adresse enregistrée"
       }
     }
   }
