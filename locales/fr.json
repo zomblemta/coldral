@@ -2484,7 +2484,13 @@
         "first_payment_complete": "Premier Paiement Effectué",
         "in_store_purchase": "Achat en magasin",
         "company_location_section_title": "Entreprise et Emplacement",
-        "thank_you_ready_for_picked_up": "Votre commande a été récupérée à %{address}."
+        "thank_you_ready_for_picked_up": "Votre commande a été récupérée à %{address}.",
+        "ready_for_delivery": "Prêt Pour la Livraison",
+        "order_updates_subscribe_to_email_notifications_failed": "Nous ne pouvons pas enregistrer cet e-mail pour les mises à jour. Réessayez ou utilisez une autre adresse e-mail.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "L'adresse e-mail que vous avez saisie existe déjà.",
+        "subscriptions_management": {
+          "title": "Abonnement"
+        }
       }
     }
   }
