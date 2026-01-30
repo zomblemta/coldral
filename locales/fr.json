@@ -2212,7 +2212,10 @@
         "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} sera dû lorsque votre commande sera confirmée. Le solde sera dû une fois votre commande livrée."
       },
       "thank_you": {
-        "title": "Merci pour votre achat !"
+        "title": "Merci pour votre achat !",
+        "confirmation_email_sent_text": "Un e-mail de confirmation a été envoyé à %{email}",
+        "return_to_store_link_label": "Continuer Vos Achats",
+        "print_link_label": "Imprimer le reçu"
       }
     }
   }
