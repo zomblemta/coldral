@@ -2305,7 +2305,10 @@
         "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande.",
         "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande.",
         "thank_you_payments_app_pending_payment_description_default_with_email": "Vous recevrez un e-mail de confirmation contenant votre numéro de commande sous peu.",
-        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande."
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "Vous recevrez bientôt un SMS de confirmation contenant votre numéro de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "Vous recevrez bientôt un message de confirmation avec votre numéro de commande."
       }
     }
   }
