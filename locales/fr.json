@@ -3647,7 +3647,14 @@
         "select_new_payment_method": "Sélectionnez Un Nouveau Mode De Paiement",
         "current_method": "Actuel",
         "cancel": "Annuler",
-        "save": "Enregistrer"
+        "save": "Enregistrer",
+        "success": "Méthode de paiement mise à jour",
+        "use_new_payment_method": "+ Utiliser un nouveau mode de paiement"
+      }
+    },
+    "intents": {
+      "subscription_replace_payment_method": {
+        "card_number": "Numéro de carte"
       }
     }
   }
