@@ -1874,7 +1874,12 @@
         "delete": "Supprimer",
         "address_more": "Plus d'actions pour cette adresse",
         "address_edit": "Modifier l'adresse",
-        "address_delete": "Supprimer l'adresse"
+        "address_delete": "Supprimer l'adresse",
+        "address_confirm": "Êtes-vous sûr de vouloir supprimer cette adresse de votre compte ?",
+        "address_form": {
+          "add_address": "Ajouter une adresse",
+          "save": "Enregistrer"
+        }
       }
     }
   }
