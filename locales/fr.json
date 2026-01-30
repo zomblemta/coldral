@@ -3671,7 +3671,11 @@
         "heading": "Se connecter",
         "subheading": "Entrez votre adresse e-mail et nous vous enverrons un code de vérification",
         "subheading_with_sign_in_options": "Connectez-vous ou créez un compte",
-        "input_field_label": "E-mail"
+        "input_field_label": "E-mail",
+        "or": "or"
+      },
+      "step_two": {
+        "page_title": "Entrez le code - %{shop_name}"
       }
     }
   }
