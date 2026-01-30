@@ -3437,7 +3437,10 @@
         "billing_title": "Adresse de facturation",
         "card_info_title": "Informations de la carte",
         "credit_card_details": "{{creditCardBrand}} •••• {{lastDigits}}",
-        "bank_account_details": "{{bankBrand}} •••• {{lastDigits}}"
+        "bank_account_details": "{{bankBrand}} •••• {{lastDigits}}",
+        "payment_method_expiring_on": "`Expire le {{expiryDate}}`",
+        "payment_method_expired_on": "Expiré le {{expiryDate}}",
+        "preauthorized_payments": "Paiements préautorisés"
       }
     }
   }
