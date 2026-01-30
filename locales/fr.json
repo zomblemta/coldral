@@ -1419,6 +1419,11 @@
           "ddu_caption": "Des frais supplémentaires peuvent s'appliquer",
           "ddp_title": "Payer maintenant",
           "ddp_caption": "Pas de frais supplémentaires à la livraison"
+        },
+        "shipping_method_combinations": {
+          "without_separator": "%{firstMethod}, %{secondMethod}",
+          "with_separator": "%{rest}, %{current},",
+          "combination": "%{rest} et %{current}"
         }
       }
     }
