@@ -3265,12 +3265,7 @@
         "location_picker_label": "Nom du lieu",
         "net_payment_terms_description": "{{name}} : paiements dus dans {{numberOfDays}} jours",
         "deposit_percentage": "{{percentage}} acompte",
-        "pagination": {
-          "load_more": "Afficher plus",
-          "load_more_accessibility_label": "Afficher plus d'emplacements"
-        },
-        "payment_details_title": "Détails de paiement",
-        "payment_terms": "Conditions de paiement"
+        "section_title": "Emplacement"
       }
     }
   }
