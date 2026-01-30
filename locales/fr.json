@@ -3512,7 +3512,13 @@
           "one": "Mise à jour de {{count}} contrat d'abonnement effectuée avec succès",
           "other": "Mise à jour réussie de {{count}} contrats d'abonnement"
         },
-        "contracts_update_failed": "Échec de la mise à jour de certains contrats d'abonnement"
+        "contracts_update_failed": "Échec de la mise à jour de certains contrats d'abonnement",
+        "subscription_contracts_updated": "Mis à jour {{succeeded}} sur {{total}} abonnements",
+        "invalid_wallet_type_error": "Type de portefeuille invalide."
+      },
+      "three_d_secure": {
+        "title": "3D Secure",
+        "verification_failed": "Votre paiement n'a pas pu être vérifié. Réessayez ou utilisez un autre mode de paiement."
       }
     }
   }
