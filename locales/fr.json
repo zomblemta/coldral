@@ -3547,7 +3547,10 @@
       "closeModal": "Fermer",
       "submit": "Soumettre",
       "decrease": "Decrease {{type}}",
-      "minimumReached": "Minimum de {{value}} atteint"
+      "minimumReached": "Minimum de {{value}} atteint",
+      "maximumReached": "Maximum de {{value}} atteint",
+      "january": "Janvier",
+      "february": "Février"
     }
   }
 }
