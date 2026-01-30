@@ -2096,7 +2096,9 @@
         "shipping_method_not_available_updated": {
           "one": "L'article que vous avez ajouté ne peut pas être expédié à votre adresse. Retirez-le pour passer à la caisse, ou contactez le magasin.",
           "other": "Un ou plusieurs articles que vous avez ajoutés ne peuvent pas être expédiés à votre adresse. Supprimez-les pour finaliser la commande ou contactez le magasin."
-        }
+        },
+        "payment_method_not_supported": "Vous ne pouvez pas utiliser ce mode de paiement pour %{country}. Utilisez un autre mode de paiement pour expédier vers ce pays.",
+        "empty_state": "Saisissez votre adresse de livraison pour afficher les modes de livraison disponibles."
       }
     }
   }
