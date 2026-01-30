@@ -3628,7 +3628,9 @@
     },
     "shop_ads": {
       "title": "Autres produits susceptibles de vous plaire",
-      "subtitle": "Disponible Pour Une Durée Limitée"
+      "subtitle": "Disponible Pour Une Durée Limitée",
+      "button": "Explorer sur Shop",
+      "previous_button": "Précédent"
     }
   }
 }
