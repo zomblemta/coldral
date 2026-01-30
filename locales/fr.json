@@ -1687,7 +1687,9 @@
         "subscription_card_update_agreement_label": "Modifier le mode de paiement mettra à jour votre abonnement et les paiements récurrents futurs.",
         "subscription_agreement_label": "Un ou plusieurs articles de votre panier sont des achats différés ou des abonnements. En poursuivant votre paiement, vous acceptez que votre moyen de paiement soit automatiquement débité au prix et selon la fréquence indiqués sur cette page jusqu'à son terme ou jusqu'à ce que vous l'annuliez. Toutes les annulations sont soumises au %{cancelled}.",
         "subscription_agreement_cancelled": "politique d'annulation",
-        "subscription_heading": "Contrat d'abonnement"
+        "subscription_heading": "Contrat d'abonnement",
+        "subscription_agreement_label_html": "Je comprends que j'accepte un abonnement. Il se renouvellera au prix et à la fréquence indiqués jusqu'à ce qu'il prenne fin ou soit\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">annulé</a>.\n",
+        "purchase_options_agreement_label": "Un ou plusieurs articles de votre panier sont des achats différés ou récurrents. En poursuivant votre paiement, vous acceptez que votre moyen de paiement soit automatiquement débité au prix et à la fréquence indiqués sur cette page jusqu'à sa fin ou jusqu'à ce que vous annuliez. Toutes les annulations sont soumises à la %{cancellation_policy_label}."
       }
     }
   }
