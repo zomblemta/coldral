@@ -3675,7 +3675,8 @@
         "or": "or"
       },
       "step_two": {
-        "page_title": "Entrez le code - %{shop_name}"
+        "page_title": "Entrez le code - %{shop_name}",
+        "restart_link": "Se connecter avec une autre adresse e-mail"
       }
     }
   }
