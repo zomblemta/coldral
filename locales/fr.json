@@ -2807,7 +2807,10 @@
           "status": {
             "invalid_format": {
               "hr": "Les numéros de TVA croates contiennent HR et 11 caractères",
-              "cy": "Les numéros de TVA de Chypre contiennent CY et 9 caractères"
+              "cy": "Les numéros de TVA de Chypre contiennent CY et 9 caractères",
+              "cz": "Les numéros de TVA de la République Tchèque contiennent CZ et 8-10 caractères",
+              "dk": "Les numéros de TVA danois contiennent DK et 8 caractères",
+              "ee": "Les numéros de TVA en Estonie contiennent EE et 9 caractères"
             }
           }
         }
