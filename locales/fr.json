@@ -86,13 +86,13 @@
       "cart": "Panier",
       "primary_navigation": "Navigation Principale",
       "secondary_navigation": "Navigation secondaire",
-      "menu": "Menu"
+      "menu": "Menu De Navigation"
     }
   },
   "product": {
     "general": {
       "description": "Description",
-      "view_details": "Voir les détails",
+      "view_details": "Voir Les Détails",
       "add_to_cart_button": "Ajouter au panier",
       "pre_order_button": "Pré-commander",
       "sold_out_button": "En rupture",
