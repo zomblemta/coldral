@@ -2924,7 +2924,10 @@
         "too_many_items_in_cart": "Vous ne pouvez pas ajouter plus de %{name} au panier.",
         "only_one_added_to_cart": "Seulement 1 article a été ajouté à votre panier en raison de la disponibilité.",
         "not_respect_step": "Vous ne pouvez ajouter cet article que par incréments de %{step}.",
-        "all_items_in_cart": "Tous les %{count} %{name} sont dans votre panier."
+        "all_items_in_cart": "Tous les %{count} %{name} sont dans votre panier.",
+        "empty_update": "impossible de mettre à jour un panier vide",
+        "missing_parameters": "aucun identifiant ou paramètre de ligne valide",
+        "generic_error": "Erreur du panier"
       }
     }
   }
