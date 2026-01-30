@@ -2810,7 +2810,10 @@
               "lv": "Les numéros de TVA lettons contiennent LV et 11 caractères",
               "lt": "Les numéros de TVA de Lituanie contiennent LT et 9-12 caractères",
               "lu": "Les numéros de TVA du Luxembourg commencent par LU et comportent 8 caractères",
-              "mt": "Les numéros de TVA de Malte contiennent MT et 8 caractères"
+              "mt": "Les numéros de TVA de Malte contiennent MT et 8 caractères",
+              "nl": "Les numéros de TVA des Pays-Bas contiennent NL et 12 caractères",
+              "pl": "Les numéros de TVA polonais contiennent PL et 10 caractères",
+              "pt": "Les numéros de TVA du Portugal commencent par PT et comportent 9 caractères"
             }
           }
         }
