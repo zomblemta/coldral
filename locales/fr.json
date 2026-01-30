@@ -2240,7 +2240,10 @@
         "items_fulfilled_by_store": {
           "one": "Les articles que vous avez achetés proviendront de %{remote_shop_name}.",
           "other": "Les articles que vous avez achetés proviendront d'autres magasins."
-        }
+        },
+        "gift_card_confirmation_by_text": "Si vous ne l'avez pas reçu, renvoyez le texte ou contactez-nous.",
+        "gift_card_confirmation_by_email": "Si vous ne l'avez pas reçu, renvoyez l'e-mail ou contactez-nous.",
+        "gift_card_title": "Cartes-cadeaux"
       }
     }
   }
