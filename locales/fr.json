@@ -2080,7 +2080,10 @@
         "expired_buyer_action": "Le moyen de paiement a expiré. Réessayez.",
         "name_mismatch": "Vérifiez les informations de votre carte. Le nom figurant sur votre carte et l'adresse de facturation ne correspondent pas.",
         "shop_pay_wallet_not_available": "Shop Pay n'est pas disponible pour ce paiement.",
-        "market_manager_blocks_wallet_payments": "Le mode de paiement n'est pas pris en charge dans votre pays."
+        "market_manager_blocks_wallet_payments": "Le mode de paiement n'est pas pris en charge dans votre pays.",
+        "paypal_over_capture": "Votre total de commande a été mis à jour. Payez avec {{walletName}} pour finaliser votre commande.",
+        "captcha_required": "Saisissez les informations de paiement et résolvez le captcha pour finaliser votre achat.",
+        "captcha_required_without_payment_information": "Résolvez le captcha pour finaliser votre achat."
       }
     }
   }
