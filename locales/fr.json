@@ -3096,7 +3096,10 @@
         "track_shipment": "Suivre l'envoi",
         "delivery_promise_v2": {
           "promise_line": {
-            "delivery_guarantee_expired_label": "Garantie de livraison expirée"
+            "delivery_guarantee_expired_label": "Garantie de livraison expirée",
+            "modal_accessibility_button_label": "Détails de la promesse de livraison",
+            "download_shop_app_button_label": "Téléchargez Shop pour suivre",
+            "track_with_shop_button_label": "Suivre avec Shop"
           }
         }
       }
