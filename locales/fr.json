@@ -3102,8 +3102,8 @@
             "track_with_shop_button_label": "Suivre avec Shop"
           },
           "details_modal": {
-            "order_includes_guarantees_description": "Shop Promise garantit une livraison rapide et fiable. Réclamez Shop Cash si votre commande arrive après {{date}}.",
-            "delivered_after_label": "Livré après {{date}}"
+            "claimed_shop_cash_description": "Parce que cette commande est arrivée en retard, vous avez réclamé {{amount}} Shop Cash.",
+            "eligible_to_claim_shop_cash_description": "Parce que votre commande est arrivée en retard, vous pouvez réclamer {{amount}} de Shop Cash."
           }
         }
       }
