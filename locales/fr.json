@@ -3153,7 +3153,10 @@
           "view_schedule": "Voir Le Planning"
         },
         "manual_payment_methods": {
-          "money_order": "Mandat postal - {{formattedTransactionAmount}}"
+          "money_order": "Mandat postal - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Paiement à la livraison (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "Dépôt bancaire - {{formattedTransactionAmount}}",
+          "manual": "Manuel - {{formattedTransactionAmount}}"
         }
       }
     }
