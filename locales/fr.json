@@ -3470,12 +3470,13 @@
         "card_start_label": "Date d'émission (MM / AA)",
         "card_start_placeholder": "Date d'émission (MM / AA)",
         "tooltip": {
-          "tooltip_accessibility_label": "Plus d'informations",
-          "card_security_notice": "Toutes les transactions sont sécurisées et chiffrées."
+          "tooltip_accessibility_label": "Plus d'informations"
         },
         "field_errors": {
-          "credit_card_name_invalid": "Entrez votre nom exactement tel qu'il est inscrit sur votre carte",
-          "credit_card_number_invalid": "Saisissez un numéro de carte valide"
+          "credit_card_verification_value_blank": "Saisissez le CVV ou le code de sécurité de votre carte"
+        },
+        "unavailable": {
+          "text": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment."
         }
       }
     }
