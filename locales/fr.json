@@ -1975,7 +1975,10 @@
         "gift_cards_not_supported_with_deferred_purchase_options": "Les cartes-cadeaux ne sont pas prises en charge avec les options d'achat différé.",
         "gift_card_buying_gift_card": "Vous ne pouvez pas utiliser une carte-cadeau pour en acheter une autre",
         "payment_gateway_missing": "Choisissez un mode de paiement.",
-        "payment_gateway_needs_paid_plan_error": "Cette méthode de paiement n’est pas disponible dans la boutique pour le moment"
+        "payment_gateway_needs_paid_plan_error": "Cette méthode de paiement n’est pas disponible dans la boutique pour le moment",
+        "payment_gateway_not_in_test_mode": "n'est pas configurée pour tester les commandes. Cette boutique ne peut pas accepter de vraies commandes ni de paiements réels.",
+        "payment_gateway_incompatible_with_multi_currency": "Pour finaliser ce paiement dans votre devise locale, vous devez payer par carte de crédit.",
+        "payment_gateway_unsupported_for_subscriptions": "Cette méthode de paiement n'est pas disponible pour les commandes d'abonnement."
       }
     }
   }
