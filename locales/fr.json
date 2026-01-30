@@ -776,8 +776,12 @@
         },
         "map": {
           "cluster_title": {
-            "one": "Groupe de {{number}} marqueurs"
+            "one": "Groupe de {{number}} marqueurs",
+            "other": "Grappe de {{number}} marqueurs"
           }
+        },
+        "sheet": {
+          "expand": "Développer"
         }
       }
     }
