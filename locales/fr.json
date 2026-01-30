@@ -600,7 +600,13 @@
             "custom_discount_not_honoured": "La remise personnalisée fournie n'a pas été appliquée.",
             "unsupported_expectation": "La ligne de remise fournie contenait une attente que la politique n'a pas pu interpréter.",
             "additional_requested_discount_discarded": "Votre remise est valide mais non applicable. Vérifiez les conditions de la remise.",
-            "allocations_mismatch": "Votre code de réduction a changé. Vérifiez votre panier et réessayez."
+            "allocations_mismatch": "Votre code de réduction a changé. Vérifiez votre panier et réessayez.",
+            "discount_code_not_honoured": "%{discount_rejection_message}",
+            "discount_title_too_long": "Le titre de la remise ne peut pas dépasser 255 caractères."
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "Les taxes associées à votre commande ont changé. Vérifiez et réessayez.",
+            "unresolvable_tax_terms": "Les conditions proposées sont impossibles à résoudre compte tenu du contexte actuel de la négociation."
           }
         }
       }
