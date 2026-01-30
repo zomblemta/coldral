@@ -3317,7 +3317,11 @@
               "other": "Votre paiement est dû dans {{count}} jours"
             },
             "banner_due_today": "Votre paiement est dû aujourd'hui",
-            "banner_due_today_for_single_fulfillment": "{{amount}} le paiement est dû aujourd'hui. {{link}}"
+            "banner_due_today_for_single_fulfillment": "{{amount}} le paiement est dû aujourd'hui. {{link}}",
+            "banner_due_today_for_multiple_fulfillments": "Paiement dû aujourd'hui pour {{count}} traitements de commande",
+            "banner_overdue_for_single_fulfillment": {
+              "one": "Le paiement de {{amount}} a {{count}} jour(s) de retard. {{link}}"
+            }
           }
         }
       }
