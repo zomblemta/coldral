@@ -3450,6 +3450,11 @@
       },
       "edit_payment_method": {
         "title": "Modifier le mode de paiement"
+      },
+      "update_payment_method": {
+        "resources_list_accessibility_label": "Produits d'abonnement et produits de commande en attente utilisant ce mode de paiement",
+        "resources_card_scroll": "Faites défiler pour voir plus d'articles",
+        "resources_card_show_more": "Afficher plus"
       }
     }
   }
