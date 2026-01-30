@@ -1326,7 +1326,8 @@
         "other_method": {
           "zero": "Aucune autre méthode disponible",
           "one": "%{count} autre méthode disponible à"
-        }
+        },
+        "local_delivery": "Livraison locale"
       }
     }
   }
