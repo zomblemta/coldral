@@ -1224,7 +1224,10 @@
           "due_today_next": "À rendre aujourd'hui",
           "due_later": "Total dû %{due_at}",
           "due_on_fulfillment": "Total Dû Lors Du Traitement",
-          "due_on_fulfillment_next": "Payable à l'exécution"
+          "due_on_fulfillment_next": "Payable à l'exécution",
+          "due_on_receipt": "Total Dû Sur Le Reçu",
+          "due_later_checkout_to_draft": "Total Dû Plus Tard",
+          "total_paid": "Total Payé"
         }
       }
     }
