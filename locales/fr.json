@@ -3328,6 +3328,12 @@
             "deposit": {
               "due_on_receipt": "{{depositAmount}} sera dû lorsque votre commande sera confirmée. Le solde sera dû ultérieurement."
             }
+          },
+          "refund": {
+            "description_multiple_refunds": "Vous avez reçu des remboursements partiels pour cette commande."
+          },
+          "canceled": {
+            "title": "Paiement annulé"
           }
         }
       }
