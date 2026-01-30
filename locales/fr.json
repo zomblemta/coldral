@@ -1143,7 +1143,10 @@
         "price_before_discount_aria_text": "Prix d'origine",
         "price_after_discount_aria_text": "Prix Réduit",
         "discount_code_aria_text": "Code promo",
-        "total_savings": "Économies Totales"
+        "total_savings": "Économies Totales",
+        "total_label": "Total",
+        "total_due_label": "Total dû",
+        "total_paid_label": "Montant Payé"
       }
     }
   }
