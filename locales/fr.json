@@ -591,7 +591,13 @@
             "fulfillment_constraints_not_satisfied": "Une ou plusieurs contraintes d'exécution n'ont pas été satisfaites.",
             "must_fulfill_from_constraint_not_satisfied": "Les contraintes d'exécution ne sont pas satisfaites car les articles ne peuvent pas être expédiés depuis les emplacements requis.",
             "must_fulfill_from_same_location_constraint_not_satisfied": "Les contraintes de traitement des commandes ne sont pas respectées car les articles ne peuvent pas être expédiés depuis le même emplacement.",
-            "delivery_strategy_conditions_not_satisfied": "Des stratégies de livraison sont disponibles pour cet emplacement, mais leurs conditions ne sont pas remplies."
+            "delivery_strategy_conditions_not_satisfied": "Des stratégies de livraison sont disponibles pour cet emplacement, mais leurs conditions ne sont pas remplies.",
+            "out_of_stock_at_origin_location": "Aucun stock à l'emplacement d'origine.",
+            "invalid_signature": "Signature de remise invalide."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "Les remises ne sont pas autorisées dans les magasins B2B.",
+            "custom_discount_not_honoured": "La remise personnalisée fournie n'a pas été appliquée."
           }
         }
       }
