@@ -1338,6 +1338,13 @@
           "first_n_order_free_with_cycle_delivery_not_included": {
             "one": "Livraison gratuite pour %{count} livraison, puis %{recurring_order_shipping_price}",
             "other": "Livraison gratuite pour %{count} livraisons, puis %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "`%{count} livraisons de plus pour %{shipping_price}`",
+            "other": "%{count} livraisons supplémentaires à %{shipping_price} chacune"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} livraison pour %{shipping_price}"
           }
         }
       }
