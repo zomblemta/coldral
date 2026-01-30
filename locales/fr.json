@@ -1481,7 +1481,10 @@
         "split_shipping_multiple_shipment_notice_one_time_purchase": "Votre commande arrivera en %{quantity} livraisons",
         "split_shipping_more_shipping_options": "Plus d'options d'expédition",
         "split_shipping_shipment_number": "Expédition %{number}",
-        "split_shipping_merchandise_quantity_label_inline_primary": "Quantité : %{quantity}"
+        "split_shipping_merchandise_quantity_label_inline_primary": "Quantité : %{quantity}",
+        "split_shipping_merchandise_quantity_label_inline": "%{merchandise_title} ×%{quantity}",
+        "split_shipping_option_free": "Livraison gratuite",
+        "split_shipping_option_lowest_price": "Prix le plus bas"
       }
     }
   }
