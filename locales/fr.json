@@ -2328,7 +2328,10 @@
         "checkout_on_remote_shop_link_text": "Payer sur %{remoteShopName}",
         "checkout_on_another_store": "Passer À La Caisse Dans Une Autre Boutique",
         "order_status_confirmed_order_with_email": "Vous recevrez un e-mail lorsque votre commande sera prête.",
-        "order_status_confirmed_order_with_phone": "Vous pouvez recevoir un SMS lorsque votre commande est prête."
+        "order_status_confirmed_order_with_phone": "Vous pouvez recevoir un SMS lorsque votre commande est prête.",
+        "order_status_confirmed_order_with_email_and_phone": "Vous recevrez un e-mail lorsque votre commande sera prête.",
+        "order_status_confirmed_order_with_email_payment": "Vous avez effectué un paiement sur votre commande %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "Vous avez effectué un paiement sur votre commande le %{date}."
       }
     }
   }
