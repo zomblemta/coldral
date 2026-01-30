@@ -173,7 +173,7 @@
       "empty_collection": "Cette collection est vide",
       "all_collections": "Toutes les collections",
       "no_collections": "Cette boutique ne contient aucune collection.",
-      "continue_shopping": "Continue shopping"
+      "continue_shopping": "Continuer vos achats"
     },
     "products_count": {
       "zero": "{{ count }} produit",
@@ -182,7 +182,7 @@
     },
     "faceting": {
       "filters": "Filtres",
-      "filter_button": "Filtrer",
+      "filter_button": "Filtre",
       "clear_filters": "Effacer",
       "apply_filters": "Appliquer",
       "sort_by": "Trier par",
