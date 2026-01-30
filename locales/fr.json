@@ -3600,6 +3600,12 @@
       "viewing": "Vous regardez :",
       "not_available": "Données De Profil Non Disponibles",
       "actions_button": "Actions"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "Sélectionnez l'extension nommée {{extensionName}}",
+        "unselect": "Désélectionnez l’extension nommée {{extensionName}}"
+      }
     }
   }
 }
