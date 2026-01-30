@@ -1218,6 +1218,11 @@
         "deferred_balance_info": {
           "title": "Le solde de {{amount_due}} est dû le {{due_at}}",
           "due_on_fulfillment_title": "Le solde de {{amount_due}} est dû à l'exécution"
+        },
+        "payment_terms_totals": {
+          "due_today": "Total dû aujourd'hui",
+          "due_today_next": "À rendre aujourd'hui",
+          "due_later": "Total dû %{due_at}"
         }
       }
     }
