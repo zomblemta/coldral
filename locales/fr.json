@@ -2198,7 +2198,9 @@
         "direct_payment_terms": "Vous êtes soumis aux conditions de {{translatedName}}. Votre carte sera débitée le {{dueDate}}.",
         "fixed_direct_payment_terms": "Votre carte sera débitée le {{dueDate}}.",
         "order_due_on_fulfillment_choose_later": "Votre paiement sera dû une fois que votre commande sera traitée.",
-        "order_due_on_fulfillment_payment": "Votre carte sera débitée une fois votre commande traitée."
+        "order_due_on_fulfillment_payment": "Votre carte sera débitée une fois votre commande traitée.",
+        "order_due_on_receipt_choose_later": "Votre paiement sera dû à réception.",
+        "order_deposit_due_now": "{{depositAmount}} est dû aujourd'hui. Le solde est selon les conditions {{translatedName}} et est dû le {{dueDate}}."
       }
     }
   }
