@@ -3191,6 +3191,11 @@
       "shop_order_tracking": {
         "download_shop_to_track": "Téléchargez Shop pour suivre le colis",
         "track_order_with_shop": "Suivre La Commande Avec Shop"
+      },
+      "edit_summary": {
+        "removed_with_quantity": "Removed {{quantity}}",
+        "updated_at": "Votre commande a été mise à jour le {{date}}",
+        "removed_with_quantities": "Removed {{delta}} of {{total}}"
       }
     }
   }
