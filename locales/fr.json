@@ -3195,7 +3195,9 @@
       "edit_summary": {
         "removed_with_quantity": "Removed {{quantity}}",
         "updated_at": "Votre commande a été mise à jour le {{date}}",
-        "removed_with_quantities": "Removed {{delta}} of {{total}}"
+        "removed_with_quantities": "Removed {{delta}} of {{total}}",
+        "return_line_item_removed": "Supprimé Du Retour",
+        "return_line_item_removed_with_quantities": "Retiré {{delta}} du retour"
       }
     }
   }
