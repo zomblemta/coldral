@@ -2119,7 +2119,12 @@
         "page_title": "Après-achat",
         "title": "Après-achat",
         "escape_confirmation": "Vous avez payé votre commande.",
-        "escape_action": "Voir la confirmation de la commande ›"
+        "escape_action": "Voir la confirmation de la commande ›",
+        "components": {
+          "close": "Fermer",
+          "expand": "Voir plus",
+          "processing": "Traitement en cours…"
+        }
       }
     }
   }
