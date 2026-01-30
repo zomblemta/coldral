@@ -3387,7 +3387,9 @@
       "retry_action_label": "Réessayer",
       "load_extension_error": {
         "refresh_button": "Actualiser la page"
-      }
+      },
+      "already_upgraded": "Les comptes clients sont déjà mis à niveau.",
+      "failed_to_upgrade": "Échec de la mise à niveau des paramètres du compte client."
     }
   }
 }
