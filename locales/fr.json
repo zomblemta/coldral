@@ -151,7 +151,7 @@
       "incoming_stock": "Re-stockage le {{ next_incoming_date }}",
       "low_stock_with_quantity_count": {
         "one": "Plus qu'un produit en stock",
-        "other": "Plus que {{count}} produits en stock"
+        "other": "Plus que {{count}} unité(s) en stock"
       },
       "in_stock_with_quantity_count": {
         "one": "{{ count }} en stock",
@@ -160,7 +160,7 @@
       "out_of_stock": "Rupture de stock"
     },
     "store_availability": {
-      "view_store_info": "Afficher les informations de la boutique",
+      "view_store_info": "Voir Les Informations De La Boutique",
       "check_other_stores": "Vérifier la disponibilité dans d'autres boutiques",
       "pick_up_available": "Récupération disponible",
       "pick_up_currently_unavailable": "Récupération actuellement indisponible",
