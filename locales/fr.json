@@ -3456,7 +3456,10 @@
         "resources_card_scroll": "Faites défiler pour voir plus d'articles",
         "resources_card_show_more": "Afficher plus",
         "resources_card_show_less": "Afficher moins",
-        "loading_form_accessibility_message": "Chargement Du Formulaire De Mise À Jour Du Moyen De Paiement"
+        "loading_form_accessibility_message": "Chargement Du Formulaire De Mise À Jour Du Moyen De Paiement",
+        "loading_current_payment_method": "Chargement Du Mode De Paiement Actuel",
+        "loading_digital_wallets": "Chargement des options de portefeuille numérique",
+        "loading_card_fields": "Chargement Des Champs De Carte De Crédit"
       }
     }
   }
