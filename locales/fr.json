@@ -2163,7 +2163,14 @@
         "timer_message": "Il vous reste {{timeLeft}} pour payer",
         "copy_text": "Copier le code {{paymentMethod}}",
         "open_app_text": "Ouvrir l'application {{paymentMethod}}",
-        "header": "Payer avec {{paymentMethod}}"
+        "header": "Payer avec {{paymentMethod}}",
+        "qr_code": {
+          "instructions": "Finalisez votre achat en utilisant votre code {{paymentMethod}}"
+        },
+        "external": {
+          "instructions": "Confirmez le paiement dans votre application pour finaliser cet achat"
+        },
+        "close": "Clore le défi"
       }
     }
   }
