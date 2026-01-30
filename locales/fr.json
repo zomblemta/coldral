@@ -2839,7 +2839,11 @@
     "addresses": {
       "pincode": "Code PIN",
       "prefecture": "Préfecture",
-      "province": "Province"
+      "province": "Province",
+      "state": "État",
+      "state_and_territory": "État/territoire",
+      "county": "Comté",
+      "emirate": "Émirat"
     }
   }
 }
