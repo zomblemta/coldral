@@ -3587,7 +3587,10 @@
         "one": "Groupe de {{number}} marqueurs",
         "other": "Groupe de {{number}} marqueurs"
       },
-      "expandSheet": "Développer"
+      "expandSheet": "Développer",
+      "qrCode": "code QR",
+      "addFile": "Ajouter un fichier",
+      "dropzoneInvalidFileType": "Type de fichier non pris en charge"
     }
   }
 }
