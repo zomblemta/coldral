@@ -2535,6 +2535,13 @@
           "pick_up_in_store_shipping_method_html": "Retrait en magasin · %{location_name}",
           "purchase_order_number_title": "Numéro de bon de commande"
         }
+      },
+      "marketing": {
+        "accept_sms_checkbox_label": "Envoyez-moi des SMS concernant les nouveautés et les offres",
+        "disclaimer": {
+          "privacy_policy": "Politique de confidentialité",
+          "terms_of_service": "Conditions d'utilisation"
+        }
       }
     }
   }
