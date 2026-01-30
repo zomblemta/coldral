@@ -2123,8 +2123,13 @@
         "components": {
           "close": "Fermer",
           "expand": "Voir plus",
-          "processing": "Traitement en cours…"
+          "processing": "Traitement en cours…",
+          "submit": "Soumettre"
         }
+      },
+      "processing": {
+        "redirecting_page_title": "Redirection en cours…",
+        "redirecting_title": "Redirection…"
       }
     }
   }
