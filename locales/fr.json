@@ -1826,7 +1826,11 @@
         "markets_pro_disclaimer_label": "passant votre commande, vous acceptez d'acheter auprès de Global-e en tant que marchand enregistré, sous réserve des %{markets_pro_terms} et %{privacy_policy} de Global-e, et d'autoriser le partage de vos informations avec %{shop_name}.",
         "markets_pro_disclaimer_terms_and_conditions": "Conditions Générales",
         "markets_pro_disclaimer_privacy_policy": "Politique de confidentialité",
-        "markets_pro_disclaimer_terms_and_conditions_title": "Conditions Générales du Commerçant Enregistreur"
+        "markets_pro_disclaimer_terms_and_conditions_title": "Conditions Générales du Commerçant Enregistreur",
+        "markets_pro_disclaimer_privacy_policy_title": "Politique de confidentialité du commerçant titulaire",
+        "purchase_order_number": {
+          "title": "Numéro De Bon De Commande"
+        }
       }
     }
   }
