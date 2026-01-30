@@ -2440,6 +2440,13 @@
         "marker": {
           "current": "Lieu Actuel de l'Envoi",
           "shipping": "Adresse de livraison"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Emplacement Actuel De L'Envoi",
+          "shipping": "Point de retrait"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Articles De Cet Envoi"
         }
       }
     }
