@@ -3322,7 +3322,9 @@
               "description": "Effectuez le paiement pour confirmer cette commande.",
               "title": "Payer Pour Confirmer",
               "deposit": {
-                "title": "Le paiement est dû"
+                "title": "Le paiement est dû",
+                "due_on_fulfillment": "Le solde est dû une fois que tous les articles de cette commande ont été traités.",
+                "due_on_receipt": "Vous recevrez une facture pour le solde restant."
               }
             }
           }
