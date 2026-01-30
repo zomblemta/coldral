@@ -2010,7 +2010,10 @@
           "duplicate": "La carte-cadeau a déjà été appliquée à votre commande",
           "insufficient_funds": "Cette carte-cadeau n'a plus de solde",
           "expired": "Cette carte-cadeau a expiré",
-          "not_available": "Cette carte-cadeau n'est plus disponible"
+          "not_available": "Cette carte-cadeau n'est plus disponible",
+          "invalid": "Entrez une carte-cadeau valide",
+          "currency_mismatch": "Seules les cartes-cadeaux en %{shop_currency} sont acceptées",
+          "generic": "La carte-cadeau n'a pas pu être ajoutée au paiement"
         }
       }
     }
