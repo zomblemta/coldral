@@ -1081,7 +1081,10 @@
         "gift_card_title": "Carte Cadeau",
         "gift_card_label": "Carte-Cadeau",
         "gift_card_placeholder": "Carte-cadeau",
-        "gift_card_and_discount_title": "Code de réduction ou carte-cadeau"
+        "gift_card_and_discount_title": "Code de réduction ou carte-cadeau",
+        "gift_card_and_discount_label": "Code De Réduction Ou Carte-Cadeau",
+        "gift_card_and_discount_placeholder": "Code de réduction ou carte-cadeau",
+        "gift_cards_apply_to_local_shop": "Les cartes-cadeaux ne s'appliquent qu'aux articles de %{shop_name}"
       }
     }
   }
