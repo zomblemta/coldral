@@ -2276,7 +2276,9 @@
         "thank_you_confirmed_order_with_phone_pick_up": "Vous recevrez un SMS lorsque votre commande sera prête à être récupérée.",
         "thank_you_confirmed_order_with_email_and_phone_pick_up": "Vous recevrez un e-mail lorsque votre commande sera prête à être retirée.",
         "thank_you_confirmed_order_with_missing": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
-        "thank_you_confirmed_order_with_missing_payment": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande."
+        "thank_you_confirmed_order_with_missing_payment": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
+        "thank_you_confirmed_order_with_draft": "Nous vous informerons si nous avons besoin de plus d'informations ou lorsque votre commande sera confirmée."
       }
     }
   }
