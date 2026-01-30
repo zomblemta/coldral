@@ -1981,7 +1981,9 @@
         "payment_gateway_unsupported_for_subscriptions": "Cette méthode de paiement n'est pas disponible pour les commandes d'abonnement.",
         "payment_gateway_unsupported_for_deferred_purchase_options": "Ce mode de paiement n'est pas disponible pour les options d'achat différé.",
         "payment_gateway_unsupported_for_country": "Cette méthode de paiement n'est pas disponible pour votre pays de livraison.",
-        "payment_gateway_unsupported_for_development_store_html": "Pour passer une commande de test, vous devrez utiliser une passerelle de paiement de test. En savoir plus sur <a href=\"%{docs_link}\">les tests des commandes dans les boutiques en développement</a>."
+        "payment_gateway_unsupported_for_development_store_html": "Pour passer une commande de test, vous devrez utiliser une passerelle de paiement de test. En savoir plus sur <a href=\"%{docs_link}\">les tests des commandes dans les boutiques en développement</a>.",
+        "payment_gateway_unsupported_for_order_above_maximum_orders_html": "Vous avez atteint la limite de commandes pour les boutiques de développement avec ce prestataire de paiement. Pour passer une autre commande, vous devrez utiliser une passerelle de paiement de test. En savoir plus sur <a href=\"%{docs_link}\">les tests de commandes dans les boutiques de développement</a>.",
+        "purchase_options_agreement_blank": "Pour poursuivre votre achat, acceptez les conditions d'achat différé ou récurrent."
       }
     }
   }
