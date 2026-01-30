@@ -1552,7 +1552,10 @@
           "one": "Afficher %{count} de plus",
           "other": "Afficher %{count} de plus"
         },
-        "gift_card_code_label": "Code de carte-cadeau"
+        "gift_card_code_label": "Code de carte-cadeau",
+        "apply_gift_card_button_label": "Appliquer",
+        "gift_card_balance_label": "Solde :",
+        "supported_card_brands_more_label": "et plus…"
       }
     }
   }
