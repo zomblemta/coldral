@@ -2540,8 +2540,13 @@
         },
         "block_title": "Vérifiez vos informations",
         "item_header": {
-          "change_value": "Modifier la valeur"
+          "change_value": "Modifier la valeur",
+          "section": "Section",
+          "value": "Valeur"
         }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Envoyez-moi des actualités et des offres par e-mail"
       }
     }
   }
