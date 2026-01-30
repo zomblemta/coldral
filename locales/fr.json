@@ -1178,7 +1178,10 @@
         "collapse_order_summary_short": "Masquer",
         "expand_order_summary": "Afficher Le Récapitulatif De La Commande",
         "collapse_order_summary": "Masquer le Récapitulatif de la Commande",
-        "original_price": "Prix d'origine"
+        "original_price": "Prix d'origine",
+        "sale_price": "Prix En Promotion",
+        "compare_at_sale": "Promotion (%{sale_amount})",
+        "total_updated_label": "Prix total mis à jour :"
       }
     }
   }
