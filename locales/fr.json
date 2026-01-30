@@ -705,7 +705,11 @@
         "google_map_title": "Carte Google",
         "confirm_order_button_label": "Confirmer la commande",
         "submit_order_button_label": "Valider la commande",
-        "submit_for_review_button_label": "Soumettre pour examen"
+        "submit_for_review_button_label": "Soumettre pour examen",
+        "submit_for_review_notice_label": "Le paiement ne sera pas exigible tant que votre commande n'aura pas été examinée.",
+        "continue_to_payment_plans_button_label": "Continuer vers les plans de paiement",
+        "back_button_label": "Retour",
+        "choose_delivery_strategy": "Choisissez Un Mode De Livraison"
       }
     }
   }
