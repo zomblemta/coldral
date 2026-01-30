@@ -3408,6 +3408,12 @@
           "not_available": "Apple Pay n'est pas disponible sur cet appareil.",
           "missing_billing_address": "Apple Pay nécessite une adresse de facturation. Veuillez en ajouter une à votre compte."
         }
+      },
+      "store_credit": {
+        "details_modal": {
+          "expiration_date_label": "Date d'expiration",
+          "amount_label": "Montant"
+        }
       }
     }
   }
