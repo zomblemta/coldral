@@ -2007,7 +2007,10 @@
       },
       "redeemable_errors": {
         "gift_card": {
-          "duplicate": "La carte-cadeau a déjà été appliquée à votre commande"
+          "duplicate": "La carte-cadeau a déjà été appliquée à votre commande",
+          "insufficient_funds": "Cette carte-cadeau n'a plus de solde",
+          "expired": "Cette carte-cadeau a expiré",
+          "not_available": "Cette carte-cadeau n'est plus disponible"
         }
       }
     }
