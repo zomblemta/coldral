@@ -2320,7 +2320,10 @@
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Une fois votre paiement effectué, vous recevrez un courriel de confirmation contenant votre numéro de commande.",
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Après avoir effectué votre paiement, vous recevrez un e-mail de confirmation contenant votre numéro de commande.",
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "Après avoir effectué votre paiement, vous recevrez un SMS de confirmation contenant votre numéro de commande.",
-        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Après avoir effectué votre paiement, vous recevrez un SMS de confirmation contenant votre numéro de commande."
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Après avoir effectué votre paiement, vous recevrez un SMS de confirmation contenant votre numéro de commande.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Après avoir effectué votre paiement, vous recevrez un SMS de confirmation contenant votre numéro de commande.",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "Votre paiement est en cours de traitement. Vous recevrez un e-mail lorsque votre paiement sera confirmé.",
+        "track_your_order_link_text": "Suivre votre commande"
       }
     }
   }
