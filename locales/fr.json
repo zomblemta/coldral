@@ -3239,7 +3239,10 @@
       }
     },
     "address_form": {
-      "cancel": "Annuler"
+      "cancel": "Annuler",
+      "cancel_accessibility_label": "Annuler la modification de l'adresse {{address}}",
+      "creation_success_notification": "Adresse ajoutée",
+      "default_address": "Ceci est mon adresse par défaut"
     }
   }
 }
