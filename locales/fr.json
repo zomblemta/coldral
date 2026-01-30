@@ -2935,7 +2935,14 @@
         "variant_not_found": "Impossible De Trouver La Variante",
         "variant_requires_selling_plan": "Ce variant ne peut être acheté que dans le cadre d'un plan de vente.",
         "selling_plan_not_available_for_company_locations": "Seul l'achat unique est disponible pour les commandes B2B",
-        "digital_product_not_available_for_company_locations": "Cet article ne peut pas être ajouté à une commande B2B"
+        "digital_product_not_available_for_company_locations": "Cet article ne peut pas être ajouté à une commande B2B",
+        "merchandise_line_transformers": {
+          "run_error": "Une erreur est survenue dans votre panier."
+        },
+        "merchandise_not_applicable": "L'article ne peut pas être acheté tel que configuré."
+      },
+      "storefront": {
+        "invalid_password": "Mot de passe incorrect, veuillez réessayer."
       }
     }
   }
