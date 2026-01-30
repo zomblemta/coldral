@@ -3253,7 +3253,13 @@
         "profile_button": "Profil"
       },
       "aria_labels": {
-        "loading_menu": "Chargement Du Menu"
+        "loading_menu": "Chargement Du Menu",
+        "sign_in": "Se connecter"
+      }
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "Nom de l'entreprise"
       }
     }
   }
