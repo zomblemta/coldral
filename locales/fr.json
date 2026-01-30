@@ -583,7 +583,9 @@
             "selected_pickup_option_no_longer_available": "L'option de retrait précédemment sélectionnée n'est plus disponible.",
             "local_pickup_no_delivery_strategy_available": "Aucune stratégie de livraison pour retrait local trouvée.",
             "origin_location_id_required": "Un identifiant d'emplacement d'origine est requis lorsque la méthode de livraison RETAIL est demandée.",
-            "invalid_origin_location_id": "Impossible de trouver un emplacement correspondant à l'identifiant d'emplacement d'origine."
+            "invalid_origin_location_id": "Impossible de trouver un emplacement correspondant à l'identifiant d'emplacement d'origine.",
+            "origin_location_id_not_allowed": "Les modes de livraison demandés ne prennent pas en charge un identifiant d'emplacement d'origine.",
+            "auto_fulfill_not_allowed": "Cette session n'est pas autorisée à outrepasser le comportement de traitement des commandes."
           }
         }
       }
