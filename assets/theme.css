@@ -2786,6 +2786,7 @@ tr[onclick]:hover {
   gap: var(--social-media-list-gap, .75rem 2rem);
   flex-wrap: wrap;
   display: flex;
+  margin: 24px 0;
 }
 
 .social-media--list .social-media__item {

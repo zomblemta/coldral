@@ -147,7 +147,7 @@ Output a list of social media icons based on the social URL settings.
 {%- endcapture -%}
 
 {%- if social_media != blank -%}
-  <ul class="social-media social-media--{{ layout | default: 'list' }} unstyled-list" role="list">
+  <ul class="social-media social-media--{{ layout | default: 'list' }} list-none my-4" role="list">
     {{- social_media -}}
   </ul>
 {%- endif -%}
