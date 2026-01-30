@@ -2148,7 +2148,10 @@
           "medium": {
             "one": "Votre commande est en cours de traitement. Temps d'attente estimé : %{count} minute.",
             "other": "Votre commande est en cours de traitement. Le délai d'attente estimé est de %{count} minutes."
-          }
+          },
+          "long": "Vous recevrez un e-mail dès que votre commande sera traitée. Le volume de commandes est actuellement élevé.",
+          "no_auto_refresh_html": "Si vous n’êtes pas redirigé automatiquement, %{link}.",
+          "refresh_this_page": "rafraîchir cette page"
         }
       }
     }
