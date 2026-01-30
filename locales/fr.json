@@ -3243,7 +3243,8 @@
       "default_address_update_success_notification": "Adresse Par Défaut Mise À Jour",
       "loading_edit_form_accessibility_message": "Chargement Du Formulaire De Modification D'Adresse",
       "loading_form_accessibility_message": "Chargement Du Formulaire D'Adresse",
-      "loading_finished_accessibility_message": "Le Formulaire D'Adresse A Été Chargé"
+      "loading_finished_accessibility_message": "Le Formulaire D'Adresse A Été Chargé",
+      "section_title_accessibility_label": "Ajouter une adresse"
     }
   }
 }
