@@ -577,7 +577,10 @@
             "wrong_number_of_delivery_lines": "Une ligne de livraison doit être spécifiée pour chaque groupe de marchandises.",
             "external_delivery_promise_error": "Erreur de récupération de la promesse de livraison externe.",
             "options_instructions_invalid": "Les instructions spécifiées ne correspondent pas au modèle attendu.",
-            "destination_address_required": "Une adresse de livraison est requise pour continuer."
+            "destination_address_required": "Une adresse de livraison est requise pour continuer.",
+            "pickup_points_unavailable": "Les points de retrait sont actuellement indisponibles.",
+            "local_pickup_delivery_line_detail_changed": "La stratégie actuelle de livraison par retrait local doit être modifiée pour pouvoir continuer.",
+            "selected_pickup_option_no_longer_available": "L'option de retrait précédemment sélectionnée n'est plus disponible."
           }
         }
       }
