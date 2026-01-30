@@ -2753,7 +2753,16 @@
         "shipping_line_label": "Livraison",
         "connect_shipping_methods": "{{method1}} et {{method2}}",
         "payment_in_progress_title": "Paiement en cours",
-        "redirection_notice": "Vous serez redirigé vers {{walletName}} pour compléter votre achat"
+        "redirection_notice": "Vous serez redirigé vers {{walletName}} pour compléter votre achat",
+        "errors": {
+          "unsupported": {
+            "wallet_is_unavailable": "{{walletName}} ne peut pas être utilisé avec cette adresse. Sélectionnez une autre adresse ou fermez {{walletName}} pour finaliser votre achat",
+            "postal_code": "Cette localisation n'est pas prise en charge"
+          },
+          "outdated": {
+            "shipping_method": "Les options de livraison ont été modifiées pour votre commande. Vérifiez votre sélection."
+          }
+        }
       }
     }
   }
