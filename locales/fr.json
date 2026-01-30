@@ -1424,7 +1424,10 @@
           "without_separator": "%{firstMethod}, %{secondMethod}",
           "with_separator": "%{rest}, %{current},",
           "combination": "%{rest} et %{current}"
-        }
+        },
+        "shipping_used_as_billing_notice": "Ceci servira également d'adresse de facturation pour cette commande.",
+        "address_update": "Mettre à jour l'adresse",
+        "shipping_address_title": "Expédier à"
       }
     }
   }
