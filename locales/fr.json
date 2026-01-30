@@ -3384,7 +3384,10 @@
       "profile_name_update_error": {
         "description": "Un problème est survenu lors de la mise à jour de votre nom. Essayez de rafraîchir cette page ou vérifiez votre connexion Internet."
       },
-      "retry_action_label": "Réessayer"
+      "retry_action_label": "Réessayer",
+      "load_extension_error": {
+        "refresh_button": "Actualiser la page"
+      }
     }
   }
 }
