@@ -2101,7 +2101,9 @@
         "empty_state": "Saisissez votre adresse de livraison pour afficher les modes de livraison disponibles.",
         "title": "Livraison non disponible",
         "invalid_selected_address": "L'adresse de livraison sélectionnée n'est pas valide",
-        "invalid_selected_address_with_update_link": "L'adresse de livraison sélectionnée n'est pas valide. %{update_address_link} ou sélectionnez une autre adresse"
+        "invalid_selected_address_with_update_link": "L'adresse de livraison sélectionnée n'est pas valide. %{update_address_link} ou sélectionnez une autre adresse",
+        "unavailable_addresses_only_countries": "Votre commande ne peut être expédiée qu'à {{countriesList}}. Ajoutez une nouvelle adresse pour continuer.",
+        "unavailable_address_country": "La livraison n’est pas disponible dans le pays que vous avez sélectionné. Utilisez une autre adresse pour continuer"
       }
     }
   }
