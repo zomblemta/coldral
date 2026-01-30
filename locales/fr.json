@@ -3031,9 +3031,6 @@
             "overdue": "Paiement en retard",
             "due": "Paiement dû {{date}}",
             "due_on_fulfillment": "Paiement dû à l'exécution"
-          },
-          "list_view": {
-            "due_without_date": "Dû"
           }
         }
       }
