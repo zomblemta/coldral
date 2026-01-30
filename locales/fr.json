@@ -1718,7 +1718,9 @@
         "clear": "Effacer",
         "billing_must_match_shipping_notice": "L'adresse de facturation de votre moyen de paiement doit correspondre à l'adresse de livraison.",
         "same_billing_address_checkbox_label": "Utiliser l'adresse de livraison comme adresse de facturation",
-        "location_billing_address_label": "Adresse de facturation de l'emplacement"
+        "location_billing_address_label": "Adresse de facturation de l'emplacement",
+        "fact_billing_address_label": "Adresse de facturation",
+        "location_shipping_address_label": "Adresse de livraison de l'emplacement"
       }
     }
   }
