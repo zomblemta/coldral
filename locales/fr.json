@@ -3265,10 +3265,10 @@
         "location_picker_label": "Nom du lieu",
         "net_payment_terms_description": "{{name}} : paiements dus dans {{numberOfDays}} jours",
         "deposit_percentage": "{{percentage}} acompte",
-        "section_title": "Emplacement",
-        "shipping_address_required": "Ajoutez une adresse de livraison à cet emplacement pour commencer à passer des commandes.",
-        "staff_and_permissions_title": "Personnel et autorisations",
-        "tax_details_title": "Détails fiscaux"
+        "pagination": {
+          "load_more": "Afficher plus"
+        },
+        "tax_exemptions": "Exonérations Fiscales"
       }
     }
   }
