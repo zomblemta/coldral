@@ -952,7 +952,12 @@
         "unfulfillable_product": {
           "title": "Livraison non disponible",
           "message": {
-            "one": "%{delivery_method} n'est plus disponible pour cet article."
+            "one": "%{delivery_method} n'est plus disponible pour cet article.",
+            "other": "%{delivery_method} n'est plus disponible pour ces articles."
+          },
+          "default_message": {
+            "one": "Le mode de livraison choisi n'est plus disponible pour cet article.",
+            "other": "La méthode de livraison choisie n'est plus disponible pour ces articles."
           }
         }
       }
