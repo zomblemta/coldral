@@ -2853,7 +2853,10 @@
       "invalid_email": "doit être une adresse e-mail valide",
       "discount_disabled": "Cette remise a été désactivée",
       "discount_expired": "Cette remise n'est plus valable",
-      "discount_limit_reached": "Cette remise a atteint sa limite d'utilisation"
+      "discount_limit_reached": "Cette remise a atteint sa limite d'utilisation",
+      "discount_not_found": "Impossible de trouver une remise valide correspondant au code saisi",
+      "customer_already_used_once_per_customer_discount_notice": "Cette remise a atteint sa limite d'utilisation",
+      "gift_card_already_applied": "Le code a déjà été appliqué à votre commande"
     }
   }
 }
