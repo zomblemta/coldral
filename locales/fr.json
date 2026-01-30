@@ -2649,6 +2649,9 @@
           "calculating": "Calcul du Temps d'Attente Estimé",
           "other": "Temps d'attente estimé : {{count}} minutes"
         }
+      },
+      "no_address_location": {
+        "header": "Vous n'avez pas d'adresse de livraison pour cet emplacement"
       }
     }
   }
