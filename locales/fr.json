@@ -1964,7 +1964,10 @@
         "reduction_code_gift_card_code_invalid": "Entrez une carte-cadeau valide",
         "reduction_code_gift_card_unusable": "Vous ne pouvez pas utiliser une carte-cadeau pour en acheter une autre",
         "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "Les cartes-cadeaux ne sont pas prises en charge avec les options d'achat différé.",
-        "shipping_line_phone_blank": "Saisissez un numéro de téléphone pour utiliser ce mode de livraison"
+        "shipping_line_phone_blank": "Saisissez un numéro de téléphone pour utiliser ce mode de livraison",
+        "shipping_line_phone_invalid": "Entrez un numéro de téléphone valide",
+        "tips_invalid_tip_amount": "Entrez un pourboire inférieur à %{amount}",
+        "gift_card_already_applied": "Cette carte-cadeau a déjà été appliquée à votre commande"
       }
     }
   }
