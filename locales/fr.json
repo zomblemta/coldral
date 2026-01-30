@@ -522,16 +522,7 @@
         "skip_to_content": "Aller au contenu",
         "continue_button_label": "Continuer",
         "complete_purchase_button_label": "Finaliser la commande",
-        "autocomplete_close": "Fermer les suggestions",
-        "forwarding_indicator": {
-          "new_window": "S'ouvre dans une nouvelle fenêtre.",
-          "external": "Ouvre un site web externe.",
-          "external_and_new_window": "Ouvre un site web externe dans une nouvelle fenêtre."
-        },
-        "qr_code": "code QR",
-        "errors": {
-          "only_empty_terms_accepted": "Cette politique n'accepte que des termes vides."
-        }
+        "autocomplete_close": "Fermer les suggestions"
       }
     }
   }
