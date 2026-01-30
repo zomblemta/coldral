@@ -2707,6 +2707,13 @@
           "header": "Pour mettre à jour vos informations, {{emailLink}}.",
           "email_link": "contactez-nous"
         }
+      },
+      "review_address_modal": {
+        "title": "Vérifier l'adresse",
+        "subtitle": {
+          "one": "Cette commande sera expédiée à l'adresse fournie par {{merchant}}.",
+          "other": "Cette commande sera expédiée à une adresse fournie par {{merchant}}. Sélectionnez une adresse de livraison."
+        }
       }
     }
   }
