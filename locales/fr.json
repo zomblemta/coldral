@@ -1578,7 +1578,9 @@
         "delete_customer_mandate_modal_title": "Supprimer cette carte de paiement ?",
         "delete_customer_mandate_modal_body": "Si vous supprimez cette carte, vous devrez la rajouter avant de pouvoir l'utiliser pour les paiements.",
         "delete_customer_mandate_modal_confirm": "Supprimer la carte",
-        "card_verification_value_label": "Code de sécurité"
+        "card_verification_value_label": "Code de sécurité",
+        "card_verification_value_placeholder": "Code de sécurité",
+        "card_verification_confirm": "Pour des raisons de vérification, saisissez le code de sécurité de votre carte."
       }
     }
   }
