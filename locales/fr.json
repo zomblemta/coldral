@@ -1059,7 +1059,12 @@
         "shopping_cart_label": "Panier",
         "discount_title": "Remise",
         "discount_title_stacking": {
-          "one": "Remise"
+          "one": "Remise",
+          "other": "Réductions"
+        },
+        "discount_order_stacking": {
+          "one": "Remise sur la commande",
+          "other": "Remises Sur la Commande"
         }
       }
     }
