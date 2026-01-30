@@ -887,6 +887,11 @@
         "company_location_no_address_banner": "Les commandes expédiées vers des lieux sans adresse seront soumises à vérification.",
         "none_method_definition": "Pas de livraison",
         "subscription_pickup_information": "Cette méthode de livraison s'appliquera à tous les articles de cette commande et à toutes les commandes futures de cet abonnement."
+      },
+      "customer_account": {
+        "not_user_label": "Ce n'est pas %{first_name} ?",
+        "have_an_account_label": "Vous avez un compte ?",
+        "sign_in_link_label": "Se Connecter"
       }
     }
   }
