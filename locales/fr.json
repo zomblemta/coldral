@@ -1415,7 +1415,10 @@
         "loading_progressive_rates": "Recherche d'autres tarifs…",
         "no_other_methods_available": "Aucune autre méthode disponible",
         "duties_and_taxes_options": {
-          "ddu_title": "Payer À La Livraison"
+          "ddu_title": "Payer À La Livraison",
+          "ddu_caption": "Des frais supplémentaires peuvent s'appliquer",
+          "ddp_title": "Payer maintenant",
+          "ddp_caption": "Pas de frais supplémentaires à la livraison"
         }
       }
     }
