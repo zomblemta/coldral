@@ -1915,7 +1915,10 @@
         "address_address2_blank": "Saisissez un appartement, une suite, etc.",
         "address_address2_too_long": "La deuxième ligne d'adresse est trop longue (maximum 255 caractères)",
         "address_address2_contains_emojis": "Address2 ne peut pas contenir d'émojis",
-        "address_address2_contains_html_tags": "Address2 ne peut pas contenir de balises HTML."
+        "address_address2_contains_html_tags": "Address2 ne peut pas contenir de balises HTML.",
+        "address_address2_contains_mathematical_symbols": "La deuxième ligne d'adresse ne peut pas contenir de symboles mathématiques",
+        "address_city_blank": "Entrez une ville",
+        "address_city_too_long": "La ville est trop longue (maximum : 255 caractères)"
       }
     }
   }
