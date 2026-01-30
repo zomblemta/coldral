@@ -3084,7 +3084,12 @@
       "order_status": {
         "confirmed_title": "Votre commande est confirmée",
         "confirmed_description_pickup": "Vous recevrez un e-mail lorsque votre commande sera prête à être retirée.",
-        "complete_label": "Terminé"
+        "complete_label": "Terminé",
+        "delivered_label": "Livré",
+        "delivered_description_gift_card": {
+          "one": "La carte-cadeau a été envoyée par e-mail.",
+          "other": "Les cartes-cadeaux ont été envoyées par e-mail."
+        }
       }
     }
   }
