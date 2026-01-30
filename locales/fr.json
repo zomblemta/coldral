@@ -965,7 +965,16 @@
           "header": {
             "one": "Aucune livraison disponible pour %{count} article",
             "other": "Aucune livraison disponible pour %{count} articles"
-          }
+          },
+          "message": {
+            "one": "Cet article sera retiré de votre panier car aucune méthode de livraison n'est disponible pour votre adresse.",
+            "other": "Ces articles seront retirés de votre panier car aucun mode de livraison n'est disponible pour votre adresse."
+          },
+          "status_column_header": "Pas de livraison"
+        },
+        "price_update": {
+          "title": "Mise à jour des prix",
+          "description": "Les prix de ces articles ont changé et ont été mis à jour dans votre panier."
         }
       }
     }
