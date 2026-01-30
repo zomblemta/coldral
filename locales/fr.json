@@ -1642,7 +1642,10 @@
           "one": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment.<br><a href=\"%{current_url}\">Actualisez cette page</a> ou réessayez plus tard.",
           "other": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment.<br><a href=\"%{current_url}\">Actualisez cette page</a> ou essayez une autre méthode de paiement."
         },
-        "card_fields_processing_error": "Un problème est survenu lors du traitement du paiement. Essayez d'actualiser cette page ou vérifiez votre connexion Internet."
+        "card_fields_processing_error": "Un problème est survenu lors du traitement du paiement. Essayez d'actualiser cette page ou vérifiez votre connexion Internet.",
+        "technical_error": "Les paiements ne peuvent pas être traités pour le moment en raison d'un problème technique. Réessayez dans quelques minutes.",
+        "no_method_error": "Cette boutique ne peut pas accepter les paiements pour le moment.",
+        "not_configured_error": "Cette boutique ne peut pas accepter de paiements pour le moment."
       }
     }
   }
