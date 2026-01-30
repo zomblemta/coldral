@@ -2988,7 +2988,8 @@
     "enable_javascript": "Pour voir votre compte, activez JavaScript dans les paramètres de votre navigateur ou connectez-vous avec un autre navigateur.",
     "navigation_and_structure": {
       "account_menu": {
-        "show_accessibility_label": "Afficher le Menu du Compte"
+        "show_accessibility_label": "Afficher le Menu du Compte",
+        "nav_accessibility_label": "Navigation du compte"
       }
     }
   }
