@@ -2160,7 +2160,10 @@
       },
       "payment_challenge_modal": {
         "instructions": "Finalisez votre achat en utilisant votre code {{paymentMethod}}.",
-        "timer_message": "Il vous reste {{timeLeft}} pour payer"
+        "timer_message": "Il vous reste {{timeLeft}} pour payer",
+        "copy_text": "Copier le code {{paymentMethod}}",
+        "open_app_text": "Ouvrir l'application {{paymentMethod}}",
+        "header": "Payer avec {{paymentMethod}}"
       }
     }
   }
