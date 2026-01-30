@@ -2152,7 +2152,10 @@
           "long": "Vous recevrez un e-mail dès que votre commande sera traitée. Le volume de commandes est actuellement élevé.",
           "no_auto_refresh_html": "Si vous n’êtes pas redirigé automatiquement, %{link}.",
           "refresh_this_page": "rafraîchir cette page"
-        }
+        },
+        "remote_shops_payments_processing": "Traitement des paiements",
+        "action_required": "Action requise",
+        "modal_notice": "Nous contactons {{paymentMethod}}"
       }
     }
   }
