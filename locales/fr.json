@@ -3293,8 +3293,15 @@
               "other": "Vous avez {{count}} commandes en attente"
             },
             "more_than_pagination_length": "Vous avez plus de {{count}} commandes en attente"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}}+",
+          "pagination": {
+            "nav_accessibility_label": "Boutons de navigation des commandes en cours d'examen"
           }
-        }
+        },
+        "order_list_column_headers_location": "Emplacement",
+        "order_list_column_headers_contact": "Contact",
+        "order_list_column_headers_status": "Statut"
       }
     }
   }
