@@ -1170,7 +1170,10 @@
           "accessibility_label": "%{price} par article",
           "label": "%{price}/pièce"
         },
-        "quantity_label": "Quantité"
+        "quantity_label": "Quantité",
+        "product_change_label": "Changer",
+        "product_image_label": "Image du produit",
+        "product_image_quantity_label": "Quantité"
       }
     }
   }
