@@ -2713,22 +2713,10 @@
         "subtitle": {
           "one": "Cette commande sera expédiée à l'adresse fournie par {{merchant}}.",
           "other": "Cette commande sera expédiée à une adresse fournie par {{merchant}}. Sélectionnez une adresse de livraison."
-        },
-        "use_saved_address": "Utiliser une autre adresse",
-        "return_to_cart": "Retour au panier"
-      },
-      "marketplaces": {
-        "legal_notice": {
-          "legal_text": "Avis",
-          "link_label": "{{partnerDisplayName}} Conditions générales"
         }
       },
-      "online_store_chat": {
-        "title": "Des Questions ? Discutez Avec Nous"
-      },
       "local_pickup": {
-        "location_address_search_label": "Adresse",
-        "location_address_search_placeholder": "%{postal_code_label} ou adresse"
+        "or": "OR"
       }
     }
   }
