@@ -191,7 +191,7 @@
       "price_range_to": "à",
       "price_filter_from": "De",
       "price_filter_to": "A",
-      "price_filter": "{{ min_price }} - {{ max_price }}",
+      "price_filter": "{{ min_price }} à {{ max_price }}",
       "in_stock_only": "En stock uniquement"
     }
   },
