@@ -3449,8 +3449,7 @@
         "replace_payment_method_button": "Remplacer"
       },
       "edit_payment_method": {
-        "title": "Modifier le mode de paiement",
-        "future_purchases_notice": "Cette méthode de paiement sera enregistrée pour de futurs achats."
+        "title": "Modifier le mode de paiement"
       }
     }
   }
