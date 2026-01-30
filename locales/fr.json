@@ -3140,12 +3140,7 @@
       "location": "Emplacement",
       "payment": {
         "status_in_review": "Paiement Dû Après Examen",
-        "status_unpaid": "Paiement dû le {{date}}",
-        "bank_payment_short_details": "{{paymentTypeLabel}} •••• {{lastDigits}}",
-        "payment_type": {
-          "gift_card": "Carte cadeau",
-          "store_credit": "Avoir en magasin"
-        }
+        "status_unpaid": "Paiement dû le {{date}}"
       }
     }
   }
