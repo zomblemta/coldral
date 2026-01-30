@@ -253,11 +253,11 @@
     },
     "login": {
       "title": "Connexion",
-      "instructions": "Entrez votre email et mot de passe pour vous connecter :",
+      "instructions": "Saisissez votre e-mail et votre mot de passe pour vous connecter :",
       "no_account": "Pas de compte ?",
-      "email": "Email",
+      "email": "Courriel",
       "password": "Mot de passe",
-      "submit": "Se connecter",
+      "submit": "Connexion",
       "forgot_password": "Mot de passe oublié ?",
       "sign_up": "S'inscrire"
     },
