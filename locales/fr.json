@@ -2544,7 +2544,11 @@
         }
       },
       "shop_policies": {
-        "privacy_policy": "Politique de confidentialité"
+        "privacy_policy": "Politique de confidentialité",
+        "terms_of_service": "Conditions d'utilisation",
+        "legal_notice": "Mentions légales",
+        "shipping_policy": "Livraison",
+        "subscription_policy": "Annulations"
       }
     }
   }
