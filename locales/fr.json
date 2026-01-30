@@ -2683,20 +2683,7 @@
           "message": "Actualisez cette page ou réessayez dans quelques minutes"
         },
         "embed_errors": {
-          "invalid_cart": "Le panier n'est plus valide",
-          "policy_violation": "Impossible de finaliser la commande en raison de restrictions de configuration des politiques.",
-          "unrecoverable_failure": "Impossible de charger la caisse. Réessayez."
-        }
-      },
-      "notice_banner": {
-        "return_to_cart_link_text": "Retour au Panier",
-        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text} pour mettre à jour les quantités",
-        "subscription_changed": "L'un de vos abonnements a changé.",
-        "company_location_changed": "Votre panier a été mis à jour. Vérifiez votre commande avant de la soumettre.",
-        "company_location_changed_product_removed": "Votre panier a été mis à jour car certains produits ne sont pas disponibles à cet endroit. Vérifiez votre commande avant de la soumettre.",
-        "violations_title": "{{violation}} est manquant ou invalide",
-        "individual_violations_title": {
-          "DeliveryViolations": "Adresse de livraison"
+          "invalid_cart": "Le panier n'est plus valide"
         }
       }
     }
