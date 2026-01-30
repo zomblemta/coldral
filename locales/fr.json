@@ -936,6 +936,12 @@
           "page_title": "Mise à jour de la quantité",
           "title": "Mise à jour de la quantité",
           "description": "Les quantités disponibles pour ces articles ont changé et ont été mises à jour dans votre panier."
+        },
+        "unpurchasable_product": {
+          "title": "Produit Non Disponible à l'Achat",
+          "header": "Certains articles ont été retirés de votre panier",
+          "message": "Ces articles ne sont pas disponibles pour les commandes B2B.",
+          "status_column_header": "Indisponible"
         }
       }
     }
