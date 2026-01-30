@@ -2771,6 +2771,9 @@
             "zone": "Entrez un état / province valide",
             "phone": "Entrez un numéro de téléphone valide",
             "billing_phone": "Entrez un numéro de téléphone de facturation valide"
+          },
+          "missing": {
+            "billing_first_name": "Entrez le prénom de l'adresse de facturation"
           }
         }
       }
