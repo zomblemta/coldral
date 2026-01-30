@@ -1610,9 +1610,12 @@
           "error": {
             "refresh": "Actualiser",
             "close": "fermer",
-            "sandbox_error": "Une Erreur S'est Produite"
+            "sandbox_error": "Une Erreur S'est Produite",
+            "web_component_error": "Un Problème Est Survenu Lors Du Chargement De Cette Page"
           }
-        }
+        },
+        "saved_by_payment_method": "Enregistré par %{payment_method}",
+        "pay_with_payment_method": "Payer avec %{payment_method}"
       }
     }
   }
