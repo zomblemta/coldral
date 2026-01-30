@@ -2914,13 +2914,10 @@
           "unpaid": "Impayé",
           "voided": "Annulé",
           "partially_paid": "Partiellement payé",
-          "partially_refunded": "Partiellement Remboursé",
-          "refunded": "Remboursé",
-          "expired": "Expiré"
+          "partially_refunded": "Partiellement Remboursé"
         },
         "fulfillment_status": {
-          "fulfilled": "Expédié",
-          "complete": "Terminé"
+          "restocked": "Réapprovisionné"
         }
       }
     }
