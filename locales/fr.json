@@ -2296,7 +2296,10 @@
         "thank_you_from_shop": "De %{shop_name}",
         "thank_you_from_other_store": "D'un autre magasin",
         "thank_you_payments_app_failed_pending_payment": "Vous n'avez pas été facturé pour votre commande. Retournez dans votre panier pour vérifier votre commande et payer à nouveau.",
-        "thank_you_payments_app_failed_pending_payment_payment": "Vous n'avez pas été facturé pour votre commande. Revenez à votre panier pour vérifier votre commande et payer à nouveau."
+        "thank_you_payments_app_failed_pending_payment_payment": "Vous n'avez pas été facturé pour votre commande. Revenez à votre panier pour vérifier votre commande et payer à nouveau.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Vous n'avez pas été facturé pour votre commande. Retournez dans votre panier pour vérifier votre commande et payer de nouveau.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande."
       }
     }
   }
