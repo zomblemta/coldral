@@ -913,7 +913,11 @@
       },
       "stock": {
         "page_title": "Problèmes de stock",
-        "title": "rupture de stock"
+        "title": "rupture de stock",
+        "items_unavailable_notice": "Certains articles ne sont plus disponibles.",
+        "product_column_header": "Produits",
+        "price_column_header": "Prix",
+        "status_column_header": "Statut"
       }
     }
   }
