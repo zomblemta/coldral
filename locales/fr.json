@@ -1376,7 +1376,16 @@
               "other": "tous les %{count} jours"
             },
             "week": {
-              "one": "chaque semaine"
+              "one": "chaque semaine",
+              "other": "toutes les %{count} semaines"
+            },
+            "month": {
+              "one": "chaque mois",
+              "other": "tous les %{count} mois"
+            },
+            "year": {
+              "one": "tous les ans",
+              "other": "tous les %{count} ans"
             }
           }
         }
