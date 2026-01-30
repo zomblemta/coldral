@@ -585,7 +585,10 @@
             "origin_location_id_required": "Un identifiant d'emplacement d'origine est requis lorsque la méthode de livraison RETAIL est demandée.",
             "invalid_origin_location_id": "Impossible de trouver un emplacement correspondant à l'identifiant d'emplacement d'origine.",
             "origin_location_id_not_allowed": "Les modes de livraison demandés ne prennent pas en charge un identifiant d'emplacement d'origine.",
-            "auto_fulfill_not_allowed": "Cette session n'est pas autorisée à outrepasser le comportement de traitement des commandes."
+            "auto_fulfill_not_allowed": "Cette session n'est pas autorisée à outrepasser le comportement de traitement des commandes.",
+            "auto_fulfill_required": "L'exécution automatique est requise lorsque la méthode de livraison RETAIL est demandée.",
+            "prefetch_shipping_rates_used": "Les tarifs d'expédition préchargés ne doivent jamais renvoyer de tarifs.",
+            "fulfillment_constraints_not_satisfied": "Une ou plusieurs contraintes d'exécution n'ont pas été satisfaites."
           }
         }
       }
