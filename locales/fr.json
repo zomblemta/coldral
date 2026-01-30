@@ -974,7 +974,15 @@
         },
         "price_update": {
           "title": "Mise à jour des prix",
-          "description": "Les prix de ces articles ont changé et ont été mis à jour dans votre panier."
+          "description": "Les prix de ces articles ont changé et ont été mis à jour dans votre panier.",
+          "updated_price": "Prix mis à jour"
+        },
+        "price_and_quantity_update": {
+          "title": "Mise à jour des prix et des quantités",
+          "description": "Les prix et les quantités disponibles de ces articles ont changé et ont été mis à jour dans votre panier."
+        },
+        "out_of_stock": {
+          "description": "Ces articles ne sont plus disponibles et ont été retirés de votre panier."
         }
       }
     }
