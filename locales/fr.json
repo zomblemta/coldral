@@ -3157,11 +3157,6 @@
           "cash_on_delivery": "Paiement à la livraison (COD) - {{formattedTransactionAmount}}",
           "bank_deposit": "Dépôt bancaire - {{formattedTransactionAmount}}",
           "manual": "Manuel - {{formattedTransactionAmount}}"
-        },
-        "transactions": {
-          "show_all": "Afficher Tout",
-          "show_less": "Afficher moins",
-          "details": "Détails"
         }
       }
     }
