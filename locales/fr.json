@@ -2036,7 +2036,10 @@
         "deferred_payment_not_allowed": "Les paiements différés ne sont pas autorisés. Vérifiez votre commande et réessayez.",
         "deferred_payment_required": "Cette commande nécessite un paiement différé. Vérifiez votre commande et réessayez.",
         "deferred_amount_changed": "Votre paiement n'a pas pu être traité car le montant du paiement différé a changé. Vérifiez votre commande et réessayez.",
-        "deferred_date_changed": "Votre paiement n'a pas pu être traité parce que la date de paiement différé a changé. Vérifiez votre commande et réessayez."
+        "deferred_date_changed": "Votre paiement n'a pas pu être traité parce que la date de paiement différé a changé. Vérifiez votre commande et réessayez.",
+        "order_total_changed": "Le montant total de votre commande a changé. Veuillez vérifier et réessayer.",
+        "payment_processing": "Votre paiement ne peut pas être traité pour des raisons techniques. Réessayez ou utilisez un autre mode de paiement.",
+        "payment_processing_no_retry": "Votre paiement ne peut pas être traité pour des raisons techniques. Essayez un autre mode de paiement."
       }
     }
   }
