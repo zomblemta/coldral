@@ -3110,8 +3110,9 @@
         },
         "delivery_promise": {
           "details_modal": {
-            "delivery_guarantee_label": "Garantie de livraison",
-            "delivery_by_label": "Livraison avant le {{date}}"
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise garantit une livraison rapide et fiable. Réclamez Shop Cash si votre commande arrive en retard."
+            }
           }
         }
       }
