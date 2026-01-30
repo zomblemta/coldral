@@ -1096,7 +1096,10 @@
         "applied_discount_message": "%{amount} de réduction sur le montant total de la commande",
         "discount_has_been_applied": "Remise appliquée",
         "discount_has_been_removed": "La remise a été supprimée",
-        "gift_card_has_been_applied": "La carte-cadeau a été appliquée"
+        "gift_card_has_been_applied": "La carte-cadeau a été appliquée",
+        "gift_card_has_been_removed": "La carte-cadeau a été supprimée",
+        "gift_card_subscriptions_notice": "Les cartes-cadeaux ne s'appliqueront qu'à votre premier paiement",
+        "discount_already_applied": "Une remise a été appliquée à cette commande. Vous ne pouvez pas ajouter une autre remise."
       }
     }
   }
