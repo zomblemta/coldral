@@ -2690,7 +2690,11 @@
         "individual_violations_title": {
           "UnhandledViolations": "Informations de commande"
         },
-        "all_violations_content": "Appelez-nous ou contactez-nous via {{emailLink}} pour mettre à jour ces informations et finaliser votre commande :"
+        "all_violations_content": "Appelez-nous ou contactez-nous via {{emailLink}} pour mettre à jour ces informations et finaliser votre commande :",
+        "all_violations_email_link": "e-mail",
+        "editable_shipping_address_violations_message_title": "Ajoutez ces informations pour finaliser votre commande :",
+        "editable_shipping_address_violations_message_footer": "Pour mettre à jour définitivement l'adresse de cet emplacement, {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "contactez-nous"
       }
     }
   }
