@@ -1280,7 +1280,10 @@
           "other": "Livraisons Récurrentes"
         },
         "subscription_shipping": "Livraison par abonnement",
-        "subscription_local_delivery": "Livraison Locale par Abonnement"
+        "subscription_local_delivery": "Livraison Locale par Abonnement",
+        "subscription_pickup": "Retrait D'Abonnement",
+        "waiting_on_rate_notice": "Obtention des tarifs d'expédition disponibles…",
+        "waiting_on_pickup_location_notice": "Recherche des points de retrait disponibles…"
       }
     }
   }
