@@ -1296,7 +1296,10 @@
         },
         "estimated_delivery_date_range": "de %{minimum} à %{maximum} jours ouvrables",
         "delivery_date_range": "%{min_time}–%{max_time}",
-        "estimated_delivery_time": "Livraison estimée %{time}"
+        "estimated_delivery_time": "Livraison estimée %{time}",
+        "estimated_delivery_time_range": "Livraison estimée %{min_time}–%{max_time}",
+        "delivery_today": "Livraison le jour même %{time}",
+        "delivery_tomorrow": "Livraison le lendemain %{time}"
       }
     }
   }
