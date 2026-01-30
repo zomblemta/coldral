@@ -1999,7 +1999,16 @@
         "split_cart_international_shipping_not_supported": "Tous les articles doivent utiliser le même mode de livraison pour les envois internationaux. Mettez à jour le mode de livraison ou créez plusieurs commandes.",
         "invalid_delivery_address_reference_handle": "La référence de l'adresse de livraison n'a pas pu être associée à aucune adresse de livraison disponible.",
         "must_use_available_delivery_address": "L'adresse de livraison doit être sélectionnée parmi les adresses de livraison disponibles.",
-        "must_use_available_shipping_rate": "Le tarif d'expédition doit être sélectionné parmi les tarifs d'expédition disponibles."
+        "must_use_available_shipping_rate": "Le tarif d'expédition doit être sélectionné parmi les tarifs d'expédition disponibles.",
+        "split_by_delivery_method_not_allowed": "La répartition par méthode de livraison n'est pas autorisée pour cette session ou cette boutique."
+      },
+      "store_credit_errors": {
+        "generic_error": "Un problème est survenu avec votre crédit en magasin. Réessayez ou rechargez la page."
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "La carte-cadeau a déjà été appliquée à votre commande"
+        }
       }
     }
   }
