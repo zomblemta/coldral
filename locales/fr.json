@@ -1146,7 +1146,10 @@
         "total_savings": "Économies Totales",
         "total_label": "Total",
         "total_due_label": "Total dû",
-        "total_paid_label": "Montant Payé"
+        "total_paid_label": "Montant Payé",
+        "total_price_label": "Prix total",
+        "total_outstanding_label": "Montant à payer",
+        "deposit_label": "Dépôt"
       }
     }
   }
