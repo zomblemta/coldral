@@ -3432,6 +3432,9 @@
             "load_more_label": "Afficher plus"
           }
         }
+      },
+      "payment_details": {
+        "billing_title": "Adresse de facturation"
       }
     }
   }
