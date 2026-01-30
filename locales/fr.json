@@ -1590,7 +1590,10 @@
         "card_start_label": "Date d'émission (MM / AA)",
         "card_start_placeholder": "Date d'émission (MM / AA)",
         "card_issue_number_label": "Numéro de l'incident",
-        "card_issue_number_placeholder": "Numéro de ticket"
+        "card_issue_number_placeholder": "Numéro de ticket",
+        "card_change_label": "Modifier",
+        "card_update_label": "Mettre à jour la carte",
+        "paypal_disconnect": "Se déconnecter"
       }
     }
   }
