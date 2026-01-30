@@ -3213,6 +3213,11 @@
       "pagination": {
         "load_more": "Afficher plus"
       }
+    },
+    "addresses": {
+      "add_button_text": "Ajouter",
+      "add_button_accessibility_label": "Ajouter une adresse",
+      "back_button": "Retour"
     }
   }
 }
