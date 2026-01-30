@@ -3568,7 +3568,9 @@
       "saturday": "Samedi",
       "sunday": "Dimanche",
       "fridayAbbreviation": "Fr",
-      "saturdayAbbreviation": "Sa"
+      "saturdayAbbreviation": "Sa",
+      "sundayAbbreviation": "Su",
+      "showNextMonth": "Afficher le mois suivant, {{month}} {{year}}"
     }
   }
 }
