@@ -3608,8 +3608,13 @@
         "move_down": "Déplacer l'extension à la position suivante",
         "move_up": "Déplacer l'extension à la position précédente",
         "remove": "Supprimer l'extension",
-        "move_down_tooltip": "Passer À La Position Suivante"
+        "move_down_tooltip": "Passer À La Position Suivante",
+        "move_up_tooltip": "Aller À La Position Précédente",
+        "remove_tooltip": "Supprimer"
       }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "Ce lien ne peut pas être ouvert dans l’éditeur. Il s’ouvrira dans une nouvelle fenêtre ({{resolved_to_link}}). Cliquez sur OK pour continuer."
     }
   }
 }
