@@ -684,7 +684,10 @@
             "metadata_mismatch": "Le fournisseur et le type de captcha fournis ne correspondent pas aux valeurs attendues.",
             "token_missing": "Un jeton captcha doit être fourni pour finaliser cette commande.",
             "job_enqueue_failed": "Le travail de validation du captcha n'a pas pu être mis en file d'attente.",
-            "job_already_queued": "La validation du captcha a déjà été mise en file d'attente pour ce jeton de captcha."
+            "job_already_queued": "La validation du captcha a déjà été mise en file d'attente pour ce jeton de captcha.",
+            "token_expired": "Le jeton captcha fourni a expiré. Complétez un nouveau captcha pour continuer le paiement.",
+            "token_invalid": "Le jeton captcha fourni est invalide. Veuillez compléter un nouveau captcha pour poursuivre le paiement.",
+            "token_not_valid_for_session": "Le captcha fourni ne peut pas être utilisé pour ce paiement."
           }
         }
       }
