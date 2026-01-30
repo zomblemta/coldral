@@ -837,7 +837,9 @@
         "emirate_placeholder": "Émirat",
         "state_and_territory_label": "État/territoire",
         "state_and_territory_placeholder": "État/territoire",
-        "phone_label": "Téléphone"
+        "phone_label": "Téléphone",
+        "phone_rollup_accessibility_label": "Options de téléphone",
+        "phone_country_code_label": "Indicatif téléphonique du pays"
       }
     }
   }
