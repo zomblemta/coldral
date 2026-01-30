@@ -1543,7 +1543,14 @@
         "amazon_payments_abandoned_mfa_challenge": "Votre paiement n'a pas pu être effectué. Essayez un autre moyen de paiement ou contactez votre banque ou l'émetteur de votre carte.",
         "title": "Paiement",
         "amount_left_to_pay_label": "Paiement Dû :",
-        "discount_button_action_label": "Appliquer le Code Promo"
+        "discount_button_action_label": "Appliquer le Code Promo",
+        "discount_codes_removed_summary": {
+          "one": "%{count} code de réduction a été supprimé",
+          "other": "%{count} codes de réduction ont été supprimés"
+        },
+        "discount_show_more_warnings": {
+          "one": "Afficher %{count} de plus"
+        }
       }
     }
   }
