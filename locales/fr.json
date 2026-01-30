@@ -2171,6 +2171,9 @@
           "instructions": "Confirmez le paiement dans votre application pour finaliser cet achat"
         },
         "close": "Clore le défi"
+      },
+      "failed_payment": {
+        "page_title": "Le paiement n’a pas pu être traité"
       }
     }
   }
