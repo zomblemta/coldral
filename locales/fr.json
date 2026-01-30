@@ -3503,6 +3503,10 @@
         "billing_address": {
           "title": "Adresse de facturation",
           "add_billing_address_button": "Ajouter un nouveau"
+        },
+        "updating_contracts": {
+          "one": "Mise à jour de {{count}} contrats d'abonnement...",
+          "other": "Mise à jour de {{count}} contrats d’abonnement..."
         }
       }
     }
