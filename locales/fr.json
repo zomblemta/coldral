@@ -723,7 +723,9 @@
         "remove_tag": "Supprimer la balise",
         "dates": {
           "weekdays": {
-            "monday": "Lundi"
+            "monday": "Lundi",
+            "thursday": "Jeudi",
+            "friday": "Vendredi"
           }
         }
       }
