@@ -2515,14 +2515,13 @@
         "gift_card_resend_failure": {
           "one": "Un problème est survenu lors de la réexpédition de votre carte-cadeau. Réessayez ou contactez-nous.",
           "other": "Un problème est survenu lors du renvoi de vos cartes-cadeaux. Réessayez ou contactez-nous."
-        },
-        "verify_shop_account_message": "Vos informations ont été enregistrées avec Shop, vérifiez votre compte pour les utiliser automatiquement sur des millions de boutiques.",
-        "verify_shop_account_cta": "Vérifiez votre compte",
-        "verify_shop_account_confirmation": "Détails de paiement enregistrés",
-        "announcement": {
-          "close": "Fermer",
-          "expand": "Développer"
         }
+      },
+      "vaulted": {
+        "change_button": "Modifier"
+      },
+      "review": {
+        "title": "Avis"
       }
     }
   }
