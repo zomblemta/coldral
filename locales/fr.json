@@ -3186,7 +3186,8 @@
       "show_items": "Afficher les articles",
       "show_order_summary": "Afficher Le Récapitulatif De La Commande",
       "subtitle": "Confirmed {{date}}",
-      "subtotal": "Sous-total"
+      "subtotal": "Sous-total",
+      "summary_totals_title_accessibility_label": "Totaux de la commande"
     }
   }
 }
