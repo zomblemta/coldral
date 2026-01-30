@@ -2952,7 +2952,10 @@
     "page_titles": {
       "search_results": {
         "one": "Recherche : %{count} résultat trouvé pour \"%{terms}\""
-      }
+      },
+      "collections": "Collections",
+      "not_found": "404 Introuvable",
+      "challenge": "Défi"
     }
   }
 }
