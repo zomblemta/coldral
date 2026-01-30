@@ -1404,9 +1404,12 @@
             "other": "Premières %{count} commandes gratuites"
           },
           "free_for_first_n_order": {
-            "one": "Pour la première commande"
+            "one": "Pour la première commande",
+            "other": "Pour les %{count} premières commandes"
           }
-        }
+        },
+        "one_time_purchase_shipping": "Livraison Unique",
+        "duties_and_taxes_title": "Droits et taxes"
       }
     }
   }
