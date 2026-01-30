@@ -2422,7 +2422,12 @@
         "let_us_know": "Faites-nous savoir",
         "login_title": "Connectez-vous Pour Voir Tous Les Détails De La Commande",
         "login_description": "Vous pouvez trouver votre numéro de commande sur le reçu que vous avez reçu par e-mail.",
-        "login_description_phone": "Vous pouvez trouver votre numéro de commande sur le reçu que vous avez reçu par SMS."
+        "login_description_phone": "Vous pouvez trouver votre numéro de commande sur le reçu que vous avez reçu par SMS.",
+        "login_not_customer_html": "Ce n'est pas %{name} ? Vous pouvez %{link}",
+        "login_reorder_link_text": {
+          "one": "achetez aussi ce produit",
+          "other": "achetez aussi ces produits"
+        }
       }
     }
   }
