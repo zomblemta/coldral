@@ -696,7 +696,10 @@
             "revoked": "Cette page de paiement n'est plus disponible."
           }
         },
-        "full_price": "Prix plein :"
+        "full_price": "Prix plein :",
+        "title": "Paiement - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - Paiement",
+        "loading": "Chargement…"
       }
     }
   }
