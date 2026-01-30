@@ -2753,7 +2753,15 @@
         "shipping_line_label": "Livraison",
         "connect_shipping_methods": "{{method1}} et {{method2}}",
         "payment_in_progress_title": "Paiement en cours",
-        "redirection_notice": "Vous serez redirigé vers {{walletName}} pour compléter votre achat"
+        "redirection_notice": "Vous serez redirigé vers {{walletName}} pour compléter votre achat",
+        "errors": {
+          "unavailable": {
+            "unavailable_for_country": "{{walletName}} n'est pas disponible dans {{countryName}}. Sélectionnez un autre moyen de paiement pour finaliser votre achat"
+          },
+          "unavailable_terminal": {
+            "instructions": "{{walletName}} n'est pas disponible pour votre commande pour le moment. Pour continuer votre achat, choisissez une autre méthode de paiement."
+          }
+        }
       }
     }
   }
