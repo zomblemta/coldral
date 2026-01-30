@@ -1028,9 +1028,14 @@
             "other": "Aucune livraison disponible pour %{count} articles"
           },
           "message": {
-            "one": "Cet article sera retiré de votre panier car il n'existe aucune méthode de livraison disponible pour votre adresse."
-          }
+            "one": "Cet article sera retiré de votre panier car il n'existe aucune méthode de livraison disponible pour votre adresse.",
+            "other": "Ces articles seront retirés de votre panier car aucune méthode de livraison n'est disponible pour votre adresse."
+          },
+          "label": "Pas de livraison"
         }
+      },
+      "order_summary": {
+        "title": "Récapitulatif de la commande"
       }
     }
   }
