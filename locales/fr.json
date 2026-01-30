@@ -3046,6 +3046,13 @@
           "location": {
             "ascending": "Emplacement (A-Z)",
             "descending": "Emplacement (Z-A)"
+          },
+          "order_number": {
+            "ascending": "Numéro de commande (du plus petit au plus grand)",
+            "descending": "Numéro de commande (du plus élevé au plus bas)"
+          },
+          "order_total": {
+            "ascending": "Total de la Commande (du Plus Bas au Plus Élevé)"
           }
         }
       }
