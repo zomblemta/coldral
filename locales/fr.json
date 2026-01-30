@@ -3184,7 +3184,9 @@
         "pickup_point": "Point de retrait"
       },
       "show_items": "Afficher les articles",
-      "show_order_summary": "Afficher Le Récapitulatif De La Commande"
+      "show_order_summary": "Afficher Le Récapitulatif De La Commande",
+      "subtitle": "Confirmed {{date}}",
+      "subtotal": "Sous-total"
     }
   }
 }
