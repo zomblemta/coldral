@@ -3157,11 +3157,10 @@
           "cash_on_delivery": "Paiement à la livraison (COD) - {{formattedTransactionAmount}}",
           "bank_deposit": "Dépôt bancaire - {{formattedTransactionAmount}}",
           "manual": "Manuel - {{formattedTransactionAmount}}"
-        },
-        "emv_details": {
-          "aid": "AIDE:",
-          "source": "SOURCE:"
         }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "description": "Gardez le contrôle de votre échéancier de paiements grâce aux rappels dans l'application Shop."
       }
     }
   }
