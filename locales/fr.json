@@ -2299,7 +2299,10 @@
         "thank_you_payments_app_failed_pending_payment_payment": "Vous n'avez pas été facturé pour votre commande. Revenez à votre panier pour vérifier votre commande et payer à nouveau.",
         "thank_you_payments_app_failed_pending_payment_pick_up": "Vous n'avez pas été facturé pour votre commande. Retournez dans votre panier pour vérifier votre commande et payer de nouveau.",
         "thank_you_payments_app_pending_payment_description_default_with_missing": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
-        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande."
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Vous recevrez sous peu un e-mail de confirmation contenant votre numéro de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande."
       }
     }
   }
