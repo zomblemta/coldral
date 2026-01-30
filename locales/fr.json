@@ -2697,7 +2697,8 @@
         "editable_shipping_address_violations_email_link": "contactez-nous",
         "shipping_address_incomplete_title": "L'adresse de livraison est incomplète",
         "calculating_shipping": "L'expédition est toujours en cours de calcul. Réessayez dans quelques secondes. Vous n'avez pas été facturé.",
-        "calculating_taxes": "Les taxes sont toujours en cours de calcul. Réessayez dans quelques secondes. Vous n'avez pas été facturé."
+        "calculating_taxes": "Les taxes sont toujours en cours de calcul. Réessayez dans quelques secondes. Vous n'avez pas été facturé.",
+        "payment_method_not_available_with_payment_terms": "Le mode de paiement que vous avez sélectionné n'est plus disponible car le paiement de cette commande se fait désormais selon les conditions de paiement {{paymentTerms}}."
       }
     }
   }
