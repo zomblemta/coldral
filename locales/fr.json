@@ -2760,6 +2760,10 @@
           },
           "unavailable_terminal": {
             "instructions": "{{walletName}} n'est pas disponible pour votre commande pour le moment. Pour continuer votre achat, choisissez une autre méthode de paiement."
+          },
+          "detour": {
+            "stock_problems": "Certains articles ne sont plus disponibles. Fermez {{walletName}} et réessayez.",
+            "price_change": "Certains prix d'articles ont changé. Fermez {{walletName}} pour consulter votre commande et réessayez."
           }
         }
       }
