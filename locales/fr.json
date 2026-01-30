@@ -110,8 +110,8 @@
       "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Frais De Livraison Calculés</a> à la caisse",
       "size_chart": "Guide des tailles",
       "available_colors_count": {
-        "one": "{{ count }} couleur",
-        "other": "{{ count }} couleurs"
+        "one": "{{ count }} couleur disponible",
+        "other": "{{ count }} couleurs disponibles"
       }
     },
     "gallery": {
