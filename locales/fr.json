@@ -3134,7 +3134,10 @@
       "billing_address": "Adresse De Facturation",
       "card_ending_with": "se terminant par {{lastDigits}}",
       "contact": "Contact",
-      "contact_information": "Coordonnées"
+      "contact_information": "Coordonnées",
+      "loading": "Chargement Des Détails De La Commande",
+      "loading_finished_accessibility_message": "Les détails de la commande ont été chargés",
+      "location": "Emplacement"
     }
   }
 }
