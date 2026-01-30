@@ -2835,6 +2835,11 @@
     "attributes": {
       "email": "e-mail",
       "password": "mot de passe"
+    },
+    "addresses": {
+      "pincode": "Code PIN",
+      "prefecture": "Préfecture",
+      "province": "Province"
     }
   }
 }
