@@ -2362,7 +2362,10 @@
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Une fois votre paiement effectué, vous recevrez un SMS de confirmation. Suivez votre commande via l'application Shop.",
         "order_status_payments_app_failed_pending_payment": "Vous n'avez pas été facturé pour votre commande. Retournez dans votre panier pour la vérifier et la payer à nouveau.",
         "order_status_payments_app_failed_pending_payment_payment": "Vous n'avez pas été facturé pour votre commande. Retournez dans votre panier pour vérifier votre commande et payer à nouveau.",
-        "order_status_payments_app_failed_pending_payment_pick_up": "Votre commande n'a pas été facturée. Retournez dans votre panier pour revoir votre commande et la payer à nouveau."
+        "order_status_payments_app_failed_pending_payment_pick_up": "Votre commande n'a pas été facturée. Retournez dans votre panier pour revoir votre commande et la payer à nouveau.",
+        "order_status_confirmed_order_local": "Nous préparons votre commande pour la livraison.",
+        "order_status_confirmed_order_local_pick_up": "Nous préparons votre commande.",
+        "order_status_confirmed_order_local_payment": "Nous préparons votre commande."
       }
     }
   }
