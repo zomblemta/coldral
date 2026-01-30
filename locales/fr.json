@@ -3399,7 +3399,10 @@
     },
     "payment_methods": {
       "replacement_payment_method_title": "Méthode De Paiement De Remplacement",
-      "back_button": "Retour"
+      "back_button": "Retour",
+      "expires_soon": "Cette carte expire bientôt",
+      "expired": "Cette carte a expiré",
+      "expired_badge_label": "Expiré"
     }
   }
 }
