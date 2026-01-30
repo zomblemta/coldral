@@ -245,11 +245,11 @@
       "title": "Votre compte",
       "primary_address": "Adresse principale",
       "manage_addresses": "Gérer",
-      "tagline": "Accédez à vos commandes et configurez votre compte.",
+      "tagline": "Consultez toutes vos commandes et gérez les informations de votre compte.",
       "orders": "Commandes",
-      "logout": "Déconnexion",
-      "no_orders": "Vous n'avez effectué aucune commande.",
-      "continue_shopping": "Explorer nos produits"
+      "logout": "Se déconnecter",
+      "no_orders": "Vous n'avez pas encore passé de commande.",
+      "continue_shopping": "Continuer vos achats"
     },
     "login": {
       "title": "Connexion",
