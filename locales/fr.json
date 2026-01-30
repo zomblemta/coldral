@@ -1904,7 +1904,9 @@
         "address_last_name_blank": "Entrez un nom de famille",
         "address_last_name_too_long": "Le nom de famille est trop long (maximum 255 caractères)",
         "address_last_name_contains_emojis": "Le nom de famille ne peut pas contenir d'émojis",
-        "address_last_name_contains_html_tags": "Le nom de famille ne peut pas contenir de balises HTML."
+        "address_last_name_contains_html_tags": "Le nom de famille ne peut pas contenir de balises HTML.",
+        "address_last_name_contains_url": "Le Nom De Famille Ne Peut Pas Contenir Une URL",
+        "address_last_name_contains_mathematical_symbols": "Le nom de famille ne peut pas contenir de symboles mathématiques"
       }
     }
   }
