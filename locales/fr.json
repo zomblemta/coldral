@@ -2683,8 +2683,13 @@
           "message": "Actualisez cette page ou réessayez dans quelques minutes"
         },
         "embed_errors": {
-          "invalid_cart": "Le panier n'est plus valide"
+          "invalid_cart": "Le panier n'est plus valide",
+          "policy_violation": "Impossible de finaliser la commande en raison de restrictions de configuration des politiques.",
+          "unrecoverable_failure": "Impossible de charger la caisse. Réessayez."
         }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Retour au Panier"
       }
     }
   }
