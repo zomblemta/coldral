@@ -2948,13 +2948,6 @@
         "add_articles": "Restreindre la recherche aux articles ayant également le tag %{tag}",
         "add_products": "Restreindre la sélection aux produits correspondant à l'étiquette %{tag}"
       }
-    },
-    "email_marketing": {
-      "open_tracking": {
-        "updated_policy": {
-          "visibility": "Nous avons mis à jour notre politique et suivons désormais l'ouverture des e-mails. Les taux d'ouverture des e-mails seront communiqués de manière anonyme. Nous verrons seulement si vous avez ouvert un e-mail dans le cadre du taux d'ouverture global."
-        }
-      }
     }
   }
 }
