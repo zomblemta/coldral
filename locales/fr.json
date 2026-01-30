@@ -1961,7 +1961,10 @@
         "delivery_zone_not_found": "La zone spécifiée n'a pas été trouvée dans le pays spécifié.",
         "reduction_code_code_not_found": "Entrez un code de réduction ou une carte-cadeau valide",
         "reduction_code_discount_not_found": "Saisissez un code de réduction valide",
-        "reduction_code_gift_card_code_invalid": "Entrez une carte-cadeau valide"
+        "reduction_code_gift_card_code_invalid": "Entrez une carte-cadeau valide",
+        "reduction_code_gift_card_unusable": "Vous ne pouvez pas utiliser une carte-cadeau pour en acheter une autre",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "Les cartes-cadeaux ne sont pas prises en charge avec les options d'achat différé.",
+        "shipping_line_phone_blank": "Saisissez un numéro de téléphone pour utiliser ce mode de livraison"
       }
     }
   }
