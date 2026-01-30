@@ -3105,7 +3105,14 @@
             "claimed_shop_cash_description": "Parce que cette commande est arrivée en retard, vous avez réclamé {{amount}} Shop Cash.",
             "eligible_to_claim_shop_cash_description": "Parce que votre commande est arrivée en retard, vous pouvez réclamer {{amount}} de Shop Cash.",
             "learn_more_button_label": "savoir plus",
-            "claim_shop_cash_button_label": "Réclamer Le Crédit Du Magasin"
+            "claim_shop_cash_button_label": "Réclamer Le Crédit Du Magasin",
+            "view_balance_in_shop_button_label": "Voir Le Solde Dans La Boutique",
+            "scan_to_claim_shop_cash_label": "Scannez pour réclamer {{amount}} Shop Cash"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "Livraison Assurée Par"
           }
         }
       }
