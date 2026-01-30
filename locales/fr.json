@@ -3187,7 +3187,11 @@
       "show_order_summary": "Afficher Le Récapitulatif De La Commande",
       "subtitle": "Confirmed {{date}}",
       "subtotal": "Sous-total",
-      "summary_totals_title_accessibility_label": "Totaux de la commande"
+      "summary_totals_title_accessibility_label": "Totaux de la commande",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Téléchargez Shop pour suivre le colis",
+        "track_order_with_shop": "Suivre La Commande Avec Shop"
+      }
     }
   }
 }
