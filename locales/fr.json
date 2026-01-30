@@ -822,7 +822,11 @@
         "country_code": "Code Pays/Région",
         "province_label": "Province",
         "province_placeholder": "Province",
-        "county_label": "Comté"
+        "county_label": "Comté",
+        "county_placeholder": "Comté",
+        "state_label": "État",
+        "state_placeholder": "État",
+        "region_label": "Région"
       }
     }
   }
