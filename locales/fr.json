@@ -2356,7 +2356,9 @@
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Après avoir effectué votre paiement, vous recevrez un e-mail de confirmation. Suivez votre commande via l'application Shop.",
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_email": "Après avoir effectué votre paiement, vous recevrez un e-mail de confirmation. Suivez votre commande via l'application Shop.",
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Après avoir effectué votre paiement, vous recevrez un e-mail de confirmation. Suivez votre commande dans l'application Shop.",
-        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Après avoir effectué votre paiement, vous recevrez un e-mail de confirmation. Suivez votre commande via l'application Shop."
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Après avoir effectué votre paiement, vous recevrez un e-mail de confirmation. Suivez votre commande via l'application Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone": "Une fois votre paiement effectué, vous recevrez un SMS de confirmation. Suivez votre commande via l’application Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Après avoir effectué votre paiement, vous recevrez un message de confirmation. Suivez votre commande via l'application Shop."
       }
     }
   }
