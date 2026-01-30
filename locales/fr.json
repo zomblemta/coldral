@@ -863,6 +863,11 @@
         "change_company_location_link_label": "Changer l'emplacement de l'entreprise",
         "change_location_link_label": "Modifier l'emplacement",
         "ship_to_company": "Expédier à {{companyName}}"
+      },
+      "delivery_options": {
+        "free_total_label": "Gratuit",
+        "ship": "Expédier",
+        "ship_to_address": "Adresse de Livraison"
       }
     }
   }
