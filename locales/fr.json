@@ -1503,7 +1503,10 @@
           "tax_credential_cl": "RUT",
           "shipping_credential_cl": "RUT",
           "tax_credential_co": "N° d'identification/TVA",
-          "tax_credential_type_co": "Type de pièce d'identité"
+          "tax_credential_type_co": "Type de pièce d'identité",
+          "shipping_credential_co": "N° d'identité/TVA",
+          "shipping_credential_type_co": "Type de pièce d'identité",
+          "tax_credential_cr": "Numéro d'identification/RUT"
         }
       }
     }
