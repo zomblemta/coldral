@@ -1307,7 +1307,11 @@
         "estimated_time": "Estimé %{time}",
         "estimated_time_range": "Estimé %{min_time}–%{max_time}",
         "default_description": "Expédié sous 1 jour ouvrable",
-        "unbranded_default_description": "Prêt à être expédié"
+        "unbranded_default_description": "Prêt à être expédié",
+        "unbranded_description_same_day": "Expédié le même jour ouvrable",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "Expédié le jour ouvrable suivant"
+        }
       }
     }
   }
