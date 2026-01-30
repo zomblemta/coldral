@@ -1928,7 +1928,9 @@
         "address_province_invalid": "Sélectionnez Un État / Province Valide",
         "address_company_blank": "Entrez un nom d'entreprise",
         "address_company_too_long": "Le nom de l'entreprise est trop long (maximum : 255 caractères)",
-        "address_company_contains_emojis": "La société ne peut pas contenir d'émojis"
+        "address_company_contains_emojis": "La société ne peut pas contenir d'émojis",
+        "address_company_contains_html_tags": "La société ne peut pas contenir de balises HTML.",
+        "address_company_contains_mathematical_symbols": "La société ne peut pas contenir de symboles mathématiques"
       }
     }
   }
