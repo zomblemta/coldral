@@ -2828,6 +2828,13 @@
           }
         }
       }
+    },
+    "feed": {
+      "more": "Plus"
+    },
+    "attributes": {
+      "email": "e-mail",
+      "password": "mot de passe"
     }
   }
 }
