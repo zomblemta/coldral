@@ -580,7 +580,10 @@
             "destination_address_required": "Une adresse de livraison est requise pour continuer.",
             "pickup_points_unavailable": "Les points de retrait sont actuellement indisponibles.",
             "local_pickup_delivery_line_detail_changed": "La stratégie actuelle de livraison par retrait local doit être modifiée pour pouvoir continuer.",
-            "selected_pickup_option_no_longer_available": "L'option de retrait précédemment sélectionnée n'est plus disponible."
+            "selected_pickup_option_no_longer_available": "L'option de retrait précédemment sélectionnée n'est plus disponible.",
+            "local_pickup_no_delivery_strategy_available": "Aucune stratégie de livraison pour retrait local trouvée.",
+            "origin_location_id_required": "Un identifiant d'emplacement d'origine est requis lorsque la méthode de livraison RETAIL est demandée.",
+            "invalid_origin_location_id": "Impossible de trouver un emplacement correspondant à l'identifiant d'emplacement d'origine."
           }
         }
       }
