@@ -612,7 +612,10 @@
             "tax_exemption_not_supported": "Les exonérations fiscales ne sont pas prises en charge pour la session de négociation en cours.",
             "delivery_tax_exemption_not_supported": "Les exonérations fiscales pour les lignes de livraison ne sont pas actuellement prises en charge.",
             "proposed_allocations_required": "Champ 'proposed allocations' manquant.",
-            "merchandise_terms_must_be_defined": "Les conditions concernant les marchandises doivent être définies."
+            "merchandise_terms_must_be_defined": "Les conditions concernant les marchandises doivent être définies.",
+            "delivery_terms_must_be_defined": "Les conditions de livraison doivent être définies.",
+            "merchandise_discount_terms_must_be_defined": "Les conditions de remise sur la marchandise doivent être définies.",
+            "delivery_discount_terms_must_be_defined": "Les conditions de réduction de livraison doivent être définies."
           }
         }
       }
