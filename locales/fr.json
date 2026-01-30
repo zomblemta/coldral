@@ -1812,7 +1812,11 @@
           "apply_another_gift_card_label": "Appliquer Une Autre Carte-Cadeau",
           "gift_card_label": "Carte-cadeau %{identifier}",
           "payment_tag": "Carte-cadeau",
-          "add_label": "Ajouter Une Carte-Cadeau"
+          "add_label": "Ajouter Une Carte-Cadeau",
+          "manage_label": "Gérer les cartes-cadeaux"
+        },
+        "gift_card_store_credit": {
+          "add_label": "Ajouter une carte-cadeau ou un crédit en magasin"
         }
       }
     }
