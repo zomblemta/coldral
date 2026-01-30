@@ -2774,8 +2774,7 @@
           },
           "missing": {
             "billing_first_name": "Entrez le prénom de l'adresse de facturation",
-            "city": "Entrez une ville",
-            "province": "Sélectionnez un État / province"
+            "city": "Entrez une ville"
           }
         }
       }
