@@ -2068,7 +2068,10 @@
         "call_issuer": "Votre carte a été refusée. Utilisez un autre moyen de paiement ou contactez votre banque pour en savoir plus.",
         "test_mode_live_card": "Cette boutique ne peut pas accepter de commandes réelles ni de paiements réels.",
         "test_mode_enabled_only_test_cards": "Le mode test est activé, seules des cartes de crédit de test peuvent être ajoutées.",
-        "transient_error": "Un problème est survenu lors du traitement de votre paiement. Essayez de rafraîchir cette page ou vérifiez votre connexion Internet."
+        "transient_error": "Un problème est survenu lors du traitement de votre paiement. Essayez de rafraîchir cette page ou vérifiez votre connexion Internet.",
+        "missing_shipping_address": "Votre paiement n'a pas pu être traité parce que votre adresse de livraison est manquante. Ajoutez une adresse de livraison et réessayez.",
+        "invalid_shipping_address": "Nous n'avons pas pu traiter votre paiement car nous n'avons pas pu trouver votre adresse de livraison. Vérifiez votre adresse de livraison et réessayez.",
+        "successful_offsite_with_gift_card_error": "Un problème est survenu lors du traitement de votre paiement par carte-cadeau. Réessayez ou utilisez un autre mode de paiement."
       }
     }
   }
