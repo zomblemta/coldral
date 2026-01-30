@@ -16,7 +16,7 @@
       "pagination": "Navigation de pagination",
       "go_to_page": "Aller à la page {{ index }}",
       "go_to_item": "Aller à l'élément {{ index }}",
-      "item_nth_of_count": "Elément {{ index }} de {{ count }}",
+      "item_nth_of_count": "Item {{ index }} of {{ count }}",
       "drag": "Tirer",
       "close": "Fermer",
       "next": "Suivant",
