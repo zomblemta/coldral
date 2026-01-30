@@ -120,22 +120,22 @@
       "error": "L'image ne peut pas etre chargée"
     },
     "price": {
-      "regular_price": "Prix régulier",
+      "regular_price": "Prix normal",
       "sale_price": "Prix de vente",
-      "from_price_html": "From {{ price_min }}"
+      "from_price_html": "A partir de {{ price_min }}"
     },
     "quantity": {
       "label": "Quantité",
-      "change_quantity": "Modifier la quantité",
+      "change_quantity": "Changer la quantité",
       "increase_quantity": "Augmenter la quantité",
       "decrease_quantity": "Diminuer la quantité",
       "minimum_of": "Minimum de {{ min }}",
       "maximum_of": "Maximum de {{ max }}",
       "increment_of": "Incrément de {{ step }}",
-      "cannot_add_more": "Vous ne pouvez pas en ajouter davantage"
+      "cannot_add_more": "Impossible d'en ajouter plus"
     },
     "volume_pricing": {
-      "title": "Prix dégressifs",
+      "title": "Tarification basée sur le volume",
       "minimum": "{{ quantity }} ou plus",
       "price_at_each": "à {{ price }}/pièce"
     },
