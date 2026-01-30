@@ -2523,7 +2523,8 @@
       "review": {
         "title": "Avis",
         "review_title": "Complétez Votre Commande",
-        "review_and_confirm_title": "Vérifier et confirmer"
+        "review_and_confirm_title": "Vérifier et confirmer",
+        "checkout_a_different_way": "Découvrez une autre façon"
       }
     }
   }
