@@ -2392,7 +2392,10 @@
         "in_transit_description_today": "Vous devriez recevoir votre commande aujourd'hui.",
         "in_transit_description_tomorrow": "Vous devriez recevoir votre commande le lendemain.",
         "no_tracking_number": "Il n'y a pas de numéro de suivi pour cette commande.",
-        "out_for_delivery": "Cours De Livraison"
+        "out_for_delivery": "Cours De Livraison",
+        "out_for_delivery_title": "Votre commande est en cours de livraison",
+        "out_for_delivery_description_html": "Votre commande est en cours de livraison et devrait arriver aujourd'hui. Si elle n'est pas livrée dans les 2 prochains jours, %{contact_us}.",
+        "out_for_delivery_local_title": "Votre commande est en cours de livraison"
       }
     }
   }
