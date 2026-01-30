@@ -3015,6 +3015,15 @@
           "previous_accessibility_label": "Commandes précédentes",
           "load_more": "Afficher plus",
           "load_more_accessibility_label": "Charger Plus De Commandes"
+        },
+        "order_status_message": {
+          "list_view": {
+            "estimated_delivery": "Expected {{date}}",
+            "last_updated": "Dernière Mise À Jour {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Livraison estimée {{date}}"
+          }
         }
       }
     }
