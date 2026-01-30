@@ -1807,7 +1807,9 @@
         "order_edit_banner_multiple_items_return_line_item_removed": "Retiré {{amount}} du retour",
         "order_edit_banner_updated_order_label": "Commande mise à jour",
         "gift_card_wrapper": {
-          "heading": "Carte-cadeau"
+          "heading": "Carte-cadeau",
+          "apply_gift_card_label": "Appliquer une carte-cadeau",
+          "apply_another_gift_card_label": "Appliquer Une Autre Carte-Cadeau"
         }
       }
     }
