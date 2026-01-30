@@ -2022,7 +2022,12 @@
         "empty_stable_id": "L'instruction de marchandisage %{position} %{name} contient un ID stable vide.",
         "invalid_stable_id_target": "L'instruction de marchandise %{position} %{name} fait référence à l'ID stable %{stable_id}, mais cet ID stable n'est pas présent dans les lignes de marchandise.",
         "duplicate_variant_id": "L'instruction de merchandising %{position} %{name} contient un identifiant de variante dupliqué %{variant_id}.",
-        "invalid_variant_id_target": "L'instruction de marchandisage %{name} référence l'ID de variante %{variant_id}, mais cette variante n'est pas dans les lignes de marchandisage."
+        "invalid_variant_id_target": "L'instruction de marchandisage %{name} référence l'ID de variante %{variant_id}, mais cette variante n'est pas dans les lignes de marchandisage.",
+        "invalid_price_override_target": "L'instruction de remplacement de prix pour la ligne de commande %{stable_id} est invalide car il s'agit d'un composant d'un lot."
+      },
+      "payment_errors": {
+        "amount_too_small": "Le montant minimum de paiement doit être supérieur à $0.50 USD. Réessayez avec un montant plus élevé.",
+        "method_not_available": "Le mode de paiement demandé n'est pas disponible. Choisissez un autre mode de paiement et réessayez."
       }
     }
   }
