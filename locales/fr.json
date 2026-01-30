@@ -2786,6 +2786,12 @@
           },
           "select_different_shipping_address_to_resolve_errors": "Votre adresse de livraison est invalide. Sélectionnez une adresse différente ou utilisez-en une nouvelle."
         }
+      },
+      "note": {
+        "length_exceeds_maximum": "Réduisez la taille de la note à 5000 caractères ou moins."
+      },
+      "offsite_payment_failed": {
+        "title": "Le paiement hors site a échoué"
       }
     }
   }
