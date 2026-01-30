@@ -1833,7 +1833,10 @@
           "label": "Numéro de PO (facultatif)"
         },
         "alternative_payment_currency_total_notice": "Remarque : vous serez facturé %{amount_due}.",
-        "alternative_payment_currency_total_manual_payment_notice": "Remarque : le total converti est %{amount_due}."
+        "alternative_payment_currency_total_manual_payment_notice": "Remarque : le total converti est %{amount_due}.",
+        "waiting_on_taxes_message": "Si le calcul des taxes n'est pas effectué dans les prochaines secondes, actualisez la page.",
+        "waiting_on_taxes_notice": "Calcul des taxes",
+        "payment_method": "Mode de paiement"
       }
     }
   }
