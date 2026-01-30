@@ -1514,7 +1514,10 @@
           "shipping_credential_gt": "NIF/TVA",
           "tax_credential_id": "NPWP",
           "shipping_credential_id": "NPWP",
-          "tax_credential_my": "N° D'Identification Fiscale/Numéro D'Enregistrement"
+          "tax_credential_my": "N° D'Identification Fiscale/Numéro D'Enregistrement",
+          "shipping_credential_my": "N° d'identification fiscale/Numéro d'enregistrement",
+          "shipping_credential_mx": "RFC",
+          "tax_credential_mx": "RFC"
         }
       }
     }
