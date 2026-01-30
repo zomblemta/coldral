@@ -3301,7 +3301,8 @@
         },
         "order_list_column_headers_location": "Emplacement",
         "order_list_column_headers_contact": "Contact",
-        "order_list_column_headers_status": "Statut"
+        "order_list_column_headers_status": "Statut",
+        "removed_company_contact_tooltip": "Retiré de l'entreprise"
       }
     }
   }
