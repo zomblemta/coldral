@@ -1953,7 +1953,9 @@
         "credit_card_month_invalid": "Entrez un mois d'expiration valide",
         "credit_card_year_invalid": "Entrez une année d'expiration valide",
         "credit_card_start_invalid": "``Entrez Une Date De Début De Validité De La Carte``",
-        "credit_card_start_month_invalid": "Saisissez un mois de début de carte valide"
+        "credit_card_start_month_invalid": "Saisissez un mois de début de carte valide",
+        "credit_card_start_year_invalid": "Entrez Une Année De Début De Validité De La Carte",
+        "credit_card_number_blank": "Entrez Un Numéro De Carte"
       }
     }
   }
