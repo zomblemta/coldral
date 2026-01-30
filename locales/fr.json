@@ -770,7 +770,13 @@
           },
           "narrow": {
             "wordConnector": "{{previousWords}}, {{anotherWord}}",
-            "lastWordConnector": "{{previousWords}}, {{lastWord}}"
+            "lastWordConnector": "{{previousWords}}, {{lastWord}}",
+            "twoWordConnector": "{{firstWord}}, {{secondWord}}"
+          }
+        },
+        "map": {
+          "cluster_title": {
+            "one": "Groupe de {{number}} marqueurs"
           }
         }
       }
