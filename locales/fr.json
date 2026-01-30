@@ -3582,7 +3582,12 @@
       "removeTag": "Supprimer le tag",
       "month": {
         "other": "mois"
-      }
+      },
+      "mapClusterTitle": {
+        "one": "Groupe de {{number}} marqueurs",
+        "other": "Groupe de {{number}} marqueurs"
+      },
+      "expandSheet": "Développer"
     }
   }
 }
