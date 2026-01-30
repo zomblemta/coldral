@@ -1843,7 +1843,14 @@
         "payment_method_incompatible_with_payment_terms": "Le mode de paiement est incompatible avec les conditions de paiement.",
         "proposed_gateway_unavailable": "La passerelle de paiement proposée est indisponible",
         "pay_in_installments_split_pay_short": "4 paiements de %{amount}",
-        "gift_cards_unavailable": "Votre carte-cadeau ne peut plus être appliquée à cette commande et a été retirée."
+        "gift_cards_unavailable": "Votre carte-cadeau ne peut plus être appliquée à cette commande et a été retirée.",
+        "payment_flexibility_terms_id_mismatch": "Incompatibilité de l'ID des Conditions de Flexibilité de Paiement",
+        "payment_option": {
+          "accessibility_label": "Choisissez Une Option De Paiement"
+        },
+        "bank_account_type": {
+          "checking": "Vérification"
+        }
       }
     }
   }
