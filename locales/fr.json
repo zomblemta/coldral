@@ -1372,7 +1372,11 @@
           },
           "subscription_delivery_frequency": {
             "day": {
-              "one": "chaque jour"
+              "one": "chaque jour",
+              "other": "tous les %{count} jours"
+            },
+            "week": {
+              "one": "chaque semaine"
             }
           }
         }
