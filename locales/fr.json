@@ -1988,7 +1988,9 @@
         "physical_gift_card_duplicate_code": "La ligne d'article de carte-cadeau physique contient un code en double.",
         "physical_gift_card_invalid_code": "Le code de la carte-cadeau physique est invalide.",
         "email_blank": "Saisissez une adresse e-mail",
-        "phone_blank": "Entrez Un Numéro De Téléphone"
+        "phone_blank": "Entrez Un Numéro De Téléphone",
+        "address_country_invalid": "Sélectionnez un pays ou une région dans la liste",
+        "address_zip_invalid": "Entrez un code postal valide"
       }
     }
   }
