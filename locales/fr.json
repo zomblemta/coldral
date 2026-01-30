@@ -2807,7 +2807,10 @@
           "status": {
             "invalid_format": {
               "it": "Les numéros de TVA italiens contiennent IT et 11 caractères",
-              "lv": "Les numéros de TVA lettons contiennent LV et 11 caractères"
+              "lv": "Les numéros de TVA lettons contiennent LV et 11 caractères",
+              "lt": "Les numéros de TVA de Lituanie contiennent LT et 9-12 caractères",
+              "lu": "Les numéros de TVA du Luxembourg commencent par LU et comportent 8 caractères",
+              "mt": "Les numéros de TVA de Malte contiennent MT et 8 caractères"
             }
           }
         }
