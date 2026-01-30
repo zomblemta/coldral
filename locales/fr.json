@@ -2436,7 +2436,11 @@
         "customer_validation_error_phone": "Entrez un numéro de téléphone ou de commande valide.",
         "login": "Se connecter",
         "unfulfilled_items_title": "Préparation à l'expédition",
-        "unfulfilled_items_description": "Nous préparons actuellement ces articles pour l'expédition."
+        "unfulfilled_items_description": "Nous préparons actuellement ces articles pour l'expédition.",
+        "marker": {
+          "current": "Lieu Actuel de l'Envoi",
+          "shipping": "Adresse de livraison"
+        }
       }
     }
   }
