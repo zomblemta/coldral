@@ -2856,7 +2856,10 @@
       "discount_limit_reached": "Cette remise a atteint sa limite d'utilisation",
       "discount_not_found": "Impossible de trouver une remise valide correspondant au code saisi",
       "customer_already_used_once_per_customer_discount_notice": "Cette remise a atteint sa limite d'utilisation",
-      "gift_card_already_applied": "Le code a déjà été appliqué à votre commande"
+      "gift_card_already_applied": "Le code a déjà été appliqué à votre commande",
+      "gift_card_code_invalid": "Le code est invalide",
+      "gift_card_currency_mismatch": "Votre carte-cadeau est en %{gift_card_currency}. Contactez-nous pour qu'elle soit réémise en %{checkout_currency}.",
+      "gift_card_depleted": "Il n'y a plus de solde sur cette carte-cadeau"
     }
   }
 }
