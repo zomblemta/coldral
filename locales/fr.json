@@ -1460,7 +1460,9 @@
           "incomplete_address_selected": "Sélectionnez une adresse de livraison complète pour afficher les modes de livraison disponibles"
         },
         "local_pickup": {
-          "search_address": "Rechercher une adresse"
+          "search_address": "Rechercher une adresse",
+          "rollup_title": "Lieu de retrait",
+          "rollup_accessibility_label": "Options de lieu de retrait"
         }
       }
     }
