@@ -2737,6 +2737,12 @@
       },
       "b2b_errors": {
         "lost_permissions_title": "Pas d'autorisations de localisation"
+      },
+      "shop_pay_external": {
+        "errors": {
+          "checkout_has_expired": "Votre session de paiement a expiré. Fermez cette fenêtre et réessayez de finaliser votre commande depuis {{shopName}}."
+        },
+        "return_to_store": "Retour à {{shopName}}"
       }
     }
   }
