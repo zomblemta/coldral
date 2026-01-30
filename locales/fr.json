@@ -2218,7 +2218,9 @@
         "print_link_label": "Imprimer le reçu",
         "payment_information_title": "Informations de paiement",
         "shipping_information_title": "Informations de livraison",
-        "page_title": "Merci, %{display_name} !"
+        "page_title": "Merci, %{display_name} !",
+        "page_title_no_name": "Merci !",
+        "purchase_order_number_title": "Numéro de bon de commande #%{purchase_order_number}"
       }
     }
   }
