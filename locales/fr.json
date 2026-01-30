@@ -2042,7 +2042,9 @@
         "payment_processing_no_retry": "Votre paiement ne peut pas être traité pour des raisons techniques. Essayez un autre mode de paiement.",
         "paypal_zero_amount": "Vous ne pouvez pas utiliser PayPal pour les commandes de %{amount}. Confirmez que votre commande est correcte et validez-la sans PayPal.",
         "paypal_invalid_token": "PayPal n'était pas disponible. Réessayez ou utilisez une autre option de paiement.",
-        "pay_later_failed": "Une erreur est survenue lors du traitement de votre paiement avec Pay later. Choisissez un autre mode de paiement et réessayez."
+        "pay_later_failed": "Une erreur est survenue lors du traitement de votre paiement avec Pay later. Choisissez un autre mode de paiement et réessayez.",
+        "three_d_secure_failed": "Votre paiement n'a pas pu être vérifié. Réessayez ou utilisez un autre moyen de paiement.",
+        "three_d_secure_failed_duplicate": "L'authentification 3D Secure de la carte de crédit a échoué parce qu'une autre est déjà en cours."
       }
     }
   }
