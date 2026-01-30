@@ -3270,12 +3270,17 @@
         },
         "tax_exemptions_modal_button_accessibility_label": "Voir Toutes Les Exonérations Fiscales"
       },
+      "location_selection": {
+        "clear_search": "Effacer la recherche",
+        "try_new_search": "Essayez Une Nouvelle Recherche"
+      },
       "addresses": {
-        "add_shipping_address_section_accessibility_label": "Ajouter Une Adresse De Livraison",
-        "billing_address_card_title": "Adresse de facturation",
-        "cancel_adding_billing_address_accessibility_label": "Annuler l'ajout de l'adresse de facturation",
-        "cancel_adding_shipping_address_accessibility_label": "Annuler L'Ajout De L'Adresse De Livraison",
-        "save_new_billing_address_accessibility_label": "Enregistrer l'adresse de facturation"
+        "add_billing_address_button": "Ajouter une adresse de facturation"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Masquer tout"
+        }
       }
     }
   }
