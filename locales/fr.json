@@ -1574,7 +1574,11 @@
         "card_expiry_label": "Date d'expiration (MM / YY)",
         "card_expiry_placeholder": "Date d'expiration (MM / AA)",
         "credit_card_start_month": "Mois de début",
-        "credit_card_start_year": "Année de début"
+        "credit_card_start_year": "Année de début",
+        "delete_customer_mandate_modal_title": "Supprimer cette carte de paiement ?",
+        "delete_customer_mandate_modal_body": "Si vous supprimez cette carte, vous devrez la rajouter avant de pouvoir l'utiliser pour les paiements.",
+        "delete_customer_mandate_modal_confirm": "Supprimer la carte",
+        "card_verification_value_label": "Code de sécurité"
       }
     }
   }
