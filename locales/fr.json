@@ -2869,10 +2869,15 @@
       "product_not_available": "le produit n'est pas publié pour ce client.",
       "shop_404": {
         "title": "Créez Un Site E-commerce Et Vendez En Ligne ! Logiciel E-commerce Par Shopify",
-        "ctas": {
-          "sell_in_person": {
-            "header": "Vendre en personne"
-          }
+        "heros": {
+          "no_storefront": "Cette boutique n'a pas encore de site web."
+        },
+        "links": {
+          "explore_other_stores": "Explorer D'autres Boutiques",
+          "start_free_trial": "Commencer un essai gratuit"
+        },
+        "owner_ctas": {
+          "add_storefront": "Vous pouvez configurer votre site en ajoutant le canal Boutique en ligne dans votre %{admin_link}. Si vous rencontrez des difficultés pour accéder à votre boutique, essayez la page %{forgot_your_store_link}."
         }
       }
     }
