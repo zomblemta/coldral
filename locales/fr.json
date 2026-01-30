@@ -2489,8 +2489,11 @@
         "order_updates_subscribe_to_email_notifications_failed": "Nous ne pouvons pas enregistrer cet e-mail pour les mises à jour. Réessayez ou utilisez une autre adresse e-mail.",
         "order_updates_subscribe_to_email_notifications_email_already_exists": "L'adresse e-mail que vous avez saisie existe déjà.",
         "subscriptions_management": {
-          "title": "Abonnement"
-        }
+          "title": "Abonnement",
+          "description": "Accédez à votre compte pour consulter et gérer vos abonnements.",
+          "button_label": "Gérer Votre Abonnement"
+        },
+        "manage_order_label": "Gérer Votre Commande"
       }
     }
   }
