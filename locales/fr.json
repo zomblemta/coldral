@@ -3241,7 +3241,13 @@
       "pagination": {
         "load_more": "Charger Plus",
         "load_more_accessibility_label": "Afficher plus d'adresses"
-      }
+      },
+      "save_new_address_accessibility_label": "Enregistrer l'adresse",
+      "title": "Adresses",
+      "billing_address_dropdown_placeholder": "Adresse de facturation"
+    },
+    "address_form": {
+      "attention": "Attention"
     }
   }
 }
