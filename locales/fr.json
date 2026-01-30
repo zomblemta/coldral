@@ -2223,7 +2223,10 @@
         "purchase_order_number_title": "Numéro de bon de commande #%{purchase_order_number}",
         "cancelled_page_title": "Commande annulée",
         "failed_pending_payment_page_title": "Il y a un problème avec votre paiement",
-        "customer_information_title": "Détails de la commande"
+        "customer_information_title": "Détails de la commande",
+        "contact_information_title": "Informations de contact",
+        "billing_address_title": "Adresse De Facturation",
+        "shipping_address_title": "Adresse de livraison"
       }
     }
   }
