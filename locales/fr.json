@@ -2493,7 +2493,11 @@
           "description": "Accédez à votre compte pour consulter et gérer vos abonnements.",
           "button_label": "Gérer Votre Abonnement"
         },
-        "manage_order_label": "Gérer Votre Commande"
+        "manage_order_label": "Gérer Votre Commande",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Vous recevrez un SMS contenant votre carte cadeau dans quelques minutes.",
+          "other": "Vous recevrez un message contenant vos cartes-cadeaux dans quelques minutes."
+        }
       }
     }
   }
