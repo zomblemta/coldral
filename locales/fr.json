@@ -3006,7 +3006,10 @@
     "orders": {
       "order_list": {
         "delivered": "Delivered {{date}}",
-        "no_filtered_results_description": "Supprimez Ou Ajustez Les Filtres Pour Voir Vos Commandes"
+        "no_filtered_results_description": "Supprimez Ou Ajustez Les Filtres Pour Voir Vos Commandes",
+        "no_filtered_results_title": "Aucun résultat filtré",
+        "order_number": "Order {{name}}",
+        "orders_title": "Confirmé"
       }
     }
   }
