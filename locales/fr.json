@@ -3418,7 +3418,10 @@
           "events": {
             "adjustment": "Ajustement",
             "order_payment": "Paiement De La Commande",
-            "order_refund": "Remboursement De La Commande"
+            "order_refund": "Remboursement De La Commande",
+            "payment_failure": "Échec Du Paiement",
+            "payment_returned": "Paiement retourné",
+            "order_cancellation": "Annulation de commande"
           }
         }
       }
