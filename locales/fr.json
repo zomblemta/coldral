@@ -3112,6 +3112,10 @@
           "promise_line": {
             "not_delivered_by_label": "Non livré avant le {{date}}",
             "modal_accessibility_button_label": "Détails De La Promesse De Livraison"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "Récupérez Votre Shop Cash",
+            "no_shop_app_label": "{{appDownloadLink}} pour réclamer Shop Cash"
           }
         }
       }
