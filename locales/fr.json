@@ -631,7 +631,10 @@
             "credit_card_update_failed": "La mise à jour de la carte de crédit a échoué.",
             "invalid_address_type": "Le type d'adresse fourni n'est pas valide pour ce mode de paiement.",
             "missing_retail_attributions": "Les attributions liées au commerce de détail sont requises pour les paiements par carte de crédit saisis manuellement.",
-            "unexpected_retail_attributions": "Des attributions de vente au détail ont été fournies de manière inattendue pour le paiement par carte de crédit."
+            "unexpected_retail_attributions": "Des attributions de vente au détail ont été fournies de manière inattendue pour le paiement par carte de crédit.",
+            "invalid_card_source": "Cette session n'a pas la permission d'utiliser cette source de carte.",
+            "wallet_content_missing": "Le contenu du portefeuille est manquant.",
+            "payment_instrument_not_found": "Méthode de paiement introuvable"
           }
         }
       }
