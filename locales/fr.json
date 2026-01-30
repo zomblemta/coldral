@@ -3559,7 +3559,10 @@
       "august": "Août",
       "september": "Septembre",
       "october": "Octobre",
-      "december": "Décembre"
+      "december": "Décembre",
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi"
     }
   }
 }
