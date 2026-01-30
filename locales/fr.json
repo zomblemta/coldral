@@ -1103,7 +1103,10 @@
         "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> : ce code de réduction n'est pas valide pour les articles de votre panier",
         "discount_requires_customer_notice": "Saisissez vos informations de livraison pour appliquer le code de réduction <strong style=\"text-transform:uppercase\">%{code}</strong>",
         "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ce code de réduction n'est pas disponible pour vous en ce moment",
-        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> le code promo nécessite un client éligible"
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> le code promo nécessite un client éligible",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> le code de réduction n'est pas disponible pour votre adresse de livraison",
+        "customer_already_used_once_per_customer_discount_notice": "Le code promo <strong style=\"text-transform:uppercase\">%{code}</strong> a déjà été utilisé",
+        "subtotal_label": "Sous-total"
       }
     }
   }
