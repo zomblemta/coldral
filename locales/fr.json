@@ -2055,7 +2055,10 @@
         "decision_rule_block": "Un problème est survenu lors du traitement de votre paiement. Contactez le propriétaire de la boutique.",
         "pick_up_card": "Votre carte a été refusée. Réessayez ou utilisez un autre moyen de paiement.",
         "cannot_verify": "Nous n'avons pas pu vérifier vos informations de paiement. Vérifiez les coordonnées de votre carte et réessayez.",
-        "invalid_number": "Entrez un numéro de carte valide"
+        "invalid_number": "Entrez un numéro de carte valide",
+        "invalid_expiry_date": "Entrez une date d'expiration valide",
+        "invalid_cvc": "Entrez un code de sécurité valide",
+        "expired_card": "Votre carte a expiré. Utilisez un autre moyen de paiement."
       }
     }
   }
