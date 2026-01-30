@@ -2742,7 +2742,13 @@
         "errors": {
           "checkout_has_expired": "Votre session de paiement a expiré. Fermez cette fenêtre et réessayez de finaliser votre commande depuis {{shopName}}."
         },
-        "return_to_store": "Retour à {{shopName}}"
+        "return_to_store": "Retour à {{shopName}}",
+        "return_to_store_simple": "Retour au magasin"
+      },
+      "wallets": {
+        "return_to_store": "Retour au Magasin",
+        "return_to_checkout": "Retour au paiement",
+        "redirect_hint": "Il vous sera demandé de vous connecter avec {{walletName}}."
       }
     }
   }
