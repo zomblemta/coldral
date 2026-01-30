@@ -2473,7 +2473,12 @@
           }
         },
         "view_business_customer_account": "Voir le compte",
-        "breadcrumbs_submitted": "Soumis"
+        "breadcrumbs_submitted": "Soumis",
+        "breadcrumbs_in_review": "cours d'examen",
+        "breadcrumbs_confirmed": "Confirmé",
+        "missing_shipping_address_banner": {
+          "title": "La commande n’a pas d’adresse de livraison"
+        }
       }
     }
   }
