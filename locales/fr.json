@@ -1891,6 +1891,10 @@
         "credit_card_expires_on_notice": "Expire le %{month}/%{year}",
         "manual_payment_gateway_label": "Manuel",
         "billing_address_title": "Adresse De Facturation"
+      },
+      "field_errors": {
+        "email_or_phone_blank": "Entrez une adresse e-mail ou un numéro de téléphone",
+        "email_or_phone_invalid": "Saisissez une adresse e-mail valide ou un numéro de téléphone mobile"
       }
     }
   }
