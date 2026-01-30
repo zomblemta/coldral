@@ -280,11 +280,11 @@
       "password": "Mot de passe",
       "accepts_marketing": "Inscrivez-vous à notre newsletter",
       "submit": "Créer un compte",
-      "login": "Se connecter"
+      "login": "Connexion"
     },
     "activate_account": {
-      "title": "Activation",
-      "instructions": "Entrez un mot de passe pour créer votre compte :",
+      "title": "Activer le compte",
+      "instructions": "Saisissez un mot de passe pour créer votre compte :",
       "password": "Mot de passe",
       "password_confirmation": "Mot de passe (confirmation)",
       "submit": "Activer",
