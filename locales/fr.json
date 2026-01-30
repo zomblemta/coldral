@@ -3230,7 +3230,9 @@
         "title_accessibility_label": "Adresse par défaut : {{address}}"
       },
       "delete_button_accessibility_label": "Delete {{address}}",
-      "delete_confirmation_button_accessibility_label": "Delete {{address}}"
+      "delete_confirmation_button_accessibility_label": "Delete {{address}}",
+      "edit_button": "Modifier",
+      "edit_section_accessibility_label": "Edit {{address}}"
     }
   }
 }
