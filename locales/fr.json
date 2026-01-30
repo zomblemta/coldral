@@ -2290,8 +2290,11 @@
           "other": "Vous n'avez pas été facturé pour ces articles"
         },
         "thank_you_item_label": {
-          "one": "%{count} article"
-        }
+          "one": "%{count} article",
+          "other": "%{count} articles"
+        },
+        "thank_you_from_shop": "De %{shop_name}",
+        "thank_you_from_other_store": "D'un autre magasin"
       }
     }
   }
