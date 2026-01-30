@@ -2726,8 +2726,11 @@
           "description": "Sélectionnez un emplacement ou %{ship_to_address_link}"
         },
         "selected_pickup_option_no_longer_available": {
-          "title": "Votre emplacement précédemment sélectionné n'est plus disponible"
-        }
+          "title": "Votre emplacement précédemment sélectionné n'est plus disponible",
+          "description": "Sélectionnez un nouvel emplacement ou %{ship_to_address_link}",
+          "ship_to_address_link": "adresse de livraison"
+        },
+        "could_not_resolve_address": "Votre adresse n'a pas pu être localisée. Réessayez ou utilisez une autre adresse"
       }
     }
   }
