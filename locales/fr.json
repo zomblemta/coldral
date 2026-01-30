@@ -3232,7 +3232,11 @@
       "delete_button_accessibility_label": "Delete {{address}}",
       "delete_confirmation_button_accessibility_label": "Delete {{address}}",
       "edit_button": "Modifier",
-      "edit_section_accessibility_label": "Edit {{address}}"
+      "edit_section_accessibility_label": "Edit {{address}}",
+      "edit_modal_title": {
+        "default": "Modifier l'adresse",
+        "billing": "Modifier l'adresse de facturation"
+      }
     }
   }
 }
