@@ -2951,12 +2951,8 @@
     },
     "email_marketing": {
       "open_tracking": {
-        "no_longer_track": {
-          "privacy_policy": "Après l'envoi de cet e-mail, nous avons mis à jour notre politique de confidentialité et nous ne suivons plus les ouvertures."
-        },
-        "track": {
-          "status_html": "<b>Le suivi d'ouverture des e-mails est signalé.</b>",
-          "visibility": "Nous verrons seulement si vous avez ouvert l'e-mail, dans le cadre du taux d'ouverture total des e-mails."
+        "updated_policy": {
+          "visibility": "Nous avons mis à jour notre politique et suivons désormais l'ouverture des e-mails. Les taux d'ouverture des e-mails seront communiqués de manière anonyme. Nous verrons seulement si vous avez ouvert un e-mail dans le cadre du taux d'ouverture global."
         }
       }
     }
