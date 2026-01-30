@@ -765,7 +765,12 @@
           },
           "or": {
             "wordConnector": "{{previousWords}}, {{anotherWord}}",
-            "lastWordConnector": "{{previousWords}}, ou {{lastWord}}"
+            "lastWordConnector": "{{previousWords}}, ou {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} ou {{secondWord}}"
+          },
+          "narrow": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}}, {{lastWord}}"
           }
         }
       }
