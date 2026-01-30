@@ -588,7 +588,10 @@
             "auto_fulfill_not_allowed": "Cette session n'est pas autorisée à outrepasser le comportement de traitement des commandes.",
             "auto_fulfill_required": "L'exécution automatique est requise lorsque la méthode de livraison RETAIL est demandée.",
             "prefetch_shipping_rates_used": "Les tarifs d'expédition préchargés ne doivent jamais renvoyer de tarifs.",
-            "fulfillment_constraints_not_satisfied": "Une ou plusieurs contraintes d'exécution n'ont pas été satisfaites."
+            "fulfillment_constraints_not_satisfied": "Une ou plusieurs contraintes d'exécution n'ont pas été satisfaites.",
+            "must_fulfill_from_constraint_not_satisfied": "Les contraintes d'exécution ne sont pas satisfaites car les articles ne peuvent pas être expédiés depuis les emplacements requis.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Les contraintes de traitement des commandes ne sont pas respectées car les articles ne peuvent pas être expédiés depuis le même emplacement.",
+            "delivery_strategy_conditions_not_satisfied": "Des stratégies de livraison sont disponibles pour cet emplacement, mais leurs conditions ne sont pas remplies."
           }
         }
       }
