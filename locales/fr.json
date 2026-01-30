@@ -2636,6 +2636,10 @@
             "other": ", puis %{count} paiements de %{total_price} chacun"
           }
         }
+      },
+      "customer_payment_methods": {
+        "page_title": "Modes de paiement",
+        "title": "Méthodes de paiement"
       }
     }
   }
