@@ -2410,7 +2410,10 @@
         "choose_payment_method_later": "Choisir le mode de paiement plus tard",
         "picked_up_title": "Votre commande a été récupérée",
         "picked_up_description_html": "Votre commande a été récupérée à %{location_name} le %{date}.",
-        "contact_us": "Contactez-nous"
+        "contact_us": "Contactez-nous",
+        "contact_us_lowercase": "contactez-nous",
+        "contact_us_html": "Besoin d'aide ? %{contact_us}",
+        "updated_time": "Mis à jour il y a %{time_ago}"
       }
     }
   }
