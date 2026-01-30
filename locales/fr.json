@@ -215,8 +215,8 @@
       "name": "Nom",
       "email": "Courriel",
       "message": "Message",
-      "submit": "Envoyer",
-      "comment_sent": "Votre commentaire a été envoyé. Notre blog étant modéré, celui-ci ne sera pas visible immédiatement.",
+      "submit": "Soumettre",
+      "comment_sent": "Votre commentaire a été envoyé. Nous le publierons d'ici peu, car notre blog est modéré.",
       "comment_published": "Votre commentaire a été publié.",
       "count": {
         "zero": "{{ count }} commentaire",
