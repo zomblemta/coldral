@@ -2381,7 +2381,9 @@
         "ready_for_delivery_description": "Nous avons préparé votre commande.",
         "order_updates_title": "Mises À Jour De La Commande",
         "shop_phone_description": "Vous recevrez un SMS contenant un lien vers l'application Shop pour vous aider à suivre votre commande.",
-        "order_updates_description_html": "Des mises à jour seront envoyées à %{customer_contact}"
+        "order_updates_description_html": "Des mises à jour seront envoyées à %{customer_contact}",
+        "order_updates_current_step_prefix": "Étape actuelle: ",
+        "order_updates_past_step_prefix": "Étape précédente : "
       }
     }
   }
