@@ -1267,7 +1267,12 @@
       },
       "shipping": {
         "delivery_title": "Livraison",
-        "shipping_method_title": "Mode d'expédition"
+        "shipping_method_title": "Mode d'expédition",
+        "shipping_method_rollup_accessibility_label": "Options de Mode d'Expédition",
+        "shipping_method_one_time_purchase_group_title": "Achat unique",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Première Expédition"
+        }
       }
     }
   }
