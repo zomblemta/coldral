@@ -3416,7 +3416,9 @@
           "date_label": "Date",
           "event_label": "Événement",
           "events": {
-            "adjustment": "Ajustement"
+            "adjustment": "Ajustement",
+            "order_payment": "Paiement De La Commande",
+            "order_refund": "Remboursement De La Commande"
           }
         }
       }
