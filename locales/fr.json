@@ -3240,9 +3240,7 @@
     },
     "address_form": {
       "cancel": "Annuler",
-      "cancel_accessibility_label": "Annuler la modification de l'adresse {{address}}",
-      "creation_success_notification": "Adresse ajoutée",
-      "default_address": "Ceci est mon adresse par défaut"
+      "default_address_update_success_notification": "Adresse Par Défaut Mise À Jour"
     }
   }
 }
