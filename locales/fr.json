@@ -1867,7 +1867,11 @@
       },
       "billing": {
         "billing_address_title": "Facturer à",
-        "billing_address_rollup_accessibility_label": "Options De Facturation"
+        "billing_address_rollup_accessibility_label": "Options De Facturation",
+        "same_as_shipping": "Identique à l'adresse de livraison",
+        "add_address": "Utiliser une autre adresse",
+        "edit": "Modifier",
+        "delete": "Supprimer"
       }
     }
   }
