@@ -3226,8 +3226,11 @@
       "cancel_deletion_button": "Annuler",
       "cancel_deletion_button_accessibility_label": "Annuler la suppression de {{address}}",
       "default_address": {
-        "title": "Adresse par défaut"
-      }
+        "title": "Adresse par défaut",
+        "title_accessibility_label": "Adresse par défaut : {{address}}"
+      },
+      "delete_button_accessibility_label": "Delete {{address}}",
+      "delete_confirmation_button_accessibility_label": "Delete {{address}}"
     }
   }
 }
