@@ -856,7 +856,9 @@
         "optional_pincode_label": "Code PIN (optionnel)",
         "pincode_placeholder": "code PIN",
         "civic_number_warning": "Ajoutez un numéro de maison si vous en avez un",
-        "optional_last_name_label": "Nom de famille (facultatif)"
+        "optional_last_name_label": "Nom de famille (facultatif)",
+        "company_contact_info": "{{companyName}} · {{contact}}",
+        "different_shipping_address_label": "Livrer à une autre adresse"
       }
     }
   }
