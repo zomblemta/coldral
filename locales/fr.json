@@ -2463,7 +2463,17 @@
         "qr_code": {
           "send_link_to_phone": "Ou envoyez un lien vers votre téléphone",
           "title": "Suivez sur votre téléphone"
-        }
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Scannez avec votre téléphone"
+          },
+          "sms": {
+            "title": "Ou envoyez un lien vers votre téléphone"
+          }
+        },
+        "view_business_customer_account": "Voir le compte",
+        "breadcrumbs_submitted": "Soumis"
       }
     }
   }
