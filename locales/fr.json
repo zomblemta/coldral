@@ -2694,7 +2694,10 @@
         "all_violations_email_link": "e-mail",
         "editable_shipping_address_violations_message_title": "Ajoutez ces informations pour finaliser votre commande :",
         "editable_shipping_address_violations_message_footer": "Pour mettre à jour définitivement l'adresse de cet emplacement, {{emailLink}}.",
-        "editable_shipping_address_violations_email_link": "contactez-nous"
+        "editable_shipping_address_violations_email_link": "contactez-nous",
+        "shipping_address_incomplete_title": "L'adresse de livraison est incomplète",
+        "calculating_shipping": "L'expédition est toujours en cours de calcul. Réessayez dans quelques secondes. Vous n'avez pas été facturé.",
+        "calculating_taxes": "Les taxes sont toujours en cours de calcul. Réessayez dans quelques secondes. Vous n'avez pas été facturé."
       }
     }
   }
