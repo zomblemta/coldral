@@ -3217,7 +3217,9 @@
     "addresses": {
       "add_button_text": "Ajouter",
       "add_button_accessibility_label": "Ajouter une adresse",
-      "back_button": "Retour"
+      "back_button": "Retour",
+      "back_button_accessibility_label": "Retour à la modification de l'adresse {{address}}",
+      "add_address_banner": "Ajouter des adresses à utiliser lors du paiement"
     }
   }
 }
