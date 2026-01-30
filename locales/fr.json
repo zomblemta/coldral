@@ -1487,7 +1487,14 @@
         "split_shipping_option_lowest_price": "Prix le plus bas",
         "split_shipping_option_fastest": "Le plus rapide",
         "split_shipping_option_recommended": "Recommandé",
-        "split_shipping_option_custom": "Personnalisé"
+        "split_shipping_option_custom": "Personnalisé",
+        "add_shipping_address": "Ajouter Une Adresse De Livraison",
+        "choose_new_address": "Choisissez Une Nouvelle Adresse"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Informations complémentaires"
+        }
       }
     }
   }
