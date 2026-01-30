@@ -902,7 +902,13 @@
           "one": "Vous avez {{count}} adresse enregistrée.",
           "other": "Vous avez {{count}} adresses enregistrées."
         },
-        "saved_address_option_link": "Utiliser une adresse enregistrée"
+        "saved_address_option_link": "Utiliser une adresse enregistrée",
+        "saved_address_modal_title": "Utiliser mon adresse enregistrée"
+      },
+      "remote_merchandise_only": {
+        "title": "Finalisez votre achat",
+        "remote_only_notice": "Ces articles sont vendus et expédiés par d'autres magasins. Passez à la caisse auprès de chaque magasin pour finaliser votre achat.",
+        "return_to_store_label": "Retour à la boutique"
       }
     }
   }
