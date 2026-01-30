@@ -2871,6 +2871,10 @@
         "title": "Créez Un Site E-commerce Et Vendez En Ligne ! Logiciel E-commerce Par Shopify",
         "heros": {
           "no_storefront": "Cette boutique n'a pas encore de site web."
+        },
+        "links": {
+          "explore_other_stores": "Explorer D'autres Boutiques",
+          "start_free_trial": "Commencer un essai gratuit"
         }
       }
     }
