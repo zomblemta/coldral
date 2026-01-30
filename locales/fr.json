@@ -1912,7 +1912,10 @@
         "address_address1_contains_emojis": "Address1 ne peut pas contenir d'émojis",
         "address_address1_contains_html_tags": "Address1 ne peut pas contenir de balises HTML.",
         "address_address1_contains_mathematical_symbols": "La première ligne d'adresse ne peut pas contenir de symboles mathématiques",
-        "address_address2_blank": "Saisissez un appartement, une suite, etc."
+        "address_address2_blank": "Saisissez un appartement, une suite, etc.",
+        "address_address2_too_long": "La deuxième ligne d'adresse est trop longue (maximum 255 caractères)",
+        "address_address2_contains_emojis": "Address2 ne peut pas contenir d'émojis",
+        "address_address2_contains_html_tags": "Address2 ne peut pas contenir de balises HTML."
       }
     }
   }
