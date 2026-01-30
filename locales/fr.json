@@ -2685,6 +2685,12 @@
         "embed_errors": {
           "invalid_cart": "Le panier n'est plus valide"
         }
+      },
+      "notice_banner": {
+        "individual_violations_title": {
+          "UnhandledViolations": "Informations de commande"
+        },
+        "all_violations_content": "Appelez-nous ou contactez-nous via {{emailLink}} pour mettre à jour ces informations et finaliser votre commande :"
       }
     }
   }
