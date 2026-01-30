@@ -2370,7 +2370,10 @@
         "order_status_updates_with_phone": "Vous pouvez recevoir des notifications d'expédition et de livraison par SMS.",
         "order_status_updates_with_email_and_phone": "Vous recevrez des mises à jour sur l'expédition et la livraison par e-mail.",
         "order_status_updates_with_missing": "Choisissez comment vous souhaitez recevoir les mises à jour d'expédition.",
-        "order_status_confirmed_with_installments_payment_return": "Reportez votre attention sur le conseiller de vente."
+        "order_status_confirmed_with_installments_payment_return": "Reportez votre attention sur le conseiller de vente.",
+        "order_status_confirmed_with_installments_payment_confirm": "Vous recevrez bientôt un e-mail de confirmation contenant votre numéro de commande et les détails de votre échéancier de paiement.",
+        "confirmed_title": "Votre commande est confirmée",
+        "confirmed_description": "Nous avons accepté votre commande et nous la préparons. Revenez sur cette page pour des mises à jour sur le statut de votre envoi."
       }
     }
   }
