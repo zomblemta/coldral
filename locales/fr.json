@@ -2909,7 +2909,10 @@
         "not_available": "Cette commande n'est pas disponible",
         "financial_status": {
           "authorized": "Autorisé",
-          "pending": "attente"
+          "pending": "attente",
+          "paid": "Payé",
+          "unpaid": "Impayé",
+          "voided": "Annulé"
         }
       }
     }
