@@ -1463,7 +1463,10 @@
           "search_address": "Rechercher une adresse",
           "rollup_title": "Lieu de retrait",
           "rollup_accessibility_label": "Options de lieu de retrait"
-        }
+        },
+        "missing_shipping_address": "Adresse de livraison manquante",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} articles",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} de plus"
       }
     }
   }
