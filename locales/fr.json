@@ -2013,7 +2013,9 @@
           "not_available": "Cette carte-cadeau n'est plus disponible",
           "invalid": "Entrez une carte-cadeau valide",
           "currency_mismatch": "Seules les cartes-cadeaux en %{shop_currency} sont acceptées",
-          "generic": "La carte-cadeau n'a pas pu être ajoutée au paiement"
+          "generic": "La carte-cadeau n'a pas pu être ajoutée au paiement",
+          "throttle_limit_exceeded": "Vous avez dépassé le nombre maximal de tentatives. Réessayez plus tard.",
+          "no_longer_available": "Cette carte-cadeau ne peut plus être utilisée pour ce paiement"
         }
       }
     }
