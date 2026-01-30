@@ -1304,7 +1304,10 @@
         "delivery": "Livraison %{time}",
         "arrives_time": "Arrive à %{time}",
         "arrives_time_range": "Arrive entre %{min_time} et %{max_time}",
-        "estimated_time": "Estimé %{time}"
+        "estimated_time": "Estimé %{time}",
+        "estimated_time_range": "Estimé %{min_time}–%{max_time}",
+        "default_description": "Expédié sous 1 jour ouvrable",
+        "unbranded_default_description": "Prêt à être expédié"
       }
     }
   }
