@@ -3357,8 +3357,7 @@
         "add_accessibility_label": "Ajouter le numéro de bon de commande",
         "add_modal_title": "Ajouter le numéro de bon de commande",
         "cancel": "Annuler",
-        "edit_accessibility_label": "Modifier Le Numéro De Bon De Commande",
-        "edit_modal_title": "Modifier le numéro du bon de commande"
+        "modal_po_number_input_label": "Numéro de bon de commande"
       }
     }
   }
