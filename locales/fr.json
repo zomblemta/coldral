@@ -1772,7 +1772,12 @@
           "title": "Modifier la carte",
           "done": "Terminé",
           "cancel": "Annuler",
-          "description": "Vous ne pouvez modifier que l'adresse de facturation de votre carte."
+          "description": "Vous ne pouvez modifier que l'adresse de facturation de votre carte.",
+          "fields": {
+            "default": "Définir par défaut",
+            "card_number": "Numéro de carte",
+            "expiry": "Date d'expiration"
+          }
         }
       }
     }
