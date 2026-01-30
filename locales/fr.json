@@ -2810,7 +2810,9 @@
               "cy": "Les numéros de TVA de Chypre contiennent CY et 9 caractères",
               "cz": "Les numéros de TVA de la République Tchèque contiennent CZ et 8-10 caractères",
               "dk": "Les numéros de TVA danois contiennent DK et 8 caractères",
-              "ee": "Les numéros de TVA en Estonie contiennent EE et 9 caractères"
+              "ee": "Les numéros de TVA en Estonie contiennent EE et 9 caractères",
+              "fi": "Les numéros de TVA finlandais comprennent FI et 8 caractères",
+              "fr": "Les numéros de TVA français contiennent FR et 11 caractères"
             }
           }
         }
