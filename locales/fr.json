@@ -819,7 +819,10 @@
         "optional_address2_label": "Appartement, suite, etc. (facultatif)",
         "city_label": "Ville",
         "country_label": "Pays/Région",
-        "country_code": "Code Pays/Région"
+        "country_code": "Code Pays/Région",
+        "province_label": "Province",
+        "province_placeholder": "Province",
+        "county_label": "Comté"
       }
     }
   }
