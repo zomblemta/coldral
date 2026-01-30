@@ -3236,6 +3236,11 @@
       "edit_modal_title": {
         "default": "Modifier l'adresse",
         "billing": "Modifier l'adresse de facturation"
+      },
+      "loading_shipping_accessibility_message": "Chargement De L'Adresse De Livraison",
+      "pagination": {
+        "load_more": "Charger Plus",
+        "load_more_accessibility_label": "Afficher plus d'adresses"
       }
     }
   }
