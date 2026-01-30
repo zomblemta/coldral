@@ -2800,7 +2800,10 @@
       },
       "taxes": {
         "vat_number": {
-          "add": "Ajouter un numéro de TVA"
+          "add": "Ajouter un numéro de TVA",
+          "vaulted": "Numéro de TVA : %{number}",
+          "badge": "Numéro de TVA : %{number}",
+          "domestic_order": "L'exonération de l'autoliquidation s'applique uniquement aux commandes transfrontalières au sein de l'UE. La TVA normale est facturée pour les commandes locales."
         }
       }
     }
