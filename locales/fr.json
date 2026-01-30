@@ -110,8 +110,8 @@
       "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Frais De Livraison Calculés</a> à la caisse",
       "size_chart": "Guide des tailles",
       "available_colors_count": {
-        "one": "{{ count }} couleur disponible",
-        "other": "{{ count }} couleurs disponibles"
+        "one": "{{ count }} couleur",
+        "other": "{{ count }} couleurs"
       }
     },
     "gallery": {
@@ -120,13 +120,13 @@
       "error": "L'image ne peut pas etre chargée"
     },
     "price": {
-      "regular_price": "Prix régulier",
+      "regular_price": "Prix normal",
       "sale_price": "Prix de vente",
-      "from_price_html": "From {{ price_min }}"
+      "from_price_html": "A partir de {{ price_min }}"
     },
     "quantity": {
       "label": "Quantité",
-      "change_quantity": "Modifier la quantité",
+      "change_quantity": "Changer la quantité",
       "increase_quantity": "Augmenter la quantité",
       "decrease_quantity": "Diminuer la quantité",
       "minimum_of": "Minimum de {{ min }}",
