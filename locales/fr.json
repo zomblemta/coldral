@@ -2604,6 +2604,13 @@
         "title_with_products": {
           "zero": "Acheter %{product_name}"
         }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "other": "%{count} jours"
+          }
+        }
       }
     }
   }
