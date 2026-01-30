@@ -2416,7 +2416,10 @@
         "updated_time": "Mis à jour il y a %{time_ago}",
         "failure": "Non livré",
         "failed_title": "Votre commande n’a pas pu être livrée",
-        "failed_contact_merchant": "Contactez %{company} pour organiser la livraison."
+        "failed_contact_merchant": "Contactez %{company} pour organiser la livraison.",
+        "failed_contact_merchant_no_company": "Contactez-nous pour organiser la livraison.",
+        "non_shippable_title": "Votre Commande Est Terminée",
+        "let_us_know": "Faites-nous savoir"
       }
     }
   }
