@@ -2963,6 +2963,15 @@
     },
     "challenge": {
       "message": "Pour continuer, dites-nous que vous n'êtes pas un robot."
+    },
+    "checkpoint": {
+      "error": "La validation du captcha a échoué",
+      "submit_button_text": "Envoyer"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "next_day": "Prêt à être retiré le lendemain"
+      }
     }
   }
 }
