@@ -1067,7 +1067,10 @@
           "other": "Remises Sur la Commande"
         },
         "discount_label": "Code De Réduction",
-        "discount_not_found": "Impossible de trouver une remise valide correspondant au code saisi"
+        "discount_not_found": "Impossible de trouver une remise valide correspondant au code saisi",
+        "discount_placeholder": "Code de réduction",
+        "discount_code_applied": "Code de réduction appliqué",
+        "discount_code_applied_with_code": "Le code de réduction %{code} a été appliqué"
       }
     }
   }
