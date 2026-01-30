@@ -1451,7 +1451,10 @@
           "update": "Enregistrer les modifications",
           "generic_error": "Un problème est survenu lors de l'enregistrement de votre adresse. Réessayez.",
           "one_time_address_subtitle": "Utilisez une adresse à usage unique pour cette commande"
-        }
+        },
+        "different_shipping_method_summary": "Saisissez une adresse de livraison différente pour voir les modes de livraison disponibles",
+        "invalid_shipping_method_summary": "Entrez Une Adresse De Livraison Valide Pour Afficher Les Méthodes De Livraison Disponibles",
+        "invalid_shipping_method_summary_selected": "Sélectionnez Une Autre Adresse De Livraison Pour Afficher Les Modes De Livraison Disponibles"
       }
     }
   }
