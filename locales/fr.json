@@ -164,8 +164,8 @@
       "check_other_stores": "Vérifier La Disponibilité Dans D'Autres Magasins",
       "pick_up_available": "Retrait disponible",
       "pick_up_currently_unavailable": "Retrait actuellement indisponible",
-      "pick_up_available_at": "Récupération disponible à {{ location_name }}",
-      "pick_up_unavailable_at": "Récupération actuellement indisponible à {{ location_name }}"
+      "pick_up_available_at": "Retrait disponible à {{ location_name }}",
+      "pick_up_unavailable_at": "Retrait actuellement indisponible à {{ location_name }}"
     }
   },
   "collection": {
