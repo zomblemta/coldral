@@ -2639,17 +2639,12 @@
       },
       "customer_payment_methods": {
         "page_title": "Modes de paiement",
-        "title": "Méthodes de paiement",
-        "delete_customer_mandate": {
-          "success_message": "Votre moyen de paiement a été supprimé avec succès"
-        }
+        "title": "Méthodes de paiement"
       },
       "throttle": {
-        "too_many_attempts": {
-          "message": "Trop De Tentatives",
-          "description": "Réessayez dans quelques minutes"
-        },
-        "line_to_check_out": "Vous êtes dans la file pour passer à la caisse"
+        "merchandise": {
+          "sold_out": "Épuisé"
+        }
       }
     }
   }
