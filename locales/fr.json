@@ -2993,7 +2993,9 @@
     },
     "account_information": {
       "profile_card": {
-        "cancel": "Annuler"
+        "cancel": "Annuler",
+        "cancel_accessibility_label": "Annuler la modification du profil",
+        "edit": "Modifier"
       }
     }
   }
