@@ -2553,6 +2553,12 @@
         "purchase_options_cancellation_policy": "Annulations",
         "cookie_preferences": "Cookies",
         "terms_and_policies": "Conditions et politiques"
+      },
+      "remote_policies": {
+        "unavailable_policy": "Aucune %{policy_name} n'a été fournie pour ce magasin. Pour plus d'informations, contactez directement %{shop_name}."
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Conditions Générales du Commerçant Enregistré"
       }
     }
   }
