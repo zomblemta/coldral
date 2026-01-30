@@ -719,7 +719,13 @@
           "maximum_reached": "Maximum de {{value}} atteint"
         },
         "remove_chip": "Supprimer l'article",
-        "remove_item": "Supprimer %{label}"
+        "remove_item": "Supprimer %{label}",
+        "remove_tag": "Supprimer la balise",
+        "dates": {
+          "weekdays": {
+            "monday": "Lundi"
+          }
+        }
       }
     }
   }
