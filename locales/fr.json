@@ -3543,7 +3543,11 @@
       "clipboardCopied": "Copié",
       "clipboardFailedToCopy": "Échec de la copie",
       "closeNotification": "Fermer",
-      "expandNotification": "Voir plus"
+      "expandNotification": "Voir plus",
+      "closeModal": "Fermer",
+      "submit": "Soumettre",
+      "decrease": "Decrease {{type}}",
+      "minimumReached": "Minimum de {{value}} atteint"
     }
   }
 }
