@@ -173,7 +173,7 @@
       "empty_collection": "Cette collection est vide",
       "all_collections": "Toutes les collections",
       "no_collections": "Cette boutique ne contient aucune collection.",
-      "continue_shopping": "Continuer vos achats"
+      "continue_shopping": "Continue shopping"
     },
     "products_count": {
       "zero": "{{ count }} produit",
@@ -182,13 +182,13 @@
     },
     "faceting": {
       "filters": "Filtres",
-      "filter_button": "Filtre",
+      "filter_button": "Filtrer",
       "clear_filters": "Effacer",
       "apply_filters": "Appliquer",
       "sort_by": "Trier par",
       "remove_filter": "Supprimer le filtre \"{{ name }}\"",
       "no_results": "Aucun produit ne correspond à ces critères",
-      "price_range_to": "to",
+      "price_range_to": "à",
       "price_filter_from": "De",
       "price_filter_to": "A",
       "price_filter": "{{ min_price }} - {{ max_price }}",
