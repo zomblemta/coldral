@@ -1152,7 +1152,11 @@
         "deposit_label": "Dépôt",
         "total_due_today_label": "Montant Dû Aujourd'hui",
         "total_due_later_label": "Total À Payer Plus Tard",
-        "partial_total_label": "Total"
+        "partial_total_label": "Total",
+        "free_total_label": "Gratuit",
+        "free_shipping_total_label": "Gratuit",
+        "paid_label": "Payé",
+        "payment_due_label": "Paiement Dû"
       }
     }
   }
