@@ -2046,7 +2046,10 @@
         "three_d_secure_failed": "Votre paiement n'a pas pu être vérifié. Réessayez ou utilisez un autre moyen de paiement.",
         "three_d_secure_failed_duplicate": "L'authentification 3D Secure de la carte de crédit a échoué parce qu'une autre est déjà en cours.",
         "three_d_secure_failed_payment_method": "Votre carte n'a pas pu être vérifiée. Réessayez ou ajoutez une autre carte.",
-        "three_d_secure_throttled": "Trop de tentatives ; veuillez patienter avant de réessayer"
+        "three_d_secure_throttled": "Trop de tentatives ; veuillez patienter avant de réessayer",
+        "subscription_agreement_blank": "Pour acheter un abonnement, vos informations de paiement doivent être enregistrées. Pour continuer, confirmez que vous acceptez ou retirez les articles d'abonnement de votre commande.",
+        "insufficient_funds": "Votre paiement a été refusé en raison d'un solde insuffisant. Réessayez ou utilisez un autre moyen de paiement.",
+        "multiple_deferred_payment_not_allowed": "Un seul paiement différé autorisé par demande. Vérifiez votre demande et réessayez."
       }
     }
   }
