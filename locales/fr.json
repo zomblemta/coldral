@@ -2378,7 +2378,10 @@
         "ready_for_pickup_title": "Votre commande est prête à être récupérée",
         "ready_for_pickup_description": "Votre commande est prête à être récupérée. Apportez votre confirmation de commande lorsque vous venez la chercher.",
         "ready_for_delivery_title": "Votre Commande Est Prête À Être Livrée",
-        "ready_for_delivery_description": "Nous avons préparé votre commande."
+        "ready_for_delivery_description": "Nous avons préparé votre commande.",
+        "order_updates_title": "Mises À Jour De La Commande",
+        "shop_phone_description": "Vous recevrez un SMS contenant un lien vers l'application Shop pour vous aider à suivre votre commande.",
+        "order_updates_description_html": "Des mises à jour seront envoyées à %{customer_contact}"
       }
     }
   }
