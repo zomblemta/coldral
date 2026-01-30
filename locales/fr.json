@@ -1447,7 +1447,10 @@
           "add_address": "Ajouter Une Adresse",
           "save": "Enregistrer",
           "cancel": "Annuler",
-          "edit": "Modifier l'adresse"
+          "edit": "Modifier l'adresse",
+          "update": "Enregistrer les modifications",
+          "generic_error": "Un problème est survenu lors de l'enregistrement de votre adresse. Réessayez.",
+          "one_time_address_subtitle": "Utilisez une adresse à usage unique pour cette commande"
         }
       }
     }
