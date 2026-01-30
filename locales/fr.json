@@ -1617,7 +1617,10 @@
         "saved_by_payment_method": "Enregistré par %{payment_method}",
         "pay_with_payment_method": "Payer avec %{payment_method}",
         "different_credit_card_label": "Utilisez une autre carte de crédit",
-        "same_billing_address_label": "Identique à l'adresse de livraison"
+        "same_billing_address_label": "Identique à l'adresse de livraison",
+        "different_billing_address_label": "Utiliser une adresse de facturation différente",
+        "billing_address_associated_with_mandate": "Utiliser l'adresse associée au mode de paiement",
+        "billing_address_associated_with_mandate_info": "Si vous souhaitez modifier votre adresse de facturation, supprimez et saisissez de nouveau les informations de votre carte de crédit"
       }
     }
   }
