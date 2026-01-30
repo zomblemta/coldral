@@ -2951,8 +2951,12 @@
     },
     "search": {
       "sorting": {
-        "price_ascending": "Prix, du moins cher au plus cher"
+        "price_ascending": "Prix, du moins cher au plus cher",
+        "price_descending": "Prix, du plus élevé au plus bas"
       }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "Erreur - %{title}"
     }
   }
 }
