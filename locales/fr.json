@@ -2765,7 +2765,10 @@
           },
           "invalid": {
             "shipping_address": "Saisissez une adresse de livraison valide",
-            "billing_address": "Entrez une adresse de facturation valide"
+            "billing_address": "Entrez une adresse de facturation valide",
+            "shipping_option": "Choisissez une option de livraison valide",
+            "email": "Entrez une adresse e-mail valide",
+            "zone": "Entrez un état / province valide"
           }
         }
       }
