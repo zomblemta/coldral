@@ -3250,13 +3250,13 @@
         "sheet_title": "Connectez-vous ou créez un compte",
         "alternate_divider": "OR",
         "orders_button": "Commandes",
-        "profile_button": "Profil",
-        "shop_login_button": "Se Connecter Avec Shop",
-        "continue_with_google": "Continuer avec Google",
-        "continue_with_facebook": "Continuer avec Facebook"
+        "profile_button": "Profil"
       },
       "signed_in_state": {
-        "greeting_with_name": "Bonjour, {{first_name}}"
+        "profile_button": "Profil"
+      },
+      "location_picker": {
+        "sheet_title": "Emplacements"
       }
     }
   }
