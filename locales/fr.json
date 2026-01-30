@@ -2505,6 +2505,11 @@
         "gift_card_email_title": {
           "one": "La carte-cadeau a été envoyée par e-mail",
           "other": "Les cartes-cadeaux ont été envoyées par e-mail"
+        },
+        "resend_gift_cards_by_email": "Renvoyer l'e-mail",
+        "resend_gift_cards_by_text": "Renvoyer Le Message Texte",
+        "gift_card_resent_confirmation": {
+          "one": "La carte-cadeau a été renvoyée."
         }
       }
     }
