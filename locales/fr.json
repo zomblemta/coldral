@@ -1786,7 +1786,12 @@
           "one": "Il y a %{count} carte expirée, que vous pouvez consulter et modifier dans votre compte.",
           "other": "Il y a %{count} cartes expirées, que vous pouvez consulter et modifier dans votre compte."
         },
-        "local_payment_method_receiver_notice": "Après avoir passé votre commande, vous recevrez les coordonnées de paiement. Effectuez le paiement au guichet automatique ou en ligne dans les {{dueDays}} jours."
+        "local_payment_method_receiver_notice": "Après avoir passé votre commande, vous recevrez les coordonnées de paiement. Effectuez le paiement au guichet automatique ou en ligne dans les {{dueDays}} jours.",
+        "order_edit_banner_title": "Le paiement de {{amount_owed}} est nécessaire",
+        "order_edit_banner_items_added": {
+          "one": "Ajouté",
+          "other": "Ajouté %{count}"
+        }
       }
     }
   }
