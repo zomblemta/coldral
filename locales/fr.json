@@ -1653,7 +1653,9 @@
         "generic_incorrect_card_info": "Vos informations de paiement n'ont pas pu être vérifiées. Vérifiez les informations de votre carte et réessayez.",
         "sofort_label": "Sofort virement bancaire",
         "paypal_label": "PayPal",
-        "paypal_wallet_label": "Portefeuille PayPal"
+        "paypal_wallet_label": "Portefeuille PayPal",
+        "shop_pay_installments_label": "Shop Pay — Paiement en plusieurs fois",
+        "default": "Par défaut"
       }
     }
   }
