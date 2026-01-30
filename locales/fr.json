@@ -2344,7 +2344,9 @@
         "order_status_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Vous recevrez bientôt un e-mail de confirmation. Suivez votre commande via l’application Shop.",
         "order_status_payments_app_pending_payment_description_default_with_email": "Vous recevrez bientôt un e-mail de confirmation. Suivez votre commande via l’application Shop.",
         "order_status_payments_app_pending_payment_description_default_with_email_payment": "Vous recevrez bientôt un e-mail de confirmation. Suivez votre commande via l'application Shop.",
-        "order_status_payments_app_pending_payment_description_default_with_email_pick_up": "Vous recevrez bientôt un e-mail de confirmation. Suivez votre commande via l'application Shop."
+        "order_status_payments_app_pending_payment_description_default_with_email_pick_up": "Vous recevrez bientôt un e-mail de confirmation. Suivez votre commande via l'application Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone": "Vous recevrez bientôt un SMS de confirmation. Suivez votre commande avec l'application Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone_payment": "Vous recevrez bientôt un SMS de confirmation. Suivez votre commande avec l'application Shop."
       }
     }
   }
