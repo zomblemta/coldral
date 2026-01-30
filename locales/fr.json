@@ -1412,7 +1412,11 @@
         "duties_and_taxes_title": "Droits et taxes",
         "shipping_information_required_notice": "Les informations de livraison sont obligatoires. {{link}}.",
         "shipping_information_redirect_link": "Entrez vos informations ici",
-        "loading_progressive_rates": "Recherche d'autres tarifs…"
+        "loading_progressive_rates": "Recherche d'autres tarifs…",
+        "no_other_methods_available": "Aucune autre méthode disponible",
+        "duties_and_taxes_options": {
+          "ddu_title": "Payer À La Livraison"
+        }
       }
     }
   }
