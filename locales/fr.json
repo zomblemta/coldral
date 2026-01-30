@@ -1655,7 +1655,12 @@
         "paypal_label": "PayPal",
         "paypal_wallet_label": "Portefeuille PayPal",
         "shop_pay_installments_label": "Shop Pay — Paiement en plusieurs fois",
-        "default": "Par défaut"
+        "default": "Par défaut",
+        "continue_to_guest_checkout": "Continuer en tant qu'invité",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Abonnement",
+          "order_contains_fixed_selling_plans": "Le total peut ne pas inclure les taxes, les frais d'expédition, les frais différés et certaines remises. Poursuivez vers la caisse pour connaître le montant dû aujourd'hui."
+        }
       }
     }
   }
