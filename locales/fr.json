@@ -3160,8 +3160,13 @@
         }
       },
       "paid_with_shop_pay_installments_card": {
-        "description": "Gardez le contrôle de votre échéancier de paiements grâce aux rappels dans l'application Shop."
-      }
+        "description": "Gardez le contrôle de votre échéancier de paiements grâce aux rappels dans l'application Shop.",
+        "desktop_qr_code_content": {
+          "description": "Recevez des rappels de vos paiements échelonnés avec Shop."
+        }
+      },
+      "refunded_amount": "Remboursé",
+      "request_return_failed": "Un problème est survenu lors du traitement de votre demande. Veuillez réessayer."
     }
   }
 }
