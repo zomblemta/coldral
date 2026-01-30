@@ -1709,7 +1709,9 @@
         "order_covered_by_redeemables_notice": "Votre commande est couverte.",
         "store_credit": {
           "label": "Crédit en magasin",
-          "apply_label": "Appliquer l'avoir"
+          "apply_label": "Appliquer l'avoir",
+          "add_label": "Ajouter Un Crédit En Magasin",
+          "manage_label": "Gérer Le Crédit En Magasin"
         }
       }
     }
