@@ -2084,6 +2084,13 @@
         "paypal_over_capture": "Votre total de commande a été mis à jour. Payez avec {{walletName}} pour finaliser votre commande.",
         "captcha_required": "Saisissez les informations de paiement et résolvez le captcha pour finaliser votre achat.",
         "captcha_required_without_payment_information": "Résolvez le captcha pour finaliser votre achat."
+      },
+      "shipping_errors": {
+        "shipping_method": "Les options de livraison ont changé pour votre commande. Vérifiez votre sélection.",
+        "shipping_method_not_available": "Votre panier a été mis à jour et les articles que vous avez ajoutés ne peuvent pas être expédiés à votre adresse. Supprimez les articles pour finaliser votre commande.",
+        "shipping_method_not_available_generic": {
+          "one": "Votre commande ne peut pas être expédiée à l'adresse sélectionnée. Vérifiez votre adresse pour vous assurer qu'elle est correcte et réessayez, ou choisissez une autre adresse."
+        }
       }
     }
   }
