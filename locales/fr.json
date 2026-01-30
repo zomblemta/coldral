@@ -2573,7 +2573,10 @@
           "return_line_item_removed": "Retiré %{count} du retour"
         },
         "additional_payment_requested": "Le paiement de %{total_outstanding} est nécessaire",
-        "checkout_review_and_pay": "Votre commande %{order_name} a été mise à jour. Vérifiez ces modifications, puis payez pour confirmer votre commande."
+        "checkout_review_and_pay": "Votre commande %{order_name} a été mise à jour. Vérifiez ces modifications, puis payez pour confirmer votre commande.",
+        "order_updated_on": "Votre commande a été mise à jour le %{last_edited_at}.",
+        "order_review_and_pay": "Votre commande a été mise à jour. Vérifiez et payez pour confirmer votre commande.",
+        "pay_now": "Payer Maintenant"
       }
     }
   }
