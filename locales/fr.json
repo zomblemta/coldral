@@ -917,7 +917,10 @@
         "items_unavailable_notice": "Certains articles ne sont plus disponibles.",
         "product_column_header": "Produits",
         "price_column_header": "Prix",
-        "status_column_header": "Statut"
+        "status_column_header": "Statut",
+        "removed_from_cart_notice": "Retiré du Panier",
+        "sold_out_label": "Épuisé",
+        "reduced_label": "Réduit"
       }
     }
   }
