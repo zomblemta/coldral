@@ -1602,7 +1602,14 @@
         "expiry_long": "(Expire le %{month}/%{year})",
         "expiry_short": "(Date d'expiration %{month}/%{year})",
         "crypto_payment_method": {
-          "description": "Connectez-Vous En Toute Sécurité À Votre Portefeuille Sur Le Réseau Base"
+          "description": "Connectez-Vous En Toute Sécurité À Votre Portefeuille Sur Le Réseau Base",
+          "tooltip": "Le solde et l'adresse de votre portefeuille ne seront pas partagés et seul le montant demandé pourra être prélevé."
+        },
+        "crypto_modal": {
+          "header": "Payer %{shop_name} %{total_price} USDC",
+          "error": {
+            "refresh": "Actualiser"
+          }
         }
       }
     }
