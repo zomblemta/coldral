@@ -1637,7 +1637,12 @@
         "billing_address_description": "Sélectionnez l'adresse correspondant à votre carte ou à votre méthode de paiement.",
         "billing_address_description_no_shipping_address": "Saisissez l'adresse correspondant à votre carte ou moyen de paiement.",
         "no_js_credit_card_fields_redirect_hint": "Vous serez redirigé pour ajouter vos informations de paiement.",
-        "card_fields_container_prefix": "Conteneur de champ pour :"
+        "card_fields_container_prefix": "Conteneur de champ pour :",
+        "card_fields_unavailable_html": {
+          "one": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment.<br><a href=\"%{current_url}\">Actualisez cette page</a> ou réessayez plus tard.",
+          "other": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment.<br><a href=\"%{current_url}\">Actualisez cette page</a> ou essayez une autre méthode de paiement."
+        },
+        "card_fields_processing_error": "Un problème est survenu lors du traitement du paiement. Essayez d'actualiser cette page ou vérifiez votre connexion Internet."
       }
     }
   }
