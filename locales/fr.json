@@ -535,7 +535,9 @@
             "gift_card_not_supported": "Les cartes-cadeaux ne sont pas prises en charge pour ce paiement.",
             "gift_card_not_unique": "La carte-cadeau portant le code {{code}} apparaît plus d'une fois dans ce paiement. Les codes sont formatés avant la comparaison.",
             "gift_card_used": "Le code de la carte-cadeau {{code}} est déjà attribué à une carte-cadeau. Les codes sont formatés avant la comparaison.",
-            "gift_card_invalid": "Le code de la carte-cadeau {{code}} est invalide."
+            "gift_card_invalid": "Le code de la carte-cadeau {{code}} est invalide.",
+            "gift_card_code_changed": "Le code de la carte-cadeau {{proposed_code}} a été changé en {{formatted_code}} pour se conformer aux règles de formatage.",
+            "gift_card_with_attributes_not_supported": "Les cartes-cadeaux avec des attributs personnalisés ne sont pas prises en charge lors de ce paiement."
           }
         }
       }
