@@ -619,6 +619,13 @@
             "allocated_required": "Champ 'allocated' manquant.",
             "value_required": "Champ 'value' manquant.",
             "line_splits_not_supported": "Le champ 'merchandise lines' doit être divisé de façon à ce que chaque composant corresponde à une seule ligne dans la proposition du vendeur."
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "Les paiements manuels ne sont pas autorisés dans les boutiques B2B.",
+            "positive_amount_expected": "Le montant à payer doit être supérieur à 0.",
+            "total_amount_mismatch": "Le total à payer ne correspond pas à la somme des montants des paiements.",
+            "subscription_terms_not_accepted": "Conditions d'abonnement non acceptées.",
+            "missing_session_id": "Informations de session de carte de crédit manquantes."
           }
         }
       }
