@@ -2365,7 +2365,10 @@
         "order_status_payments_app_failed_pending_payment_pick_up": "Votre commande n'a pas été facturée. Retournez dans votre panier pour revoir votre commande et la payer à nouveau.",
         "order_status_confirmed_order_local": "Nous préparons votre commande pour la livraison.",
         "order_status_confirmed_order_local_pick_up": "Nous préparons votre commande.",
-        "order_status_confirmed_order_local_payment": "Nous préparons votre commande."
+        "order_status_confirmed_order_local_payment": "Nous préparons votre commande.",
+        "order_status_updates_with_email": "Vous recevrez des mises à jour sur l'expédition et la livraison par e-mail.",
+        "order_status_updates_with_phone": "Vous pouvez recevoir des notifications d'expédition et de livraison par SMS.",
+        "order_status_updates_with_email_and_phone": "Vous recevrez des mises à jour sur l'expédition et la livraison par e-mail."
       }
     }
   }
