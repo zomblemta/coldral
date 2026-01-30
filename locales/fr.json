@@ -1055,7 +1055,12 @@
           "empty_results": "Aucun résultat trouvé pour \"%{searchText}\". Vérifiez l'orthographe ou utilisez un autre mot ou une autre expression.",
           "number_items_shown": "%{shownNumber} sur %{totalNumber} articles"
         },
-        "order_name_label": "Commande %{name}"
+        "order_name_label": "Commande %{name}",
+        "shopping_cart_label": "Panier",
+        "discount_title": "Remise",
+        "discount_title_stacking": {
+          "one": "Remise"
+        }
       }
     }
   }
