@@ -924,7 +924,13 @@
         "reduced_with_quantity_label": "Il n'en reste que %{quantity_available}",
         "continue_shopping_button_label": "Continuer",
         "go_back_to_cart_button_label": "Retour à mon panier",
-        "remove": "Supprimer"
+        "remove": "Supprimer",
+        "return_to_store_label": "Retour au magasin",
+        "continue_cta_label": "Continuer la commande",
+        "item_label": {
+          "one": "{{count}} article",
+          "other": "{{count}} articles"
+        }
       }
     }
   }
