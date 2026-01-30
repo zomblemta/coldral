@@ -3029,7 +3029,8 @@
         "payment_status": {
           "gallery_view": {
             "overdue": "Paiement en retard",
-            "due": "Paiement dû {{date}}"
+            "due": "Paiement dû {{date}}",
+            "due_on_fulfillment": "Paiement dû à l'exécution"
           }
         }
       }
