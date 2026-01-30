@@ -3470,7 +3470,12 @@
         "card_start_label": "Date d'émission (MM / AA)",
         "card_start_placeholder": "Date d'émission (MM / AA)",
         "tooltip": {
-          "tooltip_accessibility_label": "Plus d'informations"
+          "tooltip_accessibility_label": "Plus d'informations",
+          "card_security_notice": "Toutes les transactions sont sécurisées et chiffrées."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Entrez votre nom exactement tel qu'il est inscrit sur votre carte",
+          "credit_card_number_invalid": "Saisissez un numéro de carte valide"
         }
       }
     }
