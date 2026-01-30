@@ -1128,7 +1128,10 @@
         "tip_label": "Astuce",
         "unconfirmed_label": "Non confirmé",
         "calculating_shipping": "Calcul en cours…",
-        "calculating": "Calcul en cours…"
+        "calculating": "Calcul en cours…",
+        "shipping_default_value": "Calculé à l’étape suivante",
+        "shipping_discount_title": "Remise sur les frais de port",
+        "shipping_pending_value": "—"
       }
     }
   }
