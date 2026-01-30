@@ -2813,7 +2813,8 @@
               "mt": "Les numéros de TVA de Malte contiennent MT et 8 caractères"
             },
             "invalid_number": {
-              "hr": "Entrez un numéro de TVA croate valide"
+              "hr": "Entrez un numéro de TVA croate valide",
+              "cy": "Entrez un numéro de TVA chypriote valide"
             }
           }
         }
