@@ -2681,6 +2681,9 @@
         "terminal": {
           "title": "Un problème est survenu lors de notre paiement",
           "message": "Actualisez cette page ou réessayez dans quelques minutes"
+        },
+        "embed_errors": {
+          "invalid_cart": "Le panier n'est plus valide"
         }
       }
     }
