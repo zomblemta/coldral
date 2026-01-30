@@ -1120,7 +1120,12 @@
         "pickup_unavailable_banner_title_with_country": {
           "one": "Aucun magasin disponible dans %{country} proposant votre article",
           "other": "Aucun magasin disponible dans %{country} proposant vos articles"
-        }
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "Expédier à l'adresse",
+          "ship_to_address_instead_html": "%{link} à la place"
+        },
+        "tip_label": "Astuce"
       }
     }
   }
