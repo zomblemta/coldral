@@ -1065,7 +1065,9 @@
         "discount_order_stacking": {
           "one": "Remise sur la commande",
           "other": "Remises Sur la Commande"
-        }
+        },
+        "discount_label": "Code De Réduction",
+        "discount_not_found": "Impossible de trouver une remise valide correspondant au code saisi"
       }
     }
   }
