@@ -2155,7 +2155,12 @@
         },
         "remote_shops_payments_processing": "Traitement des paiements",
         "action_required": "Action requise",
-        "modal_notice": "Nous contactons {{paymentMethod}}"
+        "modal_notice": "Nous contactons {{paymentMethod}}",
+        "remote_checkout_count": "%{current} sur %{total}"
+      },
+      "payment_challenge_modal": {
+        "instructions": "Finalisez votre achat en utilisant votre code {{paymentMethod}}.",
+        "timer_message": "Il vous reste {{timeLeft}} pour payer"
       }
     }
   }
