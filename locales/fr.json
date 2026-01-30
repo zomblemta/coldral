@@ -1861,7 +1861,9 @@
         "bank_account_generic_error": "Impossible d'ajouter le compte bancaire. Réessayez plus tard.",
         "separate_payments_label": "Vos articles proviennent de plusieurs magasins. Vous serez facturé dans %{separate_payments_link}.",
         "separate_payments_text": "paiements séparés",
-        "payments": "Paiements"
+        "payments": "Paiements",
+        "add_payment_method": "Ajouter Un Mode De Paiement",
+        "choose_new_payment_method": "Choisissez un nouveau mode de paiement"
       }
     }
   }
