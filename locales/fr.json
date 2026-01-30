@@ -2956,7 +2956,9 @@
       }
     },
     "page_titles": {
-      "blog_or_article_with_error": "Erreur - %{title}"
+      "blog_or_article_with_error": "Erreur - %{title}",
+      "products": "Produits",
+      "account": "Compte"
     }
   }
 }
