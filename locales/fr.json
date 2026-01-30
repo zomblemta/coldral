@@ -2719,8 +2719,16 @@
       },
       "marketplaces": {
         "legal_notice": {
-          "legal_text": "Avis"
+          "legal_text": "Avis",
+          "link_label": "{{partnerDisplayName}} Conditions générales"
         }
+      },
+      "online_store_chat": {
+        "title": "Des Questions ? Discutez Avec Nous"
+      },
+      "local_pickup": {
+        "location_address_search_label": "Adresse",
+        "location_address_search_placeholder": "%{postal_code_label} ou adresse"
       }
     }
   }
