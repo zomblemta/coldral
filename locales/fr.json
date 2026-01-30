@@ -522,7 +522,15 @@
         "skip_to_content": "Aller au contenu",
         "continue_button_label": "Continuer",
         "complete_purchase_button_label": "Finaliser la commande",
-        "autocomplete_close": "Fermer les suggestions"
+        "autocomplete_close": "Fermer les suggestions",
+        "errors": {
+          "merchandise": {
+            "only_value_constraint": "Seules les valeurs exactes sont autorisées dans la saisie des marchandises.",
+            "merchandise_not_found": "Produit introuvable.",
+            "merchandise_variant_not_found": "Variante de produit introuvable.",
+            "merchandise_not_applicable": "Cette variante de produit ne peut pas être achetée."
+          }
+        }
       }
     }
   }
