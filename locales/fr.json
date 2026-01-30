@@ -1973,7 +1973,9 @@
         "gift_card_depleted": "Cette carte-cadeau n'a plus de solde",
         "gift_card_currency_mismatch": "Seules les cartes-cadeaux en %{checkout_currency} peuvent être utilisées pour cette commande",
         "gift_cards_not_supported_with_deferred_purchase_options": "Les cartes-cadeaux ne sont pas prises en charge avec les options d'achat différé.",
-        "gift_card_buying_gift_card": "Vous ne pouvez pas utiliser une carte-cadeau pour en acheter une autre"
+        "gift_card_buying_gift_card": "Vous ne pouvez pas utiliser une carte-cadeau pour en acheter une autre",
+        "payment_gateway_missing": "Choisissez un mode de paiement.",
+        "payment_gateway_needs_paid_plan_error": "Cette méthode de paiement n’est pas disponible dans la boutique pour le moment"
       }
     }
   }
