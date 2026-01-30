@@ -2988,7 +2988,10 @@
     "enable_javascript": "Pour voir votre compte, activez JavaScript dans les paramètres de votre navigateur ou connectez-vous avec un autre navigateur.",
     "navigation_and_structure": {
       "action_menu_accessibility_label": "Plus d'actions",
-      "close_menu_accessibility_label": "Fermer la navigation principale"
+      "close_menu_accessibility_label": "Fermer la navigation principale",
+      "loading_policy_content_accessibility_label": "Chargement du contenu de la politique",
+      "log_out_link": "Se déconnecter",
+      "logout_overlay_label": "Déconnexion en cours..."
     }
   }
 }
