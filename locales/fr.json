@@ -2943,6 +2943,10 @@
       },
       "storefront": {
         "invalid_password": "Mot de passe incorrect, veuillez réessayer."
+      },
+      "tags": {
+        "add_articles": "Restreindre la recherche aux articles ayant également le tag %{tag}",
+        "add_products": "Restreindre la sélection aux produits correspondant à l'étiquette %{tag}"
       }
     }
   }
