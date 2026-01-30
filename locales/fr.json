@@ -615,7 +615,10 @@
             "merchandise_terms_must_be_defined": "Les conditions concernant les marchandises doivent être définies.",
             "delivery_terms_must_be_defined": "Les conditions de livraison doivent être définies.",
             "merchandise_discount_terms_must_be_defined": "Les conditions de remise sur la marchandise doivent être définies.",
-            "delivery_discount_terms_must_be_defined": "Les conditions de réduction de livraison doivent être définies."
+            "delivery_discount_terms_must_be_defined": "Les conditions de réduction de livraison doivent être définies.",
+            "allocated_required": "Champ 'allocated' manquant.",
+            "value_required": "Champ 'value' manquant.",
+            "line_splits_not_supported": "Le champ 'merchandise lines' doit être divisé de façon à ce que chaque composant corresponde à une seule ligne dans la proposition du vendeur."
           }
         }
       }
