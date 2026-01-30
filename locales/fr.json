@@ -2140,7 +2140,12 @@
         "continue_to_payment_gateway_button_label_error": "Mettre à jour les informations de paiement",
         "page_title": "Traitement de la commande",
         "title": "Commande en cours",
-        "your_order_has_been_received_title": "Merci pour votre commande"
+        "your_order_has_been_received_title": "Merci pour votre commande",
+        "you_will_receive_confirmation": "Nous recevons beaucoup de commandes en ce moment. Vous devriez recevoir une confirmation par e‑mail ou SMS bientôt. Si vous ne la recevez pas dans l’heure qui vient, faites-le nous savoir.",
+        "you_will_not_be_charged": "Vous ne serez pas encore facturé.",
+        "wait": {
+          "short": "Votre commande est en cours de traitement."
+        }
       }
     }
   }
