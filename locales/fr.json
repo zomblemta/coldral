@@ -653,7 +653,12 @@
             "not_accepted_by_shop": "La boutique n'accepte pas les pourboires.",
             "only_one_tip_line_allowed": "Plusieurs lignes de pourboire ne sont pas prises en charge.",
             "tips_not_allowed_for_b2b": "Les pourboires ne sont pas autorisés dans les magasins B2B.",
-            "currency_change_reset": "Le pourboire a été réinitialisé en raison d'un changement de devise."
+            "currency_change_reset": "Le pourboire a été réinitialisé en raison d'un changement de devise.",
+            "tips_not_allowed_for_deferred_purchase_options": "Les pourboires ne sont pas encore pris en charge pour les options d'achat différées."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Ce brouillon de commande n'existe pas dans la boutique actuelle.",
+            "staff_member_not_exist": "Ce membre du personnel n'existe pas dans la boutique actuelle."
           }
         }
       }
