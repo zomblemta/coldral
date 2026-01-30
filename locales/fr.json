@@ -82,9 +82,9 @@
     "general": {
       "account": "Compte",
       "login": "Connexion",
-      "search": "Recherche",
+      "search": "Rechercher",
       "cart": "Panier",
-      "primary_navigation": "Navigation principale",
+      "primary_navigation": "Navigation Principale",
       "secondary_navigation": "Navigation secondaire",
       "menu": "Menu"
     }
