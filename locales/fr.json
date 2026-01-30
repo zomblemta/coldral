@@ -3127,7 +3127,10 @@
         "expand_events_accessibility_label": "Afficher Les Détails D'Expédition De La Commande",
         "hide_events_label": "Masquer les détails",
         "hide_events_accessibility_label": "Masquer Les Détails D'Expédition De La Commande"
-      }
+      },
+      "addresses_section_title": "Facturation et livraison",
+      "order_details": "Détails de la commande",
+      "order_details_skeleton_accessibility_label": "Connectez-vous pour voir tous les détails de la commande."
     }
   }
 }
