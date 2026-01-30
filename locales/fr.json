@@ -3362,7 +3362,14 @@
     "errors": {
       "load_orders_error": {
         "title": "Impossible de charger les commandes",
-        "description": "Réessayez ou revenez plus tard."
+        "description": "Réessayez ou revenez plus tard.",
+        "retry_button": "Réessayer"
+      },
+      "load_paypal_error": {
+        "description": "Un problème est survenu lors du chargement de PayPal. Veuillez réessayer."
+      },
+      "logout_everywhere": {
+        "description": "Une erreur s'est produite lors de la déconnexion. Veuillez réessayer."
       }
     }
   }
