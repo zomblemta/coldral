@@ -2921,7 +2921,8 @@
         }
       },
       "cart": {
-        "too_many_items_in_cart": "Vous ne pouvez pas ajouter plus de %{name} au panier."
+        "too_many_items_in_cart": "Vous ne pouvez pas ajouter plus de %{name} au panier.",
+        "only_one_added_to_cart": "Seulement 1 article a été ajouté à votre panier en raison de la disponibilité."
       }
     }
   }
