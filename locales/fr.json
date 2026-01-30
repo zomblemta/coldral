@@ -1389,7 +1389,10 @@
             }
           },
           "multiple_subscriptions_shipping_price_label": "%{shipping_price} par livraison",
-          "prepaid_shipping_price_label": "%{shipping_price} par livraison x %{delivery_interval_count}"
+          "prepaid_shipping_price_label": "%{shipping_price} par livraison x %{delivery_interval_count}",
+          "initial_order_discounted": "Frais de livraison initiaux %{discounted_shipping_cost}, puis %{frequency_description}",
+          "prepaid_initial_order_discounted": "Premier coût d'expédition %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Premier coût d'expédition %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})"
         }
       }
     }
