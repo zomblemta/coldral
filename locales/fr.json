@@ -1316,7 +1316,10 @@
         "unbranded_description_with_fulfillment_weeks": {
           "one": "Expédition dans %{count} semaine",
           "other": "Expédié dans %{count} semaines"
-        }
+        },
+        "shipping_line_phone_label": "Numéro De Téléphone Mobile (obligatoire)",
+        "shipping_line_phone": "Votre coursier peut utiliser ce numéro pour vous contacter.",
+        "shipping_line_delivery_phone_label": "Numéro De Téléphone Mobile"
       }
     }
   }
