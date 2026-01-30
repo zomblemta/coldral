@@ -1967,7 +1967,10 @@
         "shipping_line_phone_blank": "Saisissez un numéro de téléphone pour utiliser ce mode de livraison",
         "shipping_line_phone_invalid": "Entrez un numéro de téléphone valide",
         "tips_invalid_tip_amount": "Entrez un pourboire inférieur à %{amount}",
-        "gift_card_already_applied": "Cette carte-cadeau a déjà été appliquée à votre commande"
+        "gift_card_already_applied": "Cette carte-cadeau a déjà été appliquée à votre commande",
+        "gift_card_disabled": "Cette carte-cadeau n'est plus disponible",
+        "gift_card_expired": "Cette carte-cadeau a expiré",
+        "gift_card_depleted": "Cette carte-cadeau n'a plus de solde"
       }
     }
   }
