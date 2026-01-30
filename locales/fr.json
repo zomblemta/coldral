@@ -2752,7 +2752,8 @@
         "logged_in": "Connecté à {{email}}",
         "shipping_line_label": "Livraison",
         "connect_shipping_methods": "{{method1}} et {{method2}}",
-        "payment_in_progress_title": "Paiement en cours"
+        "payment_in_progress_title": "Paiement en cours",
+        "redirection_notice": "Vous serez redirigé vers {{walletName}} pour compléter votre achat"
       }
     }
   }
