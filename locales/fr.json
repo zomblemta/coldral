@@ -3454,7 +3454,9 @@
       "update_payment_method": {
         "resources_list_accessibility_label": "Produits d'abonnement et produits de commande en attente utilisant ce mode de paiement",
         "resources_card_scroll": "Faites défiler pour voir plus d'articles",
-        "resources_card_show_more": "Afficher plus"
+        "resources_card_show_more": "Afficher plus",
+        "resources_card_show_less": "Afficher moins",
+        "loading_form_accessibility_message": "Chargement Du Formulaire De Mise À Jour Du Moyen De Paiement"
       }
     }
   }
