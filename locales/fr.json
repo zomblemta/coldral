@@ -3096,7 +3096,7 @@
         "track_shipment": "Suivre l'envoi",
         "delivery_promise_v2": {
           "promise_line": {
-            "shop_promise_brand_label": "Livraison Garantie Avant"
+            "delivery_guarantee_expired_label": "Garantie de livraison expirée"
           }
         }
       }
