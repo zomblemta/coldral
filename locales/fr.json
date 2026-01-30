@@ -2207,7 +2207,12 @@
         "draft_order_payment_due_later_no_terms": "Votre paiement sera dû une fois votre commande confirmée.",
         "draft_order_payment_due_later_no_terms_payment_selected": "Votre carte sera débitée une fois que votre commande sera confirmée.",
         "draft_order_payment_due_later_terms": "Vous serez soumis aux conditions de {{translatedName}} dès que votre commande sera confirmée.",
-        "draft_order_payment_due_on_fulfillment": "Votre paiement sera dû une fois que votre commande aura été confirmée et traitée."
+        "draft_order_payment_due_on_fulfillment": "Votre paiement sera dû une fois que votre commande aura été confirmée et traitée.",
+        "draft_order_deposit_due_later": "{{depositAmount}} sera exigé lorsque votre commande sera confirmée. Le solde sera soumis aux conditions de {{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} sera dû lorsque votre commande sera confirmée. Le solde sera dû une fois votre commande livrée."
+      },
+      "thank_you": {
+        "title": "Merci pour votre achat !"
       }
     }
   }
