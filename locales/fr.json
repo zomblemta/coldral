@@ -1454,7 +1454,14 @@
         },
         "different_shipping_method_summary": "Saisissez une adresse de livraison différente pour voir les modes de livraison disponibles",
         "invalid_shipping_method_summary": "Entrez Une Adresse De Livraison Valide Pour Afficher Les Méthodes De Livraison Disponibles",
-        "invalid_shipping_method_summary_selected": "Sélectionnez Une Autre Adresse De Livraison Pour Afficher Les Modes De Livraison Disponibles"
+        "invalid_shipping_method_summary_selected": "Sélectionnez Une Autre Adresse De Livraison Pour Afficher Les Modes De Livraison Disponibles",
+        "method_summary": {
+          "incomplete_address_entered": "Saisissez une adresse de livraison complète pour voir les modes de livraison disponibles",
+          "incomplete_address_selected": "Sélectionnez une adresse de livraison complète pour afficher les modes de livraison disponibles"
+        },
+        "local_pickup": {
+          "search_address": "Rechercher une adresse"
+        }
       }
     }
   }
