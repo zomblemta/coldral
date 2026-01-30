@@ -3441,7 +3441,10 @@
         "payment_method_expiring_on": "`Expire le {{expiryDate}}`",
         "payment_method_expired_on": "Expiré le {{expiryDate}}",
         "preauthorized_payments": "Paiements préautorisés",
-        "replace_payment_method": "Remplacer Le Mode De Paiement"
+        "payment_method_not_found_error": "Impossible de trouver un moyen de paiement",
+        "payment_details_loading": "Chargement Des Détails Du Moyen De Paiement",
+        "pre_authorized_payments": "Paiements préautorisés",
+        "default_checkbox": "Définir par défaut"
       }
     }
   }
