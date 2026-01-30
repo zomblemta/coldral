@@ -1251,7 +1251,12 @@
           "other": "Afficher %{count} articles"
         },
         "collapse_component_information": {
-          "one": "Masquer %{count} article"
+          "one": "Masquer %{count} article",
+          "other": "Masquer %{count} articles"
+        },
+        "component_quantity_title": "%{quantity} × %{product_title}",
+        "discount_discovery": {
+          "add_code": "Ajouter une remise"
         }
       }
     }
