@@ -809,7 +809,12 @@
         "first_name_label": "Prénom",
         "optional_first_name_label": "Prénom (facultatif)",
         "last_name_label": "Nom de famille",
-        "company_label": "Entreprise"
+        "company_label": "Entreprise",
+        "storefront_link": "site du marchand",
+        "company_attention_label": "Entreprise/À l'attention",
+        "optional_company_attention_label": "Société/À l'attention (optionnel)",
+        "optional_company_label": "Entreprise (facultatif)",
+        "address1_label": "Adresse"
       }
     }
   }
