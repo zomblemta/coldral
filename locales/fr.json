@@ -1086,7 +1086,10 @@
         "gift_card_and_discount_placeholder": "Code de réduction ou carte-cadeau",
         "gift_cards_apply_to_local_shop": "Les cartes-cadeaux ne s'appliquent qu'aux articles de %{shop_name}",
         "add_discount_or_gift_card": "Ajouter un code de réduction ou une carte-cadeau",
-        "remove_gift_card_label": "Effacer la carte-cadeau"
+        "remove_gift_card_label": "Effacer la carte-cadeau",
+        "remove_discount_label": "Supprimer la remise",
+        "return_restocking_fee_label": "Frais de restockage",
+        "return_shipping_fee_label": "Frais de retour"
       }
     }
   }
