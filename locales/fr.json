@@ -1191,6 +1191,9 @@
             "single": "%{price} chacun",
             "one": "%{price} par %{count} article",
             "other": "%{price} par %{count} articles"
+          },
+          "per_unit": {
+            "single": "%{price}/%{unit}"
           }
         }
       }
