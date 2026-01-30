@@ -2368,7 +2368,9 @@
         "order_status_confirmed_order_local_payment": "Nous préparons votre commande.",
         "order_status_updates_with_email": "Vous recevrez des mises à jour sur l'expédition et la livraison par e-mail.",
         "order_status_updates_with_phone": "Vous pouvez recevoir des notifications d'expédition et de livraison par SMS.",
-        "order_status_updates_with_email_and_phone": "Vous recevrez des mises à jour sur l'expédition et la livraison par e-mail."
+        "order_status_updates_with_email_and_phone": "Vous recevrez des mises à jour sur l'expédition et la livraison par e-mail.",
+        "order_status_updates_with_missing": "Choisissez comment vous souhaitez recevoir les mises à jour d'expédition.",
+        "order_status_confirmed_with_installments_payment_return": "Reportez votre attention sur le conseiller de vente."
       }
     }
   }
