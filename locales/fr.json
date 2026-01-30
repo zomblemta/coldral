@@ -3660,7 +3660,9 @@
         "add_new_payment_method": "Ajouter",
         "save_button": "Enregistrer",
         "close_button": "Fermer",
-        "invalid_subscription_contract": "Impossible de trouver l'abonnement"
+        "invalid_subscription_contract": "Impossible de trouver l'abonnement",
+        "expiry_date": "Exp. {{expiryDate}}",
+        "edit_current_payment_method": "Modifier le mode de paiement actuel"
       }
     }
   }
