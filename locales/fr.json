@@ -3093,7 +3093,12 @@
         "submitted_label": "Soumis",
         "submitted_description": "Vérifiez les détails de la commande et du paiement.",
         "there_was_a_problem_label": "Il y a eu un problème",
-        "track_shipment": "Suivre l'envoi"
+        "track_shipment": "Suivre l'envoi",
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "Livraison Garantie Avant"
+          }
+        }
       }
     }
   }
