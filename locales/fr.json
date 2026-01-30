@@ -1593,7 +1593,10 @@
         "card_issue_number_placeholder": "Numéro de ticket",
         "card_change_label": "Modifier",
         "card_update_label": "Mettre à jour la carte",
-        "paypal_disconnect": "Se déconnecter"
+        "paypal_disconnect": "Se déconnecter",
+        "ends_with_label": "se terminant par %{last_digits}",
+        "masked_digits_label": "•••• %{last_digits}",
+        "payment_method_saved": "Méthode de Paiement Enregistrée"
       }
     }
   }
