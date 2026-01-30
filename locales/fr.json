@@ -1387,7 +1387,9 @@
               "one": "tous les ans",
               "other": "tous les %{count} ans"
             }
-          }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} par livraison",
+          "prepaid_shipping_price_label": "%{shipping_price} par livraison x %{delivery_interval_count}"
         }
       }
     }
