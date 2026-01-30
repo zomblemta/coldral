@@ -3324,6 +3324,9 @@
               "deposit": {
                 "title": "Le paiement est dû"
               }
+            },
+            "deposit": {
+              "due_on_receipt": "{{depositAmount}} sera dû lorsque votre commande sera confirmée. Le solde sera dû ultérieurement."
             }
           }
         }
