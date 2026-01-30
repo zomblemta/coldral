@@ -1075,7 +1075,10 @@
         "discount_code_replaced": "Le code de réduction %{old_code} a été supprimé et %{code} a été appliqué",
         "discount_code_replaced_multiple": "Plusieurs codes de réduction ont été supprimés et %{code} a été appliqué",
         "discount_code_allocations_mismatch": "Votre code de réduction <strong style=\"text-transform:uppercase\">%{code}</strong> a changé. Vérifiez votre panier et réessayez.",
-        "order_discounts_apply_to_local_shop": "Les remises de commande ne s'appliquent qu'aux articles provenant de %{shop_name}"
+        "order_discounts_apply_to_local_shop": "Les remises de commande ne s'appliquent qu'aux articles provenant de %{shop_name}",
+        "gift_card_applied": "Carte-Cadeau Appliquée",
+        "enter_shipping_address": "Entrez l'adresse de livraison",
+        "gift_card_title": "Carte Cadeau"
       }
     }
   }
