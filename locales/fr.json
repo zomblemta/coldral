@@ -1242,7 +1242,10 @@
         "updated_shipping_method": "Méthode d'expédition mise à jour : %{shipping_method}",
         "recurring_payments": "Paiements Récurrents",
         "recurring_total_multiple_label": "Cette commande comporte des frais récurrents pour plusieurs articles.",
-        "deferred_total_due_date_label": "Total dû {{date}}"
+        "deferred_total_due_date_label": "Total dû {{date}}",
+        "deferred_total_due_date_label_next": "`À payer le %{date}`",
+        "full_price": "Prix total : %{price}",
+        "custom_discount": "Remise personnalisée"
       }
     }
   }
