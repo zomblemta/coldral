@@ -1993,7 +1993,10 @@
         "address_zip_invalid": "Entrez un code postal valide",
         "gift_card_invalid": "La carte-cadeau \"••••%{last_four_characters}\" n'est plus valide",
         "vaulting_agreement_blank": "Votre méthode de paiement doit être enregistrée, car le paiement du solde de cette commande sera dû plus tard.",
-        "sms_marketing_phone_invalid": "Entrez un numéro de téléphone valide"
+        "sms_marketing_phone_invalid": "Entrez un numéro de téléphone valide",
+        "shipping_method_invalid_phone_number": "Mettez à jour le numéro de téléphone de votre adresse de livraison pour voir les méthodes d'expédition disponibles.",
+        "address_suggestion_did_you_mean_html": "Vouliez-vous dire %{html} ?",
+        "split_cart_international_shipping_not_supported": "Tous les articles doivent utiliser le même mode de livraison pour les envois internationaux. Mettez à jour le mode de livraison ou créez plusieurs commandes."
       }
     }
   }
