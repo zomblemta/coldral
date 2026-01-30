@@ -3573,7 +3573,12 @@
       "showNextMonth": "Afficher le mois suivant, {{month}} {{year}}",
       "showPreviousMonth": "Afficher le mois précédent, {{month}} {{year}}",
       "rangeStart": "Début de la plage",
-      "inRange": "À Portée"
+      "inRange": "À Portée",
+      "rangeEnd": "Fin De L'Intervalle",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} article disponible"
+      },
+      "removeItem": "Remove {{label}}"
     }
   }
 }
