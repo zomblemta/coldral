@@ -1599,7 +1599,11 @@
         "payment_method_saved": "Méthode de Paiement Enregistrée",
         "card_vaulted_company_location": "Carte Enregistrée Pour Cet Emplacement",
         "bank_account_vaulted_company_location": "Compte bancaire enregistré pour cet emplacement",
-        "expiry_long": "(Expire le %{month}/%{year})"
+        "expiry_long": "(Expire le %{month}/%{year})",
+        "expiry_short": "(Date d'expiration %{month}/%{year})",
+        "crypto_payment_method": {
+          "description": "Connectez-Vous En Toute Sécurité À Votre Portefeuille Sur Le Réseau Base"
+        }
       }
     }
   }
