@@ -2663,7 +2663,10 @@
         "selector_tabs": "Sélecteur De Point De Retrait",
         "selector_tab_map": "Carte",
         "selector_tab_list": "Liste",
-        "could_not_resolve_address": "Nous n'avons pas pu localiser votre adresse. Réessayez ou utilisez une autre adresse"
+        "could_not_resolve_address": "Nous n'avons pas pu localiser votre adresse. Réessayez ou utilisez une autre adresse",
+        "pickup_unavailable_banner_title": {
+          "one": "Aucun point de retrait disponible pour votre article"
+        }
       }
     }
   }
