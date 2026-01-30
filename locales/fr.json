@@ -2701,7 +2701,12 @@
         "payment_method_not_available_with_payment_terms": "Le mode de paiement que vous avez sélectionné n'est plus disponible car le paiement de cette commande se fait désormais selon les conditions de paiement {{paymentTerms}}.",
         "payment_method_not_available_with_fulfillment_terms": "Le mode de paiement que vous avez sélectionné n'est plus disponible car le paiement de cette commande est désormais dû lors de son exécution",
         "payment_method_not_available_with_fixed_terms": "Le mode de paiement que vous avez sélectionné n'est plus disponible car le paiement de cette commande est prévu plus tard",
-        "payment_method_not_available_with_review_requirement": "Le mode de paiement que vous avez choisi n'est plus disponible car le paiement sera exigible une fois votre commande confirmée."
+        "payment_method_not_available_with_review_requirement": "Le mode de paiement que vous avez choisi n'est plus disponible car le paiement sera exigible une fois votre commande confirmée.",
+        "contact_information": {
+          "title": "Les informations de contact sont invalides",
+          "header": "Pour mettre à jour vos informations, {{emailLink}}.",
+          "email_link": "contactez-nous"
+        }
       }
     }
   }
