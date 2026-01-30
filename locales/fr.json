@@ -2915,7 +2915,13 @@
           "voided": "Annulé",
           "partially_paid": "Partiellement payé",
           "partially_refunded": "Partiellement Remboursé"
+        },
+        "cancel_reason": {
+          "inventory": "Articles indisponibles"
         }
+      },
+      "cart": {
+        "too_many_items_in_cart": "Vous ne pouvez pas ajouter plus de %{name} au panier."
       }
     }
   }
