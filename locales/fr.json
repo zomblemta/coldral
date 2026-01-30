@@ -668,7 +668,12 @@
             "invalid_signature": "La signature de {{target_terms}} est invalide."
           },
           "inventory": {
-            "missing_quantity_value": "Le champ Quantité est manquant dans les lignes d'inventaire de l'acheteur."
+            "missing_quantity_value": "Le champ Quantité est manquant dans les lignes d'inventaire de l'acheteur.",
+            "changing_behavior_not_allowed": "Ce client n'a pas la permission de modifier le comportement de l'inventaire.",
+            "only_one_inventory_behavior_allowed": "Actuellement, un seul comportement d'inventaire est autorisé par passage en caisse."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Refuser les droits de douane n'est pas autorisé pour ce paiement."
           }
         }
       }
