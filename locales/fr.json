@@ -2713,6 +2713,13 @@
         "subtitle": {
           "one": "Cette commande sera expédiée à l'adresse fournie par {{merchant}}.",
           "other": "Cette commande sera expédiée à une adresse fournie par {{merchant}}. Sélectionnez une adresse de livraison."
+        },
+        "use_saved_address": "Utiliser une autre adresse",
+        "return_to_cart": "Retour au panier"
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Avis"
         }
       }
     }
