@@ -3265,8 +3265,10 @@
         "location_picker_label": "Nom du lieu",
         "net_payment_terms_description": "{{name}} : paiements dus dans {{numberOfDays}} jours",
         "deposit_percentage": "{{percentage}} acompte",
-        "tax_exemptions_modal_close": "Fermer",
-        "taxes_none": "Aucun"
+        "pagination": {
+          "load_more": "Afficher plus"
+        },
+        "tax_exemptions_modal_button_accessibility_label": "Voir Toutes Les Exonérations Fiscales"
       }
     }
   }
