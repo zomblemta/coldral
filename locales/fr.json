@@ -2188,7 +2188,14 @@
         "debit_card_label": "Carte de débit",
         "deferred_payment_label": "Choisir Le Mode De Paiement Plus Tard",
         "fixed_payment_label": "Votre paiement sera dû le {{dueDate}}.",
-        "generic_payment_terms": "Vous êtes soumis aux conditions de {{translatedName}}. Votre paiement sera dû le {{dueDate}}."
+        "generic_payment_terms": "Vous êtes soumis aux conditions de {{translatedName}}. Votre paiement sera dû le {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}} à un compte disposant d'un accès à cet emplacement pour ajouter ou utiliser des moyens de paiement enregistrés.",
+            "link": "Se connecter"
+          }
+        },
+        "direct_payment_terms": "Vous êtes soumis aux conditions de {{translatedName}}. Votre carte sera débitée le {{dueDate}}."
       }
     }
   }
