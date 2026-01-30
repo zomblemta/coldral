@@ -3532,10 +3532,8 @@
       "dankort": "Dankort",
       "hipercard": "Hipercard",
       "unionpay": "UnionPay",
-      "laser": "Laser",
-      "shoppay": "Shop Pay",
-      "applepay": "Apple Pay",
-      "googlepay": "Google Pay"
+      "storecredit": "Crédit en magasin",
+      "bogus": "Faux"
     }
   }
 }
