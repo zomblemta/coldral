@@ -3461,8 +3461,12 @@
         "loading_digital_wallets": "Chargement des options de portefeuille numérique",
         "loading_card_fields": "Chargement Des Champs De Carte De Crédit"
       },
+      "link_expired": {
+        "message": "Ce lien pour mettre à jour votre méthode de paiement a expiré.",
+        "update_message": "Ce lien pour mettre à jour votre méthode de paiement a expiré."
+      },
       "card_fields": {
-        "card_expiry_label": "Date d'expiration (MM / AA)"
+        "card_verification_value_placeholder": "Code de sécurité"
       }
     }
   }
