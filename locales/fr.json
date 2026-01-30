@@ -254,7 +254,7 @@
     "login": {
       "title": "Connexion",
       "instructions": "Saisissez votre e-mail et votre mot de passe pour vous connecter :",
-      "no_account": "Pas de compte ?",
+      "no_account": "Vous n'avez pas de compte ?",
       "email": "Courriel",
       "password": "Mot de passe",
       "submit": "Connexion",
