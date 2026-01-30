@@ -2446,7 +2446,10 @@
           "shipping": "Point de retrait"
         },
         "fulfillment": {
-          "fulfilled_table_title": "Articles De Cet Envoi"
+          "fulfilled_table_title": "Articles De Cet Envoi",
+          "unfulfilled_table_title": "Articles En Cours De Préparation Pour L'Expédition",
+          "product_image_label": "Image Du Produit",
+          "description_label": "Description"
         }
       }
     }
