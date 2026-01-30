@@ -1899,7 +1899,10 @@
         "address_first_name_too_long": "Le prénom est trop long (maximum : 255 caractères)",
         "address_first_name_contains_emojis": "Le prénom ne peut pas contenir d'emojis",
         "address_first_name_contains_html_tags": "Le prénom ne peut pas contenir de balises HTML.",
-        "address_first_name_contains_url": "`Le prénom ne peut pas contenir d'URL`"
+        "address_first_name_contains_url": "`Le prénom ne peut pas contenir d'URL`",
+        "address_first_name_contains_mathematical_symbols": "Le prénom ne peut pas contenir de symboles mathématiques",
+        "address_last_name_blank": "Entrez un nom de famille",
+        "address_last_name_too_long": "Le nom de famille est trop long (maximum 255 caractères)"
       }
     }
   }
