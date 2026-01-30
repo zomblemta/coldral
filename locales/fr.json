@@ -1520,7 +1520,8 @@
           "tax_credential_mx": "RFC",
           "tax_credential_type_mx": "Régime Fiscal",
           "tax_credential_use_mx": "Utilisation du CFDI",
-          "tax_credential_py": "CI/RUC/TVA"
+          "tax_credential_py": "CI/RUC/TVA",
+          "shipping_credential_py": "CI/RUC/TVA"
         }
       }
     }
