@@ -681,7 +681,10 @@
           },
           "captcha": {
             "metadata_missing": "La validation d'un captcha est requise pour ce paiement.",
-            "metadata_mismatch": "Le fournisseur et le type de captcha fournis ne correspondent pas aux valeurs attendues."
+            "metadata_mismatch": "Le fournisseur et le type de captcha fournis ne correspondent pas aux valeurs attendues.",
+            "token_missing": "Un jeton captcha doit être fourni pour finaliser cette commande.",
+            "job_enqueue_failed": "Le travail de validation du captcha n'a pas pu être mis en file d'attente.",
+            "job_already_queued": "La validation du captcha a déjà été mise en file d'attente pour ce jeton de captcha."
           }
         }
       }
