@@ -1072,7 +1072,10 @@
         "discount_code_applied": "Code de réduction appliqué",
         "discount_code_applied_with_code": "Le code de réduction %{code} a été appliqué",
         "discount_code_removed": "Le code promo %{code} a été supprimé",
-        "discount_code_replaced": "Le code de réduction %{old_code} a été supprimé et %{code} a été appliqué"
+        "discount_code_replaced": "Le code de réduction %{old_code} a été supprimé et %{code} a été appliqué",
+        "discount_code_replaced_multiple": "Plusieurs codes de réduction ont été supprimés et %{code} a été appliqué",
+        "discount_code_allocations_mismatch": "Votre code de réduction <strong style=\"text-transform:uppercase\">%{code}</strong> a changé. Vérifiez votre panier et réessayez.",
+        "order_discounts_apply_to_local_shop": "Les remises de commande ne s'appliquent qu'aux articles provenant de %{shop_name}"
       }
     }
   }
