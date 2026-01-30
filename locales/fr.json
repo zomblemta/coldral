@@ -2334,7 +2334,10 @@
         "order_status_confirmed_order_with_phone_payment": "Vous avez effectué un paiement sur votre commande le %{date}.",
         "order_status_confirmed_order_with_email_and_phone_payment": "Vous avez effectué un paiement sur votre commande %{date}.",
         "order_status_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque votre commande sera prête à être retirée.",
-        "order_status_confirmed_order_with_phone_pick_up": "Vous recevrez un SMS lorsque votre commande sera prête à être récupérée."
+        "order_status_confirmed_order_with_phone_pick_up": "Vous recevrez un SMS lorsque votre commande sera prête à être récupérée.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Vous recevrez un e-mail et un SMS lorsque votre commande sera prête à être retirée.",
+        "order_status_payments_app_pending_payment_description_default_with_missing": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande.",
+        "order_status_payments_app_pending_payment_description_default_with_missing_payment": "Contactez-nous par e-mail ou par téléphone pour recevoir une confirmation de commande."
       }
     }
   }
