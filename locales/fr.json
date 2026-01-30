@@ -751,7 +751,10 @@
           }
         },
         "datepicker": {
-          "show_previous_month": "Afficher le mois précédent, {{month}} {{year}}"
+          "show_previous_month": "Afficher le mois précédent, {{month}} {{year}}",
+          "show_next_month": "Afficher le mois suivant, {{month}} {{year}}",
+          "range_start": "Début De La Plage",
+          "in_range": "À portée"
         }
       }
     }
