@@ -3312,16 +3312,12 @@
             "banner_overdue_for_multiple_fulfillments": "Paiement dû pour {{count}} exécutions de commandes",
             "title": "Paiement dû",
             "title_with_date": "Paiement dû {{date}}",
-            "title_due_on_receipt": "Paiement Pas Encore Dû",
-            "description_waiting_for_manual_payment": "Cette commande a un paiement en attente. Le solde sera mis à jour lorsque le paiement sera reçu.",
-            "description_due_on_receipt": "Vous recevrez une facture lorsque le paiement sera exigible.",
-            "description_due_on_receipt_partially_paid": "Cette commande a été partiellement payée. Il vous reste un solde à régler. Vous recevrez une facture lorsque le paiement sera dû.",
-            "description_due_on_fulfillment": "Le paiement est dû une fois que tous les articles de cette commande ont été traités.",
-            "description_due_on_fulfillment_partially_paid": "Cette commande a été partiellement payée. Il vous reste un solde. Le paiement est dû une fois que tous les articles de cette commande auront été traités.",
-            "description_due_on_fulfillment_partially_paid_next": "Cette commande a été partiellement payée. Il vous reste un solde à payer."
+            "title_due_on_receipt": "Paiement Pas Encore Dû"
           },
           "draft": {
-            "description": "Les modalités de paiement sont déterminées lorsque la commande est confirmée."
+            "in_review": {
+              "title": "Paiement pas encore dû"
+            }
           }
         }
       }
