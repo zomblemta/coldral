@@ -2089,8 +2089,10 @@
         "shipping_method": "Les options de livraison ont changé pour votre commande. Vérifiez votre sélection.",
         "shipping_method_not_available": "Votre panier a été mis à jour et les articles que vous avez ajoutés ne peuvent pas être expédiés à votre adresse. Supprimez les articles pour finaliser votre commande.",
         "shipping_method_not_available_generic": {
-          "one": "Votre commande ne peut pas être expédiée à l'adresse sélectionnée. Vérifiez votre adresse pour vous assurer qu'elle est correcte et réessayez, ou choisissez une autre adresse."
-        }
+          "one": "Votre commande ne peut pas être expédiée à l'adresse sélectionnée. Vérifiez votre adresse pour vous assurer qu'elle est correcte et réessayez, ou choisissez une autre adresse.",
+          "other": "Certains articles de votre panier ne peuvent pas être expédiés à l'adresse que vous avez saisie. Vérifiez votre adresse pour vous assurer qu'elle est correcte et réessayez, ou sélectionnez une adresse différente."
+        },
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Les articles du panier ne répondent pas aux exigences de prix ou de poids pour être éligibles à la livraison. Mettez à jour votre panier et réessayez."
       }
     }
   }
