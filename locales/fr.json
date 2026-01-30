@@ -2797,6 +2797,9 @@
         "square_meter": "m²",
         "pound": "lb",
         "fluid_ounce": "fl oz"
+      },
+      "taxes": {
+        "tax_details": "Informations Fiscales Supplémentaires"
       }
     }
   }
