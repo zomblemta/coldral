@@ -3630,7 +3630,19 @@
       "title": "Autres produits susceptibles de vous plaire",
       "subtitle": "Disponible Pour Une Durée Limitée",
       "button": "Explorer sur Shop",
-      "previous_button": "Précédent"
+      "previous_button": "Précédent",
+      "next_button": "Suivant"
+    },
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "Les clients peuvent demander et gérer eux-mêmes leurs retours.",
+        "disabled": "Les clients doivent contacter le marchand pour demander un retour."
+      }
+    },
+    "subscriptions": {
+      "update_payment_instrument": {
+        "title": "Remplacer Le Mode De Paiement"
+      }
     }
   }
 }
