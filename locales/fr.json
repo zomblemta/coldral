@@ -3316,7 +3316,8 @@
               "one": "Votre paiement est dû dans {{count}} jour",
               "other": "Votre paiement est dû dans {{count}} jours"
             },
-            "banner_due_today": "Votre paiement est dû aujourd'hui"
+            "banner_due_today": "Votre paiement est dû aujourd'hui",
+            "banner_due_today_for_single_fulfillment": "{{amount}} le paiement est dû aujourd'hui. {{link}}"
           }
         }
       }
