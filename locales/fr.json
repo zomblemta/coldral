@@ -2284,6 +2284,13 @@
         "thank_you_unconfirmed_items_heading": {
           "one": "1 article n'est pas confirmé",
           "other": "Certains articles ne sont pas confirmés"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "Vous n'avez pas été facturé pour cela",
+          "other": "Vous n'avez pas été facturé pour ces articles"
+        },
+        "thank_you_item_label": {
+          "one": "%{count} article"
         }
       }
     }
