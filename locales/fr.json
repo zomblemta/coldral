@@ -1010,7 +1010,10 @@
           "all_products_other": "Les produits de votre panier ne sont pas disponibles pour la livraison à %{location_name}."
         },
         "missing_country_fallback": "votre pays",
-        "indeterminate_location_fallback": "votre emplacement"
+        "indeterminate_location_fallback": "votre emplacement",
+        "cart_updated": "Votre panier a été mis à jour.",
+        "change_address_only": "Modifiez l'adresse de livraison pour continuer.",
+        "change_address_or_remove": "Modifier l'adresse de livraison ou %{remove_action}."
       }
     }
   }
