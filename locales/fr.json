@@ -200,11 +200,11 @@
       "empty_blog": "Ce blog ne contient encore aucun article.",
       "back_to_home": "Retour à l'accueil",
       "view": "Voir",
-      "all_posts": "Tous les articles",
-      "read_more": "En savoir plus"
+      "all_posts": "Tous Les Articles",
+      "read_more": "savoir plus"
     },
     "post": {
-      "written_by": "Ecrit par {{ author }}",
+      "written_by": "Écrit par {{ author }}",
       "visit_author_website": "Visiter le site de l'auteur",
       "share": "Partager",
       "tags": "Tags"
