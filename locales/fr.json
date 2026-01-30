@@ -2803,7 +2803,13 @@
           "add": "Ajouter un numéro de TVA",
           "vaulted": "Numéro de TVA : %{number}",
           "badge": "Numéro de TVA : %{number}",
-          "domestic_order": "L'exonération de l'autoliquidation s'applique uniquement aux commandes transfrontalières au sein de l'UE. La TVA normale est facturée pour les commandes locales."
+          "domestic_order": "L'exonération de l'autoliquidation s'applique uniquement aux commandes transfrontalières au sein de l'UE. La TVA normale est facturée pour les commandes locales.",
+          "status": {
+            "invalid_format": {
+              "hr": "Les numéros de TVA croates contiennent HR et 11 caractères",
+              "cy": "Les numéros de TVA de Chypre contiennent CY et 9 caractères"
+            }
+          }
         }
       }
     }
