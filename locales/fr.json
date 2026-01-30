@@ -1013,7 +1013,13 @@
         "indeterminate_location_fallback": "votre emplacement",
         "cart_updated": "Votre panier a été mis à jour.",
         "change_address_only": "Modifiez l'adresse de livraison pour continuer.",
-        "change_address_or_remove": "Modifier l'adresse de livraison ou %{remove_action}."
+        "change_address_or_remove": "Modifier l'adresse de livraison ou %{remove_action}.",
+        "remove_items_action": {
+          "one": "supprimer l'article indisponible",
+          "other": "supprimer les articles indisponibles"
+        },
+        "empty_cart_action": "vider le panier et retourner au magasin",
+        "unavailable_line_item": "%{product_name} / %{variant_label}"
       }
     }
   }
