@@ -3443,7 +3443,8 @@
         "preauthorized_payments": "Paiements préautorisés",
         "payment_method_not_found_error": "Impossible de trouver un moyen de paiement",
         "payment_details_loading": "Chargement Des Détails Du Moyen De Paiement",
-        "pre_authorized_payments": "Paiements préautorisés"
+        "pre_authorized_payments": "Paiements préautorisés",
+        "next_payment_due": "Prochain paiement dû {{dueDateInMonthDayYear}}"
       }
     }
   }
