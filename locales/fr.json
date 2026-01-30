@@ -1839,7 +1839,11 @@
         "payment_method": "Mode de paiement",
         "payment_method_rollup_accessibility_label": "Options De Paiement",
         "expired_payment_method": "Le mode de paiement sélectionné a expiré",
-        "payment_method_update_failed": "La mise à jour du mode de paiement a échoué."
+        "payment_method_update_failed": "La mise à jour du mode de paiement a échoué.",
+        "payment_method_incompatible_with_payment_terms": "Le mode de paiement est incompatible avec les conditions de paiement.",
+        "proposed_gateway_unavailable": "La passerelle de paiement proposée est indisponible",
+        "pay_in_installments_split_pay_short": "4 paiements de %{amount}",
+        "gift_cards_unavailable": "Votre carte-cadeau ne peut plus être appliquée à cette commande et a été retirée."
       }
     }
   }
