@@ -1922,7 +1922,9 @@
         "address_city_contains_emojis": "La ville ne peut pas contenir d'émojis",
         "address_city_contains_html_tags": "La ville ne peut pas contenir de balises HTML.",
         "address_city_contains_mathematical_symbols": "La Ville Ne Peut Pas Contenir De Symboles Mathématiques",
-        "address_country_blank": "Sélectionnez un pays/région"
+        "address_country_blank": "Sélectionnez un pays/région",
+        "address_country_not_supported": "Nous n'expédions pas vers ce pays ou cette région. Saisissez une nouvelle adresse de livraison et réessayez.",
+        "address_province_blank": "Sélectionnez Un État / Une Province"
       }
     }
   }
