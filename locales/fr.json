@@ -1855,7 +1855,10 @@
         "new_bank_account_disclaimer": "complétant votre commande, vous autorisez %{shop_name} à débiter le compte ci-dessous via ACH pour le montant indiqué et au moment indiqué.",
         "bank_account_disclaimer": "Les paiements ACH peuvent prendre jusqu'à 4 jours ouvrables pour être traités.",
         "bank_account_choose": "Choisissez un compte pour finaliser votre achat en toute sécurité",
-        "bank_account_connect_another": "Connecter Un Autre Compte Bancaire"
+        "bank_account_connect_another": "Connecter Un Autre Compte Bancaire",
+        "bank_account_connect": "Connecter un compte bancaire",
+        "bank_account_missing": "Le compte bancaire doit être connecté",
+        "bank_account_generic_error": "Impossible d'ajouter le compte bancaire. Réessayez plus tard."
       }
     }
   }
