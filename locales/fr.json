@@ -2524,7 +2524,10 @@
         "title": "Avis",
         "review_title": "Complétez Votre Commande",
         "review_and_confirm_title": "Vérifier et confirmer",
-        "checkout_a_different_way": "Découvrez une autre façon"
+        "checkout_a_different_way": "Découvrez une autre façon",
+        "blocks": {
+          "shipping_method_title": "Méthode d'expédition"
+        }
       }
     }
   }
