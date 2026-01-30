@@ -3314,7 +3314,9 @@
             "title_with_date": "Paiement dû {{date}}",
             "title_due_on_receipt": "Paiement Pas Encore Dû",
             "description_waiting_for_manual_payment": "Cette commande a un paiement en attente. Le solde sera mis à jour lorsque le paiement sera reçu.",
-            "description_due_on_receipt": "Vous recevrez une facture lorsque le paiement sera exigible."
+            "description_due_on_receipt": "Vous recevrez une facture lorsque le paiement sera exigible.",
+            "description_due_on_receipt_partially_paid": "Cette commande a été partiellement payée. Il vous reste un solde à régler. Vous recevrez une facture lorsque le paiement sera dû.",
+            "description_due_on_fulfillment": "Le paiement est dû une fois que tous les articles de cette commande ont été traités."
           }
         }
       }
