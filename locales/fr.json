@@ -2433,7 +2433,10 @@
         "cancelled_description": "Votre commande a été annulée le %{date}. Contactez-nous si vous avez des questions.",
         "order_number_label": "Numéro de commande",
         "customer_validation_error": "Saisissez une adresse e-mail ou un numéro de commande valide.",
-        "customer_validation_error_phone": "Entrez un numéro de téléphone ou de commande valide."
+        "customer_validation_error_phone": "Entrez un numéro de téléphone ou de commande valide.",
+        "login": "Se connecter",
+        "unfulfilled_items_title": "Préparation à l'expédition",
+        "unfulfilled_items_description": "Nous préparons actuellement ces articles pour l'expédition."
       }
     }
   }
