@@ -3083,7 +3083,8 @@
       },
       "order_status": {
         "confirmed_title": "Votre commande est confirmée",
-        "confirmed_description_pickup": "Vous recevrez un e-mail lorsque votre commande sera prête à être retirée."
+        "confirmed_description_pickup": "Vous recevrez un e-mail lorsque votre commande sera prête à être retirée.",
+        "complete_label": "Terminé"
       }
     }
   }
