@@ -839,7 +839,10 @@
         "state_and_territory_placeholder": "État/territoire",
         "phone_label": "Téléphone",
         "phone_rollup_accessibility_label": "Options de téléphone",
-        "phone_country_code_label": "Indicatif téléphonique du pays"
+        "phone_country_code_label": "Indicatif téléphonique du pays",
+        "optional_phone_label": "Téléphone (facultatif)",
+        "phone_placeholder": "Téléphone",
+        "phone_tooltip": "Au cas où nous aurions besoin de vous contacter au sujet de votre commande"
       }
     }
   }
