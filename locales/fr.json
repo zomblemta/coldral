@@ -120,7 +120,7 @@
       "error": "L'image ne peut pas etre chargée"
     },
     "price": {
-      "regular_price": "Prix normal",
+      "regular_price": "Prix régulier",
       "sale_price": "Prix de vente",
       "from_price_html": "A partir de {{ price_min }}"
     },
