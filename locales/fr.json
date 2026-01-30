@@ -797,7 +797,10 @@
         "address_title": "Adresse",
         "shipping_used_as_billing_notice": "Cette adresse servira également d'adresse de facturation pour cette commande.",
         "delivery_option_title": "Méthode de livraison",
-        "contact_method_title": "Contact"
+        "contact_method_title": "Contact",
+        "email_label": "E-mail",
+        "email_rollup_accessibility_label": "Options de courriel",
+        "email_placeholder": "E-mail"
       }
     }
   }
