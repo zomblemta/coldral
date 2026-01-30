@@ -3040,7 +3040,12 @@
         "sort_title": "Trier",
         "sort": {
           "date": {
-            "newest": "Du Plus Récent Au Plus Ancien"
+            "newest": "Du Plus Récent Au Plus Ancien",
+            "oldest": "Du Plus Ancien Au Plus Récent"
+          },
+          "location": {
+            "ascending": "Emplacement (A-Z)",
+            "descending": "Emplacement (Z-A)"
           }
         }
       }
