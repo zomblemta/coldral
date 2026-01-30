@@ -2549,7 +2549,13 @@
         },
         "unsubscribe": {
           "description": "Vous ne recevrez plus de rappels de panier de notre part."
-        }
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Inscrivez-moi pour recevoir des nouveautés et des offres de ce magasin"
+      },
+      "shop_policies": {
+        "policy_label": "Politique",
+        "policies_label": "Politiques",
+        "select_policy_label": "Sélectionner une politique"
       }
     }
   }
