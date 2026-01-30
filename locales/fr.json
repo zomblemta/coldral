@@ -760,7 +760,12 @@
         "list_formatter": {
           "and": {
             "wordConnector": "{{previousWords}}, {{anotherWord}}",
-            "lastWordConnector": "{{previousWords}}, et {{lastWord}}"
+            "lastWordConnector": "{{previousWords}}, et {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} et {{secondWord}}"
+          },
+          "or": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}}, ou {{lastWord}}"
           }
         }
       }
