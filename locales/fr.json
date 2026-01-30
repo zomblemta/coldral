@@ -30,13 +30,13 @@
     "breadcrumb": {
       "label": "Fil d'Ariane",
       "home": "Accueil",
-      "shop": "Shop"
+      "shop": "Boutique"
     },
     "reviews": {
       "title": "Avis clients"
     },
     "label": {
-      "color": "Couleur",
+      "color": "Couleur,Couleur",
       "white": "Blanc",
       "size": "Taille"
     },
