@@ -2066,7 +2066,9 @@
         "selected_payment_method": "Un problème est survenu avec votre moyen de paiement sélectionné et vous n'avez pas été facturé. Réessayez ou utilisez un autre moyen de paiement.",
         "payment_method_billing_address": "Un problème est survenu avec l'adresse de facturation de votre moyen de paiement sélectionné et vous n'avez pas été facturé. Vérifiez l'adresse et réessayez ou utilisez un autre moyen de paiement.",
         "call_issuer": "Votre carte a été refusée. Utilisez un autre moyen de paiement ou contactez votre banque pour en savoir plus.",
-        "test_mode_live_card": "Cette boutique ne peut pas accepter de commandes réelles ni de paiements réels."
+        "test_mode_live_card": "Cette boutique ne peut pas accepter de commandes réelles ni de paiements réels.",
+        "test_mode_enabled_only_test_cards": "Le mode test est activé, seules des cartes de crédit de test peuvent être ajoutées.",
+        "transient_error": "Un problème est survenu lors du traitement de votre paiement. Essayez de rafraîchir cette page ou vérifiez votre connexion Internet."
       }
     }
   }
