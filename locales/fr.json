@@ -3566,7 +3566,9 @@
       "thursday": "Jeudi",
       "friday": "Vendredi",
       "saturday": "Samedi",
-      "sunday": "Dimanche"
+      "sunday": "Dimanche",
+      "fridayAbbreviation": "Fr",
+      "saturdayAbbreviation": "Sa"
     }
   }
 }
