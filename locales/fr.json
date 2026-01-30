@@ -2862,7 +2862,10 @@
       "gift_card_depleted": "Il n'y a plus de solde sur cette carte-cadeau",
       "password_mismatch": "doit correspondre au mot de passe fourni",
       "contains_spaces": "commence ou se termine par des espaces.",
-      "invalid_start_date_or_issue_number_for_debit": "une date de début valide ou un numéro de parution est requis"
+      "invalid_start_date_or_issue_number_for_debit": "une date de début valide ou un numéro de parution est requis",
+      "invalid_expiry_year": "n'est pas une année d'expiration valide",
+      "reset_password_html": "Cette adresse e-mail est déjà associée à un compte. Si ce compte est le vôtre, vous pouvez <a href=\"/account/login#recover\">réinitialiser votre mot de passe</a>",
+      "verify_email": "Nous avons envoyé un e-mail à %{customer_email}, veuillez cliquer sur le lien inclus pour vérifier votre adresse e-mail."
     }
   }
 }
