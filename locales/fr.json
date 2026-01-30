@@ -2847,7 +2847,10 @@
     },
     "collections": {
       "sorting": {
-        "manual": "Vedette"
+        "manual": "Vedette",
+        "best_selling": "Meilleures ventes",
+        "az": "Par ordre alphabétique, A-Z",
+        "za": "Par ordre alphabétique, Z-A"
       }
     }
   }
