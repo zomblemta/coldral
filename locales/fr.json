@@ -211,9 +211,9 @@
     },
     "comments": {
       "leave_comment": "Laisser un commentaire",
-      "moderated": "Tous les commentaires sont modérés avant d'être publiés.",
+      "moderated": "Tous les commentaires sont modérés avant publication.",
       "name": "Nom",
-      "email": "E-mail",
+      "email": "Courriel",
       "message": "Message",
       "submit": "Envoyer",
       "comment_sent": "Votre commentaire a été envoyé. Notre blog étant modéré, celui-ci ne sera pas visible immédiatement.",
