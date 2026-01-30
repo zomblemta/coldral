@@ -829,7 +829,11 @@
         "region_label": "Région",
         "region_placeholder": "Région",
         "region_none": "Aucun sélectionné",
-        "prefecture_label": "Préfecture"
+        "prefecture_label": "Préfecture",
+        "prefecture_placeholder": "Préfecture",
+        "governorate_label": "Gouvernorat",
+        "governorate_placeholder": "Gouvernorat",
+        "emirate_label": "Émirat"
       }
     }
   }
