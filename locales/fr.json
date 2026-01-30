@@ -740,7 +740,10 @@
             "february": "Février",
             "march": "Mars",
             "april": "Avril",
-            "may": "Mai"
+            "may": "Mai",
+            "june": "Juin",
+            "july": "Juillet",
+            "august": "Août"
           }
         }
       }
