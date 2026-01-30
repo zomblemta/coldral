@@ -2655,6 +2655,13 @@
         "alt_header": "Adresse de livraison manquante",
         "message": "Contactez-nous pour ajouter une adresse pour cet emplacement afin de finaliser la commande.",
         "email_us_button_label": "Envoyez-nous un e-mail"
+      },
+      "session_errors": {
+        "session_not_unique": "Un problème est survenu lors du traitement de votre commande. Actualisez cette page pour revenir à la boutique.",
+        "session_already_finished": "Cette commande a déjà été soumise. Vous pouvez retourner au magasin pour commencer une nouvelle commande."
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "Un problème est survenu lors du traitement de votre commande. Réessayez dans quelques minutes."
       }
     }
   }
