@@ -1549,8 +1549,10 @@
           "other": "%{count} codes de réduction ont été supprimés"
         },
         "discount_show_more_warnings": {
-          "one": "Afficher %{count} de plus"
-        }
+          "one": "Afficher %{count} de plus",
+          "other": "Afficher %{count} de plus"
+        },
+        "gift_card_code_label": "Code de carte-cadeau"
       }
     }
   }
