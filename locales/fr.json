@@ -12,8 +12,8 @@
     "page": "Page {{ page }}",
     "home": "Accueil",
     "accessibility": {
-      "skip_to_content": "Passer au contenu",
-      "pagination": "Pagination",
+      "skip_to_content": "Aller Au Contenu",
+      "pagination": "Navigation de pagination",
       "go_to_page": "Aller à la page {{ index }}",
       "go_to_item": "Aller à l'élément {{ index }}",
       "item_nth_of_count": "Elément {{ index }} de {{ count }}",
