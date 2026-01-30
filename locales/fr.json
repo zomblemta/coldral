@@ -1864,6 +1864,10 @@
         "payments": "Paiements",
         "add_payment_method": "Ajouter Un Mode De Paiement",
         "choose_new_payment_method": "Choisissez un nouveau mode de paiement"
+      },
+      "billing": {
+        "billing_address_title": "Facturer à",
+        "billing_address_rollup_accessibility_label": "Options De Facturation"
       }
     }
   }
