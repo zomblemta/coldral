@@ -3604,7 +3604,11 @@
     "active_inspector": {
       "extension": {
         "select": "Sélectionnez l'extension nommée {{extensionName}}",
-        "unselect": "Désélectionnez l’extension nommée {{extensionName}}"
+        "unselect": "Désélectionnez l’extension nommée {{extensionName}}",
+        "move_down": "Déplacer l'extension à la position suivante",
+        "move_up": "Déplacer l'extension à la position précédente",
+        "remove": "Supprimer l'extension",
+        "move_down_tooltip": "Passer À La Position Suivante"
       }
     }
   }
