@@ -2270,7 +2270,10 @@
         "thank_you_confirmed_orders_with_phone": "Vous recevrez bientôt des SMS de confirmation séparés avec vos numéros de commande",
         "thank_you_confirmed_orders_with_email_and_phone": "Vous recevrez bientôt des e-mails de confirmation séparés contenant vos numéros de commande",
         "thank_you_confirmed_order_with_email_payment": "Vous avez effectué un paiement sur votre commande %{date}.",
-        "thank_you_confirmed_order_with_phone_payment": "Vous avez effectué un paiement sur votre commande %{date}."
+        "thank_you_confirmed_order_with_phone_payment": "Vous avez effectué un paiement sur votre commande %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Vous avez effectué un paiement sur votre commande %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque votre commande sera prête à être retirée.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Vous recevrez un SMS lorsque votre commande sera prête à être récupérée."
       }
     }
   }
