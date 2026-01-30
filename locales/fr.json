@@ -3342,7 +3342,9 @@
           "title": "État du paiement"
         },
         "order_timeline": {
-          "expand_events_label": "Afficher les détails"
+          "expand_events_label": "Afficher les détails",
+          "expand_events_accessibility_label": "Afficher les détails du brouillon de commande",
+          "hide_events_label": "Masquer les détails"
         }
       }
     }
