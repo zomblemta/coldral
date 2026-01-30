@@ -3244,6 +3244,14 @@
       "loading_edit_form_accessibility_message": "Chargement Du Formulaire De Modification D'Adresse",
       "loading_form_accessibility_message": "Chargement Du Formulaire D'Adresse",
       "loading_finished_accessibility_message": "Le Formulaire D'Adresse A Été Chargé"
+    },
+    "account_menu": {
+      "signed_out_state": {
+        "sheet_title": "Connectez-vous ou créez un compte",
+        "alternate_divider": "OR",
+        "orders_button": "Commandes",
+        "profile_button": "Profil"
+      }
     }
   }
 }
