@@ -1764,7 +1764,12 @@
           "cancel": "Annuler"
         },
         "delete_credit_card_modal": {
-          "title": "Supprimer la carte"
+          "title": "Supprimer la carte",
+          "confirmation": "Êtes-vous sûr de vouloir supprimer le {{brandName}} se terminant par {{lastDigits}} ?",
+          "delete": "Supprimer"
+        },
+        "edit_credit_card_modal": {
+          "title": "Modifier la carte"
         }
       }
     }
