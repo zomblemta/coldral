@@ -658,7 +658,10 @@
           },
           "sale_attribution": {
             "draft_order_not_exist": "Ce brouillon de commande n'existe pas dans la boutique actuelle.",
-            "staff_member_not_exist": "Ce membre du personnel n'existe pas dans la boutique actuelle."
+            "staff_member_not_exist": "Ce membre du personnel n'existe pas dans la boutique actuelle.",
+            "location_not_exist": "Cet emplacement n'existe pas dans la boutique actuelle.",
+            "point_of_sale_device_not_exist": "Ce terminal de point de vente n'existe pas dans la boutique actuelle.",
+            "unresolvable_target_merchandise_lines": "Les attributions de vente proposées sont impossibles à résoudre compte tenu du contexte de négociation actuel."
           }
         }
       }
