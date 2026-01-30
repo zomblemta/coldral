@@ -754,7 +754,14 @@
           "show_previous_month": "Afficher le mois précédent, {{month}} {{year}}",
           "show_next_month": "Afficher le mois suivant, {{month}} {{year}}",
           "range_start": "Début De La Plage",
-          "in_range": "À portée"
+          "in_range": "À portée",
+          "range_end": "Fin De La Plage"
+        },
+        "list_formatter": {
+          "and": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}}, et {{lastWord}}"
+          }
         }
       }
     }
