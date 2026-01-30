@@ -2928,7 +2928,10 @@
         "empty_update": "impossible de mettre à jour un panier vide",
         "missing_parameters": "aucun identifiant ou paramètre de ligne valide",
         "generic_error": "Erreur du panier",
-        "too_many_line_items_error": "Votre panier ne peut pas contenir plus de %{max} articles."
+        "too_many_line_items_error": "Votre panier ne peut pas contenir plus de %{max} articles.",
+        "link_expired": "Lien expiré",
+        "link_no_longer_exists": "Le lien n'existe plus.",
+        "stock_problems_html": "Un ou plusieurs articles ne sont plus disponibles. Nous avons fourni un <a href='%{link}'>panier mis à jour</a>."
       }
     }
   }
