@@ -883,7 +883,10 @@
         "pick_up_immediately": "Prêt à être retiré maintenant",
         "pick_up_next_day": "Prêt Pour Retrait Le Lendemain",
         "pickup_point_method_definition": "Expédier au point de retrait",
-        "retail_method_definition": "Expédition Au Détail"
+        "retail_method_definition": "Expédition Au Détail",
+        "company_location_no_address_banner": "Les commandes expédiées vers des lieux sans adresse seront soumises à vérification.",
+        "none_method_definition": "Pas de livraison",
+        "subscription_pickup_information": "Cette méthode de livraison s'appliquera à tous les articles de cette commande et à toutes les commandes futures de cet abonnement."
       }
     }
   }
