@@ -504,8 +504,8 @@
       "remove_all": "Tout supprimer",
       "item_count": {
         "zero": "{{ count }} articles",
-        "one": "{{ count }} produit",
-        "other": "{{ count }} produits"
+        "one": "{{ count }} article",
+        "other": "{{ count }} articles"
       },
       "product_subtotal": "Sous-total des produits"
     }
