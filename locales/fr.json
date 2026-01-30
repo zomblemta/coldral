@@ -2061,7 +2061,10 @@
         "expired_card": "Votre carte a expiré. Utilisez un autre moyen de paiement.",
         "payment_method_not_applicable": "Cette méthode de paiement n'est pas applicable. Utilisez une autre méthode de paiement.",
         "card_declined": "Votre carte a été refusée. Réessayez ou utilisez un autre moyen de paiement.",
-        "processing_error": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre moyen de paiement."
+        "processing_error": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre moyen de paiement.",
+        "processing_error_checkout_as_guest": "Un problème est survenu lors du traitement de votre paiement. Réessayez avec un autre moyen de paiement ou {{checkout_as_guest_link}}.",
+        "selected_payment_method": "Un problème est survenu avec votre moyen de paiement sélectionné et vous n'avez pas été facturé. Réessayez ou utilisez un autre moyen de paiement.",
+        "payment_method_billing_address": "Un problème est survenu avec l'adresse de facturation de votre moyen de paiement sélectionné et vous n'avez pas été facturé. Vérifiez l'adresse et réessayez ou utilisez un autre moyen de paiement."
       }
     }
   }
