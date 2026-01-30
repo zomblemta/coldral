@@ -3310,7 +3310,9 @@
         "payment_status": {
           "pending": {
             "banner_overdue_for_multiple_fulfillments": "Paiement dû pour {{count}} exécutions de commandes",
-            "title": "Paiement dû"
+            "title": "Paiement dû",
+            "title_with_date": "Paiement dû {{date}}",
+            "title_due_on_receipt": "Paiement Pas Encore Dû"
           }
         }
       }
