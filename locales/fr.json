@@ -2405,7 +2405,9 @@
         "delivered": "Livré",
         "delivered_title": "Votre commande a été livrée",
         "delivered_description_html": "Votre commande a été livrée à l'adresse que vous avez fournie. Si vous ne l'avez pas reçue, ou si vous rencontrez un autre problème, %{contact_us}.",
-        "delivered_local_title": "Votre commande a été livrée"
+        "delivered_local_title": "Votre commande a été livrée",
+        "delivered_local_description_html": "Vous n'avez pas reçu votre commande ? %{let_us_know}.",
+        "choose_payment_method_later": "Choisir le mode de paiement plus tard"
       }
     }
   }
