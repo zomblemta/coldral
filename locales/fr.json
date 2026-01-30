@@ -562,7 +562,11 @@
             "personal_order_not_allowed": "Les commandes personnelles ne sont pas autorisées pour cette boutique.",
             "lost_access_to_company": "Le client a perdu l'accès à n'importe quelle entreprise.",
             "contact_info_does_not_match_customer_account": "Les informations de contact doivent correspondre au compte auquel vous êtes connecté.",
-            "phone_number_does_not_match_expected_pattern": "Le numéro de téléphone spécifié ne correspond pas au modèle attendu."
+            "phone_number_does_not_match_expected_pattern": "Le numéro de téléphone spécifié ne correspond pas au modèle attendu.",
+            "email_required": "Une adresse e-mail est requise lorsque la marchandise est achetée via un abonnement.",
+            "email_domain_is_invalid": "Ce domaine spécifié ne peut pas être résolu.",
+            "missing_contact_method": "Il manque une méthode de contact valide.",
+            "checkout_completion_target_is_missing": "La cible d'achèvement du processus de paiement est manquante."
           }
         }
       }
