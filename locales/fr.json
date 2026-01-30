@@ -2645,13 +2645,8 @@
         "merchandise": {
           "sold_out": "Épuisé"
         },
-        "inventory": {
-          "sold_out": {
-            "heading": "Votre panier est en rupture de stock",
-            "storefront_body": "Retournez au magasin pour continuer vos achats",
-            "no_storefront_body": "Malheureusement, l'article que vous souhaitez acheter n'est plus disponible.",
-            "link": "Retour à la boutique"
-          }
+        "estimated_wait_time": {
+          "calculating": "Calcul du Temps d'Attente Estimé"
         }
       }
     }
