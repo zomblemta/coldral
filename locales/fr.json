@@ -844,7 +844,10 @@
         "phone_placeholder": "Téléphone",
         "phone_tooltip": "Au cas où nous aurions besoin de vous contacter au sujet de votre commande",
         "zip_code_label": "code postal",
-        "optional_zip_code_label": "Code postal (facultatif)"
+        "optional_zip_code_label": "Code postal (facultatif)",
+        "zip_code_placeholder": "Code postal",
+        "postal_code_label": "Code postal",
+        "optional_postal_code_label": "Code Postal (Optionnel)"
       }
     }
   }
