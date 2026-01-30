@@ -2900,7 +2900,9 @@
       },
       "line_item": {
         "item_status": {
-          "add_variant": "Ajouté %{delta}"
+          "add_variant": "Ajouté %{delta}",
+          "increment_item": "Ajouté %{delta}",
+          "decrement_item": "Supprimé %{delta} sur %{total}"
         }
       }
     }
