@@ -1728,7 +1728,12 @@
         "brand_not_available": "Ce magasin n'accepte pas {{brand}}. Utilisez une autre carte pour payer.",
         "shipping_rate_updated": "Les modes de livraison disponibles ont été mis à jour. Confirmez votre choix avant de passer à la caisse.",
         "billing_address_invalid_phone": "Mettez à jour le numéro de téléphone dans votre adresse de facturation pour {{label}} {{last_digits}} afin de continuer.",
-        "billing_address_invalid_phone_no_card": "Mettez à jour le numéro de téléphone dans votre adresse de facturation pour continuer."
+        "billing_address_invalid_phone_no_card": "Mettez à jour le numéro de téléphone dans votre adresse de facturation pour continuer.",
+        "preview_not_available": {
+          "title": "Aperçu non disponible",
+          "content": "Ne vous inquiétez pas, ce paiement express fonctionne pour vos clients.",
+          "button": "D'accord"
+        }
       }
     }
   }
