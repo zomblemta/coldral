@@ -3400,7 +3400,12 @@
     "payment_methods": {
       "replacement_payment_method_title": "Méthode De Paiement De Remplacement",
       "back_button": "Retour",
-      "or": "OR"
+      "or": "OR",
+      "google_pay": {
+        "errors": {
+          "generic": "Un problème est survenu avec Google Pay. Réessayez ou utilisez un autre moyen de paiement."
+        }
+      }
     }
   }
 }
