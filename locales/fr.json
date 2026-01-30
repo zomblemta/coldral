@@ -1524,7 +1524,9 @@
           "shipping_credential_py": "CI/RUC/TVA",
           "tax_credential_pe": "DNI/RUC/CE",
           "shipping_credential_pe": "DNI/RUC/CE",
-          "tax_credential_pt": "NIF/TVA"
+          "tax_credential_pt": "NIF/TVA",
+          "shipping_credential_pt": "NIF/TVA",
+          "tax_credential_es": "DNI/NIF"
         }
       }
     }
