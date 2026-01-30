@@ -1797,8 +1797,11 @@
           "with_quantities": "Returned {{delta}} of {{quantity}}"
         },
         "order_edit_banner_items_return_line_item_removed": {
-          "in_full": "Retiré du retour"
-        }
+          "in_full": "Retiré du retour",
+          "with_quantities": "Supprimé {{delta}} du retour"
+        },
+        "order_edit_banner_multiple_items_added": "Added {{amount}}",
+        "order_edit_banner_multiple_items_removed": "Removed {{amount}}"
       }
     }
   }
