@@ -469,11 +469,11 @@
     "before_after": {
       "not_enough_blocks": "Pour afficher la comparaison avant/après, veuillez ajouter des blocs dans la section.",
       "percentage_shown": "Pourcentage de la photo « après » affichée",
-      "cursor_accessibility_text": "Utilisez les flèches droite et gauche pour naviguer dans les images avant et après."
+      "cursor_accessibility_text": "Utilisez les touches flèche gauche et flèche droite pour naviguer entre les photos avant et après."
     },
     "countdown_timer": {
       "expires_accessibility_text": "Cette offre expire le {{expiration_date}}",
-      "days": "J",
+      "days": "Jour",
       "hours": "H",
       "minutes": "M",
       "seconds": "S",
