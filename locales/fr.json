@@ -1896,7 +1896,10 @@
         "email_or_phone_blank": "Entrez une adresse e-mail ou un numéro de téléphone",
         "email_or_phone_invalid": "Saisissez une adresse e-mail valide ou un numéro de téléphone mobile",
         "address_first_name_blank": "Entrez un prénom",
-        "address_first_name_too_long": "Le prénom est trop long (maximum : 255 caractères)"
+        "address_first_name_too_long": "Le prénom est trop long (maximum : 255 caractères)",
+        "address_first_name_contains_emojis": "Le prénom ne peut pas contenir d'emojis",
+        "address_first_name_contains_html_tags": "Le prénom ne peut pas contenir de balises HTML.",
+        "address_first_name_contains_url": "`Le prénom ne peut pas contenir d'URL`"
       }
     }
   }
