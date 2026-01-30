@@ -2052,7 +2052,10 @@
         "multiple_deferred_payment_not_allowed": "Un seul paiement différé autorisé par demande. Vérifiez votre demande et réessayez.",
         "shipping_must_match_billing": "L'adresse de facturation doit correspondre à l'adresse de livraison. Utilisez un autre mode de paiement.",
         "shipping_company_required_error": "{{shopName}} exige un nom d'entreprise pour l'adresse de livraison.",
-        "decision_rule_block": "Un problème est survenu lors du traitement de votre paiement. Contactez le propriétaire de la boutique."
+        "decision_rule_block": "Un problème est survenu lors du traitement de votre paiement. Contactez le propriétaire de la boutique.",
+        "pick_up_card": "Votre carte a été refusée. Réessayez ou utilisez un autre moyen de paiement.",
+        "cannot_verify": "Nous n'avons pas pu vérifier vos informations de paiement. Vérifiez les coordonnées de votre carte et réessayez.",
+        "invalid_number": "Entrez un numéro de carte valide"
       }
     }
   }
