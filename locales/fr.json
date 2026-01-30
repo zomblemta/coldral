@@ -1693,11 +1693,12 @@
         "purchase_options_agreement_label_wallets": "poursuivant votre paiement, vous acceptez les frais futurs indiqués sur cette page ainsi que la politique d'annulation.",
         "apple_pay_payment_error": "Votre paiement n'a pas pu être effectué. Réessayez ou utilisez un autre moyen de paiement.",
         "taxes_not_included": "Taxes non incluses",
-        "google": {
-          "connect": "Cliquez pour vous connecter à votre compte Google Pay",
-          "error_authorizing": "Erreur lors de l'autorisation du paiement"
-        },
-        "account_connected": "Compte connecté."
+        "pending_payment": {
+          "due_notice": "Votre paiement de %{amount_due} est dû le %{due_date}.",
+          "multibanco": {
+            "buyer_action_info": "Votre paiement de %{amount_due} est dû."
+          }
+        }
       }
     }
   }
