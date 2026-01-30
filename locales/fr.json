@@ -3252,20 +3252,17 @@
         "orders_button": "Commandes",
         "profile_button": "Profil"
       },
-      "aria_labels": {
-        "loading_menu": "Chargement Du Menu",
-        "sign_in": "Se connecter"
+      "signed_in_state": {
+        "profile_button": "Profil"
+      },
+      "location_picker": {
+        "sheet_title": "Emplacements"
       }
     },
     "B2B": {
-      "account_information": {
-        "company_card_name_label": "Nom de l'entreprise",
-        "company_card_section_accessibility_label": "Entreprise"
-      },
       "locations": {
-        "contact_email": "E-mail",
-        "contact_list_title": "Personnes",
-        "contact_name": "Nom"
+        "contact_phone_number": "Numéro de téléphone",
+        "location_picker_label": "Nom du lieu"
       }
     }
   }
