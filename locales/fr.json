@@ -3488,7 +3488,10 @@
           "with_pending_orders_and_subscriptions": "Supprimer ce mode de paiement affectera les paiements préautorisés. Ce mode de paiement sera toujours débité pour les soldes impayés des commandes existantes, mais vous ne recevrez pas les prochaines commandes d'abonnement. Ajoutez un autre mode de paiement pour continuer à recevoir les commandes d'abonnement.",
           "with_pending_orders": "La suppression de ce moyen de paiement le retirera de votre compte et il ne sera plus disponible pour de futurs achats. Il continuera toutefois d'être débité pour tout solde restant dû sur les commandes en cours.",
           "with_subscriptions": "La suppression de ce mode de paiement affectera les paiements préautorisés. Ajoutez un autre mode de paiement pour continuer à recevoir les prochaines commandes."
-        }
+        },
+        "payment_method_selector_placeholder": "Sélectionnez un mode de paiement de remplacement (facultatif)",
+        "payment_method_selector_no_alternative_payment": "Aucune méthode de remplacement",
+        "replace_method_with_new_method_description": "Votre {{currentPaymentMethodName}} sera supprimé et remplacé par votre {{newPaymentMethodName}}."
       }
     }
   }
