@@ -2049,7 +2049,10 @@
         "three_d_secure_throttled": "Trop de tentatives ; veuillez patienter avant de réessayer",
         "subscription_agreement_blank": "Pour acheter un abonnement, vos informations de paiement doivent être enregistrées. Pour continuer, confirmez que vous acceptez ou retirez les articles d'abonnement de votre commande.",
         "insufficient_funds": "Votre paiement a été refusé en raison d'un solde insuffisant. Réessayez ou utilisez un autre moyen de paiement.",
-        "multiple_deferred_payment_not_allowed": "Un seul paiement différé autorisé par demande. Vérifiez votre demande et réessayez."
+        "multiple_deferred_payment_not_allowed": "Un seul paiement différé autorisé par demande. Vérifiez votre demande et réessayez.",
+        "shipping_must_match_billing": "L'adresse de facturation doit correspondre à l'adresse de livraison. Utilisez un autre mode de paiement.",
+        "shipping_company_required_error": "{{shopName}} exige un nom d'entreprise pour l'adresse de livraison.",
+        "decision_rule_block": "Un problème est survenu lors du traitement de votre paiement. Contactez le propriétaire de la boutique."
       }
     }
   }
