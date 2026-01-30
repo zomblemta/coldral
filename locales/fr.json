@@ -3090,7 +3090,10 @@
           "one": "La carte-cadeau a été envoyée par e-mail.",
           "other": "Les cartes-cadeaux ont été envoyées par e-mail."
         },
-        "submitted_label": "Soumis"
+        "submitted_label": "Soumis",
+        "submitted_description": "Vérifiez les détails de la commande et du paiement.",
+        "there_was_a_problem_label": "Il y a eu un problème",
+        "track_shipment": "Suivre l'envoi"
       }
     }
   }
