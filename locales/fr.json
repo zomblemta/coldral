@@ -3080,6 +3080,9 @@
         },
         "show_order_actions_accessibility_label": "Afficher les actions de la commande {{name}}",
         "view_order": "Voir la commande"
+      },
+      "order_status": {
+        "attempted_to_deliver_label": "Tentative de livraison"
       }
     }
   }
