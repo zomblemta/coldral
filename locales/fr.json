@@ -3396,9 +3396,9 @@
         "bank_account_consent": "ajoutant un mode de paiement, vous autorisez le débit de votre carte ou de votre compte bancaire pour les achats futurs que vous approuvez, jusqu'à ce que vous l'annuliez."
       },
       "bank_account": {
-        "loading_accessibility_message": "Le bouton du compte bancaire est en cours de chargement",
-        "generic_error": "Impossible d'ajouter le compte bancaire. Réessayez plus tard."
-      }
+        "loading_accessibility_message": "Le bouton du compte bancaire est en cours de chargement"
+      },
+      "no_payment_methods_banner": "Aucune Méthode De Paiement Ajoutée"
     }
   }
 }
