@@ -3128,7 +3128,16 @@
         "hide_events_label": "Masquer les détails",
         "hide_events_accessibility_label": "Masquer Les Détails D'Expédition De La Commande"
       },
-      "fully_refunded_label": "REMBOURSÉ"
+      "addresses_section_title": "Facturation et livraison",
+      "order_details": "Détails de la commande",
+      "order_details_skeleton_accessibility_label": "Connectez-vous pour voir tous les détails de la commande.",
+      "billing_address": "Adresse De Facturation",
+      "card_ending_with": "se terminant par {{lastDigits}}",
+      "contact": "Contact",
+      "contact_information": "Coordonnées",
+      "view_controls": {
+        "gallery": "Galerie"
+      }
     }
   }
 }
