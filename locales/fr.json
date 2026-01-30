@@ -1444,7 +1444,10 @@
         "address_confirm": "Êtes-vous sûr de vouloir supprimer cette adresse de votre compte ?",
         "address_default": "Définir par défaut",
         "address_form": {
-          "add_address": "Ajouter Une Adresse"
+          "add_address": "Ajouter Une Adresse",
+          "save": "Enregistrer",
+          "cancel": "Annuler",
+          "edit": "Modifier l'adresse"
         }
       }
     }
