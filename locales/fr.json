@@ -3466,7 +3466,12 @@
         "update_message": "Ce lien pour mettre à jour votre méthode de paiement a expiré."
       },
       "card_fields": {
-        "card_verification_value_placeholder": "Code de sécurité"
+        "card_verification_value_placeholder": "Code de sécurité",
+        "card_start_label": "Date d'émission (MM / AA)",
+        "card_start_placeholder": "Date d'émission (MM / AA)",
+        "tooltip": {
+          "tooltip_accessibility_label": "Plus d'informations"
+        }
       }
     }
   }
