@@ -2651,7 +2651,10 @@
         }
       },
       "no_address_location": {
-        "header": "Vous n'avez pas d'adresse de livraison pour cet emplacement"
+        "header": "Vous n'avez pas d'adresse de livraison pour cet emplacement",
+        "alt_header": "Adresse de livraison manquante",
+        "message": "Contactez-nous pour ajouter une adresse pour cet emplacement afin de finaliser la commande.",
+        "email_us_button_label": "Envoyez-nous un e-mail"
       }
     }
   }
