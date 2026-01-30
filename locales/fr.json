@@ -703,7 +703,9 @@
         "loading_title": "Passer à la caisse - {{shopName}}",
         "display_name": "{{firstName}} {{lastName}}",
         "google_map_title": "Carte Google",
-        "confirm_order_button_label": "Confirmer la commande"
+        "confirm_order_button_label": "Confirmer la commande",
+        "submit_order_button_label": "Valider la commande",
+        "submit_for_review_button_label": "Soumettre pour examen"
       }
     }
   }
