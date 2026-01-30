@@ -2256,7 +2256,11 @@
           "multi_store": "Vous recevrez bientôt des e-mails de confirmation séparés de chaque magasin."
         },
         "thank_you_confirmed_with_phone_description": {
-          "single_store": "Vous recevrez bientôt un SMS de confirmation"
+          "single_store": "Vous recevrez bientôt un SMS de confirmation",
+          "multi_store": "Vous recevrez bientôt des messages de confirmation séparés de chaque magasin"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "Vous recevrez bientôt un e-mail de confirmation"
         }
       }
     }
