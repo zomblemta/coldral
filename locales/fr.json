@@ -468,7 +468,7 @@
   "sections": {
     "before_after": {
       "not_enough_blocks": "Pour afficher la comparaison avant/après, veuillez ajouter des blocs dans la section.",
-      "percentage_shown": "Pourcentage affiché de la photo après",
+      "percentage_shown": "Pourcentage de la photo « après » affichée",
       "cursor_accessibility_text": "Utilisez les flèches droite et gauche pour naviguer dans les images avant et après."
     },
     "countdown_timer": {
@@ -3677,12 +3677,6 @@
       "step_two": {
         "page_title": "Entrez le code - %{shop_name}",
         "restart_link": "Se connecter avec une autre adresse e-mail"
-      },
-      "error": {
-        "invalid": {
-          "invalid_email": "Entrez une adresse e-mail valide",
-          "invalid_code": "Entrez le code correct à 6 chiffres"
-        }
       }
     }
   }
