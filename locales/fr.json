@@ -1239,7 +1239,10 @@
         "error_duties_tooltip": "Cette commande est expédiée depuis un autre pays, des droits et taxes peuvent donc être exigibles à la livraison.",
         "may_be_charged_on_delivery": "Peut être facturé à la livraison",
         "total_updated_label_with_price": "Prix total mis à jour : %{totalPrice}",
-        "updated_shipping_method": "Méthode d'expédition mise à jour : %{shipping_method}"
+        "updated_shipping_method": "Méthode d'expédition mise à jour : %{shipping_method}",
+        "recurring_payments": "Paiements Récurrents",
+        "recurring_total_multiple_label": "Cette commande comporte des frais récurrents pour plusieurs articles.",
+        "deferred_total_due_date_label": "Total dû {{date}}"
       }
     }
   }
