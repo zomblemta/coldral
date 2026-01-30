@@ -2400,7 +2400,10 @@
         "attempted_delivery": "Tentative de livraison",
         "attempted_delivery_title": "Une tentative de livraison de votre commande a été effectuée",
         "attempted_delivery_description_html": "Une tentative de livraison de votre commande a été effectuée mais n'a pas abouti. %{contact_us} pour organiser une nouvelle tentative de livraison.",
-        "attempted_delivery_local_title": "Livraison Manquée"
+        "attempted_delivery_local_title": "Livraison Manquée",
+        "attempted_delivery_local_description_html": "Nous n'avons pas pu livrer votre commande. Pour planifier une nouvelle livraison, %{contact_us}.",
+        "delivered": "Livré",
+        "delivered_title": "Votre commande a été livrée"
       }
     }
   }
