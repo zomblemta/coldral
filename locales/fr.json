@@ -2116,7 +2116,10 @@
         "hide_more_options": "Masquer Plus D'Options"
       },
       "post_purchase": {
-        "page_title": "Après-achat"
+        "page_title": "Après-achat",
+        "title": "Après-achat",
+        "escape_confirmation": "Vous avez payé votre commande.",
+        "escape_action": "Voir la confirmation de la commande ›"
       }
     }
   }
