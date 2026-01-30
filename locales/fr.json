@@ -2509,7 +2509,12 @@
         "resend_gift_cards_by_email": "Renvoyer l'e-mail",
         "resend_gift_cards_by_text": "Renvoyer Le Message Texte",
         "gift_card_resent_confirmation": {
-          "one": "La carte-cadeau a été renvoyée."
+          "one": "La carte-cadeau a été renvoyée.",
+          "other": "Les cartes-cadeaux ont été renvoyées."
+        },
+        "gift_card_resend_failure": {
+          "one": "Un problème est survenu lors de la réexpédition de votre carte-cadeau. Réessayez ou contactez-nous.",
+          "other": "Un problème est survenu lors du renvoi de vos cartes-cadeaux. Réessayez ou contactez-nous."
         }
       }
     }
