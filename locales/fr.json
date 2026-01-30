@@ -3337,7 +3337,12 @@
           },
           "due_date": "Due {{date}}",
           "total_balance": "Solde total",
-          "pay_now": "Payer maintenant"
+          "pay_now": "Payer maintenant",
+          "pay_now_accessibility_label": "Payer maintenant pour la commande {{orderName}}",
+          "title": "État du paiement"
+        },
+        "order_timeline": {
+          "expand_events_label": "Afficher les détails"
         }
       }
     }
