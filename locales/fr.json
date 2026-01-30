@@ -641,7 +641,10 @@
             "saved_payment_methods_cvv_verification_disabled": "La méthode de paiement sélectionnée nécessite une vérification CVV qui n'est pas activée pour cette boutique. Veuillez sélectionner une autre méthode de paiement.",
             "store_credit_not_enabled": "Le crédit en boutique n'est pas activé pour cette boutique.",
             "store_credit_account_not_found": "Compte de crédit en magasin introuvable.",
-            "store_credit_account_mismatch": "Le compte de crédit en magasin ne correspond pas à l'identité de l'acheteur."
+            "store_credit_account_mismatch": "Le compte de crédit en magasin ne correspond pas à l'identité de l'acheteur.",
+            "store_credit_mismatched_currency": "La devise du compte de crédit en magasin ne correspond pas à la devise du paiement.",
+            "store_credit_insufficient_funds": "Le solde du compte de crédit en magasin est insuffisant.",
+            "store_credit_buying_gift_card": "Vous ne pouvez pas utiliser le crédit en magasin pour acheter une carte-cadeau."
           }
         }
       }
