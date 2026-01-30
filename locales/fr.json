@@ -2678,7 +2678,12 @@
             "one": "%{first} - %{last} sur %{count} point",
             "other": "%{first} - %{last} sur %{count} points"
           }
-        }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} point de retrait près de chez vous",
+          "other": "%{count} points de retrait près de chez vous"
+        },
+        "change": "Modifier la localisation"
       }
     }
   }
