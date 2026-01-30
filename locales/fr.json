@@ -1089,7 +1089,11 @@
         "remove_gift_card_label": "Effacer la carte-cadeau",
         "remove_discount_label": "Supprimer la remise",
         "return_restocking_fee_label": "Frais de restockage",
-        "return_shipping_fee_label": "Frais de retour"
+        "return_shipping_fee_label": "Frais de retour",
+        "free_shipping_discount_label": "Livraison gratuite",
+        "applied_free_shipping_discount_label": "Appliqué",
+        "apply_discount_button_label": "Appliquer",
+        "applied_discount_message": "%{amount} de réduction sur le montant total de la commande"
       }
     }
   }
