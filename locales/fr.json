@@ -1262,7 +1262,12 @@
             "other": "%{count} articles"
           }
         },
-        "alternative_payment_currency_total": "Facturé comme %{amount_due}"
+        "alternative_payment_currency_total": "Facturé comme %{amount_due}",
+        "discount_applies_to_subscription_items_only": "Cette remise ne s'applique qu'aux articles d'abonnement"
+      },
+      "shipping": {
+        "delivery_title": "Livraison",
+        "shipping_method_title": "Mode d'expédition"
       }
     }
   }
