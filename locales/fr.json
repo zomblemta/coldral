@@ -3390,6 +3390,14 @@
       },
       "already_upgraded": "Les comptes clients sont déjà mis à niveau.",
       "failed_to_upgrade": "Échec de la mise à niveau des paramètres du compte client."
+    },
+    "payment_methods": {
+      "add_payment_method_dropdown": {
+        "bank_account_consent": "ajoutant un mode de paiement, vous autorisez le débit de votre carte ou de votre compte bancaire pour les achats futurs que vous approuvez, jusqu'à ce que vous l'annuliez."
+      },
+      "bank_account": {
+        "loading_accessibility_message": "Le bouton du compte bancaire est en cours de chargement"
+      }
     }
   }
 }
