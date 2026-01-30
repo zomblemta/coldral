@@ -1472,7 +1472,10 @@
         "pre_order_ships_later": "Expédié plus tard",
         "pre_order_ships_date": "Expédition le %{date}",
         "split_shipping_shipped_by_shop": "Expédié par %{shop_name}",
-        "split_shipping_multiple_shipment_label": "Plusieurs Expéditions"
+        "split_shipping_multiple_shipment_label": "Plusieurs Expéditions",
+        "split_shipping_shipping_label": "Méthode",
+        "split_shipping_shipment_notice": "Votre commande arrivera dans %{quantity_shipments}",
+        "split_shipping_first_shipment_notice": "Votre première commande arrivera dans %{quantity_shipments}"
       }
     }
   }
