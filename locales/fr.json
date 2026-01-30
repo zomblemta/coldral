@@ -2231,7 +2231,10 @@
         "payment_method_title": "Moyen de paiement",
         "shipping_method_title": "Mode de livraison",
         "tracking_number": "Numéro de suivi :",
-        "company_tracking_number": "%{company} numéro de suivi:"
+        "company_tracking_number": "%{company} numéro de suivi:",
+        "estimated_arrival": "Date de livraison estimée : ",
+        "estimated_delivery": "Estimation de livraison actuelle: ",
+        "re-order": "Recommander les mêmes articles"
       }
     }
   }
