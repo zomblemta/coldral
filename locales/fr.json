@@ -2548,7 +2548,9 @@
         "terms_of_service": "Conditions d'utilisation",
         "legal_notice": "Mentions légales",
         "shipping_policy": "Livraison",
-        "subscription_policy": "Annulations"
+        "subscription_policy": "Annulations",
+        "purchase_options_policy": "Politique des options d'achat",
+        "purchase_options_cancellation_policy": "Annulations"
       }
     }
   }
