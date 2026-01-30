@@ -2666,24 +2666,11 @@
         "could_not_resolve_address": "Nous n'avons pas pu localiser votre adresse. Réessayez ou utilisez une autre adresse",
         "paginator": {
           "next_accessibility_label": "Page suivante",
-          "previous_accessibility_label": "Page précédente",
-          "header": {
-            "other": "Affichage de %{first} - %{last} sur %{count} points"
-          },
-          "selected_pickup_point_label": {
-            "one": "%{pickup_point_index} sur %{count} point",
-            "other": "%{pickup_point_index} sur %{count} points"
-          },
-          "selected_page": {
-            "one": "%{first} - %{last} sur %{count} point",
-            "other": "%{first} - %{last} sur %{count} points"
-          }
+          "previous_accessibility_label": "Page précédente"
         },
-        "number_of_pickup_points_near_location": {
-          "one": "%{count} point de retrait près de chez vous",
-          "other": "%{count} points de retrait près de chez vous"
-        },
-        "change": "Modifier la localisation"
+        "geolocation": {
+          "shared_location_button": "Utiliser Ma Localisation"
+        }
       }
     }
   }
