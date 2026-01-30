@@ -1725,7 +1725,10 @@
         "use_location_billing_address_label": "Utiliser L'Adresse De Facturation De L'Emplacement",
         "use_location_shipping_address_label": "Utiliser L'adresse De Livraison De L'emplacement",
         "no_working_method_error": "Ce magasin ne peut pas accepter les paiements pour le moment. Actualisez cette page ou revenez plus tard.",
-        "brand_not_available": "Ce magasin n'accepte pas {{brand}}. Utilisez une autre carte pour payer."
+        "brand_not_available": "Ce magasin n'accepte pas {{brand}}. Utilisez une autre carte pour payer.",
+        "shipping_rate_updated": "Les modes de livraison disponibles ont été mis à jour. Confirmez votre choix avant de passer à la caisse.",
+        "billing_address_invalid_phone": "Mettez à jour le numéro de téléphone dans votre adresse de facturation pour {{label}} {{last_digits}} afin de continuer.",
+        "billing_address_invalid_phone_no_card": "Mettez à jour le numéro de téléphone dans votre adresse de facturation pour continuer."
       }
     }
   }
