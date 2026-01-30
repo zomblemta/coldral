@@ -2799,7 +2799,9 @@
         "fluid_ounce": "fl oz"
       },
       "taxes": {
-        "tax_details": "Informations Fiscales Supplémentaires"
+        "vat_number": {
+          "add": "Ajouter un numéro de TVA"
+        }
       }
     }
   }
