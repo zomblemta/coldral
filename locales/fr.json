@@ -794,7 +794,10 @@
       },
       "contact": {
         "title": "Informations",
-        "address_title": "Adresse"
+        "address_title": "Adresse",
+        "shipping_used_as_billing_notice": "Cette adresse servira également d'adresse de facturation pour cette commande.",
+        "delivery_option_title": "Méthode de livraison",
+        "contact_method_title": "Contact"
       }
     }
   }
