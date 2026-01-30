@@ -3173,11 +3173,6 @@
       "marketing_checkmark_label": "Vous êtes abonné(e) pour recevoir des actualités et des offres par e-mail",
       "returns": {
         "expand_events_label": "Voir Les Détails"
-      },
-      "shipping": {
-        "method": "Mode De Livraison",
-        "summary": "Livraison",
-        "free": "Gratuit"
       }
     }
   }
