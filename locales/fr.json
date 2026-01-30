@@ -1493,7 +1493,10 @@
       },
       "localized_fields": {
         "additional_information": {
-          "title": "Informations complémentaires"
+          "title": "Informations complémentaires",
+          "tax_credential_br": "CPF/CNPJ",
+          "shipping_credential_br": "CPF/CNPJ",
+          "shipping_credential_kr": "Code Douanier Personnel"
         }
       }
     }
