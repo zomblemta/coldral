@@ -2967,6 +2967,11 @@
     "checkpoint": {
       "error": "La validation du captcha a échoué",
       "submit_button_text": "Envoyer"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "two_hours": "Généralement prêt en 2 heures"
+      }
     }
   }
 }
