@@ -3203,7 +3203,11 @@
         "order_completed_with": "Commande terminée avec",
         "learn_more": "savoir plus"
       },
-      "taxes": "Taxes"
+      "taxes": "Taxes",
+      "taxes_included": "Dont {{amount}} de taxes",
+      "duties_and_taxes_included": "Le total inclut les droits et taxes. Aucun frais supplémentaire à la livraison.",
+      "duties": "Droits de douane",
+      "ok_duties_tooltip": "Cette commande est expédiée depuis un autre pays, donc des droits de douane ont été ajoutés au total de votre commande."
     }
   }
 }
