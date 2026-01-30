@@ -3279,7 +3279,9 @@
       },
       "orders": {
         "draft_order_list": {
-          "hide_all": "Masquer tout"
+          "hide_all": "Masquer tout",
+          "show_all": "Afficher tout",
+          "hide_all_accessibility_label": "Masquer toutes les commandes en cours d'examen"
         }
       }
     }
