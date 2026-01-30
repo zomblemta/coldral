@@ -1427,7 +1427,10 @@
         },
         "shipping_used_as_billing_notice": "Ceci servira également d'adresse de facturation pour cette commande.",
         "address_update": "Mettre à jour l'adresse",
-        "shipping_address_title": "Expédier à"
+        "shipping_address_title": "Expédier à",
+        "shipping_address_rollup_accessibility_label": "Options d'Adresse de Livraison",
+        "third_party_address_timeout": "Impossible de charger les adresses. Réessayez ou utilisez une adresse différente.",
+        "third_party_address_error": "Une erreur est survenue lors du chargement de la sélection d'adresses. Saisissez votre adresse manuellement ci-dessous."
       }
     }
   }
