@@ -2598,7 +2598,11 @@
       "tips": {
         "title": "Ajouter Un Pourboire",
         "description": "Montrez Votre Soutien À L'Équipe De %{shop_name}",
-        "presets_description": "Sélectionnez un pourcentage de pourboire"
+        "presets_description": "Sélectionnez un pourcentage de pourboire",
+        "custom_label": "Pourboire personnalisé",
+        "add_tip": "Ajouter un pourboire",
+        "update_tip": "Mettre à Jour le Pourboire",
+        "message": "Merci, nous vous en sommes reconnaissants."
       }
     }
   }
