@@ -264,7 +264,7 @@
     "recover_password": {
       "title": "Récupération du mot de passe",
       "instructions": "Entrez votre email pour récupérer votre mot de passe :",
-      "remember_password": "Vous connaissez votre mot de passe ?",
+      "remember_password": "Vous vous souvenez de votre mot de passe ?",
       "email": "E-mail",
       "submit": "Récupérer",
       "back_to_login": "Se connecter",
