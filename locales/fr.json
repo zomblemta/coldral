@@ -1885,6 +1885,10 @@
       "company_location": {
         "location_title": "Emplacement de l'entreprise",
         "location_rollup_accessibility_label": "Options d'emplacement de l'entreprise"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Solde actuel %{amount}",
+        "credit_card_expires_on_notice": "Expire le %{month}/%{year}"
       }
     }
   }
