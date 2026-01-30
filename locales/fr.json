@@ -1645,7 +1645,10 @@
         "card_fields_processing_error": "Un problème est survenu lors du traitement du paiement. Essayez d'actualiser cette page ou vérifiez votre connexion Internet.",
         "technical_error": "Les paiements ne peuvent pas être traités pour le moment en raison d'un problème technique. Réessayez dans quelques minutes.",
         "no_method_error": "Cette boutique ne peut pas accepter les paiements pour le moment.",
-        "not_configured_error": "Cette boutique ne peut pas accepter de paiements pour le moment."
+        "not_configured_error": "Cette boutique ne peut pas accepter de paiements pour le moment.",
+        "missing_credit_card_error": "Saisissez les coordonnées de votre carte pour finaliser le paiement",
+        "shop_pay_ideal_unavailable_error": "iDEAL n'est pas disponible pour cette commande. Choisissez un autre moyen de paiement.",
+        "payment_method_not_available_for_shipping_address_error": "Méthode de paiement non disponible pour l'adresse de livraison sélectionnée. Choisissez une autre méthode de paiement."
       }
     }
   }
