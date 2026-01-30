@@ -1173,7 +1173,9 @@
         "quantity_label": "Quantité",
         "product_change_label": "Changer",
         "product_image_label": "Image du produit",
-        "product_image_quantity_label": "Quantité"
+        "product_image_quantity_label": "Quantité",
+        "scroll_order_summary": "Faites défiler pour plus d'articles",
+        "collapse_order_summary_short": "Masquer"
       }
     }
   }
