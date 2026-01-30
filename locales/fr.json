@@ -3540,7 +3540,10 @@
     },
     "ui_components": {
       "clear": "Effacer",
-      "clipboardCopied": "Copié"
+      "clipboardCopied": "Copié",
+      "clipboardFailedToCopy": "Échec de la copie",
+      "closeNotification": "Fermer",
+      "expandNotification": "Voir plus"
     }
   }
 }
