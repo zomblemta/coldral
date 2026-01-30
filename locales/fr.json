@@ -1409,7 +1409,10 @@
           }
         },
         "one_time_purchase_shipping": "Livraison Unique",
-        "duties_and_taxes_title": "Droits et taxes"
+        "duties_and_taxes_title": "Droits et taxes",
+        "shipping_information_required_notice": "Les informations de livraison sont obligatoires. {{link}}.",
+        "shipping_information_redirect_link": "Entrez vos informations ici",
+        "loading_progressive_rates": "Recherche d'autres tarifs…"
       }
     }
   }
