@@ -1583,7 +1583,11 @@
         "card_verification_confirm": "Pour des raisons de vérification, saisissez le code de sécurité de votre carte.",
         "card_expiry_date_explanation": "Date d'expiration de la carte au format : mois, mois, année, année",
         "card_expiration_month_label": "Mois d'expiration",
-        "card_expiration_year_label": "Année d'expiration"
+        "card_expiration_year_label": "Année d'expiration",
+        "card_verification_value_explanation": "Code de sécurité à 3 chiffres généralement situé au dos de votre carte. Les cartes American Express ont un code à 4 chiffres situé au recto.",
+        "card_verification_value_explanation_amex": "code de sécurité à 4 chiffres au recto de votre carte",
+        "card_verification_value_explanation_other": "Code de sécurité à 3 chiffres au dos de votre carte",
+        "card_start_label": "Date d'émission (MM / AA)"
       }
     }
   }
