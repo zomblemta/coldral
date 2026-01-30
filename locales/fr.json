@@ -2131,7 +2131,10 @@
         "redirecting_page_title": "Redirection en cours…",
         "redirecting_title": "Redirection…",
         "redirecting_notice": "Veuillez patienter pendant que nous vous redirigeons.",
-        "redirecting_to_bank": "Redirection vers {{bank}}"
+        "redirecting_to_bank": "Redirection vers {{bank}}",
+        "complete_your_purchase_title": "Finalisez votre achat",
+        "continue_to_payment_gateway_notice": "Passez au paiement pour ajouter vos informations de paiement.",
+        "continue_to_payment_gateway_button_label": "Continuer vers le Paiement"
       }
     }
   }
