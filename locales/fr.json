@@ -1571,7 +1571,10 @@
         "name_on_card_placeholder": "Nom sur la carte",
         "card_nickname_label": "Surnom (optionnel)",
         "card_expired": "Expiré",
-        "card_expiry_label": "Date d'expiration (MM / YY)"
+        "card_expiry_label": "Date d'expiration (MM / YY)",
+        "card_expiry_placeholder": "Date d'expiration (MM / AA)",
+        "credit_card_start_month": "Mois de début",
+        "credit_card_start_year": "Année de début"
       }
     }
   }
