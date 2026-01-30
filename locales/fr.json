@@ -3615,6 +3615,13 @@
     },
     "editor": {
       "link_new_tab_confirmation": "Ce lien ne peut pas être ouvert dans l’éditeur. Il s’ouvrira dans une nouvelle fenêtre ({{resolved_to_link}}). Cliquez sur OK pour continuer."
+    },
+    "settings": {
+      "title": "Paramètres",
+      "loading_accessibility_message": "Chargement de la page des paramètres",
+      "log_out_everywhere": {
+        "title": "Se déconnecter partout"
+      }
     }
   }
 }
