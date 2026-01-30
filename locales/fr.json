@@ -1093,7 +1093,10 @@
         "free_shipping_discount_label": "Livraison gratuite",
         "applied_free_shipping_discount_label": "Appliqué",
         "apply_discount_button_label": "Appliquer",
-        "applied_discount_message": "%{amount} de réduction sur le montant total de la commande"
+        "applied_discount_message": "%{amount} de réduction sur le montant total de la commande",
+        "discount_has_been_applied": "Remise appliquée",
+        "discount_has_been_removed": "La remise a été supprimée",
+        "gift_card_has_been_applied": "La carte-cadeau a été appliquée"
       }
     }
   }
