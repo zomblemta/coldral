@@ -2427,7 +2427,10 @@
         "login_reorder_link_text": {
           "one": "achetez aussi ce produit",
           "other": "achetez aussi ces produits"
-        }
+        },
+        "customer_information_hidden_fields_message": "Connectez-vous pour voir toutes les informations client.",
+        "cancelled_title": "Votre commande a été annulée",
+        "cancelled_description": "Votre commande a été annulée le %{date}. Contactez-nous si vous avez des questions."
       }
     }
   }
