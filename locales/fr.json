@@ -2822,7 +2822,9 @@
               "fr": "Entrez Un Numéro De TVA Français Valide",
               "de": "Entrez un numéro de TVA allemand valide",
               "gr": "Entrez Un Numéro De TVA Grec Valide"
-            }
+            },
+            "service_unavailable": "Service de validation indisponible",
+            "service_error": "Service de validation indisponible"
           }
         }
       }
