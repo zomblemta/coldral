@@ -2972,6 +2972,10 @@
       "pick_up_time": {
         "next_day": "Prêt à être retiré le lendemain"
       }
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Cet article est un achat récurrent ou différé. En poursuivant, j'accepte %{cancellationPolicyLink} et vous autorise à débiter mon moyen de paiement aux prix, à la fréquence et aux dates indiqués sur cette page jusqu'à ce que ma commande soit exécutée ou que j'annule, si cela est autorisé.",
+      "buyer_consent_cart": "Un ou plusieurs articles de votre panier sont des achats récurrents ou différés. En continuant, j'accepte %{cancellationPolicyLink} et j'autorise que vous débitiez mon moyen de paiement aux prix, à la fréquence et aux dates indiqués sur cette page jusqu'à ce que ma commande soit exécutée ou que j'annule, si cela est autorisé."
     }
   }
 }
