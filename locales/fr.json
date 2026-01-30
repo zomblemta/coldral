@@ -2791,7 +2791,16 @@
         "length_exceeds_maximum": "Réduisez la taille de la note à 5000 caractères ou moins."
       },
       "offsite_payment_failed": {
-        "title": "Le paiement hors site a échoué"
+        "title": "Le paiement hors site a échoué",
+        "payment_link_expired_text": "Réessayez de scanner le code QR."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Le prix de la carte-cadeau doit être supérieur à 0.",
+            "gift_card_price_must_not_exceed_limit": "Le prix de la carte-cadeau ne doit pas dépasser %{gift_card_limit}."
+          }
+        }
       }
     }
   }
