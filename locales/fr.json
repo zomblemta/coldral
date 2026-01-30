@@ -2724,10 +2724,19 @@
         "all_stores_far_away": {
           "title": "Les emplacements les plus proches se trouvent à plus de %{distance}.",
           "description": "Sélectionnez un emplacement ou %{ship_to_address_link}"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "Votre emplacement précédemment sélectionné n'est plus disponible",
+          "description": "Sélectionnez un nouvel emplacement ou %{ship_to_address_link}",
+          "ship_to_address_link": "adresse de livraison"
+        },
+        "could_not_resolve_address": "Votre adresse n'a pas pu être localisée. Réessayez ou utilisez une autre adresse",
+        "paginator": {
+          "next": "Page suivante"
         }
       },
-      "clipboard": {
-        "failed_to_copy": "Échec de la copie"
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "Vous n'avez plus la permission de passer des commandes B2B. %{logout_url} pour passer une commande personnelle à la place."
       }
     }
   }
