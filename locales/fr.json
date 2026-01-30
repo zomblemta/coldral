@@ -3360,9 +3360,9 @@
       }
     },
     "errors": {
-      "load_address_form_error": {
-        "title": "Impossible De Charger Le Formulaire D'Adresse",
-        "description": "Impossible de charger le formulaire d'adresse."
+      "load_orders_error": {
+        "title": "Impossible de charger les commandes",
+        "description": "Réessayez ou revenez plus tard."
       }
     }
   }
