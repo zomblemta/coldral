@@ -3287,7 +3287,12 @@
           "show_less_orders_in_review": "Afficher Moins de Commandes en Cours d'Examen",
           "title": "attente",
           "pending_tab_accessibility_label": {
-            "no_pending_orders": "Vous n'avez aucune commande en attente"
+            "no_pending_orders": "Vous n'avez aucune commande en attente",
+            "pending_orders": {
+              "one": "Vous avez {{count}} commande en attente",
+              "other": "Vous avez {{count}} commandes en attente"
+            },
+            "more_than_pagination_length": "Vous avez plus de {{count}} commandes en attente"
           }
         }
       }
