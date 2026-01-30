@@ -1944,7 +1944,9 @@
         "address_zip_contains_emojis": "ZIP / code postal ne peut pas contenir d'émojis",
         "address_zip_contains_mathematical_symbols": "ZIP / code postal ne peut pas contenir de symboles mathématiques",
         "address_generic_blank": "Champ requis",
-        "address_generic_invalid": "Entrée invalide"
+        "address_generic_invalid": "Entrée invalide",
+        "address_generic_error": "Erreur De Champ",
+        "credit_card_name_blank": "Saisissez votre nom exactement comme il est écrit sur votre carte"
       }
     }
   }
