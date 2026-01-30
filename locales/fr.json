@@ -881,7 +881,9 @@
         "pick_up_in_zero_to_two_hours": "Prêt à être récupéré dans 2 heures",
         "pick_up_in_two_to_four_hours": "Prêt à être récupéré dans 4 heures",
         "pick_up_immediately": "Prêt à être retiré maintenant",
-        "pick_up_next_day": "Prêt Pour Retrait Le Lendemain"
+        "pick_up_next_day": "Prêt Pour Retrait Le Lendemain",
+        "pickup_point_method_definition": "Expédier au point de retrait",
+        "retail_method_definition": "Expédition Au Détail"
       }
     }
   }
