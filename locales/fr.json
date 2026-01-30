@@ -2716,7 +2716,10 @@
         }
       },
       "local_pickup": {
-        "or": "OR"
+        "or": "OR",
+        "cancel": "Annuler",
+        "your_location": "votre emplacement",
+        "search_button": "Trouver des magasins"
       }
     }
   }
