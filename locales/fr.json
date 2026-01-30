@@ -2948,6 +2948,11 @@
         "add_articles": "Restreindre la recherche aux articles ayant également le tag %{tag}",
         "add_products": "Restreindre la sélection aux produits correspondant à l'étiquette %{tag}"
       }
+    },
+    "search": {
+      "sorting": {
+        "price_ascending": "Prix, du moins cher au plus cher"
+      }
     }
   }
 }
