@@ -3460,13 +3460,6 @@
         "loading_current_payment_method": "Chargement Du Mode De Paiement Actuel",
         "loading_digital_wallets": "Chargement des options de portefeuille numérique",
         "loading_card_fields": "Chargement Des Champs De Carte De Crédit"
-      },
-      "link_expired": {
-        "message": "Ce lien pour mettre à jour votre méthode de paiement a expiré.",
-        "update_message": "Ce lien pour mettre à jour votre méthode de paiement a expiré."
-      },
-      "update_success": {
-        "title": "Méthode De Paiement Mise À Jour"
       }
     }
   }
