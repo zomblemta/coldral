@@ -2769,8 +2769,8 @@
             "shipping_option": "Choisissez une option de livraison valide",
             "email": "Entrez une adresse e-mail valide",
             "zone": "Entrez un état / province valide",
-            "billing_zone": "Entrez un état/province de facturation valide",
-            "emirate": "Entrez un émirat valide"
+            "phone": "Entrez un numéro de téléphone valide",
+            "billing_phone": "Entrez un numéro de téléphone de facturation valide"
           }
         }
       }
