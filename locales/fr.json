@@ -3033,7 +3033,9 @@
             "due_on_fulfillment": "Paiement dû à l'exécution"
           },
           "list_view": {
-            "overdue": "retard"
+            "overdue": "retard",
+            "due": "Due {{date}}",
+            "due_today": "Échéance aujourd'hui"
           }
         }
       }
