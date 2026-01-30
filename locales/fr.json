@@ -524,7 +524,7 @@
         "complete_purchase_button_label": "Finaliser la commande",
         "pay_now_button_label": "Payer Maintenant",
         "edit_link_label": "Modifier",
-        "close_notice_label": "Fermer"
+        "continue_to_review": "Vérifier la commande"
       }
     }
   }
