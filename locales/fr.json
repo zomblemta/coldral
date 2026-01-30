@@ -3377,7 +3377,14 @@
       "order_not_found": {
         "description": "Cette commande n'existe pas ou vous n'êtes pas autorisé à la consulter.",
         "title": "Commande introuvable"
-      }
+      },
+      "profile_update_error": {
+        "description": "Un problème est survenu lors de la mise à jour de votre profil. Essayez de rafraîchir cette page ou vérifiez votre connexion internet."
+      },
+      "profile_name_update_error": {
+        "description": "Un problème est survenu lors de la mise à jour de votre nom. Essayez de rafraîchir cette page ou vérifiez votre connexion Internet."
+      },
+      "retry_action_label": "Réessayer"
     }
   }
 }
