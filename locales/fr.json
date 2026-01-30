@@ -3460,6 +3460,10 @@
         "loading_current_payment_method": "Chargement Du Mode De Paiement Actuel",
         "loading_digital_wallets": "Chargement des options de portefeuille numérique",
         "loading_card_fields": "Chargement Des Champs De Carte De Crédit"
+      },
+      "card_fields": {
+        "card_number_placeholder": "Numéro de carte",
+        "name_on_card_label": "Nom Sur La Carte"
       }
     }
   }
