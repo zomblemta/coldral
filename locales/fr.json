@@ -1484,7 +1484,10 @@
         "split_shipping_merchandise_quantity_label_inline_primary": "Quantité : %{quantity}",
         "split_shipping_merchandise_quantity_label_inline": "%{merchandise_title} ×%{quantity}",
         "split_shipping_option_free": "Livraison gratuite",
-        "split_shipping_option_lowest_price": "Prix le plus bas"
+        "split_shipping_option_lowest_price": "Prix le plus bas",
+        "split_shipping_option_fastest": "Le plus rapide",
+        "split_shipping_option_recommended": "Recommandé",
+        "split_shipping_option_custom": "Personnalisé"
       }
     }
   }
