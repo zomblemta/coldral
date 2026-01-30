@@ -2934,7 +2934,8 @@
         "stock_problems_html": "Un ou plusieurs articles ne sont plus disponibles. Nous avons fourni un <a href='%{link}'>panier mis à jour</a>.",
         "shipping_address_not_required": "Ce panier ne nécessite pas de livraison",
         "shipping_address_invalid": "Un problème est survenu lors du calcul de vos frais de livraison. Continuez vers la caisse pour choisir un tarif d'expédition avant de finaliser votre commande.",
-        "bundle_requires_components": "Le produit groupé '%{name}' ne peut pas être ajouté au panier."
+        "bundle_requires_components": "Le produit groupé '%{name}' ne peut pas être ajouté au panier.",
+        "gift_card_recipient_validation_error": "Le destinataire spécifié de la carte-cadeau est invalide"
       }
     }
   }
