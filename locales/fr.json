@@ -474,8 +474,8 @@
     "countdown_timer": {
       "expires_accessibility_text": "Cette offre expire le {{expiration_date}}",
       "days": "Jour",
-      "hours": "H",
-      "minutes": "M",
+      "hours": "Heures",
+      "minutes": "Min",
       "seconds": "S",
       "days_long": "Jours",
       "hours_long": "Heures",
