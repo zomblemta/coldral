@@ -946,7 +946,14 @@
         "unpurchasable_product_generic": {
           "title": "Produit non achetable",
           "header": "Certains articles ont été retirés de votre panier",
-          "message": "Ces articles ne sont pas disponibles."
+          "message": "Ces articles ne sont pas disponibles.",
+          "status_column_header": "Non Disponible"
+        },
+        "unfulfillable_product": {
+          "title": "Livraison non disponible",
+          "message": {
+            "one": "%{delivery_method} n'est plus disponible pour cet article."
+          }
         }
       }
     }
