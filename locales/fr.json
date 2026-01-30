@@ -2144,7 +2144,11 @@
         "you_will_receive_confirmation": "Nous recevons beaucoup de commandes en ce moment. Vous devriez recevoir une confirmation par e‑mail ou SMS bientôt. Si vous ne la recevez pas dans l’heure qui vient, faites-le nous savoir.",
         "you_will_not_be_charged": "Vous ne serez pas encore facturé.",
         "wait": {
-          "short": "Votre commande est en cours de traitement."
+          "short": "Votre commande est en cours de traitement.",
+          "medium": {
+            "one": "Votre commande est en cours de traitement. Temps d'attente estimé : %{count} minute.",
+            "other": "Votre commande est en cours de traitement. Le délai d'attente estimé est de %{count} minutes."
+          }
         }
       }
     }
