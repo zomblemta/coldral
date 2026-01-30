@@ -853,7 +853,10 @@
         "optional_postcode_label": "Code postal (facultatif)",
         "postcode_placeholder": "Code Postal",
         "pincode_label": "Code PIN",
-        "optional_pincode_label": "Code PIN (optionnel)"
+        "optional_pincode_label": "Code PIN (optionnel)",
+        "pincode_placeholder": "code PIN",
+        "civic_number_warning": "Ajoutez un numéro de maison si vous en avez un",
+        "optional_last_name_label": "Nom de famille (facultatif)"
       }
     }
   }
