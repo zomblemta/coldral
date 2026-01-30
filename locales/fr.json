@@ -1670,7 +1670,11 @@
         "eps_label": "eps-Virement",
         "ideal_label": "iDEAL",
         "bank_picker_label": "Banque",
-        "afterpay_label": "Afterpay"
+        "afterpay_label": "Afterpay",
+        "cashapppay_label": "Cash App Pay",
+        "przelewy24_label": "Przelewy24",
+        "blik_label": "Blik",
+        "mobilepay_label": "MobilePay"
       }
     }
   }
