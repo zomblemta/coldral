@@ -1894,7 +1894,9 @@
       },
       "field_errors": {
         "email_or_phone_blank": "Entrez une adresse e-mail ou un numéro de téléphone",
-        "email_or_phone_invalid": "Saisissez une adresse e-mail valide ou un numéro de téléphone mobile"
+        "email_or_phone_invalid": "Saisissez une adresse e-mail valide ou un numéro de téléphone mobile",
+        "address_first_name_blank": "Entrez un prénom",
+        "address_first_name_too_long": "Le prénom est trop long (maximum : 255 caractères)"
       }
     }
   }
