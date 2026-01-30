@@ -3137,7 +3137,8 @@
       "contact_information": "Coordonnées",
       "loading": "Chargement Des Détails De La Commande",
       "loading_finished_accessibility_message": "Les détails de la commande ont été chargés",
-      "location": "Emplacement"
+      "location": "Emplacement",
+      "no_data_provided_accessibility_label": "{{fieldName}} est vide"
     }
   }
 }
