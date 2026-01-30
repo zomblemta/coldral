@@ -3115,7 +3115,11 @@
           },
           "claim_shop_cash_cta": {
             "has_shop_app_label": "Récupérez Votre Shop Cash",
-            "no_shop_app_label": "{{appDownloadLink}} pour réclamer Shop Cash"
+            "no_shop_app_label": "{{appDownloadLink}} pour réclamer Shop Cash",
+            "download_shop_app_label": "Boutique de Téléchargement"
+          },
+          "details_modal": {
+            "title": "Livraison assurée par"
           }
         }
       }
