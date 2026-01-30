@@ -3252,14 +3252,8 @@
         "orders_button": "Commandes",
         "profile_button": "Profil"
       },
-      "signed_in_state": {
-        "profile_button": "Profil"
-      },
-      "location_picker": {
-        "sheet_title": "Emplacements"
-      },
       "aria_labels": {
-        "back_to_main_menu": "Retour au menu principal depuis {{title}}"
+        "loading_menu": "Chargement Du Menu"
       }
     }
   }
