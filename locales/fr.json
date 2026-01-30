@@ -2981,8 +2981,10 @@
   "customer_accounts": {
     "date": {
       "humanize": {
-        "lessThanOneWeekAway": "{{weekday}} à {{time}}"
+        "lessThanOneWeekAway": "{{weekday}} à {{time}}",
+        "lessThanOneYearAway": "`{{date}} à {{time}}`"
       }
-    }
+    },
+    "enable_javascript": "Pour voir votre compte, activez JavaScript dans les paramètres de votre navigateur ou connectez-vous avec un autre navigateur."
   }
 }
