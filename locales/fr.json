@@ -3444,7 +3444,12 @@
         "payment_method_not_found_error": "Impossible de trouver un moyen de paiement",
         "payment_details_loading": "Chargement Des Détails Du Moyen De Paiement",
         "pre_authorized_payments": "Paiements préautorisés",
-        "default_checkbox": "Définir par défaut"
+        "default_checkbox": "Définir par défaut",
+        "default_checkbox_accessibility_label": "Définir Ce Moyen De Paiement Par Défaut",
+        "replace_payment_method_button": "Remplacer"
+      },
+      "edit_payment_method": {
+        "title": "Modifier le mode de paiement"
       }
     }
   }
