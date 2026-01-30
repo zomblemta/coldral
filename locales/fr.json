@@ -1137,7 +1137,10 @@
         "estimated_taxes_label": "Taxes Estimées",
         "estimated_taxes_label_short": "Estimé",
         "information_estimated_taxes_label": "Taxes (estimées)",
-        "estimated_taxes_finalization_tooltip_content": "Le montant final des taxes et le total vous seront confirmés par e-mail ou par SMS après que vous aurez passé votre commande."
+        "estimated_taxes_finalization_tooltip_content": "Le montant final des taxes et le total vous seront confirmés par e-mail ou par SMS après que vous aurez passé votre commande.",
+        "estimated_taxes_finalization_tooltip_content_short": "Taxe finalisée après le paiement",
+        "order_total_label": "Total De La Commande",
+        "price_before_discount_aria_text": "Prix d'origine"
       }
     }
   }
