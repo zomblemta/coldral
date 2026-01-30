@@ -2948,11 +2948,6 @@
         "add_articles": "Restreindre la recherche aux articles ayant également le tag %{tag}",
         "add_products": "Restreindre la sélection aux produits correspondant à l'étiquette %{tag}"
       }
-    },
-    "email_marketing": {
-      "sms_unsubscribe_confirm": {
-        "message": "Voulez-vous vraiment vous désabonner du marketing par SMS ?"
-      }
     }
   }
 }
