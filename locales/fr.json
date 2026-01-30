@@ -2386,7 +2386,10 @@
         "order_updates_past_step_prefix": "Étape précédente : ",
         "order_updates_upcoming_step_prefix": "Prochaine Étape : ",
         "in_transit": "route",
-        "in_transit_title": "Votre commande est en route"
+        "in_transit_title": "Votre commande est en route",
+        "in_transit_description": "Vous recevrez des mises à jour sur son avancement.",
+        "in_transit_description_days": "Vous devriez recevoir votre commande dans les %{number} prochains jours.",
+        "in_transit_description_today": "Vous devriez recevoir votre commande aujourd'hui."
       }
     }
   }
