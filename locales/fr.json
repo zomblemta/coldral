@@ -50,8 +50,8 @@
       "info": "{{ rating_value }} sur {{ rating_max }} étoiles"
     },
     "newsletter": {
-      "email": "E-mail",
-      "subscribe": "S'inscrire",
+      "email": "Courriel",
+      "subscribe": "S'abonner",
       "notify_me": "Me notifier",
       "subscribed_successfully": "Vous êtes maintenant inscrit à notre newsletter."
     },
