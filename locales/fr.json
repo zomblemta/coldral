@@ -3002,6 +3002,11 @@
         "email": "E-mail",
         "no_name_provided_accessibility_label": "Aucun nom ajouté"
       }
+    },
+    "orders": {
+      "order_list": {
+        "delivered": "Delivered {{date}}"
+      }
     }
   }
 }
