@@ -2995,7 +2995,8 @@
       "profile_card": {
         "cancel": "Annuler",
         "cancel_accessibility_label": "Annuler la modification du profil",
-        "edit": "Modifier"
+        "edit": "Modifier",
+        "editable_email_help_text": "Cet e-mail est utilisé pour la connexion et les mises à jour des commandes."
       }
     }
   }
