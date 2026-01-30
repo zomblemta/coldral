@@ -2185,7 +2185,10 @@
         "bank_account_label": "Compte bancaire",
         "cash_on_delivery_label": "Paiement à la livraison (COD)",
         "money_order_label": "Mandat Postal",
-        "debit_card_label": "Carte de débit"
+        "debit_card_label": "Carte de débit",
+        "deferred_payment_label": "Choisir Le Mode De Paiement Plus Tard",
+        "fixed_payment_label": "Votre paiement sera dû le {{dueDate}}.",
+        "generic_payment_terms": "Vous êtes soumis aux conditions de {{translatedName}}. Votre paiement sera dû le {{dueDate}}."
       }
     }
   }
