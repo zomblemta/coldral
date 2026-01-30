@@ -806,7 +806,10 @@
         "stored_addresses_label": "Adresses enregistrées",
         "available_addresses_label": "Adresses Disponibles",
         "new_address_label": "Utiliser une nouvelle adresse",
-        "first_name_label": "Prénom"
+        "first_name_label": "Prénom",
+        "optional_first_name_label": "Prénom (facultatif)",
+        "last_name_label": "Nom de famille",
+        "company_label": "Entreprise"
       }
     }
   }
