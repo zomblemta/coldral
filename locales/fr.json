@@ -1541,7 +1541,9 @@
         "amazon_payments_logout": "Se déconnecter d'Amazon Pay",
         "amazon_payments_failed_mfa_challenge": "Le mode de paiement sélectionné n'a pas pu être utilisé. Choisissez un autre mode ou contactez votre banque ou l'émetteur de votre carte.",
         "amazon_payments_abandoned_mfa_challenge": "Votre paiement n'a pas pu être effectué. Essayez un autre moyen de paiement ou contactez votre banque ou l'émetteur de votre carte.",
-        "title": "Paiement"
+        "title": "Paiement",
+        "amount_left_to_pay_label": "Paiement Dû :",
+        "discount_button_action_label": "Appliquer le Code Promo"
       }
     }
   }
