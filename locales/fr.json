@@ -715,8 +715,11 @@
         "submit": "Envoyer",
         "stepper": {
           "decrease": "Decrease {{type}}",
-          "minimum_reached": "Minimum de {{value}} atteint"
-        }
+          "minimum_reached": "Minimum de {{value}} atteint",
+          "maximum_reached": "Maximum de {{value}} atteint"
+        },
+        "remove_chip": "Supprimer l'article",
+        "remove_item": "Supprimer %{label}"
       }
     }
   }
