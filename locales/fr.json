@@ -3478,6 +3478,12 @@
         "unavailable": {
           "text": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment."
         }
+      },
+      "payment_delete": {
+        "warning_message_with_replacement": {
+          "with_pending_orders": "La suppression de ce mode de paiement le retirera de votre compte et il ne sera plus disponible pour de futurs achats. À moins que vous ne sélectionniez un autre mode de paiement, il continuera d'être facturé pour tout solde impayé sur les commandes existantes.",
+          "with_subscriptions": "La suppression de ce mode de paiement affectera les paiements préautorisés. Remplacez-le par un autre mode de paiement pour continuer à recevoir vos prochaines commandes."
+        }
       }
     }
   }
