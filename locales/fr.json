@@ -2996,6 +2996,9 @@
       "navigation_accessibility_message": "Vous avez accédé à {{sectionName}}",
       "open_menu_accessibility_label": "Ouvrir la navigation principale",
       "country_switcher_toast_message": "Pays Changé Pour {{countryName}}"
+    },
+    "announcement_bar": {
+      "collapse_label": "Réduire la Barre d'Annonce"
     }
   }
 }
