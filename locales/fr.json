@@ -2376,7 +2376,9 @@
         "confirmed_description": "Nous avons accepté votre commande et nous la préparons. Revenez sur cette page pour des mises à jour sur le statut de votre envoi.",
         "confirmed_orders_title": "Vos commandes sont confirmées",
         "ready_for_pickup_title": "Votre commande est prête à être récupérée",
-        "ready_for_pickup_description": "Votre commande est prête à être récupérée. Apportez votre confirmation de commande lorsque vous venez la chercher."
+        "ready_for_pickup_description": "Votre commande est prête à être récupérée. Apportez votre confirmation de commande lorsque vous venez la chercher.",
+        "ready_for_delivery_title": "Votre Commande Est Prête À Être Livrée",
+        "ready_for_delivery_description": "Nous avons préparé votre commande."
       }
     }
   }
