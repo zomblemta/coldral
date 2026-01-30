@@ -3423,7 +3423,9 @@
             "payment_returned": "Paiement retourné",
             "order_cancellation": "Annulation de commande"
           },
-          "expirable_balance_info": "Une Partie De Votre Solde Expirera À Une Date Ultérieure"
+          "expirable_balance_info": "Une Partie De Votre Solde Expirera À Une Date Ultérieure",
+          "expirable_amount_label": "Montant Total Expirable",
+          "expirable_amounts_info": "Les montants expirant le plus tôt sont appliqués en premier lors du paiement"
         }
       }
     }
