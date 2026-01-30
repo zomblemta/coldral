@@ -234,7 +234,7 @@
   "contact": {
     "form": {
       "name": "Nom",
-      "email": "Email",
+      "email": "Courriel",
       "message": "Message",
       "submit": "Envoyer",
       "success_message": "Votre message a été envoyé"
