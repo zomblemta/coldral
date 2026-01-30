@@ -1559,7 +1559,10 @@
         "detected_card_brand": "Marque de la carte détectée : {brand}",
         "credit_card_vaulting_sign_in_banner_title": "Enregistrez votre carte de crédit",
         "credit_card_vaulting_sign_in_banner_info": "Connectez-vous ou créez un compte pour enregistrer votre carte de crédit pour des achats futurs.",
-        "credit_card_vaulting_sign_in_banner_button_label": "Se connecter"
+        "credit_card_vaulting_sign_in_banner_button_label": "Se connecter",
+        "ftd_vault_credit_card_label": "Enregistrez cette carte de crédit sur mon compte pour un paiement plus rapide",
+        "card_number_label": "Numéro de carte",
+        "card_number_placeholder": "Numéro de carte"
       }
     }
   }
