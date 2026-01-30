@@ -894,7 +894,9 @@
         "sign_in_link_label": "Se Connecter",
         "sign_out_link_label": "Se déconnecter",
         "save_my_information_label": "Enregistrez ces informations pour la prochaine fois",
-        "invalid_address": "L'adresse sélectionnée est invalide. %{update_address_link} ou sélectionnez une autre adresse."
+        "invalid_address": "L'adresse sélectionnée est invalide. %{update_address_link} ou sélectionnez une autre adresse.",
+        "rollup_label": "Compte",
+        "rollup_accessibility_label": "Options du compte"
       }
     }
   }
