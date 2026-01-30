@@ -3677,6 +3677,12 @@
       "step_two": {
         "page_title": "Entrez le code - %{shop_name}",
         "restart_link": "Se connecter avec une autre adresse e-mail"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "Entrez une adresse e-mail valide",
+          "invalid_code": "Entrez le code correct à 6 chiffres"
+        }
       }
     }
   }
