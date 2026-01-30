@@ -3644,7 +3644,10 @@
         "title": "Remplacer Le Mode De Paiement",
         "loading": "Chargement des méthodes de paiement",
         "no_payment_methods_available": "Aucune méthode de paiement disponible",
-        "select_new_payment_method": "Sélectionnez Un Nouveau Mode De Paiement"
+        "select_new_payment_method": "Sélectionnez Un Nouveau Mode De Paiement",
+        "current_method": "Actuel",
+        "cancel": "Annuler",
+        "save": "Enregistrer"
       }
     }
   }
