@@ -826,7 +826,10 @@
         "county_placeholder": "Comté",
         "state_label": "État",
         "state_placeholder": "État",
-        "region_label": "Région"
+        "region_label": "Région",
+        "region_placeholder": "Région",
+        "region_none": "Aucun sélectionné",
+        "prefecture_label": "Préfecture"
       }
     }
   }
