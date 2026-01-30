@@ -833,7 +833,11 @@
         "prefecture_placeholder": "Préfecture",
         "governorate_label": "Gouvernorat",
         "governorate_placeholder": "Gouvernorat",
-        "emirate_label": "Émirat"
+        "emirate_label": "Émirat",
+        "emirate_placeholder": "Émirat",
+        "state_and_territory_label": "État/territoire",
+        "state_and_territory_placeholder": "État/territoire",
+        "phone_label": "Téléphone"
       }
     }
   }
