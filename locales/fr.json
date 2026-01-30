@@ -3462,8 +3462,7 @@
         "loading_card_fields": "Chargement Des Champs De Carte De Crédit"
       },
       "card_fields": {
-        "card_number_placeholder": "Numéro de carte",
-        "name_on_card_label": "Nom Sur La Carte"
+        "card_expiry_label": "Date d'expiration (MM / AA)"
       }
     }
   }
