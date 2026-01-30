@@ -3450,6 +3450,11 @@
       },
       "edit_payment_method": {
         "title": "Modifier le mode de paiement"
+      },
+      "update_payment_method": {
+        "current": "Actuel",
+        "subscriptions_title": "Abonnements",
+        "subscriptions_list_accessibility_label": "Liste des produits d'abonnement"
       }
     }
   }
