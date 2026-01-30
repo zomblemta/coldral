@@ -3006,13 +3006,7 @@
     "orders": {
       "order_list": {
         "delivered": "Delivered {{date}}",
-        "plus_more_products": "+{{numberOfAdditionalProducts}} produits",
-        "carousel": {
-          "six_and_more_products_accessibility_label": "La commande comprend {{lineItemName1}} quantité {{lineItemQuantity1}}, {{lineItemName2}} quantité {{lineItemQuantity2}}, {{lineItemName3}} quantité {{lineItemQuantity3}}, {{lineItemName4}} quantité {{lineItemQuantity4}}, {{lineItemName5}} quantité {{lineItemQuantity5}}, {{lineItemName6}} quantité {{lineItemQuantity6}} et plus encore",
-          "view_order_details": "Voir Les Détails De La Commande",
-          "previous": "Précédent",
-          "next": "Suivant"
-        }
+        "no_filtered_results_description": "Supprimez Ou Ajustez Les Filtres Pour Voir Vos Commandes"
       }
     }
   }
