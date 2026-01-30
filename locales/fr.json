@@ -3259,7 +3259,13 @@
     },
     "B2B": {
       "account_information": {
-        "company_card_name_label": "Nom de l'entreprise"
+        "company_card_name_label": "Nom de l'entreprise",
+        "company_card_section_accessibility_label": "Entreprise"
+      },
+      "locations": {
+        "contact_email": "E-mail",
+        "contact_list_title": "Personnes",
+        "contact_name": "Nom"
       }
     }
   }
