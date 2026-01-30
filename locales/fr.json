@@ -2955,7 +2955,14 @@
       },
       "collections": "Collections",
       "not_found": "404 Introuvable",
-      "challenge": "Défi"
+      "challenge": "Défi",
+      "checkpoint": "Point de contrôle"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} réductions ont été appliquées"
+    },
+    "challenge": {
+      "message": "Pour continuer, dites-nous que vous n'êtes pas un robot."
     }
   }
 }
