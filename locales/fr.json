@@ -1809,7 +1809,10 @@
         "gift_card_wrapper": {
           "heading": "Carte-cadeau",
           "apply_gift_card_label": "Appliquer une carte-cadeau",
-          "apply_another_gift_card_label": "Appliquer Une Autre Carte-Cadeau"
+          "apply_another_gift_card_label": "Appliquer Une Autre Carte-Cadeau",
+          "gift_card_label": "Carte-cadeau %{identifier}",
+          "payment_tag": "Carte-cadeau",
+          "add_label": "Ajouter Une Carte-Cadeau"
         }
       }
     }
