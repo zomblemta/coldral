@@ -1245,7 +1245,14 @@
         "deferred_total_due_date_label": "Total dû {{date}}",
         "deferred_total_due_date_label_next": "`À payer le %{date}`",
         "full_price": "Prix total : %{price}",
-        "custom_discount": "Remise personnalisée"
+        "custom_discount": "Remise personnalisée",
+        "expand_component_information": {
+          "one": "Afficher %{count} article",
+          "other": "Afficher %{count} articles"
+        },
+        "collapse_component_information": {
+          "one": "Masquer %{count} article"
+        }
       }
     }
   }
