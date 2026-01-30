@@ -2430,7 +2430,10 @@
         },
         "customer_information_hidden_fields_message": "Connectez-vous pour voir toutes les informations client.",
         "cancelled_title": "Votre commande a été annulée",
-        "cancelled_description": "Votre commande a été annulée le %{date}. Contactez-nous si vous avez des questions."
+        "cancelled_description": "Votre commande a été annulée le %{date}. Contactez-nous si vous avez des questions.",
+        "order_number_label": "Numéro de commande",
+        "customer_validation_error": "Saisissez une adresse e-mail ou un numéro de commande valide.",
+        "customer_validation_error_phone": "Entrez un numéro de téléphone ou de commande valide."
       }
     }
   }
