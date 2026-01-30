@@ -2826,7 +2826,8 @@
               "lt": "Entrez un numéro de TVA lituanien valide",
               "lu": "Entrez un numéro de TVA luxembourgeois valide",
               "mt": "Entrez Un Numéro De TVA Maltais Valide",
-              "nl": "Saisissez un numéro de TVA néerlandais valide"
+              "nl": "Saisissez un numéro de TVA néerlandais valide",
+              "pt": "Entrez Un Numéro De TVA Portugais Valide"
             }
           }
         }
