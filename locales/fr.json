@@ -1302,7 +1302,9 @@
         "delivery_tomorrow": "Livraison le lendemain %{time}",
         "two_day_delivery": "Livraison en 2 jours %{time}",
         "delivery": "Livraison %{time}",
-        "arrives_time": "Arrive à %{time}"
+        "arrives_time": "Arrive à %{time}",
+        "arrives_time_range": "Arrive entre %{min_time} et %{max_time}",
+        "estimated_time": "Estimé %{time}"
       }
     }
   }
