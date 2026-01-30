@@ -2676,6 +2676,12 @@
             "permission_denied": "Impossible d'obtenir votre position. Réessayez."
           }
         }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Un problème est survenu lors de notre paiement",
+          "message": "Actualisez cette page ou réessayez dans quelques minutes"
+        }
       }
     }
   }
