@@ -2074,7 +2074,10 @@
         "successful_offsite_with_gift_card_error": "Un problème est survenu lors du traitement de votre paiement par carte-cadeau. Réessayez ou utilisez un autre mode de paiement.",
         "development_store_order_limit_reached": "Vous avez atteint la limite de commandes pour les boutiques de développement avec ce processeur de paiement. Pour passer une nouvelle commande, vous devrez utiliser une passerelle de paiement de test. En savoir plus sur %{development_store_order_testing_docs_link}.",
         "development_store_with_order_limit": "Pour passer une commande de test, vous devrez utiliser une passerelle de paiement de test. En savoir plus sur %{development_store_order_testing_docs_link}.",
-        "development_store_order_testing_docs_link": "tester les commandes dans les boutiques de développement"
+        "development_store_order_testing_docs_link": "tester les commandes dans les boutiques de développement",
+        "payment_above_threshold": "Le montant du paiement dépasse la limite monétaire pour cette région. Réduisez le total et réessayez.",
+        "risky": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez une autre méthode de paiement.",
+        "expired_buyer_action": "Le moyen de paiement a expiré. Réessayez."
       }
     }
   }
