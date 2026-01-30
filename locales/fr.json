@@ -1816,8 +1816,10 @@
           "manage_label": "Gérer les cartes-cadeaux"
         },
         "gift_card_store_credit": {
-          "add_label": "Ajouter une carte-cadeau ou un crédit en magasin"
-        }
+          "add_label": "Ajouter une carte-cadeau ou un crédit en magasin",
+          "manage_label": "Gérer Les Cartes-Cadeaux Ou Le Crédit En Magasin"
+        },
+        "gift_card_checkbox_label": "Appliquer la carte-cadeau"
       }
     }
   }
