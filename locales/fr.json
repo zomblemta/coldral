@@ -3283,7 +3283,12 @@
           "show_all": "Afficher tout",
           "hide_all_accessibility_label": "Masquer toutes les commandes en cours d'examen",
           "show_all_accessibility_label": "Afficher toutes les commandes en cours d'examen",
-          "show_all_orders_in_review": "Afficher Toutes Les Commandes En Cours D'Examen"
+          "show_all_orders_in_review": "Afficher Toutes Les Commandes En Cours D'Examen",
+          "show_less_orders_in_review": "Afficher Moins de Commandes en Cours d'Examen",
+          "title": "attente",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Vous n'avez aucune commande en attente"
+          }
         }
       }
     }
