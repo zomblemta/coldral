@@ -1070,7 +1070,9 @@
         "discount_not_found": "Impossible de trouver une remise valide correspondant au code saisi",
         "discount_placeholder": "Code de réduction",
         "discount_code_applied": "Code de réduction appliqué",
-        "discount_code_applied_with_code": "Le code de réduction %{code} a été appliqué"
+        "discount_code_applied_with_code": "Le code de réduction %{code} a été appliqué",
+        "discount_code_removed": "Le code promo %{code} a été supprimé",
+        "discount_code_replaced": "Le code de réduction %{old_code} a été supprimé et %{code} a été appliqué"
       }
     }
   }
