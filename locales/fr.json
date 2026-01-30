@@ -3312,7 +3312,9 @@
             "banner_overdue_for_multiple_fulfillments": "Paiement dû pour {{count}} exécutions de commandes",
             "title": "Paiement dû",
             "title_with_date": "Paiement dû {{date}}",
-            "title_due_on_receipt": "Paiement Pas Encore Dû"
+            "title_due_on_receipt": "Paiement Pas Encore Dû",
+            "description_waiting_for_manual_payment": "Cette commande a un paiement en attente. Le solde sera mis à jour lorsque le paiement sera reçu.",
+            "description_due_on_receipt": "Vous recevrez une facture lorsque le paiement sera exigible."
           }
         }
       }
