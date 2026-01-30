@@ -1615,7 +1615,9 @@
           }
         },
         "saved_by_payment_method": "Enregistré par %{payment_method}",
-        "pay_with_payment_method": "Payer avec %{payment_method}"
+        "pay_with_payment_method": "Payer avec %{payment_method}",
+        "different_credit_card_label": "Utilisez une autre carte de crédit",
+        "same_billing_address_label": "Identique à l'adresse de livraison"
       }
     }
   }
