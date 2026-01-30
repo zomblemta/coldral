@@ -3562,7 +3562,11 @@
       "december": "Décembre",
       "monday": "Lundi",
       "tuesday": "Mardi",
-      "wednesday": "Mercredi"
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche"
     }
   }
 }
