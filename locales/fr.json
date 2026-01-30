@@ -999,6 +999,14 @@
         "all_products_in_cart_unavailable": {
           "one": "Ce produit n'est pas disponible dans votre pays/région.",
           "other": "Ces produits ne sont pas disponibles dans votre pays/région."
+        },
+        "unavailable_label": "Indisponible"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Ce produit n'est pas disponible pour la livraison vers %{location_name}.",
+          "some_products_other": "Ces produits ne sont pas disponibles pour livraison à %{location_name}.",
+          "all_products_one": "Le produit dans votre panier n'est pas disponible pour la livraison à %{location_name}."
         }
       }
     }
