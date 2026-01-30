@@ -2894,7 +2894,14 @@
     "notices": {
       "address": {
         "created": "Adresse Créée Avec Succès",
-        "error_creating": "Erreur lors de la création de l'adresse."
+        "error_creating": "Erreur lors de la création de l'adresse.",
+        "deleted": "Adresse supprimée avec succès",
+        "error_deleting": "Erreur lors de la suppression de l'adresse."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Ajouté %{delta}"
+        }
       }
     }
   }
