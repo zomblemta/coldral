@@ -522,8 +522,9 @@
         "skip_to_content": "Aller au contenu",
         "continue_button_label": "Continuer",
         "complete_purchase_button_label": "Finaliser la commande",
-        "back_to_payment_method": "Retour au paiement",
-        "choose_shipping_method": "Choisissez Un Mode De Livraison"
+        "pay_now_button_label": "Payer Maintenant",
+        "edit_link_label": "Modifier",
+        "autocomplete_title": "Suggestions"
       }
     }
   }
