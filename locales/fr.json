@@ -2526,7 +2526,8 @@
         "review_and_confirm_title": "Vérifier et confirmer",
         "checkout_a_different_way": "Découvrez une autre façon",
         "blocks": {
-          "change_contact_method_link_label": "Modifier Les Informations De Contact"
+          "change_contact_method_link_label": "Modifier Les Informations De Contact",
+          "change_billing_address_link_label": "Modifier L'Adresse De Facturation"
         }
       }
     }
