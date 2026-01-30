@@ -2103,7 +2103,12 @@
         "invalid_selected_address": "L'adresse de livraison sélectionnée n'est pas valide",
         "invalid_selected_address_with_update_link": "L'adresse de livraison sélectionnée n'est pas valide. %{update_address_link} ou sélectionnez une autre adresse",
         "unavailable_addresses_only_countries": "Votre commande ne peut être expédiée qu'à {{countriesList}}. Ajoutez une nouvelle adresse pour continuer.",
-        "unavailable_address_country": "La livraison n’est pas disponible dans le pays que vous avez sélectionné. Utilisez une autre adresse pour continuer"
+        "unavailable_address_country": "La livraison n’est pas disponible dans le pays que vous avez sélectionné. Utilisez une autre adresse pour continuer",
+        "unavailable_selected_address": "Livraison non disponible pour l'adresse sélectionnée",
+        "unavailable_selected_address_for_region": "La livraison n'est pas disponible pour {{region}}. Sélectionnez une autre adresse pour continuer"
+      },
+      "alternative_payment_method_banner": {
+        "or": "OR"
       }
     }
   }
