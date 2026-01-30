@@ -3476,8 +3476,13 @@
           "credit_card_verification_value_blank": "Saisissez le CVV ou le code de sécurité de votre carte"
         },
         "unavailable": {
-          "text": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment."
+          "text": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment.",
+          "suffix": "ou réessayez plus tard."
         }
+      },
+      "payment_delete": {
+        "title": "Supprimer le mode de paiement",
+        "description_without_replacement": "Ce mode de paiement ne sera plus disponible pour les achats futurs."
       }
     }
   }
