@@ -736,7 +736,11 @@
             "sunday": "Su"
           },
           "months": {
-            "january": "Janvier"
+            "january": "Janvier",
+            "february": "Février",
+            "march": "Mars",
+            "april": "Avril",
+            "may": "Mai"
           }
         }
       }
