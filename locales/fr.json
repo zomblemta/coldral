@@ -1114,7 +1114,12 @@
         "pickup_label": "Retrait en magasin",
         "no_pickup_location": "Aucun point de retrait disponible.",
         "pickup_unavailable_banner_title": {
-          "one": "Aucun magasin ne propose votre article"
+          "one": "Aucun magasin ne propose votre article",
+          "other": "Aucun magasin ne propose vos articles"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "Aucun magasin disponible dans %{country} proposant votre article",
+          "other": "Aucun magasin disponible dans %{country} proposant vos articles"
         }
       }
     }
