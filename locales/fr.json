@@ -3534,6 +3534,13 @@
       "unionpay": "UnionPay",
       "storecredit": "Crédit en magasin",
       "bogus": "Faux"
+    },
+    "privacy_banner": {
+      "cookie_preferences_link": "Préférences des cookies"
+    },
+    "ui_components": {
+      "clear": "Effacer",
+      "clipboardCopied": "Copié"
     }
   }
 }
