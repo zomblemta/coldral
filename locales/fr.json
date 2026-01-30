@@ -1228,7 +1228,9 @@
           "due_on_receipt": "Total Dû Sur Le Reçu",
           "due_later_checkout_to_draft": "Total Dû Plus Tard",
           "total_paid": "Total Payé"
-        }
+        },
+        "maximum_discount_code_limit_reached": "Vous avez atteint le nombre maximal de codes de réduction. Supprimez un code existant pour utiliser <strong style=\"text-transform:uppercase\">%{code}</strong>.",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> ne fonctionne pas en ce moment. Contactez-nous pour obtenir de l'aide."
       }
     }
   }
