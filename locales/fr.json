@@ -2669,6 +2669,14 @@
           "previous_accessibility_label": "Page précédente",
           "header": {
             "other": "Affichage de %{first} - %{last} sur %{count} points"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} sur %{count} point",
+            "other": "%{pickup_point_index} sur %{count} points"
+          },
+          "selected_page": {
+            "one": "%{first} - %{last} sur %{count} point",
+            "other": "%{first} - %{last} sur %{count} points"
           }
         }
       }
