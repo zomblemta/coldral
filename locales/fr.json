@@ -1819,7 +1819,11 @@
           "add_label": "Ajouter une carte-cadeau ou un crédit en magasin",
           "manage_label": "Gérer Les Cartes-Cadeaux Ou Le Crédit En Magasin"
         },
-        "gift_card_checkbox_label": "Appliquer la carte-cadeau"
+        "gift_card_checkbox_label": "Appliquer la carte-cadeau",
+        "custom_onsite_payment_method_modal": {
+          "title": "Confirmation de Paiement Personnalisée Sur Site"
+        },
+        "markets_pro_disclaimer_label": "passant votre commande, vous acceptez d'acheter auprès de Global-e en tant que marchand enregistré, sous réserve des %{markets_pro_terms} et %{privacy_policy} de Global-e, et d'autoriser le partage de vos informations avec %{shop_name}."
       }
     }
   }
