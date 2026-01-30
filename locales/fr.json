@@ -3570,7 +3570,10 @@
       "fridayAbbreviation": "Fr",
       "saturdayAbbreviation": "Sa",
       "sundayAbbreviation": "Su",
-      "showNextMonth": "Afficher le mois suivant, {{month}} {{year}}"
+      "showNextMonth": "Afficher le mois suivant, {{month}} {{year}}",
+      "showPreviousMonth": "Afficher le mois précédent, {{month}} {{year}}",
+      "rangeStart": "Début de la plage",
+      "inRange": "À Portée"
     }
   }
 }
