@@ -2234,7 +2234,13 @@
         "company_tracking_number": "%{company} numéro de suivi:",
         "estimated_arrival": "Date de livraison estimée : ",
         "estimated_delivery": "Estimation de livraison actuelle: ",
-        "re-order": "Recommander les mêmes articles"
+        "re-order": "Recommander les mêmes articles",
+        "confirmed": "Confirmé",
+        "confirmed_items_count": "%{confirmed_count} sur %{total_count} articles sont confirmés",
+        "items_fulfilled_by_store": {
+          "one": "Les articles que vous avez achetés proviendront de %{remote_shop_name}.",
+          "other": "Les articles que vous avez achetés proviendront d'autres magasins."
+        }
       }
     }
   }
