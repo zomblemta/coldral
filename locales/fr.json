@@ -2850,7 +2850,10 @@
       "blocked_address": "Cet emplacement n'est pas pris en charge",
       "credit_card_session_expired": "L'autorisation de la carte de crédit a expiré, veuillez saisir à nouveau vos informations de paiement. Votre carte n'a pas été débitée.",
       "empty": "ne peut pas être vide",
-      "invalid_email": "doit être une adresse e-mail valide"
+      "invalid_email": "doit être une adresse e-mail valide",
+      "discount_disabled": "Cette remise a été désactivée",
+      "discount_expired": "Cette remise n'est plus valable",
+      "discount_limit_reached": "Cette remise a atteint sa limite d'utilisation"
     }
   }
 }
