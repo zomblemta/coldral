@@ -2791,17 +2791,12 @@
         "length_exceeds_maximum": "Réduisez la taille de la note à 5000 caractères ou moins."
       },
       "offsite_payment_failed": {
-        "title": "Le paiement hors site a échoué",
-        "payment_link_expired_text": "Réessayez de scanner le code QR."
+        "title": "Le paiement hors site a échoué"
       },
-      "one": {
+      "remote": {
         "errors": {
-          "merchandise": {
-            "gift_card_price_must_be_greater_than_zero": "Le prix de la carte-cadeau doit être supérieur à 0.",
-            "gift_card_price_must_not_exceed_limit": "Le prix de la carte-cadeau ne doit pas dépasser %{gift_card_limit}.",
-            "subtotal_limit_reached": "La valeur maximale des éléments de ligne a été atteinte.",
-            "signature_mismatch": "Discordance de la signature de la marchandise pour la ligne %{stable_id}."
-          }
+          "currency_mismatch": "Cet article ne peut pas être ajouté à votre panier car il provient d'une boutique qui utilise une devise différente.",
+          "currency_mismatch_removal": "Un article a été retiré de votre panier car il provient d'une boutique qui utilise une devise différente."
         }
       }
     }
