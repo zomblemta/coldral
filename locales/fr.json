@@ -2912,7 +2912,9 @@
           "pending": "attente",
           "paid": "Payé",
           "unpaid": "Impayé",
-          "voided": "Annulé"
+          "voided": "Annulé",
+          "partially_paid": "Partiellement payé",
+          "partially_refunded": "Partiellement Remboursé"
         }
       }
     }
