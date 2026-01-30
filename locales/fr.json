@@ -2454,7 +2454,9 @@
         },
         "order_updates_description_missing": "Vous ne recevez pas les mises à jour d'expédition.",
         "order_updates_subscribe_to_email_notifications": "Recevez Des Mises à Jour D'Expédition Par E-mail",
-        "order_updates_subscribe_to_email_or_phone_notifications": "Recevez des mises à jour sur la livraison par e-mail ou SMS"
+        "order_updates_subscribe_to_email_or_phone_notifications": "Recevez des mises à jour sur la livraison par e-mail ou SMS",
+        "order_updates_submit_subscription": "Soumettre",
+        "track_shipment": "Suivre l'expédition"
       }
     }
   }
