@@ -2950,8 +2950,8 @@
       }
     },
     "email_marketing": {
-      "unsubscribed": {
-        "confirmation": "Vous avez été désabonné de notre liste de diffusion."
+      "sms_unsubscribe_confirm": {
+        "message": "Voulez-vous vraiment vous désabonner du marketing par SMS ?"
       }
     }
   }
