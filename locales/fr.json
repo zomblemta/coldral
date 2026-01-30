@@ -2931,11 +2931,7 @@
         "too_many_line_items_error": "Votre panier ne peut pas contenir plus de %{max} articles.",
         "link_expired": "Lien expiré",
         "link_no_longer_exists": "Le lien n'existe plus.",
-        "stock_problems_html": "Un ou plusieurs articles ne sont plus disponibles. Nous avons fourni un <a href='%{link}'>panier mis à jour</a>.",
-        "variant_not_found": "Impossible De Trouver La Variante",
-        "variant_requires_selling_plan": "Ce variant ne peut être acheté que dans le cadre d'un plan de vente.",
-        "selling_plan_not_available_for_company_locations": "Seul l'achat unique est disponible pour les commandes B2B",
-        "digital_product_not_available_for_company_locations": "Cet article ne peut pas être ajouté à une commande B2B"
+        "stock_problems_html": "Un ou plusieurs articles ne sont plus disponibles. Nous avons fourni un <a href='%{link}'>panier mis à jour</a>."
       }
     }
   }
