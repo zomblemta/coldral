@@ -3593,7 +3593,10 @@
       "dropzoneInvalidFileType": "Type de fichier non pris en charge"
     },
     "profile_preview_bar": {
-      "hide_bar": "Masquer la Barre"
+      "hide_bar": "Masquer la Barre",
+      "navigate_to_admin": "Accéder à l'administration",
+      "close_preview": "Fermer l'aperçu",
+      "saved_at": "Saved {{date}} at {{time}}"
     }
   }
 }
