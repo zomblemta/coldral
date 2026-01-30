@@ -3274,7 +3274,10 @@
         "list_accessibility_label": "Liste des emplacements",
         "list_item_accessibility_label": "{{name}}: {{address}}",
         "list_item_without_address_accessibility_label": "{{name}}: Pas d'adresse",
-        "list_loading_accessibility_message": "Chargement De La Liste Des Emplacements"
+        "list_loading_accessibility_message": "Chargement De La Liste Des Emplacements",
+        "list_loading_address_accessibility_message": "Chargement de l'adresse pour {{locationName}}",
+        "list_loading_finished_accessibility_message": "La liste des emplacements a été chargée",
+        "loading_store_accessibility_message": "Je vais au magasin"
       }
     }
   }
