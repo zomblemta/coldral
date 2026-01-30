@@ -1791,6 +1791,13 @@
         "order_edit_banner_items_added": {
           "one": "Ajouté",
           "other": "Ajouté %{count}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "Returned {{quantity}}",
+          "with_quantities": "Returned {{delta}} of {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Retiré du retour"
         }
       }
     }
