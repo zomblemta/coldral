@@ -1829,8 +1829,11 @@
         "markets_pro_disclaimer_terms_and_conditions_title": "Conditions Générales du Commerçant Enregistreur",
         "markets_pro_disclaimer_privacy_policy_title": "Politique de confidentialité du commerçant titulaire",
         "purchase_order_number": {
-          "title": "Numéro De Bon De Commande"
-        }
+          "title": "Numéro De Bon De Commande",
+          "label": "Numéro de PO (facultatif)"
+        },
+        "alternative_payment_currency_total_notice": "Remarque : vous serez facturé %{amount_due}.",
+        "alternative_payment_currency_total_manual_payment_notice": "Remarque : le total converti est %{amount_due}."
       }
     }
   }
