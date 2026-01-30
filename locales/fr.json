@@ -1801,7 +1801,9 @@
           "with_quantities": "Supprimé {{delta}} du retour"
         },
         "order_edit_banner_multiple_items_added": "Added {{amount}}",
-        "order_edit_banner_multiple_items_removed": "Removed {{amount}}"
+        "order_edit_banner_multiple_items_removed": "Removed {{amount}}",
+        "order_edit_banner_multiple_items_returned": "Returned {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "Retiré Du Retour"
       }
     }
   }
