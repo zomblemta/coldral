@@ -2541,6 +2541,11 @@
         "disclaimer": {
           "privacy_policy": "Politique de confidentialité",
           "terms_of_service": "Conditions d'utilisation"
+        },
+        "sms": {
+          "disclaimer": {
+            "description_html": "vous inscrivant par SMS, vous acceptez de recevoir des messages marketing automatisés récurrents, y compris des rappels de panier, au numéro de téléphone fourni. Le consentement n'est pas une condition d'achat. Répondez STOP pour vous désinscrire. Répondez HELP pour obtenir de l'aide. La fréquence des messages varie. Des frais de message et de données peuvent s'appliquer. Consultez notre %{privacy_policy_link} et nos %{terms_of_service_link}."
+          }
         }
       }
     }
