@@ -2017,6 +2017,10 @@
           "throttle_limit_exceeded": "Vous avez dépassé le nombre maximal de tentatives. Réessayez plus tard.",
           "no_longer_available": "Cette carte-cadeau ne peut plus être utilisée pour ce paiement"
         }
+      },
+      "merchant_instruction_errors": {
+        "empty_stable_id": "L'instruction de marchandisage %{position} %{name} contient un ID stable vide.",
+        "invalid_stable_id_target": "L'instruction de marchandise %{position} %{name} fait référence à l'ID stable %{stable_id}, mais cet ID stable n'est pas présent dans les lignes de marchandise."
       }
     }
   }
