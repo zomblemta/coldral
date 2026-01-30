@@ -1696,7 +1696,11 @@
         "pending_payment": {
           "due_notice": "Votre paiement de %{amount_due} est dû le %{due_date}.",
           "multibanco": {
-            "buyer_action_info": "Votre paiement de %{amount_due} est dû."
+            "buyer_action_info": "Votre paiement de %{amount_due} est dû.",
+            "instruction_html": "Effectuez votre paiement au Multibanco ou en ligne en utilisant les détails ci-dessous. Pour toute question ou pour mettre à jour les détails de paiement, %{contact_us}.",
+            "entity": "Entité",
+            "reference": "Référence",
+            "amount": "Montant"
           }
         }
       }
