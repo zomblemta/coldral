@@ -273,13 +273,13 @@
     "register": {
       "title": "Inscription",
       "instructions": "Entrez les informations suivantes :",
-      "already_have_account": "Déjà un compte ?",
+      "already_have_account": "Vous avez déjà un compte ?",
       "first_name": "Prénom",
       "last_name": "Nom",
       "email": "Email",
       "password": "Mot de passe",
-      "accepts_marketing": "S'inscrire à notre newsletter",
-      "submit": "Créer le compte",
+      "accepts_marketing": "Inscrivez-vous à notre newsletter",
+      "submit": "Créer un compte",
       "login": "Se connecter"
     },
     "activate_account": {
