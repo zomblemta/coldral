@@ -1596,7 +1596,10 @@
         "paypal_disconnect": "Se déconnecter",
         "ends_with_label": "se terminant par %{last_digits}",
         "masked_digits_label": "•••• %{last_digits}",
-        "payment_method_saved": "Méthode de Paiement Enregistrée"
+        "payment_method_saved": "Méthode de Paiement Enregistrée",
+        "card_vaulted_company_location": "Carte Enregistrée Pour Cet Emplacement",
+        "bank_account_vaulted_company_location": "Compte bancaire enregistré pour cet emplacement",
+        "expiry_long": "(Expire le %{month}/%{year})"
       }
     }
   }
