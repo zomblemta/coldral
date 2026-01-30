@@ -2248,7 +2248,12 @@
         "thank_you_title": "Votre commande est confirmée",
         "thank_you_title_payment": "Votre paiement est confirmé",
         "thank_you_title_review": "Votre commande a été soumise pour examen",
-        "thank_you_title_payments_app_pending_default": "Votre paiement est en cours de traitement"
+        "thank_you_title_payments_app_pending_default": "Votre paiement est en cours de traitement",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Votre commande a été reçue",
+        "thank_you_title_payments_app_failed_pending_payment": "Votre paiement n’a pas pu être traité",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "Vous recevrez bientôt un e-mail de confirmation"
+        }
       }
     }
   }
