@@ -2566,7 +2566,10 @@
           "added": {
             "one": "Ajouté",
             "other": "Ajouté %{count}"
-          }
+          },
+          "removed": "Supprimé",
+          "subtracted": "Supprimé %{count}",
+          "returned": "Retourné %{count}"
         }
       }
     }
