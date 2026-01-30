@@ -1567,7 +1567,11 @@
         "card_security_notice": "Toutes les transactions sont sécurisées et chiffrées.",
         "card_security_vault_notice": "Nous avons besoin de vos informations pour les paiements futurs. Toutes les transactions sont sécurisées et chiffrées.",
         "card_information_notice": "Toutes les transactions sont sécurisées et chiffrées. Les informations de carte de crédit ne sont jamais stockées.",
-        "name_on_card_label": "Nom Sur La Carte"
+        "name_on_card_label": "Nom Sur La Carte",
+        "name_on_card_placeholder": "Nom sur la carte",
+        "card_nickname_label": "Surnom (optionnel)",
+        "card_expired": "Expiré",
+        "card_expiry_label": "Date d'expiration (MM / YY)"
       }
     }
   }
