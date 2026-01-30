@@ -1293,7 +1293,10 @@
         "estimated_delivery_date": {
           "one": "%{count} jour ouvrable",
           "other": "%{count} jours ouvrables"
-        }
+        },
+        "estimated_delivery_date_range": "de %{minimum} à %{maximum} jours ouvrables",
+        "delivery_date_range": "%{min_time}–%{max_time}",
+        "estimated_delivery_time": "Livraison estimée %{time}"
       }
     }
   }
