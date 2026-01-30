@@ -982,7 +982,15 @@
           "description": "Les prix et les quantités disponibles de ces articles ont changé et ont été mis à jour dans votre panier."
         },
         "out_of_stock": {
-          "description": "Ces articles ne sont plus disponibles et ont été retirés de votre panier."
+          "description": "Ces articles ne sont plus disponibles et ont été retirés de votre panier.",
+          "items_unavailable": "Certains articles ne sont plus disponibles et ont été retirés de votre panier."
+        },
+        "out_of_stock_in_context_label": "Ce produit n'est pas disponible dans votre pays/région."
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Produit indisponible",
+          "other": "Produits Indisponibles"
         }
       }
     }
