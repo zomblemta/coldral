@@ -3622,8 +3622,13 @@
       "log_out_everywhere": {
         "title": "Se déconnecter partout",
         "description": "Si vous avez perdu un appareil ou craignez pour la sécurité, déconnectez-vous de tous vos appareils pour garantir la sécurité de votre compte.",
-        "button": "Se Déconnecter Partout"
+        "button": "Se Déconnecter Partout",
+        "warning_message": "Vous serez également déconnecté de cet appareil."
       }
+    },
+    "shop_ads": {
+      "title": "Autres produits susceptibles de vous plaire",
+      "subtitle": "Disponible Pour Une Durée Limitée"
     }
   }
 }
