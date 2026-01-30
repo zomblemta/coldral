@@ -528,7 +528,10 @@
             "only_value_constraint": "Seules les valeurs exactes sont autorisées dans la saisie des marchandises.",
             "merchandise_not_found": "Produit introuvable.",
             "merchandise_variant_not_found": "Variante de produit introuvable.",
-            "merchandise_not_applicable": "Cette variante de produit ne peut pas être achetée."
+            "merchandise_not_applicable": "Cette variante de produit ne peut pas être achetée.",
+            "mixed_currencies": "La caisse contient des lignes d'articles en différentes devises.",
+            "bundle_products_not_supported_for_b2b": "Les articles groupés ne peuvent pas être ajoutés aux commandes B2B pour cet emplacement.",
+            "gift_card_quantity_mismatch": "Lors de la spécification des codes de carte-cadeau, la quantité de l'article et le nombre de codes de carte-cadeau doivent correspondre."
           }
         }
       }
