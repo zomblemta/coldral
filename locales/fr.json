@@ -1933,7 +1933,10 @@
         "address_company_contains_mathematical_symbols": "La société ne peut pas contenir de symboles mathématiques",
         "address_phone_blank": "Entrez un numéro de téléphone valide",
         "address_phone_contains_emojis": "Le numéro de téléphone ne peut pas contenir d'émojis",
-        "address_phone_invalid": "Entrez un numéro de téléphone valide"
+        "address_phone_invalid": "Entrez un numéro de téléphone valide",
+        "address_zip_blank": "Entrez un ZIP / code postal",
+        "address_zip_blocked_address": "Cette localisation n'est pas prise en charge",
+        "address_zip_too_long": "Le code ZIP / postal est trop long (maximum 255 caractères)"
       }
     }
   }
