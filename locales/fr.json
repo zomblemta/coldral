@@ -3070,7 +3070,11 @@
             "start_date": "Date de début",
             "end_date": "Date de fin",
             "title": "Date de commande",
-            "today": "Aujourd'hui"
+            "today": "Aujourd'hui",
+            "last_7_days": "Les 7 derniers jours",
+            "last_30_days": "Derniers 30 Jours",
+            "last_90_days": "Derniers 90 jours",
+            "last_365_days": "Les 12 Derniers Mois"
           }
         }
       }
