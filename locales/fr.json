@@ -731,7 +731,12 @@
           },
           "weekdays_abbreviation": {
             "monday": "Mo",
-            "tuesday": "Tu"
+            "tuesday": "Tu",
+            "friday": "Fr",
+            "sunday": "Su"
+          },
+          "months": {
+            "january": "Janvier"
           }
         }
       }
