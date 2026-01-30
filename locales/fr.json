@@ -1197,7 +1197,12 @@
             "plural": "%{price} par %{count}%{unit}"
           }
         },
-        "gift_card_ending": "Carte-Cadeau Se Terminant Par %{last_characters}"
+        "gift_card_ending": "Carte-Cadeau Se Terminant Par %{last_characters}",
+        "estimated_tax_label": "Taxe estimée",
+        "multiple_shipping_lines_label": "Total Des Frais De Livraison",
+        "recurring_subtotal_label": "Sous-total récurrent",
+        "recurring_total_label": "Total récurrent",
+        "recurring_total_tooltip": "N'inclut pas les frais d'expédition, les taxes, les droits ou toute remise applicable."
       }
     }
   }
