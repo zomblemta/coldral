@@ -1946,7 +1946,10 @@
         "address_generic_blank": "Champ requis",
         "address_generic_invalid": "Entrée invalide",
         "address_generic_error": "Erreur De Champ",
-        "credit_card_name_blank": "Saisissez votre nom exactement comme il est écrit sur votre carte"
+        "credit_card_name_blank": "Saisissez votre nom exactement comme il est écrit sur votre carte",
+        "credit_card_name_invalid": "Saisissez votre nom exactement tel qu'il est inscrit sur votre carte",
+        "credit_card_number_invalid": "Entrez un numéro de carte valide",
+        "credit_card_expiry_invalid": "Saisissez une date d'expiration valide"
       }
     }
   }
