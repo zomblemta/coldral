@@ -3402,7 +3402,12 @@
       "back_button": "Retour",
       "or": "OR",
       "apple_pay": {
-        "loading": "Chargement d'Apple Pay"
+        "loading": "Chargement d'Apple Pay",
+        "errors": {
+          "generic": "Un problème est survenu avec Apple Pay. Réessayez ou utilisez un autre mode de paiement.",
+          "not_available": "Apple Pay n'est pas disponible sur cet appareil.",
+          "missing_billing_address": "Apple Pay nécessite une adresse de facturation. Veuillez en ajouter une à votre compte."
+        }
       }
     }
   }
