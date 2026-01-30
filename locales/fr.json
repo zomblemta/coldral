@@ -842,7 +842,9 @@
         "phone_country_code_label": "Indicatif téléphonique du pays",
         "optional_phone_label": "Téléphone (facultatif)",
         "phone_placeholder": "Téléphone",
-        "phone_tooltip": "Au cas où nous aurions besoin de vous contacter au sujet de votre commande"
+        "phone_tooltip": "Au cas où nous aurions besoin de vous contacter au sujet de votre commande",
+        "zip_code_label": "code postal",
+        "optional_zip_code_label": "Code postal (facultatif)"
       }
     }
   }
