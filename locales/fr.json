@@ -701,7 +701,9 @@
         "full_title": "{{pageTitle}} - {{shopName}} - Paiement",
         "loading": "Chargement…",
         "loading_title": "Passer à la caisse - {{shopName}}",
-        "display_name": "{{firstName}} {{lastName}}"
+        "display_name": "{{firstName}} {{lastName}}",
+        "google_map_title": "Carte Google",
+        "confirm_order_button_label": "Confirmer la commande"
       }
     }
   }
