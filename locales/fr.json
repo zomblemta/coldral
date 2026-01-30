@@ -3556,7 +3556,10 @@
       "may": "Mai",
       "june": "juin",
       "july": "Juillet",
-      "august": "Août"
+      "august": "Août",
+      "september": "Septembre",
+      "october": "Octobre",
+      "december": "Décembre"
     }
   }
 }
