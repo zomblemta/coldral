@@ -183,8 +183,8 @@
     "faceting": {
       "filters": "Filtres",
       "filter_button": "Filtre",
-      "clear_filters": "Effacer",
-      "apply_filters": "Appliquer",
+      "clear_filters": "Tout effacer",
+      "apply_filters": "Voir les résultats",
       "sort_by": "Trier par",
       "remove_filter": "Supprimer le filtre \"{{ name }}\"",
       "no_results": "Aucun produit ne correspond à ces critères",
