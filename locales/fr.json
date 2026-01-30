@@ -1858,7 +1858,10 @@
         "bank_account_connect_another": "Connecter Un Autre Compte Bancaire",
         "bank_account_connect": "Connecter un compte bancaire",
         "bank_account_missing": "Le compte bancaire doit être connecté",
-        "bank_account_generic_error": "Impossible d'ajouter le compte bancaire. Réessayez plus tard."
+        "bank_account_generic_error": "Impossible d'ajouter le compte bancaire. Réessayez plus tard.",
+        "separate_payments_label": "Vos articles proviennent de plusieurs magasins. Vous serez facturé dans %{separate_payments_link}.",
+        "separate_payments_text": "paiements séparés",
+        "payments": "Paiements"
       }
     }
   }
