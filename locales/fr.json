@@ -3531,7 +3531,11 @@
       "forbrugsforeningen": "Association des consommateurs",
       "dankort": "Dankort",
       "hipercard": "Hipercard",
-      "unionpay": "UnionPay"
+      "unionpay": "UnionPay",
+      "laser": "Laser",
+      "shoppay": "Shop Pay",
+      "applepay": "Apple Pay",
+      "googlepay": "Google Pay"
     }
   }
 }
