@@ -1747,7 +1747,8 @@
         },
         "simulated_checkout": "Aperçu Bientôt Disponible",
         "simulated_express_checkout": "Les portefeuilles ne sont pas disponibles dans l'aperçu de l'éditeur en raison de votre région ou de votre navigateur",
-        "vaulting_agreement_label": "Enregistrer mes informations de paiement chez %{company} pour un paiement plus rapide."
+        "vaulting_agreement_label": "Enregistrer mes informations de paiement chez %{company} pour un paiement plus rapide.",
+        "business_customer_with_bank_account_vaulting_payment_label": "Enregistrez ce moyen de paiement lors du passage en caisse et autorisez %{company} à débiter votre compte pour les achats futurs que vous approuvez pour cet emplacement, jusqu'à révocation. Tous les contacts rattachés à cet emplacement peuvent utiliser ce moyen de paiement."
       }
     }
   }
