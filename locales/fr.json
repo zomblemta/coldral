@@ -3121,6 +3121,13 @@
           }
         }
       }
+    },
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_accessibility_label": "Afficher Les Détails D'Expédition De La Commande",
+        "hide_events_label": "Masquer les détails",
+        "hide_events_accessibility_label": "Masquer Les Détails D'Expédition De La Commande"
+      }
     }
   }
 }
