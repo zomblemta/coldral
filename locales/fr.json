@@ -1651,7 +1651,9 @@
         "payment_method_not_available_for_shipping_address_error": "Méthode de paiement non disponible pour l'adresse de livraison sélectionnée. Choisissez une autre méthode de paiement.",
         "billing_address_not_supported_for_payment_method_error": "Ce mode de paiement n'est pas disponible pour votre adresse de facturation et votre devise. Essayez un autre mode de paiement.",
         "generic_incorrect_card_info": "Vos informations de paiement n'ont pas pu être vérifiées. Vérifiez les informations de votre carte et réessayez.",
-        "sofort_label": "Sofort virement bancaire"
+        "sofort_label": "Sofort virement bancaire",
+        "paypal_label": "PayPal",
+        "paypal_wallet_label": "Portefeuille PayPal"
       }
     }
   }
