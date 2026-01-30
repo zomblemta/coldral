@@ -533,7 +533,9 @@
             "bundle_products_not_supported_for_b2b": "Les articles groupés ne peuvent pas être ajoutés aux commandes B2B pour cet emplacement.",
             "gift_card_quantity_mismatch": "Lors de la spécification des codes de carte-cadeau, la quantité de l'article et le nombre de codes de carte-cadeau doivent correspondre.",
             "gift_card_not_supported": "Les cartes-cadeaux ne sont pas prises en charge pour ce paiement.",
-            "gift_card_not_unique": "La carte-cadeau portant le code {{code}} apparaît plus d'une fois dans ce paiement. Les codes sont formatés avant la comparaison."
+            "gift_card_not_unique": "La carte-cadeau portant le code {{code}} apparaît plus d'une fois dans ce paiement. Les codes sont formatés avant la comparaison.",
+            "gift_card_used": "Le code de la carte-cadeau {{code}} est déjà attribué à une carte-cadeau. Les codes sont formatés avant la comparaison.",
+            "gift_card_invalid": "Le code de la carte-cadeau {{code}} est invalide."
           }
         }
       }
