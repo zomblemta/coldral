@@ -847,7 +847,10 @@
         "optional_zip_code_label": "Code postal (facultatif)",
         "zip_code_placeholder": "Code postal",
         "postal_code_label": "Code postal",
-        "optional_postal_code_label": "Code Postal (Optionnel)"
+        "optional_postal_code_label": "Code Postal (Optionnel)",
+        "postal_code_placeholder": "Code postal",
+        "postcode_label": "Code postal",
+        "optional_postcode_label": "Code postal (facultatif)"
       }
     }
   }
