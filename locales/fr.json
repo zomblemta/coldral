@@ -2252,7 +2252,11 @@
         "thank_you_title_payments_app_pending_buyer_action_required": "Votre commande a été reçue",
         "thank_you_title_payments_app_failed_pending_payment": "Votre paiement n’a pas pu être traité",
         "thank_you_confirmed_with_email_description": {
-          "single_store": "Vous recevrez bientôt un e-mail de confirmation"
+          "single_store": "Vous recevrez bientôt un e-mail de confirmation",
+          "multi_store": "Vous recevrez bientôt des e-mails de confirmation séparés de chaque magasin."
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "Vous recevrez bientôt un SMS de confirmation"
         }
       }
     }
