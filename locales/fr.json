@@ -3180,8 +3180,11 @@
       },
       "pickup": {
         "pickup": "Retrait",
-        "pickup_location": "Lieu de retrait"
-      }
+        "pickup_location": "Lieu de retrait",
+        "pickup_point": "Point de retrait"
+      },
+      "show_items": "Afficher les articles",
+      "show_order_summary": "Afficher Le Récapitulatif De La Commande"
     }
   }
 }
