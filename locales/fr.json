@@ -2890,6 +2890,11 @@
           }
         }
       }
+    },
+    "notices": {
+      "customer": {
+        "unsubscribe_error": "Erreur de désabonnement"
+      }
     }
   }
 }
