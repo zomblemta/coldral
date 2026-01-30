@@ -1756,7 +1756,15 @@
         },
         "saved_credit_cards_modal": {
           "view_all_label": "Voir Toutes Les Cartes Enregistrées",
-          "done": "Terminé"
+          "done": "Terminé",
+          "cancel": "Annuler"
+        },
+        "add_credit_card_modal": {
+          "title": "Ajouter une carte",
+          "cancel": "Annuler"
+        },
+        "delete_credit_card_modal": {
+          "title": "Supprimer la carte"
         }
       }
     }
