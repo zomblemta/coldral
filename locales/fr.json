@@ -1941,7 +1941,10 @@
         "address_zip_invalid_for_country": "Entrez un ZIP / code postal valide pour %{country}",
         "address_zip_invalid_for_province": "Entrez un code postal/ZIP valide pour %{province}",
         "address_zip_invalid_for_country_and_province": "Entrez un ZIP / code postal valide pour %{province}, %{country}",
-        "address_zip_contains_emojis": "ZIP / code postal ne peut pas contenir d'émojis"
+        "address_zip_contains_emojis": "ZIP / code postal ne peut pas contenir d'émojis",
+        "address_zip_contains_mathematical_symbols": "ZIP / code postal ne peut pas contenir de symboles mathématiques",
+        "address_generic_blank": "Champ requis",
+        "address_generic_invalid": "Entrée invalide"
       }
     }
   }
