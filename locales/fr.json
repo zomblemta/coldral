@@ -1628,7 +1628,10 @@
           "other": "Votre commande est prise en charge par vos cartes-cadeaux."
         },
         "offsite_gateway_redirect_hint": "Vous serez redirigé vers %{gateway_label} pour finaliser votre achat.",
-        "offsite_gateway_review_page_redirect_hint": "Après avoir vérifié votre commande, vous serez redirigé vers %{gateway_label} pour finaliser votre achat."
+        "offsite_gateway_review_page_redirect_hint": "Après avoir vérifié votre commande, vous serez redirigé vers %{gateway_label} pour finaliser votre achat.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}",
+        "offsite_gateway_redirect_hint_no_button_label": "Vous serez redirigé vers %{gateway_label} pour finaliser votre achat.",
+        "receiver_payment_experience_hint": "Après avoir passé votre commande, vous recevrez les détails de paiement. Effectuez le paiement via Multibanco ou en ligne dans les %{due_days} jours."
       }
     }
   }
