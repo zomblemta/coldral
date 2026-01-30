@@ -1996,7 +1996,10 @@
         "sms_marketing_phone_invalid": "Entrez un numéro de téléphone valide",
         "shipping_method_invalid_phone_number": "Mettez à jour le numéro de téléphone de votre adresse de livraison pour voir les méthodes d'expédition disponibles.",
         "address_suggestion_did_you_mean_html": "Vouliez-vous dire %{html} ?",
-        "split_cart_international_shipping_not_supported": "Tous les articles doivent utiliser le même mode de livraison pour les envois internationaux. Mettez à jour le mode de livraison ou créez plusieurs commandes."
+        "split_cart_international_shipping_not_supported": "Tous les articles doivent utiliser le même mode de livraison pour les envois internationaux. Mettez à jour le mode de livraison ou créez plusieurs commandes.",
+        "invalid_delivery_address_reference_handle": "La référence de l'adresse de livraison n'a pas pu être associée à aucune adresse de livraison disponible.",
+        "must_use_available_delivery_address": "L'adresse de livraison doit être sélectionnée parmi les adresses de livraison disponibles.",
+        "must_use_available_shipping_rate": "Le tarif d'expédition doit être sélectionné parmi les tarifs d'expédition disponibles."
       }
     }
   }
