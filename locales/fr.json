@@ -609,7 +609,10 @@
             "unresolvable_tax_terms": "Les conditions proposées sont impossibles à résoudre compte tenu du contexte actuel de la négociation.",
             "delivery_price_is_abstract": "Le prix de livraison associé est abstrait.",
             "tax_inclusivity_mismatch": "Renégociez en indiquant une valeur concrète pour totalTaxAndDutyAmount ou totalAmountIncludedInTarget.",
-            "tax_exemption_not_supported": "Les exonérations fiscales ne sont pas prises en charge pour la session de négociation en cours."
+            "tax_exemption_not_supported": "Les exonérations fiscales ne sont pas prises en charge pour la session de négociation en cours.",
+            "delivery_tax_exemption_not_supported": "Les exonérations fiscales pour les lignes de livraison ne sont pas actuellement prises en charge.",
+            "proposed_allocations_required": "Champ 'proposed allocations' manquant.",
+            "merchandise_terms_must_be_defined": "Les conditions concernant les marchandises doivent être définies."
           }
         }
       }
