@@ -785,8 +785,16 @@
         },
         "dropzone": {
           "add_file": "Ajouter un fichier",
-          "invalid_file_type": "Type de fichier non pris en charge"
+          "invalid_file_type": "Type de fichier non pris en charge",
+          "dragged_over": "Déposez le fichier pour le téléverser"
         }
+      },
+      "payment_collection": {
+        "cancelled": "Ce paiement n'est plus requis. Consultez la page de la commande pour plus de détails."
+      },
+      "contact": {
+        "title": "Informations",
+        "address_title": "Adresse"
       }
     }
   }
