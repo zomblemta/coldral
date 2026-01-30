@@ -52,8 +52,8 @@
     "newsletter": {
       "email": "Courriel",
       "subscribe": "S'abonner",
-      "notify_me": "Me notifier",
-      "subscribed_successfully": "Vous êtes maintenant inscrit à notre newsletter."
+      "notify_me": "Prévenez-moi",
+      "subscribed_successfully": "Vous avez été abonné à notre newsletter."
     },
     "localization": {
       "country": "Pays",
