@@ -3641,7 +3641,10 @@
     },
     "subscriptions": {
       "update_payment_instrument": {
-        "title": "Remplacer Le Mode De Paiement"
+        "title": "Remplacer Le Mode De Paiement",
+        "loading": "Chargement des méthodes de paiement",
+        "no_payment_methods_available": "Aucune méthode de paiement disponible",
+        "select_new_payment_method": "Sélectionnez Un Nouveau Mode De Paiement"
       }
     }
   }
