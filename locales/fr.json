@@ -1319,7 +1319,9 @@
         },
         "shipping_line_phone_label": "Numéro De Téléphone Mobile (obligatoire)",
         "shipping_line_phone": "Votre coursier peut utiliser ce numéro pour vous contacter.",
-        "shipping_line_delivery_phone_label": "Numéro De Téléphone Mobile"
+        "shipping_line_delivery_phone_label": "Numéro De Téléphone Mobile",
+        "shipping_line_delivery_phone": "Vous pourriez être contacté(e) pour des mises à jour concernant votre livraison.",
+        "optional_shipping_line_delivery_instructions_label": "Instructions de Livraison (Facultatif)"
       }
     }
   }
