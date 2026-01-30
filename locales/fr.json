@@ -2989,7 +2989,13 @@
     "navigation_and_structure": {
       "action_menu_accessibility_label": "Plus d'actions",
       "close_menu_accessibility_label": "Fermer la navigation principale",
-      "settings_link": "Paramètres"
+      "loading_policy_content_accessibility_label": "Chargement du contenu de la politique",
+      "log_out_link": "Se déconnecter",
+      "logout_overlay_label": "Déconnexion en cours...",
+      "nav_label_accessibility_label": "Navigation Principale",
+      "navigation_accessibility_message": "Vous avez accédé à {{sectionName}}",
+      "open_menu_accessibility_label": "Ouvrir la navigation principale",
+      "country_switcher_toast_message": "Pays Changé Pour {{countryName}}"
     }
   }
 }
