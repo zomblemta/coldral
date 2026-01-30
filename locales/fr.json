@@ -145,7 +145,7 @@
       "other": "{{ count }} avis"
     },
     "inventory": {
-      "in_stock": "En stock",
+      "in_stock": "stock",
       "low_stock": "Il ne reste que quelques unités",
       "oversell_stock": "Re-stockage imminent",
       "incoming_stock": "Re-stockage le {{ next_incoming_date }}",
