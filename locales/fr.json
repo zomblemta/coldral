@@ -2229,7 +2229,9 @@
         "shipping_address_title": "Adresse de livraison",
         "shipping_address_map_title": "Carte Google affichant l'emplacement précis de l'adresse de livraison : %{address}",
         "payment_method_title": "Moyen de paiement",
-        "shipping_method_title": "Mode de livraison"
+        "shipping_method_title": "Mode de livraison",
+        "tracking_number": "Numéro de suivi :",
+        "company_tracking_number": "%{company} numéro de suivi:"
       }
     }
   }
