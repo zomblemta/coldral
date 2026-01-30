@@ -2111,7 +2111,12 @@
         "or": "OR",
         "or_pay_another_way": "Ou payez autrement",
         "or_check_out_another_way": "Ou essayez une autre façon",
-        "or_pay_with_credit_card": "Ou payez par carte de crédit"
+        "or_pay_with_credit_card": "Ou payez par carte de crédit",
+        "show_more_options": "Afficher Plus D'Options",
+        "hide_more_options": "Masquer Plus D'Options"
+      },
+      "post_purchase": {
+        "page_title": "Après-achat"
       }
     }
   }
