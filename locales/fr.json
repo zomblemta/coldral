@@ -2996,7 +2996,11 @@
         "cancel": "Annuler",
         "cancel_accessibility_label": "Annuler la modification du profil",
         "edit": "Modifier",
-        "editable_email_help_text": "Cet e-mail est utilisé pour la connexion et les mises à jour des commandes."
+        "editable_email_help_text": "Cet e-mail est utilisé pour la connexion et les mises à jour des commandes.",
+        "first_name": "Prénom",
+        "last_name": "Nom de famille",
+        "email": "E-mail",
+        "no_name_provided_accessibility_label": "Aucun nom ajouté"
       }
     }
   }
