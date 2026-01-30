@@ -2730,7 +2730,10 @@
           "description": "Sélectionnez un nouvel emplacement ou %{ship_to_address_link}",
           "ship_to_address_link": "adresse de livraison"
         },
-        "could_not_resolve_address": "Votre adresse n'a pas pu être localisée. Réessayez ou utilisez une autre adresse"
+        "could_not_resolve_address": "Votre adresse n'a pas pu être localisée. Réessayez ou utilisez une autre adresse",
+        "paginator": {
+          "next": "Page suivante"
+        }
       }
     }
   }
