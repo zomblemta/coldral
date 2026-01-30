@@ -2246,7 +2246,9 @@
         "gift_card_title": "Cartes-cadeaux",
         "resend_gift_cards": "Renvoyer Les Cartes-Cadeaux",
         "thank_you_title": "Votre commande est confirmée",
-        "thank_you_title_payment": "Votre paiement est confirmé"
+        "thank_you_title_payment": "Votre paiement est confirmé",
+        "thank_you_title_review": "Votre commande a été soumise pour examen",
+        "thank_you_title_payments_app_pending_default": "Votre paiement est en cours de traitement"
       }
     }
   }
