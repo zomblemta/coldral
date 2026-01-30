@@ -1236,7 +1236,10 @@
         "subscriptions": "Abonnements",
         "duties_label": "Frais de Douane",
         "duties_and_taxes_label": "Droits et taxes",
-        "error_duties_tooltip": "Cette commande est expédiée depuis un autre pays, des droits et taxes peuvent donc être exigibles à la livraison."
+        "error_duties_tooltip": "Cette commande est expédiée depuis un autre pays, des droits et taxes peuvent donc être exigibles à la livraison.",
+        "may_be_charged_on_delivery": "Peut être facturé à la livraison",
+        "total_updated_label_with_price": "Prix total mis à jour : %{totalPrice}",
+        "updated_shipping_method": "Méthode d'expédition mise à jour : %{shipping_method}"
       }
     }
   }
