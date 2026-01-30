@@ -1635,7 +1635,9 @@
         "billing_address_title": "Adresse de facturation",
         "billing_address_rollup_accessibility_label": "Options d'adresse de facturation",
         "billing_address_description": "Sélectionnez l'adresse correspondant à votre carte ou à votre méthode de paiement.",
-        "billing_address_description_no_shipping_address": "Saisissez l'adresse correspondant à votre carte ou moyen de paiement."
+        "billing_address_description_no_shipping_address": "Saisissez l'adresse correspondant à votre carte ou moyen de paiement.",
+        "no_js_credit_card_fields_redirect_hint": "Vous serez redirigé pour ajouter vos informations de paiement.",
+        "card_fields_container_prefix": "Conteneur de champ pour :"
       }
     }
   }
