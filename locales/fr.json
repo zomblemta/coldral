@@ -2129,7 +2129,9 @@
       },
       "processing": {
         "redirecting_page_title": "Redirection en cours…",
-        "redirecting_title": "Redirection…"
+        "redirecting_title": "Redirection…",
+        "redirecting_notice": "Veuillez patienter pendant que nous vous redirigeons.",
+        "redirecting_to_bank": "Redirection vers {{bank}}"
       }
     }
   }
