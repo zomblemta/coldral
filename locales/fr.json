@@ -3103,7 +3103,10 @@
             "claim_shop_cash_button_label": "Réclamer Le Crédit Boutique"
           },
           "details_modal": {
-            "title": "Garantie De Livraison"
+            "title": "Garantie De Livraison",
+            "active_delivery_guarantee_label": "Livraison avant le {{date}}",
+            "expired_delivery_guarantee_description": "La garantie Shop Promise de 30 jours pour cette commande a expiré.",
+            "expired_badge_label": "Expiré"
           }
         }
       }
