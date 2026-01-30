@@ -1906,7 +1906,10 @@
         "address_last_name_contains_emojis": "Le nom de famille ne peut pas contenir d'émojis",
         "address_last_name_contains_html_tags": "Le nom de famille ne peut pas contenir de balises HTML.",
         "address_last_name_contains_url": "Le Nom De Famille Ne Peut Pas Contenir Une URL",
-        "address_last_name_contains_mathematical_symbols": "Le nom de famille ne peut pas contenir de symboles mathématiques"
+        "address_last_name_contains_mathematical_symbols": "Le nom de famille ne peut pas contenir de symboles mathématiques",
+        "address_address1_blank": "Entrez une adresse",
+        "address_address1_too_long": "La première ligne d'adresse est trop longue (le maximum est de 255 caractères)",
+        "address_address1_contains_emojis": "Address1 ne peut pas contenir d'émojis"
       }
     }
   }
