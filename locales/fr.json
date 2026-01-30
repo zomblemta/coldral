@@ -3145,7 +3145,12 @@
           "bank_deposit": "Dépôt bancaire",
           "manual": "Manuel"
         },
-        "card_payment_details": "se terminant par {{lastDigits}} - {{formattedTransactionAmount}}"
+        "card_payment_details": "se terminant par {{lastDigits}} - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "se terminant par {{lastDigits}} - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "Crédit en magasin - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Payé avec Shop Pay en plusieurs fois"
+        }
       }
     }
   }
