@@ -3005,7 +3005,8 @@
     },
     "orders": {
       "order_list": {
-        "delivered": "Delivered {{date}}"
+        "delivered": "Delivered {{date}}",
+        "plus_more_products": "+{{numberOfAdditionalProducts}} produits"
       }
     }
   }
