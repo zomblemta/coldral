@@ -873,7 +873,10 @@
         "pick_up_from_store": "Retrait en magasin",
         "pick_up_locations": "Points de retrait",
         "pick_up_in_one_hour": "Généralement prêt en 1 heure",
-        "pick_up_in_two_hours": "Généralement prêt en 2 heures"
+        "pick_up_in_two_hours": "Généralement prêt en 2 heures",
+        "pick_up_in_four_hours": "Généralement prêt en 4 heures",
+        "pick_up_in_twenty_four_hours": "Habituellement prêt en 24 heures",
+        "pick_up_in_two_to_four_days": "Généralement prêt en 2 à 4 jours"
       }
     }
   }
