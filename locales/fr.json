@@ -3099,14 +3099,11 @@
             "delivery_guarantee_expired_label": "Garantie de livraison expirée",
             "modal_accessibility_button_label": "Détails de la promesse de livraison",
             "download_shop_app_button_label": "Téléchargez Shop pour suivre",
-            "track_with_shop_button_label": "Suivre avec Shop",
-            "claim_shop_cash_button_label": "Réclamer Le Crédit Boutique"
+            "track_with_shop_button_label": "Suivre avec Shop"
           },
           "details_modal": {
-            "title": "Garantie De Livraison",
-            "active_delivery_guarantee_label": "Livraison avant le {{date}}",
-            "expired_delivery_guarantee_description": "La garantie Shop Promise de 30 jours pour cette commande a expiré.",
-            "expired_badge_label": "Expiré"
+            "order_includes_guarantees_description": "Shop Promise garantit une livraison rapide et fiable. Réclamez Shop Cash si votre commande arrive après {{date}}.",
+            "delivered_after_label": "Livré après {{date}}"
           }
         }
       }
