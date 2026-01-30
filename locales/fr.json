@@ -3137,7 +3137,11 @@
       "contact_information": "Coordonnées",
       "loading": "Chargement Des Détails De La Commande",
       "loading_finished_accessibility_message": "Les détails de la commande ont été chargés",
-      "location": "Emplacement"
+      "location": "Emplacement",
+      "payment_confirmation": {
+        "payment_received": "Merci ! Votre paiement de {{amount}} a été reçu.",
+        "full_payment_received": "Merci ! Votre paiement de {{amount}} a été reçu, et cette commande est maintenant entièrement payée."
+      }
     }
   }
 }
