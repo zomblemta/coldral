@@ -2875,9 +2875,6 @@
         "links": {
           "explore_other_stores": "Explorer D'autres Boutiques",
           "start_free_trial": "Commencer un essai gratuit"
-        },
-        "owner_ctas": {
-          "add_storefront": "Vous pouvez configurer votre site en ajoutant le canal Boutique en ligne dans votre %{admin_link}. Si vous rencontrez des difficultés pour accéder à votre boutique, essayez la page %{forgot_your_store_link}."
         }
       }
     }
