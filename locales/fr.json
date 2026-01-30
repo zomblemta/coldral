@@ -3317,6 +3317,13 @@
           "draft": {
             "in_review": {
               "title": "Paiement pas encore dû"
+            },
+            "submitted": {
+              "description": "Effectuez le paiement pour confirmer cette commande.",
+              "title": "Payer Pour Confirmer",
+              "deposit": {
+                "title": "Le paiement est dû"
+              }
             }
           }
         }
