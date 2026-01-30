@@ -1048,6 +1048,10 @@
         "view_all_items": {
           "one": "Voir %{count} article",
           "other": "Voir tous les %{count} articles"
+        },
+        "more_items_modal": {
+          "search_item": "Rechercher",
+          "clear_search": "Effacer la recherche"
         }
       }
     }
