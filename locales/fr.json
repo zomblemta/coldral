@@ -1684,7 +1684,10 @@
         "usdc_cashback_additional_info": "Recevez 1 % en USDC directement dans votre portefeuille.",
         "usdc_cashback_terms": "Conditions Applicables",
         "purchase_options_card_update_agreement_label_html": "mettant à jour votre mode de paiement, vous autorisez les paiements pour tout achat récurrent ou différé conformément à la <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">politique d'annulation</a> de cette boutique.",
-        "subscription_card_update_agreement_label": "Modifier le mode de paiement mettra à jour votre abonnement et les paiements récurrents futurs."
+        "subscription_card_update_agreement_label": "Modifier le mode de paiement mettra à jour votre abonnement et les paiements récurrents futurs.",
+        "subscription_agreement_label": "Un ou plusieurs articles de votre panier sont des achats différés ou des abonnements. En poursuivant votre paiement, vous acceptez que votre moyen de paiement soit automatiquement débité au prix et selon la fréquence indiqués sur cette page jusqu'à son terme ou jusqu'à ce que vous l'annuliez. Toutes les annulations sont soumises au %{cancelled}.",
+        "subscription_agreement_cancelled": "politique d'annulation",
+        "subscription_heading": "Contrat d'abonnement"
       }
     }
   }
