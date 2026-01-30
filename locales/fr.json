@@ -2459,7 +2459,11 @@
         "track_shipment": "Suivre l'expédition",
         "other_options": "Autres options",
         "delivery_information_label": "Informations de livraison :",
-        "gift_card_sent_confirmation": "Cartes-Cadeaux Envoyées"
+        "gift_card_sent_confirmation": "Cartes-Cadeaux Envoyées",
+        "qr_code": {
+          "send_link_to_phone": "Ou envoyez un lien vers votre téléphone",
+          "title": "Suivez sur votre téléphone"
+        }
       }
     }
   }
