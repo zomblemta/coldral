@@ -712,7 +712,11 @@
         "choose_delivery_strategy": "Choisissez Un Mode De Livraison",
         "autocomplete_zero_item": "Aucun article disponible",
         "autocomplete_powered_by_google": "Propulsé par {{brandName}}",
-        "submit": "Envoyer"
+        "submit": "Envoyer",
+        "stepper": {
+          "decrease": "Decrease {{type}}",
+          "minimum_reached": "Minimum de {{value}} atteint"
+        }
       }
     }
   }
