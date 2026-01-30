@@ -2077,7 +2077,10 @@
         "development_store_order_testing_docs_link": "tester les commandes dans les boutiques de développement",
         "payment_above_threshold": "Le montant du paiement dépasse la limite monétaire pour cette région. Réduisez le total et réessayez.",
         "risky": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez une autre méthode de paiement.",
-        "expired_buyer_action": "Le moyen de paiement a expiré. Réessayez."
+        "expired_buyer_action": "Le moyen de paiement a expiré. Réessayez.",
+        "name_mismatch": "Vérifiez les informations de votre carte. Le nom figurant sur votre carte et l'adresse de facturation ne correspondent pas.",
+        "shop_pay_wallet_not_available": "Shop Pay n'est pas disponible pour ce paiement.",
+        "market_manager_blocks_wallet_payments": "Le mode de paiement n'est pas pris en charge dans votre pays."
       }
     }
   }
