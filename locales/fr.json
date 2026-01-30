@@ -1271,7 +1271,12 @@
         "shipping_method_rollup_accessibility_label": "Options de Mode d'Expédition",
         "shipping_method_one_time_purchase_group_title": "Achat unique",
         "shipping_method_first_shipment_group_title": {
-          "one": "Première Expédition"
+          "one": "Première Expédition",
+          "other": "Premières Expéditions"
+        },
+        "shipping_method_subscription_group_title": "Abonnement",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Expédition récurrente"
         }
       }
     }
