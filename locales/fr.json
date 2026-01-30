@@ -3269,6 +3269,10 @@
           "load_more": "Afficher plus"
         },
         "tax_exemptions_modal_button_accessibility_label": "Voir Toutes Les Exonérations Fiscales"
+      },
+      "location_selection": {
+        "continue_to_store": "Continuer à stocker",
+        "description": "Si vous avez déjà des articles dans votre panier, le changement d’emplacement peut affecter les prix et les quantités du panier."
       }
     }
   }
