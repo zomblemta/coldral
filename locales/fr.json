@@ -3257,6 +3257,9 @@
       },
       "location_picker": {
         "sheet_title": "Emplacements"
+      },
+      "aria_labels": {
+        "back_to_main_menu": "Retour au menu principal depuis {{title}}"
       }
     }
   }
