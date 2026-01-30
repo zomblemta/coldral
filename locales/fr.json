@@ -264,14 +264,14 @@
     "recover_password": {
       "title": "Récupération du mot de passe",
       "instructions": "Entrez votre email pour récupérer votre mot de passe :",
-      "remember_password": "Vous vous souvenez de votre mot de passe ?",
+      "remember_password": "Vous connaissez votre mot de passe ?",
       "email": "E-mail",
       "submit": "Récupérer",
-      "back_to_login": "Retour À La Connexion",
-      "success_message": "Un e-mail a été envoyé à votre adresse avec des instructions pour réinitialiser votre mot de passe."
+      "back_to_login": "Se connecter",
+      "success_message": "Un e-mail a été envoyé à votre adresse avec les instructions pour ré-initialiser votre mot de passe."
     },
     "register": {
-      "title": "S'inscrire",
+      "title": "Inscription",
       "instructions": "Entrez les informations suivantes :",
       "already_have_account": "Déjà un compte ?",
       "first_name": "Prénom",
