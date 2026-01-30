@@ -2948,6 +2948,13 @@
         "add_articles": "Restreindre la recherche aux articles ayant également le tag %{tag}",
         "add_products": "Restreindre la sélection aux produits correspondant à l'étiquette %{tag}"
       }
+    },
+    "email_marketing": {
+      "open_tracking": {
+        "no_longer_track": {
+          "privacy_policy": "Après l'envoi de cet e-mail, nous avons mis à jour notre politique de confidentialité et nous ne suivons plus les ouvertures."
+        }
+      }
     }
   }
 }
