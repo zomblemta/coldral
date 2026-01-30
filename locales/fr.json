@@ -634,7 +634,10 @@
             "unexpected_retail_attributions": "Des attributions de vente au détail ont été fournies de manière inattendue pour le paiement par carte de crédit.",
             "invalid_card_source": "Cette session n'a pas la permission d'utiliser cette source de carte.",
             "wallet_content_missing": "Le contenu du portefeuille est manquant.",
-            "payment_instrument_not_found": "Méthode de paiement introuvable"
+            "payment_instrument_not_found": "Méthode de paiement introuvable",
+            "unauthorized_capture_method": "La configuration de la méthode de capture du paiement n'est pas autorisée.",
+            "saved_payment_methods_not_allowed": "Les moyens de paiement enregistrés ne sont pas autorisés.",
+            "saved_payment_methods_not_enabled": "Les méthodes de paiement enregistrées ne sont pas activées pour cette boutique."
           }
         }
       }
