@@ -1478,7 +1478,10 @@
         "split_shipping_first_shipment_notice": "Votre première commande arrivera dans %{quantity_shipments}",
         "split_shipping_multiple_shipment_quantity_label": "%{quantity} expéditions",
         "split_shipping_multiple_shipment_notice": "Votre commande sera livrée en plusieurs colis",
-        "split_shipping_multiple_shipment_notice_one_time_purchase": "Votre commande arrivera en %{quantity} livraisons"
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Votre commande arrivera en %{quantity} livraisons",
+        "split_shipping_more_shipping_options": "Plus d'options d'expédition",
+        "split_shipping_shipment_number": "Expédition %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Quantité : %{quantity}"
       }
     }
   }
