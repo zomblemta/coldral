@@ -817,7 +817,9 @@
         "address1_label": "Adresse",
         "address2_label": "Appartement, suite, etc.",
         "optional_address2_label": "Appartement, suite, etc. (facultatif)",
-        "city_label": "Ville"
+        "city_label": "Ville",
+        "country_label": "Pays/Région",
+        "country_code": "Code Pays/Région"
       }
     }
   }
