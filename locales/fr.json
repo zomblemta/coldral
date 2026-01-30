@@ -3169,7 +3169,11 @@
       "request_return_failed": "Un problème est survenu lors du traitement de votre demande. Veuillez réessayer.",
       "marketing_section_title": "Actualités et offres",
       "marketing_description": "Vous recevrez des e-mails marketing. Vous pouvez vous désabonner à tout moment.",
-      "marketing_checkbox_label": "Envoyez-moi des nouveautés et des offres par e-mail"
+      "marketing_checkbox_label": "Envoyez-moi des nouveautés et des offres par e-mail",
+      "marketing_checkmark_label": "Vous êtes abonné(e) pour recevoir des actualités et des offres par e-mail",
+      "returns": {
+        "expand_events_label": "Voir Les Détails"
+      }
     }
   }
 }
