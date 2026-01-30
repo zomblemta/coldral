@@ -1506,7 +1506,10 @@
           "tax_credential_type_co": "Type de pièce d'identité",
           "shipping_credential_co": "N° d'identité/TVA",
           "shipping_credential_type_co": "Type de pièce d'identité",
-          "tax_credential_cr": "Numéro d'identification/RUT"
+          "tax_credential_cr": "Numéro d'identification/RUT",
+          "shipping_credential_cr": "Numéro d'identification/RUT",
+          "tax_credential_ec": "CI/RUC/TVA",
+          "shipping_credential_ec": "CNI/RUC/TVA"
         }
       }
     }
