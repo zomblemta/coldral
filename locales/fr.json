@@ -2989,7 +2989,9 @@
     "navigation_and_structure": {
       "account_menu": {
         "show_accessibility_label": "Afficher le Menu du Compte",
-        "nav_accessibility_label": "Navigation du compte"
+        "nav_accessibility_label": "Navigation du compte",
+        "open_menu_accessibility_label": "Navigation d'ouverture de compte",
+        "close_menu_accessibility_label": "Fermer la navigation du compte"
       }
     }
   }
