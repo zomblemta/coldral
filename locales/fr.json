@@ -3090,7 +3090,7 @@
           "one": "La carte-cadeau a été envoyée par e-mail.",
           "other": "Les cartes-cadeaux ont été envoyées par e-mail."
         },
-        "on_its_way_label": "route"
+        "submitted_label": "Soumis"
       }
     }
   }
