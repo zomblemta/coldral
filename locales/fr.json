@@ -2868,7 +2868,10 @@
       "verify_email": "Nous avons envoyé un e-mail à %{customer_email}, veuillez cliquer sur le lien inclus pour vérifier votre adresse e-mail.",
       "product_not_available": "le produit n'est pas publié pour ce client.",
       "shop_404": {
-        "title": "Créez Un Site E-commerce Et Vendez En Ligne ! Logiciel E-commerce Par Shopify"
+        "title": "Créez Un Site E-commerce Et Vendez En Ligne ! Logiciel E-commerce Par Shopify",
+        "heros": {
+          "no_storefront": "Cette boutique n'a pas encore de site web."
+        }
       }
     }
   }
