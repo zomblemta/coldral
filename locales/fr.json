@@ -628,7 +628,10 @@
             "missing_session_id": "Informations de session de carte de crédit manquantes.",
             "gateway_not_supported": "La passerelle de paiement ne prend pas en charge l'enregistrement du moyen de paiement.",
             "credit_card_last_name_required": "'nom de famille' ne peut pas être nil.",
-            "credit_card_update_failed": "La mise à jour de la carte de crédit a échoué."
+            "credit_card_update_failed": "La mise à jour de la carte de crédit a échoué.",
+            "invalid_address_type": "Le type d'adresse fourni n'est pas valide pour ce mode de paiement.",
+            "missing_retail_attributions": "Les attributions liées au commerce de détail sont requises pour les paiements par carte de crédit saisis manuellement.",
+            "unexpected_retail_attributions": "Des attributions de vente au détail ont été fournies de manière inattendue pour le paiement par carte de crédit."
           }
         }
       }
