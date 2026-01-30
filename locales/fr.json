@@ -540,7 +540,11 @@
             "gift_card_with_attributes_not_supported": "Les cartes-cadeaux avec des attributs personnalisés ne sont pas prises en charge lors de ce paiement.",
             "gift_card_with_components_not_supported": "Les cartes-cadeaux comportant des composants ne sont pas prises en charge lors de ce paiement.",
             "selling_plan_mismatch": "L'abonnement a été mis à jour.",
-            "selling_plan_not_supported": "Les abonnements ne sont pas pris en charge."
+            "selling_plan_not_supported": "Les abonnements ne sont pas pris en charge.",
+            "selling_plan_not_supported_b2b": "Les abonnements ne sont pas pris en charge pour le paiement B2B.",
+            "price_mismatch": "Le prix précédemment proposé pour cette marchandise était invalide et a été mis à jour.",
+            "inventory_not_found": "Aucun stock trouvé pour cet article.",
+            "product_not_published": "Le produit n'est pas publié."
           }
         }
       }
