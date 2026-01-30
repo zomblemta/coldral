@@ -662,6 +662,13 @@
             "location_not_exist": "Cet emplacement n'existe pas dans la boutique actuelle.",
             "point_of_sale_device_not_exist": "Ce terminal de point de vente n'existe pas dans la boutique actuelle.",
             "unresolvable_target_merchandise_lines": "Les attributions de vente proposées sont impossibles à résoudre compte tenu du contexte de négociation actuel."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "La proposition de votre acheteur doit contenir des termes non négociables.",
+            "invalid_signature": "La signature de {{target_terms}} est invalide."
+          },
+          "inventory": {
+            "missing_quantity_value": "Le champ Quantité est manquant dans les lignes d'inventaire de l'acheteur."
           }
         }
       }
