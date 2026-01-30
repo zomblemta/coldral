@@ -1986,7 +1986,9 @@
         "purchase_options_agreement_blank": "Pour poursuivre votre achat, acceptez les conditions d'achat différé ou récurrent.",
         "physical_gift_card_invalid_quantity": "Les lignes d'articles pour cartes-cadeaux physiques doivent avoir une quantité correspondant au nombre de codes de carte-cadeau.",
         "physical_gift_card_duplicate_code": "La ligne d'article de carte-cadeau physique contient un code en double.",
-        "physical_gift_card_invalid_code": "Le code de la carte-cadeau physique est invalide."
+        "physical_gift_card_invalid_code": "Le code de la carte-cadeau physique est invalide.",
+        "email_blank": "Saisissez une adresse e-mail",
+        "phone_blank": "Entrez Un Numéro De Téléphone"
       }
     }
   }
