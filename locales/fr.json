@@ -1349,6 +1349,9 @@
           },
           "prepaid_free_shipping_with_cycles": {
             "one": "Livraison gratuite pour le premier %{cycle}, puis %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "other": "%{shipping_price} pour %{count} livraisons supplémentaires (%{per_delivery_cost})"
           }
         }
       }
