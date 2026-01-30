@@ -1580,7 +1580,10 @@
         "delete_customer_mandate_modal_confirm": "Supprimer la carte",
         "card_verification_value_label": "Code de sécurité",
         "card_verification_value_placeholder": "Code de sécurité",
-        "card_verification_confirm": "Pour des raisons de vérification, saisissez le code de sécurité de votre carte."
+        "card_verification_confirm": "Pour des raisons de vérification, saisissez le code de sécurité de votre carte.",
+        "card_expiry_date_explanation": "Date d'expiration de la carte au format : mois, mois, année, année",
+        "card_expiration_month_label": "Mois d'expiration",
+        "card_expiration_year_label": "Année d'expiration"
       }
     }
   }
