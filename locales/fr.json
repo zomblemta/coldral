@@ -147,7 +147,7 @@
     "inventory": {
       "in_stock": "stock",
       "low_stock": "Il ne reste que quelques unités",
-      "oversell_stock": "Re-stockage imminent",
+      "oversell_stock": "Réapprovisionnement Imminent",
       "incoming_stock": "Re-stockage le {{ next_incoming_date }}",
       "low_stock_with_quantity_count": {
         "one": "Plus qu'un produit en stock",
@@ -157,7 +157,7 @@
         "one": "{{ count }} en stock",
         "other": "{{ count }} en stock"
       },
-      "out_of_stock": "En rupture"
+      "out_of_stock": "Rupture de stock"
     },
     "store_availability": {
       "view_store_info": "Afficher les informations de la boutique",
