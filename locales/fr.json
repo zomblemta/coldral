@@ -2623,7 +2623,13 @@
             "other": "%{count} ans"
           }
         },
-        "recurring_totals": "%{total_price} tous les %{interval}"
+        "recurring_totals": "%{total_price} tous les %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Premier paiement %{total_price_with_discount}, puis %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Premier paiement %{total_price}"
+          }
+        }
       }
     }
   }
