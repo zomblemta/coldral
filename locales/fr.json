@@ -3022,7 +3022,14 @@
             "last_updated": "Dernière Mise À Jour {{date}}"
           },
           "table_view": {
-            "estimated_delivery": "Livraison estimée {{date}}"
+            "estimated_delivery": "Livraison estimée {{date}}",
+            "last_updated": "{{date}}"
+          }
+        },
+        "payment_status": {
+          "gallery_view": {
+            "overdue": "Paiement en retard",
+            "due": "Paiement dû {{date}}"
           }
         }
       }
