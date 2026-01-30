@@ -2134,7 +2134,10 @@
         "redirecting_to_bank": "Redirection vers {{bank}}",
         "complete_your_purchase_title": "Finalisez votre achat",
         "continue_to_payment_gateway_notice": "Passez au paiement pour ajouter vos informations de paiement.",
-        "continue_to_payment_gateway_button_label": "Continuer vers le Paiement"
+        "continue_to_payment_gateway_button_label": "Continuer vers le Paiement",
+        "complete_your_purchase_title_error": "Corrigez vos informations de paiement",
+        "continue_to_payment_gateway_notice_error": "Les informations de paiement n'ont pas pu être vérifiées.",
+        "continue_to_payment_gateway_button_label_error": "Mettre à jour les informations de paiement"
       }
     }
   }
