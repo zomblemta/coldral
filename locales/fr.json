@@ -2617,8 +2617,13 @@
           "month": {
             "one": "mois",
             "other": "%{count} mois"
+          },
+          "year": {
+            "one": "an",
+            "other": "%{count} ans"
           }
-        }
+        },
+        "recurring_totals": "%{total_price} tous les %{interval}"
       }
     }
   }
