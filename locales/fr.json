@@ -1920,7 +1920,9 @@
         "address_city_blank": "Entrez une ville",
         "address_city_too_long": "La ville est trop longue (maximum : 255 caractères)",
         "address_city_contains_emojis": "La ville ne peut pas contenir d'émojis",
-        "address_city_contains_html_tags": "La ville ne peut pas contenir de balises HTML."
+        "address_city_contains_html_tags": "La ville ne peut pas contenir de balises HTML.",
+        "address_city_contains_mathematical_symbols": "La Ville Ne Peut Pas Contenir De Symboles Mathématiques",
+        "address_country_blank": "Sélectionnez un pays/région"
       }
     }
   }
