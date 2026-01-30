@@ -3425,7 +3425,12 @@
           },
           "expirable_balance_info": "Une Partie De Votre Solde Expirera À Une Date Ultérieure",
           "expirable_amount_label": "Montant Total Expirable",
-          "expirable_amounts_info": "Les montants expirant le plus tôt sont appliqués en premier lors du paiement"
+          "expirable_amounts_info": "Les montants expirant le plus tôt sont appliqués en premier lors du paiement",
+          "expirable_amounts_button": "Voir",
+          "expired_amounts_button": "Voir Les Montants Expirés",
+          "pagination": {
+            "load_more_label": "Afficher plus"
+          }
         }
       }
     }
