@@ -3422,7 +3422,8 @@
             "payment_failure": "Échec Du Paiement",
             "payment_returned": "Paiement retourné",
             "order_cancellation": "Annulation de commande"
-          }
+          },
+          "expirable_balance_info": "Une Partie De Votre Solde Expirera À Une Date Ultérieure"
         }
       }
     }
