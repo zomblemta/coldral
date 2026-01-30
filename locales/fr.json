@@ -2775,7 +2775,9 @@
           "missing": {
             "billing_first_name": "Entrez le prénom de l'adresse de facturation",
             "city": "Entrez une ville",
-            "billing_zip": "Entrez Le Code Postal / ZIP De L'Adresse De Facturation"
+            "billing_zip": "Entrez Le Code Postal / ZIP De L'Adresse De Facturation",
+            "phone": "Entrez un numéro de téléphone",
+            "contact_info": "Saisissez les coordonnées"
           }
         }
       }
