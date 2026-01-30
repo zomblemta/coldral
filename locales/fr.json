@@ -3074,9 +3074,12 @@
             "last_7_days": "Les 7 derniers jours",
             "last_30_days": "Derniers 30 Jours",
             "last_90_days": "Derniers 90 jours",
-            "last_365_days": "Les 12 Derniers Mois"
+            "last_365_days": "Les 12 Derniers Mois",
+            "custom": "Personnalisé"
           }
-        }
+        },
+        "show_order_actions_accessibility_label": "Afficher les actions de la commande {{name}}",
+        "view_order": "Voir la commande"
       }
     }
   }
