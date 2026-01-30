@@ -2794,7 +2794,9 @@
         "title": "Le paiement hors site a échoué"
       },
       "units": {
-        "square_meter": "m²"
+        "square_meter": "m²",
+        "pound": "lb",
+        "fluid_ounce": "fl oz"
       }
     }
   }
