@@ -558,7 +558,11 @@
             "business_customer_does_not_match_company": "Le contact de l'entreprise n'a pas accès à l'entreprise.",
             "customer_account_required": "Vous devez vous connecter pour continuer.",
             "company_location_required": "Le client doit choisir un emplacement d'entreprise pour continuer.",
-            "company_purchase_permission_required": "Le client n'a pas l'autorisation de passer des commandes au nom de l'entreprise."
+            "company_purchase_permission_required": "Le client n'a pas l'autorisation de passer des commandes au nom de l'entreprise.",
+            "personal_order_not_allowed": "Les commandes personnelles ne sont pas autorisées pour cette boutique.",
+            "lost_access_to_company": "Le client a perdu l'accès à n'importe quelle entreprise.",
+            "contact_info_does_not_match_customer_account": "Les informations de contact doivent correspondre au compte auquel vous êtes connecté.",
+            "phone_number_does_not_match_expected_pattern": "Le numéro de téléphone spécifié ne correspond pas au modèle attendu."
           }
         }
       }
