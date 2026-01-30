@@ -1289,7 +1289,11 @@
         "no_rates_for_country_notice": "Aucun tarif d'expédition trouvé pour cette adresse.",
         "no_rates_contact_notice": "Contactez-nous pour plus d'informations",
         "free_rate_label": "Gratuit",
-        "cheapest_rate_label": "Le moins cher"
+        "cheapest_rate_label": "Le moins cher",
+        "estimated_delivery_date": {
+          "one": "%{count} jour ouvrable",
+          "other": "%{count} jours ouvrables"
+        }
       }
     }
   }
