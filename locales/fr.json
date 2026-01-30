@@ -2793,10 +2793,8 @@
       "offsite_payment_failed": {
         "title": "Le paiement hors site a échoué"
       },
-      "units": {
-        "square_meter": "m²",
-        "pound": "lb",
-        "fluid_ounce": "fl oz"
+      "memberships": {
+        "items_split_across_locations_unsupported": "La livraison Prime n'est pas disponible pour votre commande. Vos options d'expédition ont été mises à jour."
       }
     }
   }
