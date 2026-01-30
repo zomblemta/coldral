@@ -1776,7 +1776,10 @@
           "fields": {
             "default": "Définir par défaut",
             "card_number": "Numéro de carte",
-            "expiry": "Date d'expiration"
+            "expiry": "Date d'expiration",
+            "security_code": "Code de sécurité",
+            "name": "Nom Sur La Carte",
+            "billing": "Facturer à"
           }
         }
       }
