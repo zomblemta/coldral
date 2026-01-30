@@ -3390,15 +3390,6 @@
       },
       "already_upgraded": "Les comptes clients sont déjà mis à niveau.",
       "failed_to_upgrade": "Échec de la mise à niveau des paramètres du compte client."
-    },
-    "throttle": {
-      "too_many_attempts": {
-        "message": "Trop de tentatives",
-        "description": "Veuillez réessayer dans quelques minutes."
-      }
-    },
-    "payment_methods": {
-      "replacement_payment_method_title": "Méthode De Paiement De Remplacement"
     }
   }
 }
