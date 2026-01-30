@@ -1733,6 +1733,17 @@
           "title": "Aperçu non disponible",
           "content": "Ne vous inquiétez pas, ce paiement express fonctionne pour vos clients.",
           "button": "D'accord"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Saisissez une date d'émission valide",
+              "issue_number": "Saisissez un numéro de ticket valide"
+            },
+            "invalid": {
+              "verification_value": "Saisissez un CVV ou un code de sécurité valide"
+            }
+          }
         }
       }
     }
