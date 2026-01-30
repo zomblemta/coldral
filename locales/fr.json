@@ -3524,7 +3524,10 @@
     "payment_method_brands": {
       "visa": "Visa",
       "mastercard": "Mastercard",
-      "americanexpress": "American Express"
+      "americanexpress": "American Express",
+      "discover": "Découvrir",
+      "dinersclub": "Diners Club",
+      "jcb": "JCB"
     }
   }
 }
