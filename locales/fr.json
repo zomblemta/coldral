@@ -3664,6 +3664,12 @@
         "expiry_date": "Exp. {{expiryDate}}",
         "edit_current_payment_method": "Modifier le mode de paiement actuel"
       }
+    },
+    "sign_in": {
+      "step_one": {
+        "page_title": "Connexion - %{shop_name}",
+        "heading": "Se connecter"
+      }
     }
   }
 }
