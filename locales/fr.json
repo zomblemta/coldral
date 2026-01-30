@@ -959,6 +959,13 @@
             "one": "Le mode de livraison choisi n'est plus disponible pour cet article.",
             "other": "La méthode de livraison choisie n'est plus disponible pour ces articles."
           }
+        },
+        "unshippable_product": {
+          "title": "Aucune Livraison Disponible",
+          "header": {
+            "one": "Aucune livraison disponible pour %{count} article",
+            "other": "Aucune livraison disponible pour %{count} articles"
+          }
         }
       }
     }
