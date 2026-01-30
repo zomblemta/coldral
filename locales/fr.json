@@ -1836,7 +1836,10 @@
         "alternative_payment_currency_total_manual_payment_notice": "Remarque : le total converti est %{amount_due}.",
         "waiting_on_taxes_message": "Si le calcul des taxes n'est pas effectué dans les prochaines secondes, actualisez la page.",
         "waiting_on_taxes_notice": "Calcul des taxes",
-        "payment_method": "Mode de paiement"
+        "payment_method": "Mode de paiement",
+        "payment_method_rollup_accessibility_label": "Options De Paiement",
+        "expired_payment_method": "Le mode de paiement sélectionné a expiré",
+        "payment_method_update_failed": "La mise à jour du mode de paiement a échoué."
       }
     }
   }
