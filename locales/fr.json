@@ -3089,7 +3089,8 @@
         "delivered_description_gift_card": {
           "one": "La carte-cadeau a été envoyée par e-mail.",
           "other": "Les cartes-cadeaux ont été envoyées par e-mail."
-        }
+        },
+        "multiple_shipments_label": "Expéditions multiples"
       }
     }
   }
