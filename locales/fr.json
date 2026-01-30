@@ -544,7 +544,10 @@
             "selling_plan_not_supported_b2b": "Les abonnements ne sont pas pris en charge pour le paiement B2B.",
             "price_mismatch": "Le prix précédemment proposé pour cette marchandise était invalide et a été mis à jour.",
             "inventory_not_found": "Aucun stock trouvé pour cet article.",
-            "product_not_published": "Le produit n'est pas publié."
+            "product_not_published": "Le produit n'est pas publié.",
+            "product_not_published_in_buyer_location": "Le produit n'est pas publié dans la localisation de l'acheteur.",
+            "duplicated_stable_id": "Cette ligne de marchandises a le même stable-ID qu'une autre ligne.",
+            "maximum_quantity_exceeded": "La quantité de certains articles dépasse le maximum autorisé."
           }
         }
       }
