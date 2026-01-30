@@ -3358,6 +3358,12 @@
         "add_modal_title": "Ajouter le numéro de bon de commande",
         "cancel": "Annuler"
       }
+    },
+    "errors": {
+      "load_address_form_error": {
+        "title": "Impossible De Charger Le Formulaire D'Adresse",
+        "description": "Impossible de charger le formulaire d'adresse."
+      }
     }
   }
 }
