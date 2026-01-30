@@ -991,6 +991,14 @@
         "title": {
           "one": "Produit indisponible",
           "other": "Produits Indisponibles"
+        },
+        "products_not_available": {
+          "one": "Ce produit sera supprimé de votre panier car il n'est pas disponible dans votre pays/région.",
+          "other": "Ces produits seront retirés de votre panier car ils ne sont pas disponibles dans votre pays/région."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Ce produit n'est pas disponible dans votre pays/région.",
+          "other": "Ces produits ne sont pas disponibles dans votre pays/région."
         }
       }
     }
