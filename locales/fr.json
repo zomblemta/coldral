@@ -1930,7 +1930,10 @@
         "address_company_too_long": "Le nom de l'entreprise est trop long (maximum : 255 caractères)",
         "address_company_contains_emojis": "La société ne peut pas contenir d'émojis",
         "address_company_contains_html_tags": "La société ne peut pas contenir de balises HTML.",
-        "address_company_contains_mathematical_symbols": "La société ne peut pas contenir de symboles mathématiques"
+        "address_company_contains_mathematical_symbols": "La société ne peut pas contenir de symboles mathématiques",
+        "address_phone_blank": "Entrez un numéro de téléphone valide",
+        "address_phone_contains_emojis": "Le numéro de téléphone ne peut pas contenir d'émojis",
+        "address_phone_invalid": "Entrez un numéro de téléphone valide"
       }
     }
   }
