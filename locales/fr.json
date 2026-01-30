@@ -2646,8 +2646,10 @@
       },
       "throttle": {
         "too_many_attempts": {
-          "message": "Trop De Tentatives"
-        }
+          "message": "Trop De Tentatives",
+          "description": "Réessayez dans quelques minutes"
+        },
+        "line_to_check_out": "Vous êtes dans la file pour passer à la caisse"
       }
     }
   }
