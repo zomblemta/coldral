@@ -1529,8 +1529,14 @@
           "tax_credential_es": "DNI/NIF",
           "shipping_credential_es": "NUMÉRO D'IDENTITÉ / NUMÉRO FISCAL",
           "shipping_credential_tw": "Numéro d'Identité Nationale/TVA",
-          "tax_credential_tr": "Numéro d'identification de la République de Turquie/TVA"
+          "tax_credential_tr": "Numéro d'identification de la République de Turquie/TVA",
+          "shipping_credential_tr": "Numéro D'Identité De La République De Turquie/TVA"
         }
+      },
+      "payment": {
+        "network_card_payment_options": "Choisissez un réseau de cartes",
+        "network_card_persistence_description": "Le réseau sélectionné sera enregistré avec votre moyen de paiement pour de futures transactions.",
+        "amazon_payments_label": "Amazon Pay"
       }
     }
   }
