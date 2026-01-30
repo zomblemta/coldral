@@ -2793,11 +2793,8 @@
       "offsite_payment_failed": {
         "title": "Le paiement hors site a échoué"
       },
-      "remote": {
-        "errors": {
-          "currency_mismatch": "Cet article ne peut pas être ajouté à votre panier car il provient d'une boutique qui utilise une devise différente.",
-          "currency_mismatch_removal": "Un article a été retiré de votre panier car il provient d'une boutique qui utilise une devise différente."
-        }
+      "units": {
+        "centiliter": "cl"
       }
     }
   }
