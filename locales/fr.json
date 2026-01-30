@@ -192,13 +192,13 @@
       "price_filter_from": "De",
       "price_filter_to": "A",
       "price_filter": "{{ min_price }} à {{ max_price }}",
-      "in_stock_only": "En stock uniquement"
+      "in_stock_only": "stock uniquement"
     }
   },
   "blog": {
     "general": {
-      "empty_blog": "Ce blog est vide",
-      "back_to_home": "Retour à la boutique",
+      "empty_blog": "Ce blog ne contient encore aucun article.",
+      "back_to_home": "Retour à l'accueil",
       "view": "Voir",
       "all_posts": "Tous les articles",
       "read_more": "En savoir plus"
