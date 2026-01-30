@@ -3236,18 +3236,11 @@
       "edit_modal_title": {
         "default": "Modifier l'adresse",
         "billing": "Modifier l'adresse de facturation"
-      },
-      "loading_shipping_accessibility_message": "Chargement De L'Adresse De Livraison",
-      "pagination": {
-        "load_more": "Charger Plus",
-        "load_more_accessibility_label": "Afficher plus d'adresses"
-      },
-      "save_new_address_accessibility_label": "Enregistrer l'adresse",
-      "title": "Adresses",
-      "billing_address_dropdown_placeholder": "Adresse de facturation"
+      }
     },
     "address_form": {
-      "attention": "Attention"
+      "attention_help_text": "Le nom d'une personne ou d'un service",
+      "auto_complete_close_accessibility_label": "Fermer les suggestions"
     }
   }
 }
