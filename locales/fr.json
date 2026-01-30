@@ -550,7 +550,12 @@
             "maximum_quantity_exceeded": "La quantité de certains articles dépasse le maximum autorisé.",
             "quantity_increment_not_met": "La quantité de certains articles ne respecte pas les limites de commande.",
             "quantity_rules_not_met": "La quantité de certains articles ne respecte pas les limites de commande.",
-            "bundle_requires_components": "`Cette marchandise groupée ne contient aucun composant.`"
+            "bundle_requires_components": "`Cette marchandise groupée ne contient aucun composant.`",
+            "title_too_long": "Le titre du produit est trop long.",
+            "title_empty": "Le titre de l'article est vide."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Le contact de l'entreprise n'a pas accès à l'entreprise."
           }
         }
       }
