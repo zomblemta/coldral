@@ -1106,7 +1106,12 @@
         "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> le code promo nécessite un client éligible",
         "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> le code de réduction n'est pas disponible pour votre adresse de livraison",
         "customer_already_used_once_per_customer_discount_notice": "Le code promo <strong style=\"text-transform:uppercase\">%{code}</strong> a déjà été utilisé",
-        "subtotal_label": "Sous-total"
+        "subtotal_label": "Sous-total",
+        "subtotal_label_with_quantity": {
+          "one": "Sous-total · %{count} article",
+          "other": "Sous-total · %{count} articles"
+        },
+        "pickup_label": "Retrait en magasin"
       }
     }
   }
