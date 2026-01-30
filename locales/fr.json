@@ -515,6 +515,12 @@
       "words_connector": ", ",
       "two_words_connector": " et ",
       "last_word_connector": ", et "
+    },
+    "checkout": {
+      "general": {
+        "error_page_title": "Erreur",
+        "skip_to_content": "Aller au contenu"
+      }
     }
   }
 }
