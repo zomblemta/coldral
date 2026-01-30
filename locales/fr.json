@@ -800,7 +800,10 @@
         "contact_method_title": "Contact",
         "email_label": "E-mail",
         "email_rollup_accessibility_label": "Options de courriel",
-        "email_placeholder": "E-mail"
+        "email_placeholder": "E-mail",
+        "email_or_phone_label": "Adresse E-mail Ou Numéro De Téléphone Mobile",
+        "email_or_phone_placeholder": "Adresse e-mail ou numéro de téléphone mobile",
+        "stored_addresses_label": "Adresses enregistrées"
       }
     }
   }
