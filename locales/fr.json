@@ -1680,7 +1680,9 @@
         "grabpay_label": "GrabPay",
         "kcp_creditcard_label": "KCP Carte de Crédit",
         "usdc_label": "USDC",
-        "usdc_cashback_title": "1% de cashback"
+        "usdc_cashback_title": "1% de cashback",
+        "usdc_cashback_additional_info": "Recevez 1 % en USDC directement dans votre portefeuille.",
+        "usdc_cashback_terms": "Conditions Applicables"
       }
     }
   }
