@@ -3444,7 +3444,8 @@
         "payment_method_not_found_error": "Impossible de trouver un moyen de paiement",
         "payment_details_loading": "Chargement Des Détails Du Moyen De Paiement",
         "pre_authorized_payments": "Paiements préautorisés",
-        "next_payment_due": "Prochain paiement dû {{dueDateInMonthDayYear}}"
+        "edit_payment_method_button_accessibility_label": "Modifier le mode de paiement se terminant par {{lastDigits}}",
+        "loading_shop_pay": "Chargement de Shop Pay"
       }
     }
   }
