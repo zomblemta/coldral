@@ -2875,6 +2875,15 @@
         "links": {
           "explore_other_stores": "Explorer D'autres Boutiques",
           "start_free_trial": "Commencer un essai gratuit"
+        },
+        "ctas": {
+          "open_a_store": {
+            "link_text": "Inscrivez-vous Maintenant"
+          },
+          "editions": {
+            "header": "Découvrez Shopify Editions",
+            "caption": "Avec plus de 100 mises à jour de produits, vous pouvez être plus productif et créatif, et plus performant dans le commerce que vous ne l'auriez jamais imaginé."
+          }
         }
       }
     }
