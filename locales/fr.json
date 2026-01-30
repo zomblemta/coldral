@@ -3591,6 +3591,9 @@
       "qrCode": "code QR",
       "addFile": "Ajouter un fichier",
       "dropzoneInvalidFileType": "Type de fichier non pris en charge"
+    },
+    "profile_preview_bar": {
+      "hide_bar": "Masquer la Barre"
     }
   }
 }
