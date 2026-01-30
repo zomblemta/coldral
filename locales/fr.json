@@ -3058,8 +3058,10 @@
         },
         "location_filter_picker": {
           "all_location": "Tous les emplacements",
-          "current_location": "Position actuelle"
-        }
+          "current_location": "Position actuelle",
+          "switch_view": "Changer de vue"
+        },
+        "filter_title": "Filtre"
       }
     }
   }
