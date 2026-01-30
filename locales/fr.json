@@ -2644,6 +2644,11 @@
       "throttle": {
         "merchandise": {
           "sold_out": "Épuisé"
+        },
+        "inventory": {
+          "sold_out": {
+            "heading": "Votre panier est en rupture de stock"
+          }
         }
       }
     }
