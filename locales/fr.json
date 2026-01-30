@@ -2584,7 +2584,12 @@
         "payment_total_label": "Total du paiement",
         "conversion_rate": "1 %{from_currency_code} équivaut à %{rate} %{to_currency_code}",
         "change_currency_link": "Changer en %{currency_name}",
-        "card_provider_fx_charges_warning": "Votre fournisseur de carte peut facturer des frais sur les transactions en %{currency_code}."
+        "card_provider_fx_charges_warning": "Votre fournisseur de carte peut facturer des frais sur les transactions en %{currency_code}.",
+        "currency_not_supported_by_shop": "La devise que vous avez sélectionnée n'est plus disponible. Tous les prix sont désormais en %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Votre panier a été mis à jour en fonction de votre pays d'expédition.",
+        "cart_and_currency_updated_based_on_country": "Votre panier et votre devise ont été mis à jour en fonction de votre pays d'expédition."
       }
     }
   }
