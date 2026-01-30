@@ -522,9 +522,7 @@
         "skip_to_content": "Aller au contenu",
         "continue_button_label": "Continuer",
         "complete_purchase_button_label": "Finaliser la commande",
-        "pay_now_button_label": "Payer Maintenant",
-        "edit_link_label": "Modifier",
-        "autocomplete_title": "Suggestions"
+        "autocomplete_close": "Fermer les suggestions"
       }
     }
   }
