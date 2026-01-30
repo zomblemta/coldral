@@ -1498,7 +1498,10 @@
           "shipping_credential_br": "CPF/CNPJ",
           "shipping_credential_kr": "Code Douanier Personnel",
           "shipping_credential_cn": "Numéro d'identité du résident",
-          "tax_credential_it": "Code Fiscal (facultatif)"
+          "tax_credential_it": "Code Fiscal (facultatif)",
+          "tax_email_it": "PEC (facultatif)",
+          "tax_credential_cl": "RUT",
+          "shipping_credential_cl": "RUT"
         }
       }
     }
