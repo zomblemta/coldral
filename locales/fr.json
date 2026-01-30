@@ -3306,7 +3306,14 @@
       },
       "draft_order_details": {
         "draft_order_subtitle": "Confirmé le {{date}} de la commande {{draftOrderName}}",
-        "loading": "Chargement Des Détails De La Commande"
+        "loading": "Chargement Des Détails De La Commande",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "other": "Votre paiement a {{count}} jours de retard"
+            }
+          }
+        }
       }
     }
   }
