@@ -3198,7 +3198,12 @@
         "removed_with_quantities": "Removed {{delta}} of {{total}}",
         "return_line_item_removed": "Supprimé Du Retour",
         "return_line_item_removed_with_quantities": "Retiré {{delta}} du retour"
-      }
+      },
+      "shop_pay": {
+        "order_completed_with": "Commande terminée avec",
+        "learn_more": "savoir plus"
+      },
+      "taxes": "Taxes"
     }
   }
 }
