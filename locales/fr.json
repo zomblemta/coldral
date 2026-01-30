@@ -2596,7 +2596,9 @@
         "verify_shipping_address": "Votre pays/région a été mis à jour. Saisissez votre adresse de livraison pour continuer le passage à la caisse."
       },
       "tips": {
-        "title": "Ajouter Un Pourboire"
+        "title": "Ajouter Un Pourboire",
+        "description": "Montrez Votre Soutien À L'Équipe De %{shop_name}",
+        "presets_description": "Sélectionnez un pourcentage de pourboire"
       }
     }
   }
