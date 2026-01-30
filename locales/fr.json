@@ -2477,8 +2477,11 @@
         "breadcrumbs_in_review": "cours d'examen",
         "breadcrumbs_confirmed": "Confirmé",
         "missing_shipping_address_banner": {
-          "title": "La commande n’a pas d’adresse de livraison"
-        }
+          "title": "La commande n’a pas d’adresse de livraison",
+          "text_html": "%{contact_us} pour ajouter votre adresse",
+          "contact_us": "Contactez-nous"
+        },
+        "first_payment_complete": "Premier Paiement Effectué"
       }
     }
   }
