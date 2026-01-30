@@ -1751,7 +1751,12 @@
         "business_customer_with_bank_account_vaulting_payment_label": "Enregistrez ce moyen de paiement lors du passage en caisse et autorisez %{company} à débiter votre compte pour les achats futurs que vous approuvez pour cet emplacement, jusqu'à révocation. Tous les contacts rattachés à cet emplacement peuvent utiliser ce moyen de paiement.",
         "saved_credit_card_cvv_verification": "Pour vérification, saisissez le code de sécurité de votre carte.",
         "saved_credit_card_actions": {
-          "edit": "Modifier"
+          "edit": "Modifier",
+          "delete": "Supprimer"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "Voir Toutes Les Cartes Enregistrées",
+          "done": "Terminé"
         }
       }
     }
