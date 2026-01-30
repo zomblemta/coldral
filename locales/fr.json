@@ -2533,7 +2533,9 @@
           "change_shipping_method_link_label": "Modifier le mode de livraison",
           "change_payment_method_link_label": "Modifier le mode de paiement",
           "pick_up_in_store_shipping_method_html": "Retrait en magasin · %{location_name}",
-          "purchase_order_number_title": "Numéro de bon de commande"
+          "purchase_order_number_title": "Numéro de bon de commande",
+          "review_title_free_order": "Vérifiez Et Finalisez Votre Commande",
+          "payment_method_saved_company_location": "Enregistrer La Carte Pour Cet Emplacement"
         }
       }
     }
