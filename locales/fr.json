@@ -3596,7 +3596,10 @@
       "hide_bar": "Masquer la Barre",
       "navigate_to_admin": "Accéder à l'administration",
       "close_preview": "Fermer l'aperçu",
-      "saved_at": "Saved {{date}} at {{time}}"
+      "saved_at": "Saved {{date}} at {{time}}",
+      "viewing": "Vous regardez :",
+      "not_available": "Données De Profil Non Disponibles",
+      "actions_button": "Actions"
     }
   }
 }
