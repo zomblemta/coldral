@@ -3499,14 +3499,7 @@
         "title": "Ajouter un moyen de paiement",
         "button_title": "Ajouter",
         "payment_method_added_confirmation": "Méthode de paiement ajoutée",
-        "replace_mode_warning": "La suppression de ce moyen de paiement affectera les abonnements ou les précommandes. Remplacez-le par un autre moyen de paiement pour continuer à recevoir les commandes à venir.",
-        "billing_address": {
-          "title": "Adresse de facturation",
-          "add_billing_address_button": "Ajouter un nouveau",
-          "choose_billing_address_from_list_button_accessibility_label": "Choisissez Une Adresse De Facturation Dans La Liste",
-          "missing_billing_address_error_message": "Veuillez indiquer une adresse de facturation",
-          "default_checkbox": "Définir Comme Moyen de Paiement Par Défaut"
-        }
+        "replace_mode_warning": "La suppression de ce moyen de paiement affectera les abonnements ou les précommandes. Remplacez-le par un autre moyen de paiement pour continuer à recevoir les commandes à venir."
       }
     }
   }
