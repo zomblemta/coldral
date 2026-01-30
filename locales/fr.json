@@ -2915,6 +2915,9 @@
           "voided": "Annulé",
           "partially_paid": "Partiellement payé",
           "partially_refunded": "Partiellement Remboursé"
+        },
+        "cancel_reason": {
+          "inventory": "Articles indisponibles"
         }
       }
     }
