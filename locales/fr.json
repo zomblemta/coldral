@@ -2646,7 +2646,8 @@
           "sold_out": "Épuisé"
         },
         "estimated_wait_time": {
-          "calculating": "Calcul du Temps d'Attente Estimé"
+          "calculating": "Calcul du Temps d'Attente Estimé",
+          "other": "Temps d'attente estimé : {{count}} minutes"
         }
       }
     }
