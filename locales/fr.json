@@ -1888,7 +1888,9 @@
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Solde actuel %{amount}",
-        "credit_card_expires_on_notice": "Expire le %{month}/%{year}"
+        "credit_card_expires_on_notice": "Expire le %{month}/%{year}",
+        "manual_payment_gateway_label": "Manuel",
+        "billing_address_title": "Adresse De Facturation"
       }
     }
   }
