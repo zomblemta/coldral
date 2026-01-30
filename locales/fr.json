@@ -3221,7 +3221,13 @@
       "back_button_accessibility_label": "Retour à la modification de l'adresse {{address}}",
       "add_address_banner": "Ajouter des adresses à utiliser lors du paiement",
       "no_addresses_banner": "Aucune adresse ajoutée",
-      "address_deleted_notification": "Adresse supprimée"
+      "address_deleted_notification": "Adresse supprimée",
+      "cancel_adding_address_accessibility_label": "Annuler l'ajout d'une adresse",
+      "cancel_deletion_button": "Annuler",
+      "cancel_deletion_button_accessibility_label": "Annuler la suppression de {{address}}",
+      "default_address": {
+        "title": "Adresse par défaut"
+      }
     }
   }
 }
