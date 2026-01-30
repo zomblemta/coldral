@@ -1214,6 +1214,10 @@
           "paid_today_next": "Payé aujourd'hui",
           "due_on_fulfillment_title": "Le paiement de %{amount_due} est dû lors de l'exécution.",
           "due_on_receipt_title": "Le paiement de %{amount_due} est dû à réception."
+        },
+        "deferred_balance_info": {
+          "title": "Le solde de {{amount_due}} est dû le {{due_at}}",
+          "due_on_fulfillment_title": "Le solde de {{amount_due}} est dû à l'exécution"
         }
       }
     }
