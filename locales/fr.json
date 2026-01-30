@@ -521,7 +521,9 @@
         "error_page_title": "Erreur",
         "skip_to_content": "Aller au contenu",
         "continue_button_label": "Continuer",
-        "complete_purchase_button_label": "Finaliser la commande"
+        "complete_purchase_button_label": "Finaliser la commande",
+        "back_to_payment_method": "Retour au paiement",
+        "choose_shipping_method": "Choisissez Un Mode De Livraison"
       }
     }
   }
