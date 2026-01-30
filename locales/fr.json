@@ -1230,7 +1230,10 @@
           "total_paid": "Total Payé"
         },
         "maximum_discount_code_limit_reached": "Vous avez atteint le nombre maximal de codes de réduction. Supprimez un code existant pour utiliser <strong style=\"text-transform:uppercase\">%{code}</strong>.",
-        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> ne fonctionne pas en ce moment. Contactez-nous pour obtenir de l'aide."
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> ne fonctionne pas en ce moment. Contactez-nous pour obtenir de l'aide.",
+        "due_on_fulfillment": "Payable À L'Exécution",
+        "gift_card_masked": "•••• %{last_characters}",
+        "subscriptions": "Abonnements"
       }
     }
   }
