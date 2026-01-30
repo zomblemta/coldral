@@ -3219,7 +3219,9 @@
       "add_button_accessibility_label": "Ajouter une adresse",
       "back_button": "Retour",
       "back_button_accessibility_label": "Retour à la modification de l'adresse {{address}}",
-      "add_address_banner": "Ajouter des adresses à utiliser lors du paiement"
+      "add_address_banner": "Ajouter des adresses à utiliser lors du paiement",
+      "no_addresses_banner": "Aucune adresse ajoutée",
+      "address_deleted_notification": "Adresse supprimée"
     }
   }
 }
