@@ -870,7 +870,10 @@
         "ship_to_address": "Adresse de Livraison",
         "shipping_address": "Adresse de livraison",
         "pick_up": "Retrait",
-        "pick_up_from_store": "Retrait en magasin"
+        "pick_up_from_store": "Retrait en magasin",
+        "pick_up_locations": "Points de retrait",
+        "pick_up_in_one_hour": "Généralement prêt en 1 heure",
+        "pick_up_in_two_hours": "Généralement prêt en 2 heures"
       }
     }
   }
