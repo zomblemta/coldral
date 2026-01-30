@@ -1526,7 +1526,10 @@
           "shipping_credential_pe": "DNI/RUC/CE",
           "tax_credential_pt": "NIF/TVA",
           "shipping_credential_pt": "NIF/TVA",
-          "tax_credential_es": "DNI/NIF"
+          "tax_credential_es": "DNI/NIF",
+          "shipping_credential_es": "NUMÉRO D'IDENTITÉ / NUMÉRO FISCAL",
+          "shipping_credential_tw": "Numéro d'Identité Nationale/TVA",
+          "tax_credential_tr": "Numéro d'identification de la République de Turquie/TVA"
         }
       }
     }
