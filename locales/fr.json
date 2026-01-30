@@ -1364,6 +1364,16 @@
           "prepaid_order_no_cycle_delivery_not_included": {
             "one": "%{shipping_price} pour %{count} livraison, suivi de %{recurring_order_shipping_price}",
             "other": "%{shipping_price} pour %{count} livraisons (%{per_delivery_cost}), suivi de %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "Livraison gratuite %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "pour %{count} livraison",
+            "other": "pour %{count} livraisons"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "chaque jour"
+            }
           }
         }
       }
