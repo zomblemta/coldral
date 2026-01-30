@@ -876,7 +876,9 @@
         "pick_up_in_two_hours": "Généralement prêt en 2 heures",
         "pick_up_in_four_hours": "Généralement prêt en 4 heures",
         "pick_up_in_twenty_four_hours": "Habituellement prêt en 24 heures",
-        "pick_up_in_two_to_four_days": "Généralement prêt en 2 à 4 jours"
+        "pick_up_in_two_to_four_days": "Généralement prêt en 2 à 4 jours",
+        "pick_up_in_five_or_more_days": "Généralement prêt en 5+ jours",
+        "pick_up_in_zero_to_two_hours": "Prêt à être récupéré dans 2 heures"
       }
     }
   }
