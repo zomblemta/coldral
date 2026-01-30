@@ -1468,7 +1468,11 @@
         "split_shipping_merchandise_quantity_label_standard": "%{quantity} articles",
         "split_shipping_merchandise_quantity_label_additional": "+%{quantity} de plus",
         "split_shipping_merchandise_shipment_number": "Expédition %{number} sur %{total}",
-        "pre_order_ships_now": "Expédié maintenant"
+        "pre_order_ships_now": "Expédié maintenant",
+        "pre_order_ships_later": "Expédié plus tard",
+        "pre_order_ships_date": "Expédition le %{date}",
+        "split_shipping_shipped_by_shop": "Expédié par %{shop_name}",
+        "split_shipping_multiple_shipment_label": "Plusieurs Expéditions"
       }
     }
   }
