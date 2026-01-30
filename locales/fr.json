@@ -1689,7 +1689,8 @@
         "subscription_agreement_cancelled": "politique d'annulation",
         "subscription_heading": "Contrat d'abonnement",
         "subscription_agreement_label_html": "Je comprends que j'accepte un abonnement. Il se renouvellera au prix et à la fréquence indiqués jusqu'à ce qu'il prenne fin ou soit\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">annulé</a>.\n",
-        "purchase_options_agreement_label": "Un ou plusieurs articles de votre panier sont des achats différés ou récurrents. En poursuivant votre paiement, vous acceptez que votre moyen de paiement soit automatiquement débité au prix et à la fréquence indiqués sur cette page jusqu'à sa fin ou jusqu'à ce que vous annuliez. Toutes les annulations sont soumises à la %{cancellation_policy_label}."
+        "purchase_options_agreement_label": "Un ou plusieurs articles de votre panier sont des achats différés ou récurrents. En poursuivant votre paiement, vous acceptez que votre moyen de paiement soit automatiquement débité au prix et à la fréquence indiqués sur cette page jusqu'à sa fin ou jusqu'à ce que vous annuliez. Toutes les annulations sont soumises à la %{cancellation_policy_label}.",
+        "purchase_options_agreement_label_wallets": "poursuivant votre paiement, vous acceptez les frais futurs indiqués sur cette page ainsi que la politique d'annulation."
       }
     }
   }
