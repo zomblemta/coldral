@@ -3370,6 +3370,13 @@
       },
       "logout_everywhere": {
         "description": "Une erreur s'est produite lors de la déconnexion. Veuillez réessayer."
+      },
+      "not_found": {
+        "title": "Un problème est survenu lors du chargement de cette page"
+      },
+      "order_not_found": {
+        "description": "Cette commande n'existe pas ou vous n'êtes pas autorisé à la consulter.",
+        "title": "Commande introuvable"
       }
     }
   }
