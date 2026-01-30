@@ -1512,7 +1512,9 @@
           "shipping_credential_ec": "CNI/RUC/TVA",
           "tax_credential_gt": "NIT/TVA",
           "shipping_credential_gt": "NIF/TVA",
-          "tax_credential_id": "NPWP"
+          "tax_credential_id": "NPWP",
+          "shipping_credential_id": "NPWP",
+          "tax_credential_my": "N° D'Identification Fiscale/Numéro D'Enregistrement"
         }
       }
     }
