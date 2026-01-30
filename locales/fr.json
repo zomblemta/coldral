@@ -3239,8 +3239,7 @@
       }
     },
     "address_form": {
-      "attention_help_text": "Le nom d'une personne ou d'un service",
-      "auto_complete_close_accessibility_label": "Fermer les suggestions"
+      "cancel": "Annuler"
     }
   }
 }
