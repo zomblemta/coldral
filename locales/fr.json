@@ -1769,7 +1769,10 @@
           "delete": "Supprimer"
         },
         "edit_credit_card_modal": {
-          "title": "Modifier la carte"
+          "title": "Modifier la carte",
+          "done": "Terminé",
+          "cancel": "Annuler",
+          "description": "Vous ne pouvez modifier que l'adresse de facturation de votre carte."
         }
       }
     }
