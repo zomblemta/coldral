@@ -112,7 +112,7 @@
         "title_size_desktop_2": "4xl",
         "overlay_color_2": "#000000",
         "overlay_opacity_2": 30,
-        "margin_bottom": 5,
+        "margin_bottom": 20,
         "padding_top": 20
       }
     },
