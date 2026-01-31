@@ -53,6 +53,15 @@
           "disabled": true,
           "settings": {}
         },
+        "inventory_Dy9EPh": {
+          "type": "inventory",
+          "settings": {
+            "show_in_stock_quantity": false,
+            "low_inventory_threshold": 3,
+            "show_progress_bar": false,
+            "progress_bar_max_value": 50
+          }
+        },
         "feature_with_icon_g8pkNP": {
           "type": "feature_with_icon",
           "settings": {
@@ -141,6 +150,7 @@
         "payment_terms",
         "separator",
         "quantity_selector",
+        "inventory_Dy9EPh",
         "feature_with_icon_g8pkNP",
         "buy_buttons",
         "klarna_on_site_messaging_app_block_xLqFFy",
