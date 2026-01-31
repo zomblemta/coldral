@@ -66,7 +66,9 @@
           "the-wool-blazer-w",
           "the-layer-wool-waistcoat",
           "the-layer-wool-waistcoat-w",
-          "the-wool-hoodie"
+          "the-wool-hoodie",
+          "the-set-coat",
+          "the-set-coat-w"
         ]
       }
     },
@@ -121,11 +123,11 @@
         "title": "",
         "products": [
           "the-dome-puffer-w",
-          "the-dome-puffer-black-w",
-          "the-draped-pullover-vintage-white",
-          "the-heavy-hoodie",
-          "the-foldover-trench-w",
-          "the-draped-pullover-w"
+          "the-dome-puffer",
+          "the-monument-coat-w",
+          "the-monument-coat",
+          "the-season-blazer-w",
+          "the-season-blazer"
         ]
       }
     },
