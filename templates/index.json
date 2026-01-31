@@ -62,11 +62,12 @@
       "settings": {
         "title": "",
         "products": [
-          "the-tailored-cut-blazer",
-          "the-boxy-shirt",
-          "the-oversized-blazer-w",
-          "the-oversized-blazer",
-          "the-set-coat"
+          "the-wool-blazer",
+          "the-wool-blazer-w",
+          "the-season-blazer",
+          "the-season-blazer-w",
+          "the-monument-coat",
+          "the-monument-coat-w"
         ]
       }
     },
