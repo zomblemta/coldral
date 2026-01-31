@@ -97,7 +97,7 @@
         "title_size_mobile_1": "2xl",
         "title_size_desktop_1": "4xl",
         "overlay_color_1": "#000000",
-        "overlay_opacity_1": 30,
+        "overlay_opacity_1": 25,
         "subheading_2": "",
         "title_2": "BOTTOMS",
         "description_2": "",
@@ -113,7 +113,7 @@
         "overlay_color_2": "#000000",
         "overlay_opacity_2": 30,
         "margin_bottom": 20,
-        "padding_top": 20
+        "padding_top": 0
       }
     },
     "look_list_w4DjRg": {
