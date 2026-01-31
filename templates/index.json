@@ -60,14 +60,13 @@
       "type": "look-list",
       "name": "Look List",
       "settings": {
-        "title": "    Seasonal Sale",
+        "title": "    Seasonal Wool Sale",
         "products": [
           "the-wool-blazer",
           "the-wool-blazer-w",
-          "the-season-blazer",
-          "the-season-blazer-w",
-          "the-monument-coat",
-          "the-monument-coat-w"
+          "the-layer-wool-waistcoat",
+          "the-layer-wool-waistcoat-w",
+          "the-wool-hoodie"
         ]
       }
     },
