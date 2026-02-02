@@ -16,7 +16,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/20250919_COLDRAL_LOOKBOOK3549_-_copie.jpg",
-            "mobile_image": "shopify://shop_images/20250919_COLDRAL_LOOKBOOK3549.webp",
+            "mobile_image": "shopify://shop_images/meta__2k_202601291852_1.jpg",
             "subheading": "",
             "title": "AW COLLECTION",
             "mobile_text_position": "place-self-end-center text-center",
@@ -60,13 +60,15 @@
       "type": "look-list",
       "name": "Look List",
       "settings": {
-        "title": "",
+        "title": "    Seasonal Wool Sale",
         "products": [
-          "the-tailored-cut-blazer",
-          "the-boxy-shirt",
-          "the-oversized-blazer-w",
-          "the-oversized-blazer",
-          "the-set-coat"
+          "the-wool-blazer",
+          "the-wool-blazer-w",
+          "the-layer-wool-waistcoat",
+          "the-layer-wool-waistcoat-w",
+          "the-wool-hoodie",
+          "the-set-coat",
+          "the-set-coat-w"
         ]
       }
     },
@@ -74,12 +76,12 @@
       "type": "full-img",
       "name": "Full Image",
       "settings": {
-        "image_1_desktop": "shopify://shop_images/20250921_COLDRAL3801.webp",
-        "image_1_mobile": "shopify://shop_images/20250921_COLDRAL3801.webp",
+        "image_1_desktop": "shopify://shop_images/20250921_COLDRAL5768_1080_1350.jpg",
+        "image_1_mobile": "shopify://shop_images/20250921_COLDRAL5768_1080_1350.jpg",
         "image_1_alt": "Image 1",
         "show_overlay_on_image_1": true,
-        "image_2_desktop": "shopify://shop_images/20250921_COLDRAL3840.jpg",
-        "image_2_mobile": "shopify://shop_images/20250921_COLDRAL3840.jpg",
+        "image_2_desktop": "shopify://shop_images/20250921_COLDRAL5796_1080_1350.jpg",
+        "image_2_mobile": "shopify://shop_images/20250921_COLDRAL5800_1080_1350.jpg",
         "image_2_alt": "Image 2",
         "show_overlay_on_image_2": true,
         "subheading_1": "",
@@ -95,7 +97,7 @@
         "title_size_mobile_1": "2xl",
         "title_size_desktop_1": "4xl",
         "overlay_color_1": "#000000",
-        "overlay_opacity_1": 30,
+        "overlay_opacity_1": 25,
         "subheading_2": "",
         "title_2": "BOTTOMS",
         "description_2": "",
@@ -118,14 +120,14 @@
       "type": "look-list",
       "name": "Look List",
       "settings": {
-        "title": "",
+        "title": "    WINTER SALE",
         "products": [
           "the-dome-puffer-w",
-          "the-dome-puffer-black-w",
-          "the-draped-pullover-vintage-white",
-          "the-heavy-hoodie",
-          "the-foldover-trench-w",
-          "the-draped-pullover-w"
+          "the-dome-puffer",
+          "the-monument-coat-w",
+          "the-monument-coat",
+          "the-season-blazer-w",
+          "the-season-blazer"
         ]
       }
     },
