@@ -158,7 +158,7 @@
     {%- endcomment -%}
 
     {%- assign menu = section.settings.menu -%}
-    {%- assign sidebar_menu = section.settings.menu -%}
+    {%- assign sidebar_menu = section.settings.sidebar_menu -%}
 
     {%- if menu.links.size > 0 or sidebar_menu.links.size > 0 -%}
       <nav
@@ -396,7 +396,7 @@
       {%- render 'header-search' -%}
     {%- endif -%}
 
-    {%- assign sidebar_menu = section.settings.menu -%}
+    {%- assign sidebar_menu = section.settings.sidebar_menu | default: section.settings.menu -%}
 
     {%- if sidebar_menu.links.size > 0 -%}
       {%- render 'header-sidebar',
@@ -491,6 +491,11 @@
       "id": "menu",
       "label": "t:sections.header.menu",
       "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "sidebar_menu",
+      "label": "t:sections.header.mobile_menu"
     },
     {
       "type": "select",
@@ -665,9 +670,6 @@
     }
   ],
   "blocks": [
-    {
-      "type": "@app"
-    },
     {
       "type": "mega_menu",
       "name": "t:sections.header.blocks.mega_menu.name",
