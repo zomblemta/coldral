@@ -804,6 +804,7 @@
       },
       "sidebar_show_dividers": "Afficher les separateurs sur le menu latéral",
       "sidebar_open_second_level_menus": "Ouvrir les menus de second niveau par défault",
+      "sidebar_menu_2": "Menu latéral 2",
       "desktop_category": "Desktop",
       "layout": "Disposition",
       "layout_options": {

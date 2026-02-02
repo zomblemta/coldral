@@ -24,6 +24,19 @@
     padding: 0 !important;
   }
 
+  .header-sidebar__linklist-2 {
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .header-sidebar__linklist-button-2 {
+    font-size: 10px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.12em;
+    padding: 0 !important;
+  }
+
   /* Social media icons - positioned and white */
   .header-sidebar__scroller > div:last-child {
     margin-top: 0px;
@@ -159,15 +172,6 @@
             {%- endif -%}
           </li>
         {%- endfor -%}
-
-{% comment %} 
-       {% for link in menu_2.links %}
-        <li class="uppercase">
-          <a href="{{ link.url }}" class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}{% if link.url contains 'sale' %} sale-text{% endif %}">
-            {{- link.title -}}
-          </a>
-        </li>
-       {% endfor %} {% endcomment %}
       </ul>
 
       {%- liquid
@@ -182,6 +186,18 @@
 
       {%- if shop.customer_accounts_enabled or show_country_selector or show_locale_selector -%}
         <div class="header-sidebar__footer">
+          <ul class="header-sidebar__linklist-2 unstyled-list p-0">
+            {% for link in menu_2.links %}
+              <li class="uppercase">
+                <a
+                  href="{{ link.url }}"
+                  class="header-sidebar__linklist-button-2 {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}{% if link.url contains 'sale' %} sale-text{% endif %}"
+                >
+                  {{- link.title -}}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
           {% render 'menu-social-media' %}
 
           <div class="header-sidebar__footer-currency-selector flex items-center gap-x-2">
@@ -226,8 +242,6 @@
               {%- endif -%}
             </div>
           {%- endif -%}
-
-     
         </div>
       {%- endif -%}
     </div>

@@ -5447,9 +5447,11 @@ product-rerender {
 } */
 
 .header-sidebar__footer > * {
-  padding-block: 1.25rem;
+  /* padding-block: 1.25rem;
   padding-inline-start: var(--drawer-footer-padding-inline);
-  padding-inline-end: var(--drawer-footer-padding-inline);
+  padding-inline-end: var(--drawer-footer-padding-inline); */
+  padding-top: var(--drawer-footer-padding-inline);
+  padding-bottom: var(--drawer-footer-padding-inline);
 }
 
 .header-sidebar__footer .localization-selectors {
