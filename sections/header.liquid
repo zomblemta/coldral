@@ -401,6 +401,7 @@
     {%- if sidebar_menu.links.size > 0 -%}
       {%- render 'header-sidebar',
         menu: sidebar_menu,
+        menu_2: section.settings.sidebar_menu_2,
         color_scheme: section.settings.sidebar_color_scheme,
         show_dividers: section.settings.sidebar_show_dividers,
         open_second_level_menus: section.settings.sidebar_open_second_level_menus
@@ -496,6 +497,11 @@
       "type": "link_list",
       "id": "sidebar_menu",
       "label": "t:sections.header.mobile_menu"
+    },
+    {
+      "type": "link_list",
+      "id": "sidebar_menu_2",
+      "label": "t:sections.header.sidebar_menu_2"
     },
     {
       "type": "select",

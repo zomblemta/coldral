@@ -159,6 +159,15 @@
             {%- endif -%}
           </li>
         {%- endfor -%}
+
+{% comment %} 
+       {% for link in menu_2.links %}
+        <li class="uppercase">
+          <a href="{{ link.url }}" class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}{% if link.url contains 'sale' %} sale-text{% endif %}">
+            {{- link.title -}}
+          </a>
+        </li>
+       {% endfor %} {% endcomment %}
       </ul>
 
       {%- liquid
