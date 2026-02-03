@@ -483,7 +483,7 @@ document.addEventListener('click', function (e) {
                   assign stock_text = 'In stock'
                 elsif stock_qty >= 4
                   assign stock_status = 'in_stock'
-                  assign stock_text = 'In stock (' | append: stock_qty | append: ')'
+                  assign stock_text = 'In stock'
                 elsif stock_qty > 0
                   assign stock_status = 'low_stock'
                   assign stock_text = 'Only ' | append: stock_qty | append: ' left'
@@ -860,6 +860,7 @@ document.addEventListener('click', function (e) {
     font: inherit;
   }
   .stock-info__dot {
+    margin-top: 2px;
     width: 8px;
     height: 8px;
     border-radius: 50%;

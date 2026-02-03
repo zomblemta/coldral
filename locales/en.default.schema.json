@@ -1298,6 +1298,9 @@
           "progress_bar_max_value": "Progress bar max value",
           "progress_bar_max_value_info": "Advancement is calculated according to this value."
         },
+        "stock_info": {
+          "name": "Stock info"
+        },
         "buy_buttons": {
           "name": "Buy buttons",
           "show_payment_button": "Show dynamic checkout button",
