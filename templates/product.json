@@ -55,6 +55,7 @@
         },
         "inventory_Dy9EPh": {
           "type": "inventory",
+          "disabled": true,
           "settings": {
             "show_in_stock_quantity": false,
             "low_inventory_threshold": 3,
@@ -74,10 +75,6 @@
             "border_color": ""
           }
         },
-        "stock_info_j9xUjk": {
-          "type": "stock_info",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -88,6 +85,10 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "stock_info_j9xUjk": {
+          "type": "stock_info",
+          "settings": {}
         },
         "klarna_on_site_messaging_app_block_xLqFFy": {
           "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
@@ -156,8 +157,8 @@
         "quantity_selector",
         "inventory_Dy9EPh",
         "feature_with_icon_g8pkNP",
-        "stock_info_j9xUjk",
         "buy_buttons",
+        "stock_info_j9xUjk",
         "klarna_on_site_messaging_app_block_xLqFFy",
         "text_MkJkwi",
         "description",
