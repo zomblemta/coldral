@@ -1,0 +1,259 @@
+{%- comment -%}
+  ----------------------------------------------------------------------------------------------------------------------
+  FLOATING BUY BUTTON
+  ----------------------------------------------------------------------------------------------------------------------
+
+  浮动加购按钮 - 当原加购按钮不在屏幕中时浮现
+  支持移动端和PC端
+  毛玻璃效果背景
+
+  ********************************************
+  Supported variables
+  ********************************************
+
+  * product: the product from which to show the button
+  * form_id: the form ID to submit
+{%- endcomment -%}
+
+{%- if product != blank and product.available -%}
+  {%- liquid
+    assign variant = product.selected_or_first_available_variant
+    assign button_disabled = false
+
+    if variant == null
+      assign button_disabled = true
+      assign button_content = 'product.general.unavailable_button' | t
+    elsif variant.available == false
+      assign button_disabled = true
+      assign button_content = 'product.general.sold_out_button' | t
+    else
+      if product.template_suffix contains 'pre-order'
+        assign button_content = 'product.general.pre_order_button' | t
+      else
+        assign button_content = 'product.general.add_to_cart_button' | t
+      endif
+    endif
+  -%}
+
+  <div id="floating-buy-button" class="floating-buy-button" aria-hidden="true">
+    <div class="floating-buy-button__container">
+      <button
+        type="submit"
+        form="{{ form_id }}"
+        class="floating-buy-button__btn"
+        {% if button_disabled %}
+          disabled
+        {% endif %}
+      >
+        {{ button_content }}
+      </button>
+    </div>
+  </div>
+
+  <style>
+    /* ===== FLOATING BUY BUTTON ===== */
+    .floating-buy-button {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      padding: 12px 16px;
+      padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+
+      /* 动画 */
+      transform: translateY(100%);
+      opacity: 0;
+      visibility: hidden; 
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 0.35s;
+
+      /* 防止点击穿透 */
+      pointer-events: none;
+    }
+
+    .floating-buy-button.is-visible {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+
+    .floating-buy-button__btn {
+      background: rgba(0, 0, 0, 0.3) ;
+      backdrop-filter: blur(20px) saturate(180%) !important;
+      -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+      color: #fff;
+      display: block;
+      width: 100%;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .floating-buy-button__btn:hover:not(:disabled) {
+      background-color: #f0f0f0;
+    }
+
+    .floating-buy-button__btn:active:not(:disabled) {
+      transform: scale(0.98);
+    }
+
+    .floating-buy-button__btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* PC端样式优化 */
+    @media screen and (min-width: 768px) {
+      .floating-buy-button {
+        /* 毛玻璃效果 */
+        background: rgba(0, 0, 0, 0.3) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+        padding: 16px 24px;
+      }
+
+      .floating-buy-button__container {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+      }
+
+      .floating-buy-button__btn {
+        padding: 16px 32px;
+        font-size: 14px;
+        width: 200px;
+      }
+    }
+  </style>
+
+  <script>
+    (function() {
+      'use strict';
+
+      const floatingBtn = document.getElementById('floating-buy-button');
+      if (!floatingBtn) return;
+
+      // 查找原始的加购按钮
+      const findOriginalBuyButton = () => {
+        // 查找产品页面上的buy-buttons组件
+        const buyButtons = document.querySelector('.product-info buy-buttons, .product-info .buy-buttons');
+        return buyButtons;
+      };
+
+      let originalBuyButton = null;
+      let observer = null;
+      let isVisible = false;
+      let ticking = false;
+
+      // 检查元素是否在视口中
+      const isInViewport = (element) => {
+        if (!element) return true; // 如果没有元素，默认不显示浮动按钮
+
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        // 元素底部在视口顶部以下，且元素顶部在视口底部以上
+        return rect.bottom > 0 && rect.top < windowHeight;
+      };
+
+      // 更新浮动按钮的显示状态
+      const updateVisibility = () => {
+        if (!originalBuyButton) {
+          originalBuyButton = findOriginalBuyButton();
+        }
+
+        if (!originalBuyButton) {
+          floatingBtn.classList.remove('is-visible');
+          floatingBtn.setAttribute('aria-hidden', 'true');
+          isVisible = false;
+          return;
+        }
+
+        const shouldShow = !isInViewport(originalBuyButton);
+
+        if (shouldShow !== isVisible) {
+          isVisible = shouldShow;
+          floatingBtn.classList.toggle('is-visible', shouldShow);
+          floatingBtn.setAttribute('aria-hidden', !shouldShow);
+        }
+      };
+
+      // 节流处理滚动事件
+      const onScroll = () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            updateVisibility();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      };
+
+      // 初始化
+      const init = () => {
+        originalBuyButton = findOriginalBuyButton();
+
+        // 监听滚动事件
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // 监听窗口大小变化
+        window.addEventListener('resize', updateVisibility, { passive: true });
+
+        // 使用 MutationObserver 监听DOM变化（variant切换时）
+        observer = new MutationObserver(() => {
+          originalBuyButton = findOriginalBuyButton();
+          updateVisibility();
+        });
+
+        const productInfo = document.querySelector('.product-info');
+        if (productInfo) {
+          observer.observe(productInfo, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['disabled']
+          });
+        }
+
+        // 初始检查
+        updateVisibility();
+      };
+
+      // 等待DOM加载完成
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+
+      // 监听variant变化事件，更新按钮状态
+      document.addEventListener('variant:change', (event) => {
+        const variant = event.detail?.variant;
+        const btn = floatingBtn.querySelector('.floating-buy-button__btn');
+
+        if (!btn) return;
+
+        if (!variant || !variant.available) {
+          btn.disabled = true;
+          btn.textContent = variant ? '{{ 'product.general.sold_out_button' | t }}' : '{{ 'product.general.unavailable_button' | t }}';
+        } else {
+          btn.disabled = false;
+          {%- if product.template_suffix contains 'pre-order' -%}
+            btn.textContent = '{{ 'product.general.pre_order_button' | t }}';
+          {%- else -%}
+            btn.textContent = '{{ 'product.general.add_to_cart_button' | t }}';
+          {%- endif -%}
+        }
+      });
+    })();
+  </script>
+{%- endif -%}

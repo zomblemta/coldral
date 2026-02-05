@@ -3229,6 +3229,8 @@ var ProductLoader = class {
 };
 
 // js/common/product/product-rerender.js
+// [COMMENTED OUT - 2024] 以下product-rerender代码已被注释，改用浮动加购按钮功能
+/*
 var _abortController9, _ProductRerender_instances, onRerender_fn;
 var ProductRerender = class extends HTMLElement {
   constructor() {
@@ -3288,6 +3290,16 @@ onRerender_fn = function(event) {
       element.focus();
     }
   }
+};
+if (!window.customElements.get("product-rerender")) {
+  window.customElements.define("product-rerender", ProductRerender);
+}
+*/
+// [END COMMENTED OUT - product-rerender]
+// 保留空的ProductRerender定义以防止其他代码报错
+var ProductRerender = class extends HTMLElement {
+  connectedCallback() {}
+  disconnectedCallback() {}
 };
 if (!window.customElements.get("product-rerender")) {
   window.customElements.define("product-rerender", ProductRerender);

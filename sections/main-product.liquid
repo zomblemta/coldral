@@ -318,7 +318,7 @@ font-family : Courier !important;
   </div>
 </div>
 
-{%- if section.settings.show_sticky_add_to_cart and product.available -%}
+{% comment %} {%- if section.settings.show_sticky_add_to_cart and product.available -%}
   <product-rerender id="{{ product_form_id }}-sticky-bar" observe-form="{{ product_form_id }}">
     <product-sticky-bar form="{{ product_form_id }}" class="product-sticky-bar">
       <div class="product-sticky-bar__info sm-max:hidden">
@@ -363,7 +363,7 @@ font-family : Courier !important;
       </buy-buttons>
     </product-sticky-bar>
   </product-rerender>
-{%- endif -%}
+{%- endif -%} {% endcomment %}
 
 {%- comment -%}
 IMPLEMENTATION NOTE: Shopify does not currently allows to render a given section within the context of a given product. However,
@@ -372,6 +372,9 @@ is however only possible by rendering the whole product page, and extracting the
 quick buy information in a template, that will be extracted in JS, which ensures it is not visible in the main product page
 {%- endcomment -%}
 {%- render 'product-quick-buy', product: product -%}
+
+{%- comment -%} 浮动加购按钮 - 当原加购按钮不在屏幕中时显示 {%- endcomment -%}
+{%- render 'floating-buy-button', product: product, form_id: product_form_id -%}
 
 <script>
   // We save the product ID in local storage to be eventually used for recently viewed section
