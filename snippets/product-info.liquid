@@ -492,7 +492,7 @@ document.addEventListener('click', function (e) {
                   assign stock_text = 'Only 0 left'
                 endif
               -%}
-              <div class="stock-info mb-5" data-stock-status="{{ stock_status }}">
+              <div class="stock-info " data-stock-status="{{ stock_status }}">
                 <span class="stock-info__dot stock-info__dot--{{ stock_status }}" aria-hidden="true"></span>
                 <span class="stock-info__text">{{ stock_text }}</span>
               </div>
@@ -856,7 +856,6 @@ document.addEventListener('click', function (e) {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
     font: inherit;
   }
   .stock-info__dot {
