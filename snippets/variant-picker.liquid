@@ -62,7 +62,18 @@ Supported variables
         endif
       %}
 
-      <fieldset class="variant-picker__option v-stack gap-2">
+      {%- liquid
+        assign is_size_option = false
+        if size_label_list contains option_downcase
+          assign is_size_option = true
+        endif
+        assign common_size_names = 'size,sizes,us size,eu size,uk size,尺码,尺寸,サイズ,사이즈,taille,größe,talla,tamanho' | split: ','
+        if common_size_names contains option_downcase
+          assign is_size_option = true
+        endif
+      -%}
+
+      <fieldset class="variant-picker__option v-stack gap-2" {% if is_size_option %}data-size-option="true"{% endif %}>
         <div class="variant-picker__option-info h-stack justify-between gap-2">
           <div class="h-stack gap-1">
             <legend class="font-semibold tracking-wide">{{ option.name }}:</legend>
@@ -196,4 +207,113 @@ Supported variables
       </noscript>
     {%- endunless -%}
   </variant-picker>
+
+  {%- comment -%}
+    SIZE OPTION: default unselected + ATC validation
+    Only activate when no explicit variant is in the URL (first page load).
+  {%- endcomment -%}
+
+  {%- assign has_size_option = false -%}
+  {%- assign common_size_names_check = 'size,sizes,us size,eu size,uk size,尺码,尺寸,サイズ,사이즈,taille,größe,talla,tamanho' | split: ',' -%}
+  {%- for option in product.options_with_values -%}
+    {%- assign opt_down = option.name | downcase -%}
+    {%- if size_label_list contains opt_down or common_size_names_check contains opt_down -%}
+      {%- assign has_size_option = true -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if has_size_option -%}
+    <style>
+      .size-select-banner {
+        position: fixed;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99999;
+        padding: 0.875rem 1.5rem;
+        background: rgba(30, 30, 30, 0.65);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        backdrop-filter: blur(16px) saturate(180%);
+        color: #fff;
+        font-size: 0.9rem;
+        text-align: center;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 8px 32px rgba(0,0,0,.3);
+        animation: sizeBannerSlide 0.3s ease;
+        pointer-events: none;
+        max-width: calc(100vw - 2rem);
+      }
+      @keyframes sizeBannerSlide {
+        from { opacity: 0; transform: translateX(-50%) translateY(-1rem); }
+        to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+      }
+    </style>
+
+    <script>
+      (function() {
+        var formId = {{ form_id | json }};
+        var selectSizeMsg = {{ 'product.general.please_select_size' | t | json }};
+
+        /* Only activate on initial page load without explicit variant param */
+        if (new URLSearchParams(window.location.search).has('variant')) return;
+
+        var vpEl = document.querySelector('variant-picker[form-id="' + formId + '"]');
+        if (!vpEl) return;
+
+        var sizeFieldsets = vpEl.querySelectorAll('[data-size-option]');
+        if (!sizeFieldsets.length) return;
+
+        /* ── Step 1: Uncheck the size radio buttons (runs immediately) ── */
+        sizeFieldsets.forEach(function(fs) {
+          var checked = fs.querySelector('input[type="radio"]:checked');
+          if (checked) checked.checked = false;
+        });
+
+        /* Track whether user has explicitly picked a size */
+        var sizeSelected = false;
+
+        /* ── Step 2: Listen for size clicks using event delegation ── */
+        document.addEventListener('change', function(e) {
+          if (sizeSelected) return;
+          var radio = e.target;
+          if (radio.tagName !== 'INPUT' || radio.type !== 'radio') return;
+          if (radio.closest('[data-size-option]') && radio.closest('variant-picker[form-id="' + formId + '"]')) {
+            sizeSelected = true;
+          }
+        });
+
+        /* ── Step 3: Intercept form submit ──
+             The <form> lives inside the buy_buttons block which is rendered
+             AFTER variant-picker, so we must wait for the full DOM. */
+        document.addEventListener('DOMContentLoaded', function() {
+          var formEl = document.forms[formId];
+          if (!formEl) return;
+
+          formEl.addEventListener('submit', function(e) {
+            if (sizeSelected) return; /* size was picked, allow submit */
+
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            /* Scroll to size option */
+            var sizeFs = vpEl.querySelector('[data-size-option]');
+            if (sizeFs) sizeFs.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            /* Show toast at top of page */
+            var existing = document.querySelector('.size-select-banner');
+            if (existing) existing.remove();
+
+            var banner = document.createElement('div');
+            banner.className = 'size-select-banner';
+            banner.setAttribute('role', 'alert');
+            banner.textContent = selectSizeMsg;
+            document.body.appendChild(banner);
+            setTimeout(function() { banner.remove(); }, 3000);
+          }, true); /* useCapture = true → fires BEFORE ProductForm handler */
+        });
+      })();
+    </script>
+  {%- endif -%}
 {%- endunless -%}

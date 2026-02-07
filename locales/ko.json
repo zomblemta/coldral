@@ -100,6 +100,7 @@
       "taxes_excluded": "세금 별도.",
       "shipping_policy_html": "체크아웃 시 <a href=\"{{ link }}\" class=\"link\">배송료 계산<\/a>",
       "size_chart": "사이즈 차트",
+      "please_select_size": "사이즈를 선택해주세요",
       "available_colors_count": {
         "other": "{{ count }}개 색상 가능"
       }

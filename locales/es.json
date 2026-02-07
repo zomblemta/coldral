@@ -109,6 +109,7 @@
       "taxes_excluded": "Impuestos excluidos.",
       "shipping_policy_html": "Los <a href=\"{{ link }}\" class=\"link\">gastos de envío</a> se calculan al finalizar la compra",
       "size_chart": "Guía de tallas",
+      "please_select_size": "Por favor seleccione una talla",
       "available_colors_count": {
         "one": "{{ count }} color disponible",
         "other": "{{ count }} colores disponibles"

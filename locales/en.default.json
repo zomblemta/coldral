@@ -109,6 +109,7 @@
       "taxes_excluded": "Tax excluded.",
       "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Shipping calculated<\/a> at checkout",
       "size_chart": "Size chart",
+      "please_select_size": "Please select a size",
       "available_colors_count": {
         "one": "{{ count }} color available",
         "other": "{{ count }} colors available"

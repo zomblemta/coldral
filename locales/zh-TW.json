@@ -100,6 +100,7 @@
       "taxes_excluded": "未含稅。",
       "shipping_policy_html": "結帳時<a href=\"{{ link }}\" class=\"link\">已計算運費<\/a>",
       "size_chart": "尺寸表",
+      "please_select_size": "請選擇尺寸",
       "available_colors_count": {
         "one": "有 {{ count }} 種顏色",
         "other": "有 {{ count }} 種顏色"
