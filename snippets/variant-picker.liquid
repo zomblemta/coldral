@@ -254,10 +254,17 @@ Supported variables
     <script>
       (function() {
         var formId = {{ form_id | json }};
-        var selectSizeMsg = {{ 'product.general.please_select_size' | t | json }};
 
-        /* Only activate on initial page load without explicit variant param */
-        if (new URLSearchParams(window.location.search).has('variant')) return;
+        /*
+         * Guard: ProductRerender replaces the variant-picker block,
+         * which re-inserts this <script>. Use a window flag so the
+         * logic only initializes ONCE per form.
+         */
+        var flagKey = '__sizeDeselectInit_' + formId;
+        if (window[flagKey]) return;
+        window[flagKey] = true;
+
+        var selectSizeMsg = {{ 'product.general.please_select_size' | t | json }};
 
         /* Track whether user has explicitly picked a size */
         var sizeSelected = false;
@@ -275,7 +282,10 @@ Supported variables
         /* ── Step 1: Uncheck size radios on initial load ── */
         uncheckSizeRadios();
 
-        /* ── Step 2: Listen for size clicks via event delegation ── */
+        /* ── Step 2: Listen for size clicks ──
+             Use CAPTURE phase so this fires before any bubble-phase
+             delegation library (Delegate5 on document.body) that may
+             stop propagation. */
         document.addEventListener('change', function(e) {
           if (sizeSelected) return;
           var radio = e.target;
@@ -283,7 +293,7 @@ Supported variables
           if (radio.closest('[data-size-option]') && radio.closest('variant-picker[form-id="' + formId + '"]')) {
             sizeSelected = true;
           }
-        });
+        }, true);
 
         /* ── Step 3: After ProductRerender replaces blocks, re-apply uncheck ── */
         document.addEventListener('DOMContentLoaded', function() {
