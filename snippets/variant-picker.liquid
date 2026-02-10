@@ -259,22 +259,23 @@ Supported variables
         /* Only activate on initial page load without explicit variant param */
         if (new URLSearchParams(window.location.search).has('variant')) return;
 
-        var vpEl = document.querySelector('variant-picker[form-id="' + formId + '"]');
-        if (!vpEl) return;
-
-        var sizeFieldsets = vpEl.querySelectorAll('[data-size-option]');
-        if (!sizeFieldsets.length) return;
-
-        /* ── Step 1: Uncheck the size radio buttons (runs immediately) ── */
-        sizeFieldsets.forEach(function(fs) {
-          var checked = fs.querySelector('input[type="radio"]:checked');
-          if (checked) checked.checked = false;
-        });
-
         /* Track whether user has explicitly picked a size */
         var sizeSelected = false;
 
-        /* ── Step 2: Listen for size clicks using event delegation ── */
+        /* Helper: uncheck size radios in the current variant-picker */
+        function uncheckSizeRadios() {
+          var vp = document.querySelector('variant-picker[form-id="' + formId + '"]');
+          if (!vp) return;
+          vp.querySelectorAll('[data-size-option]').forEach(function(fs) {
+            var checked = fs.querySelector('input[type="radio"]:checked');
+            if (checked) checked.checked = false;
+          });
+        }
+
+        /* ── Step 1: Uncheck size radios on initial load ── */
+        uncheckSizeRadios();
+
+        /* ── Step 2: Listen for size clicks via event delegation ── */
         document.addEventListener('change', function(e) {
           if (sizeSelected) return;
           var radio = e.target;
@@ -284,13 +285,20 @@ Supported variables
           }
         });
 
-        /* ── Step 3: Intercept form submit ──
-             The <form> lives inside the buy_buttons block which is rendered
-             AFTER variant-picker, so we must wait for the full DOM. */
+        /* ── Step 3: After ProductRerender replaces blocks, re-apply uncheck ── */
         document.addEventListener('DOMContentLoaded', function() {
           var formEl = document.forms[formId];
           if (!formEl) return;
 
+          formEl.addEventListener('product:rerender', function() {
+            if (sizeSelected) return;
+            /* Delay one frame so the DOM replacement finishes first */
+            requestAnimationFrame(function() {
+              uncheckSizeRadios();
+            });
+          });
+
+          /* ── Step 4: Intercept form submit ── */
           formEl.addEventListener('submit', function(e) {
             if (sizeSelected) return; /* size was picked, allow submit */
 
@@ -298,7 +306,8 @@ Supported variables
             e.stopImmediatePropagation();
 
             /* Scroll to size option */
-            var sizeFs = vpEl.querySelector('[data-size-option]');
+            var vp = document.querySelector('variant-picker[form-id="' + formId + '"]');
+            var sizeFs = vp && vp.querySelector('[data-size-option]');
             if (sizeFs) sizeFs.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
             /* Show toast at top of page */
