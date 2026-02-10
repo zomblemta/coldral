@@ -492,10 +492,68 @@ document.addEventListener('click', function (e) {
                   assign stock_text = 'Only 0 left'
                 endif
               -%}
-              <div class="stock-info " data-stock-status="{{ stock_status }}">
+              <div class="stock-info" id="stock-info-{{ section.id }}" data-stock-status="{{ stock_status }}">
                 <span class="stock-info__dot stock-info__dot--{{ stock_status }}" aria-hidden="true"></span>
                 <span class="stock-info__text">{{ stock_text }}</span>
               </div>
+
+              {%- comment -%} Pre-render all variants stock data for JS updates {%- endcomment -%}
+              <script data-stock-map type="application/json">
+                {
+                  {%- for variant in product.variants -%}
+                    "{{ variant.id }}": {
+                      {%- assign v_qty = 999 -%}
+                      {%- if variant.inventory_management != blank -%}
+                        {%- assign v_qty = variant.inventory_quantity | at_least: 0 -%}
+                      {%- endif -%}
+                      {%- if variant.inventory_management == blank -%}
+                        "status": "in_stock", "text": "In stock"
+                      {%- elsif v_qty >= 4 -%}
+                        "status": "in_stock", "text": "In stock"
+                      {%- elsif v_qty > 0 -%}
+                        "status": "low_stock", "text": {{ 'Only ' | append: v_qty | append: ' left' | json }}
+                      {%- else -%}
+                        "status": "low_stock", "text": "Only 0 left"
+                      {%- endif -%}
+                    }{%- unless forloop.last -%},{%- endunless -%}
+                  {%- endfor -%}
+                }
+              </script>
+
+              <script>
+                (function() {
+                  var sectionId = {{ section.id | json }};
+                  var formId = {{ product_form_id | json }};
+
+                  document.addEventListener('DOMContentLoaded', function() {
+                    var stockEl = document.getElementById('stock-info-' + sectionId);
+                    if (!stockEl) return;
+
+                    var mapScript = stockEl.parentElement.querySelector('script[data-stock-map]');
+                    if (!mapScript) return;
+                    var stockMap = JSON.parse(mapScript.textContent);
+
+                    var formEl = document.forms[formId];
+                    if (!formEl) return;
+
+                    formEl.addEventListener('variant:change', function(e) {
+                      var variant = e.detail && e.detail.variant;
+                      if (!variant || !variant.id) return;
+
+                      var data = stockMap[variant.id];
+                      if (!data) return;
+
+                      stockEl.setAttribute('data-stock-status', data.status);
+
+                      var dot = stockEl.querySelector('.stock-info__dot');
+                      dot.className = 'stock-info__dot stock-info__dot--' + data.status;
+
+                      var text = stockEl.querySelector('.stock-info__text');
+                      text.textContent = data.text;
+                    });
+                  });
+                })();
+              </script>
             {%- endif -%}
 
           {%- when 'buy_buttons' -%}
