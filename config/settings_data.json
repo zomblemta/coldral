@@ -67,18 +67,13 @@
         "disabled": false,
         "settings": {}
       },
-      "4550790387604203027": {
-        "type": "shopify://apps/parcelwill-returns/blocks/app.embed/129d97fb-4680-4d86-bac4-b13c4bacb6f4",
-        "disabled": false,
-        "settings": {}
-      },
-      "17198465164502963513": {
-        "type": "shopify://apps/parcelwill-parcel-panel/blocks/app.embed/fc785c3f-90e0-4c98-a20c-7cde9ba5e4b5",
-        "disabled": false,
-        "settings": {}
-      },
       "9670189827046205946": {
         "type": "shopify://apps/hextom-translate-and-currency/blocks/app-block/b927a799-be04-4b97-9efb-5c8f0290a68e",
+        "disabled": true,
+        "settings": {}
+      },
+      "2104245418471043333": {
+        "type": "shopify://apps/17track/blocks/app-embed/1519e068-e330-4e0b-92dd-0a3263bfceda",
         "disabled": false,
         "settings": {}
       }
