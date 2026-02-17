@@ -72,14 +72,14 @@
       </div>
     {%- endif -%}
 
-    {%- if cart.items.size > 0 -%}
+    {% comment %} {%- if cart.items.size > 0 -%}
       {%- assign first_cart_product = cart.items.first.product -%}
       <div class="cart-drawer__you-may-also-like cart-drawer__complementary-products complementary-products">
         <product-recommendations class="block" hidden product="{{ first_cart_product.id }}" limit="{{ section.settings.you_may_also_like_count }}" intent="related">
           {%- render 'cart-recommendations-content', recommendations: recommendations, section: section -%}
         </product-recommendations>
       </div>
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
 
     <form action="{{ routes.cart_url }}" method="POST" class="cart-drawer__footer" slot="footer">
       <input type="hidden" name="attributes[products_mobile_grid_mode]" value="">
