@@ -1,20 +1,22 @@
 {%- comment -%}
 ----------------------------------------------------------------------------------------------------------------------
-BACK IN STOCK FORM (Modal)
+BACK IN STOCK FORM (Modal) — Klaviyo Back-in-Stock Subscription
 ----------------------------------------------------------------------------------------------------------------------
-Renders an x-modal with a native Shopify contact form for sold-out products.
-On successful submission Shopify redirects back to the page;
-form.posted_successfully? is then checked in buy-buttons.liquid to show the inline success state.
+Submits the email + variant ID directly to the Klaviyo V1 Back in Stock API.
+Success / error states are handled in JS (no page reload required).
 
 Supported variables:
 * product: the product object
-* selected_variant: the specific variant (optional)
-* modal_id: the id for the x-modal element (required, set in buy-buttons.liquid)
+* selected_variant: the currently selected variant (optional, falls back to first available)
+* modal_id: the HTML id of the <x-modal> element (required, set by buy-buttons.liquid)
+
+Configuration:
+* Set KLAVIYO_PUBLIC_KEY below to your Klaviyo public/site API key.
 {%- endcomment -%}
 
-{%- assign bis_variant = selected_variant | default: product.selected_or_first_available_variant -%}
-{%- assign bis_email_id = 'bis-email-' | append: product.id -%}
+{%- assign bis_variant  = selected_variant | default: product.selected_or_first_available_variant -%}
 {%- assign bis_form_id  = 'bis-form-'  | append: product.id -%}
+{%- assign bis_email_id = 'bis-email-' | append: product.id -%}
 
 <x-modal id="{{ modal_id | escape }}" class="modal color-scheme color-scheme--dialog back-in-stock-modal">
 
@@ -22,81 +24,129 @@ Supported variables:
 
   <div class="back-in-stock-modal__body">
 
-    <p class="back-in-stock-modal__subtitle">
-      Enter your information and we will notify you when the item becomes available.
-    </p>
+    <div class="back-in-stock-modal__form-wrap">
 
-    {%- form 'contact', id: bis_form_id, class: 'back-in-stock-modal__form' -%}
-
-      {%- if form.errors -%}
-        <div class="back-in-stock-modal__error" role="alert">
-          {{ form.errors | default_errors }}
-        </div>
-      {%- endif -%}
-
-      <input type="hidden" name="contact[tags]"    value="back-in-stock">
-      <input type="hidden" name="contact[subject]" value="Back in stock request: {{ product.title | escape }}">
-      <input
-        class="back-in-stock-modal__body-input"
-        type="hidden"
-        name="contact[body]"
-        value="Please notify me when {{ product.title | escape }} is back in stock.&#10;Variant: {{ bis_variant.title | escape }}&#10;Product URL: {{ shop.url }}{{ product.url }}"
-      >
-
-      <div class="back-in-stock-modal__field">
-        <input
-          type="email"
-          name="contact[email]"
-          id="{{ bis_email_id }}"
-          class="back-in-stock-modal__email-input"
-          placeholder="Enter your email"
-          required
-          autocomplete="email"
-        >
-      </div>
-
-      <p class="back-in-stock-modal__privacy">
-        For more information about our privacy practices (including your right to withdraw your consent), take a look at our
-        {%- if shop.privacy_policy.url != blank -%}
-          <a href="{{ shop.privacy_policy.url }}" class="back-in-stock-modal__privacy-link">Privacy Policy</a>.
-        {%- else -%}
-          Privacy Policy.
-        {%- endif -%}
+      <p class="back-in-stock-modal__subtitle">
+        Enter your information and we will notify you when the item becomes available.
       </p>
 
-      {%- render 'button', type: 'submit', content: 'Notify Me', stretch: true -%}
+      <form id="{{ bis_form_id }}" class="back-in-stock-modal__form" novalidate>
+        {%- comment -%} Tracks the currently selected variant — updated via JS on variant:change {%- endcomment -%}
+        <input type="hidden" name="variant_id" value="{{ bis_variant.id }}">
 
-    {%- endform -%}
+        <div class="back-in-stock-modal__field">
+          <input
+            type="email"
+            name="email"
+            id="{{ bis_email_id }}"
+            class="back-in-stock-modal__email-input"
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+          >
+        </div>
+
+        <p class="back-in-stock-modal__privacy">
+          For more information about our privacy practices (including your right to withdraw your consent), take a look at our
+          {%- if shop.privacy_policy.url != blank -%}
+            <a href="{{ shop.privacy_policy.url }}" class="back-in-stock-modal__privacy-link">Privacy Policy</a>.
+          {%- else -%}
+            Privacy Policy.
+          {%- endif -%}
+        </p>
+
+        <div class="back-in-stock-modal__error" hidden role="alert">
+          Something went wrong. Please try again.
+        </div>
+
+        {%- render 'button', type: 'submit', content: 'Notify Me', stretch: true -%}
+      </form>
+
+    </div>
+
+    <div class="back-in-stock-modal__success" hidden role="status">
+      <p class="back-in-stock-modal__success-title">You're on the list!</p>
+      <p class="back-in-stock-modal__success-msg">We'll send you an email as soon as this item is back in stock.</p>
+    </div>
 
   </div>
 </x-modal>
 
-{%- comment -%}
-  If the previous contact form submission had errors, auto-reopen the modal on page load
-  so the user can see the validation messages without manually clicking the trigger again.
-{%- endcomment -%}
-{%- if form.errors -%}
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const modal = document.getElementById({{ modal_id | json }});
-      if (modal && typeof modal.show === 'function') modal.show();
-    });
-  </script>
-{%- endif -%}
-
 <script>
   (() => {
-    const modalId = {{ modal_id | json }};
-    const bodyInput = document.querySelector(`#${CSS.escape(modalId)} .back-in-stock-modal__body-input`);
+    // ─── Configuration ────────────────────────────────────────────────────────
+    // Replace with your Klaviyo public API key (found in Klaviyo → Account → API Keys)
+    const KLAVIYO_PUBLIC_KEY = 'QNZ4Cy';
+    // ─────────────────────────────────────────────────────────────────────────
 
-    // Swap buy-buttons ↔ notify trigger when the selected variant changes
+    const modalId    = {{ modal_id | json }};
+    const modal      = document.getElementById(modalId);
+    if (!modal) return;
+
+    const form       = document.getElementById({{ bis_form_id | json }});
+    const emailInput = form.querySelector('[name="email"]');
+    const variantInput = form.querySelector('[name="variant_id"]');
+    const successEl  = modal.querySelector('.back-in-stock-modal__success');
+    const formWrap   = modal.querySelector('.back-in-stock-modal__form-wrap');
+    const errorEl    = form.querySelector('.back-in-stock-modal__error');
+
+    // ── Klaviyo Back in Stock submission ──────────────────────────────────────
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = emailInput.value.trim();
+      if (!email) { emailInput.focus(); return; }
+
+      const submitBtn = form.querySelector('[type="submit"]');
+      submitBtn.disabled = true;
+      errorEl.hidden = true;
+
+      const payload = new URLSearchParams();
+      payload.append('a',        KLAVIYO_PUBLIC_KEY);
+      payload.append('email',    email);
+      payload.append('variant',  variantInput.value);
+      payload.append('platform', 'shopify');
+
+      try {
+        const response = await fetch('https://a.klaviyo.com/api/v1/back-in-stock-subscriptions', {
+          method: 'POST',
+          body: payload
+        });
+
+        if (response.ok) {
+          formWrap.hidden = true;
+          successEl.hidden = false;
+        } else {
+          throw new Error('klaviyo error');
+        }
+      } catch {
+        errorEl.hidden = false;
+        submitBtn.disabled = false;
+      }
+    });
+
+    // ── Reset form state when modal is closed ─────────────────────────────────
+    modal.addEventListener('close', () => {
+      setTimeout(() => {
+        formWrap.hidden  = false;
+        successEl.hidden = true;
+        form.reset();
+        errorEl.hidden = true;
+        const submitBtn = form.querySelector('[type="submit"]');
+        if (submitBtn) submitBtn.disabled = false;
+      }, 300);
+    });
+
+    // ── Sync variant when user switches size / colour ─────────────────────────
     document.addEventListener('variant:change', (e) => {
       const variant = e.detail?.variant;
       if (!variant) return;
 
-      const trigger = document.querySelector(`[aria-controls="${modalId}"]`);
-      if (!trigger) return;
+      // Keep the hidden variant_id in sync
+      if (variantInput) variantInput.value = variant.id;
 
+      const trigger   = document.querySelector(`[aria-controls="${modalId}"]`);
+      if (!trigger) return;
       const container = trigger.closest('.v-stack');
       const buyButtons = container?.querySelector('buy-buttons');
 
@@ -106,11 +156,6 @@ Supported variables:
       } else {
         if (buyButtons) buyButtons.hidden = true;
         trigger.hidden = false;
-
-        // Keep the body text in sync with the newly selected variant
-        if (bodyInput && variant.title && variant.title !== 'Default Title') {
-          bodyInput.value = bodyInput.value.replace(/Variant: [^\n]+/, `Variant: ${variant.title}`);
-        }
       }
     });
   })();
@@ -189,10 +234,30 @@ Supported variables:
     color: inherit;
   }
 
-  /* ── Validation errors from Shopify ── */
+  /* ── Error ── */
   .back-in-stock-modal__error {
     font-size: 0.8125rem;
     color: rgb(180 27 27);
     margin-top: -0.5rem;
+  }
+
+  /* ── Success state ── */
+  .back-in-stock-modal__success {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .back-in-stock-modal__success-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .back-in-stock-modal__success-msg {
+    font-size: 0.875rem;
+    opacity: 0.7;
+    margin: 0;
+    line-height: 1.6;
   }
 </style>
