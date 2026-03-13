@@ -38,10 +38,20 @@ Supported variables
         assign show_back_in_stock = true
       endif
     endunless
-    if show_back_in_stock
-      assign bis_modal_id = 'back-in-stock-' | append: product.id
-    endif
   -%}
+
+  {%- unless product.gift_card? -%}
+    {%- assign bis_modal_id = 'back-in-stock-' | append: product.id -%}
+    {%- comment -%}
+      Probe the contact form to read posted_successfully? server-side.
+      The output is discarded (captured into _void); only the variable assignment leaks out.
+    {%- endcomment -%}
+    {%- capture bis_probe_html -%}
+      {%- form 'contact' -%}
+        {%- assign bis_submitted = form.posted_successfully? -%}
+      {%- endform -%}
+    {%- endcapture -%}
+  {%- endunless -%}
 
   <product-form>
     {%- form 'product', product, id: form_id -%}
@@ -127,34 +137,32 @@ Supported variables
         </buy-buttons>
 
         {%- if show_back_in_stock -%}
-          {%- liquid
-            assign notify_label = 'Notify Me When Available'
-            if atc_button_background != blank and atc_button_background != 'rgba(0,0,0,0)'
-              assign bis_button_style_attr = '--button-background: ' | append: atc_button_background.rgb | append: '; --button-outline-color: ' | append: atc_button_background.rgb | append: ';'
-            else
-              assign bis_button_style_attr = ''
-            endif
-            if atc_button_text_color != blank and atc_button_text_color != 'rgba(0,0,0,0)'
-              assign bis_button_style_attr = bis_button_style_attr | append: '--button-text-color: ' | append: atc_button_text_color.rgb | append: ';'
-            endif
-          -%}
-          <button
-            type="button"
-            aria-controls="{{ bis_modal_id }}"
-            class="button w-full bis-notify-trigger"
-            {% if bis_button_style_attr != blank %}style="{{ bis_button_style_attr }}"{% endif %}
-          >
-            <span class="text-with-icon">
-              {%- render 'icon' with 'email', width: 16 -%}
-              {{- notify_label -}}
-            </span>
-          </button>
+          {%- if bis_submitted -%}
+            <div class="bis-success-inline">
+              {%- render 'icon' with 'success', width: 14 -%}
+              <span>You're on the list! We'll notify you when this item is back in stock.</span>
+            </div>
+          {%- else -%}
+            <button
+              type="button"
+              aria-controls="{{ bis_modal_id }}"
+              class="button w-full bis-notify-trigger"
+              {%- if atc_button_background != blank and atc_button_background != 'rgba(0,0,0,0)' -%}
+                style="--button-background: {{ atc_button_background.rgb }}; --button-outline-color: {{ atc_button_background.rgb }};{%- if atc_button_text_color != blank and atc_button_text_color != 'rgba(0,0,0,0)' -%}--button-text-color: {{ atc_button_text_color.rgb }};{%- endif -%}"
+              {%- endif -%}
+            >
+              <span class="text-with-icon">
+                {%- render 'icon' with 'email', width: 16 -%}
+                Notify Me When Available
+              </span>
+            </button>
+          {%- endif -%}
         {%- endif -%}
       </div>
     {%- endform -%}
   </product-form>
 
-  {%- if show_back_in_stock -%}
+  {%- if show_back_in_stock and bis_submitted != true -%}
     {%- render 'back-in-stock-form',
       product: product,
       selected_variant: product.selected_or_first_available_variant,
@@ -167,3 +175,17 @@ Supported variables
     {%- render 'button', content: button_content, type: 'submit', background: variant_picker_block.settings.atc_button_background, text_color: variant_picker.settings.atc_button_text_color, stretch: true -%}
   </buy-buttons>
 {%- endif -%}
+
+<style>
+  .bis-success-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    padding: 0.75rem 0;
+  }
+
+  .bis-notify-trigger[hidden] {
+    display: none;
+  }
+</style>
