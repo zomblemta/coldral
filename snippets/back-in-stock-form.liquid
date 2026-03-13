@@ -1,0 +1,277 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+BACK IN STOCK FORM (Modal)
+----------------------------------------------------------------------------------------------------------------------
+Renders an x-modal with email notification form for sold-out products.
+The trigger button lives in buy-buttons.liquid (aria-controls="{{ modal_id }}").
+
+Supported variables:
+* product: the product object
+* selected_variant: the specific variant (optional)
+* modal_id: the id for the x-modal element (required, set in buy-buttons.liquid)
+{%- endcomment -%}
+
+{%- assign bis_variant = selected_variant | default: product.selected_or_first_available_variant -%}
+{%- assign bis_email_id = 'bis-email-' | append: product.id -%}
+
+
+<x-modal id="{{ modal_id | escape }}" class="modal color-scheme color-scheme--dialog back-in-stock-modal">
+
+  <h2 class="back-in-stock-modal__title" slot="header">RECEIVE NOTIFICATION</h2>
+
+  <div class="back-in-stock-modal__body">
+
+    <p class="back-in-stock-modal__subtitle">
+      Enter your information and we will notify you when the item becomes available.
+    </p>
+
+    <form
+      class="back-in-stock-modal__form"
+      action="/contact"
+      method="post"
+      accept-charset="UTF-8"
+      novalidate
+    >
+      <input type="hidden" name="form_type" value="contact">
+      <input type="hidden" name="utf8" value="✓">
+      <input type="hidden" name="contact[tags]" value="back-in-stock">
+      <input type="hidden" name="contact[subject]" value="Back in stock request: {{ product.title | escape }}">
+      <input
+        class="back-in-stock-modal__body-input"
+        type="hidden"
+        name="contact[body]"
+        value="Please notify me when {{ product.title | escape }} is back in stock.&#10;Variant: {{ bis_variant.title | escape }}&#10;Product URL: {{ shop.url }}{{ product.url }}"
+      >
+
+      <div class="back-in-stock-modal__field">
+        <input
+          type="email"
+          name="contact[email]"
+          id="{{ bis_email_id }}"
+          class="back-in-stock-modal__email-input"
+          placeholder="Enter your email"
+          required
+          autocomplete="email"
+        >
+      </div>
+
+      <p class="back-in-stock-modal__privacy">
+        For more information about our privacy practices (including your right to withdraw your consent), take a look at our
+        {%- if shop.privacy_policy.url != blank -%}
+          <a href="{{ shop.privacy_policy.url }}" class="back-in-stock-modal__privacy-link">Privacy Policy</a>.
+        {%- else -%}
+          Privacy Policy.
+        {%- endif -%}
+      </p>
+
+      <div class="back-in-stock-modal__error" hidden role="alert">
+        Something went wrong. Please try again.
+      </div>
+
+      {%- render 'button', type: 'submit', content: 'Notify Me', stretch: true -%}
+    </form>
+
+    <div class="back-in-stock-modal__success" hidden role="status">
+      <p class="back-in-stock-modal__success-title">You're on the list!</p>
+      <p class="back-in-stock-modal__success-msg">We'll send you an email as soon as this item is back in stock.</p>
+    </div>
+
+  </div>
+</x-modal>
+
+<script>
+  (() => {
+    const modalId = {{ modal_id | json }};
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+
+    const form = modal.querySelector('.back-in-stock-modal__form');
+    const successEl = modal.querySelector('.back-in-stock-modal__success');
+    const errorEl = modal.querySelector('.back-in-stock-modal__error');
+    const bodyInput = modal.querySelector('.back-in-stock-modal__body-input');
+
+    // AJAX form submission
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('[type="submit"]');
+      submitBtn.disabled = true;
+      errorEl.hidden = true;
+
+      try {
+        const response = await fetch('/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        });
+
+        if (response.ok) {
+          form.hidden = true;
+          successEl.hidden = false;
+        } else {
+          throw new Error();
+        }
+      } catch {
+        errorEl.hidden = false;
+        submitBtn.disabled = false;
+      }
+    });
+
+
+    // Reset form when modal closes
+    modal.addEventListener('close', () => {
+      setTimeout(() => {
+        if (!successEl.hidden) {
+          form.hidden = false;
+          successEl.hidden = true;
+          form.reset();
+          const submitBtn = form.querySelector('[type="submit"]');
+          if (submitBtn) submitBtn.disabled = false;
+          errorEl.hidden = true;
+        }
+      }, 300);
+    });
+
+    // Handle variant change from product page — swap buy-buttons ↔ notify trigger
+    document.addEventListener('variant:change', (e) => {
+      const variant = e.detail?.variant;
+      if (!variant) return;
+
+      const trigger = document.querySelector(`[aria-controls="${modalId}"]`);
+      if (!trigger) return;
+
+      const container = trigger.closest('.v-stack');
+      const buyButtons = container?.querySelector('buy-buttons');
+
+      if (variant.available) {
+        if (buyButtons) buyButtons.hidden = false;
+        trigger.hidden = true;
+      } else {
+        if (buyButtons) buyButtons.hidden = true;
+        trigger.hidden = false;
+
+        // Update body input
+        if (bodyInput && variant.title && variant.title !== 'Default Title') {
+          bodyInput.value = bodyInput.value.replace(/Variant: [^\n]+/, `Variant: ${variant.title}`);
+        }
+      }
+    });
+  })();
+</script>
+
+<style>
+  /* ── Modal header ── */
+  .back-in-stock-modal .back-in-stock-modal__title {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  /* ── Modal body wrapper ── */
+  .back-in-stock-modal__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* ── Bold description ── */
+  .back-in-stock-modal__subtitle {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  /* ── Form layout ── */
+  .back-in-stock-modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  /* ── Field + label ── */
+  .back-in-stock-modal__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .back-in-stock-modal__label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.65;
+  }
+
+  /* ── Email input ── */
+  .back-in-stock-modal__email-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid currentColor;
+    border-radius: 0;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .back-in-stock-modal__email-input::placeholder {
+    color: inherit;
+    opacity: 0.55;
+  }
+
+  .back-in-stock-modal__email-input:focus {
+    border-bottom-color: currentColor;
+  }
+
+  /* ── Privacy text ── */
+  .back-in-stock-modal__privacy {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  .back-in-stock-modal__privacy-link {
+    text-decoration: underline;
+    color: inherit;
+  }
+
+  /* ── Error ── */
+  .back-in-stock-modal__error {
+    font-size: 0.8125rem;
+    color: rgb(180 27 27);
+    margin-top: -0.75rem;
+  }
+
+  /* ── Success state ── */
+  .back-in-stock-modal__success {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .back-in-stock-modal__success-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .back-in-stock-modal__success-msg {
+    font-size: 0.875rem;
+    opacity: 0.7;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* Ensure trigger button hidden attribute works */
+  .bis-notify-trigger[hidden] {
+    display: none;
+  }
+</style>

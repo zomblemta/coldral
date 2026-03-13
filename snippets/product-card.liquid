@@ -205,7 +205,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
       {%- comment -%} -----------------------------------------------------------
       QUICK BUY (AFFICHAGE uniquement, fonctionnel = code 1, caché si sold out)
       ------------------------------------------------------------ {%- endcomment -%}
-      {%- if show_quick_buy and is_sold_out == false -%}
+      {% comment %} {%- if show_quick_buy and is_sold_out == false -%}
         <div class="quick-buy-container">
           {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
             <product-form>
@@ -236,7 +236,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
             ></quick-buy-modal>
           {%- endif -%}
         </div>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
     </div>
   {%- endif -%}
 
