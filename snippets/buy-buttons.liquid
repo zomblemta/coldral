@@ -30,13 +30,21 @@ Supported variables
     endif
   -%}
 
+  {%- comment -%} Determine if this is a pre-order product {%- endcomment -%}
+  {%- assign is_pre_order = false -%}
+  {%- if product.selected_or_first_available_variant.inventory_policy == 'continue' -%}
+    {%- assign is_pre_order = true -%}
+  {%- endif -%}
+
   {%- comment -%} Determine if Back in Stock should be shown {%- endcomment -%}
   {%- liquid
     assign show_back_in_stock = false
     unless product.gift_card?
-      if product.selected_or_first_available_variant != nil and product.selected_or_first_available_variant.available == false
-        assign show_back_in_stock = true
-      endif
+      unless is_pre_order
+        if product.selected_or_first_available_variant != nil and product.selected_or_first_available_variant.available == false
+          assign show_back_in_stock = true
+        endif
+      endunless
     endunless
   -%}
 
@@ -55,10 +63,15 @@ Supported variables
           assign button_disabled = true
           assign button_content = 'product.general.unavailable_button' | t
         elsif product.selected_or_first_available_variant.available == false
-          assign button_disabled = true
-          assign button_content = 'product.general.sold_out_button' | t
+          if is_pre_order
+            assign button_content = 'product.general.pre_order_button' | t
+            assign button_disabled = false
+          else
+            assign button_disabled = true
+            assign button_content = 'product.general.sold_out_button' | t
+          endif
         else
-          if product.template_suffix contains 'pre-order'
+          if is_pre_order and product.selected_or_first_available_variant.inventory_quantity <= 0
             assign button_content = 'product.general.pre_order_button' | t
           else
             assign button_content = 'product.general.add_to_cart_button' | t
@@ -127,11 +140,12 @@ Supported variables
           {%- endif -%}
         </buy-buttons>
 
-        {%- if show_back_in_stock -%}
+        {%- unless product.gift_card? -%}
           <button
             type="button"
             aria-controls="{{ bis_modal_id }}"
             class="button w-full bis-notify-trigger"
+            {% unless show_back_in_stock %}hidden{% endunless %}
             {%- if atc_button_background != blank and atc_button_background != 'rgba(0,0,0,0)' -%}
               style="--button-background: {{ atc_button_background.rgb }}; --button-outline-color: {{ atc_button_background.rgb }};{%- if atc_button_text_color != blank and atc_button_text_color != 'rgba(0,0,0,0)' -%}--button-text-color: {{ atc_button_text_color.rgb }};{%- endif -%}"
             {%- endif -%}
@@ -139,20 +153,21 @@ Supported variables
             <span class="text-with-icon">
               {%- render 'icon' with 'email', width: 16 -%}
               Notify Me When Available
+
             </span>
           </button>
-        {%- endif -%}
+        {%- endunless -%}
       </div>
     {%- endform -%}
   </product-form>
 
-  {%- if show_back_in_stock -%}
+  {%- unless product.gift_card? -%}
     {%- render 'back-in-stock-form',
       product: product,
       selected_variant: product.selected_or_first_available_variant,
       modal_id: bis_modal_id
     -%}
-  {%- endif -%}
+  {%- endunless -%}
 {%- else -%}
   <buy-buttons class="buy-buttons" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
     {%- assign button_content = 'product.general.add_to_cart_button' | t -%}

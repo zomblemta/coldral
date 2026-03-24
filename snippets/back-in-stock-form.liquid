@@ -180,7 +180,8 @@ Configuration:
       const container = trigger.closest('.v-stack');
       const buyButtons = container?.querySelector('buy-buttons');
 
-      if (variant.available) {
+      const isPreOrder = variant.inventory_policy === 'continue';
+      if (variant.available || isPreOrder) {
         if (buyButtons) buyButtons.hidden = false;
         trigger.hidden = true;
       } else {
