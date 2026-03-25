@@ -88,7 +88,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
     endif
   -%}
   {%- if product.media.size > 0 -%}
-    <div class="product-card__figure">
+    <div class="product-card__figure relative">
       {%- comment -%} Badge SOLD OUT ou badges classiques {%- endcomment -%}
       {%- if is_sold_out -%}
         <span class="badge-sold-out-overlay">SOLD OUT</span>
@@ -96,6 +96,12 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
         {%- if show_badges -%}
           {%- render 'product-badges', product: product, vertical: true, context: 'card' -%}
         {%- endif -%}
+      {%- endif -%}
+
+      {%- if product.metafields.custom.prouduct_tag != blank -%}
+        <div class="product-card__product-tag absolute top-4 left-4 z-10 bg-white text-xs px-2">
+          {{ product.metafields.custom.prouduct_tag.value }}
+        </div>
       {%- endif -%}
 
       <div class="product-slider">

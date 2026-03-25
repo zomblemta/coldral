@@ -179,4 +179,8 @@ Supported variables
       </unit-price>
     {%- endif -%}
   {%- endunless -%}
+
+  {%- if context == 'product' -%}
+    <p class="price-list__tax-note">{{ 'product.general.taxes_included' | t }}</p>
+  {%- endif -%}
 </price-list>

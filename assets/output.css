@@ -62,14 +62,29 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
   .-right-2 {
     right: calc(var(--spacing) * -2);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
   .z-1 {
     z-index: 1;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .z-100 {
     z-index: 100;
@@ -106,6 +121,9 @@
   }
   .mt-\[15px\] {
     margin-top: 15px;
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -416,6 +434,9 @@
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -452,6 +473,10 @@
   }
   .text-\[10px\] {
     font-size: 10px;
+  }
+  .leading-2 {
+    --tw-leading: calc(var(--spacing) * 2);
+    line-height: calc(var(--spacing) * 2);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -813,6 +838,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1019,6 +1048,7 @@
       --tw-scroll-snap-strictness: proximity;
       --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;

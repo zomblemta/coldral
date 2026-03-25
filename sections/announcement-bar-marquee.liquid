@@ -1,0 +1,211 @@
+{%- if section.blocks.size > 0 -%}
+  <style>
+    :root {
+      --announcement-bar-is-sticky: {% if section.settings.enable_sticky %}1{% else %}0{% endif %};
+
+      {%- if section.index == 1 and section.settings.enable_sticky == false -%}
+        --header-scroll-tracker-offset: var(--announcement-bar-height);
+      {%- endif -%}
+    }
+
+    {%- if section.settings.enable_sticky -%}
+      #shopify-section-{{ section.id }} {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+
+      .shopify-section--header ~ #shopify-section-{{ section.id }} {
+        top: calc(var(--header-is-sticky, 0) * var(--header-height, 0px));
+        z-index: 4;
+      }
+    {%- endif -%}
+
+    #shopify-section-{{ section.id }} {
+      --announcement-bar-marquee-font-size: {{ section.settings.mobile_font_size | divided_by: 16.0 }}rem;
+      --announcement-bar-marquee-gap: {{ section.settings.item_gap }}px;
+    }
+
+    @media screen and (min-width: 999px) {
+      #shopify-section-{{ section.id }} {
+        --announcement-bar-marquee-font-size: {{ section.settings.desktop_font_size | divided_by: 16.0 }}rem;
+      }
+    }
+  </style>
+
+  <height-observer variable="announcement-bar">
+    <div class="announcement-bar-marquee color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
+      <marquee-text
+        speed="{{ section.settings.scrolling_speed }}"
+        direction="{{ section.settings.scroll_direction }}"
+        {% if section.settings.pause_on_hover %}pause-on-hover{% endif %}
+        class="announcement-bar-marquee__track"
+      >
+        <div class="announcement-bar-marquee__list">
+          {%- for block in section.blocks -%}
+            {%- assign item_text = block.settings.text -%}
+            {%- if item_text != blank -%}
+              {%- if block.settings.url != blank -%}
+                <a href="{{ block.settings.url }}" class="announcement-bar-marquee__item" {{ block.shopify_attributes }}>
+                  <span class="prose">{{- item_text -}}</span>
+                </a>
+              {%- else -%}
+                <span class="announcement-bar-marquee__item" {{ block.shopify_attributes }}>
+                  <span class="prose">{{- item_text -}}</span>
+                </span>
+              {%- endif -%}
+
+              {%- unless forloop.last and section.blocks.size == 1 -%}
+                <span class="announcement-bar-marquee__separator" aria-hidden="true">{{ section.settings.separator }}</span>
+              {%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </marquee-text>
+    </div>
+  </height-observer>
+
+  <script>
+    document.documentElement.style.setProperty('--announcement-bar-height', `${document.getElementById('shopify-section-{{ section.id }}').clientHeight.toFixed(2)}px`);
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Announcement Bar ",
+  "class": "shopify-section--announcement-bar-marquee",
+
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Message",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "Announce something here"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:global.colors.scheme",
+      "default": "scheme-3"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky",
+      "label": "Stick to top of page"
+    },
+    {
+      "type": "header",
+      "content": "Scrolling"
+    },
+    {
+      "type": "range",
+      "id": "scrolling_speed",
+      "min": 0.1,
+      "max": 1.5,
+      "step": 0.1,
+      "label": "Scrolling speed",
+      "default": 0.4
+    },
+    {
+      "type": "select",
+      "id": "scroll_direction",
+      "label": "Scroll direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause on hover",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "Separator between items",
+      "default": "✦",
+      "info": "Character shown between items, e.g. ✦ • — ★"
+    },
+    {
+      "type": "range",
+      "id": "item_gap",
+      "min": 16,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Spacing between items",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "desktop_font_size",
+      "min": 9,
+      "max": 16,
+      "unit": "px",
+      "label": "Desktop text size",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "mobile_font_size",
+      "min": 9,
+      "max": 16,
+      "unit": "px",
+      "label": "Mobile text size",
+      "default": 11
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Bar",
+      "blocks": [
+        {
+          "type": "message",
+          "settings": {
+            "text": "Welcome to our store"
+          }
+        },
+        {
+          "type": "message",
+          "settings": {
+            "text": "International Shipping"
+          }
+        },
+        {
+          "type": "message",
+          "settings": {
+            "text": "Easy Returns"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

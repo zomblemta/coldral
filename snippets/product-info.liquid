@@ -233,6 +233,11 @@ document.addEventListener('click', function (e) {
             {%- endif -%}
 
           {%- when 'title' -%}
+            {%- if product.metafields.custom.prouduct_tag != blank -%}
+              <div class="product-title-tag  text-xs mb-1">
+                {{ product.metafields.custom.prouduct_tag.value }}
+              </div>
+            {%- endif -%}
             <div class="product-title-container w-full flex md:flex-col justify-between items-center md:items-start ">
             {%- if product != blank -%}
               {%- assign product_title = product.title -%}
