@@ -109,15 +109,12 @@ initialize_fn = function() {
       <slot part="scroller"></slot>
     `));
   const fragment = document.createDocumentFragment();
-  const duplicateCount = Math.ceil(this.clientWidth / this.firstElementChild.clientWidth);
-  for (let i = 1; i <= duplicateCount; ++i) {
-    for (let y = 0; y < 2; ++y) {
-      const node = this.firstElementChild.cloneNode(true);
-      const value = 100 * i * (y % 2 === 0 ? -1 : 1);
-      node.setAttribute("aria-hidden", "true");
-      node.style.cssText = `position: absolute; inset-inline-start: calc(${value}%);`;
-      fragment.appendChild(node);
-    }
+  for (let y = 0; y < 2; ++y) {
+    const node = this.firstElementChild.cloneNode(true);
+    const value = 100 * (y % 2 === 0 ? -1 : 1);
+    node.setAttribute("aria-hidden", "true");
+    node.style.cssText = `position: absolute; inset-inline-start: calc(${value}%);`;
+    fragment.appendChild(node);
   }
   this.append(fragment);
   __privateSet(this, _currentAnimation, animate(__privateGet(this, _MarqueeText_instances, scroller_get), { transform: ["translateX(0)", `translateX(calc(var(--transform-logical-flip) * ${__privateGet(this, _MarqueeText_instances, direction_get) * 100}%))`] }, {

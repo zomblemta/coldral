@@ -81,10 +81,10 @@
         background-color: transparent !important;
       }
 
-      /* si besoin de décaler vers le haut */
+      /* Remonte le contenu produit juste sous la barre d'annonce */
       #shopify-section-{{ section.id }},
       #shopify-section-{{ section.id }} .header-wrapper {
-        margin-bottom: -10rem !important;
+        margin-bottom: calc(-1 * var(--header-height, 5rem)) !important;
       }
     }
 

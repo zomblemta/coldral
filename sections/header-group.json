@@ -81,7 +81,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-1",
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": true,
         "show_separation_border": false,
         "reduce_padding": true,

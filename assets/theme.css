@@ -3853,6 +3853,7 @@ product-rerender {
   align-items: center;
   flex-shrink: 0;
   padding-block: 0.75em;
+  min-width: 100vw;
 }
 
 .announcement-bar-marquee__item {
@@ -3860,6 +3861,7 @@ product-rerender {
   align-items: center;
   text-decoration: none;
   color: inherit;
+  margin-right: var(--announcement-bar-marquee-gap,200px) ;
   padding-inline: calc(var(--announcement-bar-marquee-gap, 40px) / 2);
   transition: opacity 0.2s;
 }
