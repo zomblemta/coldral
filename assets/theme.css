@@ -3831,11 +3831,6 @@ product-rerender {
   overflow: hidden;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .announcement-bar-marquee {
-    margin-bottom: 9px;
-  }
-}
 
 .announcement-bar-marquee__track {
   display: block;

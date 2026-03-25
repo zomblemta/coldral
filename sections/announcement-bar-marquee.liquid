@@ -31,10 +31,18 @@
         --announcement-bar-marquee-font-size: {{ section.settings.desktop_font_size | divided_by: 16.0 }}rem;
       }
     }
+
+    {%- if request.page_type == 'product' -%}
+      @media screen and (max-width: 768px) {
+        #shopify-section-{{ section.id }} .announcement-bar-marquee {
+          margin-bottom: 9px;
+        }
+      }
+    {%- endif -%}
   </style>
 
   <height-observer variable="announcement-bar ">
-    <div class="sm:mb-[9px]  announcement-bar-marquee color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
+    <div class=" announcement-bar-marquee color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
       <marquee-text
         speed="{{ section.settings.scrolling_speed }}"
         direction="{{ section.settings.scroll_direction }}"
