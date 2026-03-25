@@ -5471,8 +5471,9 @@ a.announcement-bar-marquee__item:hover {
 }
 
 .header-sidebar__back-button {
+  font-size: 15px !important;
+  font-weight: 600 !important;
   width: 100%;
-  border-block-end-width: 1px;
   margin-block-end: 1rem;
   padding-block-start: var(--header-linklist-padding-block);
   padding-block-end: 1rem;
