@@ -64,9 +64,53 @@
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify://shop_images/LOGO_BLANC_2.svg"
       }
+    },
+    "announcement_bar_marquee_LWW8VQ": {
+      "type": "announcement-bar-marquee",
+      "blocks": {
+        "message_baW4Xa": {
+          "type": "message",
+          "settings": {
+            "text": "Welcome to our store",
+            "url": ""
+          }
+        },
+        "message_MQGTWX": {
+          "type": "message",
+          "settings": {
+            "text": "International Shipping",
+            "url": ""
+          }
+        },
+        "message_3wPDiC": {
+          "type": "message",
+          "settings": {
+            "text": "Easy Returns",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_baW4Xa",
+        "message_MQGTWX",
+        "message_3wPDiC"
+      ],
+      "name": "Announcement Bar",
+      "settings": {
+        "color_scheme": "",
+        "enable_sticky": false,
+        "scrolling_speed": 0.4,
+        "scroll_direction": "left",
+        "pause_on_hover": true,
+        "separator": "",
+        "item_gap": 80,
+        "desktop_font_size": 13,
+        "mobile_font_size": 11
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "announcement_bar_marquee_LWW8VQ"
   ]
 }
