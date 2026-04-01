@@ -17,21 +17,28 @@
         "message_baW4Xa": {
           "type": "message",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "International shipping",
             "url": ""
           }
         },
         "message_MQGTWX": {
           "type": "message",
           "settings": {
-            "text": "International Shipping",
+            "text": "Free shipping in Europe over €200",
             "url": ""
           }
         },
         "message_3wPDiC": {
           "type": "message",
           "settings": {
-            "text": "Easy Returns",
+            "text": "EU taxes included",
+            "url": ""
+          }
+        },
+        "message_aM4z8r": {
+          "type": "message",
+          "settings": {
+            "text": "14-day returns",
             "url": ""
           }
         }
@@ -39,7 +46,8 @@
       "block_order": [
         "message_baW4Xa",
         "message_MQGTWX",
-        "message_3wPDiC"
+        "message_3wPDiC",
+        "message_aM4z8r"
       ],
       "name": "Announcement Bar",
       "settings": {
