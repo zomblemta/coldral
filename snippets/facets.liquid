@@ -38,7 +38,7 @@ Supported variables
       <input type="hidden" name="q" value="{{ results.terms | escape }}">
     {%- endif -%}
 
-    <div class="accordion-list">
+    <div class="flex gap-12">
       {%- if quick_links_menu.links.size > 0 -%}
         {%- capture filter_content -%}
           <div class="v-stack gap-2.5">

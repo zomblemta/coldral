@@ -38,7 +38,7 @@ Supported variables
   endcase
 -%}
 
-<price-list class="price-list {% if context == 'product' %}price-list--product{% endif %}">
+<price-list class="price-list md:mt-2 {% if context == 'product' %}price-list--product{% endif %}">
   {%- if variant != blank -%}
     {%- comment -%}
     --------------------------------------------------------------------------------------------------------------------

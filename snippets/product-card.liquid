@@ -191,8 +191,8 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
 
           {%- unless disable_slider -%}
             <div class="swiper-pagination {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
-            <div class="swiper-button-prev {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
-            <div class="swiper-button-next {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
+            {% comment %} <div class="swiper-button-prev hidden {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
+            <div class="swiper-button-next hidden {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div> {% endcomment %}
           {%- endunless -%}
         </div>
       </div>

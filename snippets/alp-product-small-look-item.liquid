@@ -193,7 +193,9 @@
 
 <div class="alp-product-small-look-item">
   <div class="alp-product-small-look-item-image">
-    {% render 'alp-responsive-image', image: selected_image %}
+    <a href="{{ product.url }}" class="alp-product-small-look-item-image-link">
+      {% render 'alp-responsive-image', image: selected_image %}
+    </a>
     {%- comment -%}Quick-add 按钮功能{%- endcomment -%}
     {%- if product.available -%}
       <div class="alp-product-small-look-item-button">
