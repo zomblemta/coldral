@@ -6060,7 +6060,7 @@ a.announcement-bar-marquee__item:hover {
 
 @media screen and (min-width: 1000px) {
   .shopify-section--main-product .section-spacing {
-    padding-block-start: var(--container-gutter);
+    /* padding-block-start: var(--container-gutter); */
   }
 
   .product {
