@@ -95,7 +95,7 @@
                     <div class="flex flex-col  gap-1">
                       <div class="flex  w-full justify-between pr-12">
                       {%- if show_filters or section.settings.show_sort_by -%}
-                        <height-observer variable="collection-toolbar" class="collection-toolbar full-bleed">
+                        <height-observer variable="collection-toolbar" class="collection-toolbar  w-full md:w-auto full-bleed">
                           <div class="collection-toolbar__button-list">
                             {%- if show_filters -%}
                               <div class="collection-toolbar__button-container md:hidden">
@@ -247,13 +247,67 @@
                             {%- render 'active-facets', results: search -%}
 
                             <product-list id="product-list-{{ section.id }}" class="product-lists grid grid-cols-2 gap-x-1 gap-y-4 md:grid-cols-3 lg:grid-cols-4">
+                              {%- liquid
+                                assign color_labels = 'color,farve,farbe,couleur,cor,colour' | split: ','
+                                assign product_position = 0
+                              -%}
                               {%- for product in product_results -%}
-                                {%- render 'product-card',
-                                  product: product,
-                                  stacked: true,
-                                  reveal: settings.stagger_products_apparition,
-                                  position: forloop.index
+                                {%- liquid
+                                  assign has_color_option = false
+                                  assign color_option_values = null
+
+                                  for option in product.options_with_values
+                                    assign option_name_downcase = option.name | downcase
+                                    if color_labels contains option_name_downcase
+                                      assign has_color_option = true
+                                      assign color_option_values = option.values
+                                      break
+                                    endif
+                                  endfor
                                 -%}
+
+                                {%- if has_color_option and color_option_values != null and color_option_values.size > 0 -%}
+                                  {%- for color_value in color_option_values -%}
+                                    {%- liquid
+                                      assign product_position = product_position | plus: 1
+                                      assign color_variant = null
+                                      assign found_variant_with_image = false
+
+                                      for variant in product.variants
+                                        if color_value == variant.option1 or color_value == variant.option2 or color_value == variant.option3
+                                          if color_variant == null
+                                            assign color_variant = variant
+                                          endif
+                                          if variant.image != blank
+                                            if found_variant_with_image == false
+                                              assign color_variant = variant
+                                              assign found_variant_with_image = true
+                                            endif
+                                            break
+                                          endif
+                                        endif
+                                      endfor
+                                    -%}
+                                    {%- render 'product-card',
+                                      product: product,
+                                      stacked: true,
+                                      reveal: settings.stagger_products_apparition,
+                                      position: product_position,
+                                      color_variant: color_variant,
+                                      color_value: color_value
+                                    -%}
+                                  {%- endfor -%}
+                                {%- else -%}
+                                  {%- liquid
+                                    assign product_position = product_position | plus: 1
+                                  -%}
+                                  {%- render 'product-card',
+                                    product: product,
+                                    stacked: true,
+                                    reveal: settings.stagger_products_apparition,
+                                    position: product_position
+                                  -%}
+                                {%- endif -%}
                               {%- endfor -%}
                             </product-list>
 

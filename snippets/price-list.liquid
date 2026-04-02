@@ -180,7 +180,7 @@ Supported variables
     {%- endif -%}
   {%- endunless -%}
 
-  {%- if context == 'product' -%}
+  {%- if context == 'product' and localization.country.continent == 'Europe' -%}
     <p class="price-list__tax-note">{{ 'product.general.taxes_included' | t }}</p>
   {%- endif -%}
 </price-list>

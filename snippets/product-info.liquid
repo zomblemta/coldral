@@ -238,7 +238,7 @@ document.addEventListener('click', function (e) {
                 {{ product.metafields.custom.prouduct_tag.value }}
               </div>
             {%- endif -%}
-            <div class="product-title-container w-full flex md:flex-col justify-between items-center md:items-start ">
+            <div class="product-title-container w-full flex md:flex-col justify-between items-start ">
             {%- if product != blank -%}
               {%- assign product_title = product.title -%}
             {%- else -%}

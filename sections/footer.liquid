@@ -340,7 +340,7 @@
         <div class="px-4">
           {%- for block in section.blocks -%}
             {%- if block.type == 'policy_links' -%}
-              <ul class="unstyled-list grid grid-cols-3 md:grid-cols-5 gap-4 sm:gap-2 flex-wrap ">
+              <ul class="unstyled-list flex  gap-x-6 gap-y-2 flex-wrap items-center justify-center ">
                 {%- for link in block.settings.menu.links -%}
                   <li>
                     <a href="{{ link.url }}" class="link-faded  text-nowrap text-xs">{{ link.title }}</a>

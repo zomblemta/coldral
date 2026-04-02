@@ -1,10 +1,22 @@
 {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
 
+<style>
+  .contact-link {
+    color: inherit;
+    text-decoration: underline;
+  }
+</style>
 <div class="section-spacing color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
-  <div class="px-[12px] md:px-[46px]">
-    <div class="section-stack text-center">
-      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: 'center' -%}
-
+  <div class="px-[12px] md:px-[46px] flex justify-center">
+    <div class="flex flex-col gap-4 items-start">
+      <h2 class="text-left text-2xl md:text-4xl uppercase font-medium">Contact </h2>
+      <p class="text-left text-sm md:text-base mb-2">
+        For returns, please email <a class="contact-link" href="mailto:returns@coldral.com">returns@coldral.com</a>.
+     </p>
+     <p class="text-left text-sm md:text-base">
+        For general enquiries, collaborations, and specific requests, please email <a class="contact-link" href="mailto:contact@coldral.com">contact@coldral.com</a>.
+      </p>
+{% comment %} 
       {%- form 'contact', class: 'form' -%}
         {%- if form.posted_successfully? -%}
           {%- assign content = 'contact.form.success_message' | t -%}
@@ -52,7 +64,7 @@
 
         {%- assign button_content = 'contact.form.submit' | t -%}
         {%- render 'button', content: button_content, type: 'submit' -%}
-      {%- endform -%}
+      {%- endform -%} {% endcomment %}
     </div>
   </div>
 </div>

@@ -7202,6 +7202,8 @@ a.announcement-bar-marquee__item:hover {
 }
 
 .text-on-sale {
+  font-size: var(--text-h4)!important;
+  line-height: 1.6;
 }
 
 .bg-error, .bg-success, .bg-warning {
