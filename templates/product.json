@@ -65,6 +65,7 @@
         },
         "feature_with_icon_g8pkNP": {
           "type": "feature_with_icon",
+          "disabled": true,
           "settings": {
             "text": "Free shipping on orders over 200€",
             "link": "",

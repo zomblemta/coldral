@@ -52,11 +52,6 @@
         "disabled": false,
         "settings": {}
       },
-      "776302416715791028": {
-        "type": "shopify://apps/bucks/blocks/app-embed/4f0a9b06-9da4-4a49-b378-2de9d23a3af3",
-        "disabled": false,
-        "settings": {}
-      },
       "2567389343055140935": {
         "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
@@ -75,6 +70,11 @@
       "2104245418471043333": {
         "type": "shopify://apps/17track/blocks/app-embed/1519e068-e330-4e0b-92dd-0a3263bfceda",
         "disabled": false,
+        "settings": {}
+      },
+      "776302416715791028": {
+        "type": "shopify://apps/bucks/blocks/app-embed/4f0a9b06-9da4-4a49-b378-2de9d23a3af3",
+        "disabled": true,
         "settings": {}
       }
     },
