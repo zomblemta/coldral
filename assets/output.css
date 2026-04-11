@@ -798,6 +798,11 @@
       height: 100%;
     }
   }
+  .md\:min-h-\[20px\] {
+    @media (width >= 48rem) {
+      min-height: 20px;
+    }
+  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);

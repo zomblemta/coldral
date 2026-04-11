@@ -190,9 +190,9 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
           </div>
 
           {%- unless disable_slider -%}
-            <div class="swiper-pagination {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
-         <div class="swiper-button-prev hidden {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
-            <div class="swiper-button-next hidden {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
+            <div class="swiper-pagination "></div>
+            <div class="swiper-button-prev product-slider__chrome"></div>
+            <div class="swiper-button-next product-slider__chrome"></div>
           {%- endunless -%}
         </div>
       </div>
@@ -798,15 +798,10 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
     visibility: visible;
   }
 
-  /* 移动端也显示分页器 */
-  .swiper-pagination {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  /* Hide elements on mobile */
-  .hide-on-mobile {
+  /* 覆盖上方全局 .swiper-pagination { display:flex }，仅在移动端隐藏分页与箭头 */
+  .product-slider .product-slider__chrome {
     display: none !important;
+    pointer-events: none;
   }
 }
 

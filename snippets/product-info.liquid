@@ -233,7 +233,7 @@ document.addEventListener('click', function (e) {
             {%- endif -%}
 
           {%- when 'title' -%}
-              <div class="product-title-tag  text-xs mb-1 min-h-[20px]">
+              <div class="product-title-tag  text-xs mb-1 md:min-h-[20px]">
             {%- if product.metafields.custom.prouduct_tag != blank -%}
 
                 {{ product.metafields.custom.prouduct_tag.value }}
