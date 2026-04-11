@@ -104,7 +104,7 @@ only way to do it on Shopify right now.
 
   <div class="product-gallery__image-list">
                     <!-- ARROWS FOR DESKTOP -->
-        <div class="product-gallery__arrows-desktop" aria-hidden="true">
+        <div class="product-gallery__arrows-desktop">
           <carousel-prev-button aria-controls="{{ product_gallery_carousel_id }}">
             <button type="button" class="product-gallery__arrow product-gallery__arrow--prev">
               {%- render 'icon' with 'arrow-left' -%}
@@ -333,8 +333,29 @@ product-gallery.product-gallery,
 /* CUSTOM PRODUCT GALLERY ARROWS   */
 /* ------------------------------- */
 
+.product-gallery__image-list {
+  position: relative;
+}
+
+/* 移动端隐藏桌面箭头；PC（≥700px，与主题媒体查询一致）显示 */
 .product-gallery__arrows-desktop {
-  display: none !important; /* 隐藏桌面箭头；保留节点供 carousel / 无限轮播脚本 */
+  display: none !important;
+}
+
+@media screen and (min-width: 700px) {
+  .product-gallery__arrows-desktop {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .product-gallery__arrows-desktop .product-gallery__arrow {
+    pointer-events: auto;
+  }
 }
 
 .product-gallery__arrow {
