@@ -1,4 +1,14 @@
-{%- if section.blocks.size > 0 -%}
+{%- liquid
+  assign lookbook_show = false
+  if section.blocks.size > 0
+    assign lookbook_show = true
+  endif
+  if section.settings.heading != blank or section.settings.subheading != blank or section.settings.content != blank
+    assign lookbook_show = true
+  endif
+-%}
+
+{%- if lookbook_show -%}
   {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
 
   <style>
@@ -8,12 +18,21 @@
       --lookbook-stack-pb: {{ section.settings.padding_bottom }}px;
     }
 
-    #shopify-section-{{ section.id }} .lookbook-image-stack__inner {
-      display: flex;
-      flex-direction: column;
-      gap: var(--lookbook-stack-gap);
+    #shopify-section-{{ section.id }} .lookbook-image-stack__wrap {
       padding-block-start: var(--lookbook-stack-pt);
       padding-block-end: var(--lookbook-stack-pb);
+    }
+
+    #shopify-section-{{ section.id }} .lookbook-image-stack__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--lookbook-stack-gap);
+    }
+
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .lookbook-image-stack__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
     #shopify-section-{{ section.id }} .lookbook-image-stack__figure {
@@ -43,18 +62,43 @@
         padding-block: 1rem 1.25rem;
       }
     }
+
+    #shopify-section-{{ section.id }} .section-header .h6 {
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    #shopify-section-{{ section.id }} .section-header .h2 {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
   </style>
 
   <div class="color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
-    <div class="lookbook-image-stack__inner {% if section.settings.section_width != 'full' %}container container--{{ section.settings.section_width }}{% endif %}">
-      {%- for block in section.blocks -%}
+    <div class="px-[14px] md:px-[50px]">
+      <div class="lookbook-image-stack__wrap">
+        <div class="section-stack">
+          {%- render 'section-header',
+            subheading: section.settings.subheading,
+            heading: section.settings.heading,
+            content: section.settings.content,
+            text_alignment: section.settings.heading_alignment
+          -%}
+
+          {%- if section.blocks.size > 0 -%}
+            <div class="lookbook-image-stack__grid">
+              {%- for block in section.blocks -%}
         {%- liquid
           assign lookbook_alt = block.settings.alt_text | default: block.settings.image.alt
-          if forloop.first
+          if forloop.index <= 2
             assign lookbook_loading = 'eager'
-            assign lookbook_fetchpriority = 'high'
           else
             assign lookbook_loading = 'lazy'
+          endif
+          if forloop.first
+            assign lookbook_fetchpriority = 'high'
+          else
             assign lookbook_fetchpriority = 'low'
           endif
         -%}
@@ -83,12 +127,13 @@
                 </picture>
               {%- else -%}
                 {%- assign widths = '375,550,750,1100,1500,2000,2400,3000' -%}
+                {%- capture lookbook_sizes -%}(max-width: 749px) calc(100vw - 28px), calc((100vw - 100px - {{ section.settings.gap_between_images }}px) / 2){%- endcapture -%}
                 {{ block.settings.image
                   | image_url: width: 2400
                   | image_tag:
                     class: 'lookbook-image-stack__media',
                     widths: widths,
-                    sizes: '(max-width: 749px) 100vw, 100vw',
+                    sizes: lookbook_sizes,
                     loading: lookbook_loading,
                     fetchpriority: lookbook_fetchpriority,
                     alt: lookbook_alt
@@ -115,7 +160,11 @@
             </p>
           {%- endif -%}
         </div>
-      {%- endfor -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
     </div>
   </div>
 {%- endif -%}
@@ -143,31 +192,47 @@
     },
     {
       "type": "header",
-      "content": "t:sections.lookbook_image_stack.layout_category"
+      "content": "t:sections.lookbook_image_stack.heading_category"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:global.text.subheading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:global.text.heading",
+      "default": "Spring 2026"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "t:global.text.content"
     },
     {
       "type": "select",
-      "id": "section_width",
-      "label": "t:global.sizes.section_width",
+      "id": "heading_alignment",
+      "label": "t:global.text.alignment",
       "options": [
         {
-          "value": "full",
-          "label": "t:global.sizes.full_width"
+          "value": "start",
+          "label": "t:global.position.left"
         },
         {
-          "value": "md",
-          "label": "t:global.sizes.medium"
+          "value": "center",
+          "label": "t:global.position.center"
         },
         {
-          "value": "lg",
-          "label": "t:global.sizes.large"
-        },
-        {
-          "value": "xl",
-          "label": "t:global.sizes.x_large"
+          "value": "end",
+          "label": "t:global.position.right"
         }
       ],
-      "default": "full"
+      "default": "center"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.lookbook_image_stack.two_column_info"
     },
     {
       "type": "header",
@@ -201,7 +266,7 @@
       "step": 2,
       "unit": "px",
       "label": "t:sections.lookbook_image_stack.gap_between_images",
-      "default": 0
+      "default": 12
     }
   ],
   "blocks": [
@@ -278,6 +343,11 @@
   "presets": [
     {
       "name": "t:sections.lookbook_image_stack.presets.lookbook_image_stack.name",
+      "settings": {
+        "heading": "Spring 2026",
+        "subheading": "Spring collection",
+        "gap_between_images": 12
+      },
       "blocks": [
         {
           "type": "image"

@@ -1015,7 +1015,8 @@
     },
     "lookbook_image_stack": {
       "name": "Lookbook image stack",
-      "layout_category": "Layout",
+      "heading_category": "Heading",
+      "two_column_info": "One column on mobile; two columns from 750px. Side padding matches standard pages (14px mobile / 50px desktop).",
       "spacing_category": "Spacing",
       "padding_top": "Padding top",
       "padding_bottom": "Padding bottom",
