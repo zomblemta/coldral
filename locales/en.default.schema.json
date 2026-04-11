@@ -1021,6 +1021,7 @@
       "padding_top": "Padding top",
       "padding_bottom": "Padding bottom",
       "gap_between_images": "Space between images",
+      "image_vertical_spacing": "Image vertical padding",
       "caption_position": "Caption position",
       "caption_position_options": {
         "above": "Above image",

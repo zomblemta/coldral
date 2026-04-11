@@ -16,6 +16,7 @@
       --lookbook-stack-gap: {{ section.settings.gap_between_images }}px;
       --lookbook-stack-pt: {{ section.settings.padding_top }}px;
       --lookbook-stack-pb: {{ section.settings.padding_bottom }}px;
+      --lookbook-image-v: {{ section.settings.image_vertical_spacing }}px;
     }
 
     #shopify-section-{{ section.id }} .lookbook-image-stack__wrap {
@@ -33,6 +34,10 @@
       #shopify-section-{{ section.id }} .lookbook-image-stack__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+    }
+
+    #shopify-section-{{ section.id }} .lookbook-image-stack__item {
+      padding-block: var(--lookbook-image-v);
     }
 
     #shopify-section-{{ section.id }} .lookbook-image-stack__figure {
@@ -63,14 +68,30 @@
       }
     }
 
+    #shopify-section-{{ section.id }} .section-header {
+      margin-inline: 0;
+      max-width: none;
+      width: 100%;
+    }
+
+    #shopify-section-{{ section.id }} .section-header .prose {
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
     #shopify-section-{{ section.id }} .section-header .h6 {
+      margin: 0 0 0.35em;
+      font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
     #shopify-section-{{ section.id }} .section-header .h2 {
+      margin: 0;
+      font-size: 12px;
       font-weight: 600;
+      line-height: 1.45;
       letter-spacing: 0.04em;
     }
   </style>
@@ -228,7 +249,7 @@
           "label": "t:global.position.right"
         }
       ],
-      "default": "center"
+      "default": "start"
     },
     {
       "type": "paragraph",
@@ -266,6 +287,16 @@
       "step": 2,
       "unit": "px",
       "label": "t:sections.lookbook_image_stack.gap_between_images",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "image_vertical_spacing",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.lookbook_image_stack.image_vertical_spacing",
       "default": 12
     }
   ],
@@ -346,7 +377,9 @@
       "settings": {
         "heading": "Spring 2026",
         "subheading": "Spring collection",
-        "gap_between_images": 12
+        "heading_alignment": "start",
+        "gap_between_images": 12,
+        "image_vertical_spacing": 12
       },
       "blocks": [
         {
