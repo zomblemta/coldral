@@ -4946,7 +4946,12 @@ onSidebarAfterHide_fn = function() {
     __privateGet(this, _collapsiblePanel)?.removeAttribute("aria-activedescendant");
     __privateGet(this, _buttonElements).forEach((button) => button.setAttribute("aria-expanded", "false"));
   }
-  Array.from(this.querySelectorAll("details")).forEach((detail) => detail.open = false);
+  Array.from(this.querySelectorAll("details")).forEach((detail) => {
+    if (detail.hasAttribute("data-preserve-sidebar-open")) {
+      return;
+    }
+    detail.open = false;
+  });
 };
 var _sidebarDelegate, _HeaderSidebarCollapsiblePanel_instances, closePanel_fn, switchPanel_fn;
 var HeaderSidebarCollapsiblePanel = class extends DialogElement {

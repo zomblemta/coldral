@@ -5485,6 +5485,37 @@ a.announcement-bar-marquee__item:hover {
   color: rgb(var(--text-color)) !important;
 }
 
+.header-sidebar__linklist-button.h6:not(.sale-text) {
+  color: #fff !important;
+}
+
+@media screen and (pointer: fine) {
+  .header-sidebar__main-panel li:has([aria-expanded="true"]) ~ li .header-sidebar__linklist-button.h6:not(.sale-text),
+  .header-sidebar__main-panel li:has(~ li [aria-expanded="true"]):not(:has([aria-expanded="true"])) .header-sidebar__linklist-button.h6:not(.sale-text) {
+    color: #fff !important;
+  }
+}
+
+.header-sidebar__sub-panel li:has([aria-expanded="true"]) ~ li .header-sidebar__linklist-button.h6:not(.sale-text),
+.header-sidebar__sub-panel li:has(~ li [aria-expanded="true"]):not(:has([aria-expanded="true"])) .header-sidebar__linklist-button.h6:not(.sale-text),
+.header-sidebar__sub-panel li:has([aria-expanded="true"]) .header-sidebar__linklist-button.h6:not(.sale-text) {
+  color: #fff !important;
+}
+
+.header-sidebar__nested-linklist {
+  color: #fff !important;
+}
+
+.header-sidebar__nested-linklist a:not(.sale-text) {
+  color: #fff !important;
+}
+
+@media screen and (pointer: fine) {
+  .header-sidebar__nested-linklist a.link-faded-reverse:not(.sale-text):hover {
+    color: rgb(255 255 255 / .75) !important;
+  }
+}
+
 .header-sidebar__back-button {
   font-size: 15px !important;
   font-weight: 600 !important;

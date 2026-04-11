@@ -272,6 +272,7 @@
                           class="accordion__disclosure group"
                           {% if open_second_level_menus %}
                             open
+                            data-preserve-sidebar-open
                           {% endif %}
                         >
                           <summary class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}{% if sub_link.url contains 'sale' %} sale-text{% endif %}">
