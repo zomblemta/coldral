@@ -75,7 +75,7 @@
                 <tr>
                   <td>{%- render 'line-item', line_item: line_item -%}</td>
                   <td class="text-center">{{ line_item.quantity }}</td>
-                  <td class="text-end">{{ line_item.final_line_price | money }}</td>
+                  <td class="text-end">{{ line_item.final_line_price | money_without_trailing_zeros }}</td>
                 </tr>
               {%- endfor -%}
             </tbody>
@@ -86,7 +86,7 @@
                 <td colspan="2">
                   <div class="h-stack gap-2 justify-between">
                     <span class="text-subdued">{{ 'customer.order.subtotal' | t }}</span>
-                    <span class="text-subdued text-end">{{ order.line_items_subtotal_price | money }}</span>
+                    <span class="text-subdued text-end">{{ order.line_items_subtotal_price | money_without_trailing_zeros }}</span>
                   </div>
                 </td>
               </tr>
@@ -97,7 +97,7 @@
                   <td colspan="2">
                     <div class="h-stack gap-2 justify-between">
                       <span class="text-subdued">{{ 'customer.order.discount' | t }} ({{ discount_application.title }})</span>
-                      <span class="text-subdued text-end">-{{ discount_application.total_allocated_amount | money }}</span>
+                      <span class="text-subdued text-end">-{{ discount_application.total_allocated_amount | money_without_trailing_zeros }}</span>
                     </div>
                   </td>
                 </tr>
@@ -109,7 +109,7 @@
                   <td colspan="2">
                     <div class="h-stack gap-2 justify-between">
                       <span class="text-subdued">{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})</span>
-                      <span class="text-subdued text-end">{{ shipping_method.price | money }}</span>
+                      <span class="text-subdued text-end">{{ shipping_method.price | money_without_trailing_zeros }}</span>
                     </div>
                   </td>
                 </tr>
@@ -127,7 +127,7 @@
                           {{ 'customer.order.taxes_excluded' | t }} ({{ tax_line.title }} {{ tax_line.rate_percentage }}%)
                         {%- endif -%}
                       </span>
-                      <span class="text-subdued text-end">{{ tax_line.price | money }}</span>
+                      <span class="text-subdued text-end">{{ tax_line.price | money_without_trailing_zeros }}</span>
                     </div>
                   </td>
                 </tr>
@@ -139,7 +139,7 @@
                   <td colspan="2">
                     <div class="h-stack gap-2 justify-between">
                       <span class="text-subdued">{{ 'customer.order.total_duties' | t }}</span>
-                      <span class="text-subdued text-end">{{ order.total_duties | money }}</span>
+                      <span class="text-subdued text-end">{{ order.total_duties | money_without_trailing_zeros }}</span>
                     </div>
                   </td>
                 </tr>
@@ -151,7 +151,7 @@
                   <td colspan="2">
                     <div class="h-stack gap-2 justify-between">
                       <span class="text-subdued">{{ 'customer.order.refunded_amount' | t }}</span>
-                      <span class="text-subdued text-end">{{ order.total_refunded_amount | money }}</span>
+                      <span class="text-subdued text-end">{{ order.total_refunded_amount | money_without_trailing_zeros }}</span>
                     </div>
                   </td>
                 </tr>
@@ -162,7 +162,7 @@
                 <td colspan="2">
                   <div class="h-stack gap-2 justify-between">
                     <span class="text-lg">{{ 'customer.order.total' | t }}</span>
-                    <span class="text-lg text-end">{{ order.total_net_amount | money_with_currency }}</span>
+                    <span class="text-lg text-end">{{ order.total_net_amount | money_without_trailing_zeros }}</span>
                   </div>
                 </td>
               </tr>

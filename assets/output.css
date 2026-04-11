@@ -199,6 +199,9 @@
   .max-h-\[80vh\] {
     max-height: 80vh;
   }
+  .min-h-\[20px\] {
+    min-height: 20px;
+  }
   .w-\[16px\] {
     width: 16px;
   }

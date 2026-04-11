@@ -38,7 +38,6 @@ Supported variables
       <input type="hidden" name="q" value="{{ results.terms | escape }}">
     {%- endif -%}
 
-    <div class="flex gap-12">
       {%- if quick_links_menu.links.size > 0 -%}
         {%- capture filter_content -%}
           <div class="v-stack gap-2.5">
@@ -128,7 +127,6 @@ Supported variables
           {%- endif -%}
         {%- endfor -%}
       {%- endif -%}
-    </div>
 
     <noscript style="display: block; margin-top: 20px;">
       {%- assign button_content = 'collection.faceting.apply_filters' | t -%}

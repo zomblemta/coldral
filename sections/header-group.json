@@ -51,7 +51,6 @@
       ],
       "name": "Announcement Bar",
       "settings": {
-        "color_scheme": "",
         "enable_sticky": false,
         "scrolling_speed": 0.1,
         "scroll_direction": "left",

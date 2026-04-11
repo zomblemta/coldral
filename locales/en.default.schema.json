@@ -1013,6 +1013,35 @@
         }
       }
     },
+    "lookbook_image_stack": {
+      "name": "Lookbook image stack",
+      "layout_category": "Layout",
+      "spacing_category": "Spacing",
+      "padding_top": "Padding top",
+      "padding_bottom": "Padding bottom",
+      "gap_between_images": "Space between images",
+      "caption_position": "Caption position",
+      "caption_position_options": {
+        "above": "Above image",
+        "below": "Below image"
+      },
+      "blocks": {
+        "image": {
+          "name": "Image",
+          "desktop_image": "Image",
+          "mobile_image": "Mobile image",
+          "mobile_image_info": "Optional. Shown below 750px; uses the main image if empty.",
+          "alt_text": "Image alt text",
+          "caption": "Caption",
+          "caption_info": "Optional short label (e.g. collection name), uppercase styling."
+        }
+      },
+      "presets": {
+        "lookbook_image_stack": {
+          "name": "Lookbook image stack"
+        }
+      }
+    },
     "main_article": {
       "name": "Blog post",
       "comments_category_info": "Configure your blog to allow comments. [Learn more](https://help.shopify.com/en/manual/online-store/blogs/managing-comments#allow-or-disable-comments-on-a-blog)",

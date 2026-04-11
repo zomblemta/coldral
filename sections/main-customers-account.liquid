@@ -70,7 +70,7 @@
 
                                   <div>
                                     <p class="text-subdued">{{ 'customer.order.total' | t }}</p>
-                                    <p>{{ order.total_net_amount | money }}</p>
+                                    <p>{{ order.total_net_amount | money_without_trailing_zeros }}</p>
                                   </div>
                                 </div>
 
@@ -100,7 +100,7 @@
                               <td>{{ order.created_at | date: format: 'date' }}</td>
                               <td>{{ order.financial_status_label }}</td>
                               <td>{{ order.fulfillment_status_label }}</td>
-                              <td class="text-end">{{ order.total_net_amount | money }}</td>
+                              <td class="text-end">{{ order.total_net_amount | money_without_trailing_zeros }}</td>
                             </tr>
                           {%- endfor -%}
                         </tbody>

@@ -3834,6 +3834,9 @@ product-rerender {
   font-size: var(--announcement-bar-marquee-font-size, 0.6875rem);
   overflow: hidden;
   width: 100%;
+  background-color: rgb(var(--page-background));
+  background-image: none;
+  color: #000;
 }
 
 .announcement-bar-marquee__track {
@@ -3858,6 +3861,8 @@ product-rerender {
   flex-shrink: 0;
   padding-block: 0.25em;
   min-width: 100vw;
+  column-gap: var(--announcement-bar-marquee-gap, 2rem);
+  row-gap: 0;
 }
 
 .announcement-bar-marquee__item {
@@ -3865,9 +3870,15 @@ product-rerender {
   align-items: center;
   text-decoration: none;
   color: inherit;
-  margin-right: var(--announcement-bar-marquee-gap,200px) ;
-  padding-inline: calc(var(--announcement-bar-marquee-gap, 40px) / 2);
   transition: opacity 0.2s;
+}
+
+.announcement-bar-marquee .prose {
+  color: inherit;
+}
+
+.announcement-bar-marquee .prose > * {
+  margin-block: 0 !important;
 }
 
 a.announcement-bar-marquee__item:hover {
@@ -3879,7 +3890,8 @@ a.announcement-bar-marquee__item:hover {
 .announcement-bar-marquee__separator {
   display: inline-flex;
   align-items: center;
-  opacity: 0.6;
+  color: inherit;
+  opacity: 0.45;
   font-size: 0.6em;
   pointer-events: none;
   flex-shrink: 0;
@@ -7202,8 +7214,20 @@ a.announcement-bar-marquee__item:hover {
 }
 
 .text-on-sale {
-  font-size: var(--text-h4)!important;
+  font-size: 14px !important;
   line-height: 1.6;
+}
+
+@media screen and (min-width: 1000px) {
+  .text-on-sale {
+    font-size: var(--text-h4)!important;
+  }
+}
+
+.compare-at-price-text {
+  font-size: 12px !important;
+  font-weight: 300;
+  margin-left: 4px;
 }
 
 .bg-error, .bg-success, .bg-warning {

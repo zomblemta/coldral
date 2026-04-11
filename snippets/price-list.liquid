@@ -31,9 +31,9 @@ Supported variables
       assign unit_price_classes = base_text_class | append: 'text-subdued'
 
     when 'product'
-      assign regular_price_classes = base_text_class | append: 'h4 text-subdued'
+      assign regular_price_classes = base_text_class | append: 'h4'
       assign on_sale_price_classes = base_text_class | append: 'h4 text-on-sale'
-      assign compare_at_price_classes = base_text_class | append: 'h5 text-subdued line-through'
+      assign compare_at_price_classes = base_text_class | append: 'h5 text-subdued line-through compare-at-price-text'
       assign unit_price_classes = base_text_class | append: 'h6 text-subdued'
   endcase
 -%}
@@ -49,9 +49,9 @@ Supported variables
       <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
-        {{- variant.price | money -}}
+        {{- variant.price | money_without_trailing_zeros -}}
       {%- else -%}
-        {{- variant.price | money -}}
+        {{- variant.price | money_without_trailing_zeros -}}
       {%- endif -%}
     </sale-price>
 
@@ -60,9 +60,9 @@ Supported variables
         <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
 
         {%- if settings.currency_code_enabled -%}
-          {{- variant.compare_at_price | money -}}
+          {{- variant.compare_at_price | money_without_trailing_zeros -}}
         {%- else -%}
-          {{- variant.compare_at_price | money -}}
+          {{- variant.compare_at_price | money_without_trailing_zeros -}}
         {%- endif -%}
       </compare-at-price>
     {%- endif -%}
@@ -76,9 +76,9 @@ Supported variables
       <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
-        {{- line_item.final_price | money -}}
+        {{- line_item.final_price | money_without_trailing_zeros -}}
       {%- else -%}
-        {{- line_item.final_price | money -}}
+        {{- line_item.final_price | money_without_trailing_zeros -}}
       {%- endif -%}
     </sale-price>
 
@@ -87,9 +87,9 @@ Supported variables
         <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
 
         {%- if settings.currency_code_enabled -%}
-          {{- line_item.variant.compare_at_price | default: line_item.original_price | money -}}
+          {{- line_item.variant.compare_at_price | default: line_item.original_price | money_without_trailing_zeros -}}
         {%- else -%}
-          {{- line_item.variant.compare_at_price | default: line_item.original_price | money -}}
+          {{- line_item.variant.compare_at_price | default: line_item.original_price | money_without_trailing_zeros -}}
         {%- endif -%}
       </compare-at-price>
     {%- endif -%}
@@ -107,11 +107,11 @@ Supported variables
       endif
 
       if settings.currency_code_enabled
-        assign variant_price = variant.price | money
-        assign variant_compare_at_price = variant.compare_at_price | money
+        assign variant_price = variant.price | money_without_trailing_zeros
+        assign variant_compare_at_price = variant.compare_at_price | money_without_trailing_zeros
       else
-        assign variant_price = variant.price | money
-        assign variant_compare_at_price = variant.compare_at_price | money
+        assign variant_price = variant.price | money_without_trailing_zeros
+        assign variant_compare_at_price = variant.compare_at_price | money_without_trailing_zeros
       endif
     -%}
 
@@ -157,9 +157,9 @@ Supported variables
       <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
-        {{- 4999 | money_with_currency -}}
+        {{- 4999 | money_without_trailing_zeros -}}
       {%- else -%}
-        {{- 4999 | money -}}
+        {{- 4999 | money_without_trailing_zeros -}}
       {%- endif -%}
     </sale-price>
   {%- endif -%}
@@ -175,12 +175,12 @@ Supported variables
           {%- assign reference_value = unit_price_measurement.reference_value -%}
         {%- endif -%}
 
-        ({{ unit_price_item.unit_price | money }}/{{ reference_value }}{{ unit_price_measurement.reference_unit }})
+        ({{ unit_price_item.unit_price | money_without_trailing_zeros }}/{{ reference_value }}{{ unit_price_measurement.reference_unit }})
       </unit-price>
     {%- endif -%}
   {%- endunless -%}
 
-  {%- if context == 'product' and localization.country.continent == 'Europe' -%}
+  {%- if context == 'product' and localization.country.continent == 'Europe' and localization.country.iso_code != 'GB' and localization.country.iso_code != 'CH' -%}
     <p class="price-list__tax-note">{{ 'product.general.taxes_included' | t }}</p>
   {%- endif -%}
 </price-list>

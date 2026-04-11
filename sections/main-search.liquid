@@ -94,7 +94,7 @@
                   >
                     <div class="flex flex-col  gap-1">
                       <div class="flex  w-full justify-between pr-12">
-                      {%- if show_filters or section.settings.show_sort_by -%}
+                      {% comment %} {%- if show_filters or section.settings.show_sort_by -%}
                         <height-observer variable="collection-toolbar" class="collection-toolbar  w-full md:w-auto full-bleed">
                           <div class="collection-toolbar__button-list">
                             {%- if show_filters -%}
@@ -190,7 +190,7 @@
                             context: 'sidebar'
                           -%}
                         </safe-sticky>
-                      {%- endif -%}
+                      {%- endif -%} {% endcomment %}
                       </div>
 
                       <div class="flex flex-col gap-1 ">

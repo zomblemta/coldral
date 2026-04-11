@@ -191,8 +191,8 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
 
           {%- unless disable_slider -%}
             <div class="swiper-pagination {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
-            {% comment %} <div class="swiper-button-prev hidden {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
-            <div class="swiper-button-next hidden {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div> {% endcomment %}
+         <div class="swiper-button-prev hidden {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
+            <div class="swiper-button-next hidden {% if disable_slider_mobile %}hide-on-mobile{% endif %}"></div>
           {%- endunless -%}
         </div>
       </div>
@@ -273,7 +273,7 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
           <div class="product-card__price-wrapper">
             {%- if is_sold_out -%}
               <span class="product-card__price product-card__price--regular">
-                {{ variant.price | money }}
+                {{ variant.price | money_without_trailing_zeros }}
               </span>
             {%- else -%}
               {%- assign price = variant.price -%}
@@ -281,14 +281,14 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
 
               {%- if compare_at_price > price -%}
                 <span class="product-card__price product-card__price--sale">
-                  {{ price | money }}
+                  {{ price | money_without_trailing_zeros }}
                 </span>
                 <span class="product-card__price product-card__price--compare">
-                  {{ compare_at_price | money }}
+                  {{ compare_at_price | money_without_trailing_zeros }}
                 </span>
               {%- else -%}
                 <span class="product-card__price product-card__price--regular">
-                  {{ price | money }}
+                  {{ price | money_without_trailing_zeros }}
                 </span>
               {%- endif -%}
             {%- endif -%}
@@ -483,14 +483,6 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   letter-spacing: 1px;
   z-index: 5;
   pointer-events: none;
-}
-
-.product-card--sold-out .product-card__image {
-  opacity: 0.5;
-  filter: grayscale(100%);
-}
-.product-card--sold-out .product-card__title-link {
-  color: #888;
 }
 
 /* =========================================================
@@ -878,11 +870,6 @@ PRODUCT CARD - LOGIQUE STOCK ROBUSTE + DESIGN / ANIMATIONS PRESTIGE
   font-weight: 700;
   letter-spacing: 1px;
   z-index: 5;
-}
-
-.product-card--sold-out .product-card__image {
-  opacity: 0.5;
-  filter: grayscale(100%);
 }
 
 .product-card__overlay-info {

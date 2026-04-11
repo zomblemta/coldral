@@ -1374,7 +1374,6 @@ var FreeShippingBar = class extends HTMLElement {
     __privateAdd(this, _currencyFormatter, new Intl.NumberFormat(Shopify.locale, { style: "currency", currency: Shopify.currency.active }));
     __privateAdd(this, _threshold);
     __privateSet(this, _threshold, parseFloat(this.getAttribute("threshold").replace(/[^0-9.]/g, "")) * 100);
-    this.setAttribute("threshold", __privateGet(this, _threshold));
   }
   static get observedAttributes() {
     return ["threshold", "total-price", "reached-message", "unreached-message"];

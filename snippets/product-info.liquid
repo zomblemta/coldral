@@ -233,11 +233,13 @@ document.addEventListener('click', function (e) {
             {%- endif -%}
 
           {%- when 'title' -%}
+              <div class="product-title-tag  text-xs mb-1 min-h-[20px]">
             {%- if product.metafields.custom.prouduct_tag != blank -%}
-              <div class="product-title-tag  text-xs mb-1">
+
                 {{ product.metafields.custom.prouduct_tag.value }}
-              </div>
             {%- endif -%}
+
+              </div>
             <div class="product-title-container w-full flex md:flex-col justify-between items-start ">
             {%- if product != blank -%}
               {%- assign product_title = product.title -%}
@@ -379,7 +381,7 @@ document.addEventListener('click', function (e) {
                     </div>
                   {%- endif -%}
 
-                  <div class="variant-picker__option-values h-stack gap-2.5 wrap">
+                  <div class="variant-picker__option-values h-stack gap-2.5 wrap mb-2">
                     {%- liquid
                       for product_variation in block.settings.products
                         assign label = product_variation.metafields[metafield_namespace][metafield_key].value
@@ -773,7 +775,7 @@ document.addEventListener('click', function (e) {
   /* Décalage de la colonne d'infos sur desktop (inchangé) */
   @media screen and (min-width: 768px) {
     .product-info__block-list {
-      margin-top: 3rem;
+      margin-top: 10rem;
     }
   }
 
@@ -782,6 +784,9 @@ document.addEventListener('click', function (e) {
    et n'utiliser qu'une barre en bas comme indicateur
    ============================================================ */
 
+   .variant-picker__option-values {
+    margin-bottom: 10px;
+   }
   /* Base : pas de bordure visible + ancre pour ::after */
   .variant-picker__option-values label,
   .variant-picker__option-values a {

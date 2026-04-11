@@ -254,9 +254,9 @@
           {{ product.title }}
         </a>
       <div class="alp-product-small-look-item-content-price-container">
-        <span class="alp-product-small-look-item-content-price">{{ product.price | money }}</span>
+        <span class="alp-product-small-look-item-content-price">{{ product.price | money_without_trailing_zeros }}</span>
         {% if product.compare_at_price > product.price %}
-          <span class="alp-product-small-look-item-content-compare-at-price">{{ product.compare_at_price | money }}</span>
+          <span class="alp-product-small-look-item-content-compare-at-price">{{ product.compare_at_price | money_without_trailing_zeros }}</span>
         {% endif %}
       </div>
       {%- if color_option_value != blank -%}

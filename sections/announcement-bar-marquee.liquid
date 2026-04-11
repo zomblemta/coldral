@@ -1,4 +1,47 @@
-{%- if section.blocks.size > 0 -%}
+{%- liquid
+  assign announcement_has_visible_block = false
+  for block in section.blocks
+    assign item_text = block.settings.text
+    if item_text == blank
+      continue
+    endif
+    assign show_region_block = false
+    assign region = block.settings.show_for_region | default: 'all'
+    case region
+      when 'all'
+        assign show_region_block = true
+      when 'usa'
+        if localization.country.iso_code == 'US'
+          assign show_region_block = true
+        endif
+      when 'australia'
+        if localization.country.iso_code == 'AU'
+          assign show_region_block = true
+        endif
+      when 'europe'
+        if localization.country.continent == 'Europe' and localization.country.iso_code != 'GB' and localization.country.iso_code != 'CH'
+          assign show_region_block = true
+        endif
+      when 'uk'
+        if localization.country.iso_code == 'GB'
+          assign show_region_block = true
+        endif
+      when 'canada'
+        if localization.country.iso_code == 'CA'
+          assign show_region_block = true
+        endif
+      when 'switzerland'
+        if localization.country.iso_code == 'CH'
+          assign show_region_block = true
+        endif
+    endcase
+    if show_region_block
+      assign announcement_has_visible_block = true
+      break
+    endif
+  endfor
+-%}
+{%- if announcement_has_visible_block -%}
   <style>
     :root {
       --announcement-bar-is-sticky: {% if section.settings.enable_sticky %}1{% else %}0{% endif %};
@@ -42,7 +85,7 @@
   </style>
 
   <height-observer variable="announcement-bar ">
-    <div class=" announcement-bar-marquee color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
+    <div class="announcement-bar-marquee">
       <marquee-text
         speed="{{ section.settings.scrolling_speed }}"
         direction="{{ section.settings.scroll_direction }}"
@@ -50,9 +93,47 @@
         class="announcement-bar-marquee__track"
       >
         <div class="announcement-bar-marquee__list">
+          {%- assign announcement_first_visible = true -%}
           {%- for block in section.blocks -%}
-            {%- assign item_text = block.settings.text -%}
-            {%- if item_text != blank -%}
+            {%- liquid
+              assign item_text = block.settings.text
+              assign show_region_block = false
+              assign region = block.settings.show_for_region | default: 'all'
+
+              case region
+                when 'all'
+                  assign show_region_block = true
+                when 'usa'
+                  if localization.country.iso_code == 'US'
+                    assign show_region_block = true
+                  endif
+                when 'australia'
+                  if localization.country.iso_code == 'AU'
+                    assign show_region_block = true
+                  endif
+                when 'europe'
+                  if localization.country.continent == 'Europe' and localization.country.iso_code != 'GB' and localization.country.iso_code != 'CH'
+                    assign show_region_block = true
+                  endif
+                when 'uk'
+                  if localization.country.iso_code == 'GB'
+                    assign show_region_block = true
+                  endif
+                when 'canada'
+                  if localization.country.iso_code == 'CA'
+                    assign show_region_block = true
+                  endif
+                when 'switzerland'
+                  if localization.country.iso_code == 'CH'
+                    assign show_region_block = true
+                  endif
+              endcase
+            -%}
+            {%- if show_region_block and item_text != blank -%}
+              {%- unless announcement_first_visible -%}
+                <span class="announcement-bar-marquee__separator" aria-hidden="true">{{ section.settings.separator }}</span>
+              {%- endunless -%}
+              {%- assign announcement_first_visible = false -%}
               {%- if block.settings.url != blank -%}
                 <a href="{{ block.settings.url }}" class="announcement-bar-marquee__item" {{ block.shopify_attributes }}>
                   <span class="prose">{{- item_text -}}</span>
@@ -62,10 +143,6 @@
                   <span class="prose">{{- item_text -}}</span>
                 </span>
               {%- endif -%}
-
-              {%- unless forloop.last and section.blocks.size == 1 -%}
-                <span class="announcement-bar-marquee__separator" aria-hidden="true">{{ section.settings.separator }}</span>
-              {%- endunless -%}
             {%- endif -%}
           {%- endfor -%}
         </div>
@@ -99,17 +176,48 @@
           "type": "url",
           "id": "url",
           "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "show_for_region",
+          "label": "Show for market / region",
+          "options": [
+            {
+              "value": "all",
+              "label": "All markets"
+            },
+            {
+              "value": "usa",
+              "label": "USA"
+            },
+            {
+              "value": "australia",
+              "label": "Australia"
+            },
+            {
+              "value": "europe",
+              "label": "Europe (excl. UK & Switzerland)"
+            },
+            {
+              "value": "uk",
+              "label": "UK"
+            },
+            {
+              "value": "canada",
+              "label": "Canada"
+            },
+            {
+              "value": "switzerland",
+              "label": "Switzerland"
+            }
+          ],
+          "default": "all",
+          "info": "Based on the visitor’s selected country. Europe excludes UK and Switzerland (same as product tax note logic in this theme)."
         }
       ]
     }
   ],
   "settings": [
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:global.colors.scheme",
-      "default": "scheme-3"
-    },
     {
       "type": "checkbox",
       "id": "enable_sticky",
