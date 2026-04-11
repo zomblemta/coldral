@@ -100,9 +100,10 @@ Supported variables
           {%- endif -%}
 
           {%- if size_label_list contains option_downcase -%}
-            <div class="flex cursor-pointer items-center gap-x-[10px]" data-size-guide-trigger>
+            {% comment %} <div class="flex cursor-pointer items-center gap-x-[10px]" data-size-guide-trigger>
               <p class="text-sm font-normal tracking-[1.2px] underline m-0">Size Guide</p>
-            </div>
+            </div> {% endcomment %}
+            <div id="sizefox-container"></div>
           {%- endif -%}
         </div>
 
