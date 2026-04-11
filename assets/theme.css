@@ -3834,9 +3834,11 @@ product-rerender {
   font-size: var(--announcement-bar-marquee-font-size, 0.6875rem);
   overflow: hidden;
   width: 100%;
-  background-color: rgb(var(--page-background));
+  background-color: #000;
   background-image: none;
-  color: #000;
+  color: #fff;
+  /* Slows marquee vs theme setting: larger = slower (multiplies animation duration). */
+  --marquee-duration-multiplier: 2.5;
 }
 
 .announcement-bar-marquee__track {

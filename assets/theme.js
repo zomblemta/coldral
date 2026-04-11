@@ -118,7 +118,7 @@ initialize_fn = function() {
   }
   this.append(fragment);
   __privateSet(this, _currentAnimation, animate(__privateGet(this, _MarqueeText_instances, scroller_get), { transform: ["translateX(0)", `translateX(calc(var(--transform-logical-flip) * ${__privateGet(this, _MarqueeText_instances, direction_get) * 100}%))`] }, {
-    duration: 1 / parseFloat(this.getAttribute("speed")) * (__privateGet(this, _MarqueeText_instances, scroller_get).clientWidth / 300),
+    duration: 1 / parseFloat(this.getAttribute("speed")) * (__privateGet(this, _MarqueeText_instances, scroller_get).clientWidth / 300) * (parseFloat(getComputedStyle(this).getPropertyValue("--marquee-duration-multiplier").trim()) || 1),
     easing: "linear",
     repeat: Infinity
   }));
