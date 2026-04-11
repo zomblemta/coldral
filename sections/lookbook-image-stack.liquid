@@ -10,10 +10,12 @@
 
 {%- if lookbook_show -%}
   {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
+  {%- assign lookbook_col_gap = section.settings.gap_between_columns | default: section.settings.gap_between_images | default: 12 -%}
 
   <style>
     #shopify-section-{{ section.id }} {
-      --lookbook-stack-gap: {{ section.settings.gap_between_images }}px;
+      --lookbook-row-gap: {{ section.settings.gap_between_images }}px;
+      --lookbook-col-gap: {{ lookbook_col_gap }}px;
       --lookbook-stack-pt: {{ section.settings.padding_top }}px;
       --lookbook-stack-pb: {{ section.settings.padding_bottom }}px;
       --lookbook-image-v: {{ section.settings.image_vertical_spacing }}px;
@@ -27,12 +29,14 @@
     #shopify-section-{{ section.id }} .lookbook-image-stack__grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: var(--lookbook-stack-gap);
+      row-gap: var(--lookbook-row-gap);
+      column-gap: 0;
     }
 
     @media screen and (min-width: 750px) {
       #shopify-section-{{ section.id }} .lookbook-image-stack__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: var(--lookbook-col-gap);
       }
     }
 
@@ -148,7 +152,7 @@
                 </picture>
               {%- else -%}
                 {%- assign widths = '375,550,750,1100,1500,2000,2400,3000' -%}
-                {%- capture lookbook_sizes -%}(max-width: 749px) calc(100vw - 28px), calc((100vw - 100px - {{ section.settings.gap_between_images }}px) / 2){%- endcapture -%}
+                {%- capture lookbook_sizes -%}(max-width: 749px) calc(100vw - 28px), calc((100vw - 100px - {{ lookbook_col_gap }}px) / 2){%- endcapture -%}
                 {{ block.settings.image
                   | image_url: width: 2400
                   | image_tag:
@@ -291,6 +295,17 @@
     },
     {
       "type": "range",
+      "id": "gap_between_columns",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.lookbook_image_stack.gap_between_columns",
+      "info": "t:sections.lookbook_image_stack.gap_between_columns_info",
+      "default": 12
+    },
+    {
+      "type": "range",
       "id": "image_vertical_spacing",
       "min": 0,
       "max": 80,
@@ -379,6 +394,7 @@
         "subheading": "Spring collection",
         "heading_alignment": "start",
         "gap_between_images": 12,
+        "gap_between_columns": 12,
         "image_vertical_spacing": 12
       },
       "blocks": [

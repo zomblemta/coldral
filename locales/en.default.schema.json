@@ -1020,7 +1020,9 @@
       "spacing_category": "Spacing",
       "padding_top": "Padding top",
       "padding_bottom": "Padding bottom",
-      "gap_between_images": "Space between images",
+      "gap_between_images": "Space between rows",
+      "gap_between_columns": "Space between columns (desktop)",
+      "gap_between_columns_info": "Only applies when two columns are shown (750px and up).",
       "image_vertical_spacing": "Image vertical padding",
       "caption_position": "Caption position",
       "caption_position_options": {
