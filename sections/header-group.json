@@ -39,22 +39,12 @@
             "url": "",
             "show_for_region": "all"
           }
-        },
-        "message_3wPDiC": {
-          "type": "message",
-          "name": "EU",
-          "settings": {
-            "text": "EU taxes included",
-            "url": "",
-            "show_for_region": "europe"
-          }
         }
       },
       "block_order": [
         "message_baW4Xa",
         "message_MQGTWX",
-        "message_fYzkGi",
-        "message_3wPDiC"
+        "message_fYzkGi"
       ],
       "name": "Announcement Bar",
       "settings": {
