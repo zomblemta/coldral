@@ -83,7 +83,16 @@
           "settings": {
             "text": "Free shipping over AUD $300",
             "url": "",
-            "show_for_region": "all"
+            "show_for_region": "australia"
+          }
+        },
+        "message_RPxWaF": {
+          "type": "message",
+          "name": "SWISS",
+          "settings": {
+            "text": "Free shipping over CHF 250",
+            "url": "",
+            "show_for_region": "switzerland"
           }
         }
       },
@@ -95,7 +104,8 @@
         "message_zTweiN",
         "message_YKDeVn",
         "message_fAedrF",
-        "message_QqTGbm"
+        "message_QqTGbm",
+        "message_RPxWaF"
       ],
       "name": "Announcement Bar",
       "settings": {
