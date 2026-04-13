@@ -32,10 +32,18 @@
             "show_for_region": "europe"
           }
         },
+        "message_ipcFdT": {
+          "type": "message",
+          "settings": {
+            "text": "EU taxes included",
+            "url": "",
+            "show_for_region": "all"
+          }
+        },
         "message_fYzkGi": {
           "type": "message",
           "settings": {
-            "text": "Early access & 10% off your first order",
+            "text": "Members exclusive benefits",
             "url": "",
             "show_for_region": "all"
           }
@@ -44,6 +52,7 @@
       "block_order": [
         "message_baW4Xa",
         "message_MQGTWX",
+        "message_ipcFdT",
         "message_fYzkGi"
       ],
       "name": "Announcement Bar",
