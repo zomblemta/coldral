@@ -58,6 +58,15 @@
             "url": "",
             "show_for_region": "uk"
           }
+        },
+        "message_YKDeVn": {
+          "type": "message",
+          "name": "UK",
+          "settings": {
+            "text": "Free shipping over CAD $300",
+            "url": "",
+            "show_for_region": "canada"
+          }
         }
       },
       "block_order": [
@@ -65,7 +74,8 @@
         "message_fYzkGi",
         "message_MQGTWX",
         "message_ipcFdT",
-        "message_zTweiN"
+        "message_zTweiN",
+        "message_YKDeVn"
       ],
       "name": "Announcement Bar",
       "settings": {
