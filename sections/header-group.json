@@ -20,7 +20,7 @@
           "settings": {
             "text": "International shipping",
             "url": "",
-            "show_for_region": "europe"
+            "show_for_region": "all"
           }
         },
         "message_fYzkGi": {
@@ -49,13 +49,23 @@
             "url": "",
             "show_for_region": "europe"
           }
+        },
+        "message_zTweiN": {
+          "type": "message",
+          "name": "UK",
+          "settings": {
+            "text": "Free shipping over £200",
+            "url": "",
+            "show_for_region": "uk"
+          }
         }
       },
       "block_order": [
         "message_baW4Xa",
         "message_fYzkGi",
         "message_MQGTWX",
-        "message_ipcFdT"
+        "message_ipcFdT",
+        "message_zTweiN"
       ],
       "name": "Announcement Bar",
       "settings": {
