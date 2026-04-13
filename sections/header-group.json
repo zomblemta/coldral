@@ -54,7 +54,7 @@
         "scroll_direction": "left",
         "pause_on_hover": true,
         "separator": "",
-        "item_gap": 80,
+        "item_gap": 50,
         "desktop_font_size": 13,
         "mobile_font_size": 11
       }
