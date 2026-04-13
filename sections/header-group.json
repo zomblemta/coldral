@@ -25,9 +25,9 @@
         "message_MQGTWX": {
           "type": "message",
           "settings": {
-            "text": "Free shipping in Europe over €200",
+            "text": "Free shipping over €200",
             "url": "",
-            "show_for_region": "all"
+            "show_for_region": "europe"
           }
         },
         "message_3wPDiC": {
