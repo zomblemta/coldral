@@ -37,21 +37,12 @@
             "url": "",
             "show_for_region": "europe"
           }
-        },
-        "message_aM4z8r": {
-          "type": "message",
-          "settings": {
-            "text": "14-day returns",
-            "url": "",
-            "show_for_region": "all"
-          }
         }
       },
       "block_order": [
         "message_baW4Xa",
         "message_MQGTWX",
-        "message_3wPDiC",
-        "message_aM4z8r"
+        "message_3wPDiC"
       ],
       "name": "Announcement Bar",
       "settings": {
