@@ -76,6 +76,15 @@
             "url": "",
             "show_for_region": "usa"
           }
+        },
+        "message_QqTGbm": {
+          "type": "message",
+          "name": "AUD",
+          "settings": {
+            "text": "Free shipping over AUD $300",
+            "url": "",
+            "show_for_region": "all"
+          }
         }
       },
       "block_order": [
@@ -85,7 +94,8 @@
         "message_ipcFdT",
         "message_zTweiN",
         "message_YKDeVn",
-        "message_fAedrF"
+        "message_fAedrF",
+        "message_QqTGbm"
       ],
       "name": "Announcement Bar",
       "settings": {
