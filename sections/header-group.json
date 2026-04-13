@@ -16,11 +16,11 @@
       "blocks": {
         "message_baW4Xa": {
           "type": "message",
-          "name": "EU ",
+          "name": "All market",
           "settings": {
             "text": "International shipping",
             "url": "",
-            "show_for_region": "all"
+            "show_for_region": "europe"
           }
         },
         "message_MQGTWX": {
