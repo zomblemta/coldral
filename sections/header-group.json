@@ -23,6 +23,15 @@
             "show_for_region": "europe"
           }
         },
+        "message_fYzkGi": {
+          "type": "message",
+          "name": "All market",
+          "settings": {
+            "text": "Early access for members",
+            "url": "",
+            "show_for_region": "all"
+          }
+        },
         "message_MQGTWX": {
           "type": "message",
           "name": "EU",
@@ -34,26 +43,19 @@
         },
         "message_ipcFdT": {
           "type": "message",
+          "name": "EU",
           "settings": {
             "text": "EU taxes included",
             "url": "",
-            "show_for_region": "all"
-          }
-        },
-        "message_fYzkGi": {
-          "type": "message",
-          "settings": {
-            "text": "Early access for members",
-            "url": "",
-            "show_for_region": "all"
+            "show_for_region": "europe"
           }
         }
       },
       "block_order": [
         "message_baW4Xa",
+        "message_fYzkGi",
         "message_MQGTWX",
-        "message_ipcFdT",
-        "message_fYzkGi"
+        "message_ipcFdT"
       ],
       "name": "Announcement Bar",
       "settings": {
