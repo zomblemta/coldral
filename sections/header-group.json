@@ -70,11 +70,11 @@
         },
         "message_fAedrF": {
           "type": "message",
-          "name": "UK",
+          "name": "USA",
           "settings": {
-            "text": "Free shipping over CAD $300",
+            "text": "Free shipping over $300",
             "url": "",
-            "show_for_region": "canada"
+            "show_for_region": "usa"
           }
         }
       },
