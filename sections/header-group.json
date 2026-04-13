@@ -16,6 +16,7 @@
       "blocks": {
         "message_baW4Xa": {
           "type": "message",
+          "name": "EU ",
           "settings": {
             "text": "International shipping",
             "url": "",
@@ -24,6 +25,7 @@
         },
         "message_MQGTWX": {
           "type": "message",
+          "name": "EU",
           "settings": {
             "text": "Free shipping over €200",
             "url": "",
@@ -32,6 +34,7 @@
         },
         "message_3wPDiC": {
           "type": "message",
+          "name": "EU",
           "settings": {
             "text": "EU taxes included",
             "url": "",
