@@ -48,22 +48,13 @@
             "url": "",
             "show_for_region": "europe"
           }
-        },
-        "message_XrAwz4": {
-          "type": "message",
-          "settings": {
-            "text": "",
-            "url": "",
-            "show_for_region": "all"
-          }
         }
       },
       "block_order": [
         "message_baW4Xa",
         "message_MQGTWX",
         "message_fYzkGi",
-        "message_3wPDiC",
-        "message_XrAwz4"
+        "message_3wPDiC"
       ],
       "name": "Announcement Bar",
       "settings": {
