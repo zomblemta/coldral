@@ -57,16 +57,6 @@
         "disabled": false,
         "settings": {}
       },
-      "9752555012629308362": {
-        "type": "shopify://apps/parkour-facebook-pixel/blocks/threasury_pixel/f23b2ffe-4c53-446e-ad3a-7976ffbee5c2",
-        "disabled": false,
-        "settings": {}
-      },
-      "2104245418471043333": {
-        "type": "shopify://apps/17track/blocks/app-embed/1519e068-e330-4e0b-92dd-0a3263bfceda",
-        "disabled": false,
-        "settings": {}
-      },
       "776302416715791028": {
         "type": "shopify://apps/bucks/blocks/app-embed/4f0a9b06-9da4-4a49-b378-2de9d23a3af3",
         "disabled": true,
@@ -307,6 +297,11 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      ".smartsize-dialog {height: auto !important; max-height: 90vh !important; display: inline-block !important;}",
+      ".smartsize-dialog__content,.smartsize-dialog__inner {height: auto !important;}",
+      ".smartsize-dialog table {margin-bottom: 0 !important;}",
+      ".smartsize-button__label::after {transform-origin: center;}"
+    ]
   }
 }
