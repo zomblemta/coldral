@@ -298,10 +298,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".smartsize-dialog {height: auto !important; max-height: 90vh !important; display: inline-block !important;}",
-      ".smartsize-dialog__content,.smartsize-dialog__inner {height: auto !important;}",
-      ".smartsize-dialog table {margin-bottom: 0 !important;}",
-      ".smartsize-button__label::after {transform-origin: center;}"
+      "#smartsize-dialog {height: auto !important; max-height: 90vh !important;}"
     ]
   }
 }
