@@ -103,13 +103,16 @@ Supported variables
           {%- if size_label_list contains option_downcase -%} 
            
             <div class="flex cursor-pointer items-center gap-x-[10px]" id="sizefox-container" data-size-guide-trigger>
-              <p class="text-sm font-normal tracking-[1.2px] underline m-0">Size Guide</p>
+{% comment %}              <p class="text-sm font-normal tracking-[1.2px] underline m-0">Size Guide</p> {% endcomment %}  
+
+             <div class="smartsize-trigger-button"></div>
+
             </div>
+
 
              {%- endif -%}
           </div>
 
-        <div class="smartsize-trigger-button"></div>
 
         {%- assign name = 'option' | append: option.position -%}
 
