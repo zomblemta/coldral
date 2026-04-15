@@ -102,13 +102,10 @@ Supported variables
          
           {%- if size_label_list contains option_downcase -%} 
            
-           {% comment %}     <div class="flex cursor-pointer items-center gap-x-[10px]" id="sizefox-container" data-size-guide-trigger>
-          <p class="text-sm font-normal tracking-[1.2px] underline m-0">Size Guide</p> {% endcomment %}  
-            <div class="flex cursor-pointer items-center gap-x-[10px]" >
-               {% comment %} <p class="text-sm font-normal tracking-[1.2px] underline m-0 smartsize-trigger-button">Size Guide</p>{% endcomment %}
-                <a class="flex cursor-pointer items-center gap-x-[10px]" href="#" onclick="event.preventDefault(); window.smartsize && window.smartsize.openModal();">
-  Size Guide
-</a>
+            <div class="flex cursor-pointer items-center gap-x-[10px] underline" >
+              <a href="#" onclick="event.preventDefault(); window.smartsize && window.smartsize.openModal();">
+                Size Guide
+              </a>
             </div>
 
 
