@@ -88,8 +88,8 @@
         "image_position": "right",
         "full_width": false,
         "color_scheme": "",
-        "padding_top": 12,
-        "padding_bottom": 12
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_text_block_ffwMyT": {
@@ -102,7 +102,7 @@
         "image_position": "left",
         "full_width": false,
         "color_scheme": "",
-        "padding_top": 16,
+        "padding_top": 0,
         "padding_bottom": 16
       }
     }
