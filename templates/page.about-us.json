@@ -20,37 +20,6 @@
     },
     "slideshow_VTyr47": {
       "type": "slideshow",
-      "blocks": {
-        "image_E8DDkV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/000006200036.jpg",
-            "subheading": "",
-            "title": "about us",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-start-center sm:text-center",
-            "content_max_width": 780,
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "",
-            "background_opacity": 50,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
-          }
-        }
-      },
-      "block_order": [
-        "image_E8DDkV"
-      ],
       "name": "t:sections.slideshow.presets.slideshow.name",
       "settings": {
         "allow_transparent_header": true,
@@ -112,6 +81,21 @@
     },
     "1776362706e4fd172e": {
       "type": "_blocks",
+      "blocks": {
+        "rich_text_T3Wxj4": {
+          "type": "rich-text",
+          "name": "t:blocks.rich_text.name",
+          "settings": {
+            "text": "<h3>The Origin</h3><p><br/> Cold ral was founded on a clear and uncompromising idea: designing essential pieces meant to last, independent of trends. The brand draws its foundations from the structured silhouettes of the 1950s and 1960s, reinterpreted through softer and wider volumes inspired by Japanese and Korean design culture. A dialogue between rigor and fluidity.<br/>  </p><h3>The Philosophy</h3><p><br/>  We believe that classics deserve to be rebuilt with precision. Modernised, but never distorted. Every garment is developed with a strict attention to proportion, balance and material integrity. Nothing is decorative. Nothing is excessive. Each decision serves function, longevity and coherence.<br/></p>",
+            "content_width": "sm",
+            "text_position": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "rich_text_T3Wxj4"
+      ],
       "settings": {}
     }
   },
