@@ -21,10 +21,32 @@
     "lookbook_image_stack_iaFNGG": {
       "type": "lookbook-image-stack",
       "blocks": {
+        "image_nBNtwc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_2.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_MQ84Nk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_3.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
         "image_aG6ddG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Up3_db8c571c-eea6-4fd5-b003-58ad3fc0c748.webp",
+            "image": "shopify://shop_images/color-graded_1.png",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -35,7 +57,7 @@
         "image_BUU7kt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Up5_61d76b55-cff5-4e7f-a458-b87d535d22bf.webp",
+            "image": "shopify://shop_images/color-graded.png",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -43,10 +65,131 @@
             "caption_alignment": "center"
           }
         },
-        "image_nBNtwc": {
+        "image_VjKxgq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Main2_9e5fa2ba-4856-4e03-b4c9-a79ea46491ab.webp",
+            "image": "shopify://shop_images/color-graded_11.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_6HJGEc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_5.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_YKghNc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_4.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_nwqiar": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_7.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_mfgFXP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_10.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_aN84Gq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_9.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_nahbn8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_12.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_8zcbTX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_18.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_cAr6UF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_14.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_X6VVTV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_15.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_iAcYdd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_17.png",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_KWJUE7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/color-graded_16.png",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -56,18 +199,36 @@
         }
       },
       "block_order": [
+        "image_nBNtwc",
+        "image_MQ84Nk",
         "image_aG6ddG",
         "image_BUU7kt",
-        "image_nBNtwc"
+        "image_VjKxgq",
+        "image_6HJGEc",
+        "image_YKghNc",
+        "image_nwqiar",
+        "image_mfgFXP",
+        "image_aN84Gq",
+        "image_nahbn8",
+        "image_8zcbTX",
+        "image_cAr6UF",
+        "image_X6VVTV",
+        "image_iAcYdd",
+        "image_KWJUE7"
       ],
       "name": "t:sections.lookbook_image_stack.presets.lookbook_image_stack.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "section_width": "full",
+        "subheading": "",
+        "heading": "Spring 2026",
+        "content": "",
+        "heading_alignment": "start",
         "padding_top": 0,
         "padding_bottom": 0,
-        "gap_between_images": 0
+        "gap_between_images": 0,
+        "gap_between_columns": 12,
+        "image_vertical_spacing": 12
       }
     }
   },
