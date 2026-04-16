@@ -103,9 +103,23 @@ Supported variables
           {%- if size_label_list contains option_downcase -%} 
            
             <div class="flex cursor-pointer items-center gap-x-[10px] underline" >
-              <a href="#" onclick="event.preventDefault(); window.smartsize && window.smartsize.openModal();">
+              <a 
+                id="smartsize-size-guide-link"
+                href="#" 
+                style="display: none;"
+                onclick="event.preventDefault(); window.smartsize.openModal();"
+              >
                 Size Guide
               </a>
+
+              <script>
+                (function init() {
+                  if (!window.smartsize) { setTimeout(init, 100); return; }
+                  if (window.smartsize.hasChart()) {
+                    document.getElementById('smartsize-size-guide-link').style.display = '';
+                  }
+                })();
+              </script>
             </div>
 
 
