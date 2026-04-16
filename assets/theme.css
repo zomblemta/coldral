@@ -3858,6 +3858,7 @@ product-rerender {
 }
 
 .announcement-bar-marquee__list {
+  padding-left: 72px;
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;

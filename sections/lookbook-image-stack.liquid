@@ -98,18 +98,24 @@
       line-height: 1.45;
       letter-spacing: 0.04em;
     }
+
+    #shopify-section-{{ section.id }} .lookbook-page-title {
+      margin: 0 0 0.5em;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+    }
   </style>
 
   <div class="color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
     <div class="px-[14px] md:px-[50px]">
       <div class="lookbook-image-stack__wrap">
-        <div class="section-stack">
-          {%- render 'section-header',
-            subheading: section.settings.subheading,
-            heading: section.settings.heading,
-            content: section.settings.content,
-            text_alignment: section.settings.heading_alignment
-          -%}
+        <div class="grid grid-cols-1 gap-2  mt-2">
+         {%- if page.title != blank -%}
+            <h1 class="lookbook-page-title">{{ page.title }}</h1>
+          {%- endif -%}
 
           {%- if section.blocks.size > 0 -%}
             <div class="lookbook-image-stack__grid">
