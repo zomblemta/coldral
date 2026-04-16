@@ -24,12 +24,11 @@
         "image_E8DDkV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/about2.jpg",
-            "mobile_image": "shopify://shop_images/about2.jpg",
+            "image": "shopify://shop_images/000005670019_83d71068-db20-491b-b4fc-1403d18eca7d.jpg",
             "subheading": "",
             "title": "about us",
             "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "desktop_text_position": "sm:place-self-start-center sm:text-center",
             "content_max_width": 780,
             "button_1_text": "",
             "button_1_link": "",
