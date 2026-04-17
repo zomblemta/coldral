@@ -62,13 +62,11 @@
       "settings": {
         "title": "SPRING 26 ARRIVALS",
         "products": [
-          "the-wool-blazer",
-          "the-wool-blazer-w",
-          "the-layer-wool-waistcoat",
-          "the-layer-wool-waistcoat-w",
-          "the-wool-hoodie",
-          "the-season-blazer",
-          "the-season-blazer-w"
+          "maren-blazer",
+          "maren-trousers",
+          "lian-lightweight-jacket",
+          "lian-lightweight-trousers",
+          "niel-jacket"
         ]
       }
     },
@@ -120,12 +118,11 @@
       "settings": {
         "title": "CORE COLLECTION",
         "products": [
-          "the-dome-puffer-w",
-          "the-dome-puffer",
-          "the-monument-coat-w",
-          "the-monument-coat",
-          "the-season-blazer-w",
-          "the-season-blazer"
+          "the-oversized-blazer",
+          "the-curved-trousers",
+          "the-boxy-shirt",
+          "the-layer-tank",
+          "the-marceau-trousers"
         ]
       }
     },
