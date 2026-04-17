@@ -24,7 +24,7 @@
         "image_aG6ddG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Up3_db8c571c-eea6-4fd5-b003-58ad3fc0c748.webp",
+            "image": "shopify://shop_images/2026.4.4coldral0556_copie.jpg",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -35,7 +35,7 @@
         "image_BUU7kt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Up5_61d76b55-cff5-4e7f-a458-b87d535d22bf.webp",
+            "image": "shopify://shop_images/2026.4.4coldral0570_copie.jpg",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -46,7 +46,128 @@
         "image_nBNtwc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Main2_9e5fa2ba-4856-4e03-b4c9-a79ea46491ab.webp",
+            "image": "shopify://shop_images/2026.4.4coldral0577_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_8hVwWx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral0515_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_WYXP67": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral0437_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_M4hyJp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral1151_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_7Xa3hR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral1078_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_EgwFDg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral0981_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_HPKf4B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral1006_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_py7b9C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral1190_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_XYzXJD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral0648_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_g9gdtV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral0801_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_JfWkin": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral0874_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_97wMVd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral0933_copie.jpg",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -58,16 +179,32 @@
       "block_order": [
         "image_aG6ddG",
         "image_BUU7kt",
-        "image_nBNtwc"
+        "image_nBNtwc",
+        "image_8hVwWx",
+        "image_WYXP67",
+        "image_M4hyJp",
+        "image_7Xa3hR",
+        "image_EgwFDg",
+        "image_HPKf4B",
+        "image_py7b9C",
+        "image_XYzXJD",
+        "image_g9gdtV",
+        "image_JfWkin",
+        "image_97wMVd"
       ],
       "name": "t:sections.lookbook_image_stack.presets.lookbook_image_stack.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "section_width": "full",
+        "subheading": "",
+        "heading": "Spring 2026",
+        "content": "",
+        "heading_alignment": "start",
         "padding_top": 0,
         "padding_bottom": 0,
-        "gap_between_images": 0
+        "gap_between_images": 0,
+        "gap_between_columns": 12,
+        "image_vertical_spacing": 12
       }
     }
   },
