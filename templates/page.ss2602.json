@@ -43,17 +43,6 @@
             "caption_alignment": "center"
           }
         },
-        "image_nBNtwc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2026.4.4coldral0577_copie.jpg",
-            "alt_text": "",
-            "link": "",
-            "caption": "",
-            "caption_position": "above",
-            "caption_alignment": "center"
-          }
-        },
         "image_8hVwWx": {
           "type": "image",
           "settings": {
@@ -179,7 +168,6 @@
       "block_order": [
         "image_aG6ddG",
         "image_BUU7kt",
-        "image_nBNtwc",
         "image_8hVwWx",
         "image_WYXP67",
         "image_M4hyJp",
