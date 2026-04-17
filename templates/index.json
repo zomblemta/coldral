@@ -23,7 +23,7 @@
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "content_max_width": 780,
             "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify://collections/all",
+            "button_1_link": "shopify://collections/men",
             "button_1_style": "link",
             "button_1_background": "#a0bcd4",
             "button_1_text_color": "#1c1c1c",
