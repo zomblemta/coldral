@@ -298,7 +298,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "#smartsize-dialog {height: auto !important; max-height: 90vh !important;}"
+      "#smartsize-dialog {height: auto !important; max-height: 90vh !important;}",
+      ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}"
     ]
   }
 }
