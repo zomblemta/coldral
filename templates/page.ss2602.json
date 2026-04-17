@@ -65,17 +65,6 @@
             "caption_alignment": "center"
           }
         },
-        "image_M4hyJp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2026.4.4coldral1151_copie.jpg",
-            "alt_text": "",
-            "link": "",
-            "caption": "",
-            "caption_position": "above",
-            "caption_alignment": "center"
-          }
-        },
         "image_7Xa3hR": {
           "type": "image",
           "settings": {
@@ -113,6 +102,28 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/2026.4.4coldral1190_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_MGHyDM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral1183_copie.jpg",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_M4hyJp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026.4.4coldral1151_copie.jpg",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -170,11 +181,12 @@
         "image_BUU7kt",
         "image_8hVwWx",
         "image_WYXP67",
-        "image_M4hyJp",
         "image_7Xa3hR",
         "image_EgwFDg",
         "image_HPKf4B",
         "image_py7b9C",
+        "image_MGHyDM",
+        "image_M4hyJp",
         "image_XYzXJD",
         "image_g9gdtV",
         "image_JfWkin",
