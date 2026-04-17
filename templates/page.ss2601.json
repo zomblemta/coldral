@@ -109,28 +109,6 @@
             "caption_alignment": "center"
           }
         },
-        "image_WrWEtQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20260403_COLDRAL.7647_1_1_copie.webp",
-            "alt_text": "",
-            "link": "https://coldral.com/products/niel-jacket?variant=53578929996103",
-            "caption": "",
-            "caption_position": "above",
-            "caption_alignment": "center"
-          }
-        },
-        "image_FgLzVR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20260403_COLDRAL.7586_1__2_copie.webp",
-            "alt_text": "",
-            "link": "https://coldral.com/products/niel-jacket?variant=53578929996103",
-            "caption": "",
-            "caption_position": "above",
-            "caption_alignment": "center"
-          }
-        },
         "image_mUgp7r": {
           "type": "image",
           "settings": {
@@ -152,6 +130,28 @@
             "caption_position": "above",
             "caption_alignment": "center"
           }
+        },
+        "image_WrWEtQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7647_1_1_copie.webp",
+            "alt_text": "",
+            "link": "https://coldral.com/products/niel-jacket?variant=53578929996103",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_FgLzVR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7586_1__2_copie.webp",
+            "alt_text": "",
+            "link": "https://coldral.com/products/niel-jacket?variant=53578929996103",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
         }
       },
       "block_order": [
@@ -163,10 +163,10 @@
         "image_ajCCPk",
         "image_X9t84k",
         "image_6jiRGQ",
-        "image_WrWEtQ",
-        "image_FgLzVR",
         "image_mUgp7r",
-        "image_NVztKx"
+        "image_NVztKx",
+        "image_WrWEtQ",
+        "image_FgLzVR"
       ],
       "name": "t:sections.lookbook_image_stack.presets.lookbook_image_stack.name",
       "settings": {
