@@ -140,6 +140,10 @@ Supported variables
           {%- endif -%}
         </buy-buttons>
 
+        {%- if is_pre_order and product.selected_or_first_available_variant.inventory_quantity <= 0 -%}
+          <p class="text-sm text-subdued " >Estimated shipping within 2 to 3 weeks</p>
+        {%- endif -%}
+
         {%- unless product.gift_card? -%}
           <button
             type="button"

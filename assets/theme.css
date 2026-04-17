@@ -3225,6 +3225,7 @@ tr[onclick]:hover {
   align-items: center;
   column-gap: .625rem;
   display: flex;
+  color: #fff;
 }
 
 .localization-toggle > svg {
@@ -5382,6 +5383,10 @@ a.announcement-bar-marquee__item:hover {
 
 .mega-menu__linklist > * {
   max-width: 280px;
+}
+
+.mega-menu__linklist > li > a.h6 {
+  font-weight: 700;
 }
 
 .mega-menu__promo {
