@@ -16,10 +16,10 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/8483632221dc139f101e6a7f72095577.jpg",
-            "mobile_image": "shopify://shop_images/8483632221dc139f101e6a7f72095577.jpg",
+            "mobile_image": "shopify://shop_images/20260403_COLDRAL.7328_1_1_copie.webp",
             "subheading": "",
             "title": "",
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "content_max_width": 780,
             "button_1_text": "SHOP NOW",
