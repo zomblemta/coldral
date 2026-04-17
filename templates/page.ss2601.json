@@ -21,12 +21,34 @@
     "lookbook_image_stack_iaFNGG": {
       "type": "lookbook-image-stack",
       "blocks": {
+        "image_cwJgtW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7403_1_1_copie.webp",
+            "alt_text": "",
+            "link": "shopify://products/maren-blazer",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_pbnj8G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7468_1_1_copie.webp",
+            "alt_text": "",
+            "link": "https://coldral.com/products/maren-blazer",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
         "image_aG6ddG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Up3_db8c571c-eea6-4fd5-b003-58ad3fc0c748.webp",
+            "image": "shopify://shop_images/20260403_COLDRAL.7328_1_1_copie.webp",
             "alt_text": "",
-            "link": "",
+            "link": "https://coldral.com/products/maren-blazer",
             "caption": "",
             "caption_position": "above",
             "caption_alignment": "center"
@@ -35,7 +57,7 @@
         "image_BUU7kt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Up5_61d76b55-cff5-4e7f-a458-b87d535d22bf.webp",
+            "image": "shopify://shop_images/20260403_COLDRAL.7341_1_1_copie.webp",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -46,7 +68,84 @@
         "image_nBNtwc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Main2_9e5fa2ba-4856-4e03-b4c9-a79ea46491ab.webp",
+            "image": "shopify://shop_images/20260403_COLDRAL.7416_1_1_copie.webp",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_ajCCPk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7532_1_1_copie.webp",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_X9t84k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7536_1_1_copie.webp",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_6jiRGQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7551_1_1_copie.webp",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_WrWEtQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7647_1_1_copie.webp",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_FgLzVR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7586_1__2_copie.webp",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_mUgp7r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7674_1_1_copie.webp",
+            "alt_text": "",
+            "link": "",
+            "caption": "",
+            "caption_position": "above",
+            "caption_alignment": "center"
+          }
+        },
+        "image_NVztKx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260403_COLDRAL.7660_1_1_copie.webp",
             "alt_text": "",
             "link": "",
             "caption": "",
@@ -56,18 +155,32 @@
         }
       },
       "block_order": [
+        "image_cwJgtW",
+        "image_pbnj8G",
         "image_aG6ddG",
         "image_BUU7kt",
-        "image_nBNtwc"
+        "image_nBNtwc",
+        "image_ajCCPk",
+        "image_X9t84k",
+        "image_6jiRGQ",
+        "image_WrWEtQ",
+        "image_FgLzVR",
+        "image_mUgp7r",
+        "image_NVztKx"
       ],
       "name": "t:sections.lookbook_image_stack.presets.lookbook_image_stack.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "section_width": "full",
+        "subheading": "",
+        "heading": "Spring 2026",
+        "content": "",
+        "heading_alignment": "start",
         "padding_top": 0,
         "padding_bottom": 0,
-        "gap_between_images": 0
+        "gap_between_images": 0,
+        "gap_between_columns": 12,
+        "image_vertical_spacing": 12
       }
     }
   },
