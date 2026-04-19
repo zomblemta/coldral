@@ -302,7 +302,7 @@
       "#smartsize-dialog {height: auto !important; max-height: 90vh !important;}",
       ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
       ".smartsize-button-text {font-weight: normal;}",
-      "/* mobile fix */@media (max-width: 767px) {.smartsize-classic-size-instructions-container {display: none !important; }}"
+      "/* mobile fix */@media (max-width: 767px) {/* stop modal body from stretching children */ #dialogsize, .smartsizechart_content, .smartsize-layout, .smartsize-sizetable-container, .smartsize-layout.sizetable_image_text.no-image.no-text {height: auto !important; min-height: 0 !important; max-height: none !important; flex: 0 0 auto !important; align-self: flex-start !important; } /* table wrappers */ .MuiTableContainer-root, .MuiPaper-root.MuiTableContainer-root, .smartsizechart_table, table.smartsizechart_table {height: auto !important; min-height: 0 !important; max-height: none !important; } /* remove empty block under table */ .smartsize-classic-size-instructions-container:empty {display: none !important; } .smartsize-classic-size-instructions-container {height: 0 !important; min-height: 0 !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; flex: 0 0 auto !important; }}"
     ]
   }
 }
