@@ -301,7 +301,8 @@
     "custom_css": [
       "#smartsize-dialog {height: auto !important; max-height: 90vh !important;}",
       ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
-      ".smartsize-button-text {font-weight: normal;}"
+      ".smartsize-button-text {font-weight: normal;}",
+      "@media (max-width: 767px) {.MuiDialog-container {align-items: center !important; } .MuiDialog-paper, .ui-dialog.smartsize-pop-up {width: calc(100vw - 24px) !important; max-width: calc(100vw - 24px) !important; max-height: 90vh !important; margin: 12px auto !important; border-radius: 0 !important; } #dialogsize, .smartsizechart_content, .smartsize-layout {min-height: unset !important; height: auto !important; padding-bottom: 0 !important; }}"
     ]
   }
 }
