@@ -302,7 +302,7 @@
       "#smartsize-dialog {height: auto !important; max-height: 90vh !important;}",
       ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
       ".smartsize-button-text {font-weight: normal;}",
-      "/* mobile fix */@media (max-width: 767px) {.MuiDialog-container, .MuiDialog-paper, .ui-dialog.smartsize-pop-up {height: auto !important; max-height: 90vh !important; min-height: 0 !important; } .MuiDialog-paper {margin: 0 auto !important; } #dialogsize, .smartsizechart_content, .smartsize-layout, .smartsizechart_footer {height: auto !important; min-height: 0 !important; padding-bottom: 0 !important; margin-bottom: 0 !important; }}"
+      "/* mobile fix */@media (max-width: 767px) {.MuiDialog-paper {height: fit-content !important; max-height: 90vh !important; } .smartsizechart_content {flex: 0 0 auto !important; }}"
     ]
   }
 }
