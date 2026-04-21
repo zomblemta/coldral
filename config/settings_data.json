@@ -299,8 +299,10 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "#smartsize-dialog {height: auto !important; min-height: 0 !important;}",
-      ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
+      "/* Fix the paper — correct selector using :has() */.MuiDialog-paper:has(#smartsize-dialog) {height: auto !important; max-height: 90svh !important;}",
+      "/* Let #smartsize-dialog shrink naturally as a flex child */#smartsize-dialog {height: auto !important; min-height: 0 !important; overflow: hidden !important;}",
+      "/* Restore scroll on the table area */#dialogsize {overflow-y: auto !important;}",
+      "/* Your other rules */.variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
       ".smartsize-button-text {font-weight: normal;}"
     ]
   }
