@@ -299,9 +299,10 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "/* fit-content shrinks the paper — works on Chrome and Safari */.MuiDialog-paper:has(#smartsize-dialog) {height: fit-content !important; max-height: 90svh !important;}",
+      ".MuiDialog-paper:has(#smartsize-dialog) {height: auto !important; max-height: 90svh !important;}",
       "#smartsize-dialog {height: auto !important; min-height: 0 !important; overflow: hidden !important;}",
-      "/* Give #dialogsize an explicit svh max-height so Safari has a definite constraint to scroll within — this is the Safari fix */#dialogsize {max-height: 65svh !important; overflow-y: auto !important;}",
+      "/* Stop the inner flex child from expanding to fill the paper */#smartsize-dialog > .MuiBox-root:has(#dialogsize) {flex: 0 0 auto !important;}",
+      "/* Scroll the table area */#dialogsize {max-height: 65svh !important; overflow-y: auto !important;}",
       ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
       ".smartsize-button-text {font-weight: normal;}"
     ]
