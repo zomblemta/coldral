@@ -299,10 +299,10 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".MuiDialog-paper:has(#smartsize-dialog) {height: auto !important; max-height: 90svh !important;}",
+      "/* Desktop constraint (unchanged) */.MuiDialog-paper:has(#smartsize-dialog) {height: auto !important; max-height: 90svh !important;}",
       "#smartsize-dialog {height: auto !important; min-height: 0 !important; overflow: hidden !important;}",
-      "/* Stop the inner flex child from expanding to fill the paper */#smartsize-dialog > .MuiBox-root:has(#dialogsize) {flex: 0 0 auto !important;}",
-      "/* Scroll the table area */#dialogsize {max-height: 65svh !important; overflow-y: auto !important;}",
+      "/* Mobile fix — neutralize SmartSize's own inset:5px which forces the dialog to fill the viewport regardless of its parent. */@media (max-width: 600px) {#smartsize-dialog {bottom: auto !important; top: 50% !important; transform: translateY(-50%) !important; max-height: 90svh !important; }}",
+      "/* Scroll the table area inside the now-bounded dialog */#dialogsize {overflow-y: auto !important;}",
       ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
       ".smartsize-button-text {font-weight: normal;}"
     ]
