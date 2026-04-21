@@ -299,7 +299,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "#smartsize-dialog {height: fit-content !important; max-height: 90vh !important;}",
+      "#smartsize-dialog {height: auto !important; max-height: 90vh !important;}",
       ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
       ".smartsize-button-text {font-weight: normal;}",
       "@media (max-width: 767px) {.MuiDialog-paper, #dialogsize, .smartsizechart_content, .smartsize-layout, .smartsize-layout.mob_table_image_text.mobile.no-image.no-text, .smartsize-sizetable-container, .css-1jqg31n {height: auto !important; min-height: 0 !important; max-height: none !important; overflow: visible !important; flex: 0 0 auto !important; } #dialogsize, .smartsize-layout, .smartsize-layout.mob_table_image_text.mobile.no-image.no-text {display: block !important; } .smartsize-layout > *, .smartsize-sizetable-container > *, #dialogsize > * {flex: none !important; } .smartsize-classic-size-instructions-container {display: none !important; height: 0 !important; min-height: 0 !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; }}"
