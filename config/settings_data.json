@@ -299,10 +299,10 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "/* Paper: constrained height, it scrolls */.MuiDialog-paper:has(#smartsize-dialog) {height: auto !important; max-height: 90svh !important; overflow-y: auto !important;}",
-      "/* Override SmartSize's 100vh, let content flow out naturally */#smartsize-dialog {height: auto !important; min-height: 0 !important; overflow: visible !important;}",
-      "/* Same for the inner content wrapper */#dialogsize {height: auto !important; overflow: visible !important;}",
-      "/* Your other rules */.variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
+      "/* fit-content shrinks the paper — works on Chrome and Safari */.MuiDialog-paper:has(#smartsize-dialog) {height: fit-content !important; max-height: 90svh !important;}",
+      "#smartsize-dialog {height: auto !important; min-height: 0 !important; overflow: hidden !important;}",
+      "/* Give #dialogsize an explicit svh max-height so Safari has a definite constraint to scroll within — this is the Safari fix */#dialogsize {max-height: 65svh !important; overflow-y: auto !important;}",
+      ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
       ".smartsize-button-text {font-weight: normal;}"
     ]
   }
