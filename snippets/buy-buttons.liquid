@@ -140,9 +140,40 @@ Supported variables
           {%- endif -%}
         </buy-buttons>
 
+        {%- comment -%} 收集所有需要显示预售提示的变体 ID {%- endcomment -%}
+        {%- assign pre_order_msg_ids = '' -%}
+        {%- for variant in product.variants -%}
+          {%- if variant.inventory_policy == 'continue' and variant.inventory_quantity <= 0 -%}
+            {%- unless pre_order_msg_ids == '' -%}{%- assign pre_order_msg_ids = pre_order_msg_ids | append: ',' -%}{%- endunless -%}
+            {%- assign pre_order_msg_ids = pre_order_msg_ids | append: variant.id -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- assign show_pre_order_msg = false -%}
         {%- if is_pre_order and product.selected_or_first_available_variant.inventory_quantity <= 0 -%}
-          <p class="text-sm text-subdued " >Estimated shipping within 2 to 3 weeks</p>
+          {%- assign show_pre_order_msg = true -%}
         {%- endif -%}
+
+        <p
+          class="text-sm text-subdued"
+          data-pre-order-shipping-notice
+          data-pre-order-variant-ids="{{ pre_order_msg_ids }}"
+          {% unless show_pre_order_msg %}hidden{% endunless %}
+        >Estimated shipping within 2 to 3 weeks</p>
+
+        <script>
+          (function() {
+            var form = document.getElementById('{{ form_id }}');
+            if (!form) return;
+            var notice = form.parentElement.querySelector('[data-pre-order-shipping-notice]');
+            if (!notice) return;
+            var ids = notice.dataset.preOrderVariantIds.split(',').filter(Boolean);
+            form.addEventListener('variant:change', function(event) {
+              var variantId = String(event.detail.variant ? event.detail.variant.id : '');
+              notice.toggleAttribute('hidden', !ids.includes(variantId));
+            });
+          })();
+        </script>
 
         {%- unless product.gift_card? -%}
           <button
