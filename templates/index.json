@@ -62,11 +62,12 @@
       "settings": {
         "title": "SPRING 26 ARRIVALS",
         "products": [
+          "niel-jacket",
+          "the-marceau-trousers",
           "maren-blazer",
           "maren-trousers",
           "lian-lightweight-jacket",
-          "lian-lightweight-trousers",
-          "niel-jacket"
+          "lian-lightweight-trousers"
         ]
       }
     },
@@ -120,9 +121,9 @@
         "products": [
           "the-oversized-blazer",
           "the-curved-trousers",
+          "the-layer-tank",
           "the-marceau-trousers",
-          "the-boxy-shirt",
-          "the-layer-tank"
+          "the-boxy-shirt"
         ]
       }
     },
