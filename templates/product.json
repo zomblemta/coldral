@@ -104,6 +104,7 @@
         },
         "text_MkJkwi": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.description }}"
           }
