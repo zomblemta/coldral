@@ -26,6 +26,7 @@
     "text_font_size_desktop": 14,
     "button_letter_spacing": 18,
     "currency_code_enabled": true,
+    "show_button_transition": false,
     "product_color_display": "hide",
     "cart_type": "drawer",
     "cart_show_free_shipping_bar": true,
@@ -56,11 +57,6 @@
       "2567389343055140935": {
         "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
-        "settings": {}
-      },
-      "776302416715791028": {
-        "type": "shopify://apps/bucks/blocks/app-embed/4f0a9b06-9da4-4a49-b378-2de9d23a3af3",
-        "disabled": true,
         "settings": {}
       },
       "4293466245358296089": {
@@ -301,8 +297,8 @@
     "custom_css": [
       "/* Desktop constraint (unchanged) */.MuiDialog-paper:has(#smartsize-dialog) {height: auto !important; max-height: 90svh !important;}",
       "#smartsize-dialog {height: auto !important; min-height: 0 !important; overflow: hidden !important;}",
-      "/* Mobile fix — neutralize SmartSize's own inset:5px which forces the dialog to fill the viewport regardless of its parent. */@media (max-width: 600px) {#smartsize-dialog {bottom: auto !important; top: 50% !important; transform: translateY(-50%) !important; max-height: 90svh !important; }}",
-      "/* Scroll the table area inside the now-bounded dialog */#dialogsize {overflow-y: auto !important;}",
+      " /* Mobile fix — neutralize SmartSize's own inset:5px which forces the dialog to fill the viewport regardless of its parent. */@media (max-width: 600px) {#smartsize-dialog {bottom: auto !important; top: 50% !important; transform: translateY(-50%) !important; max-height: 90svh !important; }}",
+      " /* Scroll the table area inside the now-bounded dialog */#dialogsize {overflow-y: auto !important;}",
       ".variant-picker__option-info > .h-stack:has(#sizefox-container) {flex: 1;}",
       ".smartsize-button-text {font-weight: normal;}"
     ]
