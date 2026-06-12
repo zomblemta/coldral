@@ -16,7 +16,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/20260403_COLDRAL_1_5_2.jpg",
-            "mobile_image": "shopify://shop_images/20260403_COLDRAL.7554_1_1_copie.jpg",
+            "mobile_image": "shopify://shop_images/20260403_COLDRAL.7393_2_1_1.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-end-center text-center",
@@ -62,6 +62,7 @@
       "settings": {
         "title": "SPRING 26 ARRIVALS",
         "products": [
+          "the-classic-shirt",
           "niel-jacket",
           "the-marceau-trousers",
           "maren-blazer",
@@ -119,11 +120,11 @@
       "settings": {
         "title": "CORE COLLECTION",
         "products": [
+          "the-layer-tank",
+          "the-boxy-shirt",
           "the-oversized-blazer",
           "the-curved-trousers",
-          "the-layer-tank",
-          "the-marceau-trousers",
-          "the-boxy-shirt"
+          "the-marceau-trousers"
         ]
       }
     },
