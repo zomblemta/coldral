@@ -1,1 +1,111 @@
-{"sections":{"faq":{"type":"faq","blocks":{"question-1":{"type":"question","settings":{"question":"<strong>Are all items unisex?<\/strong>","answer":"<p>Yes. Every COLD RAL piece is fully unisex. Whether you browse the men’s or women’s section, the products are identical. Cuts, proportions and sizes are designed to suit a wide range of silhouettes.<\/p>"}},"question-2":{"type":"question","settings":{"question":"<strong>How do I choose my size?<\/strong>","answer":"<p>All sizes are unisex. As a general guide, most women choose size S or M, and most men choose M or L.<br\/>Choose one size down for a closer fit, or one size up for a more relaxed silhouette.<br\/>All three sizes can suit many body types depending on the desired look.<\/p>"}},"question-3":{"type":"question","settings":{"question":"<strong>How do I place an order?<\/strong>","answer":"<p>Select an item, choose your size and add it to your cart. Checkout is secure, and tracking information is provided automatically once your order ships.<\/p>"}},"question_8K3YNT":{"type":"question","settings":{"question":"<strong>Can I modify or cancel my order?<\/strong>","answer":"<p>If your order has not been shipped yet, contact us as soon as possible. Once an order has been dispatched, no changes can be made.<\/p>"}},"question_JGkGCV":{"type":"question","settings":{"question":"<strong>Which countries do you ship to?<\/strong>","answer":"<p>We ship worldwide. Available options for your location will appear at checkout.<\/p>"}},"question_rRARD8":{"type":"question","settings":{"question":"<strong>What are the delivery times?<\/strong>","answer":"<p>Europe: approximately 6 to 12 days.<br\/><br\/>International: approximately 10 to 14 days.<br\/><br\/>Timing may vary depending on destination and carrier conditions.<\/p>"}},"question_WEDmVU":{"type":"question","settings":{"question":"<strong>How can I track my order?<\/strong>","answer":"<p>A confirmation email and tracking link are sent to you as soon as your order is shipped.<\/p>"}},"question_4hUfUp":{"type":"question","settings":{"question":"<strong>Can I return an item?<\/strong>","answer":"<p>Yes. You have 14 days from the date of delivery. Items must be new, unworn, unwashed and with all original tags attached.<\/p>"}},"question_DCkcLA":{"type":"question","settings":{"question":"<strong>How do I request a return?<\/strong>","answer":"<p>Contact us by email to receive instructions and the return details.<\/p>"}},"question_rbEHTc":{"type":"question","settings":{"question":"<strong>Do you offer exchanges?<\/strong>","answer":"<p>We do not offer direct exchanges. We recommend returning your item and placing a new order to ensure availability.<\/p>"}},"question_wjrw8P":{"type":"question","settings":{"question":"<strong>Orders not received and returned items verification ?<\/strong>","answer":"<p>At Cold Ral, we take every order seriously and treat each customer with respect. In rare cases, some individuals claim a package was not received or return items that do not match the original order. To protect all of our customers and maintain fair practices, we follow a strict and transparent process.<\/p><p><strong>What happens if I claim I did not receive my order<\/strong><br\/><br\/>If a parcel is marked as delivered but you report it missing, we open an investigation with the carrier. No refunds are issued during this process. Once the investigation is completed, we can offer either a store credit or a reshipment of the items. We do not provide refunds for parcels declared delivered by the carrier.<\/p><p><strong>What happens if I return an item<\/strong><br\/><br\/>We only issue refunds after receiving the returned parcel and verifying that all items are correct, complete, unused, unwashed, and with all original labels attached. This is necessary to protect our stock and ensure fairness for all customers. We are not a multinational company and we take the time required to complete our verification process properly.<\/p><p>Thank you for your understanding.<\/p>"}}},"block_order":["question-1","question-2","question-3","question_8K3YNT","question_JGkGCV","question_rRARD8","question_WEDmVU","question_4hUfUp","question_DCkcLA","question_rbEHTc","question_wjrw8P"],"settings":{"color_scheme":"","separate_section_with_border":true,"show_categories":false,"subheading":"Need help?","title":"Frequently Asked Questions","content":""}}},"order":["faq"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How do I choose my size?</strong>",
+            "answer": "<ul><li>Start with the size guide on each product page. Look especially at the model: his height, weight and the size he is wearing are shown on every piece, so you can compare with your own build, which is the most reliable way to judge fit. </li><li>Each product page also lists the detailed cut and material. Fits vary across the collection, from relaxed to more structured, so check each piece. If you are between two sizes, compare the measurements with a garment you already own and like. </li><li>Still unsure? Write to us at <a href=\"mailto:contact@coldral.com\">contact@coldral.com</a> and we will help you choose.</li></ul>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How do I place an order?</strong>",
+            "answer": "<p>Select your piece, color and size, add it to your cart, then go to our secure checkout. Payment is encrypted and you receive an email confirmation as soon as your order is placed.</p>"
+          }
+        },
+        "question_8K3YNT": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I modify or cancel my order?</strong>",
+            "answer": "<p>Write to us as soon as possible at <a href=\"mailto:contact@coldral.com\">contact@coldral.com</a>. As long as your order has not yet been prepared for shipping, we do our best to adjust or cancel it.</p>"
+          }
+        },
+        "question_JGkGCV": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Which countries do you ship to?</strong>",
+            "answer": "<p>We ship worldwide, with full tracking on every order. </p><p><strong>Shipping costs:</strong><br/></p><ul><li>United States: 18 $, free over 300$.</li><li>France and the rest of Europe: 7,90 €, free over 200 €</li><li>United Kingdom: 8 £, free over the 200 £.</li><li>Australia, Canada and all other destinations: calculated at checkout.</li></ul>"
+          }
+        },
+        "question_rRARD8": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What are the delivery times?</strong>",
+            "answer": "<p><strong>France, UK and the rest of Europe: </strong>6 to 10 days.<br/><br/><strong>USA:</strong> 6 to 12 days.</p><p><strong>Australia: </strong>5 to 10 days.</p><p><strong>Canada: </strong>5 to 10 days.</p><p><strong>Middle east: </strong>6 to 10 days.<br/><br/>Timing may vary depending on destination and carrier conditions.</p>"
+          }
+        },
+        "question_WEDmVU": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How can I track my order?</strong>",
+            "answer": "<p>You receive a tracking number by email the moment your order ships, so you can follow it at every step until it reaches you.</p>"
+          }
+        },
+        "question_4hUfUp": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I return an item?</strong>",
+            "answer": "<p>Yes. You have 14 days from delivery to request a return. Items must be new, unworn, unwashed, with all original tags and in resellable condition. Pieces bought on presale or on sale are final and cannot be returned.</p>"
+          }
+        },
+        "question_DCkcLA": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How do I request a return?</strong>",
+            "answer": "<p>Email us at <a href=\"mailto:returns@coldral.com\">returns@coldral.com</a> to open your return and we will guide you through it. Returns are made at your own cost using a tracked and insured service. Original shipping, return shipping and any duties or taxes are not refundable.</p>"
+          }
+        },
+        "question_rbEHTc": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Do you offer exchanges?</strong>",
+            "answer": "<p>Yes. To exchange a piece for another size or model, simply contact us at <a href=\"mailto:returns@coldral.com\">returns@coldral.com</a> and we will explain how to proceed. We recommend reaching out quickly so we can secure the size you want before it sells out.</p>"
+          }
+        },
+        "question_wjrw8P": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Orders not received and returned items verification ?</strong>",
+            "answer": "<p>At Cold Ral, we take every order seriously and treat each customer with respect. In rare cases, some individuals claim a package was not received or return items that do not match the original order. To protect all of our customers and maintain fair practices, we follow a strict and transparent process.</p><p><strong>What happens if I claim I did not receive my order</strong><br/><br/>If a parcel is marked as delivered but you report it missing, we open an investigation with the carrier. No refunds are issued during this process. Once the investigation is completed, we can offer either a store credit or a reshipment of the items. We do not provide refunds for parcels declared delivered by the carrier.</p><p><strong>What happens if I return an item</strong><br/><br/>We only issue refunds after receiving the returned parcel and verifying that all items are correct, complete, unused, unwashed, and with all original labels attached. This is necessary to protect our stock and ensure fairness for all customers. We are not a multinational company and we take the time required to complete our verification process properly.</p><p>Thank you for your understanding.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-2",
+        "question-3",
+        "question_8K3YNT",
+        "question_JGkGCV",
+        "question_rRARD8",
+        "question_WEDmVU",
+        "question_4hUfUp",
+        "question_DCkcLA",
+        "question_rbEHTc",
+        "question_wjrw8P"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "faq"
+  ]
+}
