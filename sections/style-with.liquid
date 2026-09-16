@@ -155,7 +155,7 @@
                   {%- endif -%}
                 {%- endfor -%}
 
-                {%- render 'alp-product-small-look-item', product: product_item, variant_item: variant_item, color_option_index: color_option_index, unique_id: variant_item.id | default: forloop.index -%}
+                {%- render 'alp-product-small-look-item', product: product_item, variant_item: variant_item, color_option_index: color_option_index, unique_id: variant_item.id, default: forloop.index -%}
               </div>
             {% endfor %}
           </div>
@@ -338,3 +338,17 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'alp-product-small-look-item', product: product_item, variant_item:
+    variant_item, color_option_index: color_option_index, unique_id: variant_item.id
+    | default: forloop.index -%}"
+  to: "{%- render 'alp-product-small-look-item', product: product_item, variant_item:
+    variant_item, color_option_index: color_option_index, unique_id: variant_item.id,
+    default: forloop.index -%}"
+  position: 5891..6078
+{% endcomment %}
